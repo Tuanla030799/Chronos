@@ -1,0 +1,18 @@
+# Rust
+/target
+
+# Build outputs (build-ios.sh, wasm-pack)
+/build
+/crates/astro-wasm/pkg
+
+# Local only: progress notes, the MCP server's SQLite dev database, personal Claude Code settings
+/docs/
+/dev-data/
+/.claude/settings.local.json
+
+# Xcode (iOS app)
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
