@@ -5,9 +5,9 @@
 //! ch. 25). Nutation uses the abridged series of Meeus ch. 22 (0.5″ in longitude, 0.1″ in
 //! obliquity). One arcsecond of solar longitude is about 24 seconds of time.
 
+use crate::astronomy::vsop87_earth::{self, Term};
 use crate::math::{angle_difference, normalize_degrees, polynomial};
 use crate::time::J2000;
-use crate::vsop87_earth::{self, Term};
 
 /// Degrees in one second of arc.
 const ARCSECOND: f64 = 1.0 / 3600.0;
@@ -136,7 +136,7 @@ fn vsop87(series: &[&[Term]], tau: f64) -> f64 {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::delta_t::jd_ut_to_jde;
+    use crate::astronomy::delta_t::jd_ut_to_jde;
     use crate::test_support::{assert_close, utc};
     use core::f64::consts::TAU;
 

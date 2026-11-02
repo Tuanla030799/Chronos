@@ -205,7 +205,7 @@ pub fn check_connection(date: SolarDate) -> Result<ConnectionCheck, AstroError> 
 /// Converts a Gregorian date to the Vietnamese lunar calendar.
 #[uniffi::export(default(tz_offset = 7.0))]
 pub fn solar_to_lunar(date: SolarDate, tz_offset: f64) -> Result<LunarDate, AstroError> {
-    astro_core::solar_to_lunar(date, tz_offset)
+    astro_core::solar_to_lunar(date.day, date.month, date.year, tz_offset)
 }
 
 /// Converts a lunar date to the Gregorian calendar.
@@ -224,6 +224,16 @@ pub fn lunar_year(year: i32, tz_offset: f64) -> Result<LunarYear, AstroError> {
 #[uniffi::export(default(tz_offset = 7.0))]
 pub fn solar_terms_in_year(year: i32, tz_offset: f64) -> Result<Vec<SolarTermEvent>, AstroError> {
     astro_core::solar_terms_in_year(year, tz_offset)
+}
+
+/// Local wall-clock time, to the second, at which `term` begins in a Gregorian year.
+#[uniffi::export(default(tz_offset = 7.0))]
+pub fn get_exact_solar_term_time(
+    year: i32,
+    term: SolarTerm,
+    tz_offset: f64,
+) -> Result<SolarDateTime, AstroError> {
+    astro_core::get_exact_solar_term_time(year, term, tz_offset)
 }
 
 /// Lunar date, Can Chi and solar term of a Gregorian date, for calendar views.
@@ -248,7 +258,7 @@ pub fn true_solar_time(
     longitude: f64,
     tz_offset: f64,
 ) -> Result<SolarDateTime, AstroError> {
-    astro_core::true_solar_time(clock, tz_offset, longitude)
+    astro_core::to_true_solar_time(clock, longitude, tz_offset * 15.0)
 }
 
 /// Vietnamese name of a Can Chi pair, e.g. "Giáp Thìn".

@@ -88,7 +88,10 @@ pub fn solar_to_lunar(
     tz_offset: Option<f64>,
 ) -> Result<JsValue, JsValue> {
     let date: SolarDate = from_js(date)?;
-    to_js(&astro_core::solar_to_lunar(date, zone(tz_offset)).map_err(astro_error)?)
+    to_js(
+        &astro_core::solar_to_lunar(date.day, date.month, date.year, zone(tz_offset))
+            .map_err(astro_error)?,
+    )
 }
 
 /// Converts a lunar date to the Gregorian calendar.
@@ -111,6 +114,17 @@ pub fn lunar_year(year: i32, tz_offset: Option<f64>) -> Result<JsValue, JsValue>
 #[wasm_bindgen(js_name = solarTermsInYear, unchecked_return_type = "SolarTermEvent[]")]
 pub fn solar_terms_in_year(year: i32, tz_offset: Option<f64>) -> Result<JsValue, JsValue> {
     to_js(&astro_core::solar_terms_in_year(year, zone(tz_offset)).map_err(astro_error)?)
+}
+
+/// Local wall-clock time, to the second, at which `term` begins in a Gregorian year.
+#[wasm_bindgen(js_name = getExactSolarTermTime, unchecked_return_type = "SolarDateTime")]
+pub fn get_exact_solar_term_time(
+    year: i32,
+    #[wasm_bindgen(unchecked_param_type = "SolarTerm")] term: JsValue,
+    tz_offset: Option<f64>,
+) -> Result<JsValue, JsValue> {
+    let term: SolarTerm = from_js(term)?;
+    to_js(&astro_core::get_exact_solar_term_time(year, term, zone(tz_offset)).map_err(astro_error)?)
 }
 
 /// Lunar date, Can Chi and solar term of a Gregorian date, for calendar views.
@@ -147,7 +161,10 @@ pub fn true_solar_time(
     tz_offset: Option<f64>,
 ) -> Result<JsValue, JsValue> {
     let clock: SolarDateTime = from_js(clock)?;
-    to_js(&astro_core::true_solar_time(clock, zone(tz_offset), longitude).map_err(astro_error)?)
+    to_js(
+        &astro_core::to_true_solar_time(clock, longitude, zone(tz_offset) * 15.0)
+            .map_err(astro_error)?,
+    )
 }
 
 /// Vietnamese name of a Can Chi pair, e.g. "Giáp Thìn".

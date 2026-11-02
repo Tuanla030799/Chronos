@@ -12,15 +12,15 @@
 //! on the time zone nor on true solar time. Day and hour use local reckoning: the clock time,
 //! or true solar time when the birthplace longitude is given.
 
-use crate::delta_t::jd_ut_to_jde;
+use crate::astronomy::delta_t::jd_ut_to_jde;
+use crate::astronomy::sun::apparent_longitude;
 use crate::error::{AstroError, check_longitude, check_tz_offset, check_year};
 use crate::math::normalize_degrees;
 use crate::sexagenary::{
     CanChi, EarthlyBranch, day_can_chi, hour_can_chi, month_can_chi, year_can_chi,
 };
-use crate::solar_time::apparent_solar_time;
-use crate::sun::apparent_longitude;
 use crate::time::SolarDateTime;
+use crate::true_solar_time::apparent_solar_time;
 
 /// How a birth during the Tý double-hour (23:00–00:59) is assigned to a day.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]

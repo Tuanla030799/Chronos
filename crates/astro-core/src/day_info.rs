@@ -1,9 +1,9 @@
 //! Everything a calendar cell shows for one Gregorian date, in a single call.
 
 use crate::error::AstroError;
-use crate::lunar::{LunarDate, solar_to_lunar};
+use crate::lunar_calendar::{LunarDate, solar_to_lunar};
 use crate::sexagenary::{CanChi, day_can_chi, month_can_chi, year_can_chi};
-use crate::solar_term::{SolarTerm, solar_term_at};
+use crate::solar_terms::{SolarTerm, solar_term_at};
 use crate::time::{SolarDate, local_midnight_jd};
 
 /// Calendar data for one Gregorian date.
@@ -31,7 +31,7 @@ pub struct DayInfo {
 
 /// Calendar data for `date` in a zone `tz_offset` hours east of UTC.
 pub fn day_info(date: SolarDate, tz_offset: f64) -> Result<DayInfo, AstroError> {
-    let lunar = solar_to_lunar(date, tz_offset)?;
+    let lunar = solar_to_lunar(date.day, date.month, date.year, tz_offset)?;
     let jdn = date.to_jdn();
     let term_at_midnight_starting = |day: i32| solar_term_at(local_midnight_jd(day, tz_offset));
     let solar_term = term_at_midnight_starting(jdn + 1);

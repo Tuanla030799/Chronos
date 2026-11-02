@@ -2,15 +2,21 @@
 //!
 //! The mean phase is corrected with the 25 periodic terms for the new moon and the 14
 //! planetary arguments, which Meeus reports as accurate to a few seconds for modern dates.
+//!
+//! New moons are numbered from the one of 1 January 1900 (k = 0), as in Hồ Ngọc Đức's
+//! algorithm; Meeus numbers them from 6 January 2000, which is k = 1237 here.
 
-use crate::delta_t::jde_to_jd_ut;
+use crate::astronomy::delta_t::jde_to_jd_ut;
 use crate::time::local_jdn;
 
 /// Mean length of the synodic month, in days.
 pub const SYNODIC_MONTH: f64 = 29.530_588_861;
 
-/// JDE of the mean new moon with lunation number 0, on 2000 January 6.
-const LUNATION_ZERO_JDE: f64 = 2_451_550.097_66;
+/// Number of the new moon of 2000-01-06, the zero of Meeus' numbering.
+const MEEUS_ZERO_LUNATION: i32 = 1237;
+
+/// JDE of the mean new moon of 2000-01-06.
+const MEEUS_ZERO_JDE: f64 = 2_451_550.097_66;
 
 /// Planetary arguments A2–A14: (degrees at k = 0, degrees per lunation, amplitude in days).
 const PLANETARY_ARGUMENTS: [(f64, f64, f64); 13] = [
@@ -29,15 +35,14 @@ const PLANETARY_ARGUMENTS: [(f64, f64, f64); 13] = [
     (331.55, 3.592_518, 0.000_023),
 ];
 
-/// Julian Ephemeris Day (TT) of the true new moon with lunation number `k`.
-///
-/// `k = 0` is the new moon of 2000-01-06; `k` grows by one each synodic month and is
-/// negative before 2000.
+/// Julian Ephemeris Day (TT) of the true new moon number `k`, counted from the new moon of
+/// 1900-01-01 (`k = 0`); `k` grows by one each synodic month.
 pub fn new_moon_jde(k: i32) -> f64 {
-    let k = f64::from(k);
+    // Meeus' formulas use his own numbering, with k = 0 on 2000-01-06.
+    let k = f64::from(k - MEEUS_ZERO_LUNATION);
     let t = k / 1236.85;
     let (t2, t3, t4) = (t * t, t * t * t, t * t * t * t);
-    let mean = LUNATION_ZERO_JDE + SYNODIC_MONTH * k + 0.000_154_37 * t2 - 0.000_000_150 * t3
+    let mean = MEEUS_ZERO_JDE + SYNODIC_MONTH * k + 0.000_154_37 * t2 - 0.000_000_150 * t3
         + 0.000_000_000_73 * t4;
 
     // Eccentricity factor of the Earth's orbit and the fundamental arguments.
@@ -87,7 +92,7 @@ pub fn new_moon_jde(k: i32) -> f64 {
     mean + periodic + planetary
 }
 
-/// Julian Day (UT) of the true new moon with lunation number `k`.
+/// Julian Day (UT) of the true new moon number `k`.
 pub fn new_moon_jd_ut(k: i32) -> f64 {
     jde_to_jd_ut(new_moon_jde(k))
 }
@@ -98,9 +103,10 @@ pub fn new_moon_day(k: i32, tz_offset: f64) -> i32 {
     local_jdn(new_moon_jd_ut(k), tz_offset)
 }
 
-/// Lunation number of the last new moon whose local date is on or before day `jdn`.
+/// Number of the last new moon whose local date is on or before day `jdn`.
 pub fn lunation_on_or_before(jdn: i32, tz_offset: f64) -> i32 {
-    let mut k = ((f64::from(jdn) - LUNATION_ZERO_JDE) / SYNODIC_MONTH).floor() as i32;
+    let mut k =
+        ((f64::from(jdn) - MEEUS_ZERO_JDE) / SYNODIC_MONTH).floor() as i32 + MEEUS_ZERO_LUNATION;
     while new_moon_day(k, tz_offset) > jdn {
         k -= 1;
     }
@@ -116,13 +122,21 @@ mod tests {
     use crate::test_support::{CN, VN, assert_close, date, utc};
 
     fn lunation_nearest(jd: f64) -> i32 {
-        ((jd - LUNATION_ZERO_JDE) / SYNODIC_MONTH).round() as i32
+        ((jd - MEEUS_ZERO_JDE) / SYNODIC_MONTH).round() as i32 + MEEUS_ZERO_LUNATION
     }
 
     #[test]
     fn matches_meeus_example_49a() {
-        // New moon of 1977 February: k = −283, JDE 2443192.65118 (18 Feb, 3h37m42s TD).
-        assert_close(new_moon_jde(-283), 2_443_192.651_18, 1e-5);
+        // New moon of 1977 February: Meeus' k = −283, i.e. 954 from 1900; JDE 2443192.65118
+        // (18 Feb, 3h37m42s TD).
+        assert_close(new_moon_jde(954), 2_443_192.651_18, 1e-5);
+    }
+
+    #[test]
+    fn numbering_starts_with_the_new_moon_of_1_january_1900() {
+        // 1900-01-01 13:51 UTC and 2000-01-06 18:14 UTC.
+        assert_close(new_moon_jd_ut(0), utc(1900, 1, 1, 13, 51), 1.5 / 1440.0);
+        assert_close(new_moon_jd_ut(1237), utc(2000, 1, 6, 18, 14), 1.5 / 1440.0);
     }
 
     #[test]

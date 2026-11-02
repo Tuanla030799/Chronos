@@ -1,23 +1,27 @@
 //! The 24 solar terms (Hai mươi bốn tiết khí) and the instants at which they begin.
 //!
 //! A solar term begins when the Sun's apparent ecliptic longitude reaches a multiple of 15°.
-//! The instant is found by solving `λ☉(t) = target` numerically, so it carries the precision
-//! of the VSOP87 solar position instead of a mean-motion approximation.
+//! The instant is found by Newton-Raphson iteration on
+//! [`crate::astronomy::get_sun_longitude_deg`] until the step is below a
+//! millisecond, so it carries the precision of the VSOP87 solar position (about 1″ of arc, or
+//! 25 seconds of time) instead of a mean-motion approximation.
 
-use crate::delta_t::{jd_ut_to_jde, jde_to_jd_ut};
+use crate::astronomy::get_sun_longitude_deg;
 use crate::error::{AstroError, check_tz_offset, check_year};
 use crate::math::{angle_difference, normalize_degrees};
-use crate::sun::apparent_longitude;
 use crate::time::{SolarDate, SolarDateTime};
 
 /// Mean motion of the Sun in longitude, degrees per day.
 const MEAN_DAILY_MOTION: f64 = 360.0 / 365.242_189;
 
-/// The iteration stops once its correction is below this many days (about a millisecond).
+/// The iteration stops once its step is below this many days (about a millisecond).
 const CONVERGENCE_DAYS: f64 = 1e-8;
 
-/// Upper bound on iterations; convergence normally takes six or seven.
-const MAX_ITERATIONS: usize = 50;
+/// Upper bound on iterations; Newton-Raphson from a mean-motion guess needs three or four.
+const MAX_ITERATIONS: usize = 20;
+
+/// Half-width, in days, of the central difference that estimates the Sun's speed.
+const DERIVATIVE_STEP_DAYS: f64 = 0.01;
 
 /// One of the 24 solar terms, in traditional order from Lập Xuân.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
@@ -201,18 +205,38 @@ pub struct SolarTermEvent {
 }
 
 /// Instant (Julian Day, UT) at which the Sun's apparent longitude equals `longitude`
-/// degrees, solved from the guess `jd_ut_guess`; it converges to the crossing nearest the
-/// guess.
+/// degrees, solved by Newton-Raphson from the guess `jd_ut_guess`; it converges to the crossing
+/// nearest the guess.
 pub fn sun_longitude_crossing(longitude: f64, jd_ut_guess: f64) -> f64 {
-    let mut jde = jd_ut_to_jde(jd_ut_guess);
+    let mut jd = jd_ut_guess;
     for _ in 0..MAX_ITERATIONS {
-        let correction = angle_difference(longitude, apparent_longitude(jde)) / MEAN_DAILY_MOTION;
-        jde += correction;
-        if correction.abs() < CONVERGENCE_DAYS {
+        let miss = angle_difference(longitude, get_sun_longitude_deg(jd));
+        let speed = angle_difference(
+            get_sun_longitude_deg(jd + DERIVATIVE_STEP_DAYS),
+            get_sun_longitude_deg(jd - DERIVATIVE_STEP_DAYS),
+        ) / (2.0 * DERIVATIVE_STEP_DAYS);
+        let step = miss / speed;
+        jd += step;
+        if step.abs() < CONVERGENCE_DAYS {
             break;
         }
     }
-    jde_to_jd_ut(jde)
+    jd
+}
+
+/// Local wall-clock time, to the second, at which `term` begins in Gregorian year `year`, in a
+/// zone `tz_offset` hours east of UTC (7.0 for Vietnam).
+pub fn get_exact_solar_term_time(
+    year: i32,
+    term: SolarTerm,
+    tz_offset: f64,
+) -> Result<SolarDateTime, AstroError> {
+    check_year(year)?;
+    check_tz_offset(tz_offset)?;
+    Ok(SolarDateTime::from_julian_day(
+        term_instant(term, year),
+        tz_offset,
+    ))
 }
 
 /// Instant (Julian Day, UT) at which `term` begins in Gregorian year `year`.
@@ -243,7 +267,7 @@ pub fn solar_terms_in_year(year: i32, tz_offset: f64) -> Result<Vec<SolarTermEve
 
 /// The solar term in effect at the instant `jd_ut`: the last one that began at or before it.
 pub fn solar_term_at(jd_ut: f64) -> SolarTerm {
-    SolarTerm::from_sun_longitude(apparent_longitude(jd_ut_to_jde(jd_ut)))
+    SolarTerm::from_sun_longitude(get_sun_longitude_deg(jd_ut))
 }
 
 /// Unchecked [`solar_term_jd_ut`].
@@ -354,10 +378,37 @@ mod tests {
     }
 
     #[test]
+    fn lap_xuan_2025_and_2026_in_vietnamese_time() {
+        // Published as 22:10 on 3 Feb 2025 and 04:02 on 4 Feb 2026, Beijing time (UTC+8).
+        for (year, day, hour, minute) in [(2025, 3, 21, 10), (2026, 4, 3, 2)] {
+            let time = get_exact_solar_term_time(year, SolarTerm::LapXuan, VN).unwrap();
+            assert_eq!(
+                (time.year, time.month, time.day, time.hour),
+                (year, 2, day, hour)
+            );
+            assert!(time.minute.abs_diff(minute) <= 1, "{time:?}");
+        }
+        assert_eq!(
+            get_exact_solar_term_time(2401, SolarTerm::LapXuan, VN),
+            Err(AstroError::YearOutOfRange { year: 2401 })
+        );
+    }
+
+    #[test]
+    fn newton_raphson_converges_to_well_under_a_second() {
+        // 1e-6° of solar longitude is about 0.09 s of time.
+        for term in SolarTerm::ALL {
+            let jd = solar_term_jd_ut(term, 2026).unwrap();
+            let miss = angle_difference(get_sun_longitude_deg(jd), term.longitude());
+            assert!(miss.abs() < 1e-6, "{term:?} misses by {miss}°");
+        }
+    }
+
+    #[test]
     fn the_sun_is_at_the_term_longitude_at_the_computed_instant() {
         for term in SolarTerm::ALL {
-            let jde = jd_ut_to_jde(solar_term_jd_ut(term, 2024).unwrap());
-            let miss = angle_difference(apparent_longitude(jde), term.longitude());
+            let jd = solar_term_jd_ut(term, 2024).unwrap();
+            let miss = angle_difference(get_sun_longitude_deg(jd), term.longitude());
             assert!(miss.abs() < 1e-6, "{term:?} misses by {miss}°");
         }
     }

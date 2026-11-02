@@ -22,32 +22,31 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+pub mod astronomy;
 pub mod day_info;
-pub mod delta_t;
 pub mod engine;
 mod error;
 pub mod four_pillars;
-pub mod lunar;
+pub mod lunar_calendar;
 mod math;
-pub mod moon_phase;
 pub mod sexagenary;
-pub mod solar_term;
-pub mod solar_time;
-pub mod sun;
+pub mod solar_terms;
 #[cfg(test)]
 mod test_support;
 pub mod time;
-mod vsop87_earth;
+pub mod true_solar_time;
 
 pub use day_info::{DayInfo, day_info};
 pub use engine::{ConnectionCheck, ENGINE_VERSION, check_connection};
 pub use error::AstroError;
 pub use four_pillars::{FourPillars, FourPillarsOptions, RatHourConvention, four_pillars};
-pub use lunar::{LunarDate, LunarMonth, LunarYear, lunar_to_solar, lunar_year, solar_to_lunar};
+pub use lunar_calendar::{
+    LunarDate, LunarMonth, LunarYear, lunar_to_solar, lunar_year, solar_to_lunar,
+};
 pub use sexagenary::{CanChi, CelestialStem, EarthlyBranch};
-pub use solar_term::{SolarTerm, SolarTermEvent, solar_terms_in_year};
-pub use solar_time::true_solar_time;
+pub use solar_terms::{SolarTerm, SolarTermEvent, get_exact_solar_term_time, solar_terms_in_year};
 pub use time::{SolarDate, SolarDateTime};
+pub use true_solar_time::{VIETNAM_STANDARD_MERIDIAN, to_true_solar_time};
 
 /// Vietnam's offset from UTC in hours (UTC+7, standard meridian 105°E); the default
 /// `tz_offset` of the Swift and WebAssembly bindings.

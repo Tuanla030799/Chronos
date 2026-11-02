@@ -11,15 +11,15 @@
 //! 4. The lunar year changes on day 1 of month 1 (Tết) and takes the number of the Gregorian
 //!    year in which that Tết falls.
 //!
-//! New moons and solar longitudes come from Meeus' full algorithms rather than the abridged
-//! series of the original article, so day boundaries stay right even when a new moon falls
-//! within minutes of local midnight.
+//! The steps follow the original `getLunarMonth11` and `getLeapMonthOffset` on top of
+//! [`get_new_moon_day`] and [`get_solar_term_index`], whose new moons and solar longitudes come
+//! from Meeus' full algorithms rather than the abridged series of the original article. Day
+//! boundaries therefore stay right even when a new moon falls within minutes of local midnight.
 
-use crate::delta_t::jd_ut_to_jde;
+use crate::astronomy::moon_phase::lunation_on_or_before;
+use crate::astronomy::{get_new_moon_day, get_solar_term_index, jd_from_date};
 use crate::error::{AstroError, check_tz_offset, check_year};
-use crate::moon_phase::{lunation_on_or_before, new_moon_day};
-use crate::sun::apparent_longitude;
-use crate::time::{SolarDate, local_midnight_jd};
+use crate::time::SolarDate;
 use crate::{MAX_YEAR, MIN_YEAR};
 
 /// A date in the Vietnamese lunisolar calendar.
@@ -65,17 +65,26 @@ pub struct LunarYear {
     pub months: Vec<LunarMonth>,
 }
 
-/// Converts a Gregorian date to the lunar calendar of a zone `tz_offset` hours east of UTC.
-pub fn solar_to_lunar(date: SolarDate, tz_offset: f64) -> Result<LunarDate, AstroError> {
-    date.validate()?;
+/// Converts the Gregorian date `day`/`month`/`year` to the lunar calendar of a zone
+/// `tz_offset` hours east of UTC (7.0 for Vietnam).
+///
+/// Fails for a date that does not exist, an offset outside −12…+14 h, or a date outside the
+/// supported lunar years.
+pub fn solar_to_lunar(
+    day: u8,
+    month: u8,
+    year: i32,
+    tz_offset: f64,
+) -> Result<LunarDate, AstroError> {
+    let date = SolarDate::new(year, month, day)?;
     check_tz_offset(tz_offset)?;
     // A lunar year ends early in the next Gregorian year, so dates in MAX_YEAR + 1 can still
     // belong to a supported lunar year; the result is checked below.
-    if !(MIN_YEAR..=MAX_YEAR + 1).contains(&date.year) {
-        return Err(AstroError::YearOutOfRange { year: date.year });
+    if !(MIN_YEAR..=MAX_YEAR + 1).contains(&year) {
+        return Err(AstroError::YearOutOfRange { year });
     }
     let jdn = date.to_jdn();
-    let span = month_containing(jdn, date.year, tz_offset);
+    let span = month_containing(jdn, year, tz_offset);
     check_year(span.year)?;
     Ok(LunarDate {
         year: span.year,
@@ -86,32 +95,37 @@ pub fn solar_to_lunar(date: SolarDate, tz_offset: f64) -> Result<LunarDate, Astr
 }
 
 /// Converts a lunar date of a zone `tz_offset` hours east of UTC to the Gregorian calendar.
-pub fn lunar_to_solar(date: LunarDate, tz_offset: f64) -> Result<SolarDate, AstroError> {
-    check_year(date.year)?;
+///
+/// Fails for a month outside 1–12, a day beyond the month's length, a leap flag on a month that
+/// is not the leap month of that year, an invalid offset, or a year outside the supported range.
+pub fn lunar_to_solar(lunar: LunarDate, tz_offset: f64) -> Result<SolarDate, AstroError> {
+    check_year(lunar.year)?;
     check_tz_offset(tz_offset)?;
     let invalid = AstroError::InvalidLunarDate {
-        year: date.year,
-        month: date.month,
-        day: date.day,
-        is_leap_month: date.is_leap_month,
+        year: lunar.year,
+        month: lunar.month,
+        day: lunar.day,
+        is_leap_month: lunar.is_leap_month,
     };
-    if !(1..=12).contains(&date.month) || date.day == 0 {
+    if !(1..=12).contains(&lunar.month) || lunar.day == 0 {
         return Err(invalid);
     }
     // Months 11 and 12 (and a leap 11 or 12) follow the solstice of their own year; months
     // 1–10 follow the solstice of the previous year.
-    let solstice_year = if date.month >= 11 {
-        date.year
+    let solstice_year = if lunar.month >= 11 {
+        lunar.year
     } else {
-        date.year - 1
+        lunar.year - 1
     };
     months_after_solstice(solstice_year, tz_offset)
         .into_iter()
         .find(|span| {
-            span.year == date.year && span.month == date.month && span.is_leap == date.is_leap_month
+            span.year == lunar.year
+                && span.month == lunar.month
+                && span.is_leap == lunar.is_leap_month
         })
-        .filter(|span| i32::from(date.day) <= span.length())
-        .map(|span| SolarDate::from_jdn(span.first_jdn + i32::from(date.day) - 1))
+        .filter(|span| i32::from(lunar.day) <= span.length())
+        .map(|span| SolarDate::from_jdn(span.first_jdn + i32::from(lunar.day) - 1))
         .ok_or(invalid)
 }
 
@@ -167,7 +181,7 @@ impl MonthSpan {
 /// The lunar month containing day `jdn` of Gregorian year `year`.
 fn month_containing(jdn: i32, year: i32, tz_offset: f64) -> MonthSpan {
     let month_11 = month_11_lunation(year, tz_offset);
-    let spans = if jdn >= new_moon_day(month_11, tz_offset) {
+    let spans = if jdn >= get_new_moon_day(month_11, tz_offset) {
         month_spans(
             year,
             month_11,
@@ -198,19 +212,21 @@ fn months_after_solstice(year: i32, tz_offset: f64) -> Vec<MonthSpan> {
     )
 }
 
-/// Labels the months between lunations `month_11` (month 11 of Gregorian year `year`) and
+/// Labels the months between new moons `month_11` (month 11 of Gregorian year `year`) and
 /// `next_month_11` (exclusive).
 fn month_spans(year: i32, month_11: i32, next_month_11: i32, tz_offset: f64) -> Vec<MonthSpan> {
     let starts: Vec<i32> = (month_11..=next_month_11)
-        .map(|k| new_moon_day(k, tz_offset))
+        .map(|k| get_new_moon_day(k, tz_offset))
         .collect();
     let count = starts.len() - 1;
-    // A month has no principal term when the Sun stays in the same 30° sector from its first
-    // day to the next month's first day. With 13 months there are only 11 principal terms
-    // after the solstice for months 1…12, so such a month always exists.
-    let sector = |jdn: i32| (sun_longitude_at_local_midnight(jdn, tz_offset) / 30.0).floor() as i32;
+    // `getLeapMonthOffset`: a month has no principal term when the principal-term index is the
+    // same on its first day and on the next month's first day. With 13 months there are only
+    // 11 principal terms after the solstice for months 1…12, so such a month always exists.
     let leap_index = if count == 13 {
-        (1..count).find(|&i| sector(starts[i]) == sector(starts[i + 1]))
+        (1..count).find(|&i| {
+            get_solar_term_index(starts[i], tz_offset)
+                == get_solar_term_index(starts[i + 1], tz_offset)
+        })
     } else {
         None
     };
@@ -236,27 +252,17 @@ fn month_spans(year: i32, month_11: i32, next_month_11: i32, tz_offset: f64) -> 
     spans
 }
 
-/// Lunation number of month 11 of Gregorian year `year`: the month containing the December
-/// solstice.
+/// `getLunarMonth11`: number of the new moon that opens month 11 of Gregorian year `year`, the
+/// month containing the December solstice.
 fn month_11_lunation(year: i32, tz_offset: f64) -> i32 {
-    let december_31 = SolarDate {
-        year,
-        month: 12,
-        day: 31,
-    }
-    .to_jdn();
-    let k = lunation_on_or_before(december_31, tz_offset);
-    // If that month began after the solstice, month 11 is the one before it.
-    if sun_longitude_at_local_midnight(new_moon_day(k, tz_offset), tz_offset) >= 270.0 {
+    let k = lunation_on_or_before(jd_from_date(31, 12, year), tz_offset);
+    // Index 9 (270°) means the solstice had already passed when that month began, so month 11
+    // is the one before it.
+    if get_solar_term_index(get_new_moon_day(k, tz_offset), tz_offset) >= 9 {
         k - 1
     } else {
         k
     }
-}
-
-/// Apparent solar longitude at the local midnight that begins day `jdn`.
-fn sun_longitude_at_local_midnight(jdn: i32, tz_offset: f64) -> f64 {
-    apparent_longitude(jd_ut_to_jde(local_midnight_jd(jdn, tz_offset)))
 }
 
 #[cfg(test)]
@@ -271,6 +277,84 @@ mod tests {
             day,
             is_leap_month,
         }
+    }
+
+    /// `solar_to_lunar` for a date held as a [`SolarDate`].
+    fn lunar_of(date: SolarDate, tz_offset: f64) -> Result<LunarDate, AstroError> {
+        solar_to_lunar(date.day, date.month, date.year, tz_offset)
+    }
+
+    #[test]
+    fn tet_at_ty_falls_on_29_january_2025() {
+        assert_eq!(
+            solar_to_lunar(29, 1, 2025, VN),
+            Ok(lunar(2025, 1, 1, false))
+        );
+        assert_eq!(
+            lunar_to_solar(lunar(2025, 1, 1, false), VN),
+            Ok(date(2025, 1, 29))
+        );
+    }
+
+    #[test]
+    fn at_ty_2025_has_a_leap_sixth_month() {
+        assert_eq!(solar_to_lunar(25, 7, 2025, VN), Ok(lunar(2025, 6, 1, true)));
+        assert_eq!(
+            lunar_to_solar(lunar(2025, 6, 1, true), VN),
+            Ok(date(2025, 7, 25))
+        );
+        // The regular 6th month starts on 25 June; month 7 follows the leap month on 23 August.
+        assert_eq!(
+            solar_to_lunar(25, 6, 2025, VN),
+            Ok(lunar(2025, 6, 1, false))
+        );
+        assert_eq!(
+            solar_to_lunar(23, 8, 2025, VN),
+            Ok(lunar(2025, 7, 1, false))
+        );
+        assert_eq!(lunar_year(2025, VN).unwrap().leap_month, Some(6));
+    }
+
+    #[test]
+    fn vietnam_and_china_differ_when_a_new_moon_or_solstice_is_near_midnight() {
+        let tet = |year, tz_offset| lunar_to_solar(lunar(year, 1, 1, false), tz_offset);
+        // New moon at 16:29 UTC on 29 January 1968: 23:29 in Hà Nội, 00:29 next day in Beijing.
+        assert_eq!(tet(1968, VN), Ok(date(1968, 1, 29)));
+        assert_eq!(tet(1968, CN), Ok(date(1968, 1, 30)));
+        // The December 1984 solstice fell just before midnight at UTC+7 but just after it at
+        // UTC+8, on the new-moon day: China needed a leap 10th month in 1984, Vietnam a leap 2nd
+        // month in 1985, and Vietnamese Tết came a month earlier.
+        assert_eq!(tet(1985, VN), Ok(date(1985, 1, 21)));
+        assert_eq!(tet(1985, CN), Ok(date(1985, 2, 20)));
+        assert_eq!(lunar_year(1984, CN).unwrap().leap_month, Some(10));
+        assert_eq!(lunar_year(1984, VN).unwrap().leap_month, None);
+        assert_eq!(lunar_year(1985, VN).unwrap().leap_month, Some(2));
+        // 1987: China's leap month repeats month 6; in Vietnam the first month without a
+        // principal term comes one month later.
+        assert_eq!(lunar_year(1987, CN).unwrap().leap_month, Some(6));
+        assert_eq!(lunar_year(1987, VN).unwrap().leap_month, Some(7));
+        // New moons at 16:14 UTC on 17 February 2007 and 16:07 UTC on 2 February 2030.
+        assert_eq!(tet(2007, VN), Ok(date(2007, 2, 17)));
+        assert_eq!(tet(2007, CN), Ok(date(2007, 2, 18)));
+        assert_eq!(tet(2030, VN), Ok(date(2030, 2, 2)));
+        assert_eq!(tet(2030, CN), Ok(date(2030, 2, 3)));
+    }
+
+    #[test]
+    fn tet_1978_and_23_january_2033_are_the_same_in_vietnam_and_china() {
+        // The Mậu Ngọ new moon came at 14:53 UTC on 7 February 1978 (21:53 in Hà Nội, 22:53 in
+        // Beijing), so both countries celebrated Tết on 7 February.
+        assert_eq!(solar_to_lunar(7, 2, 1978, VN), Ok(lunar(1978, 1, 1, false)));
+        assert_eq!(solar_to_lunar(7, 2, 1978, CN), Ok(lunar(1978, 1, 1, false)));
+        // No new moon or principal term near midnight either: 23 Jan 2033 is 23/12 Nhâm Tý.
+        assert_eq!(
+            solar_to_lunar(23, 1, 2033, VN),
+            Ok(lunar(2032, 12, 23, false))
+        );
+        assert_eq!(
+            solar_to_lunar(23, 1, 2033, CN),
+            Ok(lunar(2032, 12, 23, false))
+        );
     }
 
     /// Tết Nguyên Đán in Vietnam, 1985–2030.
@@ -326,59 +410,17 @@ mod tests {
     #[test]
     fn tet_dates_in_vietnam() {
         for (year, month, day) in VIETNAMESE_TET {
-            let tet = date(year, month, day);
             assert_eq!(
-                solar_to_lunar(tet, VN),
+                solar_to_lunar(day, month, year, VN),
                 Ok(lunar(year, 1, 1, false)),
                 "Tết {year}"
             );
             assert_eq!(
                 lunar_to_solar(lunar(year, 1, 1, false), VN),
-                Ok(tet),
+                Ok(date(year, month, day)),
                 "Tết {year}"
             );
         }
-    }
-
-    #[test]
-    fn the_time_zone_moves_tet_when_a_new_moon_or_solstice_is_near_midnight() {
-        // 1968: new moon at 16:29 UTC on 29 January — 23:29 in Hà Nội, 00:29 next day in Beijing.
-        assert_eq!(
-            lunar_to_solar(lunar(1968, 1, 1, false), VN),
-            Ok(date(1968, 1, 29))
-        );
-        assert_eq!(
-            lunar_to_solar(lunar(1968, 1, 1, false), CN),
-            Ok(date(1968, 1, 30))
-        );
-        // 1985: the December 1984 solstice fell just before midnight at UTC+7 but just after
-        // it at UTC+8, on the new-moon day, so month 11 and Tết came a month earlier in Vietnam.
-        assert_eq!(
-            lunar_to_solar(lunar(1985, 1, 1, false), VN),
-            Ok(date(1985, 1, 21))
-        );
-        assert_eq!(
-            lunar_to_solar(lunar(1985, 1, 1, false), CN),
-            Ok(date(1985, 2, 20))
-        );
-        // 2007: new moon at 16:14 UTC on 17 February.
-        assert_eq!(
-            lunar_to_solar(lunar(2007, 1, 1, false), VN),
-            Ok(date(2007, 2, 17))
-        );
-        assert_eq!(
-            lunar_to_solar(lunar(2007, 1, 1, false), CN),
-            Ok(date(2007, 2, 18))
-        );
-        // 2030: new moon at 16:07 UTC on 2 February.
-        assert_eq!(
-            lunar_to_solar(lunar(2030, 1, 1, false), VN),
-            Ok(date(2030, 2, 2))
-        );
-        assert_eq!(
-            lunar_to_solar(lunar(2030, 1, 1, false), CN),
-            Ok(date(2030, 2, 3))
-        );
     }
 
     #[test]
@@ -417,40 +459,20 @@ mod tests {
     }
 
     #[test]
-    fn leap_month_boundaries() {
-        // 2023: leap 2nd month from 22 March (new moon at 00:23 UTC+7) to 19 April.
+    fn leap_month_boundaries_of_2023() {
+        // Leap 2nd month from 22 March (new moon at 00:23 UTC+7) to 19 April.
         assert_eq!(
-            solar_to_lunar(date(2023, 3, 21), VN),
+            solar_to_lunar(21, 3, 2023, VN),
             Ok(lunar(2023, 2, 30, false))
         );
+        assert_eq!(solar_to_lunar(22, 3, 2023, VN), Ok(lunar(2023, 2, 1, true)));
         assert_eq!(
-            solar_to_lunar(date(2023, 3, 22), VN),
-            Ok(lunar(2023, 2, 1, true))
-        );
-        assert_eq!(
-            solar_to_lunar(date(2023, 4, 19), VN),
+            solar_to_lunar(19, 4, 2023, VN),
             Ok(lunar(2023, 2, 29, true))
         );
         assert_eq!(
-            solar_to_lunar(date(2023, 4, 20), VN),
+            solar_to_lunar(20, 4, 2023, VN),
             Ok(lunar(2023, 3, 1, false))
-        );
-        // 2025: leap 6th month from 25 July to 22 August.
-        assert_eq!(
-            solar_to_lunar(date(2025, 6, 25), VN),
-            Ok(lunar(2025, 6, 1, false))
-        );
-        assert_eq!(
-            solar_to_lunar(date(2025, 7, 25), VN),
-            Ok(lunar(2025, 6, 1, true))
-        );
-        assert_eq!(
-            solar_to_lunar(date(2025, 8, 23), VN),
-            Ok(lunar(2025, 7, 1, false))
-        );
-        assert_eq!(
-            lunar_to_solar(lunar(2025, 6, 1, true), VN),
-            Ok(date(2025, 7, 25))
         );
     }
 
@@ -458,11 +480,11 @@ mod tests {
     fn last_days_of_the_lunar_year() {
         // Quý Mão ended with a 30-day month ("30 Tết"); Giáp Thìn with a 29-day one.
         assert_eq!(
-            solar_to_lunar(date(2024, 2, 9), VN),
+            solar_to_lunar(9, 2, 2024, VN),
             Ok(lunar(2023, 12, 30, false))
         );
         assert_eq!(
-            solar_to_lunar(date(2025, 1, 28), VN),
+            solar_to_lunar(28, 1, 2025, VN),
             Ok(lunar(2024, 12, 29, false))
         );
     }
@@ -492,18 +514,11 @@ mod tests {
         );
         // 1 January 1600 still belongs to lunar year 1599.
         assert_eq!(
-            solar_to_lunar(date(1600, 1, 1), VN),
+            solar_to_lunar(1, 1, 1600, VN),
             Err(AstroError::YearOutOfRange { year: 1599 })
         );
         assert_eq!(
-            solar_to_lunar(
-                SolarDate {
-                    year: 2023,
-                    month: 2,
-                    day: 29
-                },
-                VN
-            ),
+            solar_to_lunar(29, 2, 2023, VN),
             Err(AstroError::InvalidSolarDate {
                 year: 2023,
                 month: 2,
@@ -511,7 +526,7 @@ mod tests {
             })
         );
         assert!(matches!(
-            solar_to_lunar(date(2024, 1, 1), 15.0),
+            solar_to_lunar(1, 1, 2024, 15.0),
             Err(AstroError::InvalidTimeZone { .. })
         ));
         assert_eq!(
@@ -552,7 +567,7 @@ mod tests {
                 for day in [1, month.length] {
                     let expected = lunar(year, month.month, day, month.is_leap);
                     let solar = SolarDate::from_jdn(month.first_day.to_jdn() + i32::from(day) - 1);
-                    assert_eq!(solar_to_lunar(solar, VN), Ok(expected));
+                    assert_eq!(lunar_of(solar, VN), Ok(expected));
                     assert_eq!(lunar_to_solar(expected, VN), Ok(solar));
                 }
             }
