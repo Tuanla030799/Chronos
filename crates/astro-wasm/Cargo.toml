@@ -1,0 +1,19 @@
+[package]
+name = "astro-wasm"
+description = "WebAssembly / TypeScript bindings for astro-core."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+astro-core = { workspace = true, features = ["serde"] }
+serde.workspace = true
+serde-wasm-bindgen.workspace = true
+wasm-bindgen.workspace = true
+
+[dev-dependencies]
+wasm-bindgen-test.workspace = true

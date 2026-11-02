@@ -1,0 +1,23 @@
+[package]
+name = "astro-ffi"
+description = "UniFFI bindings (Swift / iOS) for astro-core."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "astro_ffi"
+crate-type = ["cdylib", "staticlib"]
+
+# Binding generator, built only on request so the library itself never pulls in uniffi's CLI.
+[[bin]]
+name = "uniffi-bindgen"
+required-features = ["bindgen"]
+
+[features]
+bindgen = ["uniffi/cli"]
+
+[dependencies]
+astro-core.workspace = true
+uniffi.workspace = true

@@ -1,0 +1,25 @@
+# viet-astro-engine: offline astronomy engine for the Vietnamese lunisolar calendar.
+#   astro-core  algorithms (pure Rust)
+#   astro-ffi   UniFFI bridge to Swift / iOS
+#   astro-wasm  wasm-bindgen bridge to the Web
+[workspace]
+resolver = "3"
+members = ["crates/astro-core", "crates/astro-ffi", "crates/astro-wasm"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+publish = false
+
+[workspace.dependencies]
+astro-core = { path = "crates/astro-core" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+uniffi = "0.32.2"
+wasm-bindgen = "0.2.130"
+wasm-bindgen-test = "0.3.80"
+
+[profile.release]
+lto = true
+codegen-units = 1

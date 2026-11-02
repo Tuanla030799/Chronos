@@ -1,0 +1,15 @@
+[package]
+name = "astro-core"
+description = "Offline astronomical engine for the Vietnamese lunisolar calendar, solar terms, Can Chi and the Four Pillars."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[features]
+default = []
+# Serialize/Deserialize for the public data types (used by the WebAssembly bridge).
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { workspace = true, optional = true }

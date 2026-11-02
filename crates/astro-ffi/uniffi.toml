@@ -1,0 +1,5 @@
+[bindings.swift]
+module_name = "AstroCore"
+ffi_module_name = "AstroCoreFFI"
+generate_case_iterable_conformance = true
+generate_codable_conformance = true
