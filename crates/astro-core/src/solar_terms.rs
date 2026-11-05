@@ -265,6 +265,27 @@ pub fn solar_terms_in_year(year: i32, tz_offset: f64) -> Result<Vec<SolarTermEve
     Ok(events)
 }
 
+/// Number of the solar month (tháng tiết khí) at apparent solar longitude `longitude`: 1 is the
+/// Dần month opened by Lập Xuân at 315°, 12 the Sửu month opened by Tiểu Hàn at 285°.
+pub fn solar_month_of_longitude(longitude: f64) -> u8 {
+    (normalize_degrees(longitude - 315.0) / 30.0).floor() as u8 + 1
+}
+
+/// Instants (Julian Days, UT) of the sectional terms (Tiết) before and after `jd_ut`.
+pub fn surrounding_sectional_terms(jd_ut: f64) -> (f64, f64) {
+    let longitude = get_sun_longitude_deg(jd_ut);
+    let solar_month = solar_month_of_longitude(longitude);
+    let previous = normalize_degrees(315.0 + 30.0 * f64::from(solar_month - 1));
+    let guess = jd_ut - normalize_degrees(longitude - previous) / MEAN_DAILY_MOTION;
+    (
+        sun_longitude_crossing(previous, guess),
+        sun_longitude_crossing(
+            normalize_degrees(previous + 30.0),
+            guess + 30.0 / MEAN_DAILY_MOTION,
+        ),
+    )
+}
+
 /// The solar term in effect at the instant `jd_ut`: the last one that began at or before it.
 pub fn solar_term_at(jd_ut: f64) -> SolarTerm {
     SolarTerm::from_sun_longitude(get_sun_longitude_deg(jd_ut))
@@ -426,6 +447,42 @@ mod tests {
         let solstice = events[23].local_time;
         assert_eq!((solstice.month, solstice.day, solstice.hour), (12, 21, 16));
         assert!(solstice.minute.abs_diff(20) <= 1, "{solstice:?}");
+    }
+
+    #[test]
+    fn solar_months_start_at_the_sectional_terms() {
+        assert_eq!(solar_month_of_longitude(315.0), 1);
+        assert_eq!(solar_month_of_longitude(344.9), 1);
+        assert_eq!(solar_month_of_longitude(345.0), 2);
+        assert_eq!(solar_month_of_longitude(0.0), 2);
+        assert_eq!(solar_month_of_longitude(255.0), 11);
+        assert_eq!(solar_month_of_longitude(314.9), 12);
+    }
+
+    #[test]
+    fn sectional_terms_around_an_instant() {
+        // Between Lập Xuân and Kinh Trập 2024, and on either side of 1 January.
+        let (previous, next) = surrounding_sectional_terms(utc(2024, 2, 10, 1, 0));
+        assert_eq!(
+            previous,
+            solar_term_jd_ut(SolarTerm::LapXuan, 2024).unwrap()
+        );
+        assert_close(
+            next,
+            solar_term_jd_ut(SolarTerm::KinhTrap, 2024).unwrap(),
+            1e-6,
+        );
+        let (previous, next) = surrounding_sectional_terms(utc(2024, 1, 1, 0, 0));
+        assert_close(
+            previous,
+            solar_term_jd_ut(SolarTerm::DaiTuyet, 2023).unwrap(),
+            1e-6,
+        );
+        assert_close(
+            next,
+            solar_term_jd_ut(SolarTerm::TieuHan, 2024).unwrap(),
+            1e-6,
+        );
     }
 
     #[test]

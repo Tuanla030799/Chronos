@@ -1,38 +1,53 @@
 //! The Four Pillars (Tứ Trụ / Bát Tự): the Can Chi of the year, month, day and hour of a birth.
 //!
-//! - The **year** pillar changes at Lập Xuân (Sun at 315°), not at Tết.
-//! - The **month** pillar changes at each sectional term (Tiết): Lập Xuân opens the Dần month,
-//!   Kinh Trập the Mão month, and so on every 30° of solar longitude. Its stem follows the
-//!   year stem by the same formula as lunar months (the Ngũ Hổ Độn rule).
+//! - With [`YearMonthBoundary::SolarTerms`] (the default) the **year** pillar changes at Lập Xuân
+//!   (Sun at 315°), not at Tết, and the **month** pillar changes at each sectional term (Tiết):
+//!   Lập Xuân opens the Dần month, Kinh Trập the Mão month, and so on every 30° of solar
+//!   longitude. Its stem follows the year stem by the same formula as lunar months (the Ngũ Hổ
+//!   Độn rule).
+//! - With [`YearMonthBoundary::LunarNewYear`] they follow the lunar calendar of the clock date
+//!   instead: the year changes at Tết and the month with each lunar month.
 //! - The **day** pillar is the 60-day cycle of the local date.
 //! - The **hour** pillar is the double-hour branch with its stem derived from the day stem
 //!   (the Ngũ Thử Độn rule).
 //!
-//! Year and month compare the birth *instant* with the solar terms, so they depend neither
-//! on the time zone nor on true solar time. Day and hour use local reckoning: the clock time,
+//! With solar terms, year and month compare the birth *instant* with the terms, so they depend
+//! neither on the time zone nor on true solar time. Day and hour use local reckoning: the clock time,
 //! or true solar time when the birthplace longitude is given.
 
-use crate::astronomy::delta_t::jd_ut_to_jde;
-use crate::astronomy::sun::apparent_longitude;
+use crate::DEFAULT_TZ_OFFSET;
+use crate::astronomy::get_sun_longitude_deg;
+use crate::canchi::{Branch, CanChi, day_can_chi, hour_can_chi, month_can_chi, year_can_chi};
 use crate::error::{AstroError, check_longitude, check_tz_offset, check_year};
-use crate::math::normalize_degrees;
-use crate::sexagenary::{
-    CanChi, EarthlyBranch, day_can_chi, hour_can_chi, month_can_chi, year_can_chi,
-};
+use crate::lunar_calendar::solar_to_lunar;
+use crate::solar_terms::solar_month_of_longitude;
 use crate::time::SolarDateTime;
 use crate::true_solar_time::apparent_solar_time;
 
 /// How a birth during the Tý double-hour (23:00–00:59) is assigned to a day.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum RatHourConvention {
     /// The day begins with the Tý hour at 23:00: a birth at 23:xx takes the next day's day
     /// pillar and that day's Tý hour pillar.
     NewDayAtRatHour,
-    /// Early and late Tý (Tý sớm / Tý muộn, 早子時 / 晚子時): the day changes at midnight. A
-    /// birth at 23:xx (late Tý) keeps the current day pillar but takes the next day's Tý hour
-    /// pillar; a birth at 00:xx (early Tý) belongs wholly to the new day.
+    /// The day changes at midnight. A birth during giờ Tý Sớm, 23:00–23:59 (晚子時 in Chinese
+    /// texts), keeps the Can Chi of that day but starts its hour pillar from the next day's
+    /// stem; a birth during giờ Tý Muộn, 00:00–00:59, belongs wholly to the new day.
+    #[default]
     SplitAtMidnight,
+}
+
+/// Where the year and month pillars change.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Default)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum YearMonthBoundary {
+    /// At the solar terms: Lập Xuân for the year, each Tiết for the month.
+    #[default]
+    SolarTerms,
+    /// At Tết for the year and at each lunar month for the month; a leap month carries the Can
+    /// Chi of the month it repeats.
+    LunarNewYear,
 }
 
 /// Settings for [`four_pillars`].
@@ -47,6 +62,19 @@ pub struct FourPillarsOptions {
     pub longitude: Option<f64>,
     /// Treatment of the Tý double-hour.
     pub rat_hour: RatHourConvention,
+    /// Where the year and month pillars change.
+    pub boundary: YearMonthBoundary,
+}
+
+impl Default for FourPillarsOptions {
+    fn default() -> Self {
+        Self {
+            tz_offset: DEFAULT_TZ_OFFSET,
+            longitude: None,
+            rat_hour: RatHourConvention::default(),
+            boundary: YearMonthBoundary::default(),
+        }
+    }
 }
 
 /// The Four Pillars of a birth.
@@ -79,16 +107,22 @@ pub fn four_pillars(
         check_longitude(longitude)?;
     }
     let jd_ut = birth.to_julian_day(options.tz_offset);
-
-    // Solar month 1 is Dần (opened by Lập Xuân at 315°) … 12 is Sửu (opened by Tiểu Hàn).
-    let sun_longitude = apparent_longitude(jd_ut_to_jde(jd_ut));
-    let solar_month = (normalize_degrees(sun_longitude - 315.0) / 30.0).floor() as u8 + 1;
-    // The Tý and Sửu months straddle 1 January; in January and early February they still
-    // belong to the pillar year that began at the previous Lập Xuân.
-    let pillar_year = if solar_month >= 11 && birth.month <= 2 {
-        birth.year - 1
-    } else {
-        birth.year
+    let (pillar_year, pillar_month) = match options.boundary {
+        YearMonthBoundary::SolarTerms => {
+            let solar_month = solar_month_of_longitude(get_sun_longitude_deg(jd_ut));
+            // The Tý and Sửu months straddle 1 January; in January and early February they
+            // still belong to the pillar year that began at the previous Lập Xuân.
+            let year = if solar_month >= 11 && birth.month <= 2 {
+                birth.year - 1
+            } else {
+                birth.year
+            };
+            (year, solar_month)
+        }
+        YearMonthBoundary::LunarNewYear => {
+            let lunar = solar_to_lunar(birth.day, birth.month, birth.year, options.tz_offset)?;
+            (lunar.year, lunar.month)
+        }
     };
 
     let effective_time = match options.longitude {
@@ -109,12 +143,12 @@ pub fn four_pillars(
     };
     let hour = hour_can_chi(
         day_can_chi(hour_day_jdn).stem,
-        EarthlyBranch::from_hour(effective_time.hour),
+        Branch::from_hour(effective_time.hour),
     );
 
     Ok(FourPillars {
         year: year_can_chi(pillar_year),
-        month: month_can_chi(pillar_year, solar_month),
+        month: month_can_chi(pillar_year, pillar_month),
         day: day_can_chi(day_jdn),
         hour,
         effective_time,
@@ -125,19 +159,19 @@ pub fn four_pillars(
 mod tests {
     use super::RatHourConvention::{NewDayAtRatHour, SplitAtMidnight};
     use super::*;
-    use crate::sexagenary::CelestialStem::{self, At, Binh, Dinh, Giap, Mau, Quy};
-    use crate::sexagenary::EarthlyBranch::{Dan, Mao, Ngo, Suu, Thin, Ti, Ty};
+    use crate::canchi::Branch::{Dan, Mao, Ngo, Suu, Thin, Ti, Ty};
+    use crate::canchi::Stem::{self, At, Binh, Dinh, Giap, Mau, Quy};
     use crate::test_support::{VN, date, date_time};
 
-    fn pair(stem: CelestialStem, branch: EarthlyBranch) -> CanChi {
+    fn pair(stem: Stem, branch: Branch) -> CanChi {
         CanChi::new(stem, branch).expect("test pairs are valid")
     }
 
     fn by_clock(rat_hour: RatHourConvention) -> FourPillarsOptions {
         FourPillarsOptions {
             tz_offset: VN,
-            longitude: None,
             rat_hour,
+            ..FourPillarsOptions::default()
         }
     }
 
@@ -231,12 +265,56 @@ mod tests {
             tz_offset: VN,
             longitude: Some(103.0),
             rat_hour,
+            boundary: YearMonthBoundary::SolarTerms,
         };
         let split = four_pillars(clock, &at(SplitAtMidnight)).unwrap();
         assert_eq!(split.effective_time.date(), date(2024, 2, 10));
         assert_eq!((split.day, split.hour), (pair(Giap, Thin), pair(Binh, Ty)));
         let new_day = four_pillars(clock, &at(NewDayAtRatHour)).unwrap();
         assert_eq!((new_day.day, new_day.hour), (pair(At, Ti), pair(Binh, Ty)));
+    }
+
+    #[test]
+    fn defaults_follow_the_project_decisions() {
+        let options = FourPillarsOptions::default();
+        assert_eq!(options.tz_offset, VN);
+        assert_eq!(options.rat_hour, SplitAtMidnight);
+        assert_eq!(options.boundary, YearMonthBoundary::SolarTerms);
+    }
+
+    #[test]
+    fn ty_som_keeps_the_day_but_starts_the_hour_from_the_next_day() {
+        let chart = four_pillars(
+            date_time(2024, 2, 10, 23, 30),
+            &FourPillarsOptions::default(),
+        )
+        .unwrap();
+        assert_eq!(chart.day, pair(Giap, Thin));
+        assert_eq!(chart.hour, pair(Binh, Ty));
+    }
+
+    #[test]
+    fn lunar_new_year_boundary_follows_tet_and_lunar_months() {
+        let lunar = FourPillarsOptions {
+            boundary: YearMonthBoundary::LunarNewYear,
+            ..FourPillarsOptions::default()
+        };
+        // 5 February 2024 is after Lập Xuân but before Tết: 26/12 of Quý Mão.
+        let birth = date_time(2024, 2, 5, 10, 0);
+        let by_terms = pillars(birth);
+        assert_eq!(
+            (by_terms.year, by_terms.month),
+            (pair(Giap, Thin), pair(Binh, Dan))
+        );
+        let by_tet = four_pillars(birth, &lunar).unwrap();
+        assert_eq!((by_tet.year, by_tet.month), (pair(Quy, Mao), pair(At, Suu)));
+        assert_eq!(by_tet.day, by_terms.day);
+        // From Tết the year changes; the leap 6th month of 2025 carries the Can Chi of month 6.
+        let tet = four_pillars(date_time(2024, 2, 10, 8, 0), &lunar).unwrap();
+        assert_eq!((tet.year, tet.month), (pair(Giap, Thin), pair(Binh, Dan)));
+        let regular = four_pillars(date_time(2025, 6, 25, 8, 0), &lunar).unwrap();
+        let leap = four_pillars(date_time(2025, 7, 25, 8, 0), &lunar).unwrap();
+        assert_eq!(regular.month, leap.month);
     }
 
     #[test]

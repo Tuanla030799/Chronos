@@ -26,6 +26,6 @@
 
 ## 5. Engineering Standards
 
-- **Strong Typing**: Leverage Rust's `enum` and `struct` exhaustively (e.g., `enum CelestialStem`, `enum EarthlyBranch`, `enum SolarTerm`).
+- **Strong Typing**: Leverage Rust's `enum` and `struct` exhaustively (e.g., `enum Stem`, `enum Branch`, `enum SolarTerm`).
 - **Test-Driven Development**: Every new module or function in `astro-core` must include corresponding `#[cfg(test)]` Unit Tests covering edge cases (leap years, timezone boundaries).
 - **No Placeholders**: Never use `TODO`, `// implement later`, or stub functions. Write complete, production-ready code.

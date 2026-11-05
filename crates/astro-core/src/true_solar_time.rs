@@ -83,7 +83,7 @@ pub(crate) fn apparent_solar_time(jd_ut: f64, longitude: f64) -> SolarDateTime {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::sexagenary::EarthlyBranch;
+    use crate::canchi::Branch;
     use crate::test_support::{assert_close, date, date_time, utc};
 
     #[test]
@@ -118,12 +118,12 @@ mod tests {
         let november =
             to_true_solar_time(clock(11, 3), HO_CHI_MINH, VIETNAM_STANDARD_MERIDIAN).unwrap();
         assert_eq!((november.hour, november.minute), (23, 17));
-        assert_eq!(EarthlyBranch::from_hour(november.hour), EarthlyBranch::Ty);
+        assert_eq!(Branch::from_hour(november.hour), Branch::Ty);
         // Mid-February: +6.5 − 14.2 min → 22:47, still Hợi.
         let february =
             to_true_solar_time(clock(2, 11), HO_CHI_MINH, VIETNAM_STANDARD_MERIDIAN).unwrap();
         assert_eq!((february.hour, february.minute), (22, 47));
-        assert_eq!(EarthlyBranch::from_hour(february.hour), EarthlyBranch::Hoi);
+        assert_eq!(Branch::from_hour(february.hour), Branch::Hoi);
     }
 
     #[test]

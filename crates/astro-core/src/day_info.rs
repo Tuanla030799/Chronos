@@ -1,8 +1,8 @@
 //! Everything a calendar cell shows for one Gregorian date, in a single call.
 
+use crate::canchi::{CanChi, day_can_chi, month_can_chi, year_can_chi};
 use crate::error::AstroError;
 use crate::lunar_calendar::{LunarDate, solar_to_lunar};
-use crate::sexagenary::{CanChi, day_can_chi, month_can_chi, year_can_chi};
 use crate::solar_terms::{SolarTerm, solar_term_at};
 use crate::time::{SolarDate, local_midnight_jd};
 

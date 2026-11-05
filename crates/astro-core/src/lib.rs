@@ -22,28 +22,34 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+pub mod almanac;
 pub mod astronomy;
+pub mod bazi_analysis;
+pub mod bazi_pillars;
+pub mod canchi;
 pub mod day_info;
 pub mod engine;
 mod error;
-pub mod four_pillars;
 pub mod lunar_calendar;
 mod math;
-pub mod sexagenary;
 pub mod solar_terms;
 #[cfg(test)]
 mod test_support;
 pub mod time;
 pub mod true_solar_time;
 
+pub use almanac::{AgeRestrictions, AlmanacDay, age_restrictions, almanac_day};
+pub use bazi_analysis::{BaziAnalysis, Gender, analyze_bazi};
+pub use bazi_pillars::{
+    FourPillars, FourPillarsOptions, RatHourConvention, YearMonthBoundary, four_pillars,
+};
+pub use canchi::{Branch, CanChi, FiveElements, NaYin, Stem, YinYang};
 pub use day_info::{DayInfo, day_info};
 pub use engine::{ConnectionCheck, ENGINE_VERSION, check_connection};
 pub use error::AstroError;
-pub use four_pillars::{FourPillars, FourPillarsOptions, RatHourConvention, four_pillars};
 pub use lunar_calendar::{
     LunarDate, LunarMonth, LunarYear, lunar_to_solar, lunar_year, solar_to_lunar,
 };
-pub use sexagenary::{CanChi, CelestialStem, EarthlyBranch};
 pub use solar_terms::{SolarTerm, SolarTermEvent, get_exact_solar_term_time, solar_terms_in_year};
 pub use time::{SolarDate, SolarDateTime};
 pub use true_solar_time::{VIETNAM_STANDARD_MERIDIAN, to_true_solar_time};

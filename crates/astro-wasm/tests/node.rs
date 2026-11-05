@@ -6,8 +6,9 @@ use astro_core::{
     SolarDateTime,
 };
 use astro_wasm::{
-    can_chi_name, check_connection, day_info, four_pillars, lunar_to_solar, lunar_year,
-    solar_term_name, solar_terms_in_year, solar_to_lunar, true_solar_time,
+    age_restrictions, almanac_day, analyze_bazi, branch_name, can_chi_name, check_connection,
+    day_info, four_pillars, kim_lau_name, lunar_to_solar, lunar_year, main_hidden_stem,
+    solar_term_name, solar_terms_in_year, solar_to_lunar, stem_name, truc_name, true_solar_time,
 };
 use serde::Serialize;
 use serde::de::DeserializeOwned;
@@ -111,6 +112,38 @@ fn four_pillars_fills_in_default_options() {
     assert_eq!(chart.day, CanChi::from_cycle_index(40));
     let solar: SolarDateTime = rust(true_solar_time(js(&birth), 105.0, None));
     assert_eq!(solar.hour, 23);
+}
+
+#[wasm_bindgen_test]
+fn analysis_almanac_and_age_restrictions() {
+    let birth = SolarDateTime {
+        year: 2024,
+        month: 2,
+        day: 10,
+        hour: 8,
+        minute: 0,
+        second: 0,
+    };
+    let analysis: astro_core::BaziAnalysis = rust(analyze_bazi(
+        js(&birth),
+        js(&std::collections::BTreeMap::<&str, &str>::new()),
+        JsValue::from_str("Male"),
+    ));
+    assert!(analysis.dai_van.forward);
+
+    let main_stem = main_hidden_stem(JsValue::from_str("Dan")).unwrap();
+    assert_eq!(stem_name(main_stem).unwrap(), "Giáp");
+    assert_eq!(branch_name(JsValue::from_str("Ti")).unwrap(), "Tỵ");
+
+    let day: astro_core::AlmanacDay = rust(almanac_day(js(&TET_2024), None));
+    assert_eq!(truc_name(js(&day.truc)).unwrap(), "Mãn");
+
+    let restrictions: astro_core::AgeRestrictions = rust(age_restrictions(1990, 2026));
+    assert_eq!(restrictions.lunar_age, 37);
+    assert_eq!(
+        kim_lau_name(js(&restrictions.kim_lau.unwrap())).unwrap(),
+        "Kim Lâu Thân"
+    );
 }
 
 #[wasm_bindgen_test]

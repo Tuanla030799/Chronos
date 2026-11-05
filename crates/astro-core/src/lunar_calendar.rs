@@ -107,8 +107,34 @@ pub fn lunar_to_solar(lunar: LunarDate, tz_offset: f64) -> Result<SolarDate, Ast
         day: lunar.day,
         is_leap_month: lunar.is_leap_month,
     };
-    if !(1..=12).contains(&lunar.month) || lunar.day == 0 {
+    if lunar.day == 0 {
         return Err(invalid);
+    }
+    month_span(lunar, tz_offset)
+        .filter(|span| i32::from(lunar.day) <= span.length())
+        .map(|span| SolarDate::from_jdn(span.first_jdn + i32::from(lunar.day) - 1))
+        .ok_or(invalid)
+}
+
+/// Number of days (29 or 30) of the lunar month containing `lunar`, in a zone `tz_offset` hours
+/// east of UTC. The day of `lunar` is not used.
+pub fn lunar_month_length(lunar: LunarDate, tz_offset: f64) -> Result<u8, AstroError> {
+    check_year(lunar.year)?;
+    check_tz_offset(tz_offset)?;
+    month_span(lunar, tz_offset)
+        .map(|span| span.length() as u8)
+        .ok_or(AstroError::InvalidLunarDate {
+            year: lunar.year,
+            month: lunar.month,
+            day: lunar.day,
+            is_leap_month: lunar.is_leap_month,
+        })
+}
+
+/// The month of `lunar`, or `None` if that month does not exist.
+fn month_span(lunar: LunarDate, tz_offset: f64) -> Option<MonthSpan> {
+    if !(1..=12).contains(&lunar.month) {
+        return None;
     }
     // Months 11 and 12 (and a leap 11 or 12) follow the solstice of their own year; months
     // 1–10 follow the solstice of the previous year.
@@ -124,9 +150,6 @@ pub fn lunar_to_solar(lunar: LunarDate, tz_offset: f64) -> Result<SolarDate, Ast
                 && span.month == lunar.month
                 && span.is_leap == lunar.is_leap_month
         })
-        .filter(|span| i32::from(lunar.day) <= span.length())
-        .map(|span| SolarDate::from_jdn(span.first_jdn + i32::from(lunar.day) - 1))
-        .ok_or(invalid)
 }
 
 /// All months of lunar year `year` in a zone `tz_offset` hours east of UTC.
@@ -487,6 +510,15 @@ mod tests {
             solar_to_lunar(28, 1, 2025, VN),
             Ok(lunar(2024, 12, 29, false))
         );
+    }
+
+    #[test]
+    fn month_lengths() {
+        assert_eq!(lunar_month_length(lunar(2023, 12, 1, false), VN), Ok(30));
+        assert_eq!(lunar_month_length(lunar(2024, 12, 1, false), VN), Ok(29));
+        assert_eq!(lunar_month_length(lunar(2023, 2, 1, true), VN), Ok(29));
+        assert!(lunar_month_length(lunar(2024, 4, 1, true), VN).is_err());
+        assert!(lunar_month_length(lunar(2024, 13, 1, false), VN).is_err());
     }
 
     #[test]
