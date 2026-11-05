@@ -5,8 +5,7 @@
 /build
 /crates/astro-wasm/pkg
 
-# Local only: progress notes, the MCP server's SQLite dev database, personal Claude Code settings
-/docs/
+# Local only: the MCP server's SQLite dev database, personal Claude Code settings
 /dev-data/
 /.claude/settings.local.json
 
@@ -16,3 +15,4 @@ DerivedData/
 
 # macOS
 .DS_Store
+.ref/
