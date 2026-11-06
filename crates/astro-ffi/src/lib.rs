@@ -2,7 +2,9 @@
 //!
 //! The core types are mirrored with `#[uniffi::remote]`, so foreign code receives exactly the
 //! records and enums of astro-core with no conversion layer. Every `tz_offset` argument
-//! defaults to 7.0 (Vietnam, UTC+7) in the generated bindings.
+//! defaults to 7.0 (Vietnam, UTC+7) in the generated bindings. UniFFI has no literal default
+//! for an enum, so every `NineStarBoundary` argument is optional instead: omitting it means
+//! `NineStarBoundary::default()`.
 
 use astro_core::almanac::{
     AgeRestrictions, AlmanacDay, AlmanacGod, HoangOc, KimLau, Luck, Mansion, PathGod, TamTai, Truc,
@@ -12,10 +14,14 @@ use astro_core::bazi_analysis::{
     BaziAnalysis, BaziStar, DaiVan, Gender, HiddenStem, KhongVong, LifeStage, LuckCycle,
     PillarPosition, PillarReading, StarBasis, StarPlacement, TenGod,
 };
+use astro_core::fengshui::{
+    CompassDirection, DirectionStar, EightMansionsStar, FlyingStar, KuaCompatibility, KuaInfo,
+    LoShuGrid, NineStar, NineStarBoundary, NineStars, Palace, TamNguyen, Trigram, TrigramGroup,
+};
 use astro_core::{
-    AstroError, Branch, CanChi, ConnectionCheck, DayInfo, FourPillars, FourPillarsOptions,
-    LunarDate, LunarMonth, LunarYear, NaYin, RatHourConvention, SolarDate, SolarDateTime,
-    SolarTerm, SolarTermEvent, Stem, YearMonthBoundary,
+    AstroError, Branch, CanChi, ConnectionCheck, DayInfo, FiveElements, FourPillars,
+    FourPillarsOptions, LunarDate, LunarMonth, LunarYear, NaYin, RatHourConvention, SolarDate,
+    SolarDateTime, SolarTerm, SolarTermEvent, Stem, YearMonthBoundary,
 };
 
 uniffi::setup_scaffolding!();
@@ -522,6 +528,151 @@ pub struct AgeRestrictions {
     pub hoang_oc: Option<HoangOc>,
 }
 
+#[uniffi::remote(Enum)]
+pub enum FiveElements {
+    Moc,
+    Hoa,
+    Tho,
+    Kim,
+    Thuy,
+}
+
+#[uniffi::remote(Enum)]
+pub enum Trigram {
+    Kham,
+    Khon,
+    Chan,
+    Ton,
+    CanKim,
+    Doai,
+    CanTho,
+    Ly,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TrigramGroup {
+    DongTu,
+    TayTu,
+}
+
+#[uniffi::remote(Enum)]
+pub enum Palace {
+    Kham,
+    Khon,
+    Chan,
+    Ton,
+    TrungCung,
+    CanKim,
+    Doai,
+    CanTho,
+    Ly,
+}
+
+#[uniffi::remote(Enum)]
+pub enum CompassDirection {
+    Bac,
+    DongBac,
+    Dong,
+    DongNam,
+    Nam,
+    TayNam,
+    Tay,
+    TayBac,
+}
+
+#[uniffi::remote(Enum)]
+pub enum EightMansionsStar {
+    SinhKhi,
+    ThienY,
+    DienNien,
+    PhucVi,
+    TuyetMenh,
+    NguQuy,
+    LucSat,
+    HoaHai,
+}
+
+#[uniffi::remote(Enum)]
+pub enum NineStar {
+    NhatBach,
+    NhiHac,
+    TamBich,
+    TuLuc,
+    NguHoang,
+    LucBach,
+    ThatXich,
+    BatBach,
+    CuuTu,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TamNguyen {
+    ThuongNguyen,
+    TrungNguyen,
+    HaNguyen,
+}
+
+#[uniffi::remote(Enum)]
+pub enum NineStarBoundary {
+    LunarNewYear,
+    LapXuanDay,
+    LapXuanExact,
+}
+
+#[uniffi::remote(Record)]
+pub struct DirectionStar {
+    pub direction: CompassDirection,
+    pub star: EightMansionsStar,
+}
+
+#[uniffi::remote(Record)]
+pub struct KuaInfo {
+    pub birth_lunar_year: i32,
+    pub gender: Gender,
+    pub raw_number: u8,
+    pub number: u8,
+    pub trigram: Trigram,
+    pub group: TrigramGroup,
+}
+
+#[uniffi::remote(Record)]
+pub struct KuaCompatibility {
+    pub first: KuaInfo,
+    pub second: KuaInfo,
+    pub star: EightMansionsStar,
+    pub luck: Luck,
+}
+
+#[uniffi::remote(Record)]
+pub struct FlyingStar {
+    pub star: NineStar,
+    pub forward: bool,
+}
+
+#[uniffi::remote(Record)]
+pub struct NineStars {
+    pub nguyen: TamNguyen,
+    pub van: NineStar,
+    pub year: NineStar,
+    pub month: NineStar,
+    pub day: FlyingStar,
+    pub hour: FlyingStar,
+}
+
+#[uniffi::remote(Record)]
+pub struct LoShuGrid {
+    pub forward: bool,
+    pub kham: NineStar,
+    pub khon: NineStar,
+    pub chan: NineStar,
+    pub ton: NineStar,
+    pub trung_cung: NineStar,
+    pub can_kim: NineStar,
+    pub doai: NineStar,
+    pub can_tho: NineStar,
+    pub ly: NineStar,
+}
+
 /// Connection check: sends `date` to the Rust core and gets it back, validated, with its Julian
 /// Day Number and the engine version.
 #[uniffi::export]
@@ -748,16 +899,347 @@ pub fn hoang_oc_name(value: HoangOc) -> String {
     value.name_vi().to_owned()
 }
 
+/// Mệnh Quái of a person born in a lunar year.
+#[uniffi::export]
+pub fn kua_info(birth_lunar_year: i32, gender: Gender) -> KuaInfo {
+    astro_core::fengshui::kua_info(birth_lunar_year, gender)
+}
+
+/// Compatibility of two people by the Eight Mansions; their order does not matter.
+#[uniffi::export]
+pub fn kua_compatibility(first: KuaInfo, second: KuaInfo) -> KuaCompatibility {
+    astro_core::fengshui::kua_compatibility(first, second)
+}
+
+/// Trạch Quái of a house from its sitting direction (Tọa): a house sitting north is Khảm.
+#[uniffi::export]
+pub fn house_trigram(sitting: CompassDirection) -> Trigram {
+    astro_core::fengshui::house_trigram(sitting)
+}
+
+/// Trạch Quái of a house from its facing direction; it sits the opposite way.
+#[uniffi::export]
+pub fn house_trigram_from_facing(facing: CompassDirection) -> Trigram {
+    astro_core::fengshui::house_trigram_from_facing(facing)
+}
+
+/// The opposite direction: a house facing south sits north.
+#[uniffi::export]
+pub fn opposite_direction(direction: CompassDirection) -> CompassDirection {
+    direction.opposite()
+}
+
+/// Trigram of a compass direction.
+#[uniffi::export]
+pub fn direction_trigram(direction: CompassDirection) -> Trigram {
+    direction.trigram()
+}
+
+/// Star of the Eight Mansions between two trigrams; their order does not matter.
+#[uniffi::export]
+pub fn star_towards(trigram: Trigram, other: Trigram) -> EightMansionsStar {
+    trigram.star_towards(other)
+}
+
+/// Star of the Eight Mansions in a direction, for a Mệnh Quái or a Trạch Quái.
+#[uniffi::export]
+pub fn star_at(trigram: Trigram, direction: CompassDirection) -> EightMansionsStar {
+    trigram.star_at(direction)
+}
+
+/// Stars of the eight directions of a trigram, clockwise from north.
+#[uniffi::export]
+pub fn eight_mansions_chart(trigram: Trigram) -> Vec<DirectionStar> {
+    trigram.chart().to_vec()
+}
+
+/// Era, period and stars ruling a wall-clock time; `boundary` defaults to `LapXuanDay`.
+#[uniffi::export(default(tz_offset = 7.0, boundary))]
+pub fn nine_stars(
+    time: SolarDateTime,
+    tz_offset: f64,
+    boundary: Option<NineStarBoundary>,
+) -> Result<NineStars, AstroError> {
+    astro_core::fengshui::nine_stars(time, tz_offset, boundary.unwrap_or_default())
+}
+
+/// Year star (Niên Tinh) at a wall-clock time; `boundary` defaults to `LapXuanDay`.
+#[uniffi::export(default(tz_offset = 7.0, boundary))]
+pub fn year_nine_star(
+    time: SolarDateTime,
+    tz_offset: f64,
+    boundary: Option<NineStarBoundary>,
+) -> Result<NineStar, AstroError> {
+    astro_core::fengshui::year_nine_star(time, tz_offset, boundary.unwrap_or_default())
+}
+
+/// Month star (Nguyệt Tinh) at a wall-clock time; `boundary` defaults to `LapXuanDay`.
+#[uniffi::export(default(tz_offset = 7.0, boundary))]
+pub fn month_nine_star(
+    time: SolarDateTime,
+    tz_offset: f64,
+    boundary: Option<NineStarBoundary>,
+) -> Result<NineStar, AstroError> {
+    astro_core::fengshui::month_nine_star(time, tz_offset, boundary.unwrap_or_default())
+}
+
+/// Day star (Nhật Tinh) of a Gregorian date, with the direction it flies in.
+#[uniffi::export(default(tz_offset = 7.0))]
+pub fn day_nine_star(date: SolarDate, tz_offset: f64) -> Result<FlyingStar, AstroError> {
+    astro_core::fengshui::day_nine_star(date, tz_offset)
+}
+
+/// Hour star (Thời Tinh) at a wall-clock time, with the direction it flies in.
+#[uniffi::export(default(tz_offset = 7.0))]
+pub fn hour_nine_star(time: SolarDateTime, tz_offset: f64) -> Result<FlyingStar, AstroError> {
+    astro_core::fengshui::hour_nine_star(time, tz_offset)
+}
+
+/// Year star (Niên Tinh) of a year: 2024 is Tam Bích.
+#[uniffi::export]
+pub fn star_of_year(year: i32) -> NineStar {
+    astro_core::fengshui::star_of_year(year)
+}
+
+/// Ruling star of the 20-year period (Vận) of a year: 2024–2043 is Cửu Tử.
+#[uniffi::export]
+pub fn van_of_year(year: i32) -> NineStar {
+    astro_core::fengshui::van_of_year(year)
+}
+
+/// Era (Nguyên) of a year: 1984–2043 is Hạ Nguyên.
+#[uniffi::export]
+pub fn nguyen_of_year(year: i32) -> TamNguyen {
+    astro_core::fengshui::nguyen_of_year(year)
+}
+
+/// Lo Shu grid with `center_star` in the center, flying forward (thuận) by default.
+#[uniffi::export(default(forward = true))]
+pub fn generate_loshu_grid(center_star: NineStar, forward: bool) -> LoShuGrid {
+    astro_core::fengshui::generate_loshu_grid(center_star, forward)
+}
+
+/// Star in one palace of a Lo Shu grid.
+#[uniffi::export]
+pub fn lo_shu_star_at(grid: LoShuGrid, palace: Palace) -> NineStar {
+    grid.star_at(palace)
+}
+
+/// The 3×3 layout of a Lo Shu grid, south on top: three rows of three stars.
+#[uniffi::export]
+pub fn lo_shu_rows(grid: LoShuGrid) -> Vec<Vec<NineStar>> {
+    grid.rows().into_iter().map(Vec::from).collect()
+}
+
+/// Vietnamese name of a trigram, e.g. "Khảm".
+#[uniffi::export]
+pub fn trigram_name(value: Trigram) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Hán character of a trigram, e.g. "坎".
+#[uniffi::export]
+pub fn trigram_han_name(value: Trigram) -> String {
+    value.name_han().to_owned()
+}
+
+/// Lạc Thư number of a trigram: 1–4 or 6–9.
+#[uniffi::export]
+pub fn trigram_number(value: Trigram) -> u8 {
+    value.number()
+}
+
+/// Element of a trigram.
+#[uniffi::export]
+pub fn trigram_element(value: Trigram) -> FiveElements {
+    value.element()
+}
+
+/// Group of a trigram: Đông Tứ or Tây Tứ.
+#[uniffi::export]
+pub fn trigram_group(value: Trigram) -> TrigramGroup {
+    value.group()
+}
+
+/// Compass direction of a trigram.
+#[uniffi::export]
+pub fn trigram_direction(value: Trigram) -> CompassDirection {
+    value.direction()
+}
+
+/// Palace of the Lo Shu grid held by a trigram.
+#[uniffi::export]
+pub fn trigram_palace(value: Trigram) -> Palace {
+    value.palace()
+}
+
+/// Vietnamese name of a trigram group, "Đông Tứ" or "Tây Tứ".
+#[uniffi::export]
+pub fn trigram_group_name(value: TrigramGroup) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of a palace, e.g. "Trung Cung".
+#[uniffi::export]
+pub fn palace_name(value: Palace) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Hán character of a palace, e.g. "中".
+#[uniffi::export]
+pub fn palace_han_name(value: Palace) -> String {
+    value.name_han().to_owned()
+}
+
+/// Lạc Thư number of a palace, from 1 (Khảm) to 9 (Ly).
+#[uniffi::export]
+pub fn palace_number(value: Palace) -> u8 {
+    value.number()
+}
+
+/// Element of a palace.
+#[uniffi::export]
+pub fn palace_element(value: Palace) -> FiveElements {
+    value.element()
+}
+
+/// Trigram of a palace; the center has none.
+#[uniffi::export]
+pub fn palace_trigram(value: Palace) -> Option<Trigram> {
+    value.trigram()
+}
+
+/// Compass direction of a palace; the center has none.
+#[uniffi::export]
+pub fn palace_direction(value: Palace) -> Option<CompassDirection> {
+    value.direction()
+}
+
+/// Vietnamese name of a compass direction, e.g. "Đông Bắc".
+#[uniffi::export]
+pub fn compass_direction_name(value: CompassDirection) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of an Eight Mansions star, e.g. "Sinh Khí".
+#[uniffi::export]
+pub fn eight_mansions_star_name(value: EightMansionsStar) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Hán characters of an Eight Mansions star, e.g. "生气".
+#[uniffi::export]
+pub fn eight_mansions_star_han_name(value: EightMansionsStar) -> String {
+    value.name_han().to_owned()
+}
+
+/// Name of the star corresponding to an Eight Mansions star, e.g. "Tham Lang" for Sinh Khí.
+#[uniffi::export]
+pub fn eight_mansions_star_corresponding_name(value: EightMansionsStar) -> String {
+    value.corresponding_star_name().to_owned()
+}
+
+/// Fortune of an Eight Mansions star.
+#[uniffi::export]
+pub fn eight_mansions_star_luck(value: EightMansionsStar) -> Luck {
+    value.luck()
+}
+
+/// Vietnamese name of a Nine Star, e.g. "Nhất Bạch Thủy".
+#[uniffi::export]
+pub fn nine_star_name(value: NineStar) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Hán characters of a Nine Star, e.g. "一白水".
+#[uniffi::export]
+pub fn nine_star_han_name(value: NineStar) -> String {
+    value.name_han().to_owned()
+}
+
+/// Number of a Nine Star, from 1 to 9.
+#[uniffi::export]
+pub fn nine_star_number(value: NineStar) -> u8 {
+    value.number()
+}
+
+/// Element of a Nine Star.
+#[uniffi::export]
+pub fn nine_star_element(value: NineStar) -> FiveElements {
+    value.element()
+}
+
+/// Vietnamese name of the color of a Nine Star, e.g. "Xanh biếc".
+#[uniffi::export]
+pub fn nine_star_color_name(value: NineStar) -> String {
+    value.color_vi().to_owned()
+}
+
+/// Palace where a Nine Star belongs in the original Lạc Thư square.
+#[uniffi::export]
+pub fn nine_star_home_palace(value: NineStar) -> Palace {
+    value.home_palace()
+}
+
+/// Fortune of a Nine Star, fixed rather than relative to the current era.
+#[uniffi::export]
+pub fn nine_star_luck(value: NineStar) -> Luck {
+    value.luck()
+}
+
+/// Name of a Nine Star in Huyền Không, e.g. "Tham Lang".
+#[uniffi::export]
+pub fn nine_star_xuan_kong_name(value: NineStar) -> String {
+    value.xuan_kong_name().to_owned()
+}
+
+/// Vietnamese name of an era, e.g. "Hạ Nguyên".
+#[uniffi::export]
+pub fn tam_nguyen_name(value: TamNguyen) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of one of the Five Elements, e.g. "Mộc".
+#[uniffi::export]
+pub fn five_elements_name(value: FiveElements) -> String {
+    value.name_vi().to_owned()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     const VN: f64 = 7.0;
 
+    /// Spec vector 2: giờ Tý Sớm, past Hạ Chí but before the Giáp Tý day where the day star turns.
+    const VECTOR_2: SolarDateTime = SolarDateTime {
+        year: 2000,
+        month: 6,
+        day: 25,
+        hour: 23,
+        minute: 30,
+        second: 0,
+    };
+
+    fn star_numbers(rows: Vec<Vec<NineStar>>) -> Vec<Vec<u8>> {
+        rows.into_iter()
+            .map(|row| row.into_iter().map(nine_star_number).collect())
+            .collect()
+    }
+
     #[test]
-    fn default_time_zone_literals_match_the_core_constant() {
-        // The `default(tz_offset = 7.0)` attributes above must track this constant.
+    fn default_literals_match_the_documented_defaults() {
+        // Rust callers pass every argument, so only the source shows what Swift callers get.
         assert_eq!(astro_core::DEFAULT_TZ_OFFSET, 7.0);
+        let exports = include_str!("lib.rs")
+            .lines()
+            .filter(|line| line.starts_with("#[uniffi::export(default("));
+        for export in exports {
+            assert!(
+                export.contains("tz_offset = 7.0") || export.contains("forward = true"),
+                "{export}"
+            );
+        }
     }
 
     #[test]
@@ -883,6 +1365,370 @@ mod tests {
         assert_eq!(
             lunar_year(1500, VN),
             Err(AstroError::YearOutOfRange { year: 1500 })
+        );
+    }
+
+    #[test]
+    fn kua_functions_delegate_to_the_core() {
+        let man = kua_info(1990, Gender::Male);
+        assert_eq!(man.birth_lunar_year, 1990);
+        assert_eq!(man.gender, Gender::Male);
+        assert_eq!((man.raw_number, man.number), (1, 1));
+        assert_eq!(man.trigram, Trigram::Kham);
+        assert_eq!(man.group, TrigramGroup::DongTu);
+
+        // The formula lands on the center, which has no trigram: a woman takes Cấn.
+        let woman = kua_info(1990, Gender::Female);
+        assert_eq!((woman.raw_number, woman.number), (5, 8));
+        assert_eq!(woman.trigram, Trigram::CanTho);
+        assert_eq!(woman.group, TrigramGroup::TayTu);
+
+        assert_eq!(
+            kua_compatibility(man, woman),
+            KuaCompatibility {
+                first: man,
+                second: woman,
+                star: EightMansionsStar::NguQuy,
+                luck: Luck::Hung,
+            }
+        );
+    }
+
+    #[test]
+    fn house_trigram_reads_the_sitting_direction() {
+        assert_eq!(house_trigram(CompassDirection::Bac), Trigram::Kham);
+        assert_eq!(
+            house_trigram_from_facing(CompassDirection::Nam),
+            Trigram::Kham
+        );
+        assert_eq!(
+            opposite_direction(CompassDirection::DongBac),
+            CompassDirection::TayNam
+        );
+        assert_eq!(direction_trigram(CompassDirection::TayBac), Trigram::CanKim);
+    }
+
+    #[test]
+    fn eight_mansions_lookups_delegate_to_the_core() {
+        assert_eq!(
+            star_towards(Trigram::Kham, Trigram::Ton),
+            EightMansionsStar::SinhKhi
+        );
+        assert_eq!(
+            star_towards(Trigram::Kham, Trigram::Ly),
+            EightMansionsStar::DienNien
+        );
+        assert_eq!(
+            star_at(Trigram::Kham, CompassDirection::DongNam),
+            EightMansionsStar::SinhKhi
+        );
+        assert_eq!(
+            star_at(Trigram::Kham, CompassDirection::Nam),
+            EightMansionsStar::DienNien
+        );
+
+        let chart = eight_mansions_chart(Trigram::Kham);
+        assert_eq!(chart.len(), 8);
+        assert_eq!(
+            chart[0],
+            DirectionStar {
+                direction: CompassDirection::Bac,
+                star: EightMansionsStar::PhucVi,
+            }
+        );
+        assert_eq!(
+            chart[3],
+            DirectionStar {
+                direction: CompassDirection::DongNam,
+                star: EightMansionsStar::SinhKhi,
+            }
+        );
+    }
+
+    #[test]
+    fn nine_stars_read_spec_vector_2_with_the_default_boundary() {
+        let expected = NineStars {
+            nguyen: TamNguyen::HaNguyen,
+            van: NineStar::ThatXich,
+            year: NineStar::CuuTu,
+            month: NineStar::NhatBach,
+            day: FlyingStar {
+                star: NineStar::CuuTu,
+                forward: true,
+            },
+            hour: FlyingStar {
+                star: NineStar::TamBich,
+                forward: false,
+            },
+        };
+        assert_eq!(nine_stars(VECTOR_2, VN, None), Ok(expected));
+        assert_eq!(year_nine_star(VECTOR_2, VN, None), Ok(expected.year));
+        assert_eq!(month_nine_star(VECTOR_2, VN, None), Ok(expected.month));
+        assert_eq!(hour_nine_star(VECTOR_2, VN), Ok(expected.hour));
+        assert_eq!(
+            day_nine_star(
+                SolarDate {
+                    year: 2000,
+                    month: 6,
+                    day: 25
+                },
+                VN
+            ),
+            Ok(expected.day)
+        );
+    }
+
+    #[test]
+    fn an_omitted_boundary_means_the_core_default_and_a_given_one_is_passed_on() {
+        // The doc comments of the boundary functions above name this variant.
+        assert_eq!(NineStarBoundary::default(), NineStarBoundary::LapXuanDay);
+
+        // After Tết but before the day of Lập Xuân: lunar year 2022, still 2021 by Lập Xuân.
+        let after_tet = SolarDateTime {
+            year: 2022,
+            month: 2,
+            day: 2,
+            hour: 8,
+            minute: 0,
+            second: 0,
+        };
+        let tet = Some(NineStarBoundary::LunarNewYear);
+        assert_eq!(year_nine_star(after_tet, VN, None), Ok(NineStar::LucBach));
+        assert_eq!(year_nine_star(after_tet, VN, tet), Ok(NineStar::NguHoang));
+
+        // The morning of Lập Xuân, before its instant: 2024 by the day, still 2023 by the instant.
+        let lap_xuan_morning = SolarDateTime {
+            year: 2024,
+            month: 2,
+            day: 4,
+            hour: 8,
+            minute: 0,
+            second: 0,
+        };
+        let exact = Some(NineStarBoundary::LapXuanExact);
+        assert_eq!(
+            year_nine_star(lap_xuan_morning, VN, None),
+            Ok(NineStar::TamBich)
+        );
+        assert_eq!(
+            year_nine_star(lap_xuan_morning, VN, exact),
+            Ok(NineStar::TuLuc)
+        );
+        assert_eq!(
+            month_nine_star(lap_xuan_morning, VN, None),
+            Ok(NineStar::NguHoang)
+        );
+        assert_eq!(
+            month_nine_star(lap_xuan_morning, VN, exact),
+            Ok(NineStar::LucBach)
+        );
+        assert_eq!(
+            nine_stars(lap_xuan_morning, VN, None).unwrap().year,
+            NineStar::TamBich
+        );
+        assert_eq!(
+            nine_stars(lap_xuan_morning, VN, exact).unwrap().year,
+            NineStar::TuLuc
+        );
+    }
+
+    #[test]
+    fn year_functions_delegate_to_the_core() {
+        assert_eq!(star_of_year(2024), NineStar::TamBich);
+        assert_eq!(van_of_year(2024), NineStar::CuuTu);
+        assert_eq!(nguyen_of_year(2024), TamNguyen::HaNguyen);
+    }
+
+    #[test]
+    fn lo_shu_functions_read_the_grid_south_on_top() {
+        let grid = generate_loshu_grid(NineStar::CuuTu, true);
+        assert!(grid.forward);
+        assert_eq!(grid.trung_cung, NineStar::CuuTu);
+        assert_eq!(
+            star_numbers(lo_shu_rows(grid)),
+            [[8, 4, 6], [7, 9, 2], [3, 5, 1]]
+        );
+        assert_eq!(lo_shu_star_at(grid, Palace::Ly), NineStar::TuLuc);
+        assert_eq!(lo_shu_star_at(grid, Palace::Kham), NineStar::NguHoang);
+        assert_eq!(lo_shu_star_at(grid, Palace::TrungCung), NineStar::CuuTu);
+
+        // Section 4.7 of the spec: Tam Bích flying backward.
+        let backward = generate_loshu_grid(NineStar::TamBich, false);
+        assert!(!backward.forward);
+        assert_eq!(
+            star_numbers(lo_shu_rows(backward)),
+            [[4, 8, 6], [5, 3, 1], [9, 7, 2]]
+        );
+    }
+
+    #[test]
+    fn only_the_center_palace_has_no_trigram_or_direction() {
+        assert_eq!(palace_trigram(Palace::TrungCung), None);
+        assert_eq!(palace_direction(Palace::TrungCung), None);
+        assert_eq!(palace_trigram(Palace::Ly), Some(Trigram::Ly));
+        assert_eq!(palace_direction(Palace::Ly), Some(CompassDirection::Nam));
+    }
+
+    #[test]
+    fn trigram_and_palace_attributes_delegate_to_the_core() {
+        assert_eq!(trigram_name(Trigram::CanKim), "Càn");
+        assert_eq!(trigram_name(Trigram::CanTho), "Cấn");
+        assert_eq!(trigram_han_name(Trigram::CanKim), "乾");
+        assert_eq!(trigram_number(Trigram::CanKim), 6);
+        assert_eq!(trigram_element(Trigram::Ly), FiveElements::Hoa);
+        assert_eq!(trigram_group(Trigram::Doai), TrigramGroup::TayTu);
+        assert_eq!(
+            trigram_direction(Trigram::CanTho),
+            CompassDirection::DongBac
+        );
+        assert_eq!(trigram_palace(Trigram::Ton), Palace::Ton);
+        assert_eq!(trigram_group_name(TrigramGroup::DongTu), "Đông Tứ");
+
+        assert_eq!(palace_name(Palace::TrungCung), "Trung Cung");
+        assert_eq!(palace_han_name(Palace::TrungCung), "中");
+        assert_eq!(palace_number(Palace::TrungCung), 5);
+        assert_eq!(palace_element(Palace::TrungCung), FiveElements::Tho);
+        assert_eq!(palace_element(Palace::Ly), FiveElements::Hoa);
+        assert_eq!(palace_element(Palace::Kham), FiveElements::Thuy);
+        assert_eq!(
+            compass_direction_name(CompassDirection::DongBac),
+            "Đông Bắc"
+        );
+    }
+
+    #[test]
+    fn star_attributes_delegate_to_the_core() {
+        let sinh_khi = EightMansionsStar::SinhKhi;
+        assert_eq!(eight_mansions_star_name(sinh_khi), "Sinh Khí");
+        assert_eq!(eight_mansions_star_han_name(sinh_khi), "生气");
+        assert_eq!(
+            eight_mansions_star_corresponding_name(sinh_khi),
+            "Tham Lang"
+        );
+        assert_eq!(eight_mansions_star_luck(sinh_khi), Luck::Cat);
+        assert_eq!(
+            eight_mansions_star_luck(EightMansionsStar::HoaHai),
+            Luck::Hung
+        );
+
+        let cuu_tu = NineStar::CuuTu;
+        assert_eq!(nine_star_name(cuu_tu), "Cửu Tử Hỏa");
+        assert_eq!(nine_star_han_name(cuu_tu), "九紫火");
+        assert_eq!(nine_star_number(cuu_tu), 9);
+        assert_eq!(nine_star_element(cuu_tu), FiveElements::Hoa);
+        assert_eq!(nine_star_color_name(cuu_tu), "Tím");
+        assert_eq!(nine_star_home_palace(cuu_tu), Palace::Ly);
+        assert_eq!(nine_star_luck(cuu_tu), Luck::Cat);
+        assert_eq!(nine_star_luck(NineStar::NhiHac), Luck::Hung);
+        assert_eq!(nine_star_xuan_kong_name(cuu_tu), "Hữu Bật");
+
+        assert_eq!(tam_nguyen_name(TamNguyen::HaNguyen), "Hạ Nguyên");
+        assert_eq!(five_elements_name(FiveElements::Thuy), "Thủy");
+    }
+
+    #[test]
+    fn nine_star_functions_pass_on_the_time_zone() {
+        // Lập Xuân 2009 began on 3 February in Vietnam and on 4 February in China.
+        let lap_xuan_2009 = SolarDateTime {
+            year: 2009,
+            month: 2,
+            day: 3,
+            hour: 12,
+            minute: 0,
+            second: 0,
+        };
+        for (tz_offset, year, month) in [
+            (VN, NineStar::CuuTu, NineStar::NguHoang),
+            (8.0, NineStar::NhatBach, NineStar::LucBach),
+        ] {
+            assert_eq!(year_nine_star(lap_xuan_2009, tz_offset, None), Ok(year));
+            assert_eq!(month_nine_star(lap_xuan_2009, tz_offset, None), Ok(month));
+            let stars = nine_stars(lap_xuan_2009, tz_offset, None).unwrap();
+            assert_eq!((stars.year, stars.month), (year, month));
+        }
+
+        // Đông Chí 2017 began on 21 December in Vietnam and on 22 December in China.
+        let dong_chi_2017 = SolarDateTime {
+            year: 2017,
+            month: 12,
+            day: 21,
+            hour: 12,
+            minute: 0,
+            second: 0,
+        };
+        assert!(hour_nine_star(dong_chi_2017, VN).unwrap().forward);
+        assert!(!hour_nine_star(dong_chi_2017, 8.0).unwrap().forward);
+
+        // The turning point near Hạ Chí 2077 is 22 May in Vietnam and 21 July in China.
+        let june_2077 = SolarDate {
+            year: 2077,
+            month: 6,
+            day: 1,
+        };
+        assert!(!day_nine_star(june_2077, VN).unwrap().forward);
+        assert!(day_nine_star(june_2077, 8.0).unwrap().forward);
+    }
+
+    #[test]
+    fn nine_star_functions_return_the_error_of_the_core() {
+        assert_eq!(
+            nine_stars(
+                SolarDateTime {
+                    month: 13,
+                    ..VECTOR_2
+                },
+                VN,
+                None
+            ),
+            Err(AstroError::InvalidSolarDate {
+                year: 2000,
+                month: 13,
+                day: 25
+            })
+        );
+        assert_eq!(
+            hour_nine_star(
+                SolarDateTime {
+                    hour: 24,
+                    ..VECTOR_2
+                },
+                VN
+            ),
+            Err(AstroError::InvalidTime {
+                hour: 24,
+                minute: 30,
+                second: 0
+            })
+        );
+        assert_eq!(
+            year_nine_star(VECTOR_2, 15.0, None),
+            Err(AstroError::InvalidTimeZone { tz_offset: 15.0 })
+        );
+        assert_eq!(
+            month_nine_star(
+                SolarDateTime {
+                    year: 1500,
+                    ..VECTOR_2
+                },
+                VN,
+                None
+            ),
+            Err(AstroError::YearOutOfRange { year: 1500 })
+        );
+        assert_eq!(
+            day_nine_star(
+                SolarDate {
+                    year: 2023,
+                    month: 2,
+                    day: 29
+                },
+                VN
+            ),
+            Err(AstroError::InvalidSolarDate {
+                year: 2023,
+                month: 2,
+                day: 29
+            })
         );
     }
 }

@@ -349,7 +349,8 @@ pub const fn is_khoi_canh(day: CanChi) -> bool {
     )
 }
 
-/// Sex of the chart's owner; together with the year stem it sets the direction of Đại Vận.
+/// Sex of a person: together with the year stem it sets the direction of Đại Vận, and it selects
+/// the formula of the Mệnh Quái.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Gender {

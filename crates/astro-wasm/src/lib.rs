@@ -3,14 +3,20 @@
 //! Dates go in and results come out as plain JS objects converted with serde-wasm-bindgen:
 //! field names are camelCase and enums are their variant names. The TypeScript shapes are
 //! declared below. Every `tz_offset` argument is optional and defaults to 7 (Vietnam, UTC+7).
+//! A feng shui `boundary` may be omitted for `LapXuanDay` and a `forward` for `true`.
 
 use astro_core::almanac::{
     AlmanacGod, HoangOc, KimLau, Mansion, PathGod, TamTai, Truc, VietnamTaboo,
 };
 use astro_core::bazi_analysis::{BaziStar, LifeStage, TenGod};
+use astro_core::fengshui::{
+    CompassDirection, EightMansionsStar, KuaInfo, LoShuGrid, NineStar, NineStarBoundary, Palace,
+    TamNguyen, Trigram, TrigramGroup,
+};
 use astro_core::{
-    AstroError, Branch, CanChi, DEFAULT_TZ_OFFSET, FourPillarsOptions, Gender, LunarDate, NaYin,
-    RatHourConvention, SolarDate, SolarDateTime, SolarTerm, Stem, YearMonthBoundary,
+    AstroError, Branch, CanChi, DEFAULT_TZ_OFFSET, FiveElements, FourPillarsOptions, Gender,
+    LunarDate, NaYin, RatHourConvention, SolarDate, SolarDateTime, SolarTerm, Stem,
+    YearMonthBoundary,
 };
 use serde::de::DeserializeOwned;
 use serde::{Deserialize, Serialize};
@@ -144,6 +150,57 @@ export interface AgeRestrictions {
   tamTai: TamTai | null;
   kimLau: KimLau | null;
   hoangOc: HoangOc | null;
+}
+export type Trigram = "Kham" | "Khon" | "Chan" | "Ton" | "CanKim" | "Doai" | "CanTho" | "Ly";
+export type TrigramGroup = "DongTu" | "TayTu";
+export type Palace = "Kham" | "Khon" | "Chan" | "Ton" | "TrungCung" | "CanKim" | "Doai" | "CanTho" | "Ly";
+export type CompassDirection = "Bac" | "DongBac" | "Dong" | "DongNam" | "Nam" | "TayNam" | "Tay" | "TayBac";
+export type EightMansionsStar = "SinhKhi" | "ThienY" | "DienNien" | "PhucVi" | "TuyetMenh" | "NguQuy" | "LucSat" | "HoaHai";
+export type NineStar = "NhatBach" | "NhiHac" | "TamBich" | "TuLuc" | "NguHoang" | "LucBach" | "ThatXich" | "BatBach" | "CuuTu";
+export type TamNguyen = "ThuongNguyen" | "TrungNguyen" | "HaNguyen";
+export type NineStarBoundary = "LunarNewYear" | "LapXuanDay" | "LapXuanExact";
+export type FiveElements = "Moc" | "Hoa" | "Tho" | "Kim" | "Thuy";
+export interface DirectionStar {
+  direction: CompassDirection;
+  star: EightMansionsStar;
+}
+export interface KuaInfo {
+  birthLunarYear: number;
+  gender: Gender;
+  rawNumber: number;
+  number: number;
+  trigram: Trigram;
+  group: TrigramGroup;
+}
+export interface KuaCompatibility {
+  first: KuaInfo;
+  second: KuaInfo;
+  star: EightMansionsStar;
+  luck: Luck;
+}
+export interface FlyingStar {
+  star: NineStar;
+  forward: boolean;
+}
+export interface NineStars {
+  nguyen: TamNguyen;
+  van: NineStar;
+  year: NineStar;
+  month: NineStar;
+  day: FlyingStar;
+  hour: FlyingStar;
+}
+export interface LoShuGrid {
+  forward: boolean;
+  kham: NineStar;
+  khon: NineStar;
+  chan: NineStar;
+  ton: NineStar;
+  trungCung: NineStar;
+  canKim: NineStar;
+  doai: NineStar;
+  canTho: NineStar;
+  ly: NineStar;
 }
 "#;
 
@@ -299,6 +356,204 @@ pub fn true_solar_time(
     )
 }
 
+/// Mệnh Quái of a person born in a lunar year.
+#[wasm_bindgen(js_name = kuaInfo, unchecked_return_type = "KuaInfo")]
+pub fn kua_info(
+    birth_lunar_year: i32,
+    #[wasm_bindgen(unchecked_param_type = "Gender")] gender: JsValue,
+) -> Result<JsValue, JsValue> {
+    let gender: Gender = from_js(gender)?;
+    to_js(&astro_core::fengshui::kua_info(birth_lunar_year, gender))
+}
+
+/// Eight Mansions star between the Mệnh Quái of two people, with its fortune.
+#[wasm_bindgen(js_name = kuaCompatibility, unchecked_return_type = "KuaCompatibility")]
+pub fn kua_compatibility(
+    #[wasm_bindgen(unchecked_param_type = "KuaInfo")] first: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "KuaInfo")] second: JsValue,
+) -> Result<JsValue, JsValue> {
+    let first: KuaInfo = from_js(first)?;
+    let second: KuaInfo = from_js(second)?;
+    to_js(&astro_core::fengshui::kua_compatibility(first, second))
+}
+
+/// Trạch Quái of a house from its sitting direction (Tọa).
+#[wasm_bindgen(js_name = houseTrigram, unchecked_return_type = "Trigram")]
+pub fn house_trigram(
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] sitting: JsValue,
+) -> Result<JsValue, JsValue> {
+    let sitting: CompassDirection = from_js(sitting)?;
+    to_js(&astro_core::fengshui::house_trigram(sitting))
+}
+
+/// Trạch Quái of a house from the direction it faces; it sits the opposite way.
+#[wasm_bindgen(js_name = houseTrigramFromFacing, unchecked_return_type = "Trigram")]
+pub fn house_trigram_from_facing(
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] facing: JsValue,
+) -> Result<JsValue, JsValue> {
+    let facing: CompassDirection = from_js(facing)?;
+    to_js(&astro_core::fengshui::house_trigram_from_facing(facing))
+}
+
+/// The opposite compass direction.
+#[wasm_bindgen(js_name = oppositeDirection, unchecked_return_type = "CompassDirection")]
+pub fn opposite_direction(
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] direction: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<CompassDirection>(direction)?.opposite())
+}
+
+/// Trigram of a compass direction.
+#[wasm_bindgen(js_name = directionTrigram, unchecked_return_type = "Trigram")]
+pub fn direction_trigram(
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] direction: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<CompassDirection>(direction)?.trigram())
+}
+
+/// Eight Mansions star between two trigrams; the order does not matter.
+#[wasm_bindgen(js_name = starTowards, unchecked_return_type = "EightMansionsStar")]
+pub fn star_towards(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] trigram: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] other: JsValue,
+) -> Result<JsValue, JsValue> {
+    let trigram: Trigram = from_js(trigram)?;
+    to_js(&trigram.star_towards(from_js(other)?))
+}
+
+/// Eight Mansions star in a direction, for a person's Mệnh Quái or a house's Trạch Quái.
+#[wasm_bindgen(js_name = starAt, unchecked_return_type = "EightMansionsStar")]
+pub fn star_at(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] trigram: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] direction: JsValue,
+) -> Result<JsValue, JsValue> {
+    let trigram: Trigram = from_js(trigram)?;
+    to_js(&trigram.star_at(from_js(direction)?))
+}
+
+/// Eight Mansions stars of a trigram in the eight directions, clockwise from north.
+#[wasm_bindgen(js_name = eightMansionsChart, unchecked_return_type = "DirectionStar[]")]
+pub fn eight_mansions_chart(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] trigram: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Trigram>(trigram)?.chart())
+}
+
+// `tz_offset` repeats the attribute of `boundary`: wasm-bindgen drops the `?` of a plain `Option`
+// parameter when a parameter with a type override follows it, and `nineStars(time)` would not
+// type-check.
+
+/// Era, period and stars ruling a wall-clock time.
+#[wasm_bindgen(js_name = nineStars, unchecked_return_type = "NineStars")]
+pub fn nine_stars(
+    #[wasm_bindgen(unchecked_param_type = "SolarDateTime")] time: JsValue,
+    #[wasm_bindgen(unchecked_optional_param_type = "number | null")] tz_offset: Option<f64>,
+    #[wasm_bindgen(unchecked_optional_param_type = "NineStarBoundary | null")] boundary: JsValue,
+) -> Result<JsValue, JsValue> {
+    let time: SolarDateTime = from_js(time)?;
+    let boundary = star_boundary(boundary)?;
+    to_js(&astro_core::fengshui::nine_stars(time, zone(tz_offset), boundary).map_err(astro_error)?)
+}
+
+/// Year star (Niên Tinh) at a wall-clock time.
+#[wasm_bindgen(js_name = yearNineStar, unchecked_return_type = "NineStar")]
+pub fn year_nine_star(
+    #[wasm_bindgen(unchecked_param_type = "SolarDateTime")] time: JsValue,
+    #[wasm_bindgen(unchecked_optional_param_type = "number | null")] tz_offset: Option<f64>,
+    #[wasm_bindgen(unchecked_optional_param_type = "NineStarBoundary | null")] boundary: JsValue,
+) -> Result<JsValue, JsValue> {
+    let time: SolarDateTime = from_js(time)?;
+    let boundary = star_boundary(boundary)?;
+    to_js(
+        &astro_core::fengshui::year_nine_star(time, zone(tz_offset), boundary)
+            .map_err(astro_error)?,
+    )
+}
+
+/// Month star (Nguyệt Tinh) at a wall-clock time.
+#[wasm_bindgen(js_name = monthNineStar, unchecked_return_type = "NineStar")]
+pub fn month_nine_star(
+    #[wasm_bindgen(unchecked_param_type = "SolarDateTime")] time: JsValue,
+    #[wasm_bindgen(unchecked_optional_param_type = "number | null")] tz_offset: Option<f64>,
+    #[wasm_bindgen(unchecked_optional_param_type = "NineStarBoundary | null")] boundary: JsValue,
+) -> Result<JsValue, JsValue> {
+    let time: SolarDateTime = from_js(time)?;
+    let boundary = star_boundary(boundary)?;
+    to_js(
+        &astro_core::fengshui::month_nine_star(time, zone(tz_offset), boundary)
+            .map_err(astro_error)?,
+    )
+}
+
+/// Day star (Nhật Tinh) of a Gregorian date, with its flying direction.
+#[wasm_bindgen(js_name = dayNineStar, unchecked_return_type = "FlyingStar")]
+pub fn day_nine_star(
+    #[wasm_bindgen(unchecked_param_type = "SolarDate")] date: JsValue,
+    tz_offset: Option<f64>,
+) -> Result<JsValue, JsValue> {
+    let date: SolarDate = from_js(date)?;
+    to_js(&astro_core::fengshui::day_nine_star(date, zone(tz_offset)).map_err(astro_error)?)
+}
+
+/// Hour star (Thời Tinh) at a wall-clock time, with its flying direction.
+#[wasm_bindgen(js_name = hourNineStar, unchecked_return_type = "FlyingStar")]
+pub fn hour_nine_star(
+    #[wasm_bindgen(unchecked_param_type = "SolarDateTime")] time: JsValue,
+    tz_offset: Option<f64>,
+) -> Result<JsValue, JsValue> {
+    let time: SolarDateTime = from_js(time)?;
+    to_js(&astro_core::fengshui::hour_nine_star(time, zone(tz_offset)).map_err(astro_error)?)
+}
+
+/// Year star (Niên Tinh) of a year number, e.g. Tam Bích for 2024.
+#[wasm_bindgen(js_name = starOfYear, unchecked_return_type = "NineStar")]
+pub fn star_of_year(year: i32) -> Result<JsValue, JsValue> {
+    to_js(&astro_core::fengshui::star_of_year(year))
+}
+
+/// Ruling star of the 20-year period (Vận) of a year number, e.g. Cửu Tử for 2024.
+#[wasm_bindgen(js_name = vanOfYear, unchecked_return_type = "NineStar")]
+pub fn van_of_year(year: i32) -> Result<JsValue, JsValue> {
+    to_js(&astro_core::fengshui::van_of_year(year))
+}
+
+/// Era (Nguyên) of a year number, e.g. Hạ Nguyên for 2024.
+#[wasm_bindgen(js_name = nguyenOfYear, unchecked_return_type = "TamNguyen")]
+pub fn nguyen_of_year(year: i32) -> Result<JsValue, JsValue> {
+    to_js(&astro_core::fengshui::nguyen_of_year(year))
+}
+
+/// Lo Shu grid with a star in the center, flying forward unless `forward` is false.
+#[wasm_bindgen(js_name = generateLoshuGrid, unchecked_return_type = "LoShuGrid")]
+pub fn generate_loshu_grid(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] center_star: JsValue,
+    forward: Option<bool>,
+) -> Result<JsValue, JsValue> {
+    let center_star: NineStar = from_js(center_star)?;
+    to_js(&astro_core::fengshui::generate_loshu_grid(
+        center_star,
+        forward.unwrap_or(true),
+    ))
+}
+
+/// Star in one palace of a Lo Shu grid.
+#[wasm_bindgen(js_name = loShuStarAt, unchecked_return_type = "NineStar")]
+pub fn lo_shu_star_at(
+    #[wasm_bindgen(unchecked_param_type = "LoShuGrid")] grid: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Palace")] palace: JsValue,
+) -> Result<JsValue, JsValue> {
+    let grid: LoShuGrid = from_js(grid)?;
+    to_js(&grid.star_at(from_js(palace)?))
+}
+
+/// Three rows of three stars of a Lo Shu grid, south on top.
+#[wasm_bindgen(js_name = loShuRows, unchecked_return_type = "NineStar[][]")]
+pub fn lo_shu_rows(
+    #[wasm_bindgen(unchecked_param_type = "LoShuGrid")] grid: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<LoShuGrid>(grid)?.rows())
+}
+
 /// Vietnamese name of a Can Chi pair, e.g. "Giáp Thìn".
 #[wasm_bindgen(js_name = canChiName)]
 pub fn can_chi_name(
@@ -445,8 +700,247 @@ pub fn hoang_oc_name(
     Ok(from_js::<HoangOc>(value)?.name_vi().to_owned())
 }
 
+/// Vietnamese name of a trigram, e.g. "Khảm".
+#[wasm_bindgen(js_name = trigramName)]
+pub fn trigram_name(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<Trigram>(value)?.name_vi().to_owned())
+}
+
+/// Hán character of a trigram, e.g. "坎".
+#[wasm_bindgen(js_name = trigramHanName)]
+pub fn trigram_han_name(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<Trigram>(value)?.name_han().to_owned())
+}
+
+/// Lạc Thư number of a trigram: 1–4 or 6–9.
+#[wasm_bindgen(js_name = trigramNumber)]
+pub fn trigram_number(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<u8, JsValue> {
+    Ok(from_js::<Trigram>(value)?.number())
+}
+
+/// Element of a trigram.
+#[wasm_bindgen(js_name = trigramElement, unchecked_return_type = "FiveElements")]
+pub fn trigram_element(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Trigram>(value)?.element())
+}
+
+/// Group of a trigram: Đông Tứ or Tây Tứ.
+#[wasm_bindgen(js_name = trigramGroup, unchecked_return_type = "TrigramGroup")]
+pub fn trigram_group(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Trigram>(value)?.group())
+}
+
+/// Compass direction of a trigram.
+#[wasm_bindgen(js_name = trigramDirection, unchecked_return_type = "CompassDirection")]
+pub fn trigram_direction(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Trigram>(value)?.direction())
+}
+
+/// Palace of the Lo Shu grid held by a trigram.
+#[wasm_bindgen(js_name = trigramPalace, unchecked_return_type = "Palace")]
+pub fn trigram_palace(
+    #[wasm_bindgen(unchecked_param_type = "Trigram")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Trigram>(value)?.palace())
+}
+
+/// Vietnamese name of a trigram group, "Đông Tứ" or "Tây Tứ".
+#[wasm_bindgen(js_name = trigramGroupName)]
+pub fn trigram_group_name(
+    #[wasm_bindgen(unchecked_param_type = "TrigramGroup")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TrigramGroup>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a palace, e.g. "Trung Cung".
+#[wasm_bindgen(js_name = palaceName)]
+pub fn palace_name(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<Palace>(value)?.name_vi().to_owned())
+}
+
+/// Hán character of a palace, e.g. "中".
+#[wasm_bindgen(js_name = palaceHanName)]
+pub fn palace_han_name(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<Palace>(value)?.name_han().to_owned())
+}
+
+/// Lạc Thư number of a palace, from 1 (Khảm) to 9 (Ly).
+#[wasm_bindgen(js_name = palaceNumber)]
+pub fn palace_number(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<u8, JsValue> {
+    Ok(from_js::<Palace>(value)?.number())
+}
+
+/// Element of a palace.
+#[wasm_bindgen(js_name = palaceElement, unchecked_return_type = "FiveElements")]
+pub fn palace_element(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Palace>(value)?.element())
+}
+
+/// Trigram of a palace; the center has none, so it gives null.
+#[wasm_bindgen(js_name = palaceTrigram, unchecked_return_type = "Trigram | null")]
+pub fn palace_trigram(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Palace>(value)?.trigram())
+}
+
+/// Compass direction of a palace; the center has none, so it gives null.
+#[wasm_bindgen(js_name = palaceDirection, unchecked_return_type = "CompassDirection | null")]
+pub fn palace_direction(
+    #[wasm_bindgen(unchecked_param_type = "Palace")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Palace>(value)?.direction())
+}
+
+/// Vietnamese name of a compass direction, e.g. "Đông Bắc".
+#[wasm_bindgen(js_name = compassDirectionName)]
+pub fn compass_direction_name(
+    #[wasm_bindgen(unchecked_param_type = "CompassDirection")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<CompassDirection>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of an Eight Mansions star, e.g. "Sinh Khí".
+#[wasm_bindgen(js_name = eightMansionsStarName)]
+pub fn eight_mansions_star_name(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<EightMansionsStar>(value)?.name_vi().to_owned())
+}
+
+/// Hán characters of an Eight Mansions star, e.g. "生气".
+#[wasm_bindgen(js_name = eightMansionsStarHanName)]
+pub fn eight_mansions_star_han_name(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<EightMansionsStar>(value)?.name_han().to_owned())
+}
+
+/// Name of the star corresponding to an Eight Mansions star, e.g. "Tham Lang" for Sinh Khí.
+#[wasm_bindgen(js_name = eightMansionsStarCorrespondingName)]
+pub fn eight_mansions_star_corresponding_name(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<EightMansionsStar>(value)?
+        .corresponding_star_name()
+        .to_owned())
+}
+
+/// Fortune of an Eight Mansions star.
+#[wasm_bindgen(js_name = eightMansionsStarLuck, unchecked_return_type = "Luck")]
+pub fn eight_mansions_star_luck(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<EightMansionsStar>(value)?.luck())
+}
+
+/// Vietnamese name of a Nine Star, e.g. "Nhất Bạch Thủy".
+#[wasm_bindgen(js_name = nineStarName)]
+pub fn nine_star_name(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<NineStar>(value)?.name_vi().to_owned())
+}
+
+/// Hán characters of a Nine Star, e.g. "一白水".
+#[wasm_bindgen(js_name = nineStarHanName)]
+pub fn nine_star_han_name(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<NineStar>(value)?.name_han().to_owned())
+}
+
+/// Number of a Nine Star, from 1 to 9.
+#[wasm_bindgen(js_name = nineStarNumber)]
+pub fn nine_star_number(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<u8, JsValue> {
+    Ok(from_js::<NineStar>(value)?.number())
+}
+
+/// Element of a Nine Star.
+#[wasm_bindgen(js_name = nineStarElement, unchecked_return_type = "FiveElements")]
+pub fn nine_star_element(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<NineStar>(value)?.element())
+}
+
+/// Vietnamese name of the color of a Nine Star, e.g. "Xanh biếc".
+#[wasm_bindgen(js_name = nineStarColorName)]
+pub fn nine_star_color_name(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<NineStar>(value)?.color_vi().to_owned())
+}
+
+/// Palace where a Nine Star belongs in the original Lạc Thư square.
+#[wasm_bindgen(js_name = nineStarHomePalace, unchecked_return_type = "Palace")]
+pub fn nine_star_home_palace(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<NineStar>(value)?.home_palace())
+}
+
+/// Fortune of a Nine Star, fixed rather than relative to the current era.
+#[wasm_bindgen(js_name = nineStarLuck, unchecked_return_type = "Luck")]
+pub fn nine_star_luck(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<NineStar>(value)?.luck())
+}
+
+/// Name of a Nine Star in Huyền Không, e.g. "Tham Lang".
+#[wasm_bindgen(js_name = nineStarXuanKongName)]
+pub fn nine_star_xuan_kong_name(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<NineStar>(value)?.xuan_kong_name().to_owned())
+}
+
+/// Vietnamese name of an era, e.g. "Hạ Nguyên".
+#[wasm_bindgen(js_name = tamNguyenName)]
+pub fn tam_nguyen_name(
+    #[wasm_bindgen(unchecked_param_type = "TamNguyen")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TamNguyen>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of an element, e.g. "Mộc".
+#[wasm_bindgen(js_name = fiveElementsName)]
+pub fn five_elements_name(
+    #[wasm_bindgen(unchecked_param_type = "FiveElements")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<FiveElements>(value)?.name_vi().to_owned())
+}
+
 fn zone(tz_offset: Option<f64>) -> f64 {
     tz_offset.unwrap_or(DEFAULT_TZ_OFFSET)
+}
+
+/// `undefined` and `null` select the default; anything else must name a boundary.
+fn star_boundary(boundary: JsValue) -> Result<NineStarBoundary, JsValue> {
+    Ok(from_js::<Option<NineStarBoundary>>(boundary)?.unwrap_or_default())
 }
 
 /// Malformed input surfaces as the `Error` that serde-wasm-bindgen already built.

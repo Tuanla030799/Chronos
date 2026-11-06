@@ -25,9 +25,13 @@ pub enum Luck {
 /// Branch of the solar month (tháng tiết khí) of local day `jdn`: the whole day on which a Tiết
 /// begins already belongs to the new month.
 pub fn solar_month_branch(jdn: i32, tz_offset: f64) -> Branch {
-    let longitude = get_sun_longitude_deg(local_midnight_jd(jdn + 1, tz_offset));
+    solar_month_branch_at(local_midnight_jd(jdn + 1, tz_offset))
+}
+
+/// Branch of the solar month (tháng tiết khí) at the instant `jd_ut`.
+pub(crate) fn solar_month_branch_at(jd_ut: f64) -> Branch {
     // Solar month 1 is the Dần month.
-    Branch::from_index(i64::from(solar_month_of_longitude(longitude)) + 1)
+    Branch::from_index(i64::from(solar_month_of_longitude(get_sun_longitude_deg(jd_ut))) + 1)
 }
 
 /// The Twelve Officers (12 Trực).

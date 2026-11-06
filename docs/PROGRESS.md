@@ -1,7 +1,8 @@
 # Tiến trình dự án — Viet Astro Engine (Chronos)
 
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
-> Cập nhật lần cuối: **2026-11-05**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Cập nhật lần cuối: **2026-11-06**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 
 ## 1. Trạng thái
 
@@ -20,7 +21,8 @@
 | Bát Tự — phân tích lá số | ✅ Xong | `bazi_analysis.rs`: Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | Trạch Nhật, hạn tuổi | ✅ Xong | `almanac.rs` |
 | Tử Vi Đẩu Số | ⏳ Chưa làm | Chờ bảng quy tắc qua `/ingest-rules` |
-| Phong Thủy | ⏳ Chưa làm | Chờ bảng quy tắc |
+| Đặc tả Phong Thủy | ✅ Xong | `docs/FENGSHUI_SPEC.md`; F1–F5 đã chốt |
+| Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Cần Xcode |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
@@ -32,12 +34,43 @@
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
+- [x] Chốt F1–F5 ở `docs/FENGSHUI_SPEC.md`
+- [x] Viết module Phong Thủy trong `astro-core`, đưa lên Swift và WASM
+- [ ] Đối chiếu 3 vector Phong Thủy với lịch in
 - [ ] Đưa bảng quy tắc Tử Vi vào qua `/ingest-rules`
 - [ ] Bắt đầu app iOS (SwiftUI) dùng XCFramework
 - [x] Commit Giai đoạn 3 cùng `docs/`, `.gitignore`, `THIRD_PARTY_NOTICES.md`
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-06 — Task 4A.2: `fengshui.rs` và cầu nối
+
+- Đóng F1–F5: mục 3.2 khớp 64/64 ô với bảng *Bát Trạch Minh Cảnh* của chủ dự án; Trạch Quái theo Tọa;
+  `generate_loshu_grid(center_star, forward)`; Vận cùng khóa Lập Xuân với Niên Tinh; giữ đúng `getDayNineStar`.
+- Thêm `fengshui.rs` với `Trigram`, `Palace`, `CompassDirection`, `EightMansionsStar`, `NineStar`, `KuaInfo`,
+  `LoShuGrid`. `Gender` dùng lại của `bazi_analysis`. Swift và WASM có thêm 49 hàm mỗi bên.
+- `LoShuGrid` có 9 trường theo tên cung, vì UniFFI không hỗ trợ mảng cố định.
+- `tz_offset = 8.0`: Nhật Tinh và Thời Tinh khớp `lunar-ts` trên mọi ngày 1600–2400; Niên, Nguyệt Tinh mặc định, Nguyên,
+  Vận khớp trên 73.353 ngày 1900–2100. Ngoài dải đó Niên Tinh lệch 1 ngày, Nguyệt Tinh lệch 5 ngày, đều do Tiết sát nửa đêm.
+- `tz_offset = 7.0`: khác nguồn đúng như bảng mục 0.3 của đặc tả. Đường nối Nhật Tinh là 13 lần, 241 ngày, thêm 1/1/2078.
+- Bốn test khóa kết quả nguồn bằng mã băm FNV-1a; cách tạo lại ở mục 5 của đặc tả.
+- Kiểm thử đột biến: vòng đầu 606 đột biến, 37 đột biến thật còn sống, chủ yếu do `tz_offset` ở UTC+7 chưa được ghim.
+  Sau khi thêm test: 740 đột biến, 728 bị bắt, 12 còn lại không đổi hành vi nên không có test nào bắt được.
+- Kiểm chứng: 201 test core, 18 test FFI, 23 test WASM đều qua; chương trình Swift thật chạy qua bindings sinh ra.
+  Chưa đóng gói `AstroCore.xcframework` vì chưa có Xcode. Vector chưa đối chiếu với lịch in.
+
+### 2026-11-05 — Task 4A.1: đặc tả Phong Thủy
+
+- Tạo `docs/FENGSHUI_SPEC.md`: Bát Quái và Lạc Thư, Mệnh Quái, ma trận Bát Du Niên, 9 sao, Tam Nguyên Cửu Vận,
+  Niên/Nguyệt/Nhật/Thời Tinh, đường bay Lạc Thư, 3 vector kiểm thử. Chưa viết code Rust.
+- Công thức Mệnh Quái của Task 4A.1 đúng: `k` của Nam bằng Niên Tinh của `lunar-ts` trên 200 năm 1900–2099.
+- Bảng tiết khí trong `Lunar` đi theo năm dương lịch, không theo năm âm lịch (`Lunar.ts:100`).
+- Phát hiện lỗi trong nguồn, đặc tả đã tránh: `LunarYear.getNineStar` sai ngoặc, `LunarTime.getNineStar` thiếu nhánh
+  `DONG_ZHI`. Nhật Tinh có 225 ngày nhảy sao tại 1/1 (F5).
+- Kiểm chứng: quét 73.353 ngày 1900–2100, Niên, Nguyệt (cả 3 `sect`), Nhật, Thời Tinh đều không lệch nguồn; đọc ngược
+  đặc tả, 158.647 phép kiểm đều qua; `astro-core` ở UTC+7 khớp 3 vector ở JDN, ngày âm, Can Chi, Chi tháng.
+- Ma trận Bát Du Niên chưa có sách đối chiếu, chờ chủ dự án duyệt (F1). Vector chưa đối chiếu với lịch in.
 
 ### 2026-11-05 — Giai đoạn 3: Bát Tự và Trạch Nhật
 
@@ -132,6 +165,8 @@
 2. **Can Chi tháng nhuận:** đang lấy theo tháng mà nó lặp lại, như `amlich.js` của Hồ Ngọc Đức.
    Cần đối chiếu.
 3. **Quy ước giờ Tý mặc định: đã chốt** là `SplitAtMidnight`. Dự án gọi 23:00–23:59 là giờ Tý Sớm.
+4. **Phong Thủy F1–F5: đã chốt** ở Task 4A.2, xem mục 6.1 của `docs/FENGSHUI_SPEC.md`. Còn lại việc đối chiếu vector với
+   lịch in, không chặn code.
 
 ## 5. Quyết định kỹ thuật
 
@@ -149,6 +184,9 @@
   lớp DTO. WASM nhận và trả object JS (camelCase) qua serde; lỗi được ném ra dưới dạng `Error` của JS.
 - **Chất lượng mã:** Rust edition 2024, `#![forbid(unsafe_code)]`; `astro-core` không có dependency
   bắt buộc (serde là feature tùy chọn).
+- **Phong Thủy:** Mệnh Quái theo năm âm lịch; Niên Tinh, Nguyên, Vận đổi tại ngày Lập Xuân. Giờ mặt trời thực chỉ dùng cho
+  Nhật Tinh và Thời Tinh, như trụ năm, trụ tháng của Tứ Trụ. `boundary` của Swift là `Optional` vì UniFFI không có giá trị
+  mặc định kiểu enum; WASM dùng `unchecked_optional_param_type` để `nineStars(time)` qua được kiểm tra TypeScript.
 - **Tên workspace:** workspace ảo của Cargo không có trường `name`, nên tên `viet-astro-engine`
   được ghi ở comment đầu `Cargo.toml`; thư mục repo vẫn là `Chronos`.
 - **iOS:** simulator chỉ build cho Apple Silicon (`aarch64-apple-ios-sim`) theo Task 1. Muốn chạy
@@ -171,6 +209,7 @@
 | `crates/astro-core/src/bazi_pillars.rs` | Tứ Trụ, quy ước giờ Tý, mốc chuyển năm/tháng |
 | `crates/astro-core/src/bazi_analysis.rs` | Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | `crates/astro-core/src/almanac.rs` | 12 Trực, 28 Sao, 12 Thần, 15 Thần Sát, ngày kỵ Việt Nam, hạn tuổi |
+| `crates/astro-core/src/fengshui.rs` | Bát Trạch, Mệnh Quái, Trạch Quái, Bát Biến, Tam Nguyên Cửu Vận, Cửu Tinh, bàn Cửu Cung |
 | `crates/astro-core/src/day_info.rs` | Dữ liệu cho một ô lịch |
 | `crates/astro-ffi/` | Cầu nối UniFFI (Swift module `AstroCore`) |
 | `crates/astro-ffi/src/bin/uniffi-bindgen.rs` | Trình sinh bindings, cùng phiên bản `uniffi` với thư viện |
@@ -191,22 +230,30 @@
 | Phân tích lá số | `analyze_bazi(birth, &options, gender)` | `analyzeBazi(birth:options:gender:)` | `analyzeBazi(birth, options, gender)` |
 | Xem ngày | `almanac_day(date, tz_offset)` | `almanacDay(date:tzOffset:)` | `almanacDay(date, tz_offset?)` |
 | Hạn tuổi | `age_restrictions(birth_year, target_year)` | `ageRestrictions(birthLunarYear:targetLunarYear:)` | `ageRestrictions(birth_lunar_year, target_lunar_year)` |
+| Mệnh Quái | `kua_info(birth_lunar_year, gender)` | `kuaInfo(birthLunarYear:gender:)` | `kuaInfo(birth_lunar_year, gender)` |
+| Trạch Quái | `house_trigram(sitting)`, `house_trigram_from_facing(facing)` | `houseTrigram(sitting:)`, `houseTrigramFromFacing(facing:)` | `houseTrigram(sitting)`, `houseTrigramFromFacing(facing)` |
+| Tra sao Bát Trạch | `Trigram::star_towards(other)`, `star_at(direction)`, `chart()` | `starTowards(trigram:other:)`, `starAt(trigram:direction:)`, `eightMansionsChart(trigram:)` | `starTowards(trigram, other)`, `starAt(trigram, direction)`, `eightMansionsChart(trigram)` |
+| Tương hợp Bát Biến | `kua_compatibility(first, second)` | `kuaCompatibility(first:second:)` | `kuaCompatibility(first, second)` |
+| Cửu Tinh của một thời điểm | `nine_stars(time, tz_offset, boundary)` | `nineStars(time:tzOffset:boundary:)` | `nineStars(time, tz_offset?, boundary?)` |
+| Từng sao | `year_nine_star`, `month_nine_star`, `day_nine_star`, `hour_nine_star` | `yearNineStar`, `monthNineStar`, `dayNineStar`, `hourNineStar` | `yearNineStar`, `monthNineStar`, `dayNineStar`, `hourNineStar` |
+| Theo số năm | `star_of_year(year)`, `van_of_year(year)`, `nguyen_of_year(year)` | `starOfYear(year:)`, `vanOfYear(year:)`, `nguyenOfYear(year:)` | `starOfYear(year)`, `vanOfYear(year)`, `nguyenOfYear(year)` |
+| Bàn Cửu Cung | `generate_loshu_grid(center_star, forward)`, `LoShuGrid::star_at`, `rows` | `generateLoshuGrid(centerStar:forward:)`, `loShuStarAt(grid:palace:)`, `loShuRows(grid:)` | `generateLoshuGrid(center_star, forward?)`, `loShuStarAt(grid, palace)`, `loShuRows(grid)` |
 | Thời khắc giao tiết | `get_exact_solar_term_time(year, term, tz_offset)` | `getExactSolarTermTime(year:term:tzOffset:)` | `getExactSolarTermTime(year, term, tz_offset?)` |
 | Giờ mặt trời thực | `to_true_solar_time(clock, longitude, standard_meridian)` | `trueSolarTime(clock:longitude:tzOffset:)` | `trueSolarTime(clock, longitude, tz_offset?)` |
-| Tên hiển thị | `CanChi::name_vi()`, `name_han()`, `SolarTerm::name_vi()`… | `canChiName`, `canChiHanName`, `stemName`, `branchName`, `solarTermName` | `canChiName`, `canChiHanName`, `solarTermName` |
+| Tên hiển thị | `CanChi::name_vi()`, `name_han()`, `SolarTerm::name_vi()`… | `canChiName`, `canChiHanName`, `stemName`, `branchName`, `solarTermName`, `trigramName`, `nineStarName`… | `canChiName`, `canChiHanName`, `solarTermName`, `trigramName`, `nineStarName`… |
 
-`tz_offset` mặc định là 7.0 ở Swift và JS. Rust còn có các hàm cấp thấp như
+`tz_offset` mặc định là 7.0 ở Swift và JS; `boundary` mặc định `LapXuanDay`, `forward` mặc định `true`. Rust còn có các hàm cấp thấp như
 `sun::apparent_longitude`, `sun::equation_of_time`, `moon_phase::new_moon_jd_ut`,
 `solar_term::solar_term_jd_ut`, `canchi::{year,month,day,hour}_can_chi`.
 
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 135 test core + 6 test FFI
+cargo test --workspace                                  # 201 test core + 18 test FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
-wasm-pack test --node crates/astro-wasm                 # 7 test
+wasm-pack test --node crates/astro-wasm                 # 23 test
 ./build-ios.sh                                          # cần Xcode
 ```
 
@@ -219,6 +266,8 @@ Dữ liệu đối chiếu trong test:
 - Tết Việt Nam 1985–2030; các năm nhuận và không nhuận 2001–2028
 - Tết lệch giữa VN và TQ: 1968, 1985, 2007, 2030; tháng 11 nhuận năm 2033 (TQ)
 - Quét nhất quán mọi tháng âm từ 1900 đến 2100
+- Ma trận Bát Trạch: bảng *Bát Trạch Minh Cảnh* của chủ dự án, quy tắc đổi hào, tính đối xứng
+- Cửu Tinh: 3 vector của đặc tả, các ca ở UTC+7 trong mục 0.3, 4 mã băm kết quả `lunar-ts`
 
 ## 9. Môi trường
 

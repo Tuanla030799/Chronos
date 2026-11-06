@@ -2,8 +2,9 @@
 //!
 //! Offline computational astronomy for the Vietnamese lunisolar calendar: Julian Days, the
 //! Sun's position, true new moons (Sóc), the 24 solar terms (Tiết khí), lunar-calendar
-//! conversion (Âm lịch), the sexagenary cycle (Can Chi), true solar time and the Four
-//! Pillars (Tứ Trụ). The crate has no runtime dependencies and performs no I/O.
+//! conversion (Âm lịch), the sexagenary cycle (Can Chi), true solar time, the Four
+//! Pillars (Tứ Trụ) and feng shui (Phong Thủy). The crate has no runtime dependencies and
+//! performs no I/O.
 //!
 //! ## Time zones
 //!
@@ -30,6 +31,7 @@ pub mod canchi;
 pub mod day_info;
 pub mod engine;
 mod error;
+pub mod fengshui;
 pub mod lunar_calendar;
 mod math;
 pub mod solar_terms;
@@ -47,6 +49,11 @@ pub use canchi::{Branch, CanChi, FiveElements, NaYin, Stem, YinYang};
 pub use day_info::{DayInfo, day_info};
 pub use engine::{ConnectionCheck, ENGINE_VERSION, check_connection};
 pub use error::AstroError;
+pub use fengshui::{
+    CompassDirection, EightMansionsStar, KuaCompatibility, KuaInfo, LoShuGrid, NineStar,
+    NineStarBoundary, NineStars, Palace, Trigram, generate_loshu_grid, house_trigram,
+    house_trigram_from_facing, kua_compatibility, kua_info, nine_stars,
+};
 pub use lunar_calendar::{
     LunarDate, LunarMonth, LunarYear, lunar_to_solar, lunar_year, solar_to_lunar,
 };
