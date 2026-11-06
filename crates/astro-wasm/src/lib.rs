@@ -3,7 +3,8 @@
 //! Dates go in and results come out as plain JS objects converted with serde-wasm-bindgen:
 //! field names are camelCase and enums are their variant names. The TypeScript shapes are
 //! declared below. Every `tz_offset` argument is optional and defaults to 7 (Vietnam, UTC+7).
-//! A feng shui `boundary` may be omitted for `LapXuanDay` and a `forward` for `true`.
+//! A feng shui `boundary` may be omitted for `LapXuanDay` and a `forward` for `true`. The options of
+//! a Tử Vi chart may be omitted, and so may each of their fields.
 
 use astro_core::almanac::{
     AlmanacGod, HoangOc, KimLau, Mansion, PathGod, TamTai, Truc, VietnamTaboo,
@@ -12,6 +13,10 @@ use astro_core::bazi_analysis::{BaziStar, LifeStage, TenGod};
 use astro_core::fengshui::{
     CompassDirection, EightMansionsStar, KuaInfo, LoShuGrid, NineStar, NineStarBoundary, Palace,
     TamNguyen, Trigram, TrigramGroup,
+};
+use astro_core::tuvi::{
+    FiveElementsBureau, FourTransformations, LeapMonthRule, MenhCucRelation, StarBrightness,
+    StarNature, TuViChart, TuViConfig, TuViPalaceRole, TuViPolarity, TuViStar, YinYangHarmony,
 };
 use astro_core::{
     AstroError, Branch, CanChi, DEFAULT_TZ_OFFSET, FiveElements, FourPillarsOptions, Gender,
@@ -202,6 +207,74 @@ export interface LoShuGrid {
   canTho: NineStar;
   ly: NineStar;
 }
+export type LeapMonthRule = "SameAsCurrentMonth" | "SplitAt15th";
+export interface TuViInput {
+  /** Hours east of UTC; defaults to 7 (Vietnam). */
+  tzOffset?: number;
+  /** Defaults to "SplitAt15th". */
+  leapMonthRule?: LeapMonthRule;
+  /** Defaults to "SplitAtMidnight". */
+  ratHour?: RatHourConvention;
+  /** Takes the day and double-hour from true solar time; defaults to false. */
+  useTrueSolarTime?: boolean;
+  /** Birthplace longitude in degrees east, read only with useTrueSolarTime. */
+  longitude?: number | null;
+}
+export type TuViPalaceRole = "Menh" | "PhuMau" | "PhucDuc" | "DienTrach" | "QuanLoc" | "NoBoc" | "ThienDi" | "TatAch" | "TaiBach" | "TuTuc" | "PhuThe" | "HuynhDe";
+export type FiveElementsBureau = "ThuyNhi" | "MocTam" | "KimTu" | "ThoNgu" | "HoaLuc";
+export type StarBrightness = "Mieu" | "Vuong" | "Dac" | "Binh" | "Ham";
+export type StarCategory = "ChinhTinh" | "PhuTinh";
+export type StarNature = "Cat" | "Trung" | "Hung";
+export type TuViStar = "TuVi" | "ThienCo" | "ThaiDuong" | "VuKhuc" | "ThienDong" | "LiemTrinh" | "ThienPhu" | "ThaiAm" | "ThamLang" | "CuMon" | "ThienTuong" | "ThienLuong" | "ThatSat" | "PhaQuan" | "ThaiTue" | "ThieuDuong" | "TangMon" | "ThieuAm" | "QuanPhuThaiTue" | "TuPhu" | "TuePha" | "LongDuc" | "BachHo" | "PhucDuc" | "DieuKhach" | "TrucPhu" | "LocTon" | "KinhDuong" | "DaLa" | "BacSy" | "LucSy" | "ThanhLong" | "TieuHao" | "TuongQuan" | "TauThu" | "PhiLiem" | "HyThan" | "BenhPhu" | "DaiHao" | "PhucBinh" | "QuanPhuBacSy" | "TruongSinh" | "MocDuc" | "QuanDoi" | "LamQuan" | "DeVuong" | "Suy" | "Benh" | "Tu" | "Mo" | "Tuyet" | "Thai" | "Duong" | "TaPhu" | "HuuBat" | "ThienHinh" | "ThienRieu" | "ThienY" | "ThienGiai" | "DiaGiai" | "VanXuong" | "VanKhuc" | "DiaKhong" | "DiaKiep" | "ThaiPhu" | "PhongCao" | "TamThai" | "BatToa" | "AnQuang" | "ThienQuy" | "HoaTinh" | "LinhTinh" | "ThienKhoi" | "ThienViet" | "ThienQuan" | "ThienPhuc" | "LuuHa" | "ThienTru" | "QuocAn" | "DuongPhu" | "LongTri" | "PhuongCac" | "GiaiThan" | "HongLoan" | "ThienHy" | "CoThan" | "QuaTu" | "DaoHoa" | "ThienMa" | "KiepSat" | "HoaCai" | "PhaToai" | "ThienKhong" | "ThienKhoc" | "ThienHu" | "ThienDuc" | "NguyetDuc" | "ThienTai" | "ThienTho" | "ThienThuong" | "ThienSu" | "ThienLa" | "DiaVong" | "LuuNienVanTinh" | "DauQuan";
+export type FourTransformations = "HoaLoc" | "HoaQuyen" | "HoaKhoa" | "HoaKy";
+export type TuViPolarity = "DuongNam" | "AmNam" | "DuongNu" | "AmNu";
+export type YinYangHarmony = "ThuanLy" | "NghichLy";
+export type MenhCucRelation = "MenhSinhCuc" | "CucSinhMenh" | "MenhKhacCuc" | "CucKhacMenh" | "BinhHoa";
+export interface TuViPlacedStar {
+  star: TuViStar;
+  brightness: StarBrightness | null;
+  transformation: FourTransformations | null;
+}
+export interface TuViPalace {
+  branch: Branch;
+  stem: Stem;
+  role: TuViPalaceRole;
+  isThan: boolean;
+  mainStars: TuViPlacedStar[];
+  minorStars: TuViPlacedStar[];
+  lifeStage: LifeStage;
+  daiHanStartAge: number;
+  tieuHanYearBranch: Branch;
+  tieuHanFirstAge: number;
+  hasTuan: boolean;
+  hasTriet: boolean;
+}
+export interface TuViChart {
+  gender: Gender;
+  effectiveTime: SolarDateTime | null;
+  solarDate: SolarDate;
+  lunar: LunarDate;
+  effectiveMonth: number;
+  hourBranch: Branch;
+  yearCanChi: CanChi;
+  monthCanChi: CanChi;
+  dayCanChi: CanChi;
+  hourCanChi: CanChi;
+  polarity: TuViPolarity;
+  forward: boolean;
+  banMenh: NaYin;
+  bureau: FiveElementsBureau;
+  menhBranch: Branch;
+  thanBranch: Branch;
+  thanRole: TuViPalaceRole;
+  menhChu: TuViStar;
+  thanChu: TuViStar;
+  harmony: YinYangHarmony;
+  menhCuc: MenhCucRelation;
+  tuan: KhongVong;
+  triet: KhongVong;
+  palaces: TuViPalace[];
+}
 "#;
 
 /// Options accepted by `fourPillars` and `analyzeBazi`; every field is optional.
@@ -229,6 +302,34 @@ impl From<FourPillarsInput> for FourPillarsOptions {
             longitude: input.longitude,
             rat_hour: input.rat_hour,
             boundary: input.boundary,
+        }
+    }
+}
+
+/// Options accepted by `tuviChart` and `tuviChartFromLunar`; every field is optional.
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct TuViInput {
+    #[serde(default = "default_tz_offset")]
+    tz_offset: f64,
+    #[serde(default)]
+    leap_month_rule: LeapMonthRule,
+    #[serde(default)]
+    rat_hour: RatHourConvention,
+    #[serde(default)]
+    use_true_solar_time: bool,
+    #[serde(default)]
+    longitude: Option<f64>,
+}
+
+impl From<TuViInput> for TuViConfig {
+    fn from(input: TuViInput) -> Self {
+        Self {
+            tz_offset: input.tz_offset,
+            leap_month_rule: input.leap_month_rule,
+            rat_hour: input.rat_hour,
+            use_true_solar_time: input.use_true_solar_time,
+            longitude: input.longitude,
         }
     }
 }
@@ -934,8 +1035,205 @@ pub fn five_elements_name(
     Ok(from_js::<FiveElements>(value)?.name_vi().to_owned())
 }
 
+/// Tử Vi chart of a birth at a wall-clock time.
+#[wasm_bindgen(js_name = tuviChart, unchecked_return_type = "TuViChart")]
+pub fn tuvi_chart(
+    #[wasm_bindgen(unchecked_param_type = "SolarDateTime")] birth: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Gender")] gender: JsValue,
+    #[wasm_bindgen(unchecked_optional_param_type = "TuViInput | null")] options: JsValue,
+) -> Result<JsValue, JsValue> {
+    let birth: SolarDateTime = from_js(birth)?;
+    let gender: Gender = from_js(gender)?;
+    let config = tuvi_config(options)?;
+    to_js(&astro_core::tuvi_chart(birth, gender, &config).map_err(astro_error)?)
+}
+
+/// Tử Vi chart of a birth on a lunar date at a double-hour.
+#[wasm_bindgen(js_name = tuviChartFromLunar, unchecked_return_type = "TuViChart")]
+pub fn tuvi_chart_from_lunar(
+    #[wasm_bindgen(unchecked_param_type = "LunarDate")] lunar: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Branch")] hour: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Gender")] gender: JsValue,
+    #[wasm_bindgen(unchecked_optional_param_type = "TuViInput | null")] options: JsValue,
+) -> Result<JsValue, JsValue> {
+    let lunar: LunarDate = from_js(lunar)?;
+    let hour: Branch = from_js(hour)?;
+    let gender: Gender = from_js(gender)?;
+    let config = tuvi_config(options)?;
+    to_js(&astro_core::tuvi_chart_from_lunar(lunar, hour, gender, &config).map_err(astro_error)?)
+}
+
+/// Palace of the Đại Hạn at tuổi mụ `age`, or `null`.
+#[wasm_bindgen(js_name = tuviDaiHanPalace, unchecked_return_type = "TuViPalace | null")]
+pub fn tuvi_dai_han_palace(
+    #[wasm_bindgen(unchecked_param_type = "TuViChart")] chart: JsValue,
+    age: u8,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TuViChart>(chart)?.dai_han_palace(age))
+}
+
+/// Palace of the Tiểu Hạn at tuổi mụ `age`, or `null`.
+#[wasm_bindgen(js_name = tuviTieuHanPalace, unchecked_return_type = "TuViPalace | null")]
+pub fn tuvi_tieu_han_palace(
+    #[wasm_bindgen(unchecked_param_type = "TuViChart")] chart: JsValue,
+    age: u8,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TuViChart>(chart)?.tieu_han_palace(age))
+}
+
+/// Every star of a Tử Vi chart, in the order of the enum.
+#[wasm_bindgen(js_name = tuviAllStars, unchecked_return_type = "TuViStar[]")]
+pub fn tuvi_all_stars() -> Result<JsValue, JsValue> {
+    to_js(&TuViStar::ALL.to_vec())
+}
+
+/// Whether a star is one of the 14 Chính Tinh.
+#[wasm_bindgen(js_name = tuviStarCategory, unchecked_return_type = "StarCategory")]
+pub fn tuvi_star_category(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TuViStar>(value)?.category())
+}
+
+/// Inherent nature of a star. This is the project's reading of the book, not a table of the book.
+#[wasm_bindgen(js_name = tuviStarNature, unchecked_return_type = "StarNature")]
+pub fn tuvi_star_nature(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TuViStar>(value)?.nature())
+}
+
+/// Brightness of a star in a palace; only the Chính Tinh have one.
+#[wasm_bindgen(js_name = tuviStarBrightness, unchecked_return_type = "StarBrightness | null")]
+pub fn tuvi_star_brightness(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    let branch: Branch = from_js(branch)?;
+    to_js(&from_js::<TuViStar>(value)?.brightness_at(branch))
+}
+
+/// The star that takes a transformation in a year with stem `yearStem`.
+#[wasm_bindgen(js_name = fourTransformationStar, unchecked_return_type = "TuViStar")]
+pub fn four_transformation_star(
+    #[wasm_bindgen(unchecked_param_type = "FourTransformations")] value: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Stem")] year_stem: JsValue,
+) -> Result<JsValue, JsValue> {
+    let year_stem: Stem = from_js(year_stem)?;
+    to_js(&from_js::<FourTransformations>(value)?.star_for(year_stem))
+}
+
+/// Inherent nature of a transformation.
+#[wasm_bindgen(js_name = fourTransformationNature, unchecked_return_type = "StarNature")]
+pub fn four_transformation_nature(
+    #[wasm_bindgen(unchecked_param_type = "FourTransformations")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<FourTransformations>(value)?.nature())
+}
+
+/// Number of a bureau, from 2 to 6.
+#[wasm_bindgen(js_name = fiveElementsBureauNumber)]
+pub fn five_elements_bureau_number(
+    #[wasm_bindgen(unchecked_param_type = "FiveElementsBureau")] value: JsValue,
+) -> Result<u8, JsValue> {
+    Ok(from_js::<FiveElementsBureau>(value)?.number())
+}
+
+/// Element of a bureau.
+#[wasm_bindgen(js_name = fiveElementsBureauElement, unchecked_return_type = "FiveElements")]
+pub fn five_elements_bureau_element(
+    #[wasm_bindgen(unchecked_param_type = "FiveElementsBureau")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<FiveElementsBureau>(value)?.element())
+}
+
+/// Vietnamese name of a star, e.g. "Thiên Phủ".
+#[wasm_bindgen(js_name = tuviStarName)]
+pub fn tuvi_star_name(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TuViStar>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a brightness, e.g. "Miếu".
+#[wasm_bindgen(js_name = starBrightnessName)]
+pub fn star_brightness_name(
+    #[wasm_bindgen(unchecked_param_type = "StarBrightness")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<StarBrightness>(value)?.name_vi().to_owned())
+}
+
+/// Mark of a brightness on a chart: M, V, Đ, B or H.
+#[wasm_bindgen(js_name = starBrightnessMark)]
+pub fn star_brightness_mark(
+    #[wasm_bindgen(unchecked_param_type = "StarBrightness")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<StarBrightness>(value)?.mark().to_owned())
+}
+
+/// Vietnamese name of a star's nature, e.g. "Cát".
+#[wasm_bindgen(js_name = starNatureName)]
+pub fn star_nature_name(
+    #[wasm_bindgen(unchecked_param_type = "StarNature")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<StarNature>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a transformation, e.g. "Hóa Lộc".
+#[wasm_bindgen(js_name = fourTransformationName)]
+pub fn four_transformation_name(
+    #[wasm_bindgen(unchecked_param_type = "FourTransformations")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<FourTransformations>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a functional palace, e.g. "Phụ Mẫu".
+#[wasm_bindgen(js_name = tuviPalaceRoleName)]
+pub fn tuvi_palace_role_name(
+    #[wasm_bindgen(unchecked_param_type = "TuViPalaceRole")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TuViPalaceRole>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a bureau, e.g. "Mộc Tam Cục".
+#[wasm_bindgen(js_name = fiveElementsBureauName)]
+pub fn five_elements_bureau_name(
+    #[wasm_bindgen(unchecked_param_type = "FiveElementsBureau")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<FiveElementsBureau>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a polarity, e.g. "Dương Nam".
+#[wasm_bindgen(js_name = tuviPolarityName)]
+pub fn tuvi_polarity_name(
+    #[wasm_bindgen(unchecked_param_type = "TuViPolarity")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TuViPolarity>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of a harmony, e.g. "Thuận lý".
+#[wasm_bindgen(js_name = yinYangHarmonyName)]
+pub fn yin_yang_harmony_name(
+    #[wasm_bindgen(unchecked_param_type = "YinYangHarmony")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<YinYangHarmony>(value)?.name_vi().to_owned())
+}
+
+/// Vietnamese name of the relation between Bản Mệnh and bureau, e.g. "Bản Mệnh sinh Cục".
+#[wasm_bindgen(js_name = menhCucRelationName)]
+pub fn menh_cuc_relation_name(
+    #[wasm_bindgen(unchecked_param_type = "MenhCucRelation")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<MenhCucRelation>(value)?.name_vi().to_owned())
+}
+
 fn zone(tz_offset: Option<f64>) -> f64 {
     tz_offset.unwrap_or(DEFAULT_TZ_OFFSET)
+}
+
+/// `undefined` and `null` select the default; an object may leave out any field.
+fn tuvi_config(options: JsValue) -> Result<TuViConfig, JsValue> {
+    Ok(from_js::<Option<TuViInput>>(options)?.map_or_else(TuViConfig::default, TuViConfig::from))
 }
 
 /// `undefined` and `null` select the default; anything else must name a boundary.

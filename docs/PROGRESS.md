@@ -3,6 +3,7 @@
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
 > Cập nhật lần cuối: **2026-11-06**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
+> Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5 đã chốt. **Giai đoạn 4 hoàn thành.** Còn T8, T9 cần xem lại, không chặn code.
 
 ## 1. Trạng thái
 
@@ -20,7 +21,8 @@
 | Đặc tả Bát Tự & Trạch Nhật | ✅ Xong | `docs/BAZI_ALMANAC_SPEC.md`; Q1–Q10 đã chốt, còn Q11, Q12 |
 | Bát Tự — phân tích lá số | ✅ Xong | `bazi_analysis.rs`: Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | Trạch Nhật, hạn tuổi | ✅ Xong | `almanac.rs` |
-| Tử Vi Đẩu Số | ⏳ Chưa làm | Chờ bảng quy tắc qua `/ingest-rules` |
+| Đặc tả Tử Vi Đẩu Số | ✅ Xong | `docs/TUVI_SPEC.md`; T1–T5 đã chốt, còn T8, T9 |
+| Tử Vi Đẩu Số — lập lá số | ✅ Xong | `tuvi.rs`: 105 sao, Tứ Hóa, Miếu Hãm, Tuần, Triệt, Đại Hạn, Tiểu Hạn, Thiên Bàn; có trên Swift và WASM |
 | Đặc tả Phong Thủy | ✅ Xong | `docs/FENGSHUI_SPEC.md`; F1–F5 đã chốt |
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Cần Xcode |
@@ -37,12 +39,47 @@
 - [x] Chốt F1–F5 ở `docs/FENGSHUI_SPEC.md`
 - [x] Viết module Phong Thủy trong `astro-core`, đưa lên Swift và WASM
 - [ ] Đối chiếu 3 vector Phong Thủy với lịch in
-- [ ] Đưa bảng quy tắc Tử Vi vào qua `/ingest-rules`
+- [x] Có bảng quy tắc Tử Vi: lấy từ *Tân Biên* vào `docs/TUVI_SPEC.md`
+- [x] Chốt T1–T5 ở `docs/TUVI_SPEC.md`
+- [x] Viết `tuvi.rs`, đưa lên Swift và WASM
+- [ ] Duyệt T8 (nguồn cho Mệnh Chủ, Thân Chủ) và T9 (bảng Cát, Hung) ở mục 8.2 của `docs/TUVI_SPEC.md`
+- [ ] Đối chiếu V3 (Dương Nam, tháng nhuận) với một lá số lập bằng nguồn khác
 - [ ] Bắt đầu app iOS (SwiftUI) dùng XCFramework
 - [x] Commit Giai đoạn 3 cùng `docs/`, `.gitignore`, `THIRD_PARTY_NOTICES.md`
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-06 — Task 4B.2: `tuvi.rs` và cầu nối
+
+- Đóng T1–T5: 12 cung đi thuận; Hóa Khoa Can Nhâm là Tả Phụ; Lưu Hà Can Tân ở Mão; dùng `RatHourConvention`; thêm 10 sao.
+- Thêm `tuvi.rs`: `TuViChart`, `TuViPalace`, `TuViPlacedStar`, `TuViStar` (105 sao), `FourTransformations`,
+  `FiveElementsBureau`, `StarBrightness`, `TuViConfig`, `tuvi_chart`, `tuvi_chart_from_lunar`. Swift có thêm 23 hàm, WASM 22.
+- Task 4B.2 cần ba nội dung đặc tả chưa có. Thuận lý và Cục sinh khắc có trong sách (tr. 31). **Mệnh Chủ, Thân Chủ** sách
+  không có, đang dùng bảng số đông nguồn web (T8). **Cát, Hung** sách không có bảng, dự án lập theo nhãn và mô tả (T9).
+- Tứ Hóa là `FourTransformations` gắn vào sao gốc, không phải `TuViStar`, nên enum có 105 sao, cộng 4 Hóa là 109 vị trí.
+- `use_true_solar_time` cần kinh độ: thêm `longitude`, thiếu thì lấy kinh tuyến chuẩn của múi giờ.
+- Phụ tinh luôn có `brightness` là `None`: sách có ghi Đắc địa cho vài phụ tinh, nhưng đặc tả chỉ phủ 14 Chính Tinh.
+- Kiểm chứng: 248 test core, 21 test FFI, 28 test WASM đều qua; `clippy -D warnings`, `rustfmt` sạch. Test so từng sao với
+  4 lá số in trong sách, chỉ trừ đúng các lỗi in đã ghi. `tuvi.rs` khớp mô hình Python độc lập trên 47.808 lá số.
+  67 đột biến viết tay: vòng đầu sót 8, sau khi thêm test toàn bảng thì bắt hết. Chương trình Swift thật chạy qua bindings
+  sinh ra. Static lib iOS build được; chưa đóng gói `AstroCore.xcframework` vì chưa có Xcode.
+
+### 2026-11-06 — Task 4B.1: đặc tả Tử Vi Đẩu Số
+
+- Tạo `docs/TUVI_SPEC.md`: 12 cung, Cục, 14 Chính Tinh, 3 vòng sao, phụ tinh, Tứ Hóa, Tuần, Triệt, Đại Hạn, Tiểu Hạn,
+  bảng Miếu Hãm, 5 vector (3 theo yêu cầu, thêm 2 từ sách). Chưa viết code Rust.
+- Nguồn chính là *Tân Biên* bản Internet Archive, đọc từ ảnh trang. Đây là bản đánh máy lại, có lỗi: mục 0.4 của đặc tả
+  liệt kê 11 chỗ. Bốn lá số ở Phụ lục dùng làm đối chứng.
+- Khác Task 4B.1: 12 cung đi thuận, không đi nghịch (T1); tr. 14 ghi Hóa Khoa Can Nhâm là Tả Phụ, không phải Thiên Phủ (T2).
+- Bảng in trái với lá số của chính sách: Hóa Quyền Can Tân, Hỏa Tinh nhóm Hợi-Mão-Mùi (đã sửa theo lá số);
+  Lưu Hà Can Tân (T3, giữ theo bảng).
+- `lasotuvi` theo sách cụ Thiên Lương, khác *Tân Biên* ở 5 quy tắc và thiếu Miếu Hãm của Thiên Phủ: không dùng làm chuẩn.
+  Chỉ đọc bảng dữ liệu của nó, không chạy code.
+- Kiểm chứng: 4 lá số khớp 434/436 vị trí sao; bảng Tử Vi khớp 149/150 ô, bảng Lập Cục 120/120, Tuần 60/60, 20 ví dụ trong
+  sách đều khớp; đọc ngược đặc tả, 791 phép kiểm đều qua.
+- Chưa kiểm được: sách không có lá số Dương Nam, Âm Nữ, nên chiều thuận chỉ dựa vào lời văn; Tứ Hóa chỉ có đối chứng
+  cho Can Giáp, Tân, Quý.
 
 ### 2026-11-06 — Task 4A.2: `fengshui.rs` và cầu nối
 
@@ -167,6 +204,8 @@
 3. **Quy ước giờ Tý mặc định: đã chốt** là `SplitAtMidnight`. Dự án gọi 23:00–23:59 là giờ Tý Sớm.
 4. **Phong Thủy F1–F5: đã chốt** ở Task 4A.2, xem mục 6.1 của `docs/FENGSHUI_SPEC.md`. Còn lại việc đối chiếu vector với
    lịch in, không chặn code.
+5. **Tử Vi T1–T5: đã chốt** ở Task 4B.2. **T8, T9 cần duyệt**, xem mục 8.2 của `docs/TUVI_SPEC.md`: Mệnh Chủ, Thân Chủ và
+   bảng Cát, Hung không đến từ *Tân Biên*. Không chặn code, nhưng chưa đạt mức nguồn đã duyệt của `CLAUDE.md`.
 
 ## 5. Quyết định kỹ thuật
 
@@ -187,6 +226,8 @@
 - **Phong Thủy:** Mệnh Quái theo năm âm lịch; Niên Tinh, Nguyên, Vận đổi tại ngày Lập Xuân. Giờ mặt trời thực chỉ dùng cho
   Nhật Tinh và Thời Tinh, như trụ năm, trụ tháng của Tứ Trụ. `boundary` của Swift là `Optional` vì UniFFI không có giá trị
   mặc định kiểu enum; WASM dùng `unchecked_optional_param_type` để `nineStars(time)` qua được kiểm tra TypeScript.
+- **Tử Vi:** năm đổi tại Tết, tuổi là tuổi mụ, giờ mặt trời thực chỉ dùng khi bật `use_true_solar_time`. Vòng Trường Sinh là
+  12 biến thể của `TuViStar`, `life_stage` của cung lặp lại sao đó. `TuViPalace` là bản ghi một cung; `Palace` đã thuộc Phong Thủy.
 - **Tên workspace:** workspace ảo của Cargo không có trường `name`, nên tên `viet-astro-engine`
   được ghi ở comment đầu `Cargo.toml`; thư mục repo vẫn là `Chronos`.
 - **iOS:** simulator chỉ build cho Apple Silicon (`aarch64-apple-ios-sim`) theo Task 1. Muốn chạy
@@ -210,6 +251,7 @@
 | `crates/astro-core/src/bazi_analysis.rs` | Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | `crates/astro-core/src/almanac.rs` | 12 Trực, 28 Sao, 12 Thần, 15 Thần Sát, ngày kỵ Việt Nam, hạn tuổi |
 | `crates/astro-core/src/fengshui.rs` | Bát Trạch, Mệnh Quái, Trạch Quái, Bát Biến, Tam Nguyên Cửu Vận, Cửu Tinh, bàn Cửu Cung |
+| `crates/astro-core/src/tuvi.rs` | Lá số Tử Vi: 12 cung, Cục, 105 sao, Tứ Hóa, Miếu Hãm, Tuần, Triệt, Đại Hạn, Tiểu Hạn, Thiên Bàn |
 | `crates/astro-core/src/day_info.rs` | Dữ liệu cho một ô lịch |
 | `crates/astro-ffi/` | Cầu nối UniFFI (Swift module `AstroCore`) |
 | `crates/astro-ffi/src/bin/uniffi-bindgen.rs` | Trình sinh bindings, cùng phiên bản `uniffi` với thư viện |
@@ -238,6 +280,9 @@
 | Từng sao | `year_nine_star`, `month_nine_star`, `day_nine_star`, `hour_nine_star` | `yearNineStar`, `monthNineStar`, `dayNineStar`, `hourNineStar` | `yearNineStar`, `monthNineStar`, `dayNineStar`, `hourNineStar` |
 | Theo số năm | `star_of_year(year)`, `van_of_year(year)`, `nguyen_of_year(year)` | `starOfYear(year:)`, `vanOfYear(year:)`, `nguyenOfYear(year:)` | `starOfYear(year)`, `vanOfYear(year)`, `nguyenOfYear(year)` |
 | Bàn Cửu Cung | `generate_loshu_grid(center_star, forward)`, `LoShuGrid::star_at`, `rows` | `generateLoshuGrid(centerStar:forward:)`, `loShuStarAt(grid:palace:)`, `loShuRows(grid:)` | `generateLoshuGrid(center_star, forward?)`, `loShuStarAt(grid, palace)`, `loShuRows(grid)` |
+| Lá số Tử Vi | `tuvi_chart(birth, gender, &config)`, `tuvi_chart_from_lunar(lunar, hour, gender, &config)` | `tuviChart(birth:gender:config:)`, `tuviChartFromLunar(lunar:hour:gender:config:)` | `tuviChart(birth, gender, options?)`, `tuviChartFromLunar(lunar, hour, gender, options?)` |
+| Hạn theo tuổi | `TuViChart::dai_han_palace(age)`, `tieu_han_palace(age)` | `tuviDaiHanPalace(chart:age:)`, `tuviTieuHanPalace(chart:age:)` | `tuviDaiHanPalace(chart, age)`, `tuviTieuHanPalace(chart, age)` |
+| Thuộc tính sao | `TuViStar::name_vi`, `category`, `nature`, `brightness_at`; `FourTransformations::star_for` | `tuviStarName`, `tuviStarCategory`, `tuviStarNature`, `tuviStarBrightness`, `fourTransformationStar` | Cùng tên với Swift |
 | Thời khắc giao tiết | `get_exact_solar_term_time(year, term, tz_offset)` | `getExactSolarTermTime(year:term:tzOffset:)` | `getExactSolarTermTime(year, term, tz_offset?)` |
 | Giờ mặt trời thực | `to_true_solar_time(clock, longitude, standard_meridian)` | `trueSolarTime(clock:longitude:tzOffset:)` | `trueSolarTime(clock, longitude, tz_offset?)` |
 | Tên hiển thị | `CanChi::name_vi()`, `name_han()`, `SolarTerm::name_vi()`… | `canChiName`, `canChiHanName`, `stemName`, `branchName`, `solarTermName`, `trigramName`, `nineStarName`… | `canChiName`, `canChiHanName`, `solarTermName`, `trigramName`, `nineStarName`… |
@@ -249,11 +294,11 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 201 test core + 18 test FFI
+cargo test --workspace                                  # 248 test core + 21 test FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
-wasm-pack test --node crates/astro-wasm                 # 23 test
+wasm-pack test --node crates/astro-wasm                 # 28 test
 ./build-ios.sh                                          # cần Xcode
 ```
 
@@ -268,6 +313,7 @@ Dữ liệu đối chiếu trong test:
 - Quét nhất quán mọi tháng âm từ 1900 đến 2100
 - Ma trận Bát Trạch: bảng *Bát Trạch Minh Cảnh* của chủ dự án, quy tắc đổi hào, tính đối xứng
 - Cửu Tinh: 3 vector của đặc tả, các ca ở UTC+7 trong mục 0.3, 4 mã băm kết quả `lunar-ts`
+- Tử Vi: bảng Lập Cục, Tử Vi, Tuần, Triệt, Tứ Hóa, Miếu Hãm của *Tân Biên*; 20 ví dụ trong sách; 4 lá số in ở Phụ lục; 5 vector của đặc tả
 
 ## 9. Môi trường
 

@@ -4,7 +4,7 @@
 //! records and enums of astro-core with no conversion layer. Every `tz_offset` argument
 //! defaults to 7.0 (Vietnam, UTC+7) in the generated bindings. UniFFI has no literal default
 //! for an enum, so every `NineStarBoundary` argument is optional instead: omitting it means
-//! `NineStarBoundary::default()`.
+//! `NineStarBoundary::default()`. Likewise, omitting a `TuViConfig` means `TuViConfig::default()`.
 
 use astro_core::almanac::{
     AgeRestrictions, AlmanacDay, AlmanacGod, HoangOc, KimLau, Luck, Mansion, PathGod, TamTai, Truc,
@@ -17,6 +17,11 @@ use astro_core::bazi_analysis::{
 use astro_core::fengshui::{
     CompassDirection, DirectionStar, EightMansionsStar, FlyingStar, KuaCompatibility, KuaInfo,
     LoShuGrid, NineStar, NineStarBoundary, NineStars, Palace, TamNguyen, Trigram, TrigramGroup,
+};
+use astro_core::tuvi::{
+    FiveElementsBureau, FourTransformations, LeapMonthRule, MenhCucRelation, StarBrightness,
+    StarCategory, StarNature, TuViChart, TuViConfig, TuViPalace, TuViPalaceRole, TuViPlacedStar,
+    TuViPolarity, TuViStar, YinYangHarmony,
 };
 use astro_core::{
     AstroError, Branch, CanChi, ConnectionCheck, DayInfo, FiveElements, FourPillars,
@@ -720,6 +725,259 @@ pub fn day_info(date: SolarDate, tz_offset: f64) -> Result<DayInfo, AstroError> 
     astro_core::day_info(date, tz_offset)
 }
 
+#[uniffi::remote(Enum)]
+pub enum LeapMonthRule {
+    SameAsCurrentMonth,
+    SplitAt15th,
+}
+
+#[uniffi::remote(Record)]
+pub struct TuViConfig {
+    pub tz_offset: f64,
+    pub leap_month_rule: LeapMonthRule,
+    pub rat_hour: RatHourConvention,
+    pub use_true_solar_time: bool,
+    pub longitude: Option<f64>,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TuViPalaceRole {
+    Menh,
+    PhuMau,
+    PhucDuc,
+    DienTrach,
+    QuanLoc,
+    NoBoc,
+    ThienDi,
+    TatAch,
+    TaiBach,
+    TuTuc,
+    PhuThe,
+    HuynhDe,
+}
+
+#[uniffi::remote(Enum)]
+pub enum FiveElementsBureau {
+    ThuyNhi,
+    MocTam,
+    KimTu,
+    ThoNgu,
+    HoaLuc,
+}
+
+#[uniffi::remote(Enum)]
+pub enum StarBrightness {
+    Mieu,
+    Vuong,
+    Dac,
+    Binh,
+    Ham,
+}
+
+#[uniffi::remote(Enum)]
+pub enum StarCategory {
+    ChinhTinh,
+    PhuTinh,
+}
+
+#[uniffi::remote(Enum)]
+pub enum StarNature {
+    Cat,
+    Trung,
+    Hung,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TuViStar {
+    TuVi,
+    ThienCo,
+    ThaiDuong,
+    VuKhuc,
+    ThienDong,
+    LiemTrinh,
+    ThienPhu,
+    ThaiAm,
+    ThamLang,
+    CuMon,
+    ThienTuong,
+    ThienLuong,
+    ThatSat,
+    PhaQuan,
+    ThaiTue,
+    ThieuDuong,
+    TangMon,
+    ThieuAm,
+    QuanPhuThaiTue,
+    TuPhu,
+    TuePha,
+    LongDuc,
+    BachHo,
+    PhucDuc,
+    DieuKhach,
+    TrucPhu,
+    LocTon,
+    KinhDuong,
+    DaLa,
+    BacSy,
+    LucSy,
+    ThanhLong,
+    TieuHao,
+    TuongQuan,
+    TauThu,
+    PhiLiem,
+    HyThan,
+    BenhPhu,
+    DaiHao,
+    PhucBinh,
+    QuanPhuBacSy,
+    TruongSinh,
+    MocDuc,
+    QuanDoi,
+    LamQuan,
+    DeVuong,
+    Suy,
+    Benh,
+    Tu,
+    Mo,
+    Tuyet,
+    Thai,
+    Duong,
+    TaPhu,
+    HuuBat,
+    ThienHinh,
+    ThienRieu,
+    ThienY,
+    ThienGiai,
+    DiaGiai,
+    VanXuong,
+    VanKhuc,
+    DiaKhong,
+    DiaKiep,
+    ThaiPhu,
+    PhongCao,
+    TamThai,
+    BatToa,
+    AnQuang,
+    ThienQuy,
+    HoaTinh,
+    LinhTinh,
+    ThienKhoi,
+    ThienViet,
+    ThienQuan,
+    ThienPhuc,
+    LuuHa,
+    ThienTru,
+    QuocAn,
+    DuongPhu,
+    LongTri,
+    PhuongCac,
+    GiaiThan,
+    HongLoan,
+    ThienHy,
+    CoThan,
+    QuaTu,
+    DaoHoa,
+    ThienMa,
+    KiepSat,
+    HoaCai,
+    PhaToai,
+    ThienKhong,
+    ThienKhoc,
+    ThienHu,
+    ThienDuc,
+    NguyetDuc,
+    ThienTai,
+    ThienTho,
+    ThienThuong,
+    ThienSu,
+    ThienLa,
+    DiaVong,
+    LuuNienVanTinh,
+    DauQuan,
+}
+
+#[uniffi::remote(Enum)]
+pub enum FourTransformations {
+    HoaLoc,
+    HoaQuyen,
+    HoaKhoa,
+    HoaKy,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TuViPolarity {
+    DuongNam,
+    AmNam,
+    DuongNu,
+    AmNu,
+}
+
+#[uniffi::remote(Enum)]
+pub enum YinYangHarmony {
+    ThuanLy,
+    NghichLy,
+}
+
+#[uniffi::remote(Enum)]
+pub enum MenhCucRelation {
+    MenhSinhCuc,
+    CucSinhMenh,
+    MenhKhacCuc,
+    CucKhacMenh,
+    BinhHoa,
+}
+
+#[uniffi::remote(Record)]
+pub struct TuViPlacedStar {
+    pub star: TuViStar,
+    pub brightness: Option<StarBrightness>,
+    pub transformation: Option<FourTransformations>,
+}
+
+#[uniffi::remote(Record)]
+pub struct TuViPalace {
+    pub branch: Branch,
+    pub stem: Stem,
+    pub role: TuViPalaceRole,
+    pub is_than: bool,
+    pub main_stars: Vec<TuViPlacedStar>,
+    pub minor_stars: Vec<TuViPlacedStar>,
+    pub life_stage: LifeStage,
+    pub dai_han_start_age: u8,
+    pub tieu_han_year_branch: Branch,
+    pub tieu_han_first_age: u8,
+    pub has_tuan: bool,
+    pub has_triet: bool,
+}
+
+#[uniffi::remote(Record)]
+pub struct TuViChart {
+    pub gender: Gender,
+    pub effective_time: Option<SolarDateTime>,
+    pub solar_date: SolarDate,
+    pub lunar: LunarDate,
+    pub effective_month: u8,
+    pub hour_branch: Branch,
+    pub year_can_chi: CanChi,
+    pub month_can_chi: CanChi,
+    pub day_can_chi: CanChi,
+    pub hour_can_chi: CanChi,
+    pub polarity: TuViPolarity,
+    pub forward: bool,
+    pub ban_menh: NaYin,
+    pub bureau: FiveElementsBureau,
+    pub menh_branch: Branch,
+    pub than_branch: Branch,
+    pub than_role: TuViPalaceRole,
+    pub menh_chu: TuViStar,
+    pub than_chu: TuViStar,
+    pub harmony: YinYangHarmony,
+    pub menh_cuc: MenhCucRelation,
+    pub tuan: KhongVong,
+    pub triet: KhongVong,
+    pub palaces: Vec<TuViPalace>,
+}
+
 /// The Four Pillars of a birth at a wall-clock time.
 #[uniffi::export]
 pub fn four_pillars(
@@ -1205,6 +1463,153 @@ pub fn five_elements_name(value: FiveElements) -> String {
     value.name_vi().to_owned()
 }
 
+/// The settings of a Tử Vi chart when none are given.
+#[uniffi::export]
+pub fn default_tuvi_config() -> TuViConfig {
+    TuViConfig::default()
+}
+
+/// Tử Vi chart of a birth at a wall-clock time.
+#[uniffi::export(default(config))]
+pub fn tuvi_chart(
+    birth: SolarDateTime,
+    gender: Gender,
+    config: Option<TuViConfig>,
+) -> Result<TuViChart, AstroError> {
+    astro_core::tuvi_chart(birth, gender, &config.unwrap_or_default())
+}
+
+/// Tử Vi chart of a birth on a lunar date at a double-hour.
+#[uniffi::export(default(config))]
+pub fn tuvi_chart_from_lunar(
+    lunar: LunarDate,
+    hour: Branch,
+    gender: Gender,
+    config: Option<TuViConfig>,
+) -> Result<TuViChart, AstroError> {
+    astro_core::tuvi_chart_from_lunar(lunar, hour, gender, &config.unwrap_or_default())
+}
+
+/// Palace of the Đại Hạn at tuổi mụ `age`, if any.
+#[uniffi::export]
+pub fn tuvi_dai_han_palace(chart: TuViChart, age: u8) -> Option<TuViPalace> {
+    chart.dai_han_palace(age).cloned()
+}
+
+/// Palace of the Tiểu Hạn at tuổi mụ `age`, if any.
+#[uniffi::export]
+pub fn tuvi_tieu_han_palace(chart: TuViChart, age: u8) -> Option<TuViPalace> {
+    chart.tieu_han_palace(age).cloned()
+}
+
+/// Every star of a Tử Vi chart, in the order of the enum.
+#[uniffi::export]
+pub fn tuvi_all_stars() -> Vec<TuViStar> {
+    TuViStar::ALL.to_vec()
+}
+
+/// Vietnamese name of a star, e.g. "Thiên Phủ".
+#[uniffi::export]
+pub fn tuvi_star_name(value: TuViStar) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Whether a star is one of the 14 Chính Tinh.
+#[uniffi::export]
+pub fn tuvi_star_category(value: TuViStar) -> StarCategory {
+    value.category()
+}
+
+/// Inherent nature of a star. This is the project's reading of the book, not a table of the book.
+#[uniffi::export]
+pub fn tuvi_star_nature(value: TuViStar) -> StarNature {
+    value.nature()
+}
+
+/// Brightness of a star in a palace; only the Chính Tinh have one.
+#[uniffi::export]
+pub fn tuvi_star_brightness(value: TuViStar, branch: Branch) -> Option<StarBrightness> {
+    value.brightness_at(branch)
+}
+
+/// Vietnamese name of a brightness, e.g. "Miếu".
+#[uniffi::export]
+pub fn star_brightness_name(value: StarBrightness) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Mark of a brightness on a chart: M, V, Đ, B or H.
+#[uniffi::export]
+pub fn star_brightness_mark(value: StarBrightness) -> String {
+    value.mark().to_owned()
+}
+
+/// Vietnamese name of a star's nature, e.g. "Cát".
+#[uniffi::export]
+pub fn star_nature_name(value: StarNature) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of a transformation, e.g. "Hóa Lộc".
+#[uniffi::export]
+pub fn four_transformation_name(value: FourTransformations) -> String {
+    value.name_vi().to_owned()
+}
+
+/// The star that takes a transformation in a year with stem `year_stem`.
+#[uniffi::export]
+pub fn four_transformation_star(value: FourTransformations, year_stem: Stem) -> TuViStar {
+    value.star_for(year_stem)
+}
+
+/// Inherent nature of a transformation.
+#[uniffi::export]
+pub fn four_transformation_nature(value: FourTransformations) -> StarNature {
+    value.nature()
+}
+
+/// Vietnamese name of a functional palace, e.g. "Phụ Mẫu".
+#[uniffi::export]
+pub fn tuvi_palace_role_name(value: TuViPalaceRole) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of a bureau, e.g. "Mộc Tam Cục".
+#[uniffi::export]
+pub fn five_elements_bureau_name(value: FiveElementsBureau) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Number of a bureau, from 2 to 6.
+#[uniffi::export]
+pub fn five_elements_bureau_number(value: FiveElementsBureau) -> u8 {
+    value.number()
+}
+
+/// Element of a bureau.
+#[uniffi::export]
+pub fn five_elements_bureau_element(value: FiveElementsBureau) -> FiveElements {
+    value.element()
+}
+
+/// Vietnamese name of a polarity, e.g. "Dương Nam".
+#[uniffi::export]
+pub fn tuvi_polarity_name(value: TuViPolarity) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of a harmony, e.g. "Thuận lý".
+#[uniffi::export]
+pub fn yin_yang_harmony_name(value: YinYangHarmony) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Vietnamese name of the relation between Bản Mệnh and bureau, e.g. "Bản Mệnh sinh Cục".
+#[uniffi::export]
+pub fn menh_cuc_relation_name(value: MenhCucRelation) -> String {
+    value.name_vi().to_owned()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -1236,7 +1641,9 @@ mod tests {
             .filter(|line| line.starts_with("#[uniffi::export(default("));
         for export in exports {
             assert!(
-                export.contains("tz_offset = 7.0") || export.contains("forward = true"),
+                export.contains("tz_offset = 7.0")
+                    || export.contains("forward = true")
+                    || export.contains("default(config)"),
                 "{export}"
             );
         }
@@ -1729,6 +2136,93 @@ mod tests {
                 month: 2,
                 day: 29
             })
+        );
+    }
+
+    /// Spec vector 3: Dương Nam in a leap month.
+    const TUVI_VECTOR_3: SolarDateTime = SolarDateTime {
+        year: 2020,
+        month: 6,
+        day: 10,
+        hour: 10,
+        minute: 30,
+        second: 0,
+    };
+
+    #[test]
+    fn tuvi_chart_delegates_to_the_core_with_the_default_config() {
+        let chart = tuvi_chart(TUVI_VECTOR_3, Gender::Male, None).unwrap();
+        assert_eq!(chart.menh_branch, Branch::Suu);
+        assert_eq!(chart.effective_month, 5);
+        assert_eq!(five_elements_bureau_number(chart.bureau), 6);
+        assert_eq!(chart.palaces.len(), 12);
+        assert_eq!(
+            Some(chart.clone()),
+            tuvi_chart(TUVI_VECTOR_3, Gender::Male, Some(default_tuvi_config())).ok()
+        );
+
+        let same_month = TuViConfig {
+            leap_month_rule: LeapMonthRule::SameAsCurrentMonth,
+            ..default_tuvi_config()
+        };
+        let other = tuvi_chart(TUVI_VECTOR_3, Gender::Male, Some(same_month)).unwrap();
+        assert_eq!(other.menh_branch, Branch::Ty);
+    }
+
+    #[test]
+    fn tuvi_chart_from_lunar_casts_the_charts_of_the_book() {
+        let lunar = LunarDate {
+            year: 1891,
+            month: 6,
+            day: 6,
+            is_leap_month: false,
+        };
+        let chart = tuvi_chart_from_lunar(lunar, Branch::Mao, Gender::Male, None).unwrap();
+        assert_eq!(chart.menh_branch, Branch::Thin);
+        assert_eq!(five_elements_bureau_name(chart.bureau), "Thủy Nhị Cục");
+        assert_eq!(tuvi_polarity_name(chart.polarity), "Âm Nam");
+        assert_eq!(yin_yang_harmony_name(chart.harmony), "Nghịch lý");
+        assert_eq!(menh_cuc_relation_name(chart.menh_cuc), "Cục sinh Bản Mệnh");
+        let palace = tuvi_dai_han_palace(chart.clone(), 12).unwrap();
+        assert_eq!(tuvi_palace_role_name(palace.role), "Huynh Đệ");
+        assert_eq!(
+            tuvi_tieu_han_palace(chart.clone(), 1).unwrap().branch,
+            Branch::Suu
+        );
+        assert_eq!(tuvi_dai_han_palace(chart.clone(), 1), None);
+        assert_eq!(tuvi_tieu_han_palace(chart, 0), None);
+
+        let invalid = LunarDate { month: 13, ..lunar };
+        assert!(tuvi_chart_from_lunar(invalid, Branch::Mao, Gender::Male, None).is_err());
+    }
+
+    #[test]
+    fn tuvi_star_helpers_delegate_to_the_core() {
+        assert_eq!(tuvi_all_stars().len(), 105);
+        assert_eq!(tuvi_star_name(TuViStar::QuanPhuBacSy), "Quan Phủ");
+        assert_eq!(tuvi_star_category(TuViStar::TuVi), StarCategory::ChinhTinh);
+        assert_eq!(tuvi_star_category(TuViStar::LocTon), StarCategory::PhuTinh);
+        assert_eq!(tuvi_star_nature(TuViStar::KinhDuong), StarNature::Hung);
+        let brightness = tuvi_star_brightness(TuViStar::TuVi, Branch::Ngo).unwrap();
+        assert_eq!(star_brightness_name(brightness), "Miếu");
+        assert_eq!(star_brightness_mark(brightness), "M");
+        assert_eq!(tuvi_star_brightness(TuViStar::LocTon, Branch::Ngo), None);
+        assert_eq!(star_nature_name(StarNature::Cat), "Cát");
+        assert_eq!(
+            four_transformation_name(FourTransformations::HoaKy),
+            "Hóa Kỵ"
+        );
+        assert_eq!(
+            four_transformation_star(FourTransformations::HoaKhoa, Stem::Nham),
+            TuViStar::TaPhu
+        );
+        assert_eq!(
+            four_transformation_nature(FourTransformations::HoaKy),
+            StarNature::Hung
+        );
+        assert_eq!(
+            five_elements_bureau_element(FiveElementsBureau::KimTu),
+            FiveElements::Kim
         );
     }
 }

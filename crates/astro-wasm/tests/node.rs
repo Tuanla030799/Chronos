@@ -6,6 +6,10 @@ use astro_core::fengshui::{
     CompassDirection, DirectionStar, EightMansionsStar, FlyingStar, KuaCompatibility, KuaInfo,
     LoShuGrid, NineStar, NineStars, Palace, TamNguyen, Trigram, TrigramGroup,
 };
+use astro_core::tuvi::{
+    FiveElementsBureau, FourTransformations, StarBrightness, StarCategory, StarNature, TuViChart,
+    TuViPalace, TuViStar,
+};
 use astro_core::{
     CanChi, ConnectionCheck, ENGINE_VERSION, FiveElements, FourPillars, LunarDate, LunarYear,
     SolarDate, SolarDateTime,
@@ -26,6 +30,14 @@ use astro_wasm::{
     trigram_han_name, trigram_name, trigram_number, trigram_palace, truc_name, true_solar_time,
     van_of_year, year_nine_star,
 };
+use astro_wasm::{
+    five_elements_bureau_element, five_elements_bureau_name, five_elements_bureau_number,
+    four_transformation_name, four_transformation_nature, four_transformation_star,
+    menh_cuc_relation_name, star_brightness_mark, star_brightness_name, star_nature_name,
+    tuvi_all_stars, tuvi_chart, tuvi_chart_from_lunar, tuvi_dai_han_palace, tuvi_palace_role_name,
+    tuvi_polarity_name, tuvi_star_brightness, tuvi_star_category, tuvi_star_name, tuvi_star_nature,
+    tuvi_tieu_han_palace, yin_yang_harmony_name,
+};
 use serde::Serialize;
 use serde::de::DeserializeOwned;
 use wasm_bindgen::JsValue;
@@ -38,6 +50,10 @@ extern "C" {
     /// reads the names back through the serde derives that wrote them.
     #[wasm_bindgen(js_namespace = JSON)]
     fn stringify(value: &JsValue) -> String;
+
+    /// `JSON.parse`: an options object as a JavaScript caller writes it.
+    #[wasm_bindgen(js_namespace = JSON, js_name = parse)]
+    fn js_sys_object(text: &str) -> JsValue;
 }
 
 fn js<T: Serialize>(value: &T) -> JsValue {
@@ -600,4 +616,162 @@ fn rejects_invalid_feng_shui_input() {
     assert!(day_nine_star(js(&february_30), None).is_err());
     assert!(hour_nine_star(js(&VECTOR_2), Some(99.0)).is_err());
     assert!(nine_stars(js(&VECTOR_2), Some(99.0), JsValue::UNDEFINED).is_err());
+}
+
+/// Spec vector 3: Dương Nam in a leap month.
+const TUVI_VECTOR_3: SolarDateTime = SolarDateTime {
+    year: 2020,
+    month: 6,
+    day: 10,
+    hour: 10,
+    minute: 30,
+    second: 0,
+};
+
+const BOOK_CHART_2: LunarDate = LunarDate {
+    year: 1891,
+    month: 6,
+    day: 6,
+    is_leap_month: false,
+};
+
+#[wasm_bindgen_test]
+fn tuvi_chart_takes_optional_options() {
+    let chart: TuViChart = rust(tuvi_chart(
+        js(&TUVI_VECTOR_3),
+        variant("Male"),
+        JsValue::UNDEFINED,
+    ));
+    assert_eq!(chart.effective_month, 5);
+    assert_eq!(chart.palaces.len(), 12);
+    assert_eq!(chart.bureau, FiveElementsBureau::HoaLuc);
+
+    let same: TuViChart = rust(tuvi_chart(
+        js(&TUVI_VECTOR_3),
+        variant("Male"),
+        JsValue::NULL,
+    ));
+    assert_eq!(same, chart);
+
+    let options = js_sys_object(r#"{"leapMonthRule":"SameAsCurrentMonth"}"#);
+    let other: TuViChart = rust(tuvi_chart(js(&TUVI_VECTOR_3), variant("Male"), options));
+    assert_eq!(other.effective_month, 4);
+}
+
+#[wasm_bindgen_test]
+fn tuvi_chart_is_camel_case_for_javascript() {
+    let result = tuvi_chart_from_lunar(
+        js(&BOOK_CHART_2),
+        variant("Mao"),
+        variant("Male"),
+        JsValue::UNDEFINED,
+    )
+    .unwrap();
+    let text = stringify(&result);
+    for key in [
+        r#""menhBranch":"Thin""#,
+        r#""bureau":"ThuyNhi""#,
+        r#""polarity":"AmNam""#,
+        r#""effectiveTime":null"#,
+        r#""dayCanChi""#,
+        r#""mainStars""#,
+        r#""minorStars""#,
+        r#""lifeStage""#,
+        r#""daiHanStartAge""#,
+        r#""tieuHanYearBranch""#,
+        r#""hasTuan""#,
+        r#""transformation":"HoaQuyen""#,
+        r#""brightness":"Vuong""#,
+        r#""brightness":null"#,
+    ] {
+        assert!(text.contains(key), "{key} missing from {text}");
+    }
+}
+
+#[wasm_bindgen_test]
+fn tuvi_limits_take_a_chart_back() {
+    let chart = tuvi_chart_from_lunar(
+        js(&BOOK_CHART_2),
+        variant("Mao"),
+        variant("Male"),
+        JsValue::UNDEFINED,
+    )
+    .unwrap();
+    let dai_han: TuViPalace = rust(tuvi_dai_han_palace(chart.clone(), 12));
+    assert_eq!(dai_han.dai_han_start_age, 12);
+    let tieu_han: TuViPalace = rust(tuvi_tieu_han_palace(chart.clone(), 1));
+    assert_eq!(tieu_han.tieu_han_first_age, 1);
+    let none: Option<TuViPalace> = rust(tuvi_dai_han_palace(chart, 1));
+    assert_eq!(none, None);
+}
+
+#[wasm_bindgen_test]
+fn tuvi_helpers_delegate_to_the_core() {
+    let stars: Vec<TuViStar> = rust(tuvi_all_stars());
+    assert_eq!(stars.len(), 105);
+    assert_eq!(tuvi_star_name(variant("QuanPhuBacSy")).unwrap(), "Quan Phủ");
+    let category: StarCategory = rust(tuvi_star_category(variant("TuVi")));
+    assert_eq!(category, StarCategory::ChinhTinh);
+    let nature: StarNature = rust(tuvi_star_nature(variant("KinhDuong")));
+    assert_eq!(nature, StarNature::Hung);
+    let brightness: Option<StarBrightness> =
+        rust(tuvi_star_brightness(variant("TuVi"), variant("Ngo")));
+    assert_eq!(brightness, Some(StarBrightness::Mieu));
+    let none: Option<StarBrightness> =
+        rust(tuvi_star_brightness(variant("LocTon"), variant("Ngo")));
+    assert_eq!(none, None);
+    let star: TuViStar = rust(four_transformation_star(
+        variant("HoaKhoa"),
+        variant("Nham"),
+    ));
+    assert_eq!(star, TuViStar::TaPhu);
+    let nature: StarNature = rust(four_transformation_nature(variant("HoaKy")));
+    assert_eq!(nature, StarNature::Hung);
+    assert_eq!(star_brightness_name(variant("Mieu")).unwrap(), "Miếu");
+    assert_eq!(star_brightness_mark(variant("Dac")).unwrap(), "Đ");
+    assert_eq!(star_nature_name(variant("Cat")).unwrap(), "Cát");
+    assert_eq!(
+        four_transformation_name(variant("HoaLoc")).unwrap(),
+        "Hóa Lộc"
+    );
+    assert_eq!(tuvi_palace_role_name(variant("PhuMau")).unwrap(), "Phụ Mẫu");
+    assert_eq!(
+        five_elements_bureau_name(variant("MocTam")).unwrap(),
+        "Mộc Tam Cục"
+    );
+    assert_eq!(five_elements_bureau_number(variant("HoaLuc")).unwrap(), 6);
+    let element: FiveElements = rust(five_elements_bureau_element(variant("KimTu")));
+    assert_eq!(element, FiveElements::Kim);
+    assert_eq!(tuvi_polarity_name(variant("AmNu")).unwrap(), "Âm Nữ");
+    assert_eq!(
+        yin_yang_harmony_name(variant("ThuanLy")).unwrap(),
+        "Thuận lý"
+    );
+    assert_eq!(
+        menh_cuc_relation_name(variant("BinhHoa")).unwrap(),
+        "Bình hòa"
+    );
+}
+
+#[wasm_bindgen_test]
+fn rejects_invalid_tuvi_input() {
+    assert!(tuvi_chart(js(&TUVI_VECTOR_3), variant("Nam"), JsValue::UNDEFINED).is_err());
+    let unknown_rule = js_sys_object(r#"{"leapMonthRule":"Split"}"#);
+    assert!(tuvi_chart(js(&TUVI_VECTOR_3), variant("Male"), unknown_rule).is_err());
+    let bad_zone = js_sys_object(r#"{"tzOffset":99}"#);
+    assert!(tuvi_chart(js(&TUVI_VECTOR_3), variant("Male"), bad_zone).is_err());
+    let bad_date = LunarDate {
+        month: 13,
+        ..BOOK_CHART_2
+    };
+    assert!(
+        tuvi_chart_from_lunar(
+            js(&bad_date),
+            variant("Mao"),
+            variant("Male"),
+            JsValue::UNDEFINED
+        )
+        .is_err()
+    );
+    assert!(tuvi_star_name(variant("Sao")).is_err());
 }

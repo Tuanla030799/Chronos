@@ -3,7 +3,7 @@
 //! Offline computational astronomy for the Vietnamese lunisolar calendar: Julian Days, the
 //! Sun's position, true new moons (Sóc), the 24 solar terms (Tiết khí), lunar-calendar
 //! conversion (Âm lịch), the sexagenary cycle (Can Chi), true solar time, the Four
-//! Pillars (Tứ Trụ) and feng shui (Phong Thủy). The crate has no runtime dependencies and
+//! Pillars (Tứ Trụ), feng shui (Phong Thủy) and Tử Vi Đẩu Số. The crate has no runtime dependencies and
 //! performs no I/O.
 //!
 //! ## Time zones
@@ -39,6 +39,7 @@ pub mod solar_terms;
 mod test_support;
 pub mod time;
 pub mod true_solar_time;
+pub mod tuvi;
 
 pub use almanac::{AgeRestrictions, AlmanacDay, age_restrictions, almanac_day};
 pub use bazi_analysis::{BaziAnalysis, Gender, analyze_bazi};
@@ -60,6 +61,11 @@ pub use lunar_calendar::{
 pub use solar_terms::{SolarTerm, SolarTermEvent, get_exact_solar_term_time, solar_terms_in_year};
 pub use time::{SolarDate, SolarDateTime};
 pub use true_solar_time::{VIETNAM_STANDARD_MERIDIAN, to_true_solar_time};
+pub use tuvi::{
+    FiveElementsBureau, FourTransformations, LeapMonthRule, MenhCucRelation, StarBrightness,
+    StarCategory, StarNature, TuViChart, TuViConfig, TuViPalace, TuViPalaceRole, TuViPlacedStar,
+    TuViPolarity, TuViStar, YinYangHarmony, tuvi_chart, tuvi_chart_from_lunar,
+};
 
 /// Vietnam's offset from UTC in hours (UTC+7, standard meridian 105°E); the default
 /// `tz_offset` of the Swift and WebAssembly bindings.
