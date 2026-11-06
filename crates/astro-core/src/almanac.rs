@@ -779,6 +779,19 @@ pub enum VietnamTaboo {
 }
 
 impl VietnamTaboo {
+    /// All taboos, in the order of the enum.
+    pub const ALL: [VietnamTaboo; 9] = [
+        VietnamTaboo::TamNuongSat,
+        VietnamTaboo::NguyetKy,
+        VietnamTaboo::NguyetTan,
+        VietnamTaboo::DuongCongKyNhat,
+        VietnamTaboo::ThuTu,
+        VietnamTaboo::SatChuDuong,
+        VietnamTaboo::SatChuAm,
+        VietnamTaboo::VangVong,
+        VietnamTaboo::ThienDiaChuyenSat,
+    ];
+
     /// Vietnamese name, e.g. "Tam Nương Sát".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -939,6 +952,9 @@ pub enum TamTai {
 }
 
 impl TamTai {
+    /// The three years, in order.
+    pub const ALL: [TamTai; 3] = [TamTai::Nhap, TamTai::Cu, TamTai::Xuat];
+
     /// Vietnamese name, e.g. "Nhập".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -963,7 +979,7 @@ const TAM_TAI_YEARS: [[Branch; 3]; 4] = {
 /// Tam Tai of a person born in a year of `birth_branch`, in a year of `target_branch`.
 pub fn tam_tai(birth_branch: Branch, target_branch: Branch) -> Option<TamTai> {
     let years = TAM_TAI_YEARS[birth_branch.trine_group()];
-    [TamTai::Nhap, TamTai::Cu, TamTai::Xuat]
+    TamTai::ALL
         .into_iter()
         .zip(years)
         .find(|&(_, year)| year == target_branch)
@@ -985,6 +1001,9 @@ pub enum KimLau {
 }
 
 impl KimLau {
+    /// All restrictions, in the order of the enum.
+    pub const ALL: [KimLau; 4] = [KimLau::Than, KimLau::The, KimLau::Tu, KimLau::Suc];
+
     /// Vietnamese name, e.g. "Kim Lâu Thân".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -1026,6 +1045,16 @@ pub enum HoangOc {
 }
 
 impl HoangOc {
+    /// All palaces, from `hoang_oc_index` 1 to 6.
+    pub const ALL: [HoangOc; 6] = [
+        HoangOc::NhatCat,
+        HoangOc::NhiNghi,
+        HoangOc::TamDiaSat,
+        HoangOc::TuTanTai,
+        HoangOc::NguThoTu,
+        HoangOc::LucHoangOc,
+    ];
+
     /// Vietnamese name, e.g. "Nhất Cát".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -1098,6 +1127,34 @@ mod tests {
     use super::*;
     use crate::canchi::Branch::{Dan, Dau, Hoi, Mao, Mui, Ngo, Suu, Than, Thin, Ti, Tuat, Ty};
     use crate::test_support::{VN, date};
+
+    #[test]
+    fn all_lists_are_complete_and_in_order() {
+        fn names(list: impl IntoIterator<Item = &'static str>) -> usize {
+            let mut names: Vec<&str> = list.into_iter().collect();
+            let count = names.len();
+            names.sort();
+            names.dedup();
+            assert_eq!(names.len(), count);
+            count
+        }
+        assert_eq!(names(VietnamTaboo::ALL.map(VietnamTaboo::name_vi)), 9);
+        assert_eq!(names(TamTai::ALL.map(TamTai::name_vi)), 3);
+        assert_eq!(names(KimLau::ALL.map(KimLau::name_vi)), 4);
+        assert_eq!(names(HoangOc::ALL.map(HoangOc::name_vi)), 6);
+        for (index, taboo) in VietnamTaboo::ALL.into_iter().enumerate() {
+            assert_eq!(taboo as usize, index);
+        }
+        for (index, phase) in TamTai::ALL.into_iter().enumerate() {
+            assert_eq!(phase as usize, index);
+        }
+        for (index, kind) in KimLau::ALL.into_iter().enumerate() {
+            assert_eq!(kind as usize, index);
+        }
+        for (index, palace) in HoangOc::ALL.into_iter().enumerate() {
+            assert_eq!(palace as usize, index);
+        }
+    }
 
     /// Days of each god by solar month, one bit per cycle index, decoded directly from
     /// `DAY_SHEN_SHA` of lunar-typescript.

@@ -225,6 +225,15 @@ pub enum StarBrightness {
 }
 
 impl StarBrightness {
+    /// All levels, from the brightest.
+    pub const ALL: [StarBrightness; 5] = [
+        StarBrightness::Mieu,
+        StarBrightness::Vuong,
+        StarBrightness::Dac,
+        StarBrightness::Binh,
+        StarBrightness::Ham,
+    ];
+
     /// Vietnamese name, e.g. "Miếu".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -1411,6 +1420,28 @@ pub const fn tu_vi_branch(day: u8, bureau: FiveElementsBureau) -> Branch {
     }
 }
 
+/// The 14 Chính Tinh and their palaces when Tử Vi is at `tu_vi`, in the order of [`TuViStar`].
+pub const fn chinh_tinh_branches(tu_vi: Branch) -> [(TuViStar, Branch); 14] {
+    use TuViStar as S;
+    let thien_phu = Branch::from_index(4 - tu_vi.index() as i64);
+    [
+        (S::TuVi, tu_vi),
+        (S::ThienCo, shift(tu_vi, -1)),
+        (S::ThaiDuong, shift(tu_vi, -3)),
+        (S::VuKhuc, shift(tu_vi, -4)),
+        (S::ThienDong, shift(tu_vi, -5)),
+        (S::LiemTrinh, shift(tu_vi, -8)),
+        (S::ThienPhu, thien_phu),
+        (S::ThaiAm, shift(thien_phu, 1)),
+        (S::ThamLang, shift(thien_phu, 2)),
+        (S::CuMon, shift(thien_phu, 3)),
+        (S::ThienTuong, shift(thien_phu, 4)),
+        (S::ThienLuong, shift(thien_phu, 5)),
+        (S::ThatSat, shift(thien_phu, 6)),
+        (S::PhaQuan, shift(thien_phu, 10)),
+    ]
+}
+
 /// Month of birth used for the stars: only a leap month can differ from `lunar.month`, and only
 /// the month changes, never the day or the year.
 pub const fn effective_month(lunar: LunarDate, rule: LeapMonthRule) -> u8 {
@@ -1485,29 +1516,8 @@ fn place_stars(
     let mut at = [Ty; TuViStar::COUNT];
     let mut put = |star: S, branch: Branch| at[star as usize] = branch;
 
-    let tu_vi = tu_vi_branch(day, bureau);
-    for (star, offset) in [
-        (S::TuVi, 0),
-        (S::ThienCo, -1),
-        (S::ThaiDuong, -3),
-        (S::VuKhuc, -4),
-        (S::ThienDong, -5),
-        (S::LiemTrinh, -8),
-    ] {
-        put(star, shift(tu_vi, offset));
-    }
-    let thien_phu = Branch::from_index(4 - tu_vi.index() as i64);
-    for (star, offset) in [
-        (S::ThienPhu, 0),
-        (S::ThaiAm, 1),
-        (S::ThamLang, 2),
-        (S::CuMon, 3),
-        (S::ThienTuong, 4),
-        (S::ThienLuong, 5),
-        (S::ThatSat, 6),
-        (S::PhaQuan, 10),
-    ] {
-        put(star, shift(thien_phu, offset));
+    for (star, branch) in chinh_tinh_branches(tu_vi_branch(day, bureau)) {
+        put(star, branch);
     }
 
     let loc_ton = LOC_TON[stem];
@@ -2166,6 +2176,52 @@ mod tests {
         assert_eq!(FourTransformations::HoaKhoa.nature(), StarNature::Cat);
         assert_eq!(FourTransformations::HoaQuyen.nature(), StarNature::Trung);
         assert_eq!(FourTransformations::HoaKy.nature(), StarNature::Hung);
+    }
+
+    #[test]
+    fn brightness_levels_are_complete_and_in_order() {
+        for (index, level) in StarBrightness::ALL.into_iter().enumerate() {
+            assert_eq!(level as usize, index);
+        }
+        let mut names: Vec<&str> = StarBrightness::ALL.iter().map(|b| b.name_vi()).collect();
+        names.sort();
+        names.dedup();
+        assert_eq!(names.len(), StarBrightness::ALL.len());
+    }
+
+    #[test]
+    fn chinh_tinh_branches_list_the_fourteen_stars_in_enum_order() {
+        for tu_vi in Branch::ALL {
+            let stars = chinh_tinh_branches(tu_vi);
+            for (index, (star, _)) in stars.into_iter().enumerate() {
+                assert_eq!(star, TuViStar::ALL[index]);
+            }
+            assert_eq!(stars[0], (TuViStar::TuVi, tu_vi));
+        }
+    }
+
+    #[test]
+    fn chinh_tinh_branches_agree_with_a_full_chart() {
+        for day in 1..=29 {
+            let chart = from_lunar(lunar(2024, 3, day), Branch::Ngo, Gender::Male);
+            let tu_vi = chart.palace_of_star(TuViStar::TuVi).branch;
+            for (star, branch) in chinh_tinh_branches(tu_vi) {
+                assert_eq!(
+                    chart.palace_of_star(star).branch,
+                    branch,
+                    "{star:?}, day {day}"
+                );
+            }
+        }
+    }
+
+    #[test]
+    fn tu_vi_and_thien_phu_share_a_palace_only_at_dan_and_than() {
+        let together: Vec<Branch> = Branch::ALL
+            .into_iter()
+            .filter(|&tu_vi| chinh_tinh_branches(tu_vi)[6].1 == tu_vi)
+            .collect();
+        assert_eq!(together, [Branch::Dan, Branch::Than]);
     }
 
     #[test]

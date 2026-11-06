@@ -37,6 +37,20 @@ pub enum TenGod {
 }
 
 impl TenGod {
+    /// All gods, in the order of the enum.
+    pub const ALL: [TenGod; 10] = [
+        TenGod::TyKien,
+        TenGod::KiepTai,
+        TenGod::ThucThan,
+        TenGod::ThuongQuan,
+        TenGod::ThienTai,
+        TenGod::ChinhTai,
+        TenGod::ThatSat,
+        TenGod::ChinhQuan,
+        TenGod::ThienAn,
+        TenGod::ChinhAn,
+    ];
+
     /// Vietnamese name, e.g. "Tỷ Kiên".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -240,6 +254,20 @@ pub enum BaziStar {
 }
 
 impl BaziStar {
+    /// All stars, in the order of the enum.
+    pub const ALL: [BaziStar; 10] = [
+        BaziStar::ThienAtQuyNhan,
+        BaziStar::VanXuong,
+        BaziStar::LocTon,
+        BaziStar::KinhDuong,
+        BaziStar::DaLa,
+        BaziStar::DichMa,
+        BaziStar::DaoHoa,
+        BaziStar::HoaCai,
+        BaziStar::TuongTinh,
+        BaziStar::KiepSat,
+    ];
+
     /// Vietnamese name, e.g. "Thiên Ất Quý Nhân".
     pub const fn name_vi(self) -> &'static str {
         match self {
@@ -707,6 +735,21 @@ fn place_stars(pillars: &FourPillars) -> Vec<StarPlacement> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn ten_gods_and_stars_are_complete_and_in_order() {
+        for (index, god) in TenGod::ALL.into_iter().enumerate() {
+            assert_eq!(god as usize, index);
+        }
+        for (index, star) in BaziStar::ALL.into_iter().enumerate() {
+            assert_eq!(star as usize, index);
+        }
+        let mut names: Vec<&str> = TenGod::ALL.iter().map(|god| god.name_vi()).collect();
+        names.extend(BaziStar::ALL.iter().map(|star| star.name_vi()));
+        names.sort();
+        names.dedup();
+        assert_eq!(names.len(), TenGod::ALL.len() + BaziStar::ALL.len());
+    }
     use crate::bazi_pillars::{FourPillarsOptions, YearMonthBoundary};
     use crate::canchi::Branch::{Dan, Dau, Hoi, Mao, Mui, Ngo, Suu, Than, Thin, Ti, Tuat, Ty};
     use crate::canchi::Stem::{At, Binh, Canh, Dinh, Giap, Ky, Mau, Nham, Quy, Tan};
