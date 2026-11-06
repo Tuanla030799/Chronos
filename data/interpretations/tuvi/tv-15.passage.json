@@ -1,0 +1,3671 @@
+{
+  "collection": "tuvi.passage",
+  "batch": "TV-15",
+  "entries": [
+    {
+      "id": "quan-loc/tu-vi/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ngo"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ],
+      "body": [
+        "Sự nghiệp vẻ vang, vừa có địa vị vừa giàu có."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Ngọ, Phủ đồng cung",
+          "Tử đồng cung: công danh hiến hách"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tu-vi/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty"
+          ]
+        }
+      ],
+      "body": [
+        "Sự nghiệp ở mức bình thường."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý: bình thường"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tu-vi/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ, khởi đầu nhỏ rồi lớn dần. Có tài tổ chức, nhiều mánh khóe, thủ đoạn, hay lấn quyền cấp trên."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          162
+        ],
+        "keywords": [
+          "Tướng đồng cung: văn võ toàn tài trước nhỏ sau lớn",
+          "Tử đồng cung: văn võ toàn tài"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tu-vi/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ],
+      "body": [
+        "Có uy quyền, hợp với con đường quân sự."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          163
+        ],
+        "keywords": [
+          "Sát đồng cung: có uy quyền",
+          "Tử đồng cung: có uy quyền"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tu-vi/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ],
+      "body": [
+        "Thành công trong binh nghiệp nhưng thăng trầm thất thường. Kinh doanh cũng phát đạt."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          163
+        ],
+        "keywords": [
+          "Phá đồng cung: thành công trong võ nghiệp",
+          "Tử đồng cung: thành công trong võ nghiệp"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tu-vi/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ],
+      "body": [
+        "Sự nghiệp bình thường; nếu rực rỡ ắt sinh tai họa."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          161
+        ],
+        "keywords": [
+          "Tham đồng cung: bình thường",
+          "Tử đồng cung: bình thường"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp, có uy quyền cả về chính trị, được nhiều người nể trọng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: võ nghiệp hiến đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ],
+      "body": [
+        "Vừa giàu vừa có địa vị, lập nhiều chiến công, uy quyền lớn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          160
+        ],
+        "keywords": [
+          "Phủ đồng cung: phú qúy song toàn, lập được nhiều chiến công",
+          "Liêm đồng cung: phú qúy song toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ, giàu sang và được nhiều người nể trọng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          162
+        ],
+        "keywords": [
+          "Tướng đồng cung: văn võ kiêm toàn",
+          "Liêm đồng cung: văn võ kiêm toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ],
+      "body": [
+        "Theo quân sự nhưng thăng trầm thất thường, lên nhanh xuống cũng nhanh; trong may có rủi, tai họa đi liền danh lợi. Nếu kinh doanh hoặc làm công nghiệp thì phát đạt và yên thân."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          163
+        ],
+        "keywords": [
+          "Sát đồng cung: chuyên về quân sự",
+          "Liêm đồng cung: chuyên về quân sự"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ],
+      "body": [
+        "Nên theo công nghiệp hoặc thương mại. Chen vào đường quan chức thì ắt không toại nguyện, suốt đời bất mãn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          163
+        ],
+        "keywords": [
+          "Phá đồng cung: nên chuyên về kỹ nghệ",
+          "Liêm đồng cung: nên chuyên về kỹ nghệ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/liem-trinh/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ],
+      "body": [
+        "Có chức võ nhưng nhỏ, đường công danh nhiều trở ngại, tai ương, nhất là vướng tù tội. Chỉ rời xa chốn danh lợi mới an toàn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158,
+          161
+        ],
+        "keywords": [
+          "Tham đồng cung: có võ chức",
+          "Liêm đồng cung: có võ chức"
+        ]
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Mao"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ nhưng hay đổi việc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Đơn thủ tại Mão: văn võ kiêm toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dau"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến muộn, chức nhỏ, hay thay đổi, lên xuống thất thường. Nên theo thương mại hoặc công nghiệp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Đơn thủ tại Dậu: công danh muộn màng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh, của cải như mây nổi. Làm việc mau chán, thích di chuyển; nên chọn việc lưu động."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "tại Tỵ, Hợi: công danh phú qúy như đám mây nổi"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Công việc luôn di chuyển, sự nghiệp trước nhỏ sau lớn, có tài ăn nói và lý luận."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: công việc di chuyển luôn luôn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ],
+          "branches": [
+            "Ty"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh vẻ vang, có tài can gián cấp trên."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          160
+        ],
+        "keywords": [
+          "Nguyệt đồng cung tại Tý: công danh hiển hách",
+          "Đồng đồng cung tại Tý: công danh hiển hách"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ],
+          "branches": [
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Nên theo công nghiệp hoặc kinh doanh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          161
+        ],
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: nên chuyên về kỹ nghệ",
+          "Đồng đồng cung tại Ngọ: nên chuyên về kỹ nghệ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/07",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ],
+      "body": [
+        "Vừa giàu vừa có địa vị, rất nổi tiếng nếu theo y khoa hoặc nghề giáo. Bước vào chính trị cũng toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          162
+        ],
+        "keywords": [
+          "Lương đồng cung: phú qúy song toàn",
+          "Đồng đồng cung: phú qúy song toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-dong/08",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ],
+      "body": [
+        "Đường công danh rất chật vật, phải nhờ cấp trên dìu dắt, hay vướng thị phi hình sự."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          161
+        ],
+        "keywords": [
+          "Cự đồng cung: rất chật vật",
+          "Đồng đồng cung: rất chật vật"
+        ]
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp; kinh doanh cũng nhiều tài lộc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: võ nghiệp hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh lên nhanh, giỏi cả văn lẫn võ, có chức vụ về tài chính hoặc kinh tế."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          160
+        ],
+        "keywords": [
+          "Phủ đồng cung: công danh hoạnh đạt",
+          "Vũ đồng cung: công danh hoạnh đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ],
+      "body": [
+        "Bước vào đường công danh cũng toại nguyện; nếu không, kinh doanh cũng sớm giàu."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          162
+        ],
+        "keywords": [
+          "Tướng đồng cung: bước vào đường công danh",
+          "Vũ đồng cung: bước vào đường công danh"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp, thường trấn giữ nơi xa, lập nhiều chiến công nhưng thăng trầm thất thường."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          163
+        ],
+        "keywords": [
+          "Sát đồng cung: võ nghiệp hiển đạt",
+          "Vũ đồng cung: võ nghiệp hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ],
+      "body": [
+        "Xuất thân từ binh nghiệp nhưng rất chật vật. Kinh doanh thì rất toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          163
+        ],
+        "keywords": [
+          "Phá đồng cung: xuất thân bằng võ nghiệp",
+          "Vũ đồng cung: xuất thân bằng võ nghiệp"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vu-khuc/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ],
+      "body": [
+        "Giàu có, thành công trong kinh doanh. Có chức danh cũng chỉ một thời gian ngắn rồi trở lại thương trường. Thời trẻ không suôn sẻ, từ 30 tuổi trở đi mới toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          161
+        ],
+        "keywords": [
+          "Tham đồng cung: giàu có và thành công",
+          "Vũ đồng cung: giàu có và thành công"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, giỏi cả văn lẫn võ."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: công danh sớm đạt"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"Tý, Ngọ\", mâu thuẫn với dòng \"Đơn thủ tại Tý: công danh muộn màng\" ngay dưới. Các chương Phụ Mẫu, Điền Trạch, Tài Bạch, Tử Tức, Thê Thiếp, Huynh Đệ đều xếp Tỵ, Ngọ cùng nhóm, nên sửa thành Tỵ, Ngọ."
+    },
+    {
+      "id": "quan-loc/thai-duong/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, giỏi cả văn lẫn võ, nhưng hay bị ghen ghét và bị gò vào những việc trái chí hướng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn: cũng như trên"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến muộn, có tài ăn nói, văn chương xuất sắc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý: công danh muộn màng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Tuat",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Đường công danh nhiều trở ngại, thời trẻ vất vả, lớn tuổi mới toại nguyện. Có tài nhưng thiếu cơ hội thi thố nên bất mãn suốt đời, dù vẫn được kính trọng nhờ đức độ và văn tài."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159
+        ],
+        "keywords": [
+          "Đơn thủ tại Tuất, Hợi: gặp nhiều trở ngại"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ],
+          "branches": [
+            "Dan"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh vẻ vang. Nên theo ngành luật vì giỏi lý luận, xét đoán."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          161
+        ],
+        "keywords": [
+          "Cự đồng cung tại Dần: công danh hiển hách",
+          "Nhật đồng cung tại Dần: công danh hiển hách"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ],
+          "branches": [
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh thăng trầm thất thường, hay vướng thị phi về quân sự. Về già mới toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          161
+        ],
+        "keywords": [
+          "Cự đồng cung tại Thân: công danh thăng giáng",
+          "Nhật đồng cung tại Thân: công danh thăng giáng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/07",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ],
+          "branches": [
+            "Dau"
+          ]
+        }
+      ],
+      "body": [
+        "Có tài nhưng không gặp thời, công danh đến muộn và vất vả. Nên theo y dược hoặc nghề giáo."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          162
+        ],
+        "keywords": [
+          "Lương đồng cung tại Dậu: có tài",
+          "Nhật đồng cung tại Dậu: có tài"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/08",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ],
+          "branches": [
+            "Mao"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm. Nên theo y dược hoặc nghề giáo, về sau rất nổi tiếng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          159,
+          162
+        ],
+        "keywords": [
+          "Lương đồng cung tại Mão: công danh sớm đạt",
+          "Nhật đồng cung tại Mão: công danh sớm đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-duong/09",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Neither"
+        }
+      ],
+      "body": [
+        "Công danh trắc trở. Thời trẻ khó toại nguyện vì có tài mà không đắc chí, về già mới có chút hư danh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          161
+        ],
+        "keywords": [
+          "Nguyệt đồng cung: công danh trắc trở"
+        ]
+      },
+      "status": "approved",
+      "correction": "Mục 8.8 của Thái Âm cũng in \"Nguyệt đồng cung\" ở tr. 161, phải là Nhật đồng cung."
+    },
+    {
+      "id": "quan-loc/thai-duong/10",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        }
+      ],
+      "body": [
+        "Có Tuần, Triệt thì tuy buổi đầu nhiều trở ngại nhưng về sau công danh rất vẻ vang."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          161
+        ],
+        "keywords": [
+          "rất cần gặp Tuần, Triệt án ngữ, tuy buổi đầu mưu cầu công danh"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-co/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ]
+        }
+      ],
+      "body": [
+        "Giàu và có địa vị nhưng không vang dội. Nên theo công nghiệp, máy móc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: phú qúy song toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-co/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến muộn và chật vật. Nên theo thương mại hoặc công nghiệp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: công danh muộn màng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-co/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ],
+          "branches": [
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Nên theo y khoa hoặc nghề giáo; kinh doanh cũng phát đạt."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          161
+        ],
+        "keywords": [
+          "Nguyệt đồng cung tại Thìn: nên chuyên về khoa",
+          "Cơ đồng cung tại Thìn: nên chuyên về khoa"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"tại Thìn\" ở tr. 160, 161. Thiên Cơ và Thái Âm chỉ đồng cung tại Dần, Thân, và 9 chương khác đều ghi Thân, nên sửa thành Thân. \"về khoa\" hiểu là \"về y khoa\", như tr. 159."
+    },
+    {
+      "id": "quan-loc/thien-co/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ],
+          "branches": [
+            "Dan"
+          ]
+        }
+      ],
+      "body": [
+        "Cũng nên theo y khoa hoặc nghề giáo, kinh doanh cũng phát đạt, nhưng muộn và gặp nhiều trở ngại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          161
+        ],
+        "keywords": [
+          "Nguyệt đồng cung Dần: cũng như trên",
+          "Cơ đồng cung Dần: cũng như trên"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-co/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ, giàu sang bền vững. Nhiều mưu trí và rất thích máy móc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          162
+        ],
+        "keywords": [
+          "Cự đồng cung: văn võ toàn tài",
+          "Cơ đồng cung: văn võ toàn tài"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"văn võ toàn tài nhưng hưởng phú qúy vững bền\"; chữ \"nhưng\" không hợp ý câu nên bỏ."
+    },
+    {
+      "id": "quan-loc/thien-co/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh thành đạt, giỏi cả văn lẫn võ. Làm gì cũng cẩn thận, biết tính xa. Thích bàn chính trị, quân sự. Làm tham mưu ắt có chức lớn; làm thầy thuốc hay thầy giáo cũng nổi tiếng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160,
+          162
+        ],
+        "keywords": [
+          "Lương đồng cung: công danh hiển đạt",
+          "Cơ đồng cung: công danh hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-phu/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh bền vững nhưng không vang dội."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: công danh bền vững"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-phu/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ]
+        }
+      ],
+      "body": [
+        "Thành công trong kinh doanh. Có chức danh cũng chỉ trong thời gian ngắn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: thành công"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-am/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dau",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, giỏi cả văn lẫn võ."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Dậu, Hợi: công danh sớm đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-am/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, giỏi cả văn lẫn võ, nhưng hay bị ghen ghét và bị gò vào những việc trái chí hướng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Tuất: cũng như trên"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-am/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Mao"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến muộn, có tài ăn nói, văn chương xuất sắc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Mão: công danh muộn màng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thai-am/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Ti"
+          ]
+        }
+      ],
+      "body": [
+        "Đường công danh nhiều trở ngại, thời trẻ vất vả, lớn tuổi mới toại nguyện. Có tài nhưng thiếu cơ hội thi thố nên bất mãn suốt đời, dù vẫn được kính trọng nhờ đức độ và văn tài."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          160
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn, Tỵ: gặp nhiều trở ngại"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tham-lang/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp; kinh doanh cũng toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: võ nghiệp hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/tham-lang/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Có chức quân sự nhưng nhỏ, suốt đời không toại nguyện. Công danh trắc trở, nhưng kinh doanh thì phát đạt."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Dần, Thần: có chức vị quân sự"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"Dần, Thần\", phải là Dần, Thân."
+    },
+    {
+      "id": "quan-loc/tham-lang/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Chức nhỏ, thăng trầm thất thường, thuộc hạng tham quan ô lại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: chức vị nhỏ thấp"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/cu-mon/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ, làm thầy giáo cũng nổi tiếng. Nhiều tài năng, nhất là ăn nói và tổ chức, lại có mưu trí. Giàu sang lâu bền, được nhiều người kính nể."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: văn võ kiêm toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/cu-mon/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, nhưng không nên leo quá cao."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Hợi: công danh sớm đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/cu-mon/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh trắc trở, chức nhỏ, hay gặp tai ương."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ tại Tỵ: công danh trắc trở"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/cu-mon/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Sự nghiệp trước nhỏ sau lớn, hay đổi việc. Giỏi xét đoán, lý luận, ăn nói hùng hồn nhưng gặp nhiều thị phi, hay bị gièm pha, oán trách."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          161
+        ],
+        "keywords": [
+          "Đơn thủ Thìn, Tuất: công danh trước nhỏ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-tuong/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Suu",
+            "Mui"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh thuận lợi, giỏi cả văn lẫn võ."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: công danh nhẹ bước"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-tuong/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Không thật rực rỡ nhưng vẫn toại nguyện. Nên theo kỹ thuật hoặc mỹ thuật."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: không được hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-tuong/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Mao",
+            "Dau"
+          ]
+        }
+      ],
+      "body": [
+        "Chức nhỏ, thăng trầm thất thường."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: chức vị nhỏ thấp"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-luong/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh lên nhanh, giỏi cả văn lẫn võ nhưng hiển đạt về văn hơn về võ. Giàu sang bậc nhất, danh tiếng lẫy lừng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: công danh hoạnh đạt"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"lột bực\", hiểu là \"tột bực\"."
+    },
+    {
+      "id": "quan-loc/thien-luong/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Suu",
+            "Mui"
+          ]
+        }
+      ],
+      "body": [
+        "Sự nghiệp bình thường. Nên theo y dược hoặc nghề giáo; kinh doanh cũng phát đạt."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: bình thường"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-luong/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ti",
+            "Hoi"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh, của cải như mây nổi. Làm việc mau chán, thích di chuyển; nên chọn việc lưu động."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: công danh phú qúy"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/that-sat/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Giỏi cả văn lẫn võ, thành công ở những việc thật khó; càng vượt nhiều trở ngại càng hiển đạt. Uy quyền lớn, được nhiều người nể trọng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: văn võ kiêm toàn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/that-sat/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Làm văn hay võ đều hiển đạt nhưng không rực rỡ bằng khi ở Dần, Thân. Thường gặp trở ngại, may đi liền với rủi."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          162
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: văn chức hay võ chức"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/that-sat/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Xuất thân từ binh nghiệp nhưng không lâu bền. Tai ương, nhất là thương tích vì đao binh, thường đi cùng danh lợi."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: xuất thân bằng võ nghiệp"
+        ]
+      },
+      "sensitivity": [
+        "Illness"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/pha-quan/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp nhưng thăng trầm thất thường. Lập công danh trong thời loạn, thành công ở những việc rất khó và nguy hiểm, nhiều mưu trí và rất dũng mãnh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: võ nghiệp hiển đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/pha-quan/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ],
+      "body": [
+        "Thành công về quân sự, nổi tiếng trong sự nghiệp chính trị. Uy quyền lớn, lắm mưu trí, thường lấn quyền cấp trên. Kinh doanh cũng phát đạt."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "thành công về quân sự, nổi tiếng về sự nghiệp"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/pha-quan/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "when": [
+        {
+          "solo": true,
+          "branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh trắc trở, chức nhỏ; nếu giàu sang cũng không bền. Nên kinh doanh hoặc theo công nghiệp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: công danh trắc trở"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
+      "body": [
+        "Công danh trắc trở, chức nhỏ, thăng trầm thất thường; đôi khi chỉ có hư danh, không thực quyền. Suốt đời không toại nguyện vì thiếu cơ hội thi thố và hay bị tiểu nhân ghen ghét, hãm hại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Lương sáng sủa tốt đẹp: công danh trắc trở"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
+      "body": [
+        "Không thể hiển đạt, thường gặp nhiều tai họa và bị tiểu nhân hãm hại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Lương mờ ám xấu xa: không thế hiển đạt được"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
+      "body": [
+        "Công danh lên nhanh, có chức võ lớn, hiển hách trong thời loạn nhưng thăng trầm thất thường. Nhờ liều lĩnh mà làm được việc khó và giàu sang, nhưng không bền: phát nhanh thì tán nhanh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163
+        ],
+        "keywords": [
+          "Sát, Phá, Liêm, Tham, sáng sủa tốt dẹp: công danh hoạnh đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Sát, Phá, Liêm, Tham mờ ám xấu xa",
+      "body": [
+        "Có chức nhưng nhỏ, thăng trầm thất thường, tuy vẫn gặp người dìu dắt, nâng đỡ."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          163,
+          164
+        ],
+        "keywords": [
+          "Sát, Phá, Liêm, Tham mờ ám xấu xa: có danh chức nhưng nhỏ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/05",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Vũ, Tướng sáng sủa tốt đẹp",
+      "body": [
+        "Công danh lên nhanh, chức võ lớn, uy quyền cao. Được kính trọng, nể sợ và có người giúp việc đắc lực."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Vũ, Tướng sáng sủa tốt đẹp: công danh hoạnh đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/06",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh sáng sủa tốt đẹp; Vũ, Tướng mờ ám xấu xa",
+      "body": [
+        "Có chức nhưng nhỏ, tuy vẫn được nhiều người dìu dắt, nâng đỡ."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Vũ, Tướng mờ ám xấu xa: có danh chức, nhưng nhỏ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/07",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
+      "body": [
+        "Có chức lớn nhưng chưa toại nguyện. Đường công danh hay gặp trở ngại, thường bị cấp dưới lừa dối, người giúp việc đều kém."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Lương sáng sủa tốt đẹp: có chức vị lớn lao"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/08",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
+      "body": [
+        "Không thể hiển đạt; nên rời đường công danh, an phận để tránh tai ương."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Lương mờ ám xấu xa: không thể hiển đạt được"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/09",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
+      "body": [
+        "Có chức nhưng không toại nguyện, thiếu người giúp việc đắc lực."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Sát, Phá, Liêm, Tham sáng sủa tốt đẹp: có danh chức nhưng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/10",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Sát, Phá, Liêm, Tham mờ ám xấu xa",
+      "body": [
+        "Nên an phận."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Sát, Phá, Liêm, Tham mờ ám xấu xa: nên an thường thủ phận"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/sat-tinh/11",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Vũ, Tướng sáng sủa tốt đẹp",
+      "body": [
+        "Có chức và uy quyền, vượt được mọi trở ngại, thắng mọi mưu kế lừa lọc của cấp dưới."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Vũ, Tướng sáng sủa tốt đẹp: có danh chức và uy quyền"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"âm lọc lừa\", hiểu là \"âm mưu lừa lọc\"."
+    },
+    {
+      "id": "quan-loc/sat-tinh/12",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "condition_text": "Sát tinh mờ ám xấu xa; Vũ, Tướng mờ ám xấu xa",
+      "body": [
+        "Không thể hiển đạt, đường công danh đầy trở ngại, tai ương."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Vũ, Tướng mờ ám xấu xa: không thể hiển đạt được"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/xuong-khuc/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Công danh hiển đạt, văn tài xuất sắc."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Công danh hiển đạt, có văn tài lỗi lạc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoi-viet/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Có chức lớn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Có danh chức lớn, nếu Khôi, Việt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoi-viet/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "condition_text": "Khôi, Việt gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "body": [
+        "Nắm giữ đầu mối những việc lớn và chỉ huy đông người."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "nắm giữ đầu mối những công việc lớn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/ta-huu/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Được nhiều người giúp đỡ trong sự nghiệp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Được nhiều người nâng đỡ trên đường công danh"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/loc-ton/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Có chức danh, nhiều tiền và có tài tổ chức."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Có danh chức và nhiều tiền bạc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/hoa-ky/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "when": [
+        {
+          "not_with": [
+            "ThaiDuong"
+          ]
+        },
+        {
+          "not_with": [
+            "ThaiAm"
+          ]
+        }
+      ],
+      "body": [
+        "Hay gặp chuyện phiền lòng, công danh trắc trở."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Hay gặp sự phiền lòng, công danh trắc trở"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/hoa-ky/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "branches": [
+            "Suu",
+            "Mui"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh lên nhanh, mọi việc hanh thông."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "gặp Nhật, Nguyệt đồng cung tại Sửu, Mùi tất công danh hoạnh đạt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoa-quyen-loc/01",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "transformations_all": [
+            "HoaKhoa",
+            "HoaQuyen",
+            "HoaLoc"
+          ]
+        }
+      ],
+      "body": [
+        "Tài lộc dồi dào hơn, uy quyền lớn hơn, chức danh cao hơn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          164
+        ],
+        "keywords": [
+          "Tài lộc thêm đồi dào, uy quyền thêm hiển hách"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoc-hu/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "body": [
+        "Hay suy xét, lý luận."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Hay suy xét, luận lý"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoc-hu/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "condition_text": "Khốc, Hư sáng sủa tốt đẹp",
+      "body": [
+        "Có uy quyền, ăn nói hoạt bát, hùng hồn, ra ngoài được nhiều người kính phục. Thời trẻ nhiều trở ngại, đứng tuổi mới toại nguyện. Nên theo pháp lý hoặc chính trị."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Sáng sủa tốt đẹp: có uy quyền, ăn nói hoạt bát"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/khoc-hu/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "condition_text": "Khốc, Hư mờ ám xấu xa",
+      "body": [
+        "Hay gặp chuyện phiền lòng, đường công danh nhiều trở ngại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Mờ ám xấu xa: hay gặp sự phiền lòng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/thien-ma/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Công danh hiển đạt, nên làm việc lưu động. Có tài tổ chức và thao lược."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Công danh hiển đạt, nên làm công việc có tính cách lưu động"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThamLang",
+            "VanXuong"
+          ],
+          "branches": [
+            "Hoi",
+            "Ty"
+          ]
+        },
+        {
+          "with_all": [
+            "ThamLang",
+            "VanKhuc"
+          ],
+          "branches": [
+            "Hoi",
+            "Ty"
+          ]
+        }
+      ],
+      "body": [
+        "Có chức danh, được nhiều người biết tiếng, tài lộc dồi dào."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Tham, Xương (hay Khúc) đồng cung tại Hợi, Tý"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/02",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "CuMon",
+            "ThienDong",
+            "ThienHinh"
+          ]
+        }
+      ],
+      "body": [
+        "Phải nhờ cấp trên dìu dắt mới khá giả."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Cự, Đồng, Hình"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThaiAm",
+            "KinhDuong"
+          ],
+          "branches": [
+            "Ngo"
+          ]
+        }
+      ],
+      "body": [
+        "Làm võ quan trấn giữ biên cương, lập nhiều chiến công, nổi bật khi thời cuộc rối ren; thường là anh hùng dân tộc, tiếng tăm lẫy lừng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Đồng, Âm, Kình đồng cung tại Ngọ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ],
+          "meets_all": [
+            "TaPhu",
+            "HuuBat"
+          ],
+          "gender": "Female"
+        }
+      ],
+      "body": [
+        "Hay làm nghề hộ sinh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Đàn bà gặp cách này hay làm nghề cô đỡ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/05",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than",
+            "Thin",
+            "Tuat"
+          ],
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "VanXuong",
+            "VanKhuc",
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ],
+      "body": [
+        "Nên theo nghề thầy thuốc; dạy học cũng nổi tiếng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Cơ, Nguyệt, Đồng, Lương tai Dần, Thân, Thìn, Tuất gặp Xương, Khúc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/06",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "TaPhu",
+            "HuuBat",
+            "AnQuang",
+            "ThienQuy",
+            "ThienQuan",
+            "ThienPhuc"
+          ],
+          "transformations": [
+            "HoaKhoa"
+          ]
+        }
+      ],
+      "body": [
+        "Vinh hiển trong nghề thuốc, được nhiều người kính trọng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Cơ, Nguyệt, Đồng, Lương, Khoa, Tả, Hữu, Quang, Qúy, Quan, Phúc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/07",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "transformations": [
+            "HoaQuyen"
+          ]
+        }
+      ],
+      "body": [
+        "Chức vụ lớn, uy quyền cao, nhiều người nể."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Sát tọa thủ tại Dần, Thân gặp Quyền đồng cung"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách ghi \"gặp Quyền đồng cung\". Thất Sát ở Dần, Thân luôn đơn thủ mà Hóa Quyền chỉ bám Chính Tinh, nên không bao giờ đồng cung; hiểu là Hóa Quyền hội hợp."
+    },
+    {
+      "id": "quan-loc/bo-sao/08",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ],
+      "condition_text": "gặp Lộc (Lộc Tồn hoặc Hóa Lộc)",
+      "body": [
+        "Chức danh khá lớn, nên làm việc lưu động. Tài lộc ngày càng tăng, có tài kinh doanh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "8.30. Lộc, Mã"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/09",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThienHu"
+          ],
+          "transformations": [
+            "HoaQuyen"
+          ]
+        }
+      ],
+      "condition_text": "gặp thêm Kiếp, Hao",
+      "body": [
+        "Đường công danh đầy trở ngại, hay bị tiểu nhân ghen ghét, gièm pha và hãm hại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165
+        ],
+        "keywords": [
+          "Kiếp, Hư, Hao, Quyền"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/10",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "KinhDuong",
+          "LucSy"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LucSy"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh trắc trở, chức nhỏ. Có công mà cấp trên không biết đến. Việc lớn nhỏ đều không bền, suốt đời bất đắc chí."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          165,
+          166
+        ],
+        "keywords": [
+          "Kình, Lực đồng cung",
+          "suốt đời bất đắc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/11",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ],
+      "body": [
+        "Có chức võ, trấn giữ nơi xa xôi, nguy hiểm."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Kình tọa thủ tại Tứ Mộ gặp Mã"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/12",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThaiTue",
+            "BachHo",
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ],
+      "condition_text": "gặp thêm Phù",
+      "body": [
+        "Giỏi hùng biện, biết suy xét, lý luận, văn chương xuất sắc. Nên theo pháp lý, chính trị, kinh tế."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Tuế, Hổ, Phù, Xương, Khúc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/13",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "VanXuong",
+            "VanKhuc",
+            "TauThu",
+            "LongTri",
+            "PhuongCac"
+          ]
+        }
+      ],
+      "body": [
+        "Có năng khiếu ca nhạc và các bộ môn văn nghệ nói chung."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Xương, Khúc, Tấu, Long, Phượng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/14",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "DaoHoa",
+            "ThienRieu",
+            "TauThu"
+          ],
+          "meets_any": [
+            "ThienCo",
+            "VuKhuc"
+          ]
+        }
+      ],
+      "body": [
+        "Theo nghề múa, hát, sân khấu."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Hồng, Đào, Riêu, Tấu, Cơ, Vũ"
+        ]
+      },
+      "status": "approved",
+      "correction": "Thiên Cơ và Vũ Khúc luôn cách nhau 3 cung nên không bao giờ cùng hội hợp vào một cung; hiểu là gặp một trong hai sao."
+    },
+    {
+      "id": "quan-loc/bo-sao/15",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "TauThu"
+          ],
+          "menh_all": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ],
+      "condition_text": "gặp thêm Tướng, Phù",
+      "body": [
+        "Làm thầy chùa hoặc thầy pháp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Tướng, Tấu, Phù, Mệnh có Tả, Hữu tọa thủ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/16",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh",
+            "ThienHinh",
+            "QuocAn"
+          ]
+        }
+      ],
+      "condition_text": "gặp thêm Tướng",
+      "body": [
+        "Có chức võ nhưng chuyên về việc văn phòng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Binh, Hình, Tướng, Ấn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/17",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "BachHo",
+          "TauThu"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "BachHo",
+            "TauThu"
+          ]
+        }
+      ],
+      "body": [
+        "Có khiếu văn chương, học ngoại ngữ rất nhanh. Về sau có chức khá lớn, đường công danh dễ dàng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Hổ, Tấu đồng cung"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/18",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "ThienRieu",
+            "ThienY"
+          ]
+        }
+      ],
+      "body": [
+        "Làm thầy thuốc hoặc báo chí."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Hình, Riêu, Y"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/19",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThienMa",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ],
+      "body": [
+        "Theo ngành cơ khí hoặc nghề vận tải."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Mã, Hỏa, Linh"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/20",
+      "anchor": {
+        "role": "QuanLoc"
+      },
+      "when": [
+        {
+          "meets_all": [
+            "TamThai",
+            "BatToa",
+            "DaoHoa",
+            "HongLoan"
+          ]
+        }
+      ],
+      "body": [
+        "Công danh đến sớm, mưu sự mau thành, công việc trước sau đều dễ dàng."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Thai, Tọa, Đào, Hồng"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/bo-sao/21",
+      "anchor": {
+        "role": "QuanLoc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "when": [
+        {
+          "with_all": [
+            "ThienLuong",
+            "PhaToai"
+          ]
+        }
+      ],
+      "body": [
+        "Thành đạt trong binh nghiệp, rất dũng mãnh. Hay làm việc mạo hiểm, về sau có uy quyền khá lớn."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166
+        ],
+        "keywords": [
+          "Lương, Phá đồng cung (Phá Toái, Phá Quân)"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách ghi \"(Phá Toái, Phá Quân)\". Thiên Lương và Phá Quân không bao giờ đồng cung nên chỉ giữ Phá Toái."
+    },
+    {
+      "id": "quan-loc/vo-chinh-dieu/01",
+      "anchor": {
+        "role": "QuanLoc",
+        "no_main_star": true
+      },
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ],
+      "condition_text": "không có Nhật, Nguyệt cùng sáng sủa xung chiếu hay hợp chiếu",
+      "body": [
+        "Dù gặp nhiều sao tốt chiếu vào cũng không trọn vẹn: công danh không thể hiển đạt, chức vị bình thường."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          166,
+          167
+        ],
+        "keywords": [
+          "cung Quan Lộc vô Chính diệu, dù có gặp nhiều sao"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vo-chinh-dieu/02",
+      "anchor": {
+        "role": "QuanLoc",
+        "no_main_star": true
+      },
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ],
+      "condition_text": "không có Nhật, Nguyệt cùng sáng sủa xung chiếu hay hợp chiếu",
+      "body": [
+        "Buổi đầu nhiều trở ngại nhưng sau vẫn hiển đạt; thường phát nhanh, tán nhanh, chức vị không bền."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          167
+        ],
+        "keywords": [
+          "Tuần, Triệt án ngữ: tuy gặp nhiều trở ngại"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vo-chinh-dieu/03",
+      "anchor": {
+        "role": "QuanLoc",
+        "no_main_star": true
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "body": [
+        "Công danh rực rỡ, uy quyền lớn. Nên theo chính trị, kinh tế, về sau ắt toại nguyện."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          167
+        ],
+        "keywords": [
+          "Nhật, Nguyệt (cùng sáng sủa) xung chiếu hay hợp chiếu"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "id": "quan-loc/vo-chinh-dieu/04",
+      "anchor": {
+        "role": "QuanLoc",
+        "no_main_star": true
+      },
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        }
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "body": [
+        "Có thêm Tuần, Triệt thì càng rực rỡ gấp bội."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          167
+        ],
+        "keywords": [
+          "lại càng rực rỡ tốt đẹp bội phần"
+        ]
+      },
+      "status": "approved"
+    }
+  ]
+}

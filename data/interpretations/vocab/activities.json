@@ -1,0 +1,50 @@
+[
+  {
+    "id": "KhaiTruong",
+    "label": "Khai trương"
+  },
+  {
+    "id": "XuatHanh",
+    "label": "Xuất hành"
+  },
+  {
+    "id": "CuoiHoi",
+    "label": "Cưới hỏi"
+  },
+  {
+    "id": "DongTho",
+    "label": "Động thổ"
+  },
+  {
+    "id": "SuaChua",
+    "label": "Sửa chữa"
+  },
+  {
+    "id": "XayDung",
+    "label": "Xây dựng"
+  },
+  {
+    "id": "LamNha",
+    "label": "Làm nhà"
+  },
+  {
+    "id": "NhamChuc",
+    "label": "Nhậm chức"
+  },
+  {
+    "id": "MaiTang",
+    "label": "Mai táng"
+  },
+  {
+    "id": "TuSuaMoPhan",
+    "label": "Tu sửa mộ phần"
+  },
+  {
+    "id": "CauTai",
+    "label": "Cầu tài"
+  },
+  {
+    "id": "KyKet",
+    "label": "Ký kết"
+  }
+]

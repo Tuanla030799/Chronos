@@ -1,0 +1,672 @@
+{
+  "collection": "tuvi.star_brightness",
+  "batch": "TV-01",
+  "entries": [
+    {
+      "key": [
+        "TuVi",
+        "Mieu"
+      ],
+      "summary": "Thông minh, trung hậu, nghiêm túc và có uy nghi.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          33
+        ],
+        "keywords": [
+          "Miếu địa: Tỵ, Ngọ, Dần, Thân: thông minh, trung hậu"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "TuVi",
+        "Vuong"
+      ],
+      "summary": "Thông minh, nhiều mưu lược, có oai phong nhưng bất nghĩa.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          33
+        ],
+        "keywords": [
+          "Vượng địa: Thìn, Tuất: thông minh, đa mưu túc trí"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "TuVi",
+        "Dac"
+      ],
+      "summary": "Thông minh, giỏi thao lược, hay liều lĩnh.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          33
+        ],
+        "keywords": [
+          "Đắc địa: Sửu, Mùi: thông minh, thao lược"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "TuVi",
+        "Binh"
+      ],
+      "summary": "Kém thông minh nhưng nhân hậu.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          33
+        ],
+        "keywords": [
+          "Bình hòa: Hợi, Tý, Mão, Dậu: kém thông minh"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "LiemTrinh",
+          "Mieu"
+        ],
+        [
+          "LiemTrinh",
+          "Vuong"
+        ],
+        [
+          "LiemTrinh",
+          "Dac"
+        ]
+      ],
+      "summary": "Liêm khiết, thẳng thắn.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Liêm khiết, thẳng thắn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "LiemTrinh",
+        "Ham"
+      ],
+      "summary": "Khắc nghiệt.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Khắc nghiệt"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThienDong",
+          "Mieu"
+        ],
+        [
+          "ThienDong",
+          "Vuong"
+        ],
+        [
+          "ThienDong",
+          "Dac"
+        ]
+      ],
+      "summary": "Hay đổi ý, thất thường nhưng trung hậu, từ thiện; đem lại may mắn, niềm vui.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Canh cải, thất thường, trung hậu, từ thiện"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThienDong",
+        "Ham"
+      ],
+      "summary": "Hay đổi ý, thất thường nhưng nhân hậu; chủ về tai họa, thị phi, kiện cáo.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Canh cải, thất thường, nhân hậu. Chủ tai họa"
+        ]
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "VuKhuc",
+          "Mieu"
+        ],
+        [
+          "VuKhuc",
+          "Vuong"
+        ],
+        [
+          "VuKhuc",
+          "Dac"
+        ]
+      ],
+      "summary": "Cương nghị, dũng mãnh; tài lộc tăng tiến.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Cương nghị dũng mãnh, tăng tài, tiến lộc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "VuKhuc",
+        "Ham"
+      ],
+      "summary": "Tham lam, ương ngạnh, hay phá tán.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Tham lam, ương ngạnh, phá tán"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThaiDuong",
+          "Mieu"
+        ],
+        [
+          "ThaiDuong",
+          "Vuong"
+        ],
+        [
+          "ThaiDuong",
+          "Dac"
+        ]
+      ],
+      "summary": "Thông minh, nhân hậu, hơi nóng nảy; tài lộc tăng, uy quyền lớn.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Thông minh, nhân hậu, hơn nóng nảy"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"hơn nóng nảy\", hiểu là \"hơi nóng nảy\"."
+    },
+    {
+      "key": [
+        "ThaiDuong",
+        "Ham"
+      ],
+      "summary": "Kém thông minh, nhân hậu nhưng hay nhầm lẫn; uy quyền giảm.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Kém thông minh, nhân hậu hay nhầm lẫn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThienCo",
+          "Mieu"
+        ],
+        [
+          "ThienCo",
+          "Vuong"
+        ],
+        [
+          "ThienCo",
+          "Dac"
+        ]
+      ],
+      "summary": "Sáng suốt, khéo léo, có mưu lược, nhân hậu, từ thiện.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Sáng suốt, khéo léo, có mưu cơ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThienCo",
+        "Ham"
+      ],
+      "summary": "Kém sáng suốt nhưng vẫn từ thiện.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Kém sáng suốt, từ thiện"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThienPhu",
+          "Mieu"
+        ],
+        [
+          "ThienPhu",
+          "Vuong"
+        ],
+        [
+          "ThienPhu",
+          "Dac"
+        ]
+      ],
+      "summary": "Nhân hậu, từ thiện; quyền lộc tăng thêm.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Nhân hậu, từ thiện, gia tăng quyền lộc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThaiAm",
+          "Mieu"
+        ],
+        [
+          "ThaiAm",
+          "Vuong"
+        ],
+        [
+          "ThaiAm",
+          "Dac"
+        ]
+      ],
+      "summary": "Khoan hòa, nhân hậu, từ thiện; sung túc, nhiều nhà đất, hay gặp may.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Khoan hòa, nhân hậu, từ thiện"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThaiAm",
+        "Ham"
+      ],
+      "summary": "Từ thiện nhưng kém sáng suốt, hay nhầm lẫn; chủ về phá tán, suy bại.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Từ thiện, kém sáng suốt, hay nhầm lẫn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThamLang",
+          "Mieu"
+        ],
+        [
+          "ThamLang",
+          "Vuong"
+        ],
+        [
+          "ThamLang",
+          "Dac"
+        ]
+      ],
+      "summary": "Ham muốn mạnh, thích tửu sắc, chơi bời; có uy quyền và tài lộc.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Đa dục, ưa tửu sắc, chơi bời"
+        ]
+      },
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThamLang",
+        "Ham"
+      ],
+      "summary": "Dâm dục, tham lam, hung bạo, chuyên gây họa, hay nhầm lẫn; thiên về xuất thế.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Dâm, tham, hung bạo, chuyên tác họa"
+        ]
+      },
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "CuMon",
+          "Mieu"
+        ],
+        [
+          "CuMon",
+          "Vuong"
+        ],
+        [
+          "CuMon",
+          "Dac"
+        ]
+      ],
+      "summary": "Nhân hậu, vui vẻ, ăn nói đanh thép; có uy quyền, tài lộc.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Nhân hậu, vui vẻ, ăn nói đanh thép"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "CuMon",
+        "Ham"
+      ],
+      "summary": "Gian trá, kém sáng suốt, hay nhầm lẫn; thường gây thị phi, kiện cáo, tai họa.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Gian trá, kém sáng suốt, hay nhầm lẫn"
+        ]
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThienTuong",
+          "Mieu"
+        ],
+        [
+          "ThienTuong",
+          "Vuong"
+        ],
+        [
+          "ThienTuong",
+          "Dac"
+        ]
+      ],
+      "summary": "Đôn hậu, can đảm, thích thanh sắc, dễ đam mê; có uy dũng, công danh, tài lộc.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Đôn hậu, can đảm, ưa thanh sắc"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThienLuong",
+          "Mieu"
+        ],
+        [
+          "ThienLuong",
+          "Vuong"
+        ],
+        [
+          "ThienLuong",
+          "Dac"
+        ]
+      ],
+      "summary": "Nhân hậu, khoan hòa, có mưu lược, biết ứng biến; giải được bệnh tật, tai họa.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Nhân hậu, khoan hòa, có mưu cơ"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThienLuong",
+        "Ham"
+      ],
+      "summary": "Nhân hậu nhưng hay nhầm lẫn, hay đổi ý, thất thường, ham chơi.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Nhân hậu, hay nhầm lẫn"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "ThatSat",
+          "Mieu"
+        ],
+        [
+          "ThatSat",
+          "Vuong"
+        ],
+        [
+          "ThatSat",
+          "Dac"
+        ]
+      ],
+      "summary": "Can đảm, dũng mãnh, nóng nảy.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Can đảm, dũng mãnh nóng nảy"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "key": [
+        "ThatSat",
+        "Ham"
+      ],
+      "summary": "Hung bạo, liều lĩnh, hay gây tai họa.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Hung bạo, liều lĩnh. Hay gây tai họa"
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "keys": [
+        [
+          "PhaQuan",
+          "Mieu"
+        ],
+        [
+          "PhaQuan",
+          "Vuong"
+        ],
+        [
+          "PhaQuan",
+          "Dac"
+        ]
+      ],
+      "summary": "Can đảm, dũng mãnh, cương quyết, đôi khi gian hiểm.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Can đảm, dũng mãnh, cương mùi, đôi khi gian hiểm"
+        ]
+      },
+      "status": "approved",
+      "correction": "Sách in \"cương mùi\", không rõ nghĩa. Tr. 98 tả sao này là \"cương quả\", nên viết là cương quyết."
+    },
+    {
+      "key": [
+        "PhaQuan",
+        "Ham"
+      ],
+      "summary": "Hung bạo, liều lĩnh, gian ác; thường gây phá tán, bại hoại, tai họa.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Hung bạo, liều lĩnh, gian ác"
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "gaps": [
+    {
+      "key": [
+        "ThienPhu",
+        "Binh"
+      ],
+      "gap": "Sách chỉ liệt kê vị trí Bình hòa, không có lời luận",
+      "checked": "tan_bien tr. 36"
+    },
+    {
+      "key": [
+        "ThienTuong",
+        "Ham"
+      ],
+      "gap": "Sách chỉ liệt kê vị trí Hãm địa, không có lời luận",
+      "checked": "tan_bien tr. 37"
+    }
+  ]
+}

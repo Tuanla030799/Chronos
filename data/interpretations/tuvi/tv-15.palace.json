@@ -1,0 +1,21 @@
+{
+  "collection": "tuvi.palace",
+  "batch": "TV-15",
+  "entries": [
+    {
+      "key": "QuanLoc",
+      "summary": "Cho biết công danh, sự nghiệp và khả năng chuyên môn.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          158
+        ],
+        "keywords": [
+          "Xem cung Quan Lộc để biết rõ công danh, sự nghiệp"
+        ]
+      },
+      "status": "approved"
+    }
+  ]
+}

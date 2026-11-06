@@ -1,0 +1,416 @@
+{
+  "collection": "tuvi.star",
+  "batch": "TV-01",
+  "entries": [
+    {
+      "key": "TuVi",
+      "summary": "Chủ về uy quyền, tài lộc và phúc đức.",
+      "body": [
+        "Đóng ở cung nào thì đem phúc đến cho cung đó.",
+        "Ở Hợi, Tý, Mão, Dậu thì kém rực rỡ, uy lực giảm, không đủ sức cứu giải tai ương.",
+        "Gặp Tướng, Xương, Khúc, Khôi, Việt, Tả, Hữu thì uy quyền rất lớn, như vua có bề tôi trung lương, tài giỏi phò tá.",
+        "Gặp Phủ thì của cải dồi dào, vì Phủ như người giữ kho của vua.",
+        "Gặp Lộc, Mã thì quyền lực tăng thêm.",
+        "Làm Thất Sát rực rỡ hơn và trao quyền cho Sát; Tử gặp Sát đồng cung như vua mang kiếm báu.",
+        "Chế ngự được tính hung của Hỏa, Linh.",
+        "Kỵ gặp Tuần, Triệt và Kình, Đà, Không, Kiếp: như vua bị vây hãm, bị kẻ hung đồ làm hại, nên hay sinh chuyện chẳng lành."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          33,
+          34
+        ],
+        "keywords": [
+          "Chủ uy quyền, tài lộc, phúc đức",
+          "An tại cung nào, giáng phúc cho cung đó",
+          "Gặp Phủ: của cải súc tích",
+          "Chế được tính hung ác của Hỏa, Linh",
+          "Kỵ gặp Tuần, Triệt án ngữ và Kình, Đà, Không, Kiếp"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamBacDau",
+        "element": "Dương Thổ",
+        "labels": [
+          "Đế tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThienCo",
+      "summary": "Chủ về anh em và phúc thọ.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Chủ huynh đệ, phúc thọ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Âm Mộc",
+        "labels": [
+          "Thiện tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThaiDuong",
+      "summary": "Chủ về quan lộc.",
+      "body": [
+        "Biểu tượng của mặt trời, của cha và ông nội; với phụ nữ còn là biểu tượng của chồng.",
+        "Miếu, vượng địa mà sinh ban ngày là thuận lý, rất rực rỡ.",
+        "Rực rỡ hơn khi gặp Đào, Hồng, Hỷ, hoặc Hỏa, Linh đắc địa.",
+        "Kém rực rỡ khi gặp Riêu, Đà, Kỵ, hoặc Không, Kiếp.",
+        "Miếu, vượng địa gặp Tuần, Triệt thì bị che ánh sáng, thành mờ ám.",
+        "Hãm địa gặp Tuần, Triệt lại sáng đẹp hơn.",
+        "Đắc địa gặp Kỵ đồng cung là toàn mỹ, như mặt trời có mây ngũ sắc bên cạnh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          35
+        ],
+        "keywords": [
+          "Biểu tượng của mặt trời, của cha, của ông nội",
+          "nếu sinh ban ngày là thuận lý",
+          "Giảm bớt vẻ rực rỡ tốt đẹp, nếu gặp Riêu, Đà, Kỵ",
+          "Đắc địa gặp Kỵ đồng cung là toàn mỹ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Hỏa",
+        "labels": [
+          "Quý tinh"
+        ]
+      }
+    },
+    {
+      "key": "VuKhuc",
+      "summary": "Chủ về tài lộc.",
+      "body": [
+        "Có đặc tính như Cô, Quả.",
+        "Miếu, vượng, đắc địa gặp Sát tinh thì không đáng lo."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34,
+          35
+        ],
+        "keywords": [
+          "Chủ tài lộc",
+          "Có đặc tính như Cô, Quả",
+          "gặp Sát tinh: không đáng lo ngại"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Kim",
+        "labels": [
+          "Tài tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThienDong",
+      "summary": "Chủ về phúc và thọ.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Chủ phúc thọ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Thủy",
+        "labels": [
+          "Phúc tinh"
+        ]
+      }
+    },
+    {
+      "key": "LiemTrinh",
+      "summary": "Chủ về quan lộc và hình ngục.",
+      "body": [
+        "Miếu, vượng, đắc địa thủ Mệnh, Thân thì có thêm tính đào hoa, nên còn gọi là Đào Hoa thứ hai.",
+        "Miếu, vượng, đắc địa gặp Xương, Phù, hoặc khi hãm địa: chủ về kiện cáo, tù tội, nên gọi là Tù tinh.",
+        "Hãm địa gặp nhiều sao xấu, nhất là Sát tinh, Kỵ, Hình, thì tạo thành bộ sao gây họa rất khủng khiếp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          34
+        ],
+        "keywords": [
+          "Chủ quan lộc, hình ngục",
+          "còn có thêm đặc tính như đào hoa",
+          "chủ sự kiện cáo, tù tội, nên gọi là Tù tinh",
+          "kết hợp thành một bộ sao tác họa rất khủng khiếp"
+        ]
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Hỏa",
+        "labels": [
+          "Tù tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThienPhu",
+      "summary": "Chủ về tài lộc và uy quyền.",
+      "body": [
+        "Cứu giải được bệnh tật, tai ương.",
+        "Chế ngự được tính hung của Kình, Đà, Hỏa, Linh; nhưng gặp đủ cả bốn sao thì uy quyền và tài lộc bị giảm.",
+        "Kỵ gặp Tuần, Triệt, Thiên Không, Không Kiếp: như kho bị phá, dễ hao tán, bại hoại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Chủ tài lộc, uy quyền",
+          "Cứu giải bệnh tật, tai ương",
+          "Chế được tính hung ác của Kình, Đà, Hỏa, Linh",
+          "Kỵ gặp Tuần, Triệt án ngữ và Thiên Không, Không Kiếp"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Âm Thổ",
+        "labels": [
+          "Tài tinh",
+          "Quyền tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThaiAm",
+      "summary": "Chủ về nhà đất.",
+      "body": [
+        "Biểu tượng của mặt trăng, của mẹ, bà nội và vợ.",
+        "Miếu, vượng địa mà sinh ban đêm là thuận lý, rất đẹp; sinh đêm từ mùng một đến ngày 15 (thượng huyền) thì càng rực rỡ.",
+        "Rực rỡ hơn khi gặp Đào, Hồng, Hỷ.",
+        "Kém rực rỡ khi gặp Riêu, Đà, Kỵ, hoặc Kình, Không, Kiếp.",
+        "Miếu, vượng địa gặp Tuần, Triệt thì bị che ánh sáng, thành mờ ám.",
+        "Hãm địa gặp Tuần, Triệt lại thành sáng đẹp.",
+        "Đắc địa cần gặp Tuần, Triệt để sáng đẹp hơn.",
+        "Đắc địa gặp Kỵ đồng cung là toàn mỹ, như mặt trăng có mây ngũ sắc bên cạnh."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          36
+        ],
+        "keywords": [
+          "Chủ điền trạch",
+          "Biểu tượng của mặt trăng, của mẹ, của bà nội và của vợ",
+          "sinh ban đêm là thuận lý",
+          "Đắc địa cần gặp Tuần, Triệt án ngữ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Thủy",
+        "labels": [
+          "Phú tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThamLang",
+      "summary": "Chủ về họa phúc và uy quyền.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Chủ họa phúc, uy quyền"
+        ]
+      },
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Thủy",
+        "labels": [
+          "Hung tinh",
+          "Dâm tinh"
+        ]
+      }
+    },
+    {
+      "key": "CuMon",
+      "summary": "Chủ về lời ăn tiếng nói và thị phi.",
+      "body": [
+        "Vượng địa như ngọc quý giấu trong đá; cần gặp Hóa Lộc đồng cung hoặc Tuần, Triệt thì vẻ đẹp mới lộ ra.",
+        "Hãm địa gặp Khoa thì không đáng lo, vì Khoa giải được tính hung của Cự hãm địa."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37
+        ],
+        "keywords": [
+          "Chủ ngôn ngữ, thị phi",
+          "Vượng địa ví như ngọc qúy giấu trong đá",
+          "Khoa giải trừ được tinh hung của Cự hãm địa"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Thủy",
+        "labels": [
+          "Ám tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThienTuong",
+      "summary": "Chủ về quan lộc và phúc thiện.",
+      "body": [
+        "Chế ngự được tính khắc nghiệt, nóng nảy của Liêm.",
+        "Miếu, vượng, đắc địa chế ngự được tính hung của Sát tinh, coi Sát tinh như sao phụ thuộc.",
+        "Gặp Kình đồng cung như dao kề trên đầu, thường gây chuyện chẳng lành.",
+        "Gặp Tuần, Triệt như tướng mất đầu, ấn sứt mẻ: mất hết quyền lực và thường gây tai họa khủng khiếp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          37,
+          38
+        ],
+        "keywords": [
+          "Chủ quan lộc, phúc thiện",
+          "Chế được tính khắc nghiệt nóng nảy của Liêm",
+          "Gặp Kình đồng cung: ví như dao kề trên đầu",
+          "ví như ông tướng mất đầu hay ấn bị sứt mẻ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Thủy",
+        "labels": [
+          "Quyền tinh",
+          "Dũng tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThienLuong",
+      "summary": "Chủ về cha mẹ và phúc thọ.",
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Chủ phụ mẫu, phúc thọ"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Âm Mộc",
+        "labels": [
+          "Thọ tinh",
+          "Ám tinh"
+        ]
+      }
+    },
+    {
+      "key": "ThatSat",
+      "summary": "Chủ về uy vũ và sát phạt.",
+      "body": [
+        "Gặp Kình thường gây tai họa khủng khiếp."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38
+        ],
+        "keywords": [
+          "Chủ uy vũ, sát phạt",
+          "Gặp Kình: thường gây ra những tai họa khủng khiếp"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Kim",
+        "labels": [
+          "Quyền tinh",
+          "Dũng tinh"
+        ]
+      }
+    },
+    {
+      "key": "PhaQuan",
+      "summary": "Chủ về vợ chồng và hao tán.",
+      "body": [
+        "Gặp Lương, Hỷ hoặc Lộc thì không đáng lo nhiều, vì các sao này chế bớt tính hung của Phá.",
+        "Gặp Hao thì càng phá tán, bại hoại."
+      ],
+      "source_ref": {
+        "source": "tan_bien",
+        "source_type": "paraphrase",
+        "pages": [
+          38,
+          39
+        ],
+        "keywords": [
+          "Chủ phu thê, hao tán",
+          "Những sao này chế bớt được tính hung của Phá",
+          "Gặp Hao: lại càng phá tán, bại hoại"
+        ]
+      },
+      "status": "approved",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Thủy",
+        "labels": [
+          "Hung tinh",
+          "Hao tinh"
+        ]
+      }
+    }
+  ]
+}
