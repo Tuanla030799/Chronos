@@ -1,0 +1,770 @@
+# Đặc tả Cơ sở dữ liệu Luận giải Offline (INTERPRETATION_DB_SPEC)
+
+Thiết kế kho văn bản luận giải của Giai đoạn 5A cho ứng dụng iOS và Web, chạy offline 100%, khóa khớp với các `enum` của `astro-core`. Tài liệu này chốt cấu trúc và kế hoạch nạp dữ liệu.
+
+**Trạng thái:** D1–D9 chốt ngày 2026-11-07, xem mục 12. Còn D6a, D6b chặn riêng batch FS-03.
+
+## 0. Tóm tắt
+
+| Vấn đề | Đề xuất | Mục |
+| :-- | :-- | :-- |
+| Định dạng lưu trữ | Phương án A: JSON trong git là nguồn duy nhất. Crate build-time `astro-data` biên dịch ra SQLite cho iOS, JSON cho Web | 2 |
+| Phần lấy từ Phương án B | Rust chỉ giữ khóa và logic chọn mục. Không có văn bản luận giải trong Rust | 2.1, 9 |
+| Khớp `enum` | `astro-data` đọc khóa bằng chính `enum` của `astro-core`. Thêm hoặc đổi biến thể mà thiếu dữ liệu thì build lỗi | 3.1, 10 |
+| Luận giải Tử Vi theo cung | Không dùng khối 14 sao × 12 cung × độ sáng. Dùng đoạn luận có điều kiện, bám đúng cách sách viết | 1.2, 7 |
+| Chống bịa | Mục lấy từ sách có từ khóa gốc được máy kiểm. Ô sách không viết ghi là `gap`, không điền. Mục tổng hợp đánh dấu `canonical_summary` | 3.3, 3.5 |
+| Nguồn | Tử Vi nạp từ PDF *Tân Biên*. Trạch Nhật kết hợp `lunar-ts` và tổng hợp. Bát Tự, Phong Thủy tổng hợp theo sách chuẩn | 12, D4 |
+
+Quy mô dự kiến:
+
+| Phân hệ | Mục theo khóa | Đoạn luận có điều kiện |
+| :-- | --: | --: |
+| `almanac` | 92 | |
+| `bazi` | 134 | |
+| `fengshui` | 57 | |
+| `tuvi` | 177 | Ước 1.800–2.200 |
+
+Văn bản Tử Vi cần nạp đo được khoảng 340.000 ký tự, tức 440 KB UTF-8. Ước tính toàn bộ cơ sở dữ liệu khoảng 1–1,5 MB. Quy mô này quyết định nhiều lựa chọn ở mục 2.
+
+## 1. Khảo sát đầu vào
+
+### 1.1. Đề bài so với `enum` thực tế
+
+Đọc từ `crates/astro-core/src`. Những dòng in đậm là chỗ đề bài và code khác nhau; schema theo code.
+
+| Đề bài | Kiểu trong code | Số lượng | Ghi chú |
+| :-- | :-- | --: | :-- |
+| 12 Trực | `Truc` | 12 | |
+| 28 Sao | `Mansion` | 28 | |
+| 12 Thần Hoàng/Hắc Đạo | `PathGod` | 12 | |
+| 15 Thần Sát Trạch Nhật | `AlmanacGod` | 15 | |
+| **6 tên ngày kỵ** | `VietnamTaboo` | **9** | Có thêm `NguyetTan`, `ThienDiaChuyenSat`; Sát Chủ tách `SatChuDuong`, `SatChuAm` |
+| Tam Tai | `TamTai` | 3 | `Nhap`, `Cu`, `Xuat` |
+| Kim Lâu | `KimLau` | 4 | |
+| Hoang Ốc | `HoangOc` | 6 | |
+| **60 Hoa Giáp Nạp Âm** | `NaYin`, `CanChi` | **30**, 60 | `NaYin` có 30 biến thể, mỗi cái ứng với 2 Can Chi. Tách hai tầng, mục 5 |
+| 10 Thiên Can Nhật Chủ | `Stem` | 10 | |
+| 10 Thập Thần | `TenGod` | 10 | |
+| 12 Vòng Trường Sinh | `LifeStage` | 12 | |
+| **12 Thần Sát Mệnh Lý** | `BaziStar` | **10** | Thêm Không Vong và Khôi Canh: chúng là trường của `BaziAnalysis`, không phải biến thể |
+| 8 Quái Mệnh | `Trigram` | 8 | |
+| 8 Sao Bát Du Niên | `EightMansionsStar` | 8 | |
+| **9 Sao, đương vận/thất vận** | `NineStar` | 9 | `luck()` cố định, không theo Vận. Core chưa có trạng thái đương vận, thất vận: D6 |
+| 14 Chính Tinh, Phụ Tinh | `TuViStar` | 14 + 91 | Vòng Trường Sinh là 12 biến thể của `TuViStar` |
+| **Miếu/Vượng/Đắc/Hãm** | `StarBrightness` | **5** | Có thêm `Binh`. Bảng thực tế mỗi Chính Tinh chỉ có 4 mức, tổng 56 ô; `Binh` chỉ có ở Tử Vi, Thiên Phủ |
+| 12 cung chức năng | `TuViPalaceRole` | 12 | |
+| Tứ Hóa | `FourTransformations` | 4 | Gắn vào sao gốc, không phải `TuViStar` |
+
+Ba hệ quả kỹ thuật:
+
+- **Thiếu `ALL`.** `TenGod`, `BaziStar`, `VietnamTaboo`, `TamTai`, `KimLau`, `HoangOc`, `StarBrightness` chưa có hằng `ALL`, nên chưa kiểm được độ phủ. Cần thêm trước, mục 9.
+- **Trùng tên.** 34 tên biến thể xuất hiện ở từ 2 `enum` trở lên trong phạm vi này, ví dụ `ThienDuc` thuộc `PathGod`, `AlmanacGod`, `TuViStar`; `SinhKhi` thuộc `AlmanacGod`, `EightMansionsStar`; `Tu` thuộc `KimLau`, `LifeStage`, `TuViStar`. Khóa bắt buộc có tên collection.
+- **Swift không có chuỗi tên biến thể.** WASM đã trả đúng tên biến thể qua serde, còn Swift nhận `enum` của UniFFI. Lấy tên bằng `String(describing:)` là cách dễ vỡ, nên khóa phải do Rust dựng, mục 9.
+
+### 1.2. Cách *Tân Biên* thực sự viết
+
+Đây là phát hiện chi phối thiết kế Tử Vi. Đo trên lớp văn bản PDF (mục 11.2) của toàn bộ Phần 2, mỗi "đoạn" là một gạch đầu dòng đã gộp dòng xuống, không tính 23 khối Phú giải của cung Mệnh. Đếm bằng biểu thức chính quy nên là số chỉ báo; "vượng" còn trúng cả sao Đế Vượng, nên cột độ sáng là cận trên.
+
+| Chương | Trang | Ký tự | Đoạn | Nêu Miếu, Vượng, Đắc, Hãm, Bình | "sáng sủa", "mờ ám" | "tại `<Chi>`" | "đồng cung" | "đơn thủ" |
+| :-- | :-- | --: | --: | --: | --: | --: | --: | --: |
+| Đặc tính các sao | 33–51 | 28.122 | 376 | 101 (27%) | 22 | 9 | 35 | 0 |
+| Cung Mệnh, Thân | 52–123 | 153.448 | 397 | 280 (71%) | 161 | 38 | 59 | 5 |
+| 11 cung còn lại | 124–224 | 158.330 | 1.241 | **11 (0,9%)** | 160 (13%) | 410 (33%) | 519 (42%) | 290 (23%) |
+
+Kết luận:
+
+1. **Độ sáng là trục của cung Mệnh, không phải trục của 11 cung còn lại.** Ở đó sách viết theo Chi và theo sao đồng cung, ví dụ tr. 158: "Sát đồng cung: có uy quyền, nên chuyên về quân sự". Khối 14 × 12 × 4 có 672 ô, nhưng 11 cung còn lại gần như không có lời cho trục độ sáng. Ép đủ ô nghĩa là phải bịa, trái Quy tắc 4 của `CLAUDE.md`.
+2. **Sách có đủ đặc tính theo độ sáng ở cấp từng sao.** Mục 3 ghi "Miếu địa: Tỵ, Ngọ, Dần, Thân: thông minh, trung hậu…", nên trục sao × độ sáng là có thật, 56 ô.
+3. **Đơn vị tự nhiên là tổ hợp sao, không phải một sao.** Trên 144 trạng thái (12 vị trí Tử Vi × 12 cung) chỉ có 39 bộ Chính Tinh: 14 sao đơn, 24 cặp, 1 bộ rỗng. 24 trong 144 ô là cung vô Chính diệu.
+4. **Không đủ 168 ô sao × cung.** Chương Nô Bộc không chia theo Chính Tinh: tr. 168–173 dùng ma trận Mệnh × Nô Bộc rồi phụ tinh, 0/14. Tật Ách thiếu tiêu đề Thiên Phủ, Tử Tức thiếu Thiên Tướng, Huynh Đệ thiếu Thiên Cơ, Thái Âm; bốn sao này chỉ có trong thân bài, cần soát khi nạp. Có tiêu đề riêng: 150 ô.
+5. **Sách định nghĩa các từ điều kiện**, nên phần lớn máy xét được, mục 7.5. Riêng chữ "nhiều" không có ngưỡng: "nhiều sao" xuất hiện ở 145 đoạn cung Mệnh và 73 đoạn 11 cung còn lại.
+6. **Phụ tinh cũng có điều kiện đắc, hãm.** 68 trên 126 đoạn của mục 4.2.15–4.2.24 nhắc đến chúng, trong khi `TuViStar::brightness_at` trả `None` với phụ tinh: D8.
+
+Mức phủ tổng quan sao là đầy đủ: 85 mục ở tr. 33–52, trong đó 23 mục ghép từ 2 sao trở lên, phủ 105 `TuViStar` và 4 Hóa. Mục 3.73 in "Quan Phù" là Quan Phủ của vòng Bác Sỹ, cùng lỗi đã ghi ở mục 0.4 của `TUVI_SPEC.md`.
+
+### 1.3. Nguồn hiện có
+
+| Collection | Có trong tay | Phủ được | Còn thiếu |
+| :-- | :-- | :-- | :-- |
+| `tuvi.*` | *Tân Biên* tr. 17–20, 32–224 | 105 sao, Tứ Hóa, 12 cung | Nô Bộc theo Chính Tinh |
+| `almanac.taboo`, `.tam_tai`, `.kim_lau`, `.hoang_oc` | `docs/vietnam_custom_rules.md` | Một dòng ý nghĩa cho phần lớn mục | Lời cho Nguyệt Tận, Dương Công, Thiên Địa Chuyển Sát; cách hóa giải |
+| `almanac.mansion` | `LunarUtil.XIU_SONG`, giấy phép MIT | 28 bài thơ chữ Hán, nêu rõ việc nên, việc kỵ | Bản tiếng Việt, phải dịch hoặc có nguồn Việt |
+| `almanac.truc`, `.path_god`, `.god` | Tên và Cát, Hung | | Toàn bộ lời luận |
+| `bazi.nayin` | *Tân Biên* tr. 241–243 | 30 nguyên thể, như "Vàng dưới biển" | Tính cách, vận mệnh chung |
+| `bazi.can_chi`, `.day_master`, `.ten_god`, `.life_stage`, `.shen_sha` | Bảng tra trong đặc tả | | Toàn bộ lời luận |
+| `fengshui.*` | Ma trận 8×8, tên, ngũ hành, màu | | Toàn bộ lời luận |
+
+Không có nguồn nào cho cách hóa giải hạn: D5. `vietnam_custom_rules.md` không nói đến. *Tân Biên* không nhắc Tam Tai, Kim Lâu, Hoang Ốc; chữ "giải trừ" trong sách luôn nói về tác dụng của sao trên lá số, và lời nói đầu tr. 4 còn chê việc cúng sao cầu giải nạn.
+
+## 2. Định dạng lưu trữ và chia sẻ đa nền tảng
+
+### 2.1. So sánh hai phương án
+
+| Tiêu chí | A: JSON nguồn, biên dịch ra SQLite và JSON | B: bảng ngắn trong Rust, văn bản dài ngoài |
+| :-- | :-- | :-- |
+| Sửa một câu | Sửa JSON, build lại dữ liệu | Bảng ngắn phải build lại Rust, XCFramework, WASM |
+| Dung lượng WASM | Không đổi, 279.538 byte | Tăng theo văn bản, ước thêm 50–100% với khoảng 300 mục ngắn |
+| Tính chất `astro-core` | Giữ nguyên: không phụ thuộc, không I/O | Thêm văn bản luận giải vào lõi tính toán |
+| Quy trình duyệt | Một đường, một định dạng | Hai đường, ranh giới "ngắn" và "dài" phải tự quy định |
+| Khớp `enum` | Kiểm lúc build dữ liệu | Trình biên dịch kiểm: đây là ưu điểm thật của B |
+| Nạp từ NotebookLM | Trực tiếp ra JSON | Phải sinh mã Rust cho phần bảng ngắn |
+| Review trong git | Diff JSON theo đoạn | Diff lẫn giữa mã và nội dung |
+| Tốc độ đọc | Một lần tra khóa | Nhanh hơn, nhưng không đo được khác biệt ở quy mô này |
+
+**Đề xuất: Phương án A, kèm một phần của B.** Ưu điểm kiểm `enum` của B lấy lại được bằng cách cho `astro-data` đọc khóa qua chính `enum` của `astro-core`. Điều đáng giữ trong Rust là logic chọn khóa, vì nó phải giống nhau trên iOS và Web. Nó không cần chứa văn bản, mục 9.
+
+### 2.2. Kiến trúc
+
+```text
+Sách PDF, NotebookLM, bảng của chủ dự án
+        │  gói nguồn trong .ref/sources/ (không commit)
+        ▼
+data/interpretations/**/*.json          nguồn chuẩn duy nhất, có trong git
+        │  cargo run -p astro-data -- validate
+        │  đọc khóa bằng enum của astro-core, kiểm độ phủ, nguồn, điều kiện
+        ▼
+build/content/                          sinh ra, không commit
+  ├── chronos_content.sqlite            → bundle iOS, Widget
+  ├── web/<module>.<hash>.json          → Web, Service Worker
+  └── manifest.json
+
+Khi chạy:  astro-core trả khóa và facts → app đọc văn bản theo khóa
+```
+
+### 2.3. Cây thư mục
+
+```text
+data/interpretations/
+  sources.json                     danh mục nguồn, mục 3.3
+  vocab/activities.json            từ vựng việc nên làm, việc kỵ
+  vocab/star_groups.json           nhóm sao, mục 7.6
+  almanac/  bazi/  fengshui/  tuvi/
+    <batch>.<collection>.json      ví dụ tuvi/tv-15.passage.json
+  fixtures/                        lá số mẫu và đoạn mong đợi, mục 10
+crates/astro-data/                 công cụ build-time
+.ref/sources/<nguồn>/pages.txt     văn bản nguồn theo trang, ngoài git
+```
+
+Mỗi file thuộc đúng một batch và một collection để diff và review theo batch:
+
+```json
+{ "collection": "tuvi.passage", "batch": "TV-15", "entries": [], "gaps": [] }
+```
+
+### 2.4. Crate `astro-data`
+
+- Là crate thứ tư của workspace, **chỉ chạy lúc build**, không phải dependency của `astro-ffi`, `astro-wasm`. App không link nó.
+- Phụ thuộc: `astro-core` với feature `serde`, `serde`, `serde_json`, `sha2`, `rusqlite` với feature `bundled`.
+- Lệnh: `validate [--complete]`, `build [--release]`, `stats`, `review --batch <mã>`.
+- `build-ios.sh` và `wasm-pack` build theo package nên không bị ảnh hưởng. `cargo test --workspace` sẽ biên dịch SQLite C một lần.
+
+### 2.5. iOS
+
+- `chronos_content.sqlite` nằm trong bundle của app. Widget Extension có bundle riêng nên file phải thuộc cả hai target, hoặc dùng App Group; chốt ở Phase 5.
+- File build với `journal_mode = DELETE`, đúng khuyến nghị của SQLite cho phương tiện chỉ đọc. Không để ở WAL.
+- Mở bằng URI `file:<đường dẫn>?immutable=1`: SQLite mở chỉ đọc, bỏ khóa và dò thay đổi. Điều kiện là file không bao giờ bị sửa, đúng với bundle iOS.
+- Chỉ cần `SELECT` theo khóa nên dùng SQLite hệ thống là đủ. Phase 5 tra Context7 trước khi viết phần Swift.
+
+Dùng JSON cho cả hai nền tảng cũng chạy được ở quy mô này. SQLite được chọn vì đọc theo neo không phải giải mã cả file, hợp với giới hạn bộ nhớ của Widget.
+
+### 2.6. Web
+
+- Mỗi phân hệ một file `web/<module>.<hash>.json`, tên theo mã băm nội dung. Ước tính `tuvi` khoảng 1 MB, các phân hệ khác dưới 150 KB.
+- Service Worker precache vào Cache Storage, gọi `navigator.storage.persist()`. Mở phân hệ nào thì tải file đó vào một `Map`.
+- **Không dùng IndexedDB ở bản đầu.** Dữ liệu chỉ đọc, tra theo khóa, mỗi file nhỏ, nên IndexedDB chỉ thêm bước chép dữ liệu và đường nâng cấp. Xem lại nếu sau này có tìm kiếm toàn văn hoặc dữ liệu vượt khoảng 10 MB.
+
+### 2.7. Phiên bản
+
+`manifest.json`, chép vào bảng `meta` của SQLite:
+
+```json
+{
+  "schema_version": 1,
+  "content_version": "2026.11.1",
+  "engine_version": "0.1.0",
+  "content_hash": "sha256:…",
+  "modules": { "almanac": { "file": "almanac.3f9a1c.json", "entries": 92 } }
+}
+```
+
+- `content_hash` tính trên JSON chuẩn hóa, không tính trên file SQLite, vì byte của file phụ thuộc phiên bản SQLite.
+- SQLite đặt `PRAGMA user_version = schema_version` và `PRAGMA application_id = 1128813134` (chữ `CHRN`).
+- Engine và dữ liệu luôn đi cùng nhau: iOS trong cùng bản app, Web trong cùng precache. Vì vậy không có đường cập nhật dữ liệu riêng ở bản đầu.
+
+## 3. Quy ước chung của schema
+
+### 3.1. Khóa
+
+Dạng `<collection>/<Phần>[/<Phần>]`. Mỗi phần là **tên biến thể Rust nguyên văn**, trùng tên serde và tên trong khai báo TypeScript của `astro-wasm`.
+
+```text
+almanac.truc/Kien
+almanac.god/ThienDuc                 khác almanac.path_god/ThienDuc
+bazi.can_chi/Giap/Ty
+fengshui.eight_star_use/SinhKhi/Bep
+tuvi.star_brightness/TuVi/Mieu
+```
+
+Không dùng số thứ tự, không đổi chữ hoa thường, không bỏ tên collection. Trong JSON, `key` khử tuần tự thẳng vào kiểu Rust: `"Kien"` vào `Truc`, `["TuVi", "Mieu"]` vào `(TuViStar, StarBrightness)`.
+
+### 3.2. Trường chung
+
+| Trường | Kiểu | Bắt buộc | Ý nghĩa |
+| :-- | :-- | :-- | :-- |
+| `key` hoặc `keys` | khóa | Có | `keys` khi một lời dùng cho nhiều khóa, như mục ghép Kình Dương, Đà La |
+| `summary` | chuỗi, tối đa 160 ký tự | Có | Một câu cho thẻ hoặc ô lịch |
+| `body` | mảng chuỗi | Không | Mỗi phần tử một đoạn. Dùng mảng để diff git theo đoạn |
+| `aliases` | mảng chuỗi | Không | Tên khác: Bảo Quang, Lục Bại, Lò Trung Hỏa |
+| `source_ref` | `SourceRef` | Có | Mục 3.3 |
+| `sensitivity` | mảng thẻ | Không | Mục 3.6 |
+| `status` | `draft`, `approved` | Có | Mục 3.4 |
+
+**Không lặp dữ liệu của core.** JSON không chứa tên chính, Cát Hung, ngũ hành hay bảng Miếu Hãm. `astro-data` lấy `name_vi()`, `luck()`, `is_hoang_dao()`, `nature()` từ core rồi ghi vào file build, nên không thể lệch với engine.
+
+Văn bản là chuỗi thuần, không Markdown, không biến thay thế. App không ghép câu mới.
+
+### 3.3. Nguồn
+
+`sources.json` khai báo mỗi nguồn một lần:
+
+```json
+{
+  "id": "tan_bien",
+  "title": "Tử Vi Đẩu Số Tân Biên",
+  "author": "Vân Đằng Thái Thứ Lang",
+  "edition": "Internet Archive TuViDdauSoTanBien-VDThaiThuLang-DV, bản đánh máy lại 2014",
+  "rights": "unverified",
+  "packet": ".ref/sources/tan_bien/pages.txt"
+}
+```
+
+`rights` nhận `open`, `licensed` hoặc `unverified`. `packet` là văn bản nguồn chia khối theo trang, không có nếu nguồn không kiểm được theo trang. Mỗi mục dẫn nguồn bằng `source_ref`:
+
+```json
+{
+  "source": "tan_bien",
+  "source_type": "paraphrase",
+  "pages": [158],
+  "keywords": ["Sát đồng cung: có uy quyền"]
+}
+```
+
+| Trường | Ý nghĩa |
+| :-- | :-- |
+| `source_type` | Mục dưới |
+| `pages` | Các trang chứa lời gốc |
+| `locator` | Thay cho `pages` với nguồn không theo trang, ví dụ `LunarUtil.XIU_SONG`, `mục 1` |
+| `keywords` | Vài cụm từ gốc, mỗi cụm tối đa 15 từ, giữ nguyên cả lỗi đánh máy. `validate` kiểm từng cụm có trong `packet` ở đúng trang. Không đưa vào file build |
+
+| `source_type` | Ý nghĩa | `keywords` |
+| :-- | :-- | :-- |
+| `paraphrase` | Mặc định theo D3: diễn đạt lại ngắn gọn bằng ngôn ngữ hiện đại | Bắt buộc |
+| `quote` | Nguyên văn, chỉ cho câu phú ngắn | Bắt buộc |
+| `translation` | Dịch từ Hán văn | Bắt buộc |
+| `canonical_summary` | Tổng hợp theo tinh thần một sách chuẩn, không trích từ trang cụ thể: D4 | Không có |
+
+Từ khóa gốc là phép kiểm máy chính chống bịa: mục không tìm được từ khóa trong nguồn thì không qua `validate`.
+
+`canonical_summary` không kiểm được bằng máy, nên chỉ dùng cho batch được D4 cho phép. `citation` của mục này ghi "Tổng hợp theo truyền thống *<tên sách>*", không ghi số trang và không viết như lời trích từ sách.
+
+### 3.4. Trạng thái
+
+- `draft`: vừa sinh, chưa duyệt. Chỉ vào bản build dev, có đánh dấu.
+- `approved`: chủ dự án đã duyệt. Chỉ trạng thái này vào `build --release`.
+
+Khóa chưa có mục `approved` thì app chỉ hiện tên và Cát Hung từ core.
+
+### 3.5. Khoảng trống
+
+Ô sách không viết được ghi rõ trong mảng `gaps` của file, không điền:
+
+```json
+{ "key": ["NoBoc", "TuVi"], "gap": "Chương Nô Bộc không chia theo Chính Tinh", "checked": "tan_bien tr. 168–173" }
+```
+
+`gap` là kết luận đã kiểm chứng, không phải việc còn nợ, và không vào file build. `validate --complete` yêu cầu mỗi khóa có mục hoặc `gap`; `validate` thường và `stats` chỉ báo khóa còn thiếu, vì các batch nạp dần.
+
+### 3.6. Từ vựng
+
+- `activities.json`: danh sách có kiểm soát cho `good_for`, `avoid`, ví dụ `CuoiHoi`, `KhaiTruong`, `XuatHanh`, `DongTho`, `SuaChua`, `MaiTang`, `CauTai`, `KyKet`. Bắt đầu từ từ ngữ trong `vietnam_custom_rules.md`, bổ sung từ `LunarUtil.YI_JI` (142 mục) khi cần. Dùng thẻ để sau này lọc được ngày theo việc mà không phải gắn lại dữ liệu.
+- `sensitivity`: `Death`, `Illness`, `Legal`, `Sexuality`, `FamilyLoss`, dùng cho D9.
+
+## 4. Phân hệ 1: `almanac`
+
+| Collection | Khóa | Số mục | Trường riêng |
+| :-- | :-- | --: | :-- |
+| `almanac.truc` | `Truc` | 12 | `good_for`, `avoid` |
+| `almanac.mansion` | `Mansion` | 28 | `good_for`, `avoid`, `verse` |
+| `almanac.path_god` | `PathGod` | 12 | `good_for`, `avoid` |
+| `almanac.god` | `AlmanacGod` | 15 | `good_for`, `avoid` |
+| `almanac.taboo` | `VietnamTaboo` | 9 | `avoid`, `verse` |
+| `almanac.restriction` | `AgeTopic`: `TamTai`, `KimLau`, `HoangOc` | 3 | `advice`: tổng quan từng loại hạn |
+| `almanac.tam_tai` | `TamTai` | 3 | `advice` |
+| `almanac.kim_lau` | `KimLau` | 4 | `advice` |
+| `almanac.hoang_oc` | `HoangOc` | 6 | `advice` |
+
+`good_for`, `avoid` là mảng `{ "activity": "CuoiHoi", "note": "…" }`, `note` không bắt buộc. Tên, Cát Hung và điều kiện phạm hạn đã có trong core nên không lưu lại.
+
+`advice` là chuỗi tùy chọn, chỉ ghi lưu ý thực tế trong dân gian, như thận trọng khi khởi sự lớn hoặc tục mượn tuổi khi động thổ. Không ghi nghi thức cúng sao, giải hạn: D5. Không có thì bỏ trường, app không hiện mục này.
+
+Ví dụ, lời lấy từ mục 1 của `vietnam_custom_rules.md`:
+
+```json
+{
+  "key": "TamNuongSat",
+  "summary": "Kỵ khai trương, xuất hành, cưới hỏi, động thổ, sửa chữa.",
+  "avoid": [
+    { "activity": "KhaiTruong" }, { "activity": "XuatHanh" }, { "activity": "CuoiHoi" },
+    { "activity": "DongTho" }, { "activity": "SuaChua" }
+  ],
+  "source_ref": {
+    "source": "vn_custom_rules", "source_type": "quote", "locator": "mục 1",
+    "keywords": ["Kỵ khai trương, xuất hành, cưới hỏi, động thổ, sửa chữa"]
+  },
+  "status": "draft"
+}
+```
+
+## 5. Phân hệ 2: `bazi`
+
+| Collection | Khóa | Số mục | Trường riêng |
+| :-- | :-- | --: | :-- |
+| `bazi.nayin` | `NaYin` | 30 | `image`, `traits`, `fortune` |
+| `bazi.can_chi` | `(Stem, Branch)` | 60 | `traits`, `fortune` |
+| `bazi.day_master` | `Stem` | 10 | `traits` |
+| `bazi.ten_god` | `TenGod` | 10 | |
+| `bazi.life_stage` | `LifeStage` | 12 | |
+| `bazi.shen_sha` | `BaziStar`, thêm `KhongVong`, `KhoiCanh` | 12 | |
+
+- **Hai tầng của 60 Hoa Giáp.** `bazi.nayin` là tầng bắt buộc: 30 Nạp Âm, trong đó `image` là nguyên thể lấy từ *Tân Biên*. `bazi.can_chi` chỉ có mục khi nguồn thật sự viết riêng từng tuổi, còn lại ghi `gap`. App hiện cả hai tầng nếu có. `validate` chỉ nhận 60 cặp hợp lệ, sinh bằng `CanChi::from_cycle_index`.
+- `KhongVong`, `KhoiCanh` không có trong `BaziStar`: `bazi_keys` sinh chúng từ `khong_vong_day`, `khong_vong_year`, `is_khoi_canh`.
+- `bazi.life_stage` chỉ dùng cho Bát Tự. Vòng Trường Sinh của Tử Vi có lời riêng ở `tuvi.star`.
+
+## 6. Phân hệ 3: `fengshui`
+
+| Collection | Khóa | Số mục | Trường riêng |
+| :-- | :-- | --: | :-- |
+| `fengshui.kua` | `Trigram` | 8 | |
+| `fengshui.eight_star` | `EightMansionsStar` | 8 | |
+| `fengshui.eight_star_use` | `(EightMansionsStar, EightUse)` | 32 | `verdict` |
+| `fengshui.nine_star` | `NineStar` | 9 | `auspicious_meaning`, `inauspicious_meaning` |
+
+`EightUse` là `HuongNha`, `Bep`, `BanLamViec`, `KetHon`, ứng với các đường tính đã có:
+
+| `EightUse` | Lấy sao từ |
+| :-- | :-- |
+| `HuongNha`, `Bep`, `BanLamViec` | `Trigram::star_at(direction)`, `direction` do người dùng chọn |
+| `KetHon` | `kua_compatibility(first, second).star` |
+
+`verdict` là `Luck` tùy chọn cho riêng ngữ cảnh. Nếu nguồn cho biết cát hung ở một ngữ cảnh khác `EightMansionsStar::luck()`, ví dụ khi đặt bếp, app dùng `verdict` và không tô màu theo `luck()`.
+
+Trạng thái của sao trong Vận theo D6, nguồn *Thẩm Thị Huyền Không Học*, `star` và `period` từ 1 đến 9:
+
+| Trạng thái | Điều kiện | Văn bản dùng |
+| :-- | :-- | :-- |
+| Đương Vận, Vượng Khí | `star == period`. Vận 5: Ngũ Hoàng vẫn là Chính thần nhưng bản chất sát khí, cần tĩnh | `auspicious_meaning` |
+| Sinh Khí | `star == (period % 9) + 1`; xem D6a | `auspicious_meaning` |
+| Thoái Khí | `star == ((period + 7) % 9) + 1`, ví dụ Vận 9 là Bát Bạch | Chưa gán: D6b |
+| Tử Khí, Sát Khí | Các sao còn lại. Nhị Hắc, Ngũ Hoàng khi thất vận là đại hung sát | `inauspicious_meaning` |
+
+Core đã có `van_of_year`. Hàm phân loại trạng thái viết ở `fengshui.rs` sau khi chốt D6a, D6b.
+
+## 7. Phân hệ 4: `tuvi`
+
+### 7.1. Các lớp
+
+| Lớp | Collection | Khóa | Số lượng | Nguồn |
+| :-- | :-- | :-- | --: | :-- |
+| Tổng quan sao | `tuvi.star` | `TuViStar` | 105 | tr. 33–52 |
+| Sao theo độ sáng | `tuvi.star_brightness` | `(TuViStar, StarBrightness)` | 56 | tr. 33–39 |
+| Tứ Hóa | `tuvi.transformation` | `FourTransformations` | 4 | Mục 3.23–3.26 |
+| Giới thiệu cung | `tuvi.palace` | `TuViPalaceRole` | 12 | Đoạn mở đầu mỗi chương |
+| Theo cung | `tuvi.passage` | Neo `(cung, sao)` | Ước 1.800–2.200 đoạn | tr. 52–224 |
+
+Ba tầng đề bài yêu cầu cho 14 Chính Tinh đều có: tổng quan ở `tuvi.star`, ảnh hưởng Miếu Hãm ở `tuvi.star_brightness`, ý nghĩa tại 12 cung ở `tuvi.passage`. Phụ tinh và Tứ Hóa dùng cùng cấu trúc, phần hội hợp nằm ở `when`.
+
+`tuvi.star` có thêm `profile`, ghi đúng tiêu đề sách:
+
+```json
+{ "dau": "NamBacDau", "element": "Dương Thổ", "labels": ["Đế tinh"] }
+```
+
+`tuvi.star_brightness` chỉ có 56 khóa tồn tại trong bảng `BRIGHTNESS`. Ví dụ tr. 33, khóa `["TuVi", "Mieu"]`: "thông minh, trung hậu, nghiêm cẩn, uy nghi".
+
+### 7.2. Đoạn luận có điều kiện
+
+Một đoạn là một ý của sách, gồm **neo** để tìm nhanh và **điều kiện** để lọc:
+
+```json
+{
+  "id": "quan-loc/tu-vi/01",
+  "anchor": { "role": "QuanLoc", "stars": ["TuVi"] },
+  "when": [
+    { "solo": true, "branches": ["Ngo"] },
+    { "with_all": ["ThienPhu"] }
+  ],
+  "body": ["Sự nghiệp vẻ vang, vừa có địa vị vừa giàu có."],
+  "source_ref": {
+    "source": "tan_bien", "source_type": "paraphrase", "pages": [158],
+    "keywords": ["Đơn thủ tại Ngọ, Phủ đồng cung"]
+  },
+  "status": "draft"
+}
+```
+
+Câu gốc là "Đơn thủ tại Ngọ, Phủ đồng cung: công danh hiển hách…". Đây là **hai trường hợp** chứ không phải một: Tử Vi ở Ngọ thì Thiên Phủ ở Tuất, còn Tử Vi và Thiên Phủ chỉ đồng cung tại Dần, Thân. Vì vậy `when` là mảng các phương án. Đọc nhầm thành một điều kiện gộp sẽ bị `validate` chặn, mục 10.
+
+| Trường của đoạn | Ý nghĩa |
+| :-- | :-- |
+| `id` | Ổn định, dạng `<cung>/<sao>/<số>`, số theo thứ tự trong sách |
+| `anchor.role` | `TuViPalaceRole` |
+| `anchor.stars` | Đoạn áp dụng khi một trong các sao này tọa thủ. Nhận cả tên nhóm `@LucSat` |
+| `anchor.transformation` | Thay cho `stars`, neo theo `FourTransformations` |
+| `anchor.no_main_star` | Thay cho `stars`, cung vô Chính diệu |
+| `section` | `DaiCuong`, `NuMenh`, `PhuGiai`, theo tiêu đề nhỏ của sách; để nhóm khi hiển thị |
+| `verse` | Câu phú nguyên văn của khối Phú giải |
+| `when` | Mảng phương án, thỏa một phương án là đạt. Bỏ trống nghĩa là luôn áp dụng |
+| `condition_text` | Phần điều kiện máy không xét được, mục 7.5 |
+
+### 7.3. Trường của `when`
+
+Trong một phương án, các trường là quan hệ VÀ. Trong một danh sách là HOẶC, trừ khi tên có `_all`.
+
+| Trường | Kiểu | Đúng khi | Chữ trong sách |
+| :-- | :-- | :-- | :-- |
+| `branches` | `Branch[]` | Cung đóng tại một trong các Chi | "tại Tỵ, Hợi" |
+| `brightness` | `StarBrightness[]` | Sao neo có một trong các độ sáng | "miếu, vượng hay đắc địa" |
+| `solo` | bool | Không có Chính Tinh khác trong cung | "đơn thủ" |
+| `with_all` | sao | Mọi sao đều ở cùng cung | "Sát đồng cung" |
+| `meets_any`, `meets_all` | sao | Một, hoặc mọi sao hội hợp | "gặp Kình, Đà" |
+| `not_meets` | sao | Không sao nào hội hợp | "vô Hình Kỵ" |
+| `paired_with` | sao | Sao ở cung nhị hợp | "gặp Nguyệt nhị hợp" |
+| `flanked_by` | sao | Sao ở hai cung kề bên | "giáp" |
+| `transformations` | `FourTransformations[]` | Có Hóa này hội hợp | "gặp Khoa, Quyền" |
+| `tuan_triet` | `Tuan`, `Triet`, `Either` | Cung có Tuần, Triệt | "Tuần, Triệt án ngữ" |
+| `than_here` | bool | Thân cư cung này | "Thân cư Phúc Đức" |
+| `gender` | `Gender` | Giới tính | "Nữ mệnh" |
+| `year_stems`, `year_branches` | `Stem[]`, `Branch[]` | Can, Chi năm sinh | "Tuổi Giáp, Đinh, Kỷ" |
+| `menh_any` | sao | Sao ở cung Mệnh | Ma trận Mệnh × Nô Bộc |
+
+### 7.4. Neo và kiểm độ phủ
+
+- 12 × 14 = 168 neo Chính Tinh, mỗi neo phải có đoạn hoặc `gap`. Dự kiến 14 `gap` của Nô Bộc.
+- Cung vô Chính diệu dùng `anchor.no_main_star`. Sách có lời cho Mệnh vô Chính diệu ở tr. 53–54.
+- Mục 4.2 của sách đặt tên "tọa thủ tại cung Mệnh - Thân", nên `tuvi_palace_query` trả cả neo `Menh` cho cung có `is_than`.
+- Đoạn chung của cung như 15.1 "Tiên quyết" neo vào nhóm sao, ví dụ `@NamDau`.
+
+### 7.5. Điều kiện máy xét được
+
+Lấy từ Phần 1 mục 9 và Phần 2 mục 2 của sách:
+
+| Từ | Định nghĩa của sách | Cách xét |
+| :-- | :-- | :-- |
+| Đơn thủ | tr. 33: an tại một cung, không gặp Chính diệu khác cùng cung | `main_stars` có đúng 1 sao |
+| Đồng cung | tr. 33 | Cùng `TuViPalace` |
+| Tam chiếu | tr. 18: "Ba cung chiếu lẫn nhau" | `Branch::trine()` |
+| Xung chiếu | tr. 19: "Hai cung đối nhau, chiếu lẫn nhau" | `Branch::clash()` |
+| Nhị hợp | tr. 20 | `Branch::six_combination()` |
+| Hội hợp | tr. 33: "gặp nhau tại cùng một cung, hay chiếu lẫn nhau" | Cùng cung, tam chiếu, xung chiếu: D7 |
+| Sáng sủa tốt đẹp | tr. 33: sao đặc tính tốt, hoặc an tại miếu, vượng, đắc địa | `nature()` và `brightness`, chưa dùng ở bản đầu |
+| Mờ ám xấu xa | tr. 33: sao đặc tính xấu, hoặc an tại hãm địa | Như trên |
+
+Ví dụ tr. 20 có lỗi đánh máy, ghi thêm vào danh sách của `TUVI_SPEC.md` mục 0.4 khi duyệt: "Xem cung Sửu, phải xem cả cung Tý (xung chiếu), cung Dậu, cung Mùi (tam hợp chiếu) và cung Tý (nhị hợp)". Đúng theo bảng cùng trang là Mùi xung chiếu, Tỵ và Dậu tam hợp, Tý nhị hợp.
+
+**Điều kiện không xét được thì giữ nguyên lời, không tự đặt ngưỡng.** Sách không cho biết "nhiều" là bao nhiêu sao, nên phần đó vào `condition_text`, các trường khác vẫn lọc bình thường:
+
+```json
+{
+  "id": "menh/tu-vi/05",
+  "anchor": { "role": "Menh", "stars": ["TuVi"] },
+  "section": "NuMenh",
+  "when": [{ "gender": "Female" }],
+  "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+  "body": ["…"]
+}
+```
+
+App hiện dạng "Nếu gặp nhiều sao sáng sủa tốt đẹp hội hợp: …", không khẳng định điều kiện đó đúng với lá số. Tên viết tắt chưa chắc nghĩa, hoặc độ sáng của phụ tinh trước khi chốt D8, cũng vào `condition_text`.
+
+### 7.6. Nhóm sao
+
+`star_groups.json` khai báo nhóm, mỗi nhóm có nguồn, `validate` thay `@Tên` thành danh sách `TuViStar`:
+
+```json
+{ "id": "LucSat", "stars": ["KinhDuong", "DaLa", "HoaTinh", "LinhTinh", "DiaKhong", "DiaKiep"], "source": "tan_bien tr. 32" }
+```
+
+Nhóm hay gặp, đếm trong sách: Tả Hữu, Xương Khúc, Hỏa Linh, Không Kiếp, Khôi Việt, Nhật Nguyệt, Kình Đà, Song Hao, Đào Hồng, Long Phượng, Sát Phá Liêm Tham, Cơ Nguyệt Đồng Lương, Khoa Quyền Lộc, Lục Bại, Nam Đẩu, Bắc Đẩu. Thành phần từng nhóm đọc từ sách lúc nạp, không suy đoán. "Sát tinh" dùng 99 lần, phải xác định có đồng nghĩa với Lục Sát không trước khi dùng.
+
+### 7.7. Bẫy khi đọc sách
+
+| Chữ trong sách | Có thể là | Cách xử lý |
+| :-- | :-- | :-- |
+| Hình, Kỵ trong câu phú | Kình Dương, Đà La (tr. 56 chú rõ), không phải Thiên Hình, Hóa Kỵ | Đọc phần giải của câu phú |
+| Lộc | Lộc Tồn hoặc Hóa Lộc | Xác định theo ngữ cảnh, không rõ thì để `condition_text` |
+| Tướng | Thiên Tướng hoặc Tướng Quân, như "Tướng, Binh, Thai" tr. 198–207 | Như trên |
+| Sát | Thất Sát; "Sát tinh" là cả nhóm | Không nhầm hai dạng |
+| Tử | Tử Vi, hoặc sao Tử của vòng Trường Sinh | Theo ngữ cảnh |
+| Đế, Nhật, Nguyệt | Tử Vi, Thái Dương, Thái Âm | Bảng tên tắt trong skill nạp |
+| Quan Phù, Quan Phủ | `QuanPhuThaiTue`, `QuanPhuBacSy` | Theo vòng sao |
+| Phúc Đức | Sao `TuViStar::PhucDuc` hoặc cung `TuViPalaceRole::PhucDuc` | Theo ngữ cảnh |
+| Thê Thiếp (Phu Quân) | `TuViPalaceRole::PhuThe` | Chương viết theo góc nhìn người chồng, D9 |
+
+## 8. File build
+
+### 8.1. SQLite
+
+```sql
+PRAGMA journal_mode = DELETE;
+PRAGMA application_id = 1128813134;
+PRAGMA user_version = 1;
+
+CREATE TABLE meta (
+  key   TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+) WITHOUT ROWID;
+
+-- Mọi collection tra theo một khóa.
+CREATE TABLE entry (
+  key         TEXT PRIMARY KEY,           -- 'almanac.truc/Kien'
+  collection  TEXT NOT NULL,
+  title       TEXT NOT NULL,              -- từ name_vi() của core
+  luck        TEXT,                       -- từ core: Cat, Trung, Hung
+  summary     TEXT NOT NULL,
+  body        TEXT NOT NULL,              -- mảng JSON các đoạn
+  extra       TEXT,                       -- JSON: good_for, avoid, verse, advice, profile
+  citation    TEXT NOT NULL,              -- 'Tử Vi Đẩu Số Tân Biên, tr. 33'
+  sensitivity INTEGER NOT NULL DEFAULT 0  -- mặt nạ bit
+) WITHOUT ROWID;
+CREATE INDEX entry_collection ON entry (collection);
+
+CREATE TABLE passage (
+  id             INTEGER PRIMARY KEY,     -- sinh lúc build, theo thứ tự sách
+  stable_id      TEXT NOT NULL UNIQUE,    -- 'quan-loc/tu-vi/01'
+  section        TEXT,
+  verse          TEXT,
+  gates          TEXT NOT NULL,           -- JSON, mục 8.3
+  condition_text TEXT,
+  body           TEXT NOT NULL,
+  citation       TEXT NOT NULL,
+  sensitivity    INTEGER NOT NULL DEFAULT 0
+);
+
+-- Một đoạn có thể gắn nhiều neo: 'QuanLoc/TuVi', 'Menh/HoaLoc', 'Menh/~NoMain'.
+CREATE TABLE passage_anchor (
+  anchor     TEXT NOT NULL,
+  passage_id INTEGER NOT NULL REFERENCES passage (id),
+  PRIMARY KEY (anchor, passage_id)
+) WITHOUT ROWID;
+```
+
+### 8.2. JSON Web
+
+Cùng nội dung, mỗi phân hệ một file. Parity giữa hai đầu ra được kiểm ở mục 10.
+
+```json
+{
+  "entries": { "tuvi.star/TuVi": { "title": "Tử Vi", "summary": "…", "body": ["…"], "citation": "…" } },
+  "passages": [{ "id": 412, "gates": [], "body": ["…"], "citation": "…" }],
+  "anchors": { "QuanLoc/TuVi": [412, 413] }
+}
+```
+
+### 8.3. Cổng lọc
+
+`astro-data` biên dịch mỗi phương án của `when` thành một cổng gồm các fact dạng chuỗi. Một đoạn đạt khi có cổng đạt, hoặc khi không có cổng nào:
+
+```json
+[
+  { "all": ["solo"], "any": [["branch:Ngo"]], "none": [] },
+  { "all": ["with:ThienPhu"], "any": [], "none": [] }
+]
+```
+
+Một cổng đạt khi có mọi fact của `all`, mỗi nhóm của `any` có ít nhất một fact, và không có fact nào của `none`. `brightness` biên dịch theo sao neo, thành `bright:TuVi:Mieu`.
+
+## 9. Lớp khóa trong `astro-core`
+
+Một module mới `content`: không văn bản, không I/O, không dependency. Viết ở task sau, đưa lên Swift và WASM bằng `/build-bridge`. Mục đích là Swift và TypeScript không tự ghép chuỗi khóa và không lặp logic lá số.
+
+| Hàm | Trả về |
+| :-- | :-- |
+| `almanac_day_keys(&AlmanacDay)` | Khóa Trực, Sao, Thần, Thần Sát, ngày kỵ |
+| `age_restriction_keys(&AgeRestrictions)` | Khóa hạn tuổi |
+| `bazi_keys(&BaziAnalysis)` | Khóa Nạp Âm, Nhật Chủ, Thập Thần, Trường Sinh, Thần Sát |
+| `kua_keys(&KuaInfo)`, `eight_star_use_key(star, use)` | Khóa Bát Trạch |
+| `nine_star_key(star)` | Khóa Cửu Tinh |
+| `tuvi_palace_query(&TuViChart, Branch)` | `keys`, `anchors`, `facts` của một cung |
+| `gate_matches(gates, facts)` | Một đoạn có đạt không; là hiện thực lọc duy nhất, dùng chung hai nền tảng |
+
+Luồng đọc một cung Tử Vi:
+
+1. `tuvi_chart` lập lá số.
+2. `tuvi_palace_query` trả khóa, neo và facts.
+3. App lấy đoạn theo neo: SQL `passage_anchor`, hoặc `anchors` trong `Map`.
+4. `gate_matches` lọc.
+5. App nhóm theo `section`, đoạn có `condition_text` hiện dạng "Nếu…".
+
+| Fact | Nghĩa |
+| :-- | :-- |
+| `branch:<Branch>` | Chi của cung |
+| `solo`, `no_main`, `than`, `tuan`, `triet` | Trạng thái cung |
+| `with:<TuViStar>` | Sao ở cùng cung |
+| `meet:<TuViStar>` | Sao hội hợp |
+| `pair:<TuViStar>` | Sao ở cung nhị hợp |
+| `flank:<TuViStar>` | Sao ở cung kề bên |
+| `hoa:<FourTransformations>` | Hóa hội hợp |
+| `bright:<TuViStar>:<StarBrightness>` | Độ sáng của từng Chính Tinh trong cung |
+| `gender:<Gender>`, `year_stem:<Stem>`, `year_branch:<Branch>` | Người xem |
+| `menh:<TuViStar>` | Sao tại cung Mệnh |
+
+Điều kiện tiên quyết: thêm `ALL` cho `TenGod`, `BaziStar`, `VietnamTaboo`, `TamTai`, `KimLau`, `HoangOc`, `StarBrightness`.
+
+## 10. Kiểm tra tự động
+
+`cargo run -p astro-data -- validate` chạy các phép kiểm sau. Lỗi nào cũng dừng build.
+
+| Mã | Kiểm tra |
+| :-- | :-- |
+| V1 | JSON đúng schema, `deny_unknown_fields`. Trường riêng chỉ dùng đúng collection |
+| V2 | Mọi khóa khử tuần tự được vào `enum` thật của `astro-core` |
+| V3 | Không khóa nào trùng, kể cả giữa các file. Với `--complete`: mọi giá trị trong `ALL` có mục hoặc `gap` |
+| V4 | Mọi mục có `source_ref`, `source` có trong `sources.json`, `source_type` đúng quy tắc mục 3.3 |
+| V5 | `keywords` có trong `packet` ở đúng trang. Thiếu `packet` trên máy thì báo bỏ qua, không im lặng |
+| V6 | Thẻ `activity`, `sensitivity`, nhóm `@Tên` tồn tại |
+| V7 | `when` thỏa được trên 144 trạng thái Chính Tinh: bắt `with_all` sai vị trí, cặp sao không bao giờ đồng cung, độ sáng không tồn tại như Tử Vi hãm địa |
+| V8 | `summary` không quá 160 ký tự, văn bản không rỗng |
+| V9 | SQLite và JSON Web cùng số mục, cùng nội dung, cùng `content_hash` |
+| V10 | `data/interpretations/fixtures/`: 5 vector của `TUVI_SPEC.md` mục 6.2 cho đúng danh sách đoạn, chạy ở Rust và cả hai cầu nối. Cần module `content`, Task 5A.3 |
+| V11 | `build --release` từ chối mục chưa `approved` và nguồn `rights = unverified` |
+| V12 | Mục `paraphrase` không chép nguyên một đoạn từ 12 từ liên tiếp trở lên của trang nguồn: D3 |
+
+`stats` in độ phủ từng collection: `approved`, `draft`, `gap`, thiếu.
+
+## 11. Kế hoạch nạp dữ liệu
+
+### 11.1. Quy trình một batch
+
+1. **Chuẩn bị nguồn** trong `.ref/sources/<nguồn>/pages.txt`, chia khối theo trang: `=== tr. 158 ===`.
+2. **Sinh JSON**, mỗi phiên một batch, bằng skill mới `/ingest-content` theo khuôn của `/ingest-rules`. Quy tắc cứng: chỉ dùng gói nguồn, không dùng kiến thức ngoài. Không chắc thì để `condition_text` hoặc `gap`.
+3. **Kiểm máy:** `validate` phải sạch.
+4. **Duyệt:** `review --batch` in từng cặp nguyên văn và JSON cạnh nhau. Chủ dự án đọc hết `when` của hai batch thử, đọc hết đoạn có `sensitivity`, phần còn lại đọc mẫu 20%. Mẫu có lỗi thì đọc cả batch.
+5. **Chốt:** đổi `status` thành `approved`, commit riêng từng batch, cập nhật `docs/PROGRESS.md`.
+
+### 11.2. Chuẩn bị nguồn
+
+**Tân Biên: dùng lớp văn bản của PDF, không dùng `_djvu.txt`.** PDF của Internet Archive có lớp văn bản số, đọc được bằng PDFKit, dấu tiếng Việt đúng. File `_djvu.txt` là OCR, sai nhiều: "đổng cung", "Cù Môn", "Khôi , Viêt". Sáu phần PDF khớp số trang in: dv01 từ tr. 1, dv02 tr. 31, dv03 tr. 81, dv04 tr. 132, dv05 tr. 181, dv06 tr. 225.
+
+Lớp văn bản vẫn cần soát:
+
+- Còn lỗi đánh máy, ví dụ tr. 158 "hiến hách" là "hiển hách". Sửa ở `body`, giữ nguyên ở `keywords`.
+- Số trang dính vào đầu trang sau: "-157-Vân Đằng Thái Thứ Lang 8. QUAN LỘC".
+- Vài dòng đầu trang có thể bị đảo thứ tự.
+- Bảng và sơ đồ mất cấu trúc, như tr. 18–20: đọc từ ảnh trang.
+
+**NotebookLM:** yêu cầu trích nguyên văn, không tóm tắt, mỗi đoạn kèm tên sách và số trang, xuất bảng `Khóa | Trang | Nguyên văn`. Câu trả lời tóm tắt của NotebookLM không dùng làm nguồn vì không có neo để kiểm.
+
+### 11.3. Các batch
+
+Giới hạn mỗi batch: **tối đa khoảng 25.000 ký tự nguồn**. Giả định 2,5 ký tự mỗi token với tiếng Việt, tức khoảng 10 nghìn token vào và 15–20 nghìn token ra. Đây là ước tính, đo lại ở batch đầu. Giới hạn này cũng giữ một batch trong sức review.
+
+**Tử Vi, nguồn đã sẵn:**
+
+| Batch | Nội dung | Trang | Ký tự |
+| :-- | :-- | :-- | --: |
+| TV-01 | 14 Chính Tinh: `star`, `star_brightness` | 33–39 | 7.328 |
+| TV-02 | 91 phụ tinh, Tứ Hóa: `star`, `transformation`; nhóm sao | 32, 39–52 | 20.794 |
+| TV-03 | Mệnh: nhận định chung, vô Chính diệu | 52–55 | 7.546 |
+| TV-04 | Mệnh: Tử Vi, Liêm Trinh, Thiên Đồng | 55–65 | 19.891 |
+| TV-05 | Mệnh: Vũ Khúc, Thái Dương | 65–74 | 20.575 |
+| TV-06 | Mệnh: Thiên Cơ, Thiên Phủ, Thái Âm, Thiên Tướng | 74–81, 90–92 | 18.668 |
+| TV-07 | Mệnh: Tham Lang, Cự Môn | 81–90 | 21.849 |
+| TV-08 | Mệnh: Thiên Lương, Thất Sát, Phá Quân | 92–101 | 19.524 |
+| TV-09 | Mệnh: Xương Khúc, Khôi Việt, Lộc Tồn, Tả Hữu | 101–110 | 18.041 |
+| TV-10 | Mệnh: Kình Dương, Đà La, Hỏa Linh, Không Kiếp | 110–117 | 13.797 |
+| TV-11 | Mệnh: Tứ Hóa, Lục Bại | 117–124 | 13.267 |
+| TV-12 | Phụ Mẫu, Nô Bộc | 124–131, 168–173 | 19.757 |
+| TV-13 | Phúc Đức, mục 6.1 | 132–142 | 23.151 |
+| TV-14 | Phúc Đức mục 6.2, Điền Trạch | 143–157 | 23.000 |
+| TV-15 | Quan Lộc | 158–167 | 17.831 |
+| TV-16 | Thiên Di, Tật Ách | 174–189 | 21.660 |
+| TV-17 | Tài Bạch, Huynh Đệ | 190–197, 217–224 | 23.258 |
+| TV-18 | Tử Tức | 198–207 | 13.618 |
+| TV-19 | Thê Thiếp | 208–216 | 15.833 |
+
+**Các phân hệ khác**, theo D4:
+
+| Batch | Nội dung | Số mục | Nguồn | `source_type` |
+| :-- | :-- | --: | :-- | :-- |
+| AL-01 | `taboo`, `tam_tai`, `kim_lau`, `hoang_oc`, `restriction` | 25 | `vietnam_custom_rules.md`; 3 ngày kỵ thiếu lời theo *Ngọc Hạp Thông Thư* | `quote`, `canonical_summary` |
+| AL-02 | `mansion` | 28 | `LunarUtil.XIU_SONG` | `translation` |
+| AL-03 | `truc`, `path_god` | 24 | *Ngọc Hạp Thông Thư*, *Hiệp Kỷ Biện Phương Thư* | `canonical_summary` |
+| AL-04 | `god` | 15 | Như trên, đối chiếu `DAY_YI_JI` | `canonical_summary` |
+| BZ-01 | `nayin`: `image` | 30 | *Tân Biên* tr. 241–243 | `paraphrase` |
+| BZ-02 | `nayin`: `traits`, `fortune`; `can_chi` | 90 | *Tam Mệnh Thông Hội* | `canonical_summary` |
+| BZ-03 | `day_master`, `ten_god` | 20 | *Tử Bình Chân Thuyên* | `canonical_summary` |
+| BZ-04 | `life_stage`, `shen_sha` | 24 | *Tam Mệnh Thông Hội* | `canonical_summary` |
+| FS-01 | `kua`, `eight_star` | 16 | *Bát Trạch Minh Cảnh* | `canonical_summary` |
+| FS-02 | `eight_star_use` | 32 | *Bát Trạch Minh Cảnh* | `canonical_summary` |
+| FS-03 | `nine_star` | 9 | *Thẩm Thị Huyền Không Học*; chờ D6a, D6b | `canonical_summary` |
+
+Mục `canonical_summary` dài 2–4 câu.
+
+### 11.4. Thứ tự
+
+1. **Hạ tầng và thử nghiệm:** `astro-data`, các `ALL`, TV-01 cho khóa dày, TV-15 cho đoạn có điều kiện. Dừng lại đo token và sai sót, sửa schema nếu cần. Sau hai batch này đổi schema sẽ đắt.
+2. **Module `content`:** dựng khóa và facts, đưa lên Swift và WASM.
+3. **Trạch Nhật:** AL-01 đến AL-04. Đây là phần app dùng hằng ngày.
+4. **Tử Vi:** các batch TV còn lại.
+5. **Bát Tự, Phong Thủy:** BZ, FS.
+
+## 12. Quyết định
+
+### 12.1. Đã chốt ngày 2026-11-07
+
+| Mã | Vấn đề | Quyết định |
+| :-- | :-- | :-- |
+| D1 | Kiến trúc | Phương án A, lớp khóa trong Rust. Web dùng Cache Storage và `Map`, không dùng IndexedDB ở bản đầu |
+| D2 | Mô hình Tử Vi | Đoạn có điều kiện thay khối 14 × 12 × độ sáng |
+| D3 | Văn phong và bản quyền | Diễn đạt lại ngắn gọn, rõ nghĩa theo ngôn ngữ hiện đại để hiển thị trên di động, không chép nguyên đoạn dài. `quote` chỉ cho câu phú ngắn. Giữ `source_ref` gồm số trang và từ khóa gốc để máy kiểm. Kiểm tình trạng bản quyền trước khi phát hành, rồi mới đổi `rights` |
+| D4 | Nguồn ngoài Tử Vi | Tử Vi: PDF *Tân Biên*. Trạch Nhật: `XIU_SONG`, `DAY_YI_JI` của `LunarUtil.ts` kết hợp *Ngọc Hạp Thông Thư*, *Hiệp Kỷ Biện Phương Thư*. Bát Tự, Phong Thủy: được tổng hợp 2–4 câu mỗi mục theo *Tam Mệnh Thông Hội* (Nạp Âm, Trường Sinh), *Tử Bình Chân Thuyên* (Thập Thần, Nhật Chủ), *Bát Trạch Minh Cảnh* (8 Quái, Bát Du Niên), *Thẩm Thị Huyền Không Học* (Cửu Tinh), đánh dấu `canonical_summary`, miễn kiểm từng câu theo trang |
+| D5 | Hóa giải hạn | Không đưa nghi thức cúng sao, giải hạn. `advice` để trống, hoặc chỉ ghi lưu ý thực tế trong dân gian |
+| D6 | Đương vận, thất vận | Bốn trạng thái ở mục 6, theo *Thẩm Thị Huyền Không Học*. Mỗi `NineStar` có hai trường văn bản `auspicious_meaning`, `inauspicious_meaning`; bỏ collection `nine_star_phase` |
+| D7 | Hội hợp | `meet` gồm cùng cung, tam chiếu, xung chiếu. Nhị hợp là fact riêng `pair`. App vẫn hiện cung nhị hợp là cung cần xem, theo tr. 20 |
+| D8 | Độ sáng phụ tinh | Bổ sung bảng vào `TUVI_SPEC.md` và `tuvi.rs` từ tr. 39–52, làm riêng. Trước đó dùng `condition_text` |
+| D9 | Nội dung nặng | Gắn thẻ `sensitivity` lúc nạp, giữ đúng nghĩa trong JSON. App ẩn sau một lần chạm các đoạn `Death`, `Sexuality`, kèm ghi chú đây là tham khảo văn hóa, không phải lời khuyên y tế hay pháp lý. Không nạp "Luận đoán chết và đám tang" tr. 269–270, "Luận số tiểu nhi" tr. 238–240 |
+
+Dò bằng biểu thức chính quy, khoảng 200 đoạn có từ ngữ nặng: 76 ở cung Mệnh, 100 ở 11 cung còn lại, 20 ở Đặc tính các sao.
+
+**Về D4.** D4 là ngoại lệ có chủ đích của Quy tắc 4 trong `CLAUDE.md`, chỉ áp dụng cho các batch ghi `canonical_summary` ở mục 11.3. Những sách đó không có trong dự án, nên mục tổng hợp không đối chiếu được với nguyên bản và phải được chủ dự án duyệt như mọi mục khác.
+
+### 12.2. Còn mở
+
+Hai điểm của D6, chỉ chặn batch FS-03 và hàm phân loại trạng thái:
+
+| Mã | Vấn đề | Ảnh hưởng |
+| :-- | :-- | :-- |
+| D6a | Sinh Khí ghi "1 hoặc 2 vận kế tiếp", công thức `(period % 9) + 1` chỉ phủ 1 vận | Vận 9: theo lời thì Nhị Hắc là Sinh Khí, theo công thức thì Nhị Hắc thuộc nhóm Tử Khí, Sát Khí |
+| D6b | Thoái Khí "bình, giảm dần" chưa gán vào `auspicious_meaning` hay `inauspicious_meaning` | Bát Bạch ở Vận 9 chưa có văn bản hiển thị |
+
+## 13. Phạm vi
+
+**Ngoài phạm vi Task 5A.1, có thể thêm sau mà không đổi schema:**
+
+| Nội dung | Nguồn | Gợi ý |
+| :-- | :-- | :-- |
+| Cách cục, khoảng 50 cách như Tử Phủ Triều Viên | *Tân Biên* tr. 229–233, 6.336 ký tự | `tuvi.pattern`, dùng lại `when` |
+| Vận hạn: sao nhập Đại Hạn, Tiểu Hạn | tr. 248–268, 41.482 ký tự | `tuvi.han_passage`, 2 batch |
+| Sinh địa, Vượng địa, Bại địa, Tuyệt địa của cung Mệnh | tr. 52 | Cần thêm bảng vào core |
+| Lời cho `FiveElementsBureau`, `MenhCucRelation`, `YinYangHarmony`, Tuần, Triệt | tr. 31–32 và các chương | Thêm collection nhỏ |
+| Nghi Kỵ theo ngày | `DAY_YI_JI`, `TIME_YI_JI` | Đã nêu ngoài phạm vi ở `BAZI_ALMANAC_SPEC.md` mục 6.2 |
+
+Không làm: tìm kiếm toàn văn, đa ngôn ngữ, cập nhật dữ liệu qua mạng, ghép câu tự động trên thiết bị.
+
+**Việc tiếp theo:**
+
+1. Task 5A.2: crate `astro-data`, các `ALL`, hai batch thử TV-01, TV-15.
+2. Task 5A.3: module `content`, đưa lên Swift và WASM, fixtures V10.
+3. Task 5A.4: skill `/ingest-content`, chạy các batch còn lại.
+4. Thêm `XIU_SONG` vào `THIRD_PARTY_NOTICES.md` khi nạp AL-02.
+5. Bảng độ sáng phụ tinh theo D8.
