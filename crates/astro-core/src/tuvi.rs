@@ -10,8 +10,8 @@
 //! - Ages are tuổi mụ, the way all four sample charts of the book reckon them.
 //!
 //! The copy of the book used is a retyped edition with misprints. Section 0.4 of the spec lists
-//! them and what was done about each. Two parts of [`TuViChart`] do not come from the book:
-//! [`menh_chu`] and [`than_chu`] (open point T8) and [`TuViStar::nature`] (open point T9).
+//! them and what was done about each. Two parts of [`TuViChart`] do not come from the book, and
+//! the project owner approved both: [`menh_chu`] and [`than_chu`], and [`TuViStar::nature`].
 
 use crate::DEFAULT_TZ_OFFSET;
 use crate::bazi_analysis::{Gender, KhongVong, LifeStage, khong_vong};
@@ -261,7 +261,7 @@ pub enum StarCategory {
 /// Inherent nature of a star, before brightness or the stars it meets.
 ///
 /// *Tân Biên* has no table of this. Section 4.9 of the spec derives it from the labels and the
-/// descriptions in the book's chapter on star traits (open point T9).
+/// descriptions in the book's chapter on star traits, and the project owner approved the result.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum StarNature {
@@ -743,8 +743,9 @@ impl TuViStar {
         }
     }
 
-    /// Inherent nature, from section 4.9 of the spec. This is the project's reading of the
-    /// book, not a table of the book: see [`StarNature`].
+    /// Inherent nature, from section 4.9 of the spec: see [`StarNature`]. Thất Sát is the one
+    /// exception to the book's labels. They call it Quyền tinh, Dũng tinh, but it counts as `Hung`
+    /// with Phá Quân and Tham Lang, the Sát, Phá, Tham group of the tradition.
     pub const fn nature(self) -> StarNature {
         match self {
             TuViStar::TuVi
@@ -755,7 +756,6 @@ impl TuViStar {
             | TuViStar::ThienPhu
             | TuViStar::ThaiAm
             | TuViStar::ThienTuong
-            | TuViStar::ThatSat
             | TuViStar::ThieuDuong
             | TuViStar::ThieuAm
             | TuViStar::LongDuc
@@ -822,6 +822,7 @@ impl TuViStar {
             | TuViStar::ThienTai
             | TuViStar::DauQuan => StarNature::Trung,
             TuViStar::ThamLang
+            | TuViStar::ThatSat
             | TuViStar::PhaQuan
             | TuViStar::TangMon
             | TuViStar::TuPhu
@@ -1305,9 +1306,9 @@ pub struct TuViChart {
     pub than_branch: Branch,
     /// Function of the palace where Thân falls.
     pub than_role: TuViPalaceRole,
-    /// Mệnh Chủ. Not from *Tân Biên*, see [`menh_chu`].
+    /// Mệnh Chủ, see [`menh_chu`].
     pub menh_chu: TuViStar,
-    /// Thân Chủ. Not from *Tân Biên*, see [`than_chu`].
+    /// Thân Chủ, see [`than_chu`].
     pub than_chu: TuViStar,
     /// Thuận lý or nghịch lý between the birth year and the Mệnh palace.
     pub harmony: YinYangHarmony,
@@ -1423,8 +1424,8 @@ pub const fn effective_month(lunar: LunarDate, rule: LeapMonthRule) -> u8 {
 
 /// Mệnh Chủ of a Mệnh palace at `menh`.
 ///
-/// **Not from *Tân Biên*, which never mentions it.** Task 4B.2 asks for this field; the table is
-/// the one most sources share, keyed on the Mệnh palace, and awaits an approved source (T8).
+/// *Tân Biên* never mentions it. The table is the one the project owner approved, after *Tử Vi
+/// Đẩu Số Toàn Thư*, keyed on the Earthly Branch of the Mệnh palace.
 pub const fn menh_chu(menh: Branch) -> TuViStar {
     match menh {
         Ty => TuViStar::ThamLang,
@@ -1439,12 +1440,11 @@ pub const fn menh_chu(menh: Branch) -> TuViStar {
 
 /// Thân Chủ of a birth year with branch `year_branch`.
 ///
-/// **Not from *Tân Biên*, which never mentions it.** Task 4B.2 asks for this field; the table is
-/// the one most sources share, keyed on the year. Some sources swap Tý and Ngọ (T8).
+/// *Tân Biên* never mentions it. The table is the one the project owner approved, after *Tử Vi
+/// Đẩu Số Toàn Thư*, keyed on the Earthly Branch of the birth year.
 pub const fn than_chu(year_branch: Branch) -> TuViStar {
     match year_branch {
-        Ty => TuViStar::HoaTinh,
-        Ngo => TuViStar::LinhTinh,
+        Ty | Ngo => TuViStar::HoaTinh,
         Suu | Mui => TuViStar::ThienTuong,
         Dan | Than => TuViStar::ThienLuong,
         Mao | Dau => TuViStar::ThienDong,
@@ -2135,9 +2135,9 @@ mod tests {
                 count(StarNature::Trung),
                 count(StarNature::Hung)
             ),
-            (49, 25, 31)
+            (48, 25, 32)
         );
-        // Labels in the book: Sát tinh, Bại tinh, Hung tinh.
+        // Labels in the book: Sát tinh, Bại tinh, Hung tinh; and Thất Sát, by the owner's decision.
         for star in [
             TuViStar::KinhDuong,
             TuViStar::DaLa,
@@ -2152,6 +2152,7 @@ mod tests {
             TuViStar::ThienKhoc,
             TuViStar::ThienHu,
             TuViStar::ThamLang,
+            TuViStar::ThatSat,
             TuViStar::PhaQuan,
         ] {
             assert_eq!(star.nature(), StarNature::Hung, "{star:?}");
@@ -2161,7 +2162,6 @@ mod tests {
             assert_eq!(star.nature(), StarNature::Trung, "{star:?}");
         }
         assert_eq!(TuViStar::TuVi.nature(), StarNature::Cat);
-        assert_eq!(TuViStar::ThatSat.nature(), StarNature::Cat);
         assert_eq!(FourTransformations::HoaLoc.nature(), StarNature::Cat);
         assert_eq!(FourTransformations::HoaKhoa.nature(), StarNature::Cat);
         assert_eq!(FourTransformations::HoaQuyen.nature(), StarNature::Trung);
@@ -3206,7 +3206,7 @@ mod tests {
             (Mao, "Văn Khúc", "Thiên Đồng"),
             (Thin, "Liêm Trinh", "Văn Xương"),
             (Ti, "Vũ Khúc", "Thiên Cơ"),
-            (Ngo, "Phá Quân", "Linh Tinh"),
+            (Ngo, "Phá Quân", "Hỏa Tinh"),
             (Mui, "Vũ Khúc", "Thiên Tướng"),
             (Than, "Liêm Trinh", "Thiên Lương"),
             (Dau, "Văn Khúc", "Thiên Đồng"),

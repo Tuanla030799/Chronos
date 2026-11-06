@@ -2,7 +2,7 @@
 
 Nguồn của `crates/astro-core/src/tuvi.rs` (Giai đoạn 4, Phần 4B), theo Nam Phái Việt Nam và *Tử Vi Đẩu Số Tân Biên* của Vân Đằng Thái Thứ Lang. Mọi bảng và công thức ở đây là nguồn chuẩn duy nhất; code chỉ chuyển chúng thành `const` hoặc `match`, không thêm quy tắc mới.
 
-**Trạng thái:** T1–T5 đã chốt ở Task 4B.2. Hai nội dung Task 4B.2 yêu cầu nhưng *Tân Biên* không có sẵn, T8 và T9, đang dùng phương án tạm, xem mục 8.2.
+**Trạng thái:** T1–T5 chốt ở Task 4B.2, T8 và T9 chốt ở lần duyệt cuối của Giai đoạn 4. Không còn điểm nào mở, xem mục 8.2.
 
 ## 0. Nguồn và quy ước
 
@@ -16,9 +16,9 @@ Nguồn của `crates/astro-core/src/tuvi.rs` (Giai đoạn 4, Phần 4B), theo 
 | 2 | Task 4B.1; tr. 7–9 | Khớp sách |
 | 3 | Task 4B.1; tr. 9–10 | Khớp sách |
 | 4.1–4.8 | tr. 10–16 | Lấy từ sách; T2, T3 đã chốt theo bảng in |
-| 4.9 | tr. 33–51, phân loại do dự án lập | Sách không có bảng Cát, Hung (T9) |
+| 4.9 | tr. 33–51, phân loại do dự án lập | Sách không có bảng Cát, Hung; chủ dự án đã duyệt (T9) |
 | 5.1–5.4 | Task 4B.1; tr. 16–17, 20–23 | Khớp sách |
-| 5.5 | Task 4B.2; tr. 31, tr. 52; Mệnh Chủ, Thân Chủ ngoài sách | Xem T8 |
+| 5.5 | Task 4B.2; tr. 31, tr. 52; Mệnh Chủ, Thân Chủ theo bảng chủ dự án duyệt, chuẩn *Tử Vi Đẩu Số Toàn Thư* | Đã duyệt (T8) |
 | 6.1 | tr. 33–38, chương Đặc tính các sao | Lấy từ sách |
 | 6.2 | Phụ lục tr. 272–275; V3 tính từ đặc tả này | Xem mục 7 |
 
@@ -495,7 +495,7 @@ Task 4B.1 chưa liệt kê, Task 4B.2 đưa vào `TuViStar`. Cả 4 lá số đ�
 
 `TuViStar::category`: 14 sao ở mục 2.3, 2.4 là `ChinhTinh` (Chính diệu, tr. 31), còn lại là `PhuTinh`.
 
-`TuViStar::nature` là phân loại `Cat`, `Trung`, `Hung`. *Tân Biên* không có bảng này: dự án lập theo quy tắc dưới đây, từ chương Đặc tính các sao (tr. 33–51), xem T9. Đây là tính chất gốc của sao, không xét Miếu Hãm và không xét sao đi cùng.
+`TuViStar::nature` là phân loại `Cat`, `Trung`, `Hung`. *Tân Biên* không có bảng này: dự án lập theo quy tắc dưới đây, từ chương Đặc tính các sao (tr. 33–51), và chủ dự án đã duyệt (T9). Đây là tính chất gốc của sao, không xét Miếu Hãm và không xét sao đi cùng.
 
 1. Tiêu đề mục có nhãn Sát tinh, Bại tinh hay Hung tinh: `Hung`.
 2. Có nhãn Tù tinh hay Ám tinh, kể cả đi kèm nhãn tốt: `Trung`.
@@ -504,11 +504,11 @@ Task 4B.1 chưa liệt kê, Task 4B.2 đưa vào `TuViStar`. Cả 4 lá số đ�
 
 | Tính chất | Theo nhãn (quy tắc 1–3) | Theo mô tả (quy tắc 4) |
 | :-- | :-- | :-- |
-| `Cat` | Tử Vi, Thiên Cơ, Thái Dương, Vũ Khúc, Thiên Đồng, Thiên Phủ, Thái Âm, Thiên Tướng, Thất Sát, Lộc Tồn, Tả Phụ, Hữu Bật, Văn Xương, Văn Khúc, Thiên Khôi, Thiên Việt | Thiếu Dương, Thiếu Âm, Long Đức, Phúc Đức, Bác Sỹ, Thanh Long, Tấu Thư, Hỷ Thần, Trường Sinh, Đế Vượng, Dưỡng, Thiên Y, Thiên Giải, Địa Giải, Tam Thai, Bát Tọa, Ân Quang, Thiên Quý, Thiên Quan, Thiên Phúc, Thiên Trù, Quốc Ấn, Đường Phù, Long Trì, Phượng Các, Giải Thần, Thiên Hỷ, Thiên Mã, Hoa Cái, Thiên Đức, Nguyệt Đức, Thiên Thọ, Lưu Niên Văn Tinh |
+| `Cat` | Tử Vi, Thiên Cơ, Thái Dương, Vũ Khúc, Thiên Đồng, Thiên Phủ, Thái Âm, Thiên Tướng, Lộc Tồn, Tả Phụ, Hữu Bật, Văn Xương, Văn Khúc, Thiên Khôi, Thiên Việt | Thiếu Dương, Thiếu Âm, Long Đức, Phúc Đức, Bác Sỹ, Thanh Long, Tấu Thư, Hỷ Thần, Trường Sinh, Đế Vượng, Dưỡng, Thiên Y, Thiên Giải, Địa Giải, Tam Thai, Bát Tọa, Ân Quang, Thiên Quý, Thiên Quan, Thiên Phúc, Thiên Trù, Quốc Ấn, Đường Phù, Long Trì, Phượng Các, Giải Thần, Thiên Hỷ, Thiên Mã, Hoa Cái, Thiên Đức, Nguyệt Đức, Thiên Thọ, Lưu Niên Văn Tinh |
 | `Trung` | Liêm Trinh, Cự Môn, Thiên Lương | Thái Tuế, Quan Phù, Lực Sỹ, Tướng Quân, Phi Liêm, Phục Binh, Quan Đới, Lâm Quan, Tử, Mộ, Tuyệt, Thai, Thiên Hình, Thiên Riêu, Thai Phụ, Phong Cáo, Hồng Loan, Cô Thần, Quả Tú, Đào Hoa, Thiên Tài, Đẩu Quân |
-| `Hung` | Tham Lang, Phá Quân, Tang Môn, Bạch Hổ, Kình Dương, Đà La, Tiểu Hao, Đại Hao, Địa Không, Địa Kiếp, Hỏa Tinh, Linh Tinh, Thiên Khốc, Thiên Hư | Tử Phù, Tuế Phá, Điếu Khách, Trực Phù, Bệnh Phù, Quan Phủ, Mộc Dục, Suy, Bệnh, Lưu Hà, Kiếp Sát, Phá Toái, Thiên Không, Thiên Thương, Thiên Sứ, Thiên La, Địa Võng |
+| `Hung` | Tham Lang, Thất Sát, Phá Quân, Tang Môn, Bạch Hổ, Kình Dương, Đà La, Tiểu Hao, Đại Hao, Địa Không, Địa Kiếp, Hỏa Tinh, Linh Tinh, Thiên Khốc, Thiên Hư | Tử Phù, Tuế Phá, Điếu Khách, Trực Phù, Bệnh Phù, Quan Phủ, Mộc Dục, Suy, Bệnh, Lưu Hà, Kiếp Sát, Phá Toái, Thiên Không, Thiên Thương, Thiên Sứ, Thiên La, Địa Võng |
 
-Theo quy tắc 3, Thất Sát là `Cat` vì sách chỉ gắn nhãn Quyền tinh, Dũng tinh. Tứ Hóa xét theo quy tắc 4: Hóa Lộc, Hóa Khoa là `Cat`, Hóa Quyền là `Trung`, Hóa Kỵ là `Hung`.
+Ngoại lệ duy nhất là Thất Sát: sách chỉ gắn nhãn Quyền tinh, Dũng tinh, nhưng chủ dự án chốt `Hung`, vì bộ Sát, Phá, Tham thuộc nhóm Sát tinh trong Tử Vi truyền thống dù đắc địa làm võ cách. Phá Quân và Tham Lang là `Hung` theo quy tắc 1. Tứ Hóa xét theo quy tắc 4: Hóa Lộc, Hóa Khoa là `Cat`, Hóa Quyền là `Trung`, Hóa Kỵ là `Hung`.
 
 ## 5. Tuần, Triệt, Đại Hạn và Tiểu Hạn
 
@@ -586,7 +586,7 @@ Mỗi `TuViPalace` ghi Chi năm có Tiểu Hạn ở cung đó, cùng tuổi đ�
 
 Sinh, khắc theo tr. 24: Kim sinh Thủy, Thủy sinh Mộc, Mộc sinh Hỏa, Hỏa sinh Thổ, Thổ sinh Kim; Kim khắc Mộc, Mộc khắc Thổ, Thổ khắc Thủy, Thủy khắc Hỏa, Hỏa khắc Kim.
 
-**Mệnh Chủ, Thân Chủ.** *Tân Biên* không có hai sao này, xem T8. Mệnh Chủ theo Chi cung Mệnh, Thân Chủ theo Chi năm:
+**Mệnh Chủ, Thân Chủ.** *Tân Biên* không có hai sao này. Bảng dưới do chủ dự án duyệt, chuẩn *Tử Vi Đẩu Số Toàn Thư* (T8). Mệnh Chủ theo Chi cung Mệnh, Thân Chủ theo Chi năm:
 
 | Chi | Mệnh Chủ | Thân Chủ |
 | :-- | :-- | :-- |
@@ -596,7 +596,7 @@ Sinh, khắc theo tr. 24: Kim sinh Thủy, Thủy sinh Mộc, Mộc sinh Hỏa, 
 | Mão | Văn Khúc | Thiên Đồng |
 | Thìn | Liêm Trinh | Văn Xương |
 | Tỵ | Vũ Khúc | Thiên Cơ |
-| Ngọ | Phá Quân | Linh Tinh |
+| Ngọ | Phá Quân | Hỏa Tinh |
 | Mùi | Vũ Khúc | Thiên Tướng |
 | Thân | Liêm Trinh | Thiên Lương |
 | Dậu | Văn Khúc | Thiên Đồng |
@@ -799,7 +799,7 @@ Mô hình Python độc lập của đặc tả, chép dữ liệu từ ảnh tr
 | Giờ mặt trời thực | Chỉ dùng khi truyền kinh độ | Tiền lệ `four_pillars` |
 | Tên hiển thị | Tả Phụ, Quan Phủ, Trường Sinh | Sách dùng cả Tả Phù và Tả Phụ; `LifeStage` đã dùng Trường Sinh |
 
-### 8.2. Chốt ở Task 4B.2 và việc còn phải xem lại
+### 8.2. Chốt ở Task 4B.2 và lần duyệt cuối
 
 | ID | Vấn đề | Quyết định |
 | :-- | :-- | :-- |
@@ -808,13 +808,8 @@ Mô hình Python độc lập của đặc tả, chép dữ liệu từ ảnh tr
 | **T3** | Lưu Hà Can Tân | Mão, theo tr. 16. Rustdoc ghi rằng 2 lá số năm Tân in nhầm sang Thìn |
 | **T4** | Giờ Tý Sớm | Dùng `RatHourConvention`, mặc định `SplitAtMidnight` |
 | **T5** | 10 sao ở mục 4.8 | Đưa vào `TuViStar` |
-
-Task 4B.2 yêu cầu hai nội dung *Tân Biên* không có sẵn. Code đã có phương án dưới đây, nhưng chúng không đạt mức "nguồn đã duyệt" của `CLAUDE.md` và cần chủ dự án xem lại:
-
-| ID | Vấn đề | Đang dùng | Cần gì |
-| :-- | :-- | :-- | :-- |
-| **T8** | **Mệnh Chủ, Thân Chủ.** Sách không nhắc tới. Các trang web và `lasotuvi` có bảng giống nhau trừ Tý, Ngọ, nhưng không dẫn sách; có trường phái lấy cả hai theo năm sinh; `lasotuvi` tra bảng Chi bằng chỉ số Can | Mệnh Chủ theo Chi cung Mệnh, Thân Chủ theo Chi năm, Tý Hỏa Tinh, Ngọ Linh Tinh, theo số đông nguồn tìm được | Một nguồn đã duyệt, hoặc xác nhận giữ phương án này |
-| **T9** | **Cát, Hung.** Sách không có bảng, mục 4.9 do dự án lập | Quy tắc mục 4.9 | Duyệt bảng mục 4.9, nhất là Thất Sát (`Cat`) |
+| **T8** | Mệnh Chủ, Thân Chủ | Bảng mục 5.5, chủ dự án duyệt, chuẩn *Tử Vi Đẩu Số Toàn Thư*. Tý và Ngọ đều là Hỏa Tinh |
+| **T9** | Cát, Hung | Bảng mục 4.9; Thất Sát là `Hung`, Phá Quân giữ `Hung` |
 
 ### 8.3. Đã xử lý theo sách
 

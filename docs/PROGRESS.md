@@ -3,7 +3,7 @@
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
 > Cập nhật lần cuối: **2026-11-06**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
-> Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5 đã chốt. **Giai đoạn 4 hoàn thành.** Còn T8, T9 cần xem lại, không chặn code.
+> Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 
 ## 1. Trạng thái
 
@@ -21,7 +21,7 @@
 | Đặc tả Bát Tự & Trạch Nhật | ✅ Xong | `docs/BAZI_ALMANAC_SPEC.md`; Q1–Q10 đã chốt, còn Q11, Q12 |
 | Bát Tự — phân tích lá số | ✅ Xong | `bazi_analysis.rs`: Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | Trạch Nhật, hạn tuổi | ✅ Xong | `almanac.rs` |
-| Đặc tả Tử Vi Đẩu Số | ✅ Xong | `docs/TUVI_SPEC.md`; T1–T5 đã chốt, còn T8, T9 |
+| Đặc tả Tử Vi Đẩu Số | ✅ Xong | `docs/TUVI_SPEC.md`; T1–T5, T8, T9 đã chốt |
 | Tử Vi Đẩu Số — lập lá số | ✅ Xong | `tuvi.rs`: 105 sao, Tứ Hóa, Miếu Hãm, Tuần, Triệt, Đại Hạn, Tiểu Hạn, Thiên Bàn; có trên Swift và WASM |
 | Đặc tả Phong Thủy | ✅ Xong | `docs/FENGSHUI_SPEC.md`; F1–F5 đã chốt |
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
@@ -42,7 +42,7 @@
 - [x] Có bảng quy tắc Tử Vi: lấy từ *Tân Biên* vào `docs/TUVI_SPEC.md`
 - [x] Chốt T1–T5 ở `docs/TUVI_SPEC.md`
 - [x] Viết `tuvi.rs`, đưa lên Swift và WASM
-- [ ] Duyệt T8 (nguồn cho Mệnh Chủ, Thân Chủ) và T9 (bảng Cát, Hung) ở mục 8.2 của `docs/TUVI_SPEC.md`
+- [x] Chốt T8 (Mệnh Chủ, Thân Chủ) và T9 (bảng Cát, Hung)
 - [ ] Đối chiếu V3 (Dương Nam, tháng nhuận) với một lá số lập bằng nguồn khác
 - [ ] Bắt đầu app iOS (SwiftUI) dùng XCFramework
 - [x] Commit Giai đoạn 3 cùng `docs/`, `.gitignore`, `THIRD_PARTY_NOTICES.md`
@@ -50,13 +50,19 @@
 
 ## 3. Nhật ký
 
+### 2026-11-06 — Chốt T8, T9, đóng Giai đoạn 4
+
+- T8: chủ dự án duyệt bảng Mệnh Chủ, Thân Chủ chuẩn *Tử Vi Đẩu Số Toàn Thư*. Mệnh Chủ khớp cả 12 ô; Thân Chủ của Ngọ đổi từ
+  Linh Tinh sang Hỏa Tinh, 11 ô còn lại khớp.
+- T9: duyệt bảng Cát, Hung; Thất Sát đổi từ `Cat` sang `Hung`, Phá Quân vốn là `Hung`.
+
 ### 2026-11-06 — Task 4B.2: `tuvi.rs` và cầu nối
 
 - Đóng T1–T5: 12 cung đi thuận; Hóa Khoa Can Nhâm là Tả Phụ; Lưu Hà Can Tân ở Mão; dùng `RatHourConvention`; thêm 10 sao.
 - Thêm `tuvi.rs`: `TuViChart`, `TuViPalace`, `TuViPlacedStar`, `TuViStar` (105 sao), `FourTransformations`,
   `FiveElementsBureau`, `StarBrightness`, `TuViConfig`, `tuvi_chart`, `tuvi_chart_from_lunar`. Swift có thêm 23 hàm, WASM 22.
 - Task 4B.2 cần ba nội dung đặc tả chưa có. Thuận lý và Cục sinh khắc có trong sách (tr. 31). **Mệnh Chủ, Thân Chủ** sách
-  không có, đang dùng bảng số đông nguồn web (T8). **Cát, Hung** sách không có bảng, dự án lập theo nhãn và mô tả (T9).
+  không có (T8). **Cát, Hung** sách không có bảng, dự án lập theo nhãn và mô tả (T9).
 - Tứ Hóa là `FourTransformations` gắn vào sao gốc, không phải `TuViStar`, nên enum có 105 sao, cộng 4 Hóa là 109 vị trí.
 - `use_true_solar_time` cần kinh độ: thêm `longitude`, thiếu thì lấy kinh tuyến chuẩn của múi giờ.
 - Phụ tinh luôn có `brightness` là `None`: sách có ghi Đắc địa cho vài phụ tinh, nhưng đặc tả chỉ phủ 14 Chính Tinh.
@@ -204,8 +210,8 @@
 3. **Quy ước giờ Tý mặc định: đã chốt** là `SplitAtMidnight`. Dự án gọi 23:00–23:59 là giờ Tý Sớm.
 4. **Phong Thủy F1–F5: đã chốt** ở Task 4A.2, xem mục 6.1 của `docs/FENGSHUI_SPEC.md`. Còn lại việc đối chiếu vector với
    lịch in, không chặn code.
-5. **Tử Vi T1–T5: đã chốt** ở Task 4B.2. **T8, T9 cần duyệt**, xem mục 8.2 của `docs/TUVI_SPEC.md`: Mệnh Chủ, Thân Chủ và
-   bảng Cát, Hung không đến từ *Tân Biên*. Không chặn code, nhưng chưa đạt mức nguồn đã duyệt của `CLAUDE.md`.
+5. **Tử Vi T1–T5, T8, T9: đã chốt**, xem mục 8.2 của `docs/TUVI_SPEC.md`. Mệnh Chủ, Thân Chủ và bảng Cát, Hung không đến từ
+   *Tân Biên* nhưng đã được chủ dự án duyệt.
 
 ## 5. Quyết định kỹ thuật
 

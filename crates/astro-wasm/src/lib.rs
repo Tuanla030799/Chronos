@@ -1095,7 +1095,7 @@ pub fn tuvi_star_category(
     to_js(&from_js::<TuViStar>(value)?.category())
 }
 
-/// Inherent nature of a star. This is the project's reading of the book, not a table of the book.
+/// Inherent nature of a star, from section 4.9 of the spec.
 #[wasm_bindgen(js_name = tuviStarNature, unchecked_return_type = "StarNature")]
 pub fn tuvi_star_nature(
     #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,

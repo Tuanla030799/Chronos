@@ -1520,7 +1520,7 @@ pub fn tuvi_star_category(value: TuViStar) -> StarCategory {
     value.category()
 }
 
-/// Inherent nature of a star. This is the project's reading of the book, not a table of the book.
+/// Inherent nature of a star, from section 4.9 of the spec.
 #[uniffi::export]
 pub fn tuvi_star_nature(value: TuViStar) -> StarNature {
     value.nature()
