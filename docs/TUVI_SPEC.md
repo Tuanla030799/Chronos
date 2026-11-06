@@ -92,6 +92,7 @@ Múi giờ theo `tz_offset`, mặc định UTC+7. Với `use_true_solar_time = t
 | 14 | Can Tân: Hóa Quyền là Thiên Lương | Thái Dương | Sách 2 và Sách 4 đều đặt Hóa Quyền cùng cung Thái Dương; xem T6 |
 | 16 | Ví dụ "năm Đinh Tý" | Đinh Tỵ | Đinh không ghép với Tý |
 | 17 | Ví dụ: Canh Ngọ an Triệt ở Thân–Dậu | Ngọ–Mùi | Chính bảng và sơ đồ tr. 17 |
+| 20 | Ví dụ mục 9.4: Sửu xung chiếu Tý, tam hợp Dậu, Mùi | Xung chiếu Mùi, tam hợp Tỵ, Dậu, nhị hợp Tý | Bảng tam chiếu, xung chiếu tr. 18–19 |
 | 272–275 | Nhãn Chi trong sơ đồ bị xoay | Đọc theo vị trí ô của mẫu tr. 5 | Dấu M, V, Đ, H; câu "Lưu Thái Tuế năm Dần tại cung Phu Quân" (tr. 274), "năm Tỵ tại cung Tật Ách" (tr. 275) |
 | 275 | "Linh Linh"; Thiên Mã in cả ở Phụ Mẫu; Thiếu Dương in cả ở Tật Ách | Linh Tinh; bỏ hai ô in thừa | Hai sao này đã có ở đúng cung |
 

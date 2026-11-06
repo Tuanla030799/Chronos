@@ -1,9 +1,10 @@
 # Tiến trình dự án — Viet Astro Engine (Chronos)
 
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
-> Cập nhật lần cuối: **2026-11-06**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Cập nhật lần cuối: **2026-11-07**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D12 đã chốt, `astro-data` và 2 batch thử đã duyệt. Đang làm bảng độ sáng phụ tinh và module `content`.
 
 ## 1. Trạng thái
 
@@ -17,7 +18,7 @@
 | Giờ mặt trời thực | ✅ Xong | Kinh độ + phương trình thời gian |
 | Tứ Trụ (lập 4 trụ) | ✅ Xong | `bazi_pillars.rs`; cấu hình `SolarTerms`/`LunarNewYear`, mặc định `SplitAtMidnight` |
 | Cầu nối Web (WASM + TypeScript) | ✅ Xong | Build và test trên Node đều chạy |
-| Cầu nối iOS (UniFFI → Swift) | 🟡 Gần xong | Thiếu bước đóng gói `AstroCore.xcframework` (cần Xcode) |
+| Cầu nối iOS (UniFFI → Swift) | ✅ Xong | `build/ios/AstroCore.xcframework` đã đóng gói bằng Xcode 27.2 |
 | Đặc tả Bát Tự & Trạch Nhật | ✅ Xong | `docs/BAZI_ALMANAC_SPEC.md`; Q1–Q10 đã chốt, còn Q11, Q12 |
 | Bát Tự — phân tích lá số | ✅ Xong | `bazi_analysis.rs`: Tàng Can, Thập Thần, Trường Sinh, Thần Sát Mệnh Lý, Đại Vận |
 | Trạch Nhật, hạn tuổi | ✅ Xong | `almanac.rs` |
@@ -25,14 +26,20 @@
 | Tử Vi Đẩu Số — lập lá số | ✅ Xong | `tuvi.rs`: 105 sao, Tứ Hóa, Miếu Hãm, Tuần, Triệt, Đại Hạn, Tiểu Hạn, Thiên Bàn; có trên Swift và WASM |
 | Đặc tả Phong Thủy | ✅ Xong | `docs/FENGSHUI_SPEC.md`; F1–F5 đã chốt |
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
-| App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Cần Xcode |
+| Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
+| Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `review`; 71 test |
+| Dữ liệu luận giải | 🟡 Đang làm | TV-01, TV-15 đã duyệt; còn 17 batch Tử Vi và 11 batch khác |
+| Module `content` (khóa và facts) | ⏳ Chưa làm | Task 5A.3 |
+| App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
 
 ## 2. Việc tiếp theo
 
-- [ ] Cài Xcode → chạy `./build-ios.sh` → kéo `build/ios/AstroCore.xcframework` và
-      `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
+- [x] Duyệt TV-01, TV-15; chốt D6a, D6b, D10, D11, D12
+- [ ] Task 5A.3: module `content`, V10, V13
+- [ ] Bảng độ sáng phụ tinh (D8)
+- [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -49,6 +56,28 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-07 — Task 5A.2: `astro-data` và hai batch thử
+
+- Chốt D1–D9, commit đặc tả (`febd3ea`). D4 cho phép `canonical_summary` ngoài Tử Vi; D5 đổi `remedies` thành `advice`; D6 bỏ `nine_star_phase`, thêm 2 trường cho `fengshui.nine_star`.
+- `astro-core`: thêm `ALL` cho 7 enum; tách `chinh_tinh_branches` khỏi `place_stars` để validator không chép lại công thức.
+- Crate `astro-data`: 24 collection, 460 khóa, kiểm V1–V9, V11, V12; xuất SQLite và JSON Web, đọc ngược để so. `tools/extract_pdf_pages.swift` dựng `.ref/sources/tan_bien/pages.txt`.
+- Đọc nguyên văn làm schema đổi: gộp cặp sao, neo toàn cung, `correction`, `not_with`, `with_transformations`, `transformations_all`, `menh_all`, `Neither`.
+- TV-01: 42 mục, 2 `gap`. TV-15: 116 đoạn, 1 mục cung, đủ 14/14 Chính Tinh. Tất cả còn `draft`. Build: SQLite 94 KB, JSON Web 72 KB, gzip 10 KB; toàn bộ Tử Vi ước 1,1 MB.
+- Validator bắt 2 lỗi trong dữ liệu vừa sinh. Đọc đối chiếu phát hiện 4 lỗi in của sách: 8.5 "Tý, Ngọ" là Tỵ, Ngọ; 8.6 "tại Thìn" là Thân; 8.8 "Nguyệt đồng cung" là Nhật; 8.9 "Thần" là Thân.
+- Kiểm định độc lập 160 mục: 0 bỏ sót, 0 đổi nghĩa nặng, 4 lỗi nặng về điều kiện, 28 lỗi nhẹ, 8/8 đính chính được đồng ý. Đã sửa hết nhưng chưa kiểm định lại, riêng 8.43 chưa nạp (D10). Lỗi tập trung ở phụ tinh, bộ sao: 4/38, so với 0/79 ở Chính Tinh.
+- Quét 510.432 lá số: 116/116 đoạn đều xuất hiện. Một cung Quan Lộc hiện 8,6 đoạn, chỉ 2,3 đoạn không kèm "Nếu". Cung có Sát tinh hiện thêm 12 dòng "Nếu…" (D12).
+- JSON đầu ra gấp đôi ước tính token, nên viết bằng dạng gọn rồi bung ra.
+- Kiểm chứng: 254 test core, 71 test `astro-data`, 21 test FFI, 28 test WASM đều qua; `clippy -D warnings`, `rustfmt` sạch; `astro-ffi` biên dịch cho cả hai target iOS. Không có API mới cho Swift, WASM nên chưa build lại XCFramework. Bộ quét lá số mới là mã dùng một lần, chưa vào repo.
+
+### 2026-11-07 — Task 5A.1: đặc tả CSDL luận giải
+
+- Tạo `docs/INTERPRETATION_DB_SPEC.md`. Chưa sinh dữ liệu, chưa viết code, chờ duyệt D1–D9.
+- Đề xuất Phương án A: JSON trong `data/interpretations/` là nguồn duy nhất, crate build-time `astro-data` ra SQLite (iOS) và JSON (Web). Rust chỉ giữ khóa và logic chọn mục. Web chưa cần IndexedDB.
+- Đề bài khác code ở 5 chỗ: `VietnamTaboo` có 9 biến thể, `NaYin` 30 chứ không phải 60, `BaziStar` 10 cộng Không Vong và Khôi Canh, `StarBrightness` có thêm `Binh`, chưa có trạng thái đương vận, thất vận. 7 `enum` thiếu `ALL`; 34 tên biến thể trùng giữa các `enum`.
+- Đo *Tân Biên*: 11 cung ngoài Mệnh có 1.241 đoạn nhưng chỉ 11 đoạn (0,9%) nêu Miếu, Vượng, Đắc, Hãm, Bình; cung Mệnh là 71%. Sách viết theo Chi và sao đồng cung, nên đề xuất đoạn luận có điều kiện thay khối 14 × 12 × độ sáng (672 ô, phần lớn không có nguồn). Nô Bộc không chia theo Chính Tinh.
+- PDF của *Tân Biên* có lớp văn bản số dấu đúng, tốt hơn hẳn `_djvu.txt`; đọc bằng PDFKit. Tr. 33 định nghĩa đơn thủ, hội hợp, sáng sủa, mờ ám; riêng "nhiều" không có ngưỡng. Tr. 20 có thêm một lỗi đánh máy về xung chiếu của cung Sửu.
+- Tử Vi đủ nguồn, chia 19 batch. Bát Tự, Phong Thủy, 12 Trực, 12 Thần, 15 Thần Sát chưa có văn bản nguồn; cách hóa giải hạn không có nguồn nào.
 
 ### 2026-11-06 — Chốt T8, T9, đóng Giai đoạn 4
 
@@ -212,6 +241,7 @@
    lịch in, không chặn code.
 5. **Tử Vi T1–T5, T8, T9: đã chốt**, xem mục 8.2 của `docs/TUVI_SPEC.md`. Mệnh Chủ, Thân Chủ và bảng Cát, Hung không đến từ
    *Tân Biên* nhưng đã được chủ dự án duyệt.
+6. **CSDL luận giải D1–D12: đã chốt**, xem mục 12 của `docs/INTERPRETATION_DB_SPEC.md`.
 
 ## 5. Quyết định kỹ thuật
 
@@ -262,6 +292,8 @@
 | `crates/astro-ffi/` | Cầu nối UniFFI (Swift module `AstroCore`) |
 | `crates/astro-ffi/src/bin/uniffi-bindgen.rs` | Trình sinh bindings, cùng phiên bản `uniffi` với thư viện |
 | `crates/astro-wasm/` | Cầu nối WebAssembly và khai báo TypeScript |
+| `crates/astro-data/` | Công cụ build-time: kiểm và biên dịch dữ liệu luận giải |
+| `data/interpretations/` | Nguồn chuẩn của dữ liệu luận giải |
 | `build-ios.sh` | Build static lib iOS, sinh Swift bindings, đóng gói `AstroCore.xcframework` |
 
 ## 7. API công khai
@@ -300,12 +332,14 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 248 test core + 21 test FFI
+cargo test --workspace                                  # 254 test core + 71 astro-data + 21 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
 wasm-pack test --node crates/astro-wasm                 # 28 test
 ./build-ios.sh                                          # cần Xcode
+cargo run -p astro-data -- validate                     # kiểm dữ liệu luận giải
+cargo run -p astro-data -- build                        # build/content/
 ```
 
 Dữ liệu đối chiếu trong test:
@@ -330,5 +364,5 @@ Dữ liệu đối chiếu trong test:
 | wasm-pack | 0.15.1 (Homebrew) |
 | Node.js | 22.23.2 |
 | Swift | 6.4 (Command Line Tools) |
-| Xcode | **Chưa cài** |
-| Crate chính | uniffi 0.32.2 · wasm-bindgen 0.2.130 · serde-wasm-bindgen 0.6.5 · serde 1.0.229 |
+| Xcode | 27.2 |
+| Crate chính | uniffi 0.32.2 · wasm-bindgen 0.2.130 · serde-wasm-bindgen 0.6.5 · serde 1.0.229 · rusqlite 0.41.1 · sha2 0.11.1 |
