@@ -4,7 +4,7 @@
 > Cập nhật lần cuối: **2026-11-07**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D13 đã chốt. TV-01, TV-15 đã duyệt; TV-02 đến TV-06 đã nạp, chờ duyệt.
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D16 đã chốt. TV-01 đến TV-06, TV-15 đã duyệt (487/488 đoạn); TV-07 đến TV-11 đã nạp, chờ duyệt.
 
 ## 1. Trạng thái
 
@@ -28,7 +28,7 @@
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
 | Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `scan`, `review`; V1–V13; 80 test |
-| Dữ liệu luận giải | 🟡 Đang làm | TV-01, TV-15 đã duyệt; TV-02 đến TV-06 `draft`; còn 12 batch Tử Vi và 11 batch khác |
+| Dữ liệu luận giải | 🟡 Đang làm | TV-01 đến TV-06, TV-15 đã duyệt (487/488 đoạn); TV-07 đến TV-11 `draft`, chờ duyệt; còn 8 batch Tử Vi và 11 batch khác |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
@@ -41,8 +41,11 @@
 - [x] Task 5A.3: module `content`, V10, V13, bảng độ sáng phụ tinh
 - [x] Chốt D13 theo sách; `rights` của *Tân Biên* là `paraphrased`
 - [x] Skill `/ingest-content`, nạp TV-02 đến TV-06
-- [ ] Duyệt TV-02 đến TV-06 ở `build/content/review/`
-- [ ] Nạp TV-07 đến TV-14, TV-16 đến TV-19
+- [x] Chốt D14–D16; thêm 6 fact mới (`birth_time_of_day`, `lunar_day_range`, `opposite_only`, `in_than`, `any_loc`, `element_relation`/`_all`)
+- [x] Duyệt TV-02 đến TV-06 ở `build/content/review/` (kiểm định độc lập, 487/488 đoạn)
+- [x] Nạp TV-07 đến TV-11
+- [ ] Duyệt TV-07 đến TV-11 ở `build/content/review/`
+- [ ] Nạp TV-12 đến TV-14, TV-16 đến TV-19
 - [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -60,6 +63,20 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-08 — Task 5A.5: D14–D16, kiểm định TV-02 đến TV-06, nạp TV-07 đến TV-11
+
+- **D14**: Phục Binh không bao giờ hội hợp Song Hao (lỗi vị trí sao của sách, như D10); sửa ở TV-03 `menh/than-cu/07`.
+- **D15**: "Lộc" khi sách không ghi rõ Lộc Tồn hay Hóa Lộc dùng fact mới `any_loc`. "Song Lộc" (cần cả hai) không đổi.
+- **D16**: thêm 6 trường `when` tính từ `TuViChart`: `birth_time_of_day`, `lunar_day_range`, `opposite_only`, `in_than`, `any_loc`, `element_relation`/`element_relation_all`, cùng fact tương ứng (`birth_time:`, `lunar_day:`, `oppose:`, `than_sit:`, `any_loc`, `element:<pair>:<relation>`). Thêm `TuViStar::element()` (Ngũ hành 14 Chính Tinh, lấy từ `profile.element` đã duyệt của TV-01), `ElementRelation`, `BirthTimeOfDay` vào `astro-core`. Không cần sửa `astro-ffi`, `astro-wasm`: không hàm nào trong hai cầu nối dùng tới các kiểu mới, `wasm-pack build` và test FFI vẫn qua không đổi.
+- Áp 6 fact mới vào TV-03, TV-04, TV-06: 18 đoạn chuyển "Lộc" sang `any_loc`; các đoạn "cung Thân có X tọa thủ" sang `in_than`; "đồng cung hoặc xung chiếu" của Bạch Hổ, Tướng Quân thử chuyển sang `opposite_only` nhưng V10 (vector V4) bắt được chỗ sai — sao đó chỉ tới bằng tam hợp ở lá số mẫu, không phải xung chiếu — nên trả lại `meets_all` cho hai đoạn đó; "sinh ban ngày/đêm" của Thái Dương, Thái Âm sang `birth_time_of_day`; ngũ hành sinh khắc Bản Mệnh/Cung/Chính Tinh ở 4 đoạn `menh/sinh-khac/*`, `menh/tuyet-dia/03` sang `element_relation`.
+- **Kiểm định độc lập TV-02 đến TV-06** (5 Agent độc lập, mỗi batch một Agent, đối chiếu từng mục với nguyên văn, theo cách đã làm với TV-15): TV-02 (97 mục, đọc gần hết, không lỗi), TV-03 (51 đoạn, đọc hết, không lỗi), TV-04 (110 đoạn, đọc hết, không lỗi), TV-05 (105 đoạn, đọc hết, 2 câu phú bị lược phát hiện và khôi phục), TV-06 (107 đoạn, đọc hết, 1 câu phú bị lược phát hiện và khôi phục). 487/488 đoạn chuyển `approved`; 1 đoạn (`menh/thai-duong/61`, TV-05) giữ `draft` vì "Binh" đọc thành Phục Binh không có căn cứ chữ rõ.
+- Cập nhật fixture V10 (`fixtures/tuvi_palace.json`) theo dữ liệu mới: vector V4 thêm 2 đoạn `menh/sinh-khac/02`, `/03` (quan hệ sinh khắc mới đúng cho lá số mẫu).
+- Commit riêng từng phần: hạ tầng fact mới, rồi TV-02, TV-03 (kèm fixture), TV-04, TV-05, TV-06.
+- **Nạp song song TV-07 đến TV-11** bằng `/ingest-content` (5 Agent, mỗi batch một Agent): TV-07 Tham Lang, Cự Môn (119 đoạn); TV-08 Thiên Lương, Thất Sát, Phá Quân (103 đoạn); TV-09 Xương Khúc, Khôi Việt, Lộc Tồn, Tả Hữu (101 đoạn); TV-10 Kình Dương, Đà La, Hỏa Linh, Không Kiếp (92 đoạn); TV-11 Tứ Hóa, Lục Bại (92 đoạn). Tổng 507 đoạn mới, 0 gap, tất cả còn `draft`. Nhiều đoạn dùng cùng cách sửa của D14 cho các bộ sao không bao giờ hội hợp được (Cự Môn/Vũ Khúc, Đà La/Kình Dương, Cự Môn/Thiên Phủ…), và một số dòng sách bất khả thi về vị trí sao không nạp, theo D10.
+- Cập nhật tiếp fixture V10: vector V4, V5 thêm các đoạn mới hợp lệ từ TV-09, TV-10, TV-11 (Lộc Tồn, Tả Hữu, Khôi Việt, Hỏa Linh, Hóa Lộc, Hóa Khoa…) nay đúng xuất hiện trên hai lá số mẫu.
+- **Kiểm chứng:** `cargo test --workspace` (401 test core + astro-data + FFI + WASM, gồm V10 5 vector) qua hết; `validate` 141 mục, 995 đoạn, 18 gap, 0 lỗi; `scan` 0 đoạn không bao giờ hiện trên 510.432 lá số, cung Mệnh hiện trung bình 34,92 đoạn, 15,29 đoạn chắc chắn (10 ít nhất, 100 nhiều nhất, tính cả TV-07 đến TV-11 còn `draft`).
+- Chưa kiểm định độc lập TV-07 đến TV-11; mục còn `draft`, chờ batch kiểm định tiếp theo (xem mục 1).
 
 ### 2026-11-08 — Task 5A.4: `/ingest-content` và TV-02 đến TV-06
 
@@ -264,7 +281,7 @@
    lịch in, không chặn code.
 5. **Tử Vi T1–T5, T8, T9: đã chốt**, xem mục 8.2 của `docs/TUVI_SPEC.md`. Mệnh Chủ, Thân Chủ và bảng Cát, Hung không đến từ
    *Tân Biên* nhưng đã được chủ dự án duyệt.
-6. **CSDL luận giải D1–D12: đã chốt**, xem mục 12 của `docs/INTERPRETATION_DB_SPEC.md`.
+6. **CSDL luận giải D1–D16: đã chốt**, xem mục 12 của `docs/INTERPRETATION_DB_SPEC.md`.
 
 ## 5. Quyết định kỹ thuật
 
@@ -359,7 +376,7 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 280 test core + 85 astro-data + 26 FFI
+cargo test --workspace                                  # 288 test core + 70 astro-data + 17 repository_data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
