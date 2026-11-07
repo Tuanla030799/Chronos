@@ -10,5 +10,238 @@
       "DiaKiep"
     ],
     "source": "tan_bien tr. 32 mục 1.11; các mục 3.14, 3.16, 3.21 ghi cùng sáu sao là Sát tinh"
+  },
+  {
+    "id": "LucBai",
+    "stars": [
+      "DaiHao",
+      "TieuHao",
+      "TangMon",
+      "BachHo",
+      "ThienKhoc",
+      "ThienHu"
+    ],
+    "source": "tan_bien tr. 12: Thiên Khốc, Thiên Hư cùng Song Hao, Tang Môn, Bạch Hổ hợp thành bộ Lục Bại; các mục 3.27–3.29 tr. 41–42 ghi đúng sáu sao này là Bại tinh"
+  },
+  {
+    "id": "SongHao",
+    "stars": [
+      "DaiHao",
+      "TieuHao"
+    ],
+    "source": "tan_bien tr. 41 mục 3.27 Đại Hao, Tiểu Hao; tr. 12 kể Song Hao trong bộ Lục Bại cùng Tang Môn, Bạch Hổ, Khốc, Hư, nên Song Hao là hai sao Hao"
+  },
+  {
+    "id": "KinhDa",
+    "stars": [
+      "KinhDuong",
+      "DaLa"
+    ],
+    "source": "tan_bien tr. 39 mục 3.14 Kình Dương, Đà La"
+  },
+  {
+    "id": "HoaLinh",
+    "stars": [
+      "HoaTinh",
+      "LinhTinh"
+    ],
+    "source": "tan_bien tr. 39 mục 3.16 Hỏa Tinh, Linh Tinh"
+  },
+  {
+    "id": "XuongKhuc",
+    "stars": [
+      "VanXuong",
+      "VanKhuc"
+    ],
+    "source": "tan_bien tr. 39 mục 3.17; tr. 11 mục 8.8 Bộ sao Xương Khúc"
+  },
+  {
+    "id": "KhoiViet",
+    "stars": [
+      "ThienKhoi",
+      "ThienViet"
+    ],
+    "source": "tan_bien tr. 39 mục 3.18; tr. 11 mục 8.10 Bộ sao Khôi Việt"
+  },
+  {
+    "id": "TaHuu",
+    "stars": [
+      "TaPhu",
+      "HuuBat"
+    ],
+    "source": "tan_bien tr. 39 mục 3.19; tr. 11 mục 8.7 Bộ sao Tả Hữu"
+  },
+  {
+    "id": "KhongKiep",
+    "stars": [
+      "DiaKhong",
+      "DiaKiep"
+    ],
+    "source": "tan_bien tr. 40 mục 3.21 Địa Kiếp, Địa Không"
+  },
+  {
+    "id": "KhocHu",
+    "stars": [
+      "ThienKhoc",
+      "ThienHu"
+    ],
+    "source": "tan_bien tr. 42 mục 3.29; tr. 11 mục 8.11 Bộ sao Khốc Hư"
+  },
+  {
+    "id": "LongPhuong",
+    "stars": [
+      "LongTri",
+      "PhuongCac"
+    ],
+    "source": "tan_bien tr. 43 mục 3.33; tr. 11 mục 8.9 Bộ sao Long Phượng"
+  },
+  {
+    "id": "ThaiToa",
+    "stars": [
+      "TamThai",
+      "BatToa"
+    ],
+    "source": "tan_bien tr. 43 mục 3.34; tr. 12 mục 8.12 Bộ sao Thai Tọa"
+  },
+  {
+    "id": "QuangQuy",
+    "stars": [
+      "AnQuang",
+      "ThienQuy"
+    ],
+    "source": "tan_bien tr. 43 mục 3.35; tr. 12 mục 8.13 Bộ sao Quang Qúy"
+  },
+  {
+    "id": "DaoHong",
+    "stars": [
+      "DaoHoa",
+      "HongLoan"
+    ],
+    "source": "tan_bien tr. 44 mục 3.36 Đào Hoa, Hồng Loan"
+  },
+  {
+    "id": "ThaiCao",
+    "stars": [
+      "ThaiPhu",
+      "PhongCao"
+    ],
+    "source": "tan_bien tr. 44 mục 3.38; tr. 13 mục 8.19 Bộ sao Thai Cáo"
+  },
+  {
+    "id": "QuanPhuc",
+    "stars": [
+      "ThienQuan",
+      "ThienPhuc"
+    ],
+    "source": "tan_bien tr. 45 mục 3.46; tr. 14 mục 8.24 Bộ sao Quan Phúc"
+  },
+  {
+    "id": "ThienNguyetDuc",
+    "stars": [
+      "ThienDuc",
+      "NguyetDuc"
+    ],
+    "source": "tan_bien tr. 45 mục 3.48; tr. 12 mục 8.14 Bộ sao Thiên, Nguyệt Đức"
+  },
+  {
+    "id": "CoQua",
+    "stars": [
+      "CoThan",
+      "QuaTu"
+    ],
+    "source": "tan_bien tr. 45 mục 3.50; tr. 14 mục 8.25 Bộ sao Cô Quả"
+  },
+  {
+    "id": "ThuongSu",
+    "stars": [
+      "ThienThuong",
+      "ThienSu"
+    ],
+    "source": "tan_bien tr. 46 mục 3.52; tr. 13 mục 8.21 Bộ sao Thương Sứ"
+  },
+  {
+    "id": "LaVong",
+    "stars": [
+      "ThienLa",
+      "DiaVong"
+    ],
+    "source": "tan_bien tr. 47 mục 3.57; tr. 13 mục 8.22 Bộ sao La Võng"
+  },
+  {
+    "id": "TamMinh",
+    "stars": [
+      "DaoHoa",
+      "HongLoan",
+      "ThienHy"
+    ],
+    "source": "tan_bien tr. 44 mục 3.36: Đào, Hồng, Hỷ kết hợp thành bộ sao Tam Minh. Hỷ là Thiên Hỷ theo tr. 12 mục 8.16 Bộ sao Hồng Hỷ (Hồng Loan, Thiên Hỷ)"
+  },
+  {
+    "id": "TuLinh",
+    "stars": [
+      "HoaCai",
+      "BachHo",
+      "LongTri",
+      "PhuongCac"
+    ],
+    "source": "tan_bien tr. 45 mục 3.44: Hoa Cái gặp Hổ, Long, Phượng kết hợp thành bộ sao Tứ Linh. Long, Phượng là Long Trì, Phượng Các theo mục 3.33 và 8.9"
+  },
+  {
+    "id": "TuDuc",
+    "stars": [
+      "LongDuc",
+      "PhucDuc",
+      "ThienDuc",
+      "NguyetDuc"
+    ],
+    "source": "tan_bien tr. 48 mục 3.63: Long Đức, Phúc Đức gặp Thiên Đức, Nguyệt Đức kết hợp thành bộ Tứ Đức"
+  },
+  {
+    "id": "VanTinh",
+    "stars": [
+      "VanXuong",
+      "VanKhuc",
+      "ThienKhoi",
+      "ThienViet"
+    ],
+    "source": "tan_bien tr. 39 mục 3.17, 3.18 ghi bốn sao này là Văn tinh; tr. 41 mục 3.25 và tr. 47 mục 3.58: Xương, Khúc, Khôi, Việt kết hợp thành bộ Văn tinh"
+  },
+  {
+    "id": "NamDau",
+    "stars": [
+      "TuVi",
+      "ThienDong",
+      "ThaiDuong",
+      "ThienCo",
+      "ThienPhu",
+      "ThienTuong",
+      "ThienLuong",
+      "ThatSat",
+      "HoaTinh",
+      "LinhTinh",
+      "VanKhuc",
+      "ThienKhoi",
+      "ThienViet"
+    ],
+    "source": "tan_bien tr. 33–39: các sao có tiêu đề ghi Nam Đẩu tinh, gồm Tử Vi (Nam Bắc Đẩu tinh) và cả phụ tinh. Sách viết \"Chính diệu Nam Đẩu tinh\" ở tr. 198, 217 khi chỉ nói Chính Tinh"
+  },
+  {
+    "id": "BacDau",
+    "stars": [
+      "TuVi",
+      "LiemTrinh",
+      "VuKhuc",
+      "ThaiAm",
+      "ThamLang",
+      "CuMon",
+      "PhaQuan",
+      "KinhDuong",
+      "DaLa",
+      "VanXuong",
+      "TaPhu",
+      "HuuBat",
+      "LocTon"
+    ],
+    "source": "tan_bien tr. 33–40: các sao có tiêu đề ghi Bắc Đẩu tinh, gồm Tử Vi (Nam Bắc Đẩu tinh) và cả phụ tinh. Sách viết \"Chính diệu Bắc Đẩu tinh\" ở tr. 198, 217 khi chỉ nói Chính Tinh"
   }
 ]

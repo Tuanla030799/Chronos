@@ -1,0 +1,328 @@
+{
+  "batch": "TV-02",
+  "collection": "tuvi.star_brightness",
+  "entries": [
+    {
+      "keys": [
+        [
+          "KinhDuong",
+          "Dac"
+        ],
+        [
+          "DaLa",
+          "Dac"
+        ]
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đắc địa: Thìn, Tuất, Sửu, Mùi: can đảm, dũng mãnh, quả quyết"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Can đảm, dũng mãnh, quả quyết; thích làm nhanh, tính sỗ sàng."
+    },
+    {
+      "keys": [
+        [
+          "KinhDuong",
+          "Ham"
+        ],
+        [
+          "DaLa",
+          "Ham"
+        ]
+      ],
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hãm địa: liều lĩnh, hung bạo, độc ác"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Liều lĩnh, hung bạo, độc ác; hay giết chóc, phá hoại, đem đến tai họa và bệnh tật."
+    },
+    {
+      "correction": "Sách in \"gian nguyệt\", hiểu là \"gian quyệt\": \"gian nguyệt\" không có nghĩa, còn \"gian quyệt\" là chữ sách dùng nhiều lần, như tr. 58, 86, 95.",
+      "keys": [
+        [
+          "DiaKhong",
+          "Dac"
+        ],
+        [
+          "DiaKiep",
+          "Dac"
+        ]
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đắc địa: Dần, Thân, Tỵ, Hợi: thâm trầm, gian nguyệt, hoạnh phát"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thâm trầm, gian quyệt; phát lên đột ngột rồi cũng phá tán đột ngột (hoạnh phát, hoạnh phá)."
+    },
+    {
+      "keys": [
+        [
+          "DiaKhong",
+          "Ham"
+        ],
+        [
+          "DiaKiep",
+          "Ham"
+        ]
+      ],
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hãm địa: Bạo ngược, gian ác, phá tán"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Bạo ngược, gian ác, phá tán; thường đem đến bệnh tật, tai họa."
+    },
+    {
+      "keys": [
+        [
+          "TangMon",
+          "Ham"
+        ],
+        [
+          "BachHo",
+          "Ham"
+        ]
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu hãm địa: lại phương hại đến công danh"
+        ],
+        "pages": [
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hãm địa thì còn làm tổn hại đến công danh."
+    },
+    {
+      "keys": [
+        [
+          "ThienKhoc",
+          "Dac"
+        ],
+        [
+          "ThienHu",
+          "Dac"
+        ]
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu đắc địa lại khiến cho lời nói thêm đanh thép"
+        ],
+        "pages": [
+          42
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đắc địa thì lời nói thêm đanh thép."
+    },
+    {
+      "key": [
+        "ThienRieu",
+        "Dac"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu đắc địa ví như sen mọc trong bùn"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Dù sa vào rượu chè, sắc dục cũng không bị nhơ nhuốc, hư hại, như sen mọc trong bùn."
+    },
+    {
+      "key": [
+        "ThienRieu",
+        "Ham"
+      ],
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu hãm địa thì dâm đãng",
+          "Hãm địa: nguy khốn vì tửu sắc"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Dâm đãng; lâm vào nguy khốn vì rượu chè, sắc dục."
+    }
+  ],
+  "gaps": [
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "HoaTinh",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "HoaTinh",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "LinhTinh",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "LinhTinh",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "VanXuong",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "VanXuong",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "VanKhuc",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 39",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "VanKhuc",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 41",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "TangMon",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 41",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "BachHo",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 41",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "DaiHao",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 41",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "TieuHao",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 42",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "ThienKhoc",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 42",
+      "gap": "Sách không có lời cho Hãm địa",
+      "key": [
+        "ThienHu",
+        "Ham"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 42",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao",
+      "key": [
+        "ThienMa",
+        "Dac"
+      ]
+    },
+    {
+      "checked": "tan_bien tr. 42–43",
+      "gap": "Sách chỉ liệt kê vị trí Đắc địa, không có lời luận riêng cho mức này; các đặc tính in sau là lời chung của sao; câu \"an tại Dần … đắc cách\" là một cách riêng, đã ghi ở tuvi.star",
+      "key": [
+        "ThienHinh",
+        "Dac"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "batch": "TV-02",
+  "collection": "tuvi.transformation",
+  "entries": [
+    {
+      "body": [
+        "Nhân hậu, hay làm việc thiện; cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa.",
+        "Tăng tài, thêm lộc; giữ vững chức vị, uy quyền.",
+        "Gặp Tham Lang, Vũ Khúc đồng cung, hoặc Lộc Tồn đồng cung: làm cho giàu có thêm.",
+        "Gặp Địa Kiếp, Địa Không, Thiên Không hoặc Hao: hao tán, suy bại, gây tai họa."
+      ],
+      "key": "HoaLoc",
+      "source_ref": {
+        "keywords": [
+          "Hóa Lộc (Mộc đới Thổ)",
+          "Được tôn là thần của cung Phúc Đức",
+          "Tăng tài, tiến lộc. Giữ gìn chức vị, uy quyền",
+          "Gặp Kiếp, Không, Thiên Không hay Hao"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thần của cung Phúc Đức, coi sóc việc thu góp của cải ở Điền Trạch và Tài Bạch."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao tốt đẹp thì làm cho tốt đẹp thêm; gặp nhiều sao xấu xa thì làm cho xấu xa thêm."
+      ],
+      "key": "HoaQuyen",
+      "source_ref": {
+        "keywords": [
+          "Hóa Quyền (Mộc đới Thủy)",
+          "Mạnh bạo, mau mắn: oai vệ, thích nắm quyền hành"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Mạnh bạo, nhanh nhẹn, oai vệ, thích nắm quyền hành."
+    },
+    {
+      "body": [
+        "Tăng phúc, tăng thọ; giải trừ bệnh tật, tai họa; cứu người khốn khó, giúp người nguy nan.",
+        "Được tôn là thần giám sát thi cử, nắm giữ văn bài.",
+        "Gặp Xương, Khúc, Khôi, Việt: kết thành một bộ Văn tinh.",
+        "Gặp Quyền, Lộc: kết thành một bộ Quý tinh, ảnh hưởng nhiều đến công danh, tài lộc.",
+        "Gặp Sát tinh thì không bị hại."
+      ],
+      "key": "HoaKhoa",
+      "source_ref": {
+        "keywords": [
+          "Hóa Khoa (Mộc đới Thủy)",
+          "Thông minh, lịch lãm, uyên bác",
+          "Được tôn là thần giám sát thi cử",
+          "Gặp Quyền, Lộc: kết hợp thành một bộ Qúy tinh",
+          "Gặp sát tinh: vô hại"
+        ],
+        "pages": [
+          40,
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, lịch lãm, uyên bác, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "body": [
+        "Đắc địa tại Thìn, Tuất, Sửu, Mùi: đỡ phải lo về bệnh tật, tai họa.",
+        "Ở Sửu, Mùi gặp Thái Dương, Thái Âm đồng cung: làm Nhật, Nguyệt thêm rực rỡ, tốt đẹp; Kỵ ở đây như mây năm sắc chầu mặt trời, mặt trăng.",
+        "Ở Tỵ, Hợi gặp Liêm Trinh, Tham Lang đồng cung: chế được tính hung của Liêm, Tham, triệt tiêu những điều chẳng lành do hai sao này gây ra.",
+        "Gặp Cự Môn đồng cung: gây bệnh tật, tai họa khủng khiếp.",
+        "Gặp Lương, Khúc hội hợp: bế tắc, ngăn trở, gây nhiều hung họa.",
+        "Gặp Tấu, Đà hội hợp: thị phi, kiện cáo, bệnh tật.",
+        "Gặp Đà, Riêu: thành bộ Tam Ám, thường che lấp ánh sáng của Nhật, Nguyệt.",
+        "Hãm địa thủ Mệnh: nếu cung Mệnh thuộc Dương và năm sinh cũng thuộc Dương thì Kỵ không thể gây họa mạnh; ảnh hưởng xấu của Kỵ đã bị giảm bớt."
+      ],
+      "key": "HoaKy",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hóa Kỵ (Thủy)",
+          "Độc hiểm, ích kỷ, hay ghen ghét, hay nhầm lẫn",
+          "Đắc địa: đỡ lo ngại bệnh tật, tai họa",
+          "ví như mây năm sắc chầu mặt trời, mặt trăng",
+          "Gặp Cự đồng cung: gây bệnh tật, tai họa khủng khiếp",
+          "Gặp Tấu Đà hội hợp: thị phi, kiện cáo, bệnh tật",
+          "kết hợp thành bộ sao Tam ám",
+          "Kỵ không thể tác họa mạnh mẽ được"
+        ],
+        "pages": [
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Độc hiểm, ích kỷ, hay ghen ghét, hay lầm lẫn; gây tai họa, bệnh tật, thị phi, kiện cáo, nhưng vẫn giữ được của cải bền vững."
+    }
+  ]
+}

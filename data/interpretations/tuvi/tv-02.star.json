@@ -1,0 +1,2390 @@
+{
+  "batch": "TV-02",
+  "collection": "tuvi.star",
+  "entries": [
+    {
+      "key": "KinhDuong",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Dương Kim đới Hỏa",
+        "labels": [
+          "Sát tinh",
+          "Hình tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Kình Dương (Bắc Đẩu tinh, Dương Kim đới Hỏa)",
+          "Chủ sát phạt",
+          "Kình Dương: Hình tinh",
+          "Đà La: Kỵ tinh"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát phạt."
+    },
+    {
+      "key": "DaLa",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Âm Kim đới Hỏa",
+        "labels": [
+          "Sát tinh",
+          "Kỵ tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Đà La (Bắc Đẩu tinh, Âm Kim đới Hỏa)",
+          "Chủ sát phạt",
+          "Kình Dương: Hình tinh",
+          "Đà La: Kỵ tinh"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát phạt."
+    },
+    {
+      "body": [
+        "Tính thâm trầm, nham hiểm; hay gây cảnh giết chóc, đốt phá, đem đến tai họa và bệnh tật.",
+        "Làm giảm thọ, nên còn gọi là Đoản thọ Sát tinh."
+      ],
+      "key": "HoaTinh",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Hỏa đới Kim",
+        "labels": [
+          "Sát tinh"
+        ]
+      },
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa Tinh (Nam Đẩu tinh, Dương Hỏa đới Kim)",
+          "Thâm trầm, nham hiểm, hay giết chóc, đốt phá",
+          "Giảm thọ nên gọi là Đoản thọ Sát tinh"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát phạt; tính thâm trầm, nham hiểm."
+    },
+    {
+      "body": [
+        "Tính thâm trầm, nham hiểm; hay gây cảnh giết chóc, đốt phá, đem đến tai họa và bệnh tật.",
+        "Làm giảm thọ, nên còn gọi là Đoản thọ Sát tinh."
+      ],
+      "key": "LinhTinh",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Âm Hỏa đới Kim",
+        "labels": [
+          "Sát tinh"
+        ]
+      },
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Linh Tinh (Nam Đẩu tinh, Âm Hỏa đới Kim)",
+          "Thâm trầm, nham hiểm, hay giết chóc, đốt phá",
+          "Giảm thọ nên gọi là Đoản thọ Sát tinh"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát phạt; tính thâm trầm, nham hiểm."
+    },
+    {
+      "body": [
+        "Thông minh, ham học, yêu thích văn chương và mỹ thuật.",
+        "Gặp Sát tinh, Kỵ, Riêu thì dâm đãng, giảm thọ."
+      ],
+      "key": "VanXuong",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Dương Kim đới Thổ",
+        "labels": [
+          "Văn tinh"
+        ]
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Văn Xương (Bắc Đẩu tinh, Dương Kim đới Thổ)",
+          "Chủ văn chương, mỹ thuật, khoa giáp",
+          "Gặp sát tinh, Kỵ, Riêu: dâm đãng, giảm thọ"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về văn chương, mỹ thuật và khoa cử."
+    },
+    {
+      "body": [
+        "Thông minh, ham học, yêu thích văn chương và mỹ thuật.",
+        "Gặp Sát tinh, Kỵ, Riêu thì dâm đãng, giảm thọ."
+      ],
+      "key": "VanKhuc",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Thủy đới Hỏa",
+        "labels": [
+          "Văn tinh"
+        ]
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Văn Khúc (Nam Đẩu tinh, Dương Thủy đới Hỏa)",
+          "Chủ văn chương, mỹ thuật, khoa giáp",
+          "Gặp sát tinh, Kỵ, Riêu: dâm đãng, giảm thọ"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về văn chương, mỹ thuật và khoa cử."
+    },
+    {
+      "aliases": [
+        "Thiên Ất Quý nhân"
+      ],
+      "body": [
+        "Thông minh, cao thượng, nhân hậu, hay làm việc thiện, yêu thích văn chương.",
+        "Gặp Hỏa, Linh, Hình thì gây tai họa khủng khiếp."
+      ],
+      "key": "ThienKhoi",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Dương Hỏa đới Kim",
+        "labels": [
+          "Văn tinh",
+          "Quý tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Khôi (Nam Đẩu tinh, Dương Hỏa đới Kim)",
+          "Chủ khoa giáp, quyền tước",
+          "Còn được gọi là Thiên Ất qúy nhân",
+          "Gặp Hỏa, Linh, Hình: gây tai họa khủng khiếp"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về khoa cử và quyền tước."
+    },
+    {
+      "aliases": [
+        "Thiên Ất Quý nhân"
+      ],
+      "body": [
+        "Thông minh, cao thượng, nhân hậu, hay làm việc thiện, yêu thích văn chương.",
+        "Gặp Hỏa, Linh, Hình thì gây tai họa khủng khiếp."
+      ],
+      "key": "ThienViet",
+      "profile": {
+        "dau": "NamDau",
+        "element": "Âm Hỏa đới Mộc",
+        "labels": [
+          "Văn tinh",
+          "Quý tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Việt (Nam Đẩu tinh, Âm Hỏa đới Mộc)",
+          "Chủ khoa giáp, quyền tước",
+          "Còn được gọi là Thiên Ất qúy nhân",
+          "Gặp Hỏa, Linh, Hình: gây tai họa khủng khiếp"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về khoa cử và quyền tước."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao tốt đẹp thì làm cho tốt đẹp thêm; gặp nhiều sao xấu xa thì làm cho xấu xa thêm."
+      ],
+      "key": "TaPhu",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Dương Thổ đới Kim",
+        "labels": [
+          "Trợ tinh",
+          "Phù tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Tả Phụ (Bắc Đẩu tinh, Dương Thổ đới Kim)",
+          "Chủ quyền, lệnh: chuyên phò tá, giúp đỡ",
+          "Gặp nhiều sao xấu xa: làm cho xấu xa thêm"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về quyền và lệnh; chuyên phò tá, giúp đỡ."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao tốt đẹp thì làm cho tốt đẹp thêm; gặp nhiều sao xấu xa thì làm cho xấu xa thêm."
+      ],
+      "key": "HuuBat",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Dương Thủy đới Thổ",
+        "labels": [
+          "Trợ tinh",
+          "Phù tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Hữu Bật (Bắc Đẩu tinh, Dương Thủy đới Thổ)",
+          "Chủ quyền, lệnh: chuyên phò tá, giúp đỡ",
+          "Gặp nhiều sao xấu xa: làm cho xấu xa thêm"
+        ],
+        "pages": [
+          39
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về quyền và lệnh; chuyên phò tá, giúp đỡ."
+    },
+    {
+      "body": [
+        "Thông minh, ham học, cô độc, nghiêm cẩn, nhân hậu, hay làm việc thiện.",
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa.",
+        "Làm tăng thêm tài lộc, sự giàu có và tuổi thọ.",
+        "Triệt được tính dâm đãng, lẳng lơ hoa nguyệt của Đào, Hồng."
+      ],
+      "key": "LocTon",
+      "profile": {
+        "dau": "BacDau",
+        "element": "Dương Thổ đới Thủy",
+        "labels": [
+          "Quý tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Lồc Tồn (Bắc Đẩu tinh, Dương Thổ đới Thủy, Qúy tinh)",
+          "Chủ quyền tước, tài lộc, phúc thọ",
+          "Triệt tiêu được tính dâm đãng, hoa nguyệt của Đào, Hồng"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về quyền tước, tài lộc và phúc thọ."
+    },
+    {
+      "key": "DiaKiep",
+      "profile": {
+        "element": "Dương Hỏa",
+        "labels": [
+          "Sát tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Địa Kiếp (Dương Hỏa)",
+          "Chủ sát, phá tán"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát hại và phá tán."
+    },
+    {
+      "key": "DiaKhong",
+      "profile": {
+        "element": "Âm Hỏa",
+        "labels": [
+          "Sát tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Địa Không (Âm Hỏa)",
+          "Chủ sát, phá tán"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về sát hại và phá tán."
+    },
+    {
+      "body": [
+        "Mệnh có Thiên Không và Đào Hoa đồng cung: xảo trá, nhiều mưu trí.",
+        "Mệnh có Thiên Không và Hồng Loan đồng cung: thích sống ẩn dật, đi tu."
+      ],
+      "correction": "Sách in \"tọa chủ đồng cung\" ở câu Không, Hồng, hiểu là \"tọa thủ đồng cung\" như câu Không, Đào ngay trên.",
+      "key": "ThienKhong",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Không (Hỏa)",
+          "nhưng chẳng làm nên việc gì",
+          "Cung Mệnh có Không, Đào tọa thủ đồng cung",
+          "thích ẩn dật, tu hành"
+        ],
+        "pages": [
+          40
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hoang phí, phá hoại, gian hùng, quỷ quyệt, nhưng chẳng làm nên việc gì."
+    },
+    {
+      "keys": [
+        "DaiHao",
+        "TieuHao"
+      ],
+      "profile": {
+        "element": "Hỏa",
+        "labels": [
+          "Bại tinh"
+        ]
+      },
+      "source_ref": {
+        "keywords": [
+          "Đại Hao (Hỏa) - Tiểu Hao (Hỏa) - (Bại tinh)",
+          "Hoang hủy, làm hao hụt tài lộc"
+        ],
+        "pages": [
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hoang phí, làm hao hụt tài lộc, gây chia lìa, xa cách."
+    },
+    {
+      "body": [
+        "Làm hao hụt tài lộc.",
+        "Gặp Tấu Thư đồng cung, ví như hổ đội hòm sắt: lợi cho việc học, thi cử, cầu công danh; chủ về chức vị, quyền thế.",
+        "Gặp Phi Liêm cùng cung, như hổ thêm cánh: vui vẻ, nhanh nhẹn; có lợi cho thi cử, cầu công danh; điều may mắn đáng mừng đến rất mau.",
+        "Chủ chức vị, quyền thế."
+      ],
+      "key": "TangMon",
+      "profile": {
+        "element": "Mộc",
+        "labels": [
+          "Bại tinh"
+        ]
+      },
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tang Môn (Mộc)",
+          "Dũng mãnh, bạo tợn, bi thảm",
+          "ví như Hổ đội hòm sắt",
+          "ví như Hổ mọc cánh"
+        ],
+        "pages": [
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Dũng mãnh, hung bạo, bi thảm; gây tang thương, bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Làm hao hụt tài lộc.",
+        "Gặp Tấu Thư đồng cung, ví như hổ đội hòm sắt: lợi cho việc học, thi cử, cầu công danh; chủ về chức vị, quyền thế.",
+        "Gặp Phi Liêm cùng cung, như hổ thêm cánh: vui vẻ, nhanh nhẹn; có lợi cho thi cử, cầu công danh; điều may mắn đáng mừng đến rất mau.",
+        "Chủ chức vị, quyền thế."
+      ],
+      "key": "BachHo",
+      "profile": {
+        "element": "Kim",
+        "labels": [
+          "Bại tinh"
+        ]
+      },
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bạch Hổ (Kim)",
+          "Dũng mãnh, bạo tợn, bi thảm",
+          "ví như Hổ đội hòm sắt",
+          "ví như Hổ mọc cánh"
+        ],
+        "pages": [
+          41
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Dũng mãnh, hung bạo, bi thảm; gây tang thương, bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Gây bệnh tật, tang thương.",
+        "Làm mọi việc lúc đầu bị ngăn trở, về sau mới thành (tiên trở hậu thành)."
+      ],
+      "keys": [
+        "ThienKhoc",
+        "ThienHu"
+      ],
+      "profile": {
+        "element": "Thủy",
+        "labels": [
+          "Bại tinh"
+        ]
+      },
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Khốc (Thủy) - Thiên Hư (Thủy) - (Bại tinh)",
+          "Đa sầu, đa cảm, buồn rầu, hoảng hốt",
+          "(tiên trở, hậu thành)"
+        ],
+        "pages": [
+          42
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đa sầu đa cảm, buồn rầu, hoảng hốt, hay lo nghĩ xa xôi."
+    },
+    {
+      "body": [
+        "Chủ sự di chuyển, thay cũ đổi mới và mọi việc liên quan đến chân tay, xe cộ; ảnh hưởng nhiều đến công danh, tài lộc, phúc thọ.",
+        "Mệnh, Thân có Thiên Mã tọa thủ (Dịch Mã): người nhiều tài.",
+        "Ở Dần, Thân gặp Tử Vi, Thiên Phủ đồng cung (Phù Du Mã, ngựa kéo xe vua): tài giỏi, có thao lược, uy quyền hiển hách, giàu sang tột bậc, phúc thọ song toàn.",
+        "Gặp Thái Dương, Thái Âm sáng sủa hội hợp (Thư Hùng Mã, đôi ngựa tốt): nhiều tài, giàu sang, vinh hiển.",
+        "Lộc Tồn đồng cung (Chiết Tiễn Mã, bẻ roi giục ngựa): mọi việc chóng thành, công danh và tài lộc đều thịnh vượng.",
+        "Lộc Tồn xung chiếu (Lộc Mã giao trì): nhanh nhẹn, vui vẻ, mọi việc hanh thông, tiền tài và quan lộc đều tốt.",
+        "Hỏa Tinh hoặc Linh Tinh đồng cung (Chiến Mã, ngựa ra trận): dũng mãnh; chủ việc quân sự, binh quyền.",
+        "Gặp Khốc, Khách hội hợp (Tuấn Mã, ngựa tốt), như ngựa đeo nhạc hay (Khốc) lại có người cưỡi giỏi (Khách): dũng mãnh, có thao lược, chuyên về quân sự, liên quan đến chinh chiến.",
+        "Thiên Hình đồng cung (Phù Thi Mã, ngựa chở xác chết): tai họa khủng khiếp, chết chóc thê thảm.",
+        "Đà La đồng cung hoặc xung chiếu (Chiết Túc Mã, ngựa què): suy bại, mọi việc bị ngăn trở, gây tai họa.",
+        "Tuyệt đồng cung, hoặc Thiên Mã ở Hợi (Cùng Đồ Mã, ngựa cùng đường): bế tắc, thất bại.",
+        "Gặp Tuần, Triệt án ngữ (Tử Mã, ngựa chết): tai họa, bại hoại, chết chóc."
+      ],
+      "correction": "Sách in \"bất tắc\" ở câu Cùng Đồ Mã, hiểu là \"bế tắc\" (cùng đường, hết lối chạy).",
+      "key": "ThienMa",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Mã (Hỏa)",
+          "Tháo vát, may mắn, nhanh nhẹn, hay đi xa",
+          "(Phù Du Mã - ngựa kéo xe cho vua chúa)",
+          "(Thư Hùng Mã - ngựa tốt đủ đôi)",
+          "(Chiết Tiễn Mã - bẻ roi đánh ngựa)",
+          "(Lộc, Mã giao trì - Lộc, Mã gặp nhau)",
+          "(Chiến Mã - ngựa ra trận)",
+          "(Tuấn Mã - ngựa tốt)",
+          "(Phù Thi Mã - ngựa mang xác người chết)",
+          "(Chiết Túc Mã - ngựa què)",
+          "(Cùng Đồ Mã - ngựa cùng đường, hết lối chạy), bất tắc, thất bại",
+          "Tuần, Triệt án ngữ (Tử Mã - ngựa chết)"
+        ],
+        "pages": [
+          42
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Tháo vát, may mắn, nhanh nhẹn, hay đi xa."
+    },
+    {
+      "body": [
+        "Liên quan đến chém giết, mổ xẻ, châm chích; chuyên về quân sự.",
+        "Chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào, Hồng.",
+        "Mệnh, Thân ở Dần có Thiên Hình, thành cách Hổ hàm kiếm (hổ ngậm kiếm): tài giỏi, dũng mãnh, biết chỉ huy ba quân, thường hiển đạt về võ nghiệp.",
+        "Gặp Tướng, Binh, Ấn: thành bộ sao uy dũng, gồm cả văn lẫn võ.",
+        "Gặp Sát tinh: tai họa khủng khiếp như đâm chém, giết chóc, tù đày.",
+        "Gặp Lộc, Y: có liên quan đến y dược.",
+        "Gặp Tuần, Triệt án ngữ: mất hết uy lực, như thanh kiếm gãy."
+      ],
+      "key": "ThienHinh",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Hình (Hỏa)",
+          "Dũng mãnh, sát phạt, có oai phong",
+          "(Hổ hàm kiếm - Hổ ngậm kiếm)",
+          "Gặp Tướng, Binh, Ấn kết hợp thành bộ sao uy dũng",
+          "Gặp Lộc, Y: có liên quan đến y dược",
+          "mất hết uy lực, ví như thanh kiếm gãy"
+        ],
+        "pages": [
+          42,
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Dũng mãnh, sát phạt, có oai phong."
+    },
+    {
+      "body": [
+        "Gặp Xương, Khúc: dâm đãng, giảm thọ.",
+        "Gặp Đào, Hồng: lẳng lơ, hoa nguyệt, không đứng đắn.",
+        "Gặp Long, Phượng: tốt đẹp, vui vẻ; liên quan đến cưới hỏi, sinh nở; làm công danh, tài lộc hưng thịnh.",
+        "Mệnh có Thiên Riêu tọa thủ: răng xấu, hay đau răng.",
+        "Thiên Riêu hội hợp với nhiều sao mờ ám xấu xa: không thể sống lâu."
+      ],
+      "key": "ThienRieu",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Riêu (Thủy)",
+          "Đa nghi, huyễn hoặc, có tín ngưỡng",
+          "Gặp Đào, Hồng: lẳng lơ, hoa nguyệt, bất chính",
+          "Cung Mệnh có Riêu Tọa thủ: răng xấu, hay đau",
+          "không thể sống lâu được"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đa nghi, huyễn hoặc, có tín ngưỡng."
+    },
+    {
+      "body": [
+        "Đem lại nhiều may mắn; làm công danh, tài lộc hưng thịnh; làm nhà cửa đất đai thêm cao đẹp, rộng rãi.",
+        "Gặp Xương, Khúc, Khôi, Việt, Tả, Hữu: thành bộ hiền thần chuyên phò tá Tử Vi, Thiên Phủ, khiến uy quyền của Tử, Phủ càng thêm hiển hách.",
+        "Gặp Phi Liêm: đem lại may mắn, vui mừng một cách nhanh chóng."
+      ],
+      "key": "LongTri",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Long Trì (Thủy)",
+          "Thông minh nhân hậu, ôn hòa, vui vẻ, bình thường",
+          "kết hợp thành bộ hiền thần",
+          "Gặp Phi đem lại những sự may mắn"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, nhân hậu, ôn hòa, vui vẻ, bình thường; liên quan đến cưới hỏi, sinh nở."
+    },
+    {
+      "body": [
+        "Đem lại nhiều may mắn; làm công danh, tài lộc hưng thịnh; làm nhà cửa đất đai thêm cao đẹp, rộng rãi.",
+        "Gặp Xương, Khúc, Khôi, Việt, Tả, Hữu: thành bộ hiền thần chuyên phò tá Tử Vi, Thiên Phủ, khiến uy quyền của Tử, Phủ càng thêm hiển hách.",
+        "Gặp Phi Liêm: đem lại may mắn, vui mừng một cách nhanh chóng."
+      ],
+      "key": "PhuongCac",
+      "profile": {
+        "element": "Mộc đới Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Phượng Các (Mộc đới Thổ)",
+          "Thông minh nhân hậu, ôn hòa, vui vẻ, bình thường",
+          "kết hợp thành bộ hiền thần",
+          "Gặp Phi đem lại những sự may mắn"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, nhân hậu, ôn hòa, vui vẻ, bình thường; liên quan đến cưới hỏi, sinh nở."
+    },
+    {
+      "body": [
+        "Làm nhà cửa đất đai thêm cao đẹp."
+      ],
+      "correction": "Bỏ cụm \"Đem lại sự.\" ở cuối dòng đầu mục 3.34: bản in bị cụt, không rõ đem lại điều gì.",
+      "key": "TamThai",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Tam Thai (Thủy)",
+          "Khôn ngoan, bệ vệ, phúc hậu, thích an nhàn",
+          "Làm cho nhà đất thêm cao đẹp"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Khôn ngoan, bệ vệ, phúc hậu, thích nhàn nhã."
+    },
+    {
+      "body": [
+        "Làm nhà cửa đất đai thêm cao đẹp."
+      ],
+      "correction": "Bỏ cụm \"Đem lại sự.\" ở cuối dòng đầu mục 3.34: bản in bị cụt, không rõ đem lại điều gì.",
+      "key": "BatToa",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Bát Tọa (Mộc)",
+          "Khôn ngoan, bệ vệ, phúc hậu, thích an nhàn",
+          "Làm cho nhà đất thêm cao đẹp"
+        ],
+        "pages": [
+          43
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Khôn ngoan, bệ vệ, phúc hậu, thích nhàn nhã."
+    },
+    {
+      "body": [
+        "Nhân hậu, hay làm việc thiện; cứu người khốn khó, giúp người nguy nan; đem lại nhiều may mắn.",
+        "Giải trừ bệnh tật, tai họa.",
+        "Chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào Hoa, Hồng Loan.",
+        "Gặp Sát tinh thì không bị hại."
+      ],
+      "correction": "Sách in \"tinh hoa nguyệt\" (tr. 44), hiểu là \"tính hoa nguyệt\" như mục 3.31 tr. 42 \"chế được tính hoa nguyệt, dâm đãng của Đào, Hồng\".",
+      "key": "AnQuang",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Ân Quang (Mộc)",
+          "Thông minh, vui vẻ, ôn hòa, trọng ân nghĩa",
+          "Chế được tinh hoa nguyệt, dâm đãng của sao Đào, Hồng",
+          "Gặp Sát tinh vô hại"
+        ],
+        "pages": [
+          43,
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, vui vẻ, ôn hòa, trọng ân nghĩa."
+    },
+    {
+      "body": [
+        "Nhân hậu, hay làm việc thiện; cứu người khốn khó, giúp người nguy nan; đem lại nhiều may mắn.",
+        "Giải trừ bệnh tật, tai họa.",
+        "Chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào Hoa, Hồng Loan.",
+        "Gặp Sát tinh thì không bị hại."
+      ],
+      "correction": "Sách in \"tinh hoa nguyệt\" (tr. 44), hiểu là \"tính hoa nguyệt\" như mục 3.31 tr. 42 \"chế được tính hoa nguyệt, dâm đãng của Đào, Hồng\".",
+      "key": "ThienQuy",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Qúy (Thổ)",
+          "Thông minh, vui vẻ, ôn hòa, trọng ân nghĩa",
+          "Chế được tinh hoa nguyệt, dâm đãng của sao Đào, Hồng",
+          "Gặp Sát tinh vô hại"
+        ],
+        "pages": [
+          43,
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, vui vẻ, ôn hòa, trọng ân nghĩa."
+    },
+    {
+      "body": [
+        "Ảnh hưởng đến vợ hoặc chồng; liên quan đến cưới hỏi; lợi cho thi cử, cầu công danh; đem lại nhiều niềm vui.",
+        "Làm Tử Vi, Thiên Phủ, Thái Dương, Thái Âm thêm rực rỡ, tốt đẹp.",
+        "Đào, Hồng cùng Hỷ thành bộ Tam Minh, làm Thái Dương, Thái Âm thêm sáng.",
+        "Mệnh, Thân có Đào Hoa hoặc Hồng Loan tọa thủ: đàn ông hai đời vợ hoặc có vợ lẽ, đàn bà hai đời chồng.",
+        "Mệnh có Đào Hoa hoặc Hồng Loan, lại hội hợp nhiều Sát tinh: tất không thể sống lâu.",
+        "Đàn bà có Đào Hoa hoặc Hồng Loan ở Mệnh, Thân, hội hợp Riêu, Đà, Kỵ: không đứng đắn, không giữ trọn danh tiết; nếu hội hợp thêm Binh, Tướng, Thai thì tất bị hãm hiếp, chửa hoang."
+      ],
+      "correction": "Tr. 44: \"Có lý do đến việc cưới hỏi\" hiểu là \"có liên quan đến việc cưới hỏi\", như mục 3.32, 3.33 tr. 43; \"rực vỡ\" là \"rực rỡ\".",
+      "key": "DaoHoa",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào Hoa (Mộc)",
+          "Vui vẻ, mau mắn, đa tình, lẳng lơ, hoa nguyệt",
+          "Có lý do đến việc cưới hỏi",
+          "thêm rực vỡ, tốt đẹp",
+          "kết hợp thành bộ sao Tam Minh",
+          "đàn ông hai đời vợ (hay có vợ lẽ)",
+          "gặp nhiều Sát tinh hội, hợp tất không thể sống lâu được",
+          "tất bị hãm hiếp, chửa hoang"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, nhanh nhẹn, đa tình, lẳng lơ hoa nguyệt; chủ mọi việc về phụ nữ."
+    },
+    {
+      "body": [
+        "Ảnh hưởng đến vợ hoặc chồng; liên quan đến cưới hỏi; lợi cho thi cử, cầu công danh; đem lại nhiều niềm vui.",
+        "Làm Tử Vi, Thiên Phủ, Thái Dương, Thái Âm thêm rực rỡ, tốt đẹp.",
+        "Đào, Hồng cùng Hỷ thành bộ Tam Minh, làm Thái Dương, Thái Âm thêm sáng.",
+        "Mệnh, Thân có Đào Hoa hoặc Hồng Loan tọa thủ: đàn ông hai đời vợ hoặc có vợ lẽ, đàn bà hai đời chồng.",
+        "Mệnh có Đào Hoa hoặc Hồng Loan, lại hội hợp nhiều Sát tinh: tất không thể sống lâu.",
+        "Đàn bà có Đào Hoa hoặc Hồng Loan ở Mệnh, Thân, hội hợp Riêu, Đà, Kỵ: không đứng đắn, không giữ trọn danh tiết; nếu hội hợp thêm Binh, Tướng, Thai thì tất bị hãm hiếp, chửa hoang."
+      ],
+      "correction": "Tr. 44: \"Có lý do đến việc cưới hỏi\" hiểu là \"có liên quan đến việc cưới hỏi\", như mục 3.32, 3.33 tr. 43; \"rực vỡ\" là \"rực rỡ\".",
+      "key": "HongLoan",
+      "profile": {
+        "element": "Thủy đới Kim",
+        "labels": []
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hồng Loan (Thủy đới Kim)",
+          "Vui vẻ, mau mắn, đa tình, lẳng lơ, hoa nguyệt",
+          "Có lý do đến việc cưới hỏi",
+          "thêm rực vỡ, tốt đẹp",
+          "kết hợp thành bộ sao Tam Minh",
+          "đàn ông hai đời vợ (hay có vợ lẽ)",
+          "gặp nhiều Sát tinh hội, hợp tất không thể sống lâu được",
+          "tất bị hãm hiếp, chửa hoang"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, nhanh nhẹn, đa tình, lẳng lơ hoa nguyệt; chủ mọi việc về phụ nữ."
+    },
+    {
+      "body": [
+        "Lợi cho việc cầu danh, cưới hỏi và sinh nở."
+      ],
+      "key": "ThienHy",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Hỷ (Thủy)",
+          "Lợi ích cho công việc cầu danh, cưới hỏi và sinh nở"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, hòa nhã, đem lại nhiều may mắn đáng mừng."
+    },
+    {
+      "body": [
+        "Lợi cho thi cử, cầu công danh; chủ về bằng sắc."
+      ],
+      "key": "ThaiPhu",
+      "profile": {
+        "element": "Kim đới Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thai Phụ (Kim đới Thổ)",
+          "Tự đắc, khoe khoang, hiếu danh",
+          "Chủ bằng sắc"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Tự đắc, khoe khoang, háo danh, chuộng hình thức bề ngoài."
+    },
+    {
+      "body": [
+        "Lợi cho thi cử, cầu công danh; chủ về bằng sắc."
+      ],
+      "key": "PhongCao",
+      "profile": {
+        "element": "Thổ đới Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Phong Cáo (Thổ đới Thủy)",
+          "Tự đắc, khoe khoang, hiếu danh",
+          "Chủ bằng sắc"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Tự đắc, khoe khoang, háo danh, chuộng hình thức bề ngoài."
+    },
+    {
+      "body": [
+        "Gặp Tuần, Triệt án ngữ: mọi việc bị ngăn trở, bế tắc, thất bại; bị bãi chức."
+      ],
+      "key": "QuocAn",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Quốc Ấn (Thổ)",
+          "Gìn giữ chức vị, quyền hành",
+          "Bị bãi miễn chức vị"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Lợi cho thi cử, cầu công danh; giữ vững chức vị, quyền hành."
+    },
+    {
+      "body": [
+        "Giúp việc mua tậu nhà đất dễ dàng, làm nhà đất thêm cao đẹp, rộng rãi.",
+        "Gặp Bạch Hổ đồng cung: có chuyện bắt bớ, tù đày."
+      ],
+      "key": "DuongPhu",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đường Phù (Mộc)",
+          "Đường bệ, uy nghi",
+          "Gặp Hổ đồng cung: có sự bắt bớ, tù đày"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đường bệ, uy nghi; lợi cho việc cầu công danh."
+    },
+    {
+      "key": "ThienTho",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Thọ (Thổ)",
+          "Điềm đạm, hòa nhã, nhân hậu"
+        ],
+        "pages": [
+          44
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Điềm đạm, hòa nhã, nhân hậu, hay làm việc thiện; làm tăng phúc thọ."
+    },
+    {
+      "body": [
+        "Lợi cho học hành, thi cử; giải trừ bệnh tật."
+      ],
+      "key": "BacSy",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Bác Sỹ (Thủy)",
+          "Thông minh, khoan hòa, nhân hậu",
+          "Lợi ích cho việc học hành thi cử. Giải trừ bệnh tật"
+        ],
+        "pages": [
+          44,
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, khoan hòa, nhân hậu."
+    },
+    {
+      "body": [
+        "Lợi cho học hành, thi cử, cầu công danh."
+      ],
+      "key": "LuuNienVanTinh",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Lưu Niên Văn Tinh (Hỏa)",
+          "Thông minh, chuộng bằng sắc"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, chuộng bằng sắc."
+    },
+    {
+      "body": [
+        "Lợi cho việc cầu công danh.",
+        "Gặp Hổ, Long, Phượng: thành bộ Tứ Linh, chủ công danh, chức vị, uy quyền.",
+        "Gặp Mộc Dục, Thiên Riêu hội hợp: có tính dâm đãng."
+      ],
+      "correction": "\"Mộc\" đọc là Mộc Dục: sách cũng viết tắt như vậy ở mục 3.75 tr. 50. Bỏ câu \"Cung Mệnh có Cái, Tấn tọa thủ đồng cung: người thanh cao\" vì không có sao nào tên Tấn, không xác định được sao sách định viết.",
+      "key": "HoaCai",
+      "profile": {
+        "element": "Kim",
+        "labels": []
+      },
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hoa Cái (Kim)",
+          "Chủ phú qúy, quyền thế",
+          "kết hợp thành bộ sao Tứ Linh",
+          "Gặp Mộc, Riêu hội hợp: có tính dâm đãng"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đẹp đẽ, bề ngoài uy nghi; chủ phú quý, quyền thế."
+    },
+    {
+      "key": "ThienTru",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Trù (Thổ)",
+          "Hay ăn uống, thích rượu thịt"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thích ăn uống, ưa rượu thịt; làm tăng tài lộc."
+    },
+    {
+      "aliases": [
+        "Thiên Quan Quý Nhân"
+      ],
+      "body": [
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa; làm tăng phúc thọ."
+      ],
+      "key": "ThienQuan",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Quan Qúy Nhân (Hỏa)",
+          "có lòng tín ngưỡng tôn giáo",
+          "Gia tăng phúc thọ"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, có lòng tín ngưỡng tôn giáo, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "aliases": [
+        "Thiên Phúc Quý Nhân"
+      ],
+      "body": [
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa; làm tăng phúc thọ."
+      ],
+      "key": "ThienPhuc",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Phúc Qúy Nhân (Thổ)",
+          "có lòng tín ngưỡng tôn giáo",
+          "Gia tăng phúc thọ"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, có lòng tín ngưỡng tôn giáo, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "body": [
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa; làm tăng phúc thọ."
+      ],
+      "key": "ThienGiai",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Giải (Hỏa)",
+          "Có đức độ, khoan hòa, nhân hậu"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, khoan hòa, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "body": [
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa; làm tăng phúc thọ."
+      ],
+      "key": "DiaGiai",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Địa Giải ( Thổ)",
+          "Có đức độ, khoan hòa, nhân hậu"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, khoan hòa, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "body": [
+        "Cứu người khốn khó, giúp người nguy nan; giải trừ bệnh tật, tai họa; làm tăng phúc thọ.",
+        "Giải Thần ở cung Điền Trạch hoặc Tài Bạch: tất không thể giàu lớn, của cải hay bị hao hụt."
+      ],
+      "key": "GiaiThan",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Giải Thần (Mộc)",
+          "Có đức độ, khoan hòa, nhân hậu",
+          "có Giải Thần tọa thủ, tất không thể giàu có lớn được"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, khoan hòa, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "body": [
+        "Chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào, Hồng.",
+        "Giải trừ được những bệnh tật nhỏ."
+      ],
+      "correction": "Sách in \"tinh hoa nguyệt\", hiểu là \"tính hoa nguyệt\" như mục 3.31 tr. 42.",
+      "keys": [
+        "ThienDuc",
+        "NguyetDuc"
+      ],
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Đức (Hỏa) - Nguyệt Đức (Hỏa)",
+          "Có đức độ, đoan chính, nhân hậu",
+          "Chế được tinh hoa nguyệt, dâm đãng",
+          "Giải trừ được những bệnh tật nhỏ"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, đoan chính, nhân hậu."
+    },
+    {
+      "key": "ThienY",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Y (Thủy)",
+          "Sạch sẽ, cẩn thận, cứu giải bệnh tật"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Sạch sẽ, cẩn thận, cứu giải bệnh tật."
+    },
+    {
+      "body": [
+        "Giữ của cải được bền vững.",
+        "Có hại cho việc cưới hỏi, cho sự đoàn tụ, sống chung của vợ chồng và cho việc nối dõi."
+      ],
+      "keys": [
+        "CoThan",
+        "QuaTu"
+      ],
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Cô Thần (Thổ) - Quả Tú (Thổ)",
+          "Cô độc, lạnh lùng, khó tính, khắc nghiệt",
+          "Có hại cho việc cưới hỏi"
+        ],
+        "pages": [
+          45
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cô độc, lạnh lùng, khó tính, khắc nghiệt, ngại giao thiệp."
+    },
+    {
+      "body": [
+        "Không lợi cho việc sinh nở.",
+        "Gặp nhiều Sát tinh hội hợp: gian trá, quỷ quyệt.",
+        "Đẩu Quân ở Quan Lộc, hội hợp nhiều sao sáng sủa tốt đẹp, nhất là Tử Vi, Thiên Phủ: hưởng phú quý song toàn, uy quyền hiển hách, danh tiếng lừng lẫy."
+      ],
+      "key": "DauQuan",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Đẩu Quân (Hỏa)",
+          "Nghiêm nghị, khắc nghiệt",
+          "Gặp nhiều Sát tinh hội hợp: gian giả, qủy quyệt",
+          "Cung Quan Lộc có Đẩu tọa thủ"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Nghiêm nghị, khắc nghiệt; giữ của cải bền vững."
+    },
+    {
+      "body": [
+        "Ngăn trở mọi công việc.",
+        "Gặp Xương, Khúc: gây họa một cách khủng khiếp."
+      ],
+      "key": "ThienThuong",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Thương (Thổ)",
+          "Buồn thảm. Đem lại nhiều sự không may",
+          "Gặp Xương, Khúc: tác họa một cách khủng khiếp"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Buồn thảm; đem lại nhiều điều không may, gây tang thương, bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Ngăn trở mọi công việc.",
+        "Gặp Xương, Khúc: gây họa một cách khủng khiếp."
+      ],
+      "key": "ThienSu",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên Sứ (Thủy)",
+          "Buồn thảm. Đem lại nhiều sự không may",
+          "Gặp Xương, Khúc: tác họa một cách khủng khiếp"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Buồn thảm; đem lại nhiều điều không may, gây tang thương, bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Ở Mệnh hoặc Tật Ách thì mang đặc tính như Địa Kiếp, nên thường được gọi là Địa Kiếp thứ hai."
+      ],
+      "key": "KiepSat",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp Sát (Hỏa)",
+          "Sát phạt giết chóc, gây tai họa",
+          "thường gọi là Địa Kiếp thứ hai"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Sát phạt, giết chóc, gây tai họa; chủ việc đâm chém, mổ xẻ, châm chích."
+    },
+    {
+      "body": [
+        "Gặp Kiếp Sát đồng cung: gây họa một cách khủng khiếp.",
+        "Mệnh có Lưu Hà tọa thủ: đàn ông chết giữa đường sá, đàn bà chết khi sinh nở."
+      ],
+      "key": "LuuHa",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lưu Hà (Thủy)",
+          "Thâm trầm, gian hiểm, độc ác",
+          "Gặp Kiếp Sát đồng cung: tác họa một cách khủng khiếp",
+          "đàn bà chết khi lâm bồn"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Tính thâm hiểm, độc ác; hay sát phạt, giết chóc, gây tai họa."
+    },
+    {
+      "body": [
+        "Lưu ở Mệnh cùng cung với Phá (toán quân lưỡng phá): dũng mãnh, hiển đạt về võ nghiệp, uy danh lừng lẫy."
+      ],
+      "key": "PhaToai",
+      "profile": {
+        "element": "Hỏa đới Kim",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Phá Toái (Hỏa đới Kim)",
+          "Táo bạo, chóng chán, phá ngang, hao tán",
+          "(toán quân lưỡng phá)"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Táo bạo, chóng chán, phá ngang, hao tán; làm mọi việc bị trở ngại."
+    },
+    {
+      "body": [
+        "Gặp Thái Dương hoặc Thái Âm sáng sủa đồng cung: che lấp ánh sáng của Nhật, Nguyệt.",
+        "Gặp Thái Dương hoặc Thái Âm mờ ám đồng cung: làm Nhật, Nguyệt sáng ra.",
+        "Gặp Thái Dương, Thái Âm đồng cung tại Sửu, Mùi: làm Nhật, Nguyệt thêm rực rỡ, tốt đẹp."
+      ],
+      "key": "ThienTai",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiên Tài (Thổ)",
+          "Gặp sao mờ ám xấu xa: giảm bớt ảnh hưởng xấu của sao đó",
+          "che lấp ánh sáng của Nhật, Nguyệt",
+          "làm cho Nhật Nguyệt sáng tỏ",
+          "Gặp Nhật, Nguyệt đồng cung tại Sửu, Mùi"
+        ],
+        "pages": [
+          46
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Làm giảm ảnh hưởng của sao gặp cùng: bớt xấu cho sao mờ ám, bớt tốt cho sao sáng sủa."
+    },
+    {
+      "keys": [
+        "ThienLa",
+        "DiaVong"
+      ],
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thiên La (Thổ) - Địa Võng (Thổ)",
+          "Hiểm ác, kìm hãm",
+          "Chủ sự bắt bớ, giam cầm"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hiểm ác, kìm hãm; gây rắc rối, ngăn trở mọi việc; chủ việc bắt bớ, giam cầm."
+    },
+    {
+      "body": [
+        "Hội hợp nhiều sao sáng sủa tốt đẹp: lời nói đanh thép, hùng hồn; chủ phú quý, uy quyền.",
+        "Gặp Xương, Khúc, Khôi, Việt: thành bộ Văn tinh, lợi cho làm ăn, học hành, thi cử, cầu công danh.",
+        "Gặp Đà, Kỵ: mọi việc bị ngăn trở, rắc rối; công danh, quyền thế, tài lộc bị tổn hại; có thị phi, kiện cáo, tranh chấp, bệnh tật, giam cầm, tang thương.",
+        "Gặp Sát tinh: phúc thọ bị giảm; công danh, quyền thế, tài lộc bị tổn hại; nhiều điều chẳng lành như thị phi, kiện cáo, tù tội, tai nạn, bệnh tật, tang thương.",
+        "Mệnh có Thái Tuế và Hoa Cái đồng cung: ăn nói kiêu kỳ."
+      ],
+      "key": "ThaiTue",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Legal",
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thái Tuế (Hỏa)",
+          "Khinh người, lạnh lùng, không thích giao thiệp",
+          "nói năng đanh thép, hùng hồn",
+          "kết hợp thành bộ Văn tinh",
+          "Gặp Đà, Kỵ: ngăn trở mọi công việc",
+          "Gặp Sát tinh: chiết giảm phúc thọ",
+          "Cung Mệnh có Tuế, Cái tọa thủ đồng cung: ăn nói kiêu kỳ"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Khinh người, lạnh lùng, ít giao thiệp, ít tình cảm; biết xét đoán, hay lý luận."
+    },
+    {
+      "body": [
+        "Thiếu Dương hoặc Thiếu Âm gặp Hóa Khoa đồng cung hoặc xung chiếu: thành bộ sao làm tăng phúc thọ, cứu người khốn khó, giúp người nguy nan, giải trừ bệnh tật, tai họa.",
+        "Thiếu Dương gặp Thái Dương sáng sủa đồng cung: rất rực rỡ tốt đẹp, như mặt trời thứ hai."
+      ],
+      "key": "ThieuDuong",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiếu Dương (Hỏa)",
+          "Thông minh, vui vẻ, hòa nhã, nhân hậu",
+          "Thiếu Dương hay Thiếu Âm gặp Khoa",
+          "Thiếu Dương ví như mặt trời thứ hai"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, vui vẻ, hòa nhã, nhân hậu, hay làm việc thiện; giải trừ bệnh tật, tai họa nhỏ."
+    },
+    {
+      "body": [
+        "Thiếu Dương hoặc Thiếu Âm gặp Hóa Khoa đồng cung hoặc xung chiếu: thành bộ sao làm tăng phúc thọ, cứu người khốn khó, giúp người nguy nan, giải trừ bệnh tật, tai họa."
+      ],
+      "key": "ThieuAm",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thiếu Âm (Thủy)",
+          "Thông minh, vui vẻ, hòa nhã, nhân hậu",
+          "Thiếu Dương hay Thiếu Âm gặp Khoa"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thông minh, vui vẻ, hòa nhã, nhân hậu, hay làm việc thiện; giải trừ bệnh tật, tai họa nhỏ."
+    },
+    {
+      "body": [
+        "Gặp sao tốt đẹp thì làm cho tốt đẹp thêm; gặp sao xấu xa thì làm cho xấu xa thêm.",
+        "Gặp Xương, Khúc, Tuế: lợi cho những việc liên quan đến pháp luật.",
+        "Gặp Liêm, Tang, Hổ: tổn hại công danh, quyền thế; gây họa khủng khiếp như bệnh tật, tai nạn, tù tội, thị phi, kiện cáo, tang thương.",
+        "Gặp Tuế, Đà, Kỵ: công danh, quyền thế bị tổn hại; mọi việc rắc rối, ngăn trở; có thị phi, kiện cáo, giam cầm."
+      ],
+      "key": "QuanPhuThaiTue",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Legal",
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Quan Phù (Hỏa)",
+          "Biết xét đoán, lý luận. Hay giúp đỡ",
+          "Gặp Xương, Khúc, Tuế: lợi ích cho những việc có liên quan đến pháp luật",
+          "Gặp Liêm, Tang, Hổ: tổn hại đến công danh, quyền thế",
+          "Gặp Tuế, Đà, Kỵ: tổn hại đến công danh, quyền thế"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Giỏi xét đoán, lý luận, hay giúp đỡ người; chủ về thị phi, kiện cáo và việc liên quan đến pháp luật."
+    },
+    {
+      "keys": [
+        "TuPhu",
+        "TrucPhu"
+      ],
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tử Phù (Hỏa) - Trực Phù (Hỏa)",
+          "Buồn thảm. Chủ tang thương"
+        ],
+        "pages": [
+          47
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Buồn thảm, chủ về tang thương; làm mọi việc rắc rối, bị ngăn trở."
+    },
+    {
+      "body": [
+        "Mệnh, Thân có Tuế Phá tọa thủ: răng xấu, hay đau răng."
+      ],
+      "key": "TuePha",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuế Phá (Hỏa)",
+          "Ngang ngược, phá tán",
+          "có Tuế Phá tọa thủ: răng xấu, hay đau"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Ngang ngược, phá tán."
+    },
+    {
+      "body": [
+        "Gặp Thiên Đức, Nguyệt Đức: thành bộ Tứ Đức, chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào, Hồng."
+      ],
+      "key": "LongDuc",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Long Đức (Thủy)",
+          "Có đức độ, đoan chính, hòa nhã, nhân hậu",
+          "kết hợp thành bộ Tứ Đức"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, đoan chính, hòa nhã, nhân hậu, hay làm việc thiện; giải trừ bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Gặp Thiên Đức, Nguyệt Đức: thành bộ Tứ Đức, chế được tính lẳng lơ hoa nguyệt, dâm đãng của Đào, Hồng."
+      ],
+      "key": "PhucDuc",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Phúc Đức (Thổ)",
+          "Có đức độ, đoan chính, hòa nhã, nhân hậu",
+          "kết hợp thành bộ Tứ Đức"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Có đức độ, đoan chính, hòa nhã, nhân hậu, hay làm việc thiện; giải trừ bệnh tật, tai họa."
+    },
+    {
+      "body": [
+        "Chủ bệnh tật, đau yếu, tai nạn, tang thương.",
+        "Gặp Tang, Hình: gây ra những chuyện chẳng lành như tai nạn xe cộ, té ngã, bệnh tật, tang thương."
+      ],
+      "correction": "Tr. 48: \"cẩn thân\" là \"cẩn thận\"; \"gây ra không sự chẳng lành\" hiểu là gây ra những sự chẳng lành, vì câu liệt kê ngay các việc đó.",
+      "key": "DieuKhach",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Điếu Khách (Hỏa)",
+          "nói năng không cẩn thân",
+          "gây ra không sự chẳng lành, như tai nạn xe cộ"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Khinh người, hay khoe khoang, nói năng không cẩn thận, ham chơi."
+    },
+    {
+      "body": [
+        "Gặp sao tốt đẹp thì làm cho tốt đẹp thêm, đem may mắn đến nhanh chóng.",
+        "Gặp sao xấu xa thì làm cho xấu xa thêm, đem điều chẳng lành đến nhanh chóng."
+      ],
+      "key": "LucSy",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Lực Sỹ (Hỏa)",
+          "Có sức khỏe, mạnh bạo, nhanh nhẹn",
+          "Đem những sự chẳng lành đến một cách nhanh chóng"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Khỏe mạnh, mạnh bạo, nhanh nhẹn, hay ăn uống; chủ uy lực."
+    },
+    {
+      "body": [
+        "Ở Tứ Mộ gặp Hóa Kỵ đồng cung, như rồng xanh ẩn trong mây năm sắc: rất rực rỡ tốt đẹp; chủ phú quý, uy quyền, đem lại nhiều may mắn đáng mừng.",
+        "Gặp Lưu cùng cung, như rồng xanh tung hoành trên sông lớn: rất rực rỡ, tốt đẹp; lợi cho thi cử, cầu công danh."
+      ],
+      "key": "ThanhLong",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Thanh Long (Thủy)",
+          "Tọa thủ tại Tứ Mộ, gặp Kỵ đồng cung",
+          "rồng xanh vùng vẫy trên sông lớn"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, hòa nhã; lợi cho cầu công danh, cưới hỏi, sinh nở; giải trừ bệnh tật, tai họa nhỏ."
+    },
+    {
+      "body": [
+        "Lợi cho việc cầu công danh; chủ uy quyền và những việc liên quan đến quân sự.",
+        "Gặp Thiên Tướng đồng cung: uy quyền hiển hách.",
+        "Gặp Tuần, Triệt án ngữ, như ông tướng cụt đầu (đoản đầu tướng quân): tổn hại công danh, quyền thế; chủ bị giáng chức, cách chức, tai nạn xe cộ hoặc dao súng, sát hại rất khủng khiếp.",
+        "Đàn bà có Tướng Quân tọa thủ ở Mệnh: hay ghen tuông, hay lấn át chồng."
+      ],
+      "correction": "Sách in \"Thiên, Tướng\" có dấu phẩy, hiểu là sao Thiên Tướng vì mục đang nói Tướng Quân gặp một sao đồng cung.",
+      "key": "TuongQuan",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng Quân (Mộc)",
+          "có óc lãnh tụ, thích cầm đầu",
+          "Gặp Thiên, Tướng đồng cung: uy quyền hiển hách",
+          "(đoản đầu tướng quân)",
+          "hay ghen tuông, hay lấn át chồng"
+        ],
+        "pages": [
+          48
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Can đảm, dũng mãnh, hiên ngang, kiêu căng; mang óc lãnh tụ, thích cầm đầu."
+    },
+    {
+      "body": [
+        "Lợi cho việc viết văn, bàn luận và đàn hát."
+      ],
+      "key": "TauThu",
+      "profile": {
+        "element": "Kim",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Tấu Thư (Kim)",
+          "Lợi ích cho việc làm văn, đàm luận và đàn hát"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, ăn nói khéo léo."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao tốt đẹp: đem may mắn đáng mừng đến nhanh chóng.",
+        "Gặp nhiều sao xấu xa: đem điều chẳng lành đến mau chóng.",
+        "Gặp Việt, Hỏa, Linh, Hình: như mũi tên hòn đạn, chủ việc đâm, chém, bắn, giết.",
+        "Ở cung Tử Tức: bớt số con.",
+        "Ở cung Huynh Đệ: bớt số anh chị em."
+      ],
+      "key": "PhiLiem",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phi Liêm (Hỏa)",
+          "ví như mũi tên hòn đạn",
+          "Tọa thủ tại cung Tử Tức: giảm bớt số con"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ, nhanh nhẹn, nhưng không lợi cho việc sinh nở."
+    },
+    {
+      "body": [
+        "Gặp Long, Phượng: rất rực rỡ tốt đẹp; chủ việc vui mừng, lợi cho thi cử, cầu công danh, cưới hỏi, sinh nở."
+      ],
+      "key": "HyThan",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Hỷ Thần (Hỏa)",
+          "Gặp Long, Phượng: rất rực rỡ tốt đẹp"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Vui vẻ; đem lại may mắn đáng mừng, lợi cho việc cưới hỏi."
+    },
+    {
+      "body": [
+        "Mệnh có Bệnh Phù tọa thủ: ốm yếu, da xanh xao vàng vọt.",
+        "Mệnh hoặc Tật Ách có Bệnh Phù tọa thủ, lại gặp Đào, Hồng, Riêu hội hợp: chắc chắn mắc bệnh phong tình."
+      ],
+      "key": "BenhPhu",
+      "profile": {
+        "element": "Thổ đới Mộc",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh Phù (Thổ đới Mộc)",
+          "da xanh xao vàng vọt",
+          "chắc chắn là mắc bệnh phong tình"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đau yếu, buồn rầu; chủ bệnh tật."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao tốt đẹp: hay giúp đỡ, phò tá người; chủ về việc quân sự.",
+        "Gặp nhiều sao xấu xa: hay lừa đảo, trộm cắp; chủ về việc ám muội, hãm hại người."
+      ],
+      "correction": "Bỏ chữ \"giam quyền\" ở câu gặp nhiều sao xấu xa: không rõ nghĩa, có thể là lỗi in, không đoán.",
+      "key": "PhucBinh",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phục Binh (Hỏa)",
+          "hay giúp đỡ, phò tá",
+          "giam quyền, hay lừa đảo, trộm cắp"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Tốt hay xấu theo sao hội hợp: gặp sao tốt thì phò tá, gặp sao xấu thì ám muội, hãm hại."
+    },
+    {
+      "key": "QuanPhuBacSy",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Quan Phù (Hỏa)",
+          "Gây rắc rối, phiền nhiễu"
+        ],
+        "pages": [
+          49
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Gây rắc rối, phiền nhiễu, ngăn trở mọi công việc."
+    },
+    {
+      "aliases": [
+        "Tràng Sinh"
+      ],
+      "body": [
+        "Lợi cho việc sinh nở.",
+        "Ở Dần, Thân, Tỵ gặp Thiên Mã đồng cung: mọi việc dễ dàng, chóng thành, đem lại nhiều may mắn đáng mừng; chủ công danh, quyền thế.",
+        "Ở Hợi gặp Thiên Mã đồng cung: chủ trắc trở, vất vả, không lợi cho việc cầu công danh.",
+        "Ở Tật Ách, hội hợp nhiều sao mờ ám xấu xa: bệnh tật, đau yếu lâu khỏi."
+      ],
+      "key": "TruongSinh",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tràng Sinh (Thủy)",
+          "Nhân hậu, từ thiện, có độ lượng",
+          "Tọa thủ tại Hợi gặp Mã đồng cung",
+          "Tọa thủ tại cung Tật ách"
+        ],
+        "pages": [
+          49,
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Nhân hậu, hay làm việc thiện, rộng lượng; tăng phúc thọ; chủ sự bền vững, lâu dài."
+    },
+    {
+      "body": [
+        "Chủ việc tắm gội, làm dáng, đi xa.",
+        "Gặp Đào, Hồng, Riêu, Cái: mắc bệnh tật, tai họa vì sắc dục.",
+        "Mộc Dục ở Mệnh mà không được nhiều sao sáng sủa tốt đẹp hội hợp: tất chuyên về nghề thủ công: thợ kim hoàn, thợ rèn.",
+        "Mệnh vô Chính diệu có Mộc Dục tọa thủ hoặc xung chiếu: hay bỏ dở việc, học hành đứt quãng, dù học nhiều cũng không thành tài."
+      ],
+      "correction": "Tr. 50: \"làm giáng\" là \"làm dáng\".",
+      "key": "MocDuc",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "Sexuality",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mộc Dục (Thủy)",
+          "Chủ sự tắm gội, làm giáng, sự đi xa",
+          "Gặp Đào, Hồng, Riêu, Cái",
+          "thợ làm vàng bạc, thợ rèn",
+          "Cung Mệnh vô Chính diệu có Mộc"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hay thay đổi, chán nản, bỏ dở công việc; dâm dật, u mê, hay nhầm lẫn."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao mờ ám xấu xa: sinh rắc rối, phiền nhiễu, mọi việc bị ngăn trở.",
+        "Gặp nhiều Sát tinh, Bại tinh, như sợi dây thắt cổ: chủ sự trói buộc, tự thắt cổ."
+      ],
+      "key": "QuanDoi",
+      "profile": {
+        "element": "Kim",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Quan Đới (Kim)",
+          "Ham thích công danh",
+          "ví như sợi dây thắt cổ"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Ham công danh; chủ chức vị, quyền thế."
+    },
+    {
+      "body": [
+        "Gặp nhiều sao sáng sủa tốt đẹp: chủ phát đạt, vui vẻ.",
+        "Gặp nhiều sao mờ ám xấu xa: chủ phiền nhiễu, ngăn trở mọi việc."
+      ],
+      "correction": "Tr. 50: \"làm giáng\" là \"làm dáng\" (như mục 3.75 cùng trang); \"lấy điện\" hiểu là \"lấy điệu\", tức làm điệu.",
+      "key": "LamQuan",
+      "profile": {
+        "element": "Kim",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Lâm Quan (Kim)",
+          "thích làm giáng, lấy điện, nói năng kiểu cách"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Hay khoe khoang, thích làm dáng, làm điệu, nói năng kiểu cách."
+    },
+    {
+      "body": [
+        "Tăng phúc thọ, giải trừ bệnh tật, tai họa; lợi cho công danh, quyền thế, tài lộc.",
+        "Chủ sinh sản nhiều và mau chóng; chủ sự thịnh đạt.",
+        "Mệnh, Thân có Đế Vượng tọa thủ, gặp Tử Vi: có tài lãnh đạo."
+      ],
+      "correction": "Bỏ hai chữ \"đại ca\" sau \"gặp Tử Vi\": không rõ nghĩa, có thể là lỗi in, không đoán.",
+      "key": "DeVuong",
+      "profile": {
+        "element": "Kim",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Đế Vượng (Kim)",
+          "Uy nghi, đường bệ, vui vẻ",
+          "Chủ sự sinh sản nhiều và mau chóng",
+          "có tài lãnh đạo"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Uy nghi, đường bệ, vui vẻ, nhân hậu, hay làm việc thiện."
+    },
+    {
+      "key": "Suy",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Suy (Thủy)",
+          "Yếu đuối, hèn kém"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Yếu đuối, hèn kém; chủ sự sa sút, suy bại."
+    },
+    {
+      "key": "Benh",
+      "profile": {
+        "element": "Hỏa",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh (Hỏa)",
+          "Đau yếu, suy nhược, buồn rầu, khờ khạo"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Đau yếu, suy nhược, buồn rầu, khờ khạo, hay lầm lẫn; chủ về bệnh tật."
+    },
+    {
+      "body": [
+        "Làm giảm phúc thọ; chủ sự chết chóc, tang thương, sầu thảm.",
+        "Điền Trạch hoặc Tài Bạch có sao Tử tọa thủ: có nhiều tiền bạc, của quý chôn giấu; là người cần kiệm, biết giữ của."
+      ],
+      "correction": "Tr. 50: \"xâu xa\" là \"sâu xa\".",
+      "key": "Tu",
+      "profile": {
+        "element": "Thủy",
+        "labels": []
+      },
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tử (Thủy)",
+          "Hay suy nghĩ xâu xa",
+          "Chủ sự chết chóc, tang thương, sầu thảm",
+          "qúy vật chôn giấu"
+        ],
+        "pages": [
+          50
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Thâm trầm, kín đáo, hay suy nghĩ sâu xa, đa sầu đa cảm."
+    },
+    {
+      "body": [
+        "Phúc Đức ở Tứ Mộ có Mộ tọa thủ: rất rực rỡ tốt đẹp; trong họ có mồ mả đã kết phát, ba bốn đời giàu sang vinh hiển."
+      ],
+      "correction": "Tr. 51: \"có Một tọa thủ\" là \"có Mộ tọa thủ\", vì đang ở mục 3.82 Mộ.",
+      "key": "Mo",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Mộ (Thổ)",
+          "Ngu si đần độn, u mê",
+          "an tại Tứ Mộ có Một tọa thủ",
+          "ba bốn đời giàu sang vinh hiển"
+        ],
+        "pages": [
+          51
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Ngu muội, đần độn, u mê; chủ sự nhầm lẫn và việc chôn cất."
+    },
+    {
+      "body": [
+        "Mệnh có Tuyệt tọa thủ: khôn ngoan, nhiều mưu trí."
+      ],
+      "key": "Tuyet",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "source_ref": {
+        "keywords": [
+          "Tuyệt (Thổ)",
+          "Chủ sự bại hoại, tiêu tán, khô cạn",
+          "Cung Mệnh có Tuyệt tọa thủ"
+        ],
+        "pages": [
+          51
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chủ về bại hoại, tiêu tán, khô cạn; mọi việc bế tắc; phúc thọ bị giảm."
+    },
+    {
+      "body": [
+        "Thai ở bất cứ cung nào, gặp Tuần, Triệt án ngữ hoặc nhiều Sát tinh, Bại tinh hội hợp: vừa lọt lòng mẹ đã đau yếu, quặt quẹo, thường do sinh thiếu tháng."
+      ],
+      "key": "Thai",
+      "profile": {
+        "element": "Thổ",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thai (Thổ)",
+          "Ngu dốt, mê muội, hay nhầm lẫn, a dua, chơi bời",
+          "thường là sinh thiếu tháng"
+        ],
+        "pages": [
+          51
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Ngu dốt, mê muội, hay nhầm lẫn, a dua, ham chơi; chủ việc giao hợp, thụ thai, sinh nở."
+    },
+    {
+      "body": [
+        "Ở Mệnh: được nhiều người yêu mến, nuôi súc vật rất dễ.",
+        "Ở Thân: có nhiều con.",
+        "Ở Phúc Đức hoặc Mệnh: làm con nuôi người khác.",
+        "Ở Tật Ách, hội hợp nhiều sao mờ ám xấu xa: nhiều bệnh tật, đau yếu lâu khỏi.",
+        "Ở Tử Tức: có con nuôi.",
+        "Ở Huynh Đệ: có anh chị em nuôi."
+      ],
+      "correction": "Tr. 51: \"nuôi nắng, chăn giắt\" là \"nuôi nấng, chăn dắt\".",
+      "key": "Duong",
+      "profile": {
+        "element": "Mộc",
+        "labels": []
+      },
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Dưỡng (Mộc)",
+          "Chủ sự phù trì, nuôi nắng, chăn giắt",
+          "làm con nuôi người khác",
+          "có anh chị, em nuôi"
+        ],
+        "pages": [
+          51
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Chăm chỉ, cẩn thận; chủ sự che chở, nuôi nấng, chăn dắt."
+    }
+  ]
+}

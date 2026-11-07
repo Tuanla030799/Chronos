@@ -1,0 +1,22 @@
+{
+  "batch": "TV-03",
+  "collection": "tuvi.palace",
+  "entries": [
+    {
+      "key": "Menh",
+      "source_ref": {
+        "keywords": [
+          "phải căn cứ vào cung Mệnh để xem",
+          "Từ 30 tuổi trở đi, phải căn cứ vào cung Thân"
+        ],
+        "pages": [
+          52
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cung để xét tốt xấu và vận hạn từ lúc sinh đến năm 30 tuổi; từ 30 tuổi trở đi phải xét cung Thân, nhưng vẫn phải chú ý cung Mệnh."
+    }
+  ]
+}
