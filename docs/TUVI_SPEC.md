@@ -631,6 +631,25 @@ Lấy từ danh sách của từng sao ở tr. 33–38. M là `Mieu`, V là `Vuo
 
 Sách 2 in Vũ Khúc ở Tý là M, Sách 3 in Phá Quân ở Mùi là Đ. Bảng trên theo danh sách tr. 35 và tr. 38, xem T7. Hai ô này ở V1, V2 ghi theo bảng.
 
+#### Phụ tinh và Hóa Kỵ
+
+Lấy từ tr. 39–43, D8 và D13 của `docs/INTERPRETATION_DB_SPEC.md`: chủ dự án chốt theo sách, kể cả Hỏa, Linh và Xương, Khúc. Sách chỉ liệt kê Đắc địa, không liệt kê Hãm địa. Lá số in không đánh dấu độ sáng phụ tinh.
+
+| Sao | Rust | Đắc địa | Còn lại |
+| :-- | :-- | :-- | :-- |
+| Kình Dương, Đà La | `KinhDuong`, `DaLa` | Thìn, Tuất, Sửu, Mùi | Hãm |
+| Hỏa Tinh, Linh Tinh | `HoaTinh`, `LinhTinh` | Dần, Mão, Thìn, Tỵ, Ngọ | Hãm |
+| Văn Xương, Văn Khúc | `VanXuong`, `VanKhuc` | Thìn, Tuất, Sửu, Mùi, Tỵ, Hợi | Hãm |
+| Địa Không, Địa Kiếp | `DiaKhong`, `DiaKiep` | Dần, Thân, Tỵ, Hợi | Hãm |
+| Tang Môn, Bạch Hổ | `TangMon`, `BachHo` | Dần, Thân, Mão, Dậu | Hãm |
+| Thiên Khốc, Thiên Hư | `ThienKhoc`, `ThienHu` | Tý, Ngọ, Mão, Dậu, Sửu, Mùi | Hãm |
+| Thiên Riêu | `ThienRieu` | Dần, Mão, Dậu, Tuất | Hãm |
+| Đại Hao, Tiểu Hao, Thiên Hình | `DaiHao`, `TieuHao`, `ThienHinh` | Dần, Thân, Mão, Dậu | `None` |
+| Thiên Mã | `ThienMa` | Tỵ, Dần | `None` |
+| Hóa Kỵ | `FourTransformations::HoaKy` | Thìn, Tuất, Sửu, Mùi | Hãm |
+
+"Còn lại" là `Ham` khi sách có dùng chữ hãm địa cho sao đó, `None` khi sách không dùng. Sao khác không có độ sáng.
+
 ### 6.2. Vector kiểm thử
 
 Các vector chứa đủ 105 sao và 4 Hóa. Vòng Trường Sinh và Tứ Hóa nằm cùng cột **Sao khác**. Đầu vào của V1, V2, V4, V5 là ngày âm in trong sách; ngày dương chỉ để tham khảo, đổi bằng `lunar_to_solar` ở UTC+7.

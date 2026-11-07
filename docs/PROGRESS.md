@@ -4,7 +4,7 @@
 > Cập nhật lần cuối: **2026-11-07**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D12 đã chốt, `astro-data` và 2 batch thử đã duyệt. Đang làm bảng độ sáng phụ tinh và module `content`.
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D12 đã chốt, TV-01, TV-15 đã duyệt, bảng độ sáng phụ tinh và module `content` xong. D13 đã chốt theo sách.
 
 ## 1. Trạng thái
 
@@ -27,9 +27,10 @@
 | Đặc tả Phong Thủy | ✅ Xong | `docs/FENGSHUI_SPEC.md`; F1–F5 đã chốt |
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
-| Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `review`; 71 test |
+| Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `scan`, `review`; V1–V13; 80 test |
 | Dữ liệu luận giải | 🟡 Đang làm | TV-01, TV-15 đã duyệt; còn 17 batch Tử Vi và 11 batch khác |
-| Module `content` (khóa và facts) | ⏳ Chưa làm | Task 5A.3 |
+| Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
+| Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
@@ -37,8 +38,9 @@
 ## 2. Việc tiếp theo
 
 - [x] Duyệt TV-01, TV-15; chốt D6a, D6b, D10, D11, D12
-- [ ] Task 5A.3: module `content`, V10, V13
-- [ ] Bảng độ sáng phụ tinh (D8)
+- [x] Task 5A.3: module `content`, V10, V13, bảng độ sáng phụ tinh
+- [x] Chốt D13 theo sách; `rights` của *Tân Biên* là `paraphrased`
+- [ ] Task 5A.4: skill `/ingest-content`, chạy các batch còn lại
 - [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -56,6 +58,17 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-07 — Task 5A.3: D8, module `content`, V13
+
+- Chốt D6a, D6b, D10, D11, D12; duyệt TV-01, TV-15; commit pilot (`44c7e27`, `a0de711`, `2913d13`).
+- D8: `TuViStar::brightness_at` có thêm 17 phụ tinh, `FourTransformations::brightness_at` cho Hóa Kỵ, theo tr. 39–43. Bảng trong Task 5A.3 khác sách ở Hỏa Linh, Xương Khúc; dùng theo sách, ghi D13. Đại Hao, Tiểu Hao, Thiên Mã, Thiên Hình không có `Ham` vì sách không gọi hãm.
+- `NineStar::phase_in`, `NineStarPhase` theo D6.
+- `content.rs`: khóa cho ngày, hạn tuổi, Bát Tự, Bát Trạch, Cửu Tinh; `tuvi_palace_query`, `Gate`, `gate_matches`. Swift, WASM có thêm 14 hàm mỗi bên.
+- Đọc lại sách: quy tắc mượn sao xung chiếu chỉ có ở 8 cung, không phải 12. Cung vô Chính diệu luôn đối diện đúng 2 Chính Tinh (24/24 trạng thái).
+- `astro-data`: V13 quét lá số bằng `content`, dừng khi thấy đủ; V10 fixture 5 vector, đối chiếu tay V2, V3, V4, V5 với lời sách; `tier` cho D12; test mọi khóa của `content` đều có trong registry.
+- TV-15: 14 đoạn chuyển `condition_text` sang `brightness`. Một cung Quan Lộc còn trung bình 6,3 đoạn, 2,6 đoạn chắc chắn.
+- Kiểm chứng: 279 test core, 80 test `astro-data`, 26 test FFI, 30 test WASM đều qua; `clippy -D warnings`, `rustfmt` sạch; `wasm-pack build`, `./build-ios.sh` thành công; chương trình Swift thật chạy qua bindings, kể cả nhánh lỗi. 116/116 đoạn xuất hiện trên 510.432 lá số.
 
 ### 2026-11-07 — Task 5A.2: `astro-data` và hai batch thử
 
@@ -288,6 +301,7 @@
 | `crates/astro-core/src/almanac.rs` | 12 Trực, 28 Sao, 12 Thần, 15 Thần Sát, ngày kỵ Việt Nam, hạn tuổi |
 | `crates/astro-core/src/fengshui.rs` | Bát Trạch, Mệnh Quái, Trạch Quái, Bát Biến, Tam Nguyên Cửu Vận, Cửu Tinh, bàn Cửu Cung |
 | `crates/astro-core/src/tuvi.rs` | Lá số Tử Vi: 12 cung, Cục, 105 sao, Tứ Hóa, Miếu Hãm, Tuần, Triệt, Đại Hạn, Tiểu Hạn, Thiên Bàn |
+| `crates/astro-core/src/content.rs` | Khóa luận giải, truy vấn cung, cổng lọc đoạn |
 | `crates/astro-core/src/day_info.rs` | Dữ liệu cho một ô lịch |
 | `crates/astro-ffi/` | Cầu nối UniFFI (Swift module `AstroCore`) |
 | `crates/astro-ffi/src/bin/uniffi-bindgen.rs` | Trình sinh bindings, cùng phiên bản `uniffi` với thư viện |
@@ -320,6 +334,9 @@
 | Bàn Cửu Cung | `generate_loshu_grid(center_star, forward)`, `LoShuGrid::star_at`, `rows` | `generateLoshuGrid(centerStar:forward:)`, `loShuStarAt(grid:palace:)`, `loShuRows(grid:)` | `generateLoshuGrid(center_star, forward?)`, `loShuStarAt(grid, palace)`, `loShuRows(grid)` |
 | Lá số Tử Vi | `tuvi_chart(birth, gender, &config)`, `tuvi_chart_from_lunar(lunar, hour, gender, &config)` | `tuviChart(birth:gender:config:)`, `tuviChartFromLunar(lunar:hour:gender:config:)` | `tuviChart(birth, gender, options?)`, `tuviChartFromLunar(lunar, hour, gender, options?)` |
 | Hạn theo tuổi | `TuViChart::dai_han_palace(age)`, `tieu_han_palace(age)` | `tuviDaiHanPalace(chart:age:)`, `tuviTieuHanPalace(chart:age:)` | `tuviDaiHanPalace(chart, age)`, `tuviTieuHanPalace(chart, age)` |
+| Khóa luận giải | `almanac_day_keys`, `age_restriction_keys`, `bazi_keys`, `kua_key`, `kua_compatibility_keys`, `eight_star_key`, `eight_star_use_key`, `nine_star_key` | Cùng tên camelCase | Cùng tên camelCase |
+| Chọn đoạn Tử Vi | `tuvi_palace_query(&chart, branch)`, `gate_matches(&gates, &facts)` | `tuviPalaceQuery(chart:branch:)`, `gateMatches(gates:facts:)` | `tuviPalaceQuery(chart, branch)`, `gateMatches(gates, facts)` |
+| Trạng thái Cửu Tinh | `NineStar::phase_in(period)`, `NineStarPhase::name_vi`, `is_auspicious` | `nineStarPhase(star:period:)`, `nineStarPhaseName`, `nineStarPhaseIsAuspicious` | Cùng tên |
 | Thuộc tính sao | `TuViStar::name_vi`, `category`, `nature`, `brightness_at`; `FourTransformations::star_for` | `tuviStarName`, `tuviStarCategory`, `tuviStarNature`, `tuviStarBrightness`, `fourTransformationStar` | Cùng tên với Swift |
 | Thời khắc giao tiết | `get_exact_solar_term_time(year, term, tz_offset)` | `getExactSolarTermTime(year:term:tzOffset:)` | `getExactSolarTermTime(year, term, tz_offset?)` |
 | Giờ mặt trời thực | `to_true_solar_time(clock, longitude, standard_meridian)` | `trueSolarTime(clock:longitude:tzOffset:)` | `trueSolarTime(clock, longitude, tz_offset?)` |
@@ -332,14 +349,15 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 254 test core + 71 astro-data + 21 FFI
+cargo test --workspace                                  # 279 test core + 80 astro-data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
-wasm-pack test --node crates/astro-wasm                 # 28 test
+wasm-pack test --node crates/astro-wasm                 # 30 test
 ./build-ios.sh                                          # cần Xcode
 cargo run -p astro-data -- validate                     # kiểm dữ liệu luận giải
 cargo run -p astro-data -- build                        # build/content/
+cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 ```
 
 Dữ liệu đối chiếu trong test:
