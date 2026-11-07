@@ -21,7 +21,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "harmony": "ThuanLy",
@@ -47,7 +47,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "harmony": "NghichLy",
@@ -73,7 +73,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -132,7 +132,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -192,7 +192,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -252,7 +252,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -313,7 +313,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -377,7 +377,6 @@
       "body": [
         "Cung Mệnh ở Tuyệt địa mà có Chính diệu cứu giải gọi là tuyệt xứ phùng sinh: như cành hoa tuy mong manh nhưng lâu tàn, nên cũng không đáng lo ngại nhiều."
       ],
-      "condition_text": "Chính diệu tọa thủ sinh được Bản Mệnh",
       "id": "menh/tuyet-dia/03",
       "source_ref": {
         "keywords": [
@@ -389,7 +388,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "ban_menh": [
@@ -397,6 +396,12 @@
           ],
           "branches": [
             "Dan"
+          ],
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
           ],
           "is_menh": true
         },
@@ -407,6 +412,12 @@
           "branches": [
             "Than"
           ],
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
+          ],
           "is_menh": true
         },
         {
@@ -415,6 +426,12 @@
           ],
           "branches": [
             "Hoi"
+          ],
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
           ],
           "is_menh": true
         },
@@ -425,6 +442,12 @@
           ],
           "branches": [
             "Ti"
+          ],
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
           ],
           "is_menh": true
         }
@@ -448,7 +471,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -456,11 +479,11 @@
             "Suu"
           ],
           "gender": "Male",
+          "is_menh": true,
           "year_branches": [
             "Ngo",
             "Mui"
-          ],
-          "is_menh": true
+          ]
         }
       ]
     },
@@ -482,7 +505,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -514,7 +537,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -543,7 +566,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -575,15 +598,9 @@
           "PhaQuan"
         ]
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Như vậy là thuận lý, chắc chắn độ số gia tăng. Ví dụ: Mệnh ở Mão là cung Mộc, có Thái Dương hành Hỏa tọa thủ, người Thổ Mệnh; Mộc sinh Hỏa, Hỏa lại sinh Thổ."
       ],
-      "condition_text": "hành của cung Mệnh sinh được Chính diệu tọa thủ, và Chính diệu ấy lại sinh được Bản Mệnh",
       "id": "menh/sinh-khac/01",
       "source_ref": {
         "keywords": [
@@ -596,7 +613,21 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "element_relation_all": [
+            {
+              "pair": "CungChinhTinh",
+              "relation": "Sinh"
+            },
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
+          ]
+        }
+      ]
     },
     {
       "anchor": {
@@ -618,15 +649,9 @@
           "PhaQuan"
         ]
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Như vậy là nghịch lý: độ số giảm thiểu."
       ],
-      "condition_text": "Chính diệu ở Mệnh sinh ra hành của cung Mệnh, hoặc Bản Mệnh sinh ra Chính diệu ấy",
       "id": "menh/sinh-khac/02",
       "source_ref": {
         "keywords": [
@@ -638,7 +663,21 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "element_relation": [
+            {
+              "pair": "CungChinhTinh",
+              "relation": "DuocSinh"
+            },
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "Sinh"
+            }
+          ]
+        }
+      ]
     },
     {
       "anchor": {
@@ -660,15 +699,9 @@
           "PhaQuan"
         ]
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Cũng là nghịch lý, độ số giảm thiểu, nhưng đáng lo ngại hơn trường hợp Chính diệu sinh cung Mệnh hay Bản Mệnh sinh Chính diệu."
       ],
-      "condition_text": "hành của cung Mệnh khắc Chính diệu tọa thủ, hoặc Chính diệu ấy khắc Bản Mệnh",
       "id": "menh/sinh-khac/03",
       "source_ref": {
         "keywords": [
@@ -680,17 +713,26 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "element_relation": [
+            {
+              "pair": "CungChinhTinh",
+              "relation": "Khac"
+            },
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "BiKhac"
+            }
+          ]
+        }
+      ]
     },
     {
       "anchor": {
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Tuy cũng được hưởng giàu sang, nhưng thăng trầm thất thường và hay phải lao tâm khổ tứ."
       ],
@@ -706,18 +748,18 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "no_main_star": true,
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Mệnh vô Chính diệu là cung Mệnh không có Chính diệu nào tọa thủ. Người như vậy rất khôn ngoan, sắc sảo; thường là con của vợ lẽ hoặc nàng hầu."
       ],
@@ -732,18 +774,18 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "no_main_star": true,
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Mệnh vô Chính diệu: tất hay đau yếu, sức khỏe rất suy kém. Không chỉ vậy, thời trẻ lại rất vất vả, thường lang thang phiêu bạt khắp nơi."
       ],
@@ -762,18 +804,18 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "no_main_star": true,
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Mệnh vô Chính diệu rất cần Tuần hoặc Triệt án ngữ, cùng Thiên Không, Địa Không hội hợp. Nếu không có, phải có nhiều Chính diệu sáng sủa tốt đẹp chiếu về, cùng nhiều trung tinh rực rỡ tụ hội. Có vậy mới mong sống lâu."
       ],
@@ -792,7 +834,12 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
@@ -817,23 +864,23 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
-          "tuan_triet": "Neither",
-          "is_menh": true
+          "is_menh": true,
+          "tuan_triet": "Neither"
         },
         {
+          "is_menh": true,
           "not_meets": [
             "ThienKhong"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "is_menh": true,
           "not_meets": [
             "DiaKhong"
-          ],
-          "is_menh": true
+          ]
         }
       ]
     },
@@ -841,11 +888,6 @@
       "anchor": {
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Độ số gia tăng, chắc chắn suốt đời được toại nguyện."
       ],
@@ -861,17 +903,17 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Thời trẻ sung sướng, nhưng từ lúc đứng tuổi đến về già lại hiếm khi được toại ý."
       ],
@@ -887,17 +929,17 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Thời trẻ thường phải lao tâm khổ tứ, nhưng từ lúc đứng tuổi đến về già lại sung sướng."
       ],
@@ -913,17 +955,17 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
         "role": "Menh"
       },
-      "when": [
-        {
-          "is_menh": true
-        }
-      ],
       "body": [
         "Gọi là Mệnh nhược Thân cường: suốt đời cũng được toại nguyện, nhưng không thể giàu có lớn."
       ],
@@ -939,7 +981,12 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved",
+      "when": [
+        {
+          "is_menh": true
+        }
+      ]
     },
     {
       "anchor": {
@@ -964,7 +1011,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -973,9 +1020,9 @@
             "Suu",
             "Mui"
           ],
+          "is_menh": true,
           "than_here": true,
-          "tuan_triet": "Neither",
-          "is_menh": true
+          "tuan_triet": "Neither"
         }
       ]
     },
@@ -1001,7 +1048,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -1010,8 +1057,8 @@
             "Suu",
             "Mui"
           ],
-          "than_here": true,
-          "is_menh": true
+          "is_menh": true,
+          "than_here": true
         }
       ]
     },
@@ -1040,15 +1087,15 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
             "Ty",
             "Ngo"
           ],
-          "than_here": true,
-          "is_menh": true
+          "is_menh": true,
+          "than_here": true
         }
       ]
     },
@@ -1071,12 +1118,12 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "is_menh": true,
           "than_here": false,
-          "tuan_triet": "Tuan",
-          "is_menh": true
+          "tuan_triet": "Tuan"
         }
       ]
     },
@@ -1099,12 +1146,12 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "is_menh": true,
           "than_here": false,
-          "tuan_triet": "Triet",
-          "is_menh": true
+          "tuan_triet": "Triet"
         }
       ]
     },
@@ -1118,7 +1165,6 @@
       "body": [
         "Gọi là Mệnh Không, Thân Kiếp: rất khôn ngoan, sắc sảo, nhưng đời vui ít buồn nhiều; mưu sự thành bại thất thường, làm việc gì cũng không bền."
       ],
-      "condition_text": "cung Thân có Địa Kiếp tọa thủ",
       "id": "menh/khong-kiep/01",
       "source_ref": {
         "keywords": [
@@ -1130,11 +1176,14 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
-          "than_here": false,
-          "is_menh": true
+          "in_than": [
+            "DiaKiep"
+          ],
+          "is_menh": true,
+          "than_here": false
         }
       ]
     },
@@ -1146,7 +1195,6 @@
       "body": [
         "Mệnh Không, Thân Kiếp mà cung Mệnh vô Chính diệu lại có Song Hao hội hợp: tuy học ít nhưng vẫn lập được công danh, sự nghiệp khá hiển hách."
       ],
-      "condition_text": "cung Thân có Địa Kiếp tọa thủ",
       "id": "menh/khong-kiep/02",
       "source_ref": {
         "keywords": [
@@ -1158,9 +1206,13 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "in_than": [
+            "DiaKiep"
+          ],
+          "is_menh": true,
           "meets_all": [
             "DaiHao",
             "TieuHao"
@@ -1168,8 +1220,7 @@
           "than_here": false,
           "with_all": [
             "DiaKhong"
-          ],
-          "is_menh": true
+          ]
         }
       ]
     },
@@ -1183,7 +1234,7 @@
       "body": [
         "Mệnh Không, Thân Kiếp gặp trường hợp này thì thật không sống lâu được."
       ],
-      "condition_text": "cung Thân có Địa Kiếp tọa thủ, và cung Mệnh hay cung Thân có Thiên Đồng, Thiên Lương hay Phá Quân tọa thủ",
+      "condition_text": "gặp thêm cung Mệnh hay cung Thân có Thiên Đồng, Thiên Lương hay Phá Quân tọa thủ",
       "id": "menh/khong-kiep/03",
       "sensitivity": [
         "Death"
@@ -1198,11 +1249,14 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
-          "than_here": false,
-          "is_menh": true
+          "in_than": [
+            "DiaKiep"
+          ],
+          "is_menh": true,
+          "than_here": false
         }
       ]
     },
@@ -1216,7 +1270,6 @@
       "body": [
         "Gọi là Mệnh Kiếp, Thân Không: rất khôn ngoan, sắc sảo, nhưng đời vui ít buồn nhiều; mưu sự thành bại bất thường, làm việc gì cũng không bền."
       ],
-      "condition_text": "cung Thân có Địa Không tọa thủ",
       "id": "menh/kiep-khong/01",
       "source_ref": {
         "keywords": [
@@ -1228,11 +1281,14 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
-          "than_here": false,
-          "is_menh": true
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
+          "than_here": false
         }
       ]
     },
@@ -1244,7 +1300,7 @@
       "body": [
         "Mệnh Kiếp, Thân Không mà cung Mệnh vô Chính diệu lại gặp Hồng Loan, Đào Hoa và Sát tinh hội hợp: tất phải chết non."
       ],
-      "condition_text": "cung Thân có Địa Không tọa thủ, và có Sát tinh hội hợp",
+      "condition_text": "gặp thêm Sát tinh hội hợp",
       "id": "menh/kiep-khong/02",
       "sensitivity": [
         "Death"
@@ -1259,9 +1315,13 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "meets_all": [
             "HongLoan",
             "DaoHoa"
@@ -1269,8 +1329,7 @@
           "than_here": false,
           "with_all": [
             "DiaKiep"
-          ],
-          "is_menh": true
+          ]
         }
       ]
     },
@@ -1284,7 +1343,6 @@
       "body": [
         "Mệnh Kiếp, Thân Không: thời trẻ vất vả, gian truân."
       ],
-      "condition_text": "cung Thân có Địa Không tọa thủ, và không phải trường hợp cung Mệnh vô Chính diệu có Hồng, Đào, Sát tinh hội hợp",
       "id": "menh/kiep-khong/03",
       "source_ref": {
         "keywords": [
@@ -1296,119 +1354,167 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "not_meets": [
             "HongLoan"
           ],
-          "than_here": false,
-          "is_menh": true
+          "than_here": false
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "not_meets": [
             "DaoHoa"
           ],
-          "than_here": false,
-          "is_menh": true
+          "than_here": false
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "TuVi"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThienCo"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThaiDuong"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "VuKhuc"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThienDong"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "LiemTrinh"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThienPhu"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThaiAm"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThamLang"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "CuMon"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThienTuong"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThienLuong"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "ThatSat"
-          ],
-          "is_menh": true
+          ]
         },
         {
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
           "than_here": false,
           "with_all": [
             "PhaQuan"
-          ],
-          "is_menh": true
+          ]
         }
       ]
     },
@@ -1422,7 +1528,7 @@
       "body": [
         "Mệnh Kiếp, Thân Không gặp trường hợp này thì cũng được no cơm ấm áo."
       ],
-      "condition_text": "cung Thân có Địa Không tọa thủ, và cung Mệnh hay cung Thân có Thái Dương, Thái Âm hay Tử Vi sáng sủa tọa thủ",
+      "condition_text": "gặp thêm cung Mệnh hay cung Thân có Thái Dương, Thái Âm hay Tử Vi sáng sủa tọa thủ",
       "id": "menh/kiep-khong/04",
       "source_ref": {
         "keywords": [
@@ -1434,11 +1540,14 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
-          "than_here": false,
-          "is_menh": true
+          "in_than": [
+            "DiaKhong"
+          ],
+          "is_menh": true,
+          "than_here": false
         }
       ]
     },
@@ -1461,7 +1570,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true
@@ -1490,7 +1599,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true,
@@ -1525,7 +1634,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true
@@ -1551,7 +1660,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true,
@@ -1580,7 +1689,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -1609,7 +1718,7 @@
       "body": [
         "Thân cư Tài Bạch có Song Hao, Quyền, Lộc, Kiếp, Hỏa cùng hội hợp: làm giàu nhờ buôn bán."
       ],
-      "condition_text": "gặp thêm Lộc (Lộc Tồn hoặc Hóa Lộc) và Kiếp hội hợp",
+      "condition_text": "gặp thêm Kiếp hội hợp",
       "id": "menh/than-cu/06",
       "source_ref": {
         "keywords": [
@@ -1621,9 +1730,10 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "any_loc": true,
           "meets_all": [
             "DaiHao",
             "TieuHao",
@@ -1643,8 +1753,8 @@
       "body": [
         "Thân cư Tài Bạch gặp Song Hao, Quyền, Lộc, Kiếp, Hỏa, lại thêm Phục, Kình Dương hội hợp: không nên buôn bán bông vải, và luôn phải đề phòng hỏa hoạn."
       ],
-      "condition_text": "gặp thêm Lộc (Lộc Tồn hoặc Hóa Lộc), Kiếp và Phục hội hợp",
-      "correction": "Sách in \"Kinh\" và \"hỏa hoại\", hiểu là Kình Dương và hỏa hoạn. \"Phục\" để trong điều kiện chữ: Phục Binh luôn cách Đại Hao, Tiểu Hao một số lẻ cung nên không bao giờ cùng hội hợp với Song Hao.",
+      "condition_text": "gặp thêm Kiếp hội hợp",
+      "correction": "Sách in \"Kinh\" và \"hỏa hoại\", hiểu là Kình Dương và hỏa hoạn. \"Phục\" (Phục Binh) không bao giờ hội hợp cùng Song Hao: trong vòng Bác Sỹ, Tiểu Hao và Đại Hao xung chiếu nhau, Phục Binh nằm sát Đại Hao nên không bao giờ cùng tam hợp hay xung chiếu với Song Hao. Lỗi nhầm vị trí sao của sách, như D10; D14 của đặc tả. Bỏ \"Phục\" khỏi điều kiện, giữ nguyên văn ở body.",
       "id": "menh/than-cu/07",
       "source_ref": {
         "keywords": [
@@ -1656,9 +1766,10 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
+          "any_loc": true,
           "meets_all": [
             "DaiHao",
             "TieuHao",
@@ -1695,7 +1806,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true
@@ -1721,7 +1832,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Male",
@@ -1752,7 +1863,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Male",
@@ -1786,7 +1897,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Female",
@@ -1820,7 +1931,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Female",
@@ -1855,7 +1966,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true
@@ -1884,7 +1995,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "than_here": true

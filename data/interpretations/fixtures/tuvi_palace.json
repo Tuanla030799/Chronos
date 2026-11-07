@@ -1,5 +1,13 @@
 [
-  { "vector": "V1", "year": 1891, "month": 6, "day": 6, "is_leap_month": false, "hour": "Mao", "gender": "Male", "role": "QuanLoc",
+  {
+    "vector": "V1",
+    "year": 1891,
+    "month": 6,
+    "day": 6,
+    "is_leap_month": false,
+    "hour": "Mao",
+    "gender": "Male",
+    "role": "QuanLoc",
     "passages": [
       "quan-loc/liem-trinh/01",
       "quan-loc/sat-tinh/01",
@@ -15,8 +23,17 @@
       "quan-loc/sat-tinh/11",
       "quan-loc/sat-tinh/12",
       "quan-loc/bo-sao/20"
-    ] },
-  { "vector": "V2", "year": 1904, "month": 9, "day": 10, "is_leap_month": false, "hour": "Ngo", "gender": "Female", "role": "QuanLoc",
+    ]
+  },
+  {
+    "vector": "V2",
+    "year": 1904,
+    "month": 9,
+    "day": 10,
+    "is_leap_month": false,
+    "hour": "Ngo",
+    "gender": "Female",
+    "role": "QuanLoc",
     "passages": [
       "quan-loc/thien-dong/07",
       "quan-loc/sat-tinh/07",
@@ -28,8 +45,17 @@
       "quan-loc/bo-sao/08",
       "quan-loc/bo-sao/19",
       "quan-loc/vo-chinh-dieu/02"
-    ] },
-  { "vector": "V3", "year": 2020, "month": 4, "day": 19, "is_leap_month": true, "hour": "Ti", "gender": "Male", "role": "QuanLoc",
+    ]
+  },
+  {
+    "vector": "V3",
+    "year": 2020,
+    "month": 4,
+    "day": 19,
+    "is_leap_month": true,
+    "hour": "Ti",
+    "gender": "Male",
+    "role": "QuanLoc",
     "passages": [
       "quan-loc/thai-am/04",
       "quan-loc/sat-tinh/01",
@@ -40,9 +66,20 @@
       "quan-loc/sat-tinh/06",
       "quan-loc/xuong-khuc/01",
       "quan-loc/bo-sao/18"
-    ] },
-  { "vector": "V4", "year": 1913, "month": 9, "day": 23, "is_leap_month": false, "hour": "Dan", "gender": "Male", "role": "QuanLoc",
+    ]
+  },
+  {
+    "vector": "V4",
+    "year": 1913,
+    "month": 9,
+    "day": 23,
+    "is_leap_month": false,
+    "hour": "Dan",
+    "gender": "Male",
+    "role": "QuanLoc",
     "passages": [
+      "menh/sinh-khac/02",
+      "menh/sinh-khac/03",
       "menh/tu-vi/52",
       "menh/liem-trinh/01",
       "menh/liem-trinh/02",
@@ -65,8 +102,17 @@
       "quan-loc/sat-tinh/12",
       "quan-loc/ta-huu/01",
       "quan-loc/loc-ton/01"
-    ] },
-  { "vector": "V5", "year": 1931, "month": 11, "day": 30, "is_leap_month": false, "hour": "Dan", "gender": "Male", "role": "QuanLoc",
+    ]
+  },
+  {
+    "vector": "V5",
+    "year": 1931,
+    "month": 11,
+    "day": 30,
+    "is_leap_month": false,
+    "hour": "Dan",
+    "gender": "Male",
+    "role": "QuanLoc",
     "passages": [
       "menh/thai-duong/37",
       "menh/thai-duong/38",
@@ -78,5 +124,6 @@
       "quan-loc/khoa-quyen-loc/01",
       "quan-loc/vo-chinh-dieu/01",
       "quan-loc/vo-chinh-dieu/03"
-    ] }
+    ]
+  }
 ]
