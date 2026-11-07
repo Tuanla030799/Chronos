@@ -1,0 +1,3530 @@
+{
+  "batch": "TV-09",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Gương mặt thanh tú, khôi ngô."
+      ],
+      "id": "menh/xuong-khuc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Văn Xương, hay Văn Khúc tọa thủ nên vẻ mặt thanh tú"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Tai thính, mắt rất tinh; trên người thường có nốt ruồi kín, là quý tướng. Người thông minh, học rộng, biết cân nhắc, đoán định trước sau hay dở của mọi việc; có văn tài và có khiếu âm nhạc."
+      ],
+      "id": "menh/xuong-khuc/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc đắc địa, nên tai thính, mắt rất sáng"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thi cử đỗ cao, sớm hiển đạt, được hưởng phú quý, uy danh vang dội và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Tử, Phủ, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc",
+      "id": "menh/xuong-khuc/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc nên đi thi đỗ cao"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Người khôn khéo, nhiều tài, sớm hiển đạt và giàu sang suốt đời."
+      ],
+      "condition_text": "Đồng, Lương sáng sủa tốt đẹp; không có nhiều Sát tinh hội hợp",
+      "id": "menh/xuong-khuc/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc đắc địa, gặp Đồng Lương sáng sủa tốt đẹp hội hợp"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Cách này thành mờ ám xấu xa: suốt đời hiếm khi toại nguyện vì công danh lận đận, lại hay gặp tai họa, nhất là tù tội, tuổi thọ cũng bị giảm. Chỉ có lánh mình nơi cửa thiền hay đạo quán may ra mới yên thân và sống lâu."
+      ],
+      "condition_text": "Đồng, Lương sáng sủa tốt đẹp hội hợp, nhưng Xương, Khúc gặp Tuần, Triệt án ngữ, hay nhiều Sát tinh hội hợp",
+      "correction": "Sách in \"hột họp\", \"thuyền môn\", \"sông lâu\": hiểu là hội hợp, thiền môn (đi cùng \"đạo viện\"), sống lâu.",
+      "id": "menh/xuong-khuc/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu Xương, Khúc gặp Tuần, Triệt án ngữ, hay nhiều Sát tinh hột họp",
+          "lánh mình ở chốn thuyền môn hay đạo viện"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "tuan_triet": "Either"
+        },
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Ắt có tài cả văn lẫn võ, uy quyền hiển hách và giàu sang suốt đời."
+      ],
+      "id": "menh/xuong-khuc/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Khúc đắc địa, gặp Vũ đồng cung, tất có tài kiêm văn võ"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "VanKhuc",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Tuổi Giáp có cách này là hợp cách: hưởng phú quý đến cực độ, uy danh vang dội."
+      ],
+      "id": "menh/xuong-khuc/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tuổi Giáp mà cung Mệnh có khúc đắc địa tọa thủ, gặp Vũ đồng cung"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "VanKhuc",
+            "VuKhuc"
+          ],
+          "year_stems": [
+            "Giap"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Ắt làm quan to và có rất nhiều của cải quý giá."
+      ],
+      "id": "menh/xuong-khuc/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Khúc đắc địa gặp Tham, Hỏa đồng cung hay hội chiếu, tất có quan"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "ThamLang",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Nên theo nghề thủ công, vì rất khéo tay; nếu chuyên về kỹ nghệ, mỹ nghệ thì về sau khá giả."
+      ],
+      "id": "menh/xuong-khuc/09",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc hãm địa nên làm nghề thủ công rất khéo léo"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Ắt trên người nhiều rỗ sẹo; tính nông nổi, làm việc gì cũng không cân nhắc kỹ nên hay sai lầm, thất bại. Suốt đời nghèo khổ cô độc, thường phải rời quê bôn ba, khó thoát tai họa, nhất là tù tội; nếu không tàn tật thì ắt không thể sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hay Sát tinh hội hợp",
+      "id": "menh/xuong-khuc/10",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "tất trong mình có nhiều rỗ sẹo, tính nông nổi",
+          "nếu không có tàn tật tất không thể sông lâu được"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Dù Xương, Khúc đắc địa hay hãm địa, gặp cách này cũng là người ăn nói khéo, hát hay, rất mê thơ ca, múa, nhạc, kịch."
+      ],
+      "id": "menh/xuong-khuc/11",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Long, Phượng hội hợp, cũng là người khéo nói, hát hay"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiTue",
+            "TauThu",
+            "LongTri",
+            "PhuongCac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thông minh, học rộng, văn tài xuất chúng; sớm đỗ đạt làm quan, uy danh vang dội, giàu sang suốt đời và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Tử, Phủ, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc",
+      "id": "menh/xuong-khuc/12",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "học rộng, có văn tài lỗi lạc, sớm nhẹ bước thang mây"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Suốt đời nghèo khổ cô độc, thường phải rời quê bôn ba, khó tránh tai họa; nếu không tàn tật thì phải chết yểu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hay Sát tinh hội hợp",
+      "id": "menh/xuong-khuc/13",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu không có tàn tật phải yểu tử"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Nhan sắc tuyệt vời, rất đa tình."
+      ],
+      "id": "menh/xuong-khuc/14",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "Khúc đắc địa thủ Mệnh, nên nhan sắc tuyệt vời rất đa tình"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Ắt được hưởng phú quý, sung sướng cả đời."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/xuong-khuc/15",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "tất được hưởng phú qúy và sung sướng suốt đời"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Gương mặt vẫn tươi tắn nhưng tính rất dâm đãng, suốt đời phải buồn phiền vì chồng con."
+      ],
+      "id": "menh/xuong-khuc/16",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc hãm địa, nét mặt cũng tươi tỉnh, nhưng tính rất dâm đãng"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Là hạng gái giang hồ, hèn kém, khắc chồng hại con và thường chết yểu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hay Sát tinh hội hợp",
+      "id": "menh/xuong-khuc/17",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "là hạng gái giang hồ, ty tiện, khắc chồng hại con"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Dù Xương, Khúc đắc địa hay hãm địa, gặp Thiên Riêu đồng cung cũng là người có tính đồng bóng."
+      ],
+      "id": "menh/xuong-khuc/18",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "nếu gặp Riêu đồng cung cũng là người có tính đồng bóng"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "with_all": [
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Rất quý hiển. Câu phú gọi Văn Xương là Văn Quế, gọi Văn Khúc là Văn Hoa."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/xuong-khuc/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Xương Khúc đắc địa tọa thủ, gặp nhiều sao sáng sủa"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn Quế Văn Hoa, cửu trùng qúy hiến",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Người thông minh, học rộng, nhiều tài."
+      ],
+      "id": "menh/xuong-khuc/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "là người thông minh, học rộng, có nhiều tài năng"
+        ],
+        "pages": [
+          102
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn Xương, Văn Khúc vi nhân đa học đa năng",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Mệnh của Dương Quý Phi đời Đường có Khúc, Xương tọa thủ, vì thế nàng đẹp như chim sa cá lặn và được vua Đường Huyền Tông yêu chiều. Đàn bà có Khúc, Xương thủ Mệnh cũng là người xinh đẹp."
+      ],
+      "id": "menh/xuong-khuc/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh của số Dương Qúy Phi đời Đường, có Khúc, Xương tọa thủ",
+          "Đàn bà mà trong số có Khúc, Xương thủ Mệnh"
+        ],
+        "pages": [
+          102,
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dương Phi hảo sắc thị Khúc, Xương",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thông minh, được hưởng phú quý, nhưng tính dâm đãng."
+      ],
+      "id": "menh/xuong-khuc/22",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "được hưởng phú qúy, nhưng có tính dâm đãng"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Nữ nhân Xương, Khúc thông minh, phú qúy chỉ đa dâm",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi có Xương hay Khúc: rất rực rỡ; nếu không quý hiển thì cũng là triệu phú."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/xuong-khuc/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Có cách này nếu không qúy hiển, cũng là triệu phú"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tỵ, Hợi tọa Quế, Hoa, phi vinh tắc phú",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi có Xương hay Khúc cùng Liêm Trinh đồng cung: người dối trá, hay khoe khoang; suốt đời hiếm khi toại nguyện, thường phải rời quê bôn ba, hay gặp tai họa, nhất là tù tội, và không thể sống lâu."
+      ],
+      "id": "menh/xuong-khuc/24",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp Liêm đồng cung, là người gian dối, hay khoe khoang"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc Liêm Trinh ư Tỵ, Hợi, vi nhân bất thiện tao hình",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "with_all": [
+            "LiemTrinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Dù Xương, Khúc đắc địa hay hãm địa, gặp Phá Quân đồng cung ắt suốt đời khổ tâm lo nghĩ và hay bị bắt bớ giam cầm."
+      ],
+      "id": "menh/xuong-khuc/25",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu gặp Phá đồng cung, tất suốt đời phải tao tâm khổ tứ"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc Phá Quân phùng, hình khắc đa lao toái",
+      "when": [
+        {
+          "with_all": [
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Mệnh tại Dần (Hổ), Mão (Thỏ) có Xương hay Khúc cùng Phá Quân đồng cung, bị Sát tinh, nhất là Kình Dương, xung chiếu: suốt đời lao khổ, thường phải bỏ gia đình đi bôn tẩu nơi xa, hay gặp tai họa, tù tội, và không thể sống lâu."
+      ],
+      "condition_text": "Sát tinh xung chiếu, nhất là Kình Dương",
+      "id": "menh/xuong-khuc/26",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp Sát tinh, nhất là Kình xung chiếu, nên suốt đòi lao khổ"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc, Phá Quân lâm Hổ, Thỏ, Sát, Dương xung phá bôn ba",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Mao"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ],
+          "with_all": [
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Xương, Khúc đắc địa gặp Thiên Lương đồng cung hay xung chiếu: rất quý hiển, uy danh vang dội."
+      ],
+      "id": "menh/xuong-khuc/27",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Lương đồng cung hay xung chiếu, nên rất qúy hiển"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc, Lương tinh vị chí thai cương",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "ThienLuong"
+          ]
+        },
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "opposite_only": [
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Xương, Khúc đắc địa gặp Thiên Cơ và Lộc hội hợp: người xinh đẹp, khéo léo."
+      ],
+      "id": "menh/xuong-khuc/28",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Cơ, Lộc hội hợp là người xinh đẹp và khéo léo"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc, Cơ Lộc thanh tú, xảo",
+      "when": [
+        {
+          "any_loc": true,
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "ThienCo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Xương hay Khúc gặp Tả Phụ hay Hữu Bật đồng cung, lại gặp Kình Dương, Đà La hội hợp: trên người có nốt ruồi kín và nhiều tướng lạ."
+      ],
+      "correction": "Đọc \"gặp Tả, Hữu đồng cung\" là có đủ cả hai thì không lá số nào hiện đoạn này (V13): theo tr. 11 mục 8.7, 8.8, Tả, Hữu chỉ đồng cung khi sinh tháng 4 hoặc 10, mà khi đó Xương, Khúc không bao giờ ở cung Mệnh hay cung Thân. Hiểu là Tả hoặc Hữu đồng cung.",
+      "id": "menh/xuong-khuc/29",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Tả, Hữu đồng cung, gặp Kình, Đà hội hợp"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc, Tả, Hữu, hội Dương, Đà đương sinh dị chí",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ],
+          "with_all": [
+            "TaPhu"
+          ]
+        },
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ],
+          "with_all": [
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Xương, Khúc đắc địa gặp Lộc Tồn đồng cung: người tài năng xuất chúng."
+      ],
+      "id": "menh/xuong-khuc/30",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Lộc đồng cung, là người có tài năng xuất chúng"
+        ],
+        "pages": [
+          103
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc Lộc Tồn do vi kỳ thị",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Dương Nữ tuổi Giáp, Mệnh tại Sửu, Mùi có Xương, Khúc đồng cung, gặp Hồng Loan và Lộc hội hợp: người có đức độ, đáng bậc hiền phụ, được giàu sang suốt đời và rất vượng phu ích tử."
+      ],
+      "correction": "Sách in \"tọa chủ đồng cung\" và \"hiền phụ, nhưng hưởng giàu sang\": hiểu là tọa thủ; chữ \"nhưng\" không hợp ý câu nên bỏ, như câu song song ở Thiên Cơ tr. 75.",
+      "id": "menh/xuong-khuc/31",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Dương Nữ tuổi Giáp mà cung Mệnh an tại Sửu, Mùi có Xương, Khúc tọa",
+          "gặp Hồng, Lộc hội hợp, là người có đức độ, đáng bậc hiền phụ"
+        ],
+        "pages": [
+          103,
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc, Sửu, Mùi, Giáp nhân Dương nữ, kiêm phùng Hồng, Lộc hiền phụ chi nhân",
+      "when": [
+        {
+          "any_loc": true,
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "HongLoan"
+          ],
+          "polarity": [
+            "DuongNu"
+          ],
+          "with_all": [
+            "VanXuong",
+            "VanKhuc"
+          ],
+          "year_stems": [
+            "Giap"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Sửu, Mùi, Tỵ, Hợi, Mão, Dậu có Văn Xương cùng Liêm Trinh đồng cung: không thể sống lâu."
+      ],
+      "id": "menh/xuong-khuc/32",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "có Xương, Liêm tọa thủ đồng cung, nên không thế sống lâu được"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn Xương hội Liêm Trinh, chi táng mệnh thiên niên",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Ti",
+            "Hoi",
+            "Mao",
+            "Dau"
+          ],
+          "with_all": [
+            "VanXuong",
+            "LiemTrinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong"
+        ]
+      },
+      "body": [
+        "Văn Xương đắc địa gặp Vũ Khúc đồng cung: có tài cả văn lẫn võ, uy danh vang dội, giàu sang suốt đời."
+      ],
+      "id": "menh/xuong-khuc/33",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh Thân, có Xương đắc địa, gặp Vũ đồng cung"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn Xương, Vũ Khúc ư Mệnh Thân, văn vũ kiêm bỉ",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "VanXuong",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanXuong"
+        ]
+      },
+      "body": [
+        "Văn Xương gặp Tả Phụ đồng cung: rất quý hiển."
+      ],
+      "correction": "Lời giải ghi \"Xương đắc địa\", câu phú không nói độ sáng. Theo tr. 11 mục 8.7, 8.8, Xương và Tả chỉ cùng ở cung Mệnh khi Mệnh tại Tý, cùng ở cung Thân khi Thân tại Thân; cả hai nơi Xương đều hãm địa (tr. 39), nên điều kiện đắc địa không bao giờ xảy ra (V13). Bỏ điều kiện độ sáng, theo câu phú; cần chủ dự án xác nhận.",
+      "id": "menh/xuong-khuc/34",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "có Xương đắc địa tọa thủ, gặp Tả đồng cung, nên rất qúy hiển"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn Xương, Tả Phụ vị chí tam thai",
+      "when": [
+        {
+          "with_all": [
+            "VanXuong",
+            "TaPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Văn Khúc đắc địa gặp Vũ Khúc đồng cung: có tài cả văn lẫn võ, uy quyền hiển hách."
+      ],
+      "id": "menh/xuong-khuc/35",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh, có Khúc đắc địa tọa thủ, gặp Vũ đồng cung"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Nhị Khúc vượng cung, uy danh hách dịch",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "with_all": [
+            "VanKhuc",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh được Xương, Khúc giáp hai bên: rất thông minh, được nhiều người kính trọng, quý mến."
+      ],
+      "id": "menh/xuong-khuc/36",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nên rất thông minh và được nhiêu người kính trọng"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc giáp Mệnh tối vi kỳ",
+      "when": [
+        {
+          "flanked_by": [
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh được Xương, Khúc giáp hai bên: ra ngoài hay được gần quý nhân."
+      ],
+      "id": "menh/xuong-khuc/37",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "ra ngoài hay gần được qúy nhân"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc giáp Mệnh, xuất ngoại đa cận qúy nhân",
+      "when": [
+        {
+          "flanked_by": [
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Mệnh có Thái Dương sáng sủa tốt đẹp tọa thủ, lại được Xương, Khúc giáp hai bên: rất quý hiển, giàu sang suốt đời."
+      ],
+      "id": "menh/xuong-khuc/38",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Nhật sáng sủa tốt đẹp tọa thủ, lại giáp Xương, giáp Khúc"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Xương, Khúc giáp Trì, qúy nhi thả hiền",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "flanked_by": [
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Số của Giả Nghị đời Hán có Mệnh sáng sủa tốt đẹp, được Xương, Khúc, Khôi, Việt hội chiếu, nên ông thông minh, học rộng, đỗ đạt rất sớm. Ai có cách này cũng thông minh và sớm hiển đạt."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp",
+      "id": "menh/xuong-khuc/39",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc, Khôi, Việt hội chiếu, vậy cho nên Giả Nghị thông minh"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Văn tinh củng chiếu Giả Nghị niên thiếu đăng khoa",
+      "when": [
+        {
+          "meets_all": [
+            "@VanTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh có Văn Khúc, Vũ Khúc hội chiếu và Tả, Hữu hội hợp: tài kiêm văn võ nhưng hiển đạt về đường võ nghiệp, phú quý song toàn."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp",
+      "id": "menh/xuong-khuc/40",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "có Khúc, Vũ hội chiếu và Tả, Hữu hội hợp"
+        ],
+        "pages": [
+          104
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Nhị Khúc triều viên phùng, Tả, Hữu tướng tướng chi tài",
+      "when": [
+        {
+          "meets_all": [
+            "VanKhuc",
+            "VuKhuc",
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Ắt là con trưởng; nếu không thì về sau cũng giành quyền trưởng. Gương mặt thanh tú, khôi ngô, mắt sáng; tính cao thượng và rất thông minh."
+      ],
+      "id": "menh/khoi-viet/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Thiên Khôi hay Thiên Việt tọa thủ, tất là con trưởng"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Tài kiêm văn võ, có đầu óc lãnh đạo, giỏi mưu tính tổ chức, sớm hiển đạt; thường nắm đầu mối các việc lớn nhỏ nên uy quyền hiển hách, hay được gần bậc nguyên thủ; được hưởng giàu sang và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Tử, Phủ, Xương, Khúc, Tả, Hữu, Khoa, Quyền, Lộc",
+      "id": "menh/khoi-viet/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc, Tả, Hữu, Khoa, Quyền, Lộc nên có tài kiêm văn võ"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Suốt đời hiếm khi toại nguyện, công danh lận đận; dù giàu sang cũng không bền. Thường có bệnh ở đầu, hay gặp tai họa khủng khiếp, nhất là dao kiếm, súng đạn, và không thể sống lâu."
+      ],
+      "condition_text": "gặp Tuần, Triệt án ngữ, hay gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh, Kỵ, Hình",
+      "id": "menh/khoi-viet/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhất là Sát tinh, Kỵ, Hình, nên suốt đời chẳng mấy khi",
+          "nhất là về đao thương, súng"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Được hưởng phú quý song toàn và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/khoi-viet/04",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "nên được hưởng phú qúy song toàn và sống lâu"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male",
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Công danh lận đận, hay gặp tai họa, tuổi thọ cũng bị giảm."
+      ],
+      "condition_text": "gặp Tuần, Triệt án ngữ, hay gặp nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/khoi-viet/05",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nên công danh trắc trở hay mắc tai họa, tuổi thọ cũng bị chiết giảm"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Bậc hiền phụ, có danh giá, được hưởng giàu sang, sống lâu và rất vượng phu ích tử."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Sách in \"có danh giá, nhưng hưởng giàu sang\"; chữ \"nhưng\" không hợp ý câu nên bỏ, như câu song song ở Thiên Cơ tr. 75.",
+      "id": "menh/khoi-viet/06",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "là bậc hiền phụ, có danh giá, nhưng hưởng giàu sang, sống lâu"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Suốt đời phải lo nghĩ vất vả, hay gặp tai họa, tuổi thọ cũng bị giảm."
+      ],
+      "condition_text": "gặp Tuần, Triệt án ngữ, hay gặp nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/khoi-viet/07",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nên suốt đời phải lao tâm khổ tứ lại hay mắc tai họa"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Mệnh hay Thân có Khôi, Việt tọa thủ: ắt là con trưởng; nếu không thì về sau cũng giành quyền trưởng."
+      ],
+      "id": "menh/khoi-viet/08",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh, Thân, có Khôi, Việt tọa thủ, tất là con trưởng"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi Việt tại Mệnh, Thân vì trưởng tử"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Văn tài xuất chúng, sớm đỗ đạt hiển đạt."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là văn tinh như Xương, Khúc, Khoa, Tuế, Tấu",
+      "id": "menh/khoi-viet/09",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "như Xương, Khúc, Khoa, Tuế, Tấu là người có văn tài lỗi lạc"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Khôi, Thiên Việt, tái thế văn chương"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/khoi-viet/10",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nên được hưởng phúc và sống lâu"
+        ],
+        "pages": [
+          105
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi, Việt phụ tinh, vi phúc thọ"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Mệnh hay Thân có Khôi, Việt tọa thủ: ắt thi cử đỗ cao, như người bẻ được cành quế."
+      ],
+      "id": "menh/khoi-viet/11",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "tất đi thi đỗ cao ví như được bẻ cành quế"
+        ],
+        "pages": [
+          105,
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi, Việt tại Mệnh, Thân, da chiết quế"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Khôi hay Việt gặp Xương, Khúc, Lộc Tồn hội hợp, may không bị Sát tinh hay Kỵ, Hình xâm phạm: hưởng phú quý đến cực độ và sống lâu."
+      ],
+      "condition_text": "không bị Kỵ, Hình xâm phạm",
+      "correction": "Câu phú in \"Cương, Khúc\", lời giải ghi \"Xương, Khúc\": hiểu là Xương. Lời giải viết \"Lộc\", câu phú viết Lộc Tồn, nên lấy Lộc Tồn. \"Kỵ, Hình\" đứng riêng cạnh \"Sát tinh\" nên không rõ là Hóa Kỵ, Thiên Hình hay Kình, Đà (mục 7.7): để vào điều kiện lời.",
+      "id": "menh/khoi-viet/12",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "may mắn lại không bị Sát tinh hay Kỵ, Hình xâm phạm"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi, Việt, Cương, Khúc, Lộc Tồn, Hình, Sát vô xung đại phú qúy",
+      "when": [
+        {
+          "meets_all": [
+            "VanXuong",
+            "VanKhuc",
+            "LocTon"
+          ],
+          "not_meets": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Có nhiều bệnh tật không thể chữa khỏi."
+      ],
+      "condition_text": "gặp Sát (sách không rõ là Thất Sát hay Sát tinh)",
+      "id": "menh/khoi-viet/13",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp Sát nên có nhiều bệnh tật không thế chữa khỏi được"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi, Việt trùng phùng Sát, cố tật vưu đa"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi"
+        ]
+      },
+      "body": [
+        "Thiên Khôi tọa thủ Mệnh: rất quý hiển."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "menh/khoi-viet/14",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Khôi tọa thủ, gặp nhiều sao sáng sủa tốt đẹp"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi tinh lâm Mệnh, vị chí tam thai"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienKhoi"
+        ]
+      },
+      "body": [
+        "Mệnh tại Ngọ có Thiên Khôi cùng Tử Vi đồng cung: chắc chắn uy danh vang dội, giàu sang suốt đời."
+      ],
+      "id": "menh/khoi-viet/15",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu Cung Mệnh an tại Ngọ, có Khôi tọa thủ, gặp Tử đồng cung"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi tinh lâm Mệnh, vị chí tam thai",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienKhoi",
+            "TuVi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh được Khôi, Việt giáp hai bên: rất thông minh, sớm làm nên, nhiều người nể trọng, quý mến; ra ngoài hay được quý nhân giúp đỡ."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp",
+      "id": "menh/khoi-viet/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "giáp Khôi, giáp Việt nên rất thông minh"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Khôi tinh giáp Mệnh vi kỳ cách",
+      "when": [
+        {
+          "flanked_by": [
+            "ThienKhoi",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh được Khôi, Việt và Lộc giáp hai bên: rất quý hiển và giàu có, ít ai sánh kịp."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp, lại giáp Lộc (sách không rõ Lộc Tồn hay Hóa Lộc)",
+      "correction": "Sách in \"nến rất qúy hiến\", hiểu là nên rất quý hiển. Fact any_loc chỉ xét Lộc tọa thủ hay hội hợp, không xét Lộc giáp, nên phần Lộc để vào điều kiện lời.",
+      "id": "menh/khoi-viet/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "giáp Khôi, Việt, Lộc, nến rất qúy hiến và giàu"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Giáp Qúy, Giáp Lộc, thiếu nhân tri",
+      "when": [
+        {
+          "flanked_by": [
+            "ThienKhoi",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Người thông minh, học rộng, nhân hậu, hay làm việc thiện; có tài tổ chức, nhiều sáng kiến lạ, biết ứng biến. Suốt đời giàu sang, được nhiều người kính trọng và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "là người thông minh, học rộng, tính nhân hậu, từ thiện, có tài tổ chức"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Thật rực rỡ tốt đẹp: chắc chắn hưởng phú quý suốt đời, uy quyền hiển hách, tuổi thọ cũng tăng thêm."
+      ],
+      "condition_text": "gặp Tử, Phủ, Xương, Khôi, Việt, Mã hội hợp",
+      "id": "menh/loc-ton/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lộc gặp Tử, Phủ, Xương, Khôi, Việt, Mã hội hợp thật là rực rỡ"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Lộc Tồn gặp Ân Quang, Thiên Quý, Thiên Quan, Thiên Phúc, Thiên Riêu, Thiên Y hội hợp: nên chuyên nghề thuốc, về sau rất nổi tiếng."
+      ],
+      "id": "menh/loc-ton/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lộc gặp Quang, Qúy, Quan, Phúc, Riêu, Y hội hợp, nên chuyên nghề"
+        ],
+        "pages": [
+          106
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "AnQuang",
+            "ThienQuy",
+            "ThienQuan",
+            "ThienPhuc",
+            "ThienRieu",
+            "ThienY"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Người keo kiệt, ích kỷ, gian xảo; thường sớm mất cha hoặc mẹ, hay phải sớm bỏ nhà đi lang bạt nơi xa. Suốt đời hiếm khi toại nguyện vì công danh lận đận, tiền bạc thiếu thốn; nếu có nhiều tiền lại hay bị trộm cắp, lừa gạt. Khó tránh tai họa khủng khiếp, rất dễ mắc tù tội, tuổi thọ cũng bị giảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Không, Kiếp, Hao, Kỵ, Tuế",
+      "correction": "Sách in \"biển lận\" và \"Vi công danh\": hiểu là bỉ lận (keo kiệt) và vì công danh.",
+      "id": "menh/loc-ton/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "là Không, Kiếp, Hao, Kỵ, Tuế là người biển lận, ích kỷ và gian quyệt",
+          "được những tai họa khủng khiếp, và rất dễ mắc tù tội"
+        ],
+        "pages": [
+          106,
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Được hưởng phú quý suốt đời, uy danh vang dội và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Tử, Phủ, Xương, Khúc, Khôi, Việt",
+      "id": "menh/loc-ton/05",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc, Khôi, Việt nên được hưởng phú qúy trọn đời"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Suốt đời túng quẫn, buồn phiền vì vợ con, thường phải sớm rời quê, hay gặp tai họa và không thể sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Không, Kiếp, Hao, Kỵ, Tuế",
+      "id": "menh/loc-ton/06",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nên suốt đời quẫn bách, buồn phiền vì vợ con, thường phải sớm ly tổ"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Rất đoan chính, giàu sang suốt đời và rất vượng phu ích tử."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/07",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "được hưởng giàu sang trọn đời và rất vượng phu ích tử"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Cũng không có tính dâm đãng, nhưng suốt đời hiếm khi toại nguyện và hay buồn khổ vì chồng con."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/loc-ton/08",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "cũng không có tính dâm đãng"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Suốt đời giàu sang, ăn ngon mặc đẹp."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/09",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "được ăn miếng ngon, mặc đồ tốt"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc Tồn hậu trọng đa y thực"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Mệnh tại Hợi có Lộc Tồn: chắc chắn tiền tài và quan chức đều tốt, hưởng phú quý đến cực độ."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/10",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu Cung Mệnh an tại Hợi, có Lộc tọa thủ"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc Tồn hậu trọng đa y thực",
+      "when": [
+        {
+          "branches": [
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Có của cải do ông cha để lại."
+      ],
+      "id": "menh/loc-ton/11",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nên có của cải do tiền nhân để lại"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc Tồn tại viên, chi tứ tổ nghiệp"
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh có Lộc Tồn chiếu về: rất quý hiển."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp",
+      "id": "menh/loc-ton/12",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Mệnh sáng sủa tốt đẹp, có Lộc chiếu, nên rất qúy hiển"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc triều viên, thân vinh qúy hiển",
+      "when": [
+        {
+          "meets_all": [
+            "LocTon"
+          ],
+          "not_with": [
+            "LocTon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Mệnh hay Thân tại Tý, Ngọ có Lộc Tồn: rất giàu sang, tiền của chất đầy kho."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Câu phú in \"Thên\", lời giải ghi \"Mệnh, Thân\": hiểu là Thân. Sách nói cả cung Thiên Di; đoạn này chỉ neo ở Mệnh (và Thân) theo phạm vi chương.",
+      "id": "menh/loc-ton/13",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh, Thân hay Thiên Di an tại Tý, Ngọ, có Lộc tọa thủ"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc Tồn Tý, Ngọ vị, Mệnh, Thên, Thiên Di phùng chi, lợi lộc nghi",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Lộc Tồn bị Phá Quân xung chiếu: rất mờ ám xấu xa; tiền bạc thiếu thốn, suốt đời lo toan sinh kế và hay gặp tai họa."
+      ],
+      "id": "menh/loc-ton/14",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Phá xung chiếu nên rất mờ ám xấu xa"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc phùng xung Phá, cát dã thành hung",
+      "when": [
+        {
+          "opposite_only": [
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Lộc Tồn và Hóa Lộc cùng đóng tại Mệnh: người độc đoán, có đầu óc lãnh đạo, thích chuyên quyền như Lã Hậu đời Hán."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/15",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Lộc Tồn và Hóa Lộc tọa thủ đồng cung"
+        ],
+        "pages": [
+          107
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Song Lộc thủ Mệnh, Lã Hậu chuyên quyền",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh có Lộc Tồn gặp Hóa Lộc chiếu, hoặc có Hóa Lộc gặp Lộc Tồn chiếu, hoặc có cả hai đồng cung: chắc chắn giàu sang suốt đời."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/loc-ton/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Lộc Tồn tọa thủ, gặp Hóa Lộc chiếu"
+        ],
+        "pages": [
+          107,
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Song Lộc trùng phùng, chung thân phú qúy",
+      "when": [
+        {
+          "transformations": [
+            "HoaLoc"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "meets_all": [
+            "LocTon"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh có Lộc Tồn, cung nhị hợp có Hóa Lộc, hoặc Mệnh có Hóa Lộc, cung nhị hợp có Lộc Tồn: thật rực rỡ, như gấm thêu hoa; chắc chắn giàu sang, làm quan to, uy quyền hiển hách. Cách này còn gọi là Uyên Ương Lộc Hội."
+      ],
+      "condition_text": "cung Mệnh sáng sủa tốt đẹp; khi Mệnh có Lộc Tồn thì cung nhị hợp phải có Hóa Lộc tọa thủ",
+      "id": "menh/loc-ton/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "cung nhị hợp có Hóa Lộc tọa thủ",
+          "Uyên Ương Lộc Hội"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Minh Lộc, Ám Lộc, vị chí công khanh (Cẩm thượng thiêm hoa)",
+      "when": [
+        {
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "paired_with": [
+            "LocTon"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh có Lộc Tồn, Thiên Mã xung chiếu, hoặc có Thiên Mã, Lộc Tồn xung chiếu: thật rực rỡ tốt đẹp; ắt giàu sang, dễ kiếm tiền và được nhiều người mến chuộng."
+      ],
+      "id": "menh/loc-ton/18",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh Lộc tọa thủ, gặp Mã xung chiếu, hay Mã tọa thủ, Lộc xung",
+          "kiếm tiền và được nhiều người mến chuộng"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc, Mã tối hỷ giao tri, chúng nhân sủng ái",
+      "when": [
+        {
+          "not_meets": [
+            "DiaKiep",
+            "DiaKhong",
+            "ThaiTue"
+          ],
+          "opposite_only": [
+            "ThienMa"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "not_meets": [
+            "DiaKiep",
+            "DiaKhong",
+            "ThaiTue"
+          ],
+          "opposite_only": [
+            "LocTon"
+          ],
+          "with_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cách Lộc Tồn, Thiên Mã xung chiếu nhau mà gặp thêm Địa Kiếp, Địa Không, Thái Tuế: ắt thành mờ ám xấu xa; suốt đời hiếm khi toại nguyện, công danh lận đận, hay lo toan sinh kế và khó thoát tai họa."
+      ],
+      "condition_text": "gặp thêm Kiếp, Không, Tuế hội hợp",
+      "id": "menh/loc-ton/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nếu lại gặp thêm Kiếp, Không, Tuế hội hợp, tất là mờ ám xấu xa"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lộc đáo, Mã đáo kỵ Kiếp, Không, Tuế",
+      "when": [
+        {
+          "meets_any": [
+            "DiaKiep",
+            "DiaKhong",
+            "ThaiTue"
+          ],
+          "opposite_only": [
+            "ThienMa"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "meets_any": [
+            "DiaKiep",
+            "DiaKhong",
+            "ThaiTue"
+          ],
+          "opposite_only": [
+            "LocTon"
+          ],
+          "with_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thân hình đầy đặn; tính nhân hậu, ôn hòa, ngay thẳng, hay giúp người khốn khó và có nhiều mưu trí."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "nên thân hình đầy đặn, tính nhân hậu, khoan hòa, thẳng thắn"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Tả, Hữu gặp Tử, Phủ, Xương, Khúc, Khôi, Việt cùng Khoa, Quyền, Lộc hội hợp: ắt trên người có nhiều nốt ruồi kín, là quý tướng. Vì thế được hưởng phú quý suốt đời, danh tiếng vang dội, tuổi thọ cũng tăng thêm."
+      ],
+      "condition_text": "gặp Tử, Phủ, Xương, Khúc, Khôi, Việt hội hợp",
+      "id": "menh/ta-huu/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tả, Hữu gặp Tử, Phủ, Xương, Khúc, Khôi, Việt hội hợp cùng với Khoa"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "transformations_all": [
+            "HoaKhoa",
+            "HoaQuyen"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Tả, Hữu hội hợp với Cơ, Nguyệt, Đồng, Lương, Long, Phượng: ắt chuyên nghề thuốc, về sau rất khá giả."
+      ],
+      "id": "menh/ta-huu/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tả, Hữu hội hợp với Cơ, Nguyệt, Đồng, Lương, Long, Phượng, tất chuyên"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "LongTri",
+            "PhuongCac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Ắt trên người lắm rỗ sẹo, hay có tật; bản tính gian trá, hiểm độc, hay lừa gạt hại người. Suốt đời nghèo khổ cô độc, khó thoát tai họa khủng khiếp, tuổi thọ lại bị giảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa, hay Sát tinh hội hợp",
+      "id": "menh/ta-huu/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "tính rất gian trá, hiểm độc, hay lừa đảo, hại"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Dù gặp nhiều sao tốt hay nhiều sao xấu hội hợp, người có Tả, Hữu tọa thủ cũng phải sớm rời quê hoặc sớm xa gia đình, tự lập nghiệp nơi xa."
+      ],
+      "id": "menh/ta-huu/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "cũng phải sớm ly tổ hay sớm lìa bỏ gia đình"
+        ],
+        "pages": [
+          108
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thông minh, học rộng, văn võ song toàn, giàu sang đến tột bậc."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/06",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "minh, học rộng, văn võ kiêm toàn, được hưởng giàu sang đến tột bực"
+        ],
+        "pages": [
+          108,
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Ắt phải mang tàn tật, suốt đời khốn khổ và thường chết yểu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Cự, Phá hãm địa, hay Sát tinh hội hợp",
+      "correction": "Sách in \"thường yếu tử\"; hiểu là yểu tử, như câu song song \"thường yểu tử\" tr. 110 và \"phải yểu tử\" tr. 102.",
+      "id": "menh/ta-huu/07",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự, Phá hãm địa hay Sát tinh hội hợp, tất phải mang tàn tật"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Chăm chỉ, hiền hậu, giàu hơn người, rất vượng phu ích tử."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/08",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "là người siêng năng, hiền hậu, giàu có hơn người"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Là hạng người bất chính, khắc hại chồng con; dù có giàu sang cũng không bền; nếu chết sớm thì đó lại là may."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hay Sát tinh hội hợp",
+      "id": "menh/ta-huu/09",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "là hạng bất chính, khắc hại chồng con",
+          "nếu chết non ấy là may mắn"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Cả đời hưởng phúc, nhiều may mắn, sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/10",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "suốt đời được hưởng phúc, gặp nhiều may mắn và sống lâu"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả Phụ, Hữu Bật chung thân phúc hậu"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Mệnh tại Sửu, Mùi có Tả, Hữu đồng cung: ắt phú quý song toàn, như người mặc áo gấm tía."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Khoa, Quyền, Lộc",
+      "id": "menh/ta-huu/11",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Sửu, Mùi, có Tả, Hữu tọa thủ đồng cung"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu đồng cung, phi la y tử",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tứ Mộ có Tả, Hữu: rất quý hiển. Tả, Hữu ở Tứ Mộ sáng sủa hơn ở các cung khác."
+      ],
+      "condition_text": "gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/12",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Tả, Hữu tọa thủ tại Tứ Mộ sáng sủa hơn là"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mộ phùng Tả, Hữu tôn cư bát tọa chi qúy",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tứ Mộ có Tả, Hữu là hợp cách; nếu lại gặp Tử Vi, hoặc Cơ, Nguyệt, Đồng, Lương (văn đoàn), hoặc Sát, Phá, Liêm, Tham (võ cách) hội hợp, ắt công danh phát mạnh và giàu sang suốt đời."
+      ],
+      "id": "menh/ta-huu/13",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "hay Sát, Phá, Liêm, Tham (Võ cách) hội hợp, tất hoạnh phát công danh"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phụ, Bật ái nhập mộ cung, nhược phùng đế vương, văn đoàn, võ cách, hoạnh phát danh tài",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "TuVi"
+          ]
+        },
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        },
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Tả, Hữu gặp Kình Dương hội hợp: hay mắc tù tội, suốt đời hiếm khi toại nguyện."
+      ],
+      "id": "menh/ta-huu/14",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "lại gặp Kình Dương hội hợp, nên hay mắc"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu, Kình Dương, tao hình lục",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Tả, Hữu gặp Khôi hay Việt cùng tọa thủ: được hưởng phúc và sống lâu."
+      ],
+      "correction": "Khôi, Việt không bao giờ đồng cung (bảng tr. 11 mục 8.10), nên hiểu \"gặp Khôi Việt tọa thủ\" là Khôi hoặc Việt cùng cung với Tả, Hữu.",
+      "id": "menh/ta-huu/15",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Tả, Hữu tọa thủ, lại gặp Khôi Việt tọa thủ"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu, Khôi, Việt ư phúc thọ",
+      "when": [
+        {
+          "with_all": [
+            "ThienKhoi"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu"
+        ]
+      },
+      "body": [
+        "Tả Phụ cùng Thiên Phủ đồng cung: được hưởng giàu sang sung sướng."
+      ],
+      "correction": "Lời giải in \"Tả, Hữu tọa thủ đồng cung\", câu phú ghi \"Tả, Phủ\". Tả, Hữu chỉ đồng cung tại Sửu, Mùi (tr. 11 mục 8.7; tr. 109 câu \"Tả, Hữu đồng cung\"), nên câu tiếp \"cung Mệnh an tại Tuất, có cách này\" không thể xảy ra; theo câu phú, hiểu là Tả Phụ và Thiên Phủ đồng cung.",
+      "id": "menh/ta-huu/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Tả, Hữu tọa thủ đồng cung, nên được hưởng giàu sang"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Phủ đồng cung, tôn cư vạn thừa",
+      "when": [
+        {
+          "with_all": [
+            "TaPhu",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TaPhu"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tuất có Tả Phụ cùng Thiên Phủ đồng cung: thật toàn mỹ, phú quý đến tột bậc."
+      ],
+      "correction": "Lời giải in \"Tả, Hữu tọa thủ đồng cung\", câu phú ghi \"Tả, Phủ\". Tả, Hữu chỉ đồng cung tại Sửu, Mùi (tr. 11 mục 8.7), không thể ở Tuất; theo câu phú, hiểu là Tả Phụ và Thiên Phủ đồng cung.",
+      "id": "menh/ta-huu/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu cung Mệnh an tại Tuất, có cách này thật là toàn mỹ"
+        ],
+        "pages": [
+          109
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Phủ đồng cung, tôn cư vạn thừa",
+      "when": [
+        {
+          "branches": [
+            "Tuat"
+          ],
+          "with_all": [
+            "TaPhu",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Hữu Bật cùng Thiên Tướng đồng cung: được hưởng phúc, sống lâu."
+      ],
+      "id": "menh/ta-huu/18",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Hữu, Tướng tọa thủ đồng cung, nên được hưởng phúc"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hữu Bật, Thiên Tướng phúc lai lâm",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Suu",
+            "Dan",
+            "Thin",
+            "Ti",
+            "Ngo",
+            "Mui",
+            "Than",
+            "Tuat",
+            "Hoi"
+          ],
+          "with_all": [
+            "HuuBat",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi có Hữu Bật cùng Thiên Tướng đồng cung: ắt được hưởng phú quý nhưng không bền."
+      ],
+      "id": "menh/ta-huu/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nếu Cung Mệnh an tại Tỵ, Hợi, tất được hưởng phú qúy, nhưng không bền"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hữu Bật, Thiên Tướng phúc lai lâm",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "with_all": [
+            "HuuBat",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Mệnh tại Mão, Dậu có Hữu Bật cùng Thiên Tướng đồng cung: hiếm khi được toại nguyện."
+      ],
+      "id": "menh/ta-huu/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu cung Mệnh an tại Mão, Dậu chẳng mấy khi"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hữu Bật, Thiên Tướng phúc lai lâm",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "with_all": [
+            "HuuBat",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh được Tả, Hữu giáp hai bên: rất quý hiển, danh tiếng vang dội, được nhiều người kính phục."
+      ],
+      "condition_text": "cung Mệnh có nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "lại giáp Tả, giáp Hữu, nên rất qúy hiển, có danh tiếng lừng lẫy"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu giáp Mệnh vi qúy cách",
+      "when": [
+        {
+          "flanked_by": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Mệnh có Tử Vi tọa thủ, lại được Tả, Hữu giáp hai bên: được hưởng phúc, có danh giá và uy quyền."
+      ],
+      "id": "menh/ta-huu/22",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Tử Vi tọa thủ, lại giáp Tả, giáp Hữu"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phụ, Bật giáp Đế phúc lai lâm",
+      "when": [
+        {
+          "flanked_by": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Cung Mệnh có Tả, Hữu xung chiếu hoặc hội chiếu: ắt phải sớm xa gia đình, lập nghiệp nơi xa."
+      ],
+      "id": "menh/ta-huu/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Tả, Hữu hoặc xung chiếu, hoặc hội chiếu, tất phải sớm lìa"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu, đơn thủ chiếu Mệnh, ly tông thứ xuất",
+      "when": [
+        {
+          "meets_any": [
+            "TaPhu",
+            "HuuBat"
+          ],
+          "not_with": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Tả, Hữu chiếu Mệnh mà Mệnh có nhiều sao tốt: ắt được hưởng giàu sang và sống lâu."
+      ],
+      "condition_text": "cung Mệnh có nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/ta-huu/24",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "tất được hưởng giàu sang và sống lâu"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu, đơn thủ chiếu Mệnh, ly tông thứ xuất",
+      "when": [
+        {
+          "meets_any": [
+            "TaPhu",
+            "HuuBat"
+          ],
+          "not_with": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Tả, Hữu chiếu Mệnh mà Mệnh có nhiều sao xấu: ắt nghèo khổ cô độc, đời gặp nhiều gian truân vất vả và thường chết yểu."
+      ],
+      "condition_text": "cung Mệnh có nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/ta-huu/25",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "trong đời gặp nhiều nỗi gian truân vất vả và thường yểu tử"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Tả, Hữu, đơn thủ chiếu Mệnh, ly tông thứ xuất",
+      "when": [
+        {
+          "meets_any": [
+            "TaPhu",
+            "HuuBat"
+          ],
+          "not_with": [
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    }
+  ]
+}
