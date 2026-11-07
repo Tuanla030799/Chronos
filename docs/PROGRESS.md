@@ -4,7 +4,7 @@
 > Cập nhật lần cuối: **2026-11-07**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D12 đã chốt, TV-01, TV-15 đã duyệt, bảng độ sáng phụ tinh và module `content` xong. D13 đã chốt theo sách.
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D13 đã chốt. TV-01, TV-15 đã duyệt; TV-02 đến TV-06 đã nạp, chờ duyệt.
 
 ## 1. Trạng thái
 
@@ -28,7 +28,7 @@
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
 | Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `scan`, `review`; V1–V13; 80 test |
-| Dữ liệu luận giải | 🟡 Đang làm | TV-01, TV-15 đã duyệt; còn 17 batch Tử Vi và 11 batch khác |
+| Dữ liệu luận giải | 🟡 Đang làm | TV-01, TV-15 đã duyệt; TV-02 đến TV-06 `draft`; còn 12 batch Tử Vi và 11 batch khác |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
@@ -40,7 +40,9 @@
 - [x] Duyệt TV-01, TV-15; chốt D6a, D6b, D10, D11, D12
 - [x] Task 5A.3: module `content`, V10, V13, bảng độ sáng phụ tinh
 - [x] Chốt D13 theo sách; `rights` của *Tân Biên* là `paraphrased`
-- [ ] Task 5A.4: skill `/ingest-content`, chạy các batch còn lại
+- [x] Skill `/ingest-content`, nạp TV-02 đến TV-06
+- [ ] Duyệt TV-02 đến TV-06 ở `build/content/review/`
+- [ ] Nạp TV-07 đến TV-14, TV-16 đến TV-19
 - [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -58,6 +60,14 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-08 — Task 5A.4: `/ingest-content` và TV-02 đến TV-06
+
+- Chốt D13 theo tr. 39; `rights` của *Tân Biên* thành `paraphrased` (V11 chặn `quote`). Commit Task 5A.3 (`1db0145`, `bce6a0c`, `be5aa6d`) và hạ tầng nạp (`8d05853`).
+- Skill `/ingest-content` và lệnh `astro-data expand`: viết dạng gọn một dòng một mục rồi bung ra JSON. Thêm fact `ban_menh`, `polarity`, `harmony` cho chương Mệnh; `profile.dau` thành tùy chọn.
+- Nạp song song TV-02 (97 mục, 16 gap), TV-03 (50 đoạn), TV-04 (110), TV-05 (105), TV-06 (107); 70 `correction`, 154 `condition_text`. Dạng gọn bằng 54% JSON.
+- Tích hợp: thêm fact `is_menh` vì neo Mệnh áp cho cung Thân làm đoạn về chính cung Mệnh hiện sai; câu phú phải nguyên văn, khôi phục 45 câu bị lược; thêm `NamMenh`; sửa một chỗ đọc ngược nghĩa ở Thái Dương (tr. 68 "cô" là "vô", theo tr. 78). Không có cặp sao lặp giữa các batch.
+- Kiểm chứng: 280 test core, 85 test `astro-data`, 26 FFI đều qua; `clippy`, `rustfmt` sạch; validate 0 lỗi; 488/488 đoạn xuất hiện trên 510.432 lá số. Cung Mệnh hiện trung bình 18,1 đoạn, 5,8 đoạn chắc chắn. Chưa kiểm định độc lập.
 
 ### 2026-11-07 — Task 5A.3: D8, module `content`, V13
 
@@ -349,7 +359,7 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 279 test core + 80 astro-data + 26 FFI
+cargo test --workspace                                  # 280 test core + 85 astro-data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web

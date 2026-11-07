@@ -422,8 +422,8 @@ Câu gốc là "Đơn thủ tại Ngọ, Phủ đồng cung: công danh hiển h
 | `anchor.transformations` | Thay cho `stars`, neo theo `FourTransformations` |
 | `anchor.no_main_star` | Thay cho `stars`, cung vô Chính diệu |
 | Không có cả ba | Neo toàn cung: dùng cho bộ sao trải trên nhiều cung, không sao nào bắt buộc tọa thủ |
-| `section` | `DaiCuong`, `NuMenh`, `PhuGiai`, theo tiêu đề nhỏ của sách; để nhóm khi hiển thị |
-| `verse` | Câu phú nguyên văn của khối Phú giải |
+| `section` | `DaiCuong`, `NuMenh`, `NamMenh`, `PhuGiai`, theo tiêu đề nhỏ của sách; để nhóm khi hiển thị |
+| `verse` | Câu phú của khối Phú giải, nguyên văn cả lỗi in, không lược. Đây là câu phú truyền thống, không phải lời tác giả, nên V12 không áp dụng; V5 kiểm nó có trên trang |
 | `when` | Mảng phương án, thỏa một phương án là đạt. Bỏ trống nghĩa là luôn áp dụng |
 | `condition_text` | Phần điều kiện máy không xét được, mục 7.5 |
 
@@ -446,6 +446,10 @@ Trong một phương án, các trường là quan hệ VÀ. Trong một danh sá
 | `with_transformations` | `FourTransformations[]` | Có Hóa này trong cung | "gặp Quyền đồng cung" |
 | `tuan_triet` | `Tuan`, `Triet`, `Either`, `Neither` | Cung có, hoặc không có, Tuần, Triệt | "Tuần, Triệt án ngữ" |
 | `than_here` | bool | Thân cư cung này | "Thân cư Phúc Đức" |
+| `is_menh` | bool | Cung đang xét chính là cung Mệnh. Neo Mệnh còn được áp cho cung Thân, nên đoạn nói riêng về cung Mệnh cần `true` | "Mệnh vô Chính diệu", "Mệnh tại Tý" |
+| `polarity` | `TuViPolarity[]` | Âm Dương Nam Nữ | "Dương Nam, Âm Nữ" |
+| `harmony` | `YinYangHarmony` | Thuận lý, nghịch lý giữa năm sinh và cung Mệnh | "thuận lý" |
+| `ban_menh` | `FiveElements[]` | Ngũ hành của Bản Mệnh | "Kim Mệnh, cung Mệnh an tại Tỵ" |
 | `gender` | `Gender` | Giới tính | "Nữ mệnh" |
 | `year_stems`, `year_branches` | `Stem[]`, `Branch[]` | Can, Chi năm sinh | "Tuổi Giáp, Đinh, Kỷ" |
 | `menh_any`, `menh_all` | sao | Một, hoặc mọi sao ở cung Mệnh | Ma trận Mệnh × Nô Bộc |
@@ -620,7 +624,7 @@ Neo `Menh/<sao>` được thêm cho cung có `is_than`; mục 7.4 nêu các quy 
 | Fact | Nghĩa |
 | :-- | :-- |
 | `branch:<Branch>` | Chi của cung |
-| `solo`, `no_main`, `than`, `tuan`, `triet` | Trạng thái cung |
+| `solo`, `no_main`, `than`, `tuan`, `triet`, `is_menh` | Trạng thái cung |
 | `with:<TuViStar>` | Sao ở cùng cung |
 | `meet:<TuViStar>` | Sao hội hợp: cùng cung, tam chiếu, xung chiếu |
 | `pair:<TuViStar>` | Sao ở cung nhị hợp |
@@ -628,7 +632,7 @@ Neo `Menh/<sao>` được thêm cho cung có `is_than`; mục 7.4 nêu các quy 
 | `hoa:<FourTransformations>` | Hóa hội hợp |
 | `hoa_with:<FourTransformations>` | Hóa trong cung |
 | `bright:<TuViStar hoặc Hóa>:<StarBrightness>` | Độ sáng của sao, Hóa trong cung |
-| `gender:<Gender>`, `year_stem:<Stem>`, `year_branch:<Branch>` | Người xem |
+| `gender:<Gender>`, `polarity:<TuViPolarity>`, `harmony:<YinYangHarmony>`, `ban_menh:<FiveElements>`, `year_stem:<Stem>`, `year_branch:<Branch>` | Người xem |
 | `menh:<TuViStar>` | Sao tại cung Mệnh |
 
 ## 10. Kiểm tra tự động
@@ -648,7 +652,7 @@ Neo `Menh/<sao>` được thêm cho cung có `is_than`; mục 7.4 nêu các quy 
 | V9 | SQLite và JSON Web cùng số mục, cùng nội dung, cùng `content_hash` |
 | V10 | `fixtures/tuvi_palace.json`: 5 vector của `TUVI_SPEC.md` mục 6.2 cho đúng danh sách đoạn của Quan Lộc, chạy ở Rust. Hai cầu nối có test riêng cho cùng API |
 | V11 | `build --release` bỏ mục chưa `approved`; từ chối nếu mục `approved` dựa trên nguồn `rights = unverified`, hoặc dùng `quote`, `translation` với nguồn `paraphrased` |
-| V12 | Mục `paraphrase` không chép nguyên một đoạn từ 12 từ liên tiếp trở lên của trang nguồn: D3 |
+| V12 | Mục `paraphrase` không chép nguyên một đoạn từ 12 từ liên tiếp trở lên của trang nguồn: D3. `verse` không thuộc phép này nhưng phải nguyên văn, không lược, tối đa 40 từ |
 | V13 | Quét lá số thật của một chu kỳ 60 năm bằng `content`: mọi đoạn phải xuất hiện ít nhất một lần. Dừng ngay khi đã thấy đủ. Chạy trong `validate`, `build`, `cargo test`; lệnh `scan` in thêm tải từng cung |
 
 `stats` in độ phủ từng collection: `approved`, `draft`, `gap`, thiếu. Test `every_key_of_the_content_module_exists_in_the_registry` đảm bảo khóa do `content` sinh luôn có trong registry.
@@ -774,6 +778,28 @@ Lỗi nặng tập trung: 0/79 ở Chính Tinh và Sát tinh, 4/38 ở phụ tin
 **Quét 510.432 lá số thật** (60 năm, mọi tháng không nhuận, ngày, giờ, hai giới tính) sau khi sửa: 116/116 đoạn đều xuất hiện. Trước khi sửa có 2 đoạn không bao giờ hiện, V7 bản đầu không thấy. Mỗi cung Quan Lộc hiện trung bình 8,6 đoạn, ít nhất 1, nhiều nhất 25; chỉ 2,3 đoạn không kèm "Nếu". Phân bố có hai đỉnh, ở khoảng 2–3 và 14–15 đoạn: cung có Sát tinh hiện thêm 12 đoạn của ma trận Sát tinh, xem D12.
 
 **Sau khi có D8 và `content`:** 14 đoạn chuyển từ `condition_text` sang `brightness`, còn 22 đoạn có `condition_text`. Mỗi cung Quan Lộc giảm còn trung bình 6,3 đoạn, 2,6 đoạn chắc chắn. Cung có Sát tinh hiện thêm 6 đoạn thay vì 12, cả 12 nếu có cả Sát tinh đắc lẫn hãm. Build: SQLite 98.304 byte, JSON Web 76.127 byte. `astro_wasm_bg.wasm` tăng từ 279.538 lên 342.187 byte do API `content`.
+
+### 11.6. Cụm TV-02 đến TV-06
+
+Nạp ngày 2026-11-08 bằng `/ingest-content`, năm batch chạy song song, mọi mục còn `draft`.
+
+| Batch | Mục | Gap | `correction` | `condition_text` | JSON |
+| :-- | --: | --: | --: | --: | --: |
+| TV-02 | 97 (91 phụ tinh, 4 Hóa, 14 khóa độ sáng) | 16 | 20 | 0 | 91.839 byte |
+| TV-03 | 50 đoạn, 1 mục cung | 0 | 5 | 36 | 49.075 byte |
+| TV-04 | 110 đoạn | 0 | 11 | 34 | 107.022 byte |
+| TV-05 | 105 đoạn | 0 | 17 | 45 | 100.052 byte |
+| TV-06 | 107 đoạn | 0 | 17 | 39 | 94.143 byte |
+
+- Dạng gọn tổng 238.049 byte, bằng 54% JSON bung ra.
+- Validate sạch, 488/488 đoạn xuất hiện trên 510.432 lá số. Cung Mệnh hiện trung bình 18,1 đoạn, 5,8 đoạn chắc chắn, ít nhất 9, nhiều nhất 39.
+- Tích hợp sau khi nạp phát hiện và sửa:
+  - Neo Mệnh áp cho cung Thân làm đoạn về chính cung Mệnh hiện sai ở cung Thân: thêm fact `is_menh`.
+  - V12 chặn câu phú, khiến 45 câu bị lược thành "…": nay câu phú phải nguyên văn, đã khôi phục từ trang.
+  - Thiếu `NamMenh`.
+  - Đọc ngược nghĩa "tuy cô bệnh tật" (tr. 68): câu song song tr. 78 in "vô".
+- Không có cặp sao lặp giữa các batch: chương Mệnh viết tự sự theo từng sao, không lặp lời như chương Quan Lộc.
+- Điều kiện sách dùng mà schema chưa diễn đạt, đang ở `condition_text`: sao của cung Thân khi đang xét Mệnh, "chỉ xung chiếu", ngũ hành sinh khắc giữa cung, Chính diệu và Bản Mệnh, sinh ban ngày/đêm, ngày âm 1–15, "Lộc" chưa rõ Lộc Tồn hay Hóa Lộc.
 
 ## 12. Quyết định
 
