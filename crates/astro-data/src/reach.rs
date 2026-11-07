@@ -1,8 +1,9 @@
 //! Check V7: whether a condition can ever hold, on the 144 states of the Chính Tinh.
 //!
 //! Twelve positions of Tử Vi fix all 14 Chính Tinh, so a palace has only 144 possible states. A
-//! condition that fails on all of them is a misreading or a misprint. Only the Chính Tinh and the
-//! table of Tứ Hóa are known here: conditions on other stars, or on the year, count as possible.
+//! condition that fails on all of them is a misreading or a misprint. Only the Chính Tinh, the
+//! brightness tables and Tứ Hóa are known here: conditions on other stars, or on the year, count
+//! as possible. Check V13 in [`crate::scan`] sees those on real charts.
 
 use crate::model::{StarRef, When};
 use astro_core::tuvi::{

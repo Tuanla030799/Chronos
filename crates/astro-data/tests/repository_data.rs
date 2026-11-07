@@ -1,11 +1,24 @@
 //! Checks on the real `data/interpretations/`: it stays clean, and the checks still catch the
 //! mistakes that matter when they are planted in it.
 
+use astro_core::almanac::{age_restrictions, almanac_day};
+use astro_core::bazi_analysis::analyze_bazi;
+use astro_core::content::{
+    EightUse, age_restriction_keys, almanac_day_keys, bazi_keys, eight_star_key,
+    eight_star_use_key, kua_compatibility_keys, kua_key, nine_star_key, tuvi_palace_query,
+};
+use astro_core::fengshui::{EightMansionsStar, NineStar, kua_compatibility, kua_info};
+use astro_core::tuvi::{TuViConfig, TuViPalaceRole, TuViStar, tuvi_chart_from_lunar};
+use astro_core::{Branch, FourPillarsOptions, Gender, LunarDate, SolarDate, SolarDateTime};
 use astro_data::collections::PASSAGE_COLLECTION;
+use astro_data::collections::find;
+use astro_data::compile::Compiled;
 use astro_data::compile::compile;
 use astro_data::dataset::{DATA_DIR, Dataset, load};
 use astro_data::output;
+use astro_data::scan::{ScanRange, select, unseen};
 use astro_data::validate::{Issue, Validated, missing_keys, validate};
+use serde::Deserialize;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicU32, Ordering};
@@ -105,10 +118,142 @@ fn quan_loc_has_a_passage_for_each_chinh_tinh() {
 fn every_brightness_of_the_chinh_tinh_has_text_or_a_gap() {
     let dataset = load(&repository()).unwrap();
     let validated = validate(&dataset);
+    let main: Vec<String> = TuViStar::ALL[..14]
+        .iter()
+        .map(|star| format!("{star:?}/"))
+        .collect();
+    let missing = &missing_keys(&validated)["tuvi.star_brightness"];
+    assert!(
+        !missing
+            .iter()
+            .any(|key| main.iter().any(|star| key.starts_with(star)))
+    );
+}
+
+#[derive(Deserialize)]
+struct Fixture {
+    vector: String,
+    year: i32,
+    month: u8,
+    day: u8,
+    is_leap_month: bool,
+    hour: Branch,
+    gender: Gender,
+    role: TuViPalaceRole,
+    passages: Vec<String>,
+}
+
+fn compiled_repository() -> Compiled {
+    let dataset = load(&repository()).unwrap();
+    compile(&validate(&dataset), &dataset.sources, false)
+}
+
+/// V10: the five vectors of `docs/TUVI_SPEC.md` show the expected passages.
+#[test]
+fn the_vectors_show_the_expected_passages() {
+    let path = repository()
+        .join(DATA_DIR)
+        .join("fixtures/tuvi_palace.json");
+    let fixtures: Vec<Fixture> = serde_json::from_str(&fs::read_to_string(path).unwrap()).unwrap();
+    assert_eq!(fixtures.len(), 5);
+    let compiled = compiled_repository();
+    for fixture in fixtures {
+        let lunar = LunarDate {
+            year: fixture.year,
+            month: fixture.month,
+            day: fixture.day,
+            is_leap_month: fixture.is_leap_month,
+        };
+        let config = TuViConfig::default();
+        let chart = tuvi_chart_from_lunar(lunar, fixture.hour, fixture.gender, &config).unwrap();
+        let branch = chart.palace_of_role(fixture.role).branch;
+        let shown: Vec<&str> = select(&compiled, &tuvi_palace_query(&chart, branch))
+            .into_iter()
+            .map(|id| compiled.passages[id as usize - 1].stable_id.as_str())
+            .collect();
+        assert_eq!(shown, fixture.passages, "{}", fixture.vector);
+    }
+}
+
+/// V13: every passage appears on a real chart.
+#[test]
+fn every_passage_appears_on_a_real_chart() {
     assert_eq!(
-        missing_keys(&validated)["tuvi.star_brightness"],
+        unseen(&compiled_repository(), &ScanRange::full()),
         Vec::<String>::new()
     );
+}
+
+fn assert_known(keys: &[String]) {
+    for key in keys {
+        let (collection, path) = key.split_once('/').unwrap();
+        let collection = find(collection).unwrap_or_else(|| panic!("{key}"));
+        assert!(
+            (collection.all)().iter().any(|known| known == path),
+            "{key}"
+        );
+    }
+}
+
+#[test]
+fn every_key_of_the_content_module_exists_in_the_registry() {
+    for day in 1..=28 {
+        for month in 1..=12 {
+            let date = SolarDate {
+                year: 2024,
+                month,
+                day,
+            };
+            assert_known(&almanac_day_keys(&almanac_day(date, 7.0).unwrap()));
+        }
+    }
+    for year in 1950..2030 {
+        assert_known(&age_restriction_keys(&age_restrictions(year, 2030)));
+    }
+    for hour in 0..24 {
+        let birth = SolarDateTime {
+            year: 1990,
+            month: 5,
+            day: 15,
+            hour,
+            minute: 0,
+            second: 0,
+        };
+        let options = FourPillarsOptions::default();
+        assert_known(&bazi_keys(
+            &analyze_bazi(birth, &options, Gender::Male).unwrap(),
+        ));
+    }
+    for year in 1990..1999 {
+        let kua = kua_info(year, Gender::Female);
+        assert_known(&[kua_key(&kua)]);
+        assert_known(&kua_compatibility_keys(&kua_compatibility(
+            kua,
+            kua_info(year, Gender::Male),
+        )));
+    }
+    for star in NineStar::ALL {
+        assert_known(&[nine_star_key(star)]);
+    }
+    for star in EightMansionsStar::ALL {
+        assert_known(&[eight_star_key(star)]);
+        assert_known(&EightUse::ALL.map(|usage| eight_star_use_key(star, usage)));
+    }
+    for day in 1..=29 {
+        for hour in Branch::ALL {
+            let lunar = LunarDate {
+                year: 2024,
+                month: 1,
+                day,
+                is_leap_month: false,
+            };
+            let config = TuViConfig::default();
+            let chart = tuvi_chart_from_lunar(lunar, hour, Gender::Male, &config).unwrap();
+            for branch in Branch::ALL {
+                assert_known(&tuvi_palace_query(&chart, branch).keys);
+            }
+        }
+    }
 }
 
 #[test]

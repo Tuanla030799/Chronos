@@ -15,6 +15,7 @@ pub mod model;
 pub mod output;
 pub mod reach;
 pub mod review;
+pub mod scan;
 pub mod source;
 pub mod stats;
 #[cfg(test)]

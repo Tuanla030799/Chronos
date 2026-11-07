@@ -14,9 +14,11 @@ use astro_core::bazi_analysis::{
     BaziAnalysis, BaziStar, DaiVan, Gender, HiddenStem, KhongVong, LifeStage, LuckCycle,
     PillarPosition, PillarReading, StarBasis, StarPlacement, TenGod,
 };
+use astro_core::content::{self, EightUse, Gate, PalaceQuery, PassageLookup};
 use astro_core::fengshui::{
     CompassDirection, DirectionStar, EightMansionsStar, FlyingStar, KuaCompatibility, KuaInfo,
-    LoShuGrid, NineStar, NineStarBoundary, NineStars, Palace, TamNguyen, Trigram, TrigramGroup,
+    LoShuGrid, NineStar, NineStarBoundary, NineStarPhase, NineStars, Palace, TamNguyen, Trigram,
+    TrigramGroup,
 };
 use astro_core::tuvi::{
     FiveElementsBureau, FourTransformations, LeapMonthRule, MenhCucRelation, StarBrightness,
@@ -1526,7 +1528,7 @@ pub fn tuvi_star_nature(value: TuViStar) -> StarNature {
     value.nature()
 }
 
-/// Brightness of a star in a palace; only the Chính Tinh have one.
+/// Brightness of a star in a palace; the Chính Tinh and 17 other stars have one.
 #[uniffi::export]
 pub fn tuvi_star_brightness(value: TuViStar, branch: Branch) -> Option<StarBrightness> {
     value.brightness_at(branch)
@@ -1610,11 +1612,205 @@ pub fn menh_cuc_relation_name(value: MenhCucRelation) -> String {
     value.name_vi().to_owned()
 }
 
+#[uniffi::remote(Enum)]
+pub enum EightUse {
+    HuongNha,
+    Bep,
+    BanLamViec,
+    KetHon,
+}
+
+#[uniffi::remote(Enum)]
+pub enum NineStarPhase {
+    DuongVan,
+    SinhKhi,
+    ThoaiKhi,
+    ThatVan,
+}
+
+#[uniffi::remote(Record)]
+pub struct PassageLookup {
+    pub anchors: Vec<String>,
+    pub facts: Vec<String>,
+}
+
+#[uniffi::remote(Record)]
+pub struct PalaceQuery {
+    pub keys: Vec<String>,
+    pub lookups: Vec<PassageLookup>,
+}
+
+/// The `gates` column of a passage could not be read: the content file is damaged.
+#[derive(Debug, uniffi::Error)]
+pub enum ContentError {
+    InvalidGates { message: String },
+}
+
+impl std::fmt::Display for ContentError {
+    fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let ContentError::InvalidGates { message } = self;
+        write!(formatter, "invalid gates: {message}")
+    }
+}
+
+impl std::error::Error for ContentError {}
+
+/// Phase of a Nine Star in the period ruled by `period`.
+#[uniffi::export]
+pub fn nine_star_phase(star: NineStar, period: NineStar) -> NineStarPhase {
+    star.phase_in(period)
+}
+
+/// Vietnamese name of a phase, e.g. "Thoái khí".
+#[uniffi::export]
+pub fn nine_star_phase_name(value: NineStarPhase) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Whether the auspicious text of a Nine Star applies in this phase.
+#[uniffi::export]
+pub fn nine_star_phase_is_auspicious(value: NineStarPhase) -> bool {
+    value.is_auspicious()
+}
+
+/// Brightness of a transformation in a palace; only Hóa Kỵ has one.
+#[uniffi::export]
+pub fn four_transformation_brightness(
+    value: FourTransformations,
+    branch: Branch,
+) -> Option<StarBrightness> {
+    value.brightness_at(branch)
+}
+
+/// Interpretation keys of a day.
+#[uniffi::export]
+pub fn almanac_day_keys(day: AlmanacDay) -> Vec<String> {
+    content::almanac_day_keys(&day)
+}
+
+/// Interpretation keys of the age restrictions in force.
+#[uniffi::export]
+pub fn age_restriction_keys(restrictions: AgeRestrictions) -> Vec<String> {
+    content::age_restriction_keys(&restrictions)
+}
+
+/// Interpretation keys of a Bát Tự reading.
+#[uniffi::export]
+pub fn bazi_keys(analysis: BaziAnalysis) -> Vec<String> {
+    content::bazi_keys(&analysis)
+}
+
+/// Interpretation key of a person's trigram.
+#[uniffi::export]
+pub fn kua_key(kua: KuaInfo) -> String {
+    content::kua_key(&kua)
+}
+
+/// Interpretation key of a star of the Eight Mansions.
+#[uniffi::export]
+pub fn eight_star_key(star: EightMansionsStar) -> String {
+    content::eight_star_key(star)
+}
+
+/// Interpretation key of a star of the Eight Mansions in one use.
+#[uniffi::export]
+pub fn eight_star_use_key(star: EightMansionsStar, usage: EightUse) -> String {
+    content::eight_star_use_key(star, usage)
+}
+
+/// Interpretation keys of the compatibility of two people.
+#[uniffi::export]
+pub fn kua_compatibility_keys(compatibility: KuaCompatibility) -> Vec<String> {
+    content::kua_compatibility_keys(&compatibility)
+}
+
+/// Interpretation key of a Nine Star.
+#[uniffi::export]
+pub fn nine_star_key(star: NineStar) -> String {
+    content::nine_star_key(star)
+}
+
+/// What the interpretation of the palace at `branch` needs.
+#[uniffi::export]
+pub fn tuvi_palace_query(chart: TuViChart, branch: Branch) -> PalaceQuery {
+    content::tuvi_palace_query(&chart, branch)
+}
+
+/// Whether a passage applies to `facts`; `gates` is the `gates` column of the content database.
+#[uniffi::export]
+pub fn gate_matches(gates: String, facts: Vec<String>) -> Result<bool, ContentError> {
+    let gates: Vec<Gate> =
+        serde_json::from_str(&gates).map_err(|error| ContentError::InvalidGates {
+            message: error.to_string(),
+        })?;
+    Ok(content::gate_matches(&gates, &facts))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     const VN: f64 = 7.0;
+
+    fn tuvi_chart_of_v5() -> TuViChart {
+        let lunar = LunarDate {
+            year: 1931,
+            month: 11,
+            day: 30,
+            is_leap_month: false,
+        };
+        tuvi_chart_from_lunar(lunar, Branch::Dan, Gender::Male, None).unwrap()
+    }
+
+    #[test]
+    fn an_empty_palace_query_crosses_the_bridge_with_both_lookups() {
+        let chart = tuvi_chart_of_v5();
+        let branch = chart.palace_of_role(TuViPalaceRole::QuanLoc).branch;
+        let query = tuvi_palace_query(chart, branch);
+        assert_eq!(query.keys[0], "tuvi.palace/QuanLoc");
+        assert_eq!(query.lookups.len(), 2);
+        assert_eq!(
+            query.lookups[1].anchors,
+            ["QuanLoc/ThaiDuong", "QuanLoc/CuMon"]
+        );
+    }
+
+    #[test]
+    fn gates_are_read_from_the_json_of_the_database() {
+        let gates = r#"[{ "all": ["solo"], "any": [["branch:Ngo"]], "none": [] }]"#;
+        let facts = |list: &[&str]| list.iter().map(ToString::to_string).collect::<Vec<_>>();
+        assert!(gate_matches(gates.to_string(), facts(&["solo", "branch:Ngo"])).unwrap());
+        assert!(!gate_matches(gates.to_string(), facts(&["solo"])).unwrap());
+        assert!(gate_matches("[]".to_string(), vec![]).unwrap());
+    }
+
+    #[test]
+    fn damaged_gates_are_an_error_not_a_silent_no() {
+        let error = gate_matches("not json".to_string(), vec![]).unwrap_err();
+        assert!(error.to_string().starts_with("invalid gates:"));
+    }
+
+    #[test]
+    fn nine_star_phases_cross_the_bridge() {
+        assert_eq!(
+            nine_star_phase(NineStar::BatBach, NineStar::CuuTu),
+            NineStarPhase::ThoaiKhi
+        );
+        assert_eq!(nine_star_phase_name(NineStarPhase::ThoaiKhi), "Thoái khí");
+        assert!(nine_star_phase_is_auspicious(NineStarPhase::ThoaiKhi));
+        assert!(!nine_star_phase_is_auspicious(NineStarPhase::ThatVan));
+    }
+
+    #[test]
+    fn keys_and_the_brightness_of_hoa_ky_cross_the_bridge() {
+        assert_eq!(nine_star_key(NineStar::CuuTu), "fengshui.nine_star/CuuTu");
+        assert_eq!(
+            eight_star_use_key(EightMansionsStar::SinhKhi, EightUse::KetHon),
+            "fengshui.eight_star_use/SinhKhi/KetHon"
+        );
+        let level = four_transformation_brightness(FourTransformations::HoaKy, Branch::Suu);
+        assert_eq!(level, Some(StarBrightness::Dac));
+    }
 
     /// Spec vector 2: giờ Tý Sớm, past Hạ Chí but before the Giáp Tý day where the day star turns.
     const VECTOR_2: SolarDateTime = SolarDateTime {

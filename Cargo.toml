@@ -24,6 +24,10 @@ uniffi = "0.32.2"
 wasm-bindgen = "0.2.130"
 wasm-bindgen-test = "0.3.80"
 
+# The chart scan of astro-data runs in `cargo test`.
+[profile.dev.package.astro-core]
+opt-level = 2
+
 [profile.release]
 lto = true
 codegen-units = 1

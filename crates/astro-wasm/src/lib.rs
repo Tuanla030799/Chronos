@@ -6,13 +6,16 @@
 //! A feng shui `boundary` may be omitted for `LapXuanDay` and a `forward` for `true`. The options of
 //! a Tử Vi chart may be omitted, and so may each of their fields.
 
+use astro_core::almanac::{AgeRestrictions, AlmanacDay};
 use astro_core::almanac::{
     AlmanacGod, HoangOc, KimLau, Mansion, PathGod, TamTai, Truc, VietnamTaboo,
 };
+use astro_core::bazi_analysis::BaziAnalysis;
 use astro_core::bazi_analysis::{BaziStar, LifeStage, TenGod};
+use astro_core::content::{self, EightUse, Gate};
 use astro_core::fengshui::{
-    CompassDirection, EightMansionsStar, KuaInfo, LoShuGrid, NineStar, NineStarBoundary, Palace,
-    TamNguyen, Trigram, TrigramGroup,
+    CompassDirection, EightMansionsStar, KuaCompatibility, KuaInfo, LoShuGrid, NineStar,
+    NineStarBoundary, NineStarPhase, Palace, TamNguyen, Trigram, TrigramGroup,
 };
 use astro_core::tuvi::{
     FiveElementsBureau, FourTransformations, LeapMonthRule, MenhCucRelation, StarBrightness,
@@ -164,6 +167,11 @@ export type EightMansionsStar = "SinhKhi" | "ThienY" | "DienNien" | "PhucVi" | "
 export type NineStar = "NhatBach" | "NhiHac" | "TamBich" | "TuLuc" | "NguHoang" | "LucBach" | "ThatXich" | "BatBach" | "CuuTu";
 export type TamNguyen = "ThuongNguyen" | "TrungNguyen" | "HaNguyen";
 export type NineStarBoundary = "LunarNewYear" | "LapXuanDay" | "LapXuanExact";
+export type NineStarPhase = "DuongVan" | "SinhKhi" | "ThoaiKhi" | "ThatVan";
+export type EightUse = "HuongNha" | "Bep" | "BanLamViec" | "KetHon";
+export interface Gate { all: string[]; any: string[][]; none: string[]; }
+export interface PassageLookup { anchors: string[]; facts: string[]; }
+export interface PalaceQuery { keys: string[]; lookups: PassageLookup[]; }
 export type FiveElements = "Moc" | "Hoa" | "Tho" | "Kim" | "Thuy";
 export interface DirectionStar {
   direction: CompassDirection;
@@ -1237,6 +1245,134 @@ fn tuvi_config(options: JsValue) -> Result<TuViConfig, JsValue> {
 }
 
 /// `undefined` and `null` select the default; anything else must name a boundary.
+/// Phase of a Nine Star in the period ruled by `period`.
+#[wasm_bindgen(js_name = nineStarPhase, unchecked_return_type = "NineStarPhase")]
+pub fn nine_star_phase(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] star: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] period: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<NineStar>(star)?.phase_in(from_js(period)?))
+}
+
+/// Vietnamese name of a phase, e.g. "Thoái khí".
+#[wasm_bindgen(js_name = nineStarPhaseName)]
+pub fn nine_star_phase_name(
+    #[wasm_bindgen(unchecked_param_type = "NineStarPhase")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<NineStarPhase>(value)?.name_vi().to_owned())
+}
+
+/// Whether the auspicious text of a Nine Star applies in this phase.
+#[wasm_bindgen(js_name = nineStarPhaseIsAuspicious)]
+pub fn nine_star_phase_is_auspicious(
+    #[wasm_bindgen(unchecked_param_type = "NineStarPhase")] value: JsValue,
+) -> Result<bool, JsValue> {
+    Ok(from_js::<NineStarPhase>(value)?.is_auspicious())
+}
+
+/// Brightness of a transformation in a palace; only Hóa Kỵ has one.
+#[wasm_bindgen(
+    js_name = fourTransformationBrightness,
+    unchecked_return_type = "StarBrightness | null"
+)]
+pub fn four_transformation_brightness(
+    #[wasm_bindgen(unchecked_param_type = "FourTransformations")] value: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<FourTransformations>(value)?.brightness_at(from_js(branch)?))
+}
+
+/// Interpretation keys of a day.
+#[wasm_bindgen(js_name = almanacDayKeys)]
+pub fn almanac_day_keys(
+    #[wasm_bindgen(unchecked_param_type = "AlmanacDay")] day: JsValue,
+) -> Result<Vec<String>, JsValue> {
+    Ok(content::almanac_day_keys(&from_js::<AlmanacDay>(day)?))
+}
+
+/// Interpretation keys of the age restrictions in force.
+#[wasm_bindgen(js_name = ageRestrictionKeys)]
+pub fn age_restriction_keys(
+    #[wasm_bindgen(unchecked_param_type = "AgeRestrictions")] restrictions: JsValue,
+) -> Result<Vec<String>, JsValue> {
+    Ok(content::age_restriction_keys(&from_js::<AgeRestrictions>(
+        restrictions,
+    )?))
+}
+
+/// Interpretation keys of a Bát Tự reading.
+#[wasm_bindgen(js_name = baziKeys)]
+pub fn bazi_keys(
+    #[wasm_bindgen(unchecked_param_type = "BaziAnalysis")] analysis: JsValue,
+) -> Result<Vec<String>, JsValue> {
+    Ok(content::bazi_keys(&from_js::<BaziAnalysis>(analysis)?))
+}
+
+/// Interpretation key of a person's trigram.
+#[wasm_bindgen(js_name = kuaKey)]
+pub fn kua_key(
+    #[wasm_bindgen(unchecked_param_type = "KuaInfo")] kua: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::kua_key(&from_js::<KuaInfo>(kua)?))
+}
+
+/// Interpretation key of a star of the Eight Mansions.
+#[wasm_bindgen(js_name = eightStarKey)]
+pub fn eight_star_key(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] star: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::eight_star_key(from_js(star)?))
+}
+
+/// Interpretation key of a star of the Eight Mansions in one use.
+#[wasm_bindgen(js_name = eightStarUseKey)]
+pub fn eight_star_use_key(
+    #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] star: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "EightUse")] usage: JsValue,
+) -> Result<String, JsValue> {
+    let usage: EightUse = from_js(usage)?;
+    Ok(content::eight_star_use_key(from_js(star)?, usage))
+}
+
+/// Interpretation keys of the compatibility of two people.
+#[wasm_bindgen(js_name = kuaCompatibilityKeys)]
+pub fn kua_compatibility_keys(
+    #[wasm_bindgen(unchecked_param_type = "KuaCompatibility")] compatibility: JsValue,
+) -> Result<Vec<String>, JsValue> {
+    Ok(content::kua_compatibility_keys(
+        &from_js::<KuaCompatibility>(compatibility)?,
+    ))
+}
+
+/// Interpretation key of a Nine Star.
+#[wasm_bindgen(js_name = nineStarKey)]
+pub fn nine_star_key(
+    #[wasm_bindgen(unchecked_param_type = "NineStar")] star: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::nine_star_key(from_js(star)?))
+}
+
+/// What the interpretation of the palace at `branch` needs.
+#[wasm_bindgen(js_name = tuviPalaceQuery, unchecked_return_type = "PalaceQuery")]
+pub fn tuvi_palace_query(
+    #[wasm_bindgen(unchecked_param_type = "TuViChart")] chart: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    let chart: TuViChart = from_js(chart)?;
+    to_js(&content::tuvi_palace_query(&chart, from_js(branch)?))
+}
+
+/// Whether a passage applies to `facts`; `gates` is the `gates` field of the content file.
+#[wasm_bindgen(js_name = gateMatches)]
+pub fn gate_matches(
+    #[wasm_bindgen(unchecked_param_type = "Gate[]")] gates: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "string[]")] facts: JsValue,
+) -> Result<bool, JsValue> {
+    let gates: Vec<Gate> = from_js(gates)?;
+    let facts: Vec<String> = from_js(facts)?;
+    Ok(content::gate_matches(&gates, &facts))
+}
+
 fn star_boundary(boundary: JsValue) -> Result<NineStarBoundary, JsValue> {
     Ok(from_js::<Option<NineStarBoundary>>(boundary)?.unwrap_or_default())
 }

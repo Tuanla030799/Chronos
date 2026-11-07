@@ -642,6 +642,20 @@ impl NineStar {
         Self::ALL[((number.rem_euclid(9) + 8) % 9) as usize]
     }
 
+    /// Phase of this star in the period ruled by `period`, as given by [`van_of_year`].
+    pub const fn phase_in(self, period: NineStar) -> NineStarPhase {
+        let (star, period) = (self.number(), period.number());
+        if star == period {
+            NineStarPhase::DuongVan
+        } else if star == period % 9 + 1 {
+            NineStarPhase::SinhKhi
+        } else if star == (period + 7) % 9 + 1 {
+            NineStarPhase::ThoaiKhi
+        } else {
+            NineStarPhase::ThatVan
+        }
+    }
+
     /// Palace where the star belongs in the original Lạc Thư square.
     pub const fn home_palace(self) -> Palace {
         Palace::ALL[self as usize]
@@ -729,6 +743,46 @@ impl NineStar {
             NineStar::BatBach => "Tả Phù",
             NineStar::CuuTu => "Hữu Bật",
         }
+    }
+}
+
+/// Where a star stands in a 20-year period (D6 of `docs/INTERPRETATION_DB_SPEC.md`, after
+/// *Thẩm Thị Huyền Không Học*).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum NineStarPhase {
+    /// Đương vận: the ruling star of the period
+    DuongVan,
+    /// Sinh khí: the star of the next period, and only that one
+    SinhKhi,
+    /// Thoái khí: the star of the previous period
+    ThoaiKhi,
+    /// Thất vận: every other star
+    ThatVan,
+}
+
+impl NineStarPhase {
+    /// All phases.
+    pub const ALL: [NineStarPhase; 4] = [
+        NineStarPhase::DuongVan,
+        NineStarPhase::SinhKhi,
+        NineStarPhase::ThoaiKhi,
+        NineStarPhase::ThatVan,
+    ];
+
+    /// Vietnamese name, e.g. "Thoái khí".
+    pub const fn name_vi(self) -> &'static str {
+        match self {
+            NineStarPhase::DuongVan => "Đương vận",
+            NineStarPhase::SinhKhi => "Sinh khí",
+            NineStarPhase::ThoaiKhi => "Thoái khí",
+            NineStarPhase::ThatVan => "Thất vận",
+        }
+    }
+
+    /// Whether the auspicious text of the star applies: every phase but Thất vận.
+    pub const fn is_auspicious(self) -> bool {
+        !matches!(self, NineStarPhase::ThatVan)
     }
 }
 
@@ -1191,6 +1245,46 @@ mod tests {
 
     fn numbers(grid: LoShuGrid) -> [[u8; 3]; 3] {
         grid.rows().map(|row| row.map(NineStar::number))
+    }
+
+    #[test]
+    fn phases_of_period_nine_follow_d6() {
+        use super::NineStarPhase::{DuongVan, SinhKhi, ThatVan, ThoaiKhi};
+        assert_eq!(CuuTu.phase_in(CuuTu), DuongVan);
+        assert_eq!(NhatBach.phase_in(CuuTu), SinhKhi);
+        assert_eq!(BatBach.phase_in(CuuTu), ThoaiKhi);
+        assert_eq!(NhiHac.phase_in(CuuTu), ThatVan);
+        assert_eq!(NguHoang.phase_in(CuuTu), ThatVan);
+    }
+
+    #[test]
+    fn every_period_has_one_star_of_each_phase_and_six_out_of_time() {
+        use super::{NineStar, NineStarPhase};
+        for period in NineStar::ALL {
+            let count = |phase| {
+                NineStar::ALL
+                    .iter()
+                    .filter(|star| star.phase_in(period) == phase)
+                    .count()
+            };
+            assert_eq!(count(NineStarPhase::DuongVan), 1);
+            assert_eq!(count(NineStarPhase::SinhKhi), 1);
+            assert_eq!(count(NineStarPhase::ThoaiKhi), 1);
+            assert_eq!(count(NineStarPhase::ThatVan), 6);
+        }
+    }
+
+    #[test]
+    fn the_cycle_wraps_at_both_ends() {
+        use super::NineStarPhase::{SinhKhi, ThoaiKhi};
+        assert_eq!(NhatBach.phase_in(CuuTu), SinhKhi);
+        assert_eq!(CuuTu.phase_in(NhatBach), ThoaiKhi);
+    }
+
+    #[test]
+    fn every_phase_but_that_van_uses_the_auspicious_text() {
+        let good = super::NineStarPhase::ALL.map(|phase| phase.is_auspicious());
+        assert_eq!(good, [true, true, true, false]);
     }
 
     #[test]

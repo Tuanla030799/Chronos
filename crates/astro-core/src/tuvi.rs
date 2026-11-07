@@ -208,7 +208,7 @@ impl FiveElementsBureau {
     }
 }
 
-/// Brightness of a Chính Tinh in a palace. Other stars have none: see [`TuViStar::brightness_at`].
+/// Brightness of a star in a palace: see [`TuViStar::brightness_at`].
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum StarBrightness {
@@ -743,12 +743,15 @@ impl TuViStar {
         }
     }
 
-    /// Brightness in the palace at `branch`; `None` for every star but the Chính Tinh.
+    /// Brightness in the palace at `branch`: every palace for the Chính Tinh, the places listed by
+    /// [`minor_brightness`] for 17 other stars, `None` otherwise.
     pub const fn brightness_at(self, branch: Branch) -> Option<StarBrightness> {
         if (self as usize) < 14 {
-            Some(BRIGHTNESS[self as usize][branch.index() as usize])
-        } else {
-            None
+            return Some(BRIGHTNESS[self as usize][branch.index() as usize]);
+        }
+        match minor_brightness(self) {
+            Some((dac, others)) => brightness_in(dac, others, branch),
+            None => None,
         }
     }
 
@@ -866,6 +869,43 @@ impl TuViStar {
     }
 }
 
+/// `Dac` at the branches of `dac`, `others` elsewhere.
+const fn brightness_in(
+    dac: &[Branch],
+    others: Option<StarBrightness>,
+    branch: Branch,
+) -> Option<StarBrightness> {
+    let mut index = 0;
+    while index < dac.len() {
+        if dac[index] as u8 == branch as u8 {
+            return Some(StarBrightness::Dac);
+        }
+        index += 1;
+    }
+    others
+}
+
+/// The palaces where a minor star is Đắc địa, from pp. 39–43, and its brightness elsewhere: `Ham`
+/// for the stars the book calls Hãm địa, `None` for Đại Hao, Tiểu Hao, Thiên Mã and Thiên Hình,
+/// which it never does. The list of the book names the Đắc địa only.
+const fn minor_brightness(star: TuViStar) -> Option<(&'static [Branch], Option<StarBrightness>)> {
+    const HAM: Option<StarBrightness> = Some(StarBrightness::Ham);
+    match star {
+        TuViStar::KinhDuong | TuViStar::DaLa => Some((&[Thin, Tuat, Suu, Mui], HAM)),
+        TuViStar::HoaTinh | TuViStar::LinhTinh => Some((&[Dan, Mao, Thin, Ti, Ngo], HAM)),
+        TuViStar::VanXuong | TuViStar::VanKhuc => Some((&[Thin, Tuat, Suu, Mui, Ti, Hoi], HAM)),
+        TuViStar::DiaKhong | TuViStar::DiaKiep => Some((&[Dan, Than, Ti, Hoi], HAM)),
+        TuViStar::TangMon | TuViStar::BachHo => Some((&[Dan, Than, Mao, Dau], HAM)),
+        TuViStar::ThienKhoc | TuViStar::ThienHu => Some((&[Ty, Ngo, Mao, Dau, Suu, Mui], HAM)),
+        TuViStar::ThienRieu => Some((&[Dan, Mao, Dau, Tuat], HAM)),
+        TuViStar::DaiHao | TuViStar::TieuHao | TuViStar::ThienHinh => {
+            Some((&[Dan, Than, Mao, Dau], None))
+        }
+        TuViStar::ThienMa => Some((&[Ti, Dan], None)),
+        _ => None,
+    }
+}
+
 /// Rows of [`TuViStar::brightness_at`], in the order of the Chính Tinh in [`TuViStar`]; columns
 /// from Tý to Hợi. From the lists on pp. 33–38 of the book.
 const BRIGHTNESS: [[StarBrightness; 12]; 14] = {
@@ -914,6 +954,16 @@ impl FourTransformations {
     /// The star that takes this transformation in a year with stem `year_stem`.
     pub const fn star_for(self, year_stem: Stem) -> TuViStar {
         TU_HOA[year_stem.index() as usize][self as usize]
+    }
+
+    /// Brightness in the palace at `branch`: only Hóa Kỵ has one, from p. 41.
+    pub const fn brightness_at(self, branch: Branch) -> Option<StarBrightness> {
+        match self {
+            FourTransformations::HoaKy => {
+                brightness_in(&[Thin, Tuat, Suu, Mui], Some(StarBrightness::Ham), branch)
+            }
+            _ => None,
+        }
     }
 
     /// Inherent nature, by rule 4 of section 4.9 of the spec.
@@ -1239,7 +1289,7 @@ const fn controlled_by(element: FiveElements) -> FiveElements {
 pub struct TuViPlacedStar {
     /// The star.
     pub star: TuViStar,
-    /// Its brightness in this palace; `None` for every star but the Chính Tinh.
+    /// Its brightness in this palace, see [`TuViStar::brightness_at`].
     pub brightness: Option<StarBrightness>,
     /// The transformation it carries, if any.
     pub transformation: Option<FourTransformations>,
@@ -2116,17 +2166,87 @@ mod tests {
     }
 
     #[test]
-    fn only_the_fourteen_chinh_tinh_have_a_brightness() {
+    fn minor_stars_follow_pages_39_to_43() {
+        use StarBrightness::Dac;
+        use TuViStar as S;
+        let dac_of = |star: TuViStar| -> Vec<Branch> {
+            Branch::ALL
+                .into_iter()
+                .filter(|&branch| star.brightness_at(branch) == Some(Dac))
+                .collect()
+        };
+        for (stars, dac) in [
+            (&[S::KinhDuong, S::DaLa][..], &[Suu, Thin, Mui, Tuat][..]),
+            (&[S::HoaTinh, S::LinhTinh], &[Dan, Mao, Thin, Ti, Ngo]),
+            (&[S::VanXuong, S::VanKhuc], &[Suu, Thin, Ti, Mui, Tuat, Hoi]),
+            (&[S::DiaKhong, S::DiaKiep], &[Dan, Ti, Than, Hoi]),
+            (
+                &[S::DaiHao, S::TieuHao, S::TangMon, S::BachHo, S::ThienHinh],
+                &[Dan, Mao, Than, Dau],
+            ),
+            (&[S::ThienKhoc, S::ThienHu], &[Ty, Suu, Mao, Ngo, Mui, Dau]),
+            (&[S::ThienMa], &[Dan, Ti]),
+            (&[S::ThienRieu], &[Dan, Mao, Dau, Tuat]),
+        ] {
+            for &star in stars {
+                assert_eq!(dac_of(star), dac, "{star:?}");
+            }
+        }
+    }
+
+    #[test]
+    fn only_stars_the_book_calls_ham_dia_are_ham_outside_their_list() {
+        use TuViStar as S;
+        assert_eq!(S::KinhDuong.brightness_at(Ty), Some(StarBrightness::Ham));
+        assert_eq!(S::VanKhuc.brightness_at(Dan), Some(StarBrightness::Ham));
+        assert_eq!(S::ThienKhoc.brightness_at(Thin), Some(StarBrightness::Ham));
+        for star in [S::DaiHao, S::TieuHao, S::ThienMa, S::ThienHinh] {
+            assert_eq!(star.brightness_at(Hoi), None, "{star:?}");
+        }
+    }
+
+    #[test]
+    fn hoa_ky_alone_has_a_brightness() {
+        use FourTransformations::{HoaKhoa, HoaKy, HoaLoc, HoaQuyen};
+        assert_eq!(HoaKy.brightness_at(Suu), Some(StarBrightness::Dac));
+        assert_eq!(HoaKy.brightness_at(Ty), Some(StarBrightness::Ham));
+        for hoa in [HoaLoc, HoaQuyen, HoaKhoa] {
+            assert!(
+                Branch::ALL
+                    .iter()
+                    .all(|&branch| hoa.brightness_at(branch).is_none())
+            );
+        }
+    }
+
+    #[test]
+    fn chart_stars_carry_the_brightness_of_their_palace() {
+        let chart = from_lunar(lunar(2024, 3, 12), Branch::Ngo, Gender::Male);
+        for palace in &chart.palaces {
+            for placed in palace.main_stars.iter().chain(&palace.minor_stars) {
+                assert_eq!(placed.brightness, placed.star.brightness_at(palace.branch));
+            }
+        }
+    }
+
+    #[test]
+    fn only_the_listed_stars_have_a_brightness() {
         let main: Vec<TuViStar> = TuViStar::ALL
             .into_iter()
             .filter(|star| star.category() == StarCategory::ChinhTinh)
             .collect();
         assert_eq!(main.len(), 14);
         assert_eq!(main, BRIGHTNESS_LISTS.map(|(star, _)| star));
+        let mut listed = 0;
         for star in TuViStar::ALL.into_iter().skip(14) {
             assert_eq!(star.category(), StarCategory::PhuTinh);
-            assert!(Branch::ALL.iter().all(|&b| star.brightness_at(b).is_none()));
+            if minor_brightness(star).is_some() {
+                listed += 1;
+            } else {
+                assert!(Branch::ALL.iter().all(|&b| star.brightness_at(b).is_none()));
+            }
         }
+        assert_eq!(listed, 17);
     }
 
     #[test]

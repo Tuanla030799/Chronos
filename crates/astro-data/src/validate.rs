@@ -2,12 +2,13 @@
 //! one run reports all of them.
 
 use crate::collections::{COLLECTIONS, Collection, KeyInfo, PASSAGE_COLLECTION, find};
-use crate::compile::{Gate, anchors, gate};
+use crate::compile::{Gate, anchors, bright_subjects, gate};
 use crate::dataset::{Dataset, LoadedFile};
-use crate::model::{ActivityNote, Entry, Gap, Passage, SourceRef, SourceType, When};
+use crate::model::{ActivityNote, Entry, Gap, Passage, SourceRef, SourceType};
 use crate::reach::{Resolved, expand, impossible, resolve};
 use crate::source::words;
-use astro_core::tuvi::{StarCategory, TuViStar};
+use astro_core::Branch;
+use astro_core::tuvi::TuViStar;
 use std::collections::{BTreeMap, BTreeSet};
 
 /// Longest `summary`, in characters (V8).
@@ -284,8 +285,37 @@ fn check_entry(
     });
 }
 
-fn is_main(star: TuViStar) -> bool {
-    star.category() == StarCategory::ChinhTinh
+/// Reports a brightness no anchor can have, and returns `when` as V7 should see it: a
+/// transformation is not one of the 144 states, so its brightness is checked here instead.
+fn check_brightness(
+    place: &str,
+    passage: &Passage,
+    stars: &[TuViStar],
+    when: &mut Resolved,
+    out: &mut Validated,
+) {
+    if when.brightness.is_empty() || !stars.is_empty() {
+        return;
+    }
+    let hoas = &passage.anchor.transformations;
+    if hoas.is_empty() {
+        out.report("V7", place, "brightness cần neo là sao hoặc Hóa");
+    }
+    for hoa in hoas {
+        let exists = |level| {
+            Branch::ALL
+                .iter()
+                .any(|&b| hoa.brightness_at(b) == Some(level))
+        };
+        if !when.brightness.iter().copied().any(exists) {
+            out.report(
+                "V7",
+                place,
+                format!("{} không có độ sáng này", hoa.name_vi()),
+            );
+        }
+    }
+    when.brightness.clear();
 }
 
 fn check_conditions(
@@ -295,26 +325,22 @@ fn check_conditions(
     anchor_stars: &[TuViStar],
     out: &mut Validated,
 ) -> Option<Vec<Gate>> {
+    let subjects = match bright_subjects(&passage.anchor, &dataset.groups) {
+        Ok(subjects) => subjects,
+        Err(message) => {
+            out.report("V6", place, message);
+            return None;
+        }
+    };
     let mut resolved: Vec<Resolved> = Vec::new();
     let mut gates = Vec::new();
-    let mut misplaced_brightness = false;
     for when in &passage.when {
-        let when: &When = when;
-        if !when.brightness.is_empty()
-            && (anchor_stars.is_empty() || !anchor_stars.iter().copied().all(is_main))
-        {
-            out.report(
-                "V7",
-                place,
-                "brightness chỉ dùng cho Chính Tinh; phụ tinh để condition_text (D8)",
-            );
-            misplaced_brightness = true;
-        }
         match (
             resolve(when, &dataset.groups),
-            gate(when, anchor_stars, &dataset.groups),
+            gate(when, &subjects, &dataset.groups),
         ) {
-            (Ok(when), Ok(compiled)) => {
+            (Ok(mut when), Ok(compiled)) => {
+                check_brightness(place, passage, anchor_stars, &mut when, out);
                 resolved.push(when);
                 gates.push(compiled);
             }
@@ -324,15 +350,8 @@ fn check_conditions(
             }
         }
     }
-    if !misplaced_brightness {
-        let main_anchors: Vec<TuViStar> = anchor_stars
-            .iter()
-            .copied()
-            .filter(|&star| is_main(star))
-            .collect();
-        for problem in impossible(&main_anchors, passage.anchor.no_main_star, &resolved) {
-            out.report("V7", place, problem);
-        }
+    for problem in impossible(anchor_stars, passage.anchor.no_main_star, &resolved) {
+        out.report("V7", place, problem);
     }
     Some(gates)
 }
@@ -689,12 +708,44 @@ mod tests {
     }
 
     #[test]
-    fn v7_sends_the_brightness_of_minor_stars_to_condition_text() {
-        let minor = passage(
-            r#"{ "role": "QuanLoc", "stars": ["VanXuong"] }"#,
-            r#"[{ "brightness": ["Dac"] }]"#,
+    fn v7_knows_the_brightness_of_minor_stars() {
+        let anchor = r#"{ "role": "QuanLoc", "stars": ["VanXuong"] }"#;
+        assert_eq!(
+            passages(&passage(anchor, r#"[{ "brightness": ["Dac"] }]"#)),
+            []
         );
-        assert_eq!(codes(&passages(&minor)), ["V7"]);
+        let never = passage(anchor, r#"[{ "brightness": ["Mieu"] }]"#);
+        assert!(codes(&passages(&never)).contains(&"V7"));
+        let place = passage(
+            anchor,
+            r#"[{ "brightness": ["Dac"], "branches": ["Dan"] }]"#,
+        );
+        assert!(codes(&passages(&place)).contains(&"V7"));
+        let none = r#"{ "role": "QuanLoc", "stars": ["LocTon"] }"#;
+        assert!(codes(&passages(&passage(none, r#"[{ "brightness": ["Dac"] }]"#))).contains(&"V7"));
+    }
+
+    #[test]
+    fn v7_knows_which_transformation_has_a_brightness() {
+        let ky = r#"{ "role": "QuanLoc", "transformations": ["HoaKy"] }"#;
+        assert_eq!(passages(&passage(ky, r#"[{ "brightness": ["Dac"] }]"#)), []);
+        let loc = r#"{ "role": "QuanLoc", "transformations": ["HoaLoc"] }"#;
+        assert_eq!(
+            codes(&passages(&passage(loc, r#"[{ "brightness": ["Dac"] }]"#))),
+            ["V7"]
+        );
+    }
+
+    #[test]
+    fn v7_needs_something_for_a_brightness_to_be_about() {
+        let palace = r#"{ "role": "QuanLoc" }"#;
+        assert_eq!(
+            codes(&passages(&passage(
+                palace,
+                r#"[{ "brightness": ["Dac"] }]"#
+            ))),
+            ["V7"]
+        );
     }
 
     #[test]

@@ -19,5 +19,6 @@ required-features = ["bindgen"]
 bindgen = ["uniffi/cli"]
 
 [dependencies]
-astro-core.workspace = true
+astro-core = { workspace = true, features = ["serde"] }
+serde_json.workspace = true
 uniffi.workspace = true

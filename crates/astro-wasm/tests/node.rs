@@ -775,3 +775,32 @@ fn rejects_invalid_tuvi_input() {
     );
     assert!(tuvi_star_name(variant("Sao")).is_err());
 }
+
+#[wasm_bindgen_test]
+fn palace_queries_and_gates_work_from_javascript() {
+    use astro_wasm::{gate_matches, tuvi_chart_from_lunar, tuvi_palace_query};
+    let lunar = js_sys_object(r#"{ "year": 1931, "month": 11, "day": 30, "isLeapMonth": false }"#);
+    let chart = tuvi_chart_from_lunar(lunar, variant("Dan"), variant("Male"), JsValue::UNDEFINED);
+    let query = tuvi_palace_query(chart.unwrap(), variant("Dan")).unwrap();
+    let text = stringify(&query);
+    assert!(text.contains(r#""keys":["tuvi.palace/QuanLoc""#), "{text}");
+    assert!(
+        text.contains(r#""QuanLoc/ThaiDuong","QuanLoc/CuMon""#),
+        "{text}"
+    );
+    let gates = js_sys_object(r#"[{ "all": ["solo"], "any": [], "none": [] }]"#);
+    assert!(gate_matches(gates.clone(), js_sys_object(r#"["solo"]"#)).unwrap());
+    assert!(!gate_matches(gates, js_sys_object("[]")).unwrap());
+}
+
+#[wasm_bindgen_test]
+fn nine_star_phases_and_keys_work_from_javascript() {
+    use astro_wasm::{nine_star_key, nine_star_phase, nine_star_phase_is_auspicious};
+    let phase = nine_star_phase(variant("BatBach"), variant("CuuTu")).unwrap();
+    assert_eq!(stringify(&phase), r#""ThoaiKhi""#);
+    assert!(nine_star_phase_is_auspicious(phase).unwrap());
+    assert_eq!(
+        nine_star_key(variant("CuuTu")).unwrap(),
+        "fengshui.nine_star/CuuTu"
+    );
+}

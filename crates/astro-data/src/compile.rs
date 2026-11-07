@@ -5,21 +5,11 @@ use crate::model::{SourceRef, SourceType, TuanTriet};
 use crate::reach::expand;
 use crate::source::Source;
 use crate::validate::{ValidEntry, ValidPassage, Validated};
+pub use astro_core::content::Gate;
 use astro_core::tuvi::TuViStar;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use std::collections::BTreeMap;
-
-/// A filter of section 8.3: every fact of `all`, one of each group of `any`, none of `none`.
-#[derive(Debug, Clone, Default, PartialEq, Eq, Serialize, Deserialize)]
-pub struct Gate {
-    /// Facts that must hold.
-    pub all: Vec<String>,
-    /// Groups of which one fact must hold.
-    pub any: Vec<Vec<String>>,
-    /// Facts that must not hold.
-    pub none: Vec<String>,
-}
 
 /// An item of the build, looked up by key.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -53,6 +43,8 @@ pub struct PassageRow {
     pub id: u32,
     /// Stable id.
     pub stable_id: String,
+    /// `Primary` for a firm statement, `More` for one shown as "Nếu …" under "Xem thêm" (D12).
+    pub tier: String,
     /// Heading in the book.
     pub section: Option<String>,
     /// Verse.
@@ -116,10 +108,21 @@ fn group(gate: &mut Gate, facts: Vec<String>) {
     }
 }
 
-/// The gate of one alternative; `anchor_stars` give the stars whose brightness counts.
+/// The stars and transformations of `anchor` whose brightness a condition is about.
+pub fn bright_subjects(
+    anchor: &Anchor,
+    groups: &BTreeMap<String, Vec<TuViStar>>,
+) -> Result<Vec<String>, String> {
+    let stars = expand(&anchor.stars, groups)?;
+    let mut subjects: Vec<String> = stars.iter().map(|star| format!("{star:?}")).collect();
+    subjects.extend(anchor.transformations.iter().map(|hoa| format!("{hoa:?}")));
+    Ok(subjects)
+}
+
+/// The gate of one alternative; `subjects` are what its brightness is about.
 pub fn gate(
     when: &When,
-    anchor_stars: &[TuViStar],
+    subjects: &[String],
     groups: &BTreeMap<String, Vec<TuViStar>>,
 ) -> Result<Gate, String> {
     let debug = |star: &TuViStar| format!("{star:?}");
@@ -129,9 +132,9 @@ pub fn gate(
         facts("branch", &when.branches, |b| format!("{b:?}")),
     );
     let mut bright = Vec::new();
-    for star in anchor_stars {
+    for subject in subjects {
         for level in &when.brightness {
-            bright.push(format!("bright:{star:?}:{level:?}"));
+            bright.push(format!("bright:{subject}:{level:?}"));
         }
     }
     group(&mut gate, bright);
@@ -252,6 +255,12 @@ fn passage_row(id: u32, item: &ValidPassage, source: &Source, draft: bool) -> Pa
     PassageRow {
         id,
         stable_id: passage.id.clone(),
+        tier: if passage.condition_text.is_some() {
+            "More"
+        } else {
+            "Primary"
+        }
+        .to_string(),
         section: passage.section.map(|section| format!("{section:?}")),
         verse: passage.verse.clone(),
         gates: item.gates.clone(),
@@ -327,7 +336,7 @@ mod tests {
             gender: Some(Gender::Female),
             ..When::default()
         };
-        let gate = gate(&when, &[TuVi], &no_groups()).unwrap();
+        let gate = gate(&when, &["TuVi".to_string()], &no_groups()).unwrap();
         assert_eq!(gate.all, ["solo", "with:ThatSat", "gender:Female"]);
         assert_eq!(
             gate.any,
@@ -407,6 +416,34 @@ mod tests {
             ..base
         };
         assert_eq!(anchors(&hoa, &no_groups()).unwrap(), ["QuanLoc/HoaQuyen"]);
+    }
+
+    #[test]
+    fn brightness_is_about_the_anchor_stars_or_transformations() {
+        let groups = BTreeMap::from([("Bo".to_string(), vec![KinhDuong, TuVi])]);
+        let base = Anchor {
+            role: QuanLoc,
+            stars: vec![StarRef::Group("@Bo".to_string())],
+            transformations: vec![],
+            no_main_star: false,
+        };
+        let subjects = bright_subjects(&base, &groups).unwrap();
+        assert_eq!(subjects, ["KinhDuong", "TuVi"]);
+        let hoa = Anchor {
+            stars: vec![],
+            transformations: vec![HoaQuyen],
+            ..base
+        };
+        assert_eq!(bright_subjects(&hoa, &groups).unwrap(), ["HoaQuyen"]);
+        let when = When {
+            brightness: vec![Dac],
+            ..When::default()
+        };
+        let compiled = gate(&when, &subjects, &groups).unwrap();
+        assert_eq!(
+            compiled.any,
+            [vec!["bright:KinhDuong:Dac", "bright:TuVi:Dac"]]
+        );
     }
 
     #[test]

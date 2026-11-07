@@ -5,12 +5,14 @@
 //! cargo run -p astro-data -- build [--release]
 //! cargo run -p astro-data -- stats
 //! cargo run -p astro-data -- review --batch TV-15
+//! cargo run --release -p astro-data -- scan
 //! ```
 
 use astro_data::compile::compile;
 use astro_data::dataset::{Dataset, load};
-use astro_data::model::Status;
+use astro_data::model::{SourceRef, SourceType, Status};
 use astro_data::output::{self, SQLITE_FILE};
+use astro_data::scan::{self, ScanRange};
 use astro_data::source::Rights;
 use astro_data::validate::{Validated, missing_keys, validate};
 use astro_data::{review, stats};
@@ -18,8 +20,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
-const USAGE: &str =
-    "usage: astro-data validate [--complete] | build [--release] | stats | review --batch <id>";
+const USAGE: &str = "usage: astro-data validate [--complete] | build [--release] | stats | scan | review --batch <id>";
 
 fn root() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../..")
@@ -41,11 +42,21 @@ fn print_issues(dataset: &Dataset, validated: &Validated) {
     );
 }
 
+/// V13. It runs on clean data only: a passage V7 refuses need not be looked for.
+fn scan_is_clean(dataset: &Dataset, validated: &Validated) -> bool {
+    let compiled = compile(validated, &dataset.sources, false);
+    let unseen = scan::unseen(&compiled, &ScanRange::full());
+    for id in &unseen {
+        println!("V13 {id}: không lá số nào hiện đoạn này");
+    }
+    unseen.is_empty()
+}
+
 fn run_validate(complete: bool) -> Result<bool, String> {
     let dataset = load(&root())?;
     let validated = validate(&dataset);
     print_issues(&dataset, &validated);
-    let mut clean = validated.issues.is_empty();
+    let mut clean = validated.issues.is_empty() && scan_is_clean(&dataset, &validated);
     if complete {
         for (collection, missing) in missing_keys(&validated) {
             if !missing.is_empty() {
@@ -57,27 +68,32 @@ fn run_validate(complete: bool) -> Result<bool, String> {
     Ok(clean)
 }
 
-/// V11: approved items may not rest on a source whose rights are unverified.
+/// V11: an approved item may not rest on a source whose rights are unverified, nor quote a
+/// source released in paraphrase only.
 fn release_blockers(dataset: &Dataset, validated: &Validated) -> Vec<String> {
-    let unverified = |source: &str| dataset.sources[source].rights == Rights::Unverified;
-    let mut blocked: Vec<String> = validated
+    let blocked = |reference: &SourceRef| match dataset.sources[&reference.source].rights {
+        Rights::Unverified => Some(format!("{}: chưa kiểm bản quyền", reference.source)),
+        Rights::Paraphrased if reference.source_type != SourceType::Paraphrase => {
+            Some(format!("{}: chỉ được diễn đạt lại", reference.source))
+        }
+        _ => None,
+    };
+    let mut reasons: Vec<String> = validated
         .entries
         .iter()
         .filter(|item| item.entry.status == Status::Approved)
-        .filter(|item| unverified(&item.entry.source_ref.source))
-        .map(|item| item.entry.source_ref.source.clone())
+        .filter_map(|item| blocked(&item.entry.source_ref))
         .chain(
             validated
                 .passages
                 .iter()
                 .filter(|item| item.passage.status == Status::Approved)
-                .filter(|item| unverified(&item.passage.source_ref.source))
-                .map(|item| item.passage.source_ref.source.clone()),
+                .filter_map(|item| blocked(&item.passage.source_ref)),
         )
         .collect();
-    blocked.sort();
-    blocked.dedup();
-    blocked
+    reasons.sort();
+    reasons.dedup();
+    reasons
 }
 
 fn run_build(release: bool) -> Result<bool, String> {
@@ -85,13 +101,13 @@ fn run_build(release: bool) -> Result<bool, String> {
     let dataset = load(&root)?;
     let validated = validate(&dataset);
     print_issues(&dataset, &validated);
-    if !validated.issues.is_empty() {
+    if !validated.issues.is_empty() || !scan_is_clean(&dataset, &validated) {
         return Ok(false);
     }
     if release {
         let blocked = release_blockers(&dataset, &validated);
         if !blocked.is_empty() {
-            println!("V11 nguồn chưa kiểm bản quyền: {}", blocked.join(", "));
+            println!("V11 {}", blocked.join("; "));
             return Ok(false);
         }
     }
@@ -120,6 +136,34 @@ fn run_stats() -> Result<bool, String> {
     Ok(validated.issues.is_empty())
 }
 
+fn run_scan() -> Result<bool, String> {
+    let dataset = load(&root())?;
+    let validated = validate(&dataset);
+    let compiled = compile(&validated, &dataset.sources, false);
+    let range = ScanRange::full();
+    let unseen = scan::unseen(&compiled, &range);
+    println!("đoạn không bao giờ hiện: {}", unseen.len());
+    for id in &unseen {
+        println!("  {id}");
+    }
+    println!(
+        "{:12}{:>9}{:>8}{:>9}{:>6}{:>6}",
+        "cung", "lá số", "đoạn", "chắc chắn", "ít", "nhiều"
+    );
+    for (role, load) in scan::load(&compiled, &range) {
+        let charts = load.charts as f64;
+        println!(
+            "{role:12}{:>9}{:>8.2}{:>9.2}{:>6}{:>6}",
+            load.charts,
+            load.shown as f64 / charts,
+            load.primary as f64 / charts,
+            load.min,
+            load.max
+        );
+    }
+    Ok(unseen.is_empty())
+}
+
 fn run_review(batch: &str) -> Result<bool, String> {
     let root = root();
     let dataset = load(&root)?;
@@ -142,6 +186,7 @@ fn main() -> ExitCode {
         ["build"] => run_build(false),
         ["build", "--release"] => run_build(true),
         ["stats"] => run_stats(),
+        ["scan"] => run_scan(),
         ["review", "--batch", batch] => run_review(batch),
         _ => Err(USAGE.to_string()),
     };

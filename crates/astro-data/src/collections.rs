@@ -7,6 +7,7 @@ use astro_core::almanac::{
     AlmanacGod, HoangOc, KimLau, Luck, Mansion, PathGod, TamTai, Truc, VietnamTaboo,
 };
 use astro_core::bazi_analysis::{BaziStar, LifeStage, TenGod};
+use astro_core::content::EightUse;
 use astro_core::fengshui::{EightMansionsStar, NineStar, Trigram};
 use astro_core::tuvi::{FourTransformations, StarBrightness, StarNature, TuViPalaceRole, TuViStar};
 use astro_core::{Branch, CanChi, NaYin, Stem};
@@ -150,37 +151,6 @@ impl AgeTopic {
 }
 
 enum_key!(AgeTopic, AgeTopic::ALL, AgeTopic::name_vi);
-
-/// Where a star of the Eight Mansions is read.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
-pub enum EightUse {
-    /// Hướng nhà
-    HuongNha,
-    /// Bếp
-    Bep,
-    /// Bàn làm việc
-    BanLamViec,
-    /// Kết hôn
-    KetHon,
-}
-
-impl EightUse {
-    const ALL: [EightUse; 4] = [
-        EightUse::HuongNha,
-        EightUse::Bep,
-        EightUse::BanLamViec,
-        EightUse::KetHon,
-    ];
-
-    const fn name_vi(self) -> &'static str {
-        match self {
-            EightUse::HuongNha => "Hướng nhà",
-            EightUse::Bep => "Bếp",
-            EightUse::BanLamViec => "Bàn làm việc",
-            EightUse::KetHon => "Kết hôn",
-        }
-    }
-}
 
 /// A Thần Sát of the chart: the ten [`BaziStar`] and two fields of `BaziAnalysis`.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
@@ -437,7 +407,7 @@ mod tests {
             ("fengshui.eight_star_use", 32),
             ("fengshui.nine_star", 9),
             ("tuvi.star", 105),
-            ("tuvi.star_brightness", 56),
+            ("tuvi.star_brightness", 86),
             ("tuvi.transformation", 4),
             ("tuvi.palace", 12),
             (PASSAGE_COLLECTION, 168),
@@ -451,7 +421,7 @@ mod tests {
             .filter(|(id, _)| *id != PASSAGE_COLLECTION)
             .map(|(_, size)| size)
             .sum();
-        assert_eq!(keyed, 460);
+        assert_eq!(keyed, 490);
     }
 
     #[test]
@@ -486,6 +456,8 @@ mod tests {
         assert!((brightness.parse)(&json!(["TuVi", "Ham"])).is_err());
         assert!((brightness.parse)(&json!(["LiemTrinh", "Binh"])).is_err());
         assert!((brightness.parse)(&json!(["LocTon", "Dac"])).is_err());
+        assert!((brightness.parse)(&json!(["KinhDuong", "Ham"])).is_ok());
+        assert!((brightness.parse)(&json!(["ThienMa", "Ham"])).is_err());
         let can_chi = find("bazi.can_chi").unwrap();
         assert!((can_chi.parse)(&json!(["Giap", "Ty"])).is_ok());
         assert!((can_chi.parse)(&json!(["Giap", "Suu"])).is_err());

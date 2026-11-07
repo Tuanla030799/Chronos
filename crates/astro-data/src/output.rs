@@ -38,6 +38,7 @@ CREATE INDEX entry_collection ON entry (collection);
 CREATE TABLE passage (
   id             INTEGER PRIMARY KEY,
   stable_id      TEXT NOT NULL UNIQUE,
+  tier           TEXT NOT NULL,
   section        TEXT,
   verse          TEXT,
   gates          TEXT NOT NULL,
@@ -134,11 +135,12 @@ fn write_sqlite(compiled: &Compiled, manifest: &Manifest, path: &Path) -> rusqli
             ])?;
         }
         let mut passage = transaction
-            .prepare("INSERT INTO passage VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)")?;
+            .prepare("INSERT INTO passage VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)")?;
         for row in &compiled.passages {
             passage.execute(params![
                 row.id,
                 row.stable_id,
+                row.tier,
                 row.section,
                 row.verse,
                 serde_json::to_string(&row.gates).expect("gates serialize"),
@@ -208,25 +210,26 @@ pub fn read_sqlite(path: &Path) -> Result<Compiled, String> {
         .map_err(text)?;
     let mut statement = connection
         .prepare(
-            "SELECT id, stable_id, section, verse, gates, condition_text, body, citation,
+            "SELECT id, stable_id, tier, section, verse, gates, condition_text, body, citation,
                     sensitivity, draft
              FROM passage ORDER BY id",
         )
         .map_err(text)?;
     compiled.passages = statement
         .query_map([], |row| {
-            let gates: String = row.get(4)?;
+            let gates: String = row.get(5)?;
             Ok(PassageRow {
                 id: row.get(0)?,
                 stable_id: row.get(1)?,
-                section: row.get(2)?,
-                verse: row.get(3)?,
+                tier: row.get(2)?,
+                section: row.get(3)?,
+                verse: row.get(4)?,
                 gates: serde_json::from_str(&gates).expect("written as JSON"),
-                condition_text: row.get(5)?,
-                body: strings(row.get(6)?)?,
-                citation: row.get(7)?,
-                sensitivity: row.get(8)?,
-                draft: row.get(9)?,
+                condition_text: row.get(6)?,
+                body: strings(row.get(7)?)?,
+                citation: row.get(8)?,
+                sensitivity: row.get(9)?,
+                draft: row.get(10)?,
             })
         })
         .map_err(text)?

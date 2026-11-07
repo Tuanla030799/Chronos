@@ -28,6 +28,7 @@ pub mod astronomy;
 pub mod bazi_analysis;
 pub mod bazi_pillars;
 pub mod canchi;
+pub mod content;
 pub mod day_info;
 pub mod engine;
 mod error;
