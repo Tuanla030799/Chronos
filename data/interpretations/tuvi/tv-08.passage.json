@@ -1,0 +1,4082 @@
+{
+  "batch": "TV-08",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Người thon và cao, da trắng, gương mặt thanh tú, sáng sủa. Tính khoan hòa, được sống lâu."
+      ],
+      "id": "menh/thien-luong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Thiên Lương tọa thủ, nên thân hình thon và cao"
+        ],
+        "pages": [
+          92
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        },
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Rất thông minh, nhân hậu, hay làm việc thiện; được hưởng giàu sang suốt đời."
+      ],
+      "id": "menh/thien-luong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương miếu, vượng hay đắc địa rất thông minh, lại có tính nhân hậu"
+        ],
+        "pages": [
+          92
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Kém thông minh; cũng nhân hậu nhưng nông nổi, ham chơi bời phóng đãng, tiêu xài hoang phí, thích phiêu lưu, nay đây mai đó."
+      ],
+      "id": "menh/thien-luong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương hãm địa, Tỵ Hợi kém thông minh"
+        ],
+        "pages": [
+          92
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Kém thông minh; cũng nhân hậu nhưng thiếu bền chí, làm việc gì cũng không xét kỹ trước nên hay lầm lẫn."
+      ],
+      "id": "menh/thien-luong/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương hãm địa Dậu, kém thông minh"
+        ],
+        "pages": [
+          92
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Suốt đời ít khi được như ý, hay đổi chí hướng, nghề nghiệp, công việc; thường phải rời quê bôn ba và khó tránh tai họa."
+      ],
+      "id": "menh/thien-luong/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương hãm địa, Tỵ, Hợi, Dậu, nên suốt đời chẳng mấy khi",
+          "Lương hãm địa, nên suốt đời chẳng mấy khi được xứng ý toại lòng"
+        ],
+        "pages": [
+          92,
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Chắc chắn hưởng phú quý đến tột bực, uy quyền hiển hách."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Xương, Khúc, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc",
+      "id": "menh/thien-luong/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "nhất là Xương, Khúc, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc, chắc chắn",
+          "Lương miếu, vượng hay đắc địa thủ Mệnh, gặp nhiều sao sáng sủa tốt"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ắt có văn tài xuất chúng, thường theo nghề dạy học."
+      ],
+      "id": "menh/thien-luong/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "gặp Xương Khúc, Tả, Hữu, Tuế, tất có"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "meets_all": [
+            "VanXuong",
+            "VanKhuc",
+            "TaPhu",
+            "HuuBat",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Suốt đời vất vả, thường phải sớm xa gia đình, hay gặp tai họa khủng khiếp, tuổi thọ cũng bị giảm. Với cách này chỉ có đi tu mới được yên thân và sống lâu."
+      ],
+      "id": "menh/thien-luong/08",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lương miếu, vượng hay đắc địa, gặp Tuần, Triệt án ngữ, nên suốt đời",
+          "Lương miếu, vượng hay đắc địa gặp Tuần, Triệt án ngữ, thật chỉ có tu"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ắt trong người có tật; nếu không khốn khổ, cô đơn thì chắc chắn chết yểu, và chết một cách thê thảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Hỏa, Linh",
+      "id": "menh/thien-luong/09",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhất là Hỏa, Linh, tất trong mình phải có tật"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Có nhiều mưu kế, thích bàn luận về chính lược, chiến lược."
+      ],
+      "id": "menh/thien-luong/10",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Lương miếu địa, Thìn, Tuất, tất có nhiều mưu cơ"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "brightness": [
+            "Mieu"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ắt có tật trong người, suốt đời khốn khổ, cô đơn, hay gặp chuyện chẳng lành. Nếu có chức vị, tiền của thì chắc chắn không thể sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/thien-luong/11",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "tật, suốt đời cùng khổ, cô đơn và hay gặp sự chẳng lành"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Là người vợ hiền, được hưởng giàu sang suốt đời và rất giúp chồng lợi con."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Sách in \"là bậc hiền phu\"; câu thuộc Nữ mệnh nên hiểu là hiền phụ (vợ hiền).",
+      "id": "menh/thien-luong/12",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "là bậc hiền phu, được hưởng giàu sang trọn đời"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ắt phải lập gia đình muộn, hoặc làm vợ kế, vợ lẽ, mới tránh được những lần buồn thương; chắc chắn phải chịu cô đơn, khổ cực, tuổi thọ cũng bị giảm. Với cách này chỉ có đi tu mới được hưởng phúc, nhàn hạ và sống lâu."
+      ],
+      "id": "menh/thien-luong/13",
+      "section": "NuMenh",
+      "sensitivity": [
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "tất phải muộn lập gia đình, hay lấy kế lấy lẽ"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female",
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Tính phóng đãng, ưa chuyện ong bướm; suốt đời phải lo âu, buồn phiền vì chồng con."
+      ],
+      "id": "menh/thien-luong/14",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lương hãm địa nên có tánh phóng đãng"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Là hạng người hạ tiện, dâm dật, khắc chồng hại con; nếu không khốn khổ cô đơn thì ắt chết yểu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
+      "correction": "Sách in \"tất phải yếu tử\", hiểu là yểu tử như các câu cùng trang.",
+      "id": "menh/thien-luong/15",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "là hạng hạ tiện, dâm dật, khắc chồng, hại con"
+        ],
+        "pages": [
+          93
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu."
+      ],
+      "condition_text": "Lương miếu, vượng hay đắc địa tọa thủ hay chiếu về, gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/thien-luong/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Lương miếu, vượng hay đắc địa tọa thủ, hay chiếu"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương thủ chiếu, cát tương phùng",
+      "when": [
+        {
+          "meets_all": [
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cách rất rực rỡ tốt đẹp. Tuổi Đinh, Kỷ, Quý có cách này ắt hưởng phú quý đến tột bậc, thêm uy quyền hiển hách, tiếng tăm lẫy lừng."
+      ],
+      "id": "menh/thien-luong/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ngọ có Lương tọa thủ",
+          "Kỷ, Qúy có cách này, tất được hưởng phú qúy đến tột bậc"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương cư Ngọ vị, quan tư thanh hiển triều đình (ngọ thương Thiên Lương)",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "year_stems": [
+            "Dinh",
+            "Ky",
+            "Quy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cách rất rực rỡ tốt đẹp; các tuổi khác có cách này cũng giữ chức vụ lớn."
+      ],
+      "id": "menh/thien-luong/18",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Các tuổi khác có cách này, cũng có quan chức lớn"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương cư Ngọ vị, quan tư thanh hiển triều đình (ngọ thương Thiên Lương)",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "year_stems": [
+            "Giap",
+            "At",
+            "Binh",
+            "Mau",
+            "Canh",
+            "Tan",
+            "Nham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Cách rất rực rỡ, như mặt trời vừa mọc ở phương đông. Mặt vuông vức, đầy đặn, tươi tắn; được hưởng phú quý đến tột bậc, suốt đời an nhàn sung sướng."
+      ],
+      "id": "menh/thien-luong/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Mão có Lương, Nhật tọa thủ đồng cung"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương, Nhật, mão cung, Nhật xuất phù tang dung mạo phương viên",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThienLuong",
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Rất thông minh, thi cử đỗ cao, sớm hiển đạt, được hưởng giàu sang suốt đời và có uy danh lẫy lừng."
+      ],
+      "id": "menh/thien-luong/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tý, có Lương tọa thủ, gặp Nhật xung chiếu"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương, Thái Dương, Xương, Lộc hội lộ truyền đệ nhất danh",
+      "when": [
+        {
+          "any_loc": true,
+          "branches": [
+            "Ty"
+          ],
+          "meets_all": [
+            "VanXuong"
+          ],
+          "opposite_only": [
+            "ThaiDuong"
+          ],
+          "with_all": [
+            "ThienLuong"
+          ]
+        },
+        {
+          "any_loc": true,
+          "branches": [
+            "Ngo"
+          ],
+          "meets_all": [
+            "VanXuong"
+          ],
+          "opposite_only": [
+            "ThienLuong"
+          ],
+          "with_all": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Là người giang hồ, suốt đời bôn ba nay đây mai đó, như cánh bèo, lá cỏ trôi nổi trên mặt nước."
+      ],
+      "id": "menh/thien-luong/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Lương hãm địa tọa thủ, gặp Nguyệt hợp chiếu"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương, Thái Âm, khước tác phiêu bồng chi khách",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "ThaiAm"
+          ],
+          "with_all": [
+            "ThienLuong"
+          ]
+        },
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "ThienLuong"
+          ],
+          "with_all": [
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Là người có tài năng, đương nhiên được quý hiển."
+      ],
+      "correction": "Sách in \"là nhiều có tài năng\", hiểu là người có tài năng.",
+      "id": "menh/thien-luong/22",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "có Lương tọa thủ, gặp Nguyệt, Linh hội chiếu"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương Tú, Âm, Linh, nghi tá đống lương chi khách",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Suu",
+            "Dan",
+            "Mao",
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "meets_all": [
+            "ThaiAm",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Người phóng đãng, thích phiêu lưu nay đây mai đó."
+      ],
+      "id": "menh/thien-luong/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đàn ông mà cung Mệnh an tại Tỵ, Hợi, có Lương hay Đồng tọa thủ"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương, Đồng, Tỵ, Hợi, nam đa lãng đãng, nữ đa dâm",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Là người dâm dật."
+      ],
+      "id": "menh/thien-luong/24",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hợi, có Lương hay Đồng tọa thủ, là người dâm dật"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương, Đồng, Tỵ, Hợi, nam đa lãng đãng, nữ đa dâm",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Suốt đời không gặp tai ương, họa hại. Ấm là tên riêng của Thiên Lương, Phúc là tên riêng của Thiên Đồng."
+      ],
+      "correction": "Sách in \"Cung Mệnh Mệnh, Thân\" (thừa một chữ Mệnh) và \"Ấm bà tên riêng\", hiểu là Ấm là tên riêng. Trường hợp Lương, Đồng đồng cung chỉ có ở Dần, Thân, nơi Lương vượng, Đồng miếu, nên đã nằm trong điều kiện sáng sủa.",
+      "id": "menh/thien-luong/25",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "có lương hay Đồng miếu, vượng, đắc địa tọa thủ"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Ấm, Phúc tại Mệnh án ngữ, bất pha tai ương",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong",
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Rất thông minh và được hưởng giàu sang suốt đời."
+      ],
+      "id": "menh/thien-luong/26",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Dần, Thân, có Lương, Đồng tọa thủ đồng cung"
+        ],
+        "pages": [
+          94
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương, Đồng, Cơ, Nguyệt, Dần, Thân vị nhất sinh lợi nghiệp thông minh",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm"
+          ],
+          "with_all": [
+            "ThienLuong",
+            "ThienDong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Rất quý hiển."
+      ],
+      "correction": "Lời giải chỉ ghi \"Lương Miếu địa\"; câu phú ghi \"cư Miếu, Vượng vị\", nên theo câu phú gồm cả vượng địa.",
+      "id": "menh/thien-luong/27",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Lương Miếu địa tọa thủ, gặp Xương đồng cung"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương, Văn Xương, cư Miếu, Vượng vị chi công khanh",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong"
+          ],
+          "with_all": [
+            "ThienLuong",
+            "VanXuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Khó thoát tai họa gây thương tích hoặc súng đạn."
+      ],
+      "id": "menh/thien-luong/28",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tỵ, có Lương tọa thủ, gặp Song Hao, Sát tinh"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lương phùng Hao Sát tại cung đao nghiệp hình thương",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "meets_all": [
+            "@SongHao"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Người phiêu đãng, ham chơi, thích ngao du nay đây mai đó, hay đổi chí hướng."
+      ],
+      "correction": "Sách in \"an tại Tý, Hợi\" và \"ngoa du\". Thiên Mã chỉ an tại Dần, Thân, Tỵ, Hợi nên không thể đồng cung hay xung chiếu cung Tý; câu phú kế tiếp cùng trang ghi Tỵ, Hợi, nên hiểu là Tỵ, Hợi. \"ngoa du\" hiểu là ngao du.",
+      "id": "menh/thien-luong/29",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tý, Hợi có Lương tọa thủ"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương, Thiên Mã ví nhân phiêu đãng vô nghi",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThienLuong",
+            "ThienMa"
+          ]
+        },
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "opposite_only": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Là người hạ tiện và dâm dật."
+      ],
+      "id": "menh/thien-luong/30",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đàn bà mà cung Mệnh an tại Tỵ, Hợi có Lương tọa thủ"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thiên Lương ngộ Mã, nữ Mệnh tiên nhi thả dâm",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "gender": "Female",
+          "with_all": [
+            "ThienLuong",
+            "ThienMa"
+          ]
+        },
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "gender": "Female",
+          "opposite_only": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Người nở nang, hơi cao nhưng thô; da xám hoặc đen giòn, trên mặt hay có vết, đôi mắt to, lồi. Tính bướng bỉnh, nóng nảy, việc gì cũng muốn làm cho nhanh xong."
+      ],
+      "correction": "Sách in \"da xám hây đen dòn\", hiểu là da xám hay đen giòn.",
+      "id": "menh/that-sat/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Thất Sát tọa thủ, nên thân hình nở nang"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Rất gan dạ, dũng mãnh, thông minh, nhiều mưu kế; tính cương nghị, hiếu thắng, hay nói lời to tát nhưng được nhiều người tin phục. Tuy được giàu sang và sống lâu, nhưng đời gặp nhiều thăng trầm."
+      ],
+      "id": "menh/that-sat/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Sát miếu, vượng hay đắc địa, nên rất can đảm, dũng mãnh"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Đương nhiên quý hiển."
+      ],
+      "id": "menh/that-sat/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Sát miếu địa, Dần, Thân, dĩ nhiên là qúy hiển"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "brightness": [
+            "Mieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Người tuổi Giáp, Canh, Đinh, Kỷ có cách này thì cả tài lộc lẫn quan chức đều tốt đẹp."
+      ],
+      "correction": "Sách in \"co cách này\", hiểu là có cách này.",
+      "id": "menh/that-sat/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đinh, Kỷ mà cung Mệnh co cách này, thật tài quan song mỹ"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "brightness": [
+            "Mieu"
+          ],
+          "year_stems": [
+            "Giap",
+            "Canh",
+            "Dinh",
+            "Ky"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc, uy quyền hiển hách, tiếng tăm lẫy lừng."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Tử, Phủ, Xương, Khúc, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc, Mã, Kình",
+      "id": "menh/that-sat/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tử, Phủ, Xương, Khúc, Khôi, Việt, Tả, Hữu, Khoa, Quyền, Lộc, Mã, Kình"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Là người tàn nhẫn, hay giết hại; tuy giàu sang nhưng không bền, lại có tật bệnh, thường gặp tai nạn xe cộ, dao súng hoặc bị bắt bớ, giam giữ, và chắc chắn giảm thọ."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh",
+      "correction": "Sách in \"Sát miếu, vương\" và \"tật bênh\", hiểu là vượng, tật bệnh.",
+      "id": "menh/that-sat/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhất là Sát tinh, là người tàn nhẫn, đa sát"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Người hung bạo, gian xảo, hay khoác lác; thường làm nghề giết mổ, bán thịt hoặc thợ rèn. Nếu giàu có thì ắt không thể sống lâu."
+      ],
+      "id": "menh/that-sat/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát hãm địa là người hung bạo gian quyệt"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tuy mờ ám xấu xa nhưng hợp với tuổi Ất, Tân: người tuổi Ất, Tân có cách này cũng được hưởng phú quý và tuổi thọ tăng thêm."
+      ],
+      "correction": "Sách in \"mò ám\" và \"cũng như được hưởng\", hiểu là mờ ám, cũng được hưởng.",
+      "id": "menh/that-sat/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Sát hãm địa, Mão Dậu, tuy mò ám xấu xa"
+        ],
+        "pages": [
+          95
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "brightness": [
+            "Ham"
+          ],
+          "year_stems": [
+            "At",
+            "Tan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Thường làm thợ vàng hoặc thợ bạc."
+      ],
+      "correction": "Sách in \"Sạt hãm địa\" và \"Long, Phương\", hiểu là Sát hãm địa và Long, Phượng (Long Trì, Phượng Các).",
+      "id": "menh/that-sat/09",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "gặp Tả, Hữu, Long, Phương, Quang, Qúy hội hợp, thường làm thợ"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "LongTri",
+            "PhuongCac",
+            "AnQuang",
+            "ThienQuy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Suốt đời khốn khổ, cô đơn, phải lang thang trôi dạt, thường mắc bệnh khó chữa, hay bị bắt bớ giam cầm, hay gặp tai nạn khủng khiếp, nhất là xe cộ, dao súng; đương nhiên chết yểu, và chết rất thê thảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh",
+      "correction": "Sách in \"loang thang\" và \"tia nạn\", hiểu là lang thang, tai nạn; câu lặp ở Nam mệnh cùng trang in đúng. Hai câu Đại cương và Nam mệnh cùng lời nên gộp một đoạn.",
+      "id": "menh/that-sat/10",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh, thật",
+          "Sát hãm địa, gặp nhiều sao mờ ám xấu xa hội hợp, thật"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Nếu không vướng tù tội thì ắt cũng bị giết, hoặc chết vì tai nạn xe cộ."
+      ],
+      "correction": "Sách in \"nêu không mắc tù tội\", hiểu là nếu.",
+      "id": "menh/that-sat/11",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát hãm địa, gặp Hình đồng cung"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "with_all": [
+            "ThatSat",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc, thường hiển đạt về võ nghiệp, uy quyền hiển hách, danh tiếng lẫy lừng và đương nhiên sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Sách in \"sáng sủa tột đẹp\", hiểu là tốt đẹp.",
+      "id": "menh/that-sat/12",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "tất được hưởng phú qúy đến tột bậc, thường hiển đạt về võ nghiệp"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Có biệt tài về quân sự, oai phong lẫm liệt."
+      ],
+      "id": "menh/that-sat/13",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Sát miếu, vượng hay đắc địa, gặp Hình đồng cung, là người có biệt tài"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Male",
+          "with_all": [
+            "ThatSat",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tài giỏi, đảm đang, gan dạ nhưng hay ghen. Tuy được giàu sang, sống lâu, nhưng phải lập gia đình muộn mới tránh được những nỗi ưu phiền, đau đớn vì chồng con."
+      ],
+      "correction": "Sách in \"Sát miếu hay đắc địa thủ Mệnh, là người, là người\": lặp chữ và thiếu vượng địa. Đại cương, Nam mệnh của Thất Sát (tr. 95–96) và câu Nữ mệnh cùng lời của Phá Quân (tr. 99) đều ghi miếu, vượng hay đắc địa, nên gồm cả vượng địa.",
+      "id": "menh/that-sat/14",
+      "section": "NuMenh",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát miếu hay đắc địa thủ Mệnh, là người, là người tài giỏi"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc, phúc thọ song toàn."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/that-sat/15",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "nếu Sát gặp nhiều sao sáng sủa tốt đẹp hội hợp, tất được hưởng"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Người độc ác, lòng lang dạ thú; khắc chồng, hại con, hay mắc nhiều tật bệnh, suốt đời vất vả, hay gặp tai nạn và không thể sống lâu."
+      ],
+      "id": "menh/that-sat/16",
+      "section": "NuMenh",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát hãm địa là người độc ác, lòng lang dạ thú"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Suốt đời khốn khổ, cô đơn, lại có bệnh khó chữa, thường gặp tai họa khủng khiếp và chắc chắn chết yểu, chết rất thê thảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
+      "correction": "Câu Sát hãm địa của Nữ mệnh in \"nếu Sát gặp nhiều sao sáng sủa tốt đẹp hội hợp\", trái với hệ quả xấu ngay sau. Câu cùng ý ở Nam mệnh Thất Sát (tr. 96) và Nữ mệnh Phá Quân (tr. 100) đều ghi gặp nhiều sao mờ ám xấu xa, nên hiểu là mờ ám xấu xa.",
+      "id": "menh/that-sat/17",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu Sát gặp nhiều sao sáng sủa tốt đẹp hội hợp, thật là chung"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc. Sát ở Dần, Thân gọi là Thất Sát triều đẩu, ở Tý, Ngọ gọi là Thất Sát ngưỡng đẩu."
+      ],
+      "id": "menh/that-sat/18",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Dần, Thân, Tý, Ngọ có Sát tọa thủ"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát Dần, Thân, Tý, Ngọ nhất sinh tước lộc, vinh xương",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than",
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc, uy quyền hiển hách, ví như vua mang kiếm báu."
+      ],
+      "id": "menh/that-sat/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tỵ Tốn cung có Sát, Tử đồng cung"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "not_meets": [
+            "HoaTinh"
+          ],
+          "with_all": [
+            "ThatSat",
+            "TuVi"
+          ]
+        },
+        {
+          "branches": [
+            "Ti"
+          ],
+          "not_meets": [
+            "Tuyet"
+          ],
+          "with_all": [
+            "ThatSat",
+            "TuVi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Lại là người tàn nhẫn, khát máu."
+      ],
+      "id": "menh/that-sat/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Sát, Tử gặp Hỏa, Tuyệt hội hợp, lại là người tàn nhẫn khát máu"
+        ],
+        "pages": [
+          96
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "Tuyet"
+          ],
+          "with_all": [
+            "ThatSat",
+            "TuVi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Ắt hiển đạt về võ nghiệp, dễ dàng lập chiến công và được thăng lên hàng võ quan cao cấp."
+      ],
+      "condition_text": "gặp thêm Bật, Khoa, Mã, Ấn, Hồng, Sinh hội hợp",
+      "id": "menh/that-sat/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "cùng với Bật, Khoa, Mã, Ấn, Hồng Sinh, tất hiển",
+          "thăng lên hạng võ quan cao cấp"
+        ],
+        "pages": [
+          96,
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "Tuyet"
+          ],
+          "with_all": [
+            "ThatSat",
+            "TuVi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Ắt chết ở giữa đường, hoặc vì tai nạn xe cộ, hoặc vì dao súng."
+      ],
+      "correction": "Sách in \"Cung Mệng An tại\", hiểu là cung Mệnh an tại.",
+      "id": "menh/that-sat/22",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sửu, Mùi có Sát, Liêm tọa thủ đồng cung, tất nhiên"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát, Liêm Trinh đồng vị, lộ thượng mai thi",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThatSat",
+            "LiemTrinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Là bậc anh hùng, trí dũng hơn người."
+      ],
+      "id": "menh/that-sat/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Âm Nam tuổi Ất Kỷ mà cung Mệnh an tại Sửu, Mùi"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Liêm, Sửu, Mùi, Ất, Kỷ, Âm Nam, anh hùng trí dũng",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "polarity": [
+            "AmNam"
+          ],
+          "with_all": [
+            "ThatSat",
+            "LiemTrinh"
+          ],
+          "year_stems": [
+            "At",
+            "Ky"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Các tuổi khác có cách này cũng là người gan dạ và có tài thao lược."
+      ],
+      "id": "menh/that-sat/24",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "đồng cung, cũng là người can đảm và có tài thao lược"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Liêm, Sửu, Mùi, Ất, Kỷ, Âm Nam, anh hùng trí dũng",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThatSat",
+            "LiemTrinh"
+          ],
+          "year_stems": [
+            "Giap",
+            "Binh",
+            "Dinh",
+            "Mau",
+            "Canh",
+            "Tan",
+            "Nham",
+            "Quy"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "gender": "Female",
+          "with_all": [
+            "ThatSat",
+            "LiemTrinh"
+          ],
+          "year_stems": [
+            "At",
+            "Ky"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt phải rời gia đình đi làm ăn nơi xa. Người biết nhiều nghề nhưng không nghề nào thật tinh thông."
+      ],
+      "id": "menh/that-sat/25",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Sát hãm địa tọa thủ (hay có Phá hãm địa tọa thủ)"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát, Phá Quân, nghi xuất ngoại, chư ban thủ nghệ bất năng tinh",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat",
+          "PhaQuan",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Là người góa bụa, suốt đời cô đơn buồn khổ. Với cách này phải lập gia đình muộn, hoặc làm vợ kế, vợ lẽ, mới tránh được những lần tang tóc đau thương."
+      ],
+      "correction": "Lời giải in \"buồn buồn khổ\" và thiếu dấu đóng ngoặc; hiểu là buồn khổ. Sát, Phá, Tham luôn tam hợp với nhau nên ba phương án của sách (một sao tọa thủ, hai sao kia hội chiếu) là một điều kiện.",
+      "id": "menh/that-sat/26",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đàn bà tuổi Tân, Đinh mà cung Mệnh có Sát tọa thủ"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Phá, Tham tại Nữ Mệnh nhi ngộ Văn Xương ư Tân Đinh tuế, sương phụ chi nhân",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "ThatSat",
+            "PhaQuan",
+            "ThamLang"
+          ],
+          "with_all": [
+            "VanXuong"
+          ],
+          "year_stems": [
+            "Tan",
+            "Dinh"
+          ]
+        },
+        {
+          "gender": "Female",
+          "meets_all": [
+            "ThatSat",
+            "PhaQuan",
+            "ThamLang"
+          ],
+          "opposite_only": [
+            "VanXuong"
+          ],
+          "year_stems": [
+            "Tan",
+            "Dinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt bị gù lưng hoặc có tật ở lưng; nếu ra trận chắc chắn mất mạng."
+      ],
+      "id": "menh/that-sat/27",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp Kình, Đà, Hỏa, Linh hội hợp, tất bị gù"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát trung phùng Tứ sát yêu đà bối khúc trận trung vong",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Hay gặp tai họa khủng khiếp, nhất là xe cộ, dao súng. Người tuổi Bính, Mậu có cách này chắc chắn chết rất thê thảm, thân thể không được toàn vẹn."
+      ],
+      "condition_text": "gặp nhiều Sát tinh hội hợp",
+      "correction": "Lời giải còn câu \"tuổi Giáp Kỷ mà cung Mệnh có cách này, lại là bậc cái thế anh hùng\". Theo bảng an Lộc Tồn và cách an Kình Dương ở cung trước Lộc Tồn (tr. 9–10), Kình chỉ ở Ngọ khi Lộc Tồn ở Tỵ, tức tuổi Bính, Mậu; tuổi Giáp, Kỷ không thể có cách này nên câu ấy không ghi thành đoạn.",
+      "id": "menh/that-sat/28",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ngọ có Sát, Kình tọa thủ đồng cung"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Kình tại Ngọ, mã đầu đới kiếm tương giao sát diệu ư Bính Mậu nhân, mệnh nan toàn",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ],
+          "with_all": [
+            "ThatSat",
+            "KinhDuong"
+          ],
+          "year_stems": [
+            "Binh",
+            "Mau"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt chết yểu như Nhan Hồi, học trò Khổng Tử; lá số của ông có đúng cách này nên mất sớm."
+      ],
+      "correction": "Tuyệt địa đọc theo bảng tr. 52 mục 4.1.3: Bản Mệnh Kim tại Dần, Mộc tại Thân, Hỏa tại Hợi, Thủy và Thổ tại Tỵ.",
+      "id": "menh/that-sat/29",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tuyệt địa có Sát tọa thủ, gặp Kình, Đà hội hợp"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát lâm Tuyệt địa hội Dương, Đà, Nhan Hồi yểu chiết",
+      "when": [
+        {
+          "ban_menh": [
+            "Kim"
+          ],
+          "branches": [
+            "Dan"
+          ],
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        },
+        {
+          "ban_menh": [
+            "Moc"
+          ],
+          "branches": [
+            "Than"
+          ],
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        },
+        {
+          "ban_menh": [
+            "Hoa"
+          ],
+          "branches": [
+            "Hoi"
+          ],
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        },
+        {
+          "ban_menh": [
+            "Thuy",
+            "Tho"
+          ],
+          "branches": [
+            "Ti"
+          ],
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Là người nghèo hèn, thường làm nghề giết mổ, bán thịt."
+      ],
+      "id": "menh/that-sat/30",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Sát hãm địa tọa thủ, gặp Hỏa, Kình hội hợp"
+        ],
+        "pages": [
+          97
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát, Hỏa, Dương bần thả tiện, đồ tể chi nhân",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt lấy được nhiều vợ hiền."
+      ],
+      "correction": "Câu phú vắt qua hai trang (tr. 97 hết ở \"ố phụ ái cô\", tr. 98 bắt đầu ở \"thân, nữ Mệnh\"); V5 chỉ dò từng trang nên mỗi đoạn ghi phần câu phú của trang chứa ý mình. Câu đầy đủ: \"Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô thân, nữ Mệnh ai oan trái hồng nhan nan tự chủ\".",
+      "id": "menh/that-sat/31",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đàn ông mà cung Mệnh an tại Ngọ (Ly), Tý (Khảm), có Sát tọa thủ"
+        ],
+        "pages": [
+          97,
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "gender": "Male",
+          "not_meets": [
+            "DiaKiep"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "gender": "Male",
+          "not_meets": [
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Lại là người ghét đàn bà và thích sống độc thân."
+      ],
+      "correction": "Câu phú vắt qua hai trang (tr. 97 hết ở \"ố phụ ái cô\", tr. 98 bắt đầu ở \"thân, nữ Mệnh\"); V5 chỉ dò từng trang nên mỗi đoạn ghi phần câu phú của trang chứa ý mình. Câu đầy đủ: \"Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô thân, nữ Mệnh ai oan trái hồng nhan nan tự chủ\". Sách in \"nếu gặp Sát gặp Kiếp Riêu\", thừa chữ.",
+      "id": "menh/that-sat/32",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "lại là người ghét đàn bà và thích ở độc thân"
+        ],
+        "pages": [
+          97,
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "gender": "Male",
+          "meets_all": [
+            "DiaKiep",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt vướng vào lưới tình mà mang lụy, trong đời nhiều phen khổ sở, điêu đứng vì tình."
+      ],
+      "correction": "Câu phú vắt qua hai trang (tr. 97 hết ở \"ố phụ ái cô\", tr. 98 bắt đầu ở \"thân, nữ Mệnh\"); V5 chỉ dò từng trang nên mỗi đoạn ghi phần câu phú của trang chứa ý mình. Câu đầy đủ: \"Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô thân, nữ Mệnh ai oan trái hồng nhan nan tự chủ\".",
+      "id": "menh/that-sat/33",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Kiếp Riêu hội hợp, tất giăng mắc vào lưới tình"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "thân, nữ Mệnh ai oan trái hồng nhan nan tự chủ",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "gender": "Female",
+          "meets_all": [
+            "DiaKiep",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Oai phong lẫm liệt như long thần giáng thế, chắc chắn được hưởng phú quý, thường hiển đạt về võ nghiệp."
+      ],
+      "condition_text": "gặp Hình (Kình Dương hay Thiên Hình) đồng cung",
+      "id": "menh/that-sat/34",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "là người có oai phong lẫm liệt, như long thần giáng thế"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Hình hội long thần định giáng",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Là người liêm khiết, thẳng thắn và vô tư."
+      ],
+      "condition_text": "Sát miếu, vượng hay đắc địa tọa thủ, gặp Hình (Kình Dương hay Thiên Hình) đồng cung hoặc chiếu; hay Hình đắc địa tọa thủ, gặp Sát chiếu",
+      "id": "menh/that-sat/35",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "hay có Hình đắc địa tọa thủ, gặp Sát chiếu, là người liêm khiết"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sát, Hình tọa củng liêm trực vô tư",
+      "when": [
+        {
+          "meets_all": [
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cung Thân có Thất Sát tọa thủ thì ắt không thể sống lâu."
+      ],
+      "id": "menh/that-sat/36",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Thân có Sát tọa thủ tất không thể sống lâu được"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Thất Sát lâm, Thân chung thị yểu",
+      "when": [
+        {
+          "than_here": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Người đẫy đà, tầm vóc vừa phải (Phá đắc địa hay hãm địa thì người thường thấp), da hồng hào, mặt đầy đặn, mắt lộ, yết hầu lộ, lông mày thưa."
+      ],
+      "id": "menh/pha-quan/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Phá Quân tọa thủ, nên thân hình đẫy đà"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Thông minh, cương quyết, hiếu thắng và tự đắc; có thủ đoạn và tài thao lược, lại gan dạ, dũng mãnh, ưa hoạt động, thích đi xa, ham săn bắn."
+      ],
+      "id": "menh/pha-quan/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá miếu, vượng hay đắc địa là người thông minh, cương quả"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lại hay nghe lời nịnh hót."
+      ],
+      "id": "menh/pha-quan/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá miếu địa lại hay nghe nịnh hót"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cũng hay nghe lời nịnh hót, lại có tính gian hiểm, bất nhân."
+      ],
+      "id": "menh/pha-quan/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá đắc địa cũng hay nghe nịnh hót nhưng có tính gian hiểm"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt được giàu sang và sống lâu, nhưng đời nhiều thăng trầm; tiền tài, công danh như đám mây trôi, lúc tụ lúc tan không chừng."
+      ],
+      "correction": "Sách in \"Phá miếu, vương\", hiểu là vượng.",
+      "id": "menh/pha-quan/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhưng trên đường đời gặp nhiều bước thăng trầm, tiền tài công danh như đám"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Phá miếu địa hợp với tuổi Đinh, Kỷ, Quý: người các tuổi này có cách này chắc chắn được hưởng phú quý song toàn."
+      ],
+      "id": "menh/pha-quan/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá miếu địa ứng hợp với tuổi Đinh, Kỷ, Qúy"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu"
+          ],
+          "year_stems": [
+            "Dinh",
+            "Ky",
+            "Quy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Phá miếu địa khắc tuổi Bính, Mậu và tuổi Dần, Thân: người các tuổi này có cách này tuy cũng giàu sang nhưng hay gặp tai họa."
+      ],
+      "correction": "Sách in lặp đoạn \"Còn tuổi Bính, Mậu, Dần, Thân. Vậy cho nên tuổi Đinh, Kỷ, Qúy mà có Phá miếu địa tọa thủ, chắc chắn là được hưởng phú qúy song toàn\"; bỏ phần lặp. \"Tuổi Bính, Mậu, Dần, Thân\" gồm hai Can (Bính, Mậu) và hai Chi (Dần, Thân) của năm sinh.",
+      "id": "menh/pha-quan/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "tọa thủ, tuy cũng được hưởng giàu sang nhưng hay mắc tai họa"
+        ],
+        "pages": [
+          98
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu"
+          ],
+          "year_stems": [
+            "Binh",
+            "Mau"
+          ]
+        },
+        {
+          "brightness": [
+            "Mieu"
+          ],
+          "year_branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Đường công danh như bước nhẹ lên mây: ắt hưởng phú quý đến tột bậc, uy quyền hiển hách, tiếng tăm lẫy lừng."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Xương, Khúc, Tả, Hữu, Khoa, Quyền, Lộc hay Kình, Đà, Không, Kiếp đắc địa",
+      "correction": "Sách in \"đắc đại\" và \"tột bật\", hiểu là đắc địa, tột bậc.",
+      "id": "menh/pha-quan/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá miếu, vượng hay đắc đại, gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+          "thật là thang mây nhẹ bước"
+        ],
+        "pages": [
+          98,
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Suốt đời ít khi được như ý vì công danh trắc trở, nghèo túng, thường phải bôn ba nay đây mai đó; lại hay gặp tai nạn, khó thoát tù tội, tuổi thọ cũng bị giảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh hãm địa hay Song Hao, Hổ, Kỵ, Hình",
+      "correction": "Sách in \"tuổi thọ cũng bị chết giảm\", hiểu là chiết giảm.",
+      "id": "menh/pha-quan/09",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhất là sát tinh hãm địa hay Song Hao, Hổ, Kỵ, Hình, nên suốt đời"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tính bướng bỉnh, hiếu thắng, hung tợn, nham hiểm và bất nhân; có đầu óc kinh doanh, khéo tay, thường theo nghề kỹ nghệ, máy móc, thủ công hoặc buôn bán. Suốt đời vất vả, nhiều tai ách; nếu không rời quê bôn ba thì ắt không thể sống lâu."
+      ],
+      "id": "menh/pha-quan/10",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá hãm địa là người ương ngạnh, hiếu thắng, hung tợn"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Phá hãm địa ở Mão, Dậu hợp tuổi Ất, Tân, Quý; ở Dần, Thân hợp tuổi Giáp, Canh, Đinh, Kỷ; ở Tỵ, Hợi hợp tuổi Mậu. Người có cách hợp tuổi như vậy vẫn khá giả và không đáng lo nhiều về những chuyện chẳng lành trong đời."
+      ],
+      "correction": "Sách in \"Phá hãm địa Tý Hợi ứng hợp với tuổi Mậu\". Phá Quân miếu địa tại Tý nên không thể hãm ở Tý; câu kết cùng đoạn ghi \"tuổi Mậu mà cung Mệnh an tại Tỵ, Hợi\", nên hiểu là Tỵ, Hợi.",
+      "id": "menh/pha-quan/11",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá hãm địa Tý Hợi ứng hợp với tuổi Mậu"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "brightness": [
+            "Ham"
+          ],
+          "year_stems": [
+            "At",
+            "Tan",
+            "Quy"
+          ]
+        },
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "brightness": [
+            "Ham"
+          ],
+          "year_stems": [
+            "Giap",
+            "Canh",
+            "Dinh",
+            "Ky"
+          ]
+        },
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "brightness": [
+            "Ham"
+          ],
+          "year_stems": [
+            "Mau"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cũng được giàu sang nhưng hay gặp tai họa."
+      ],
+      "condition_text": "gặp Kình, Đà, Không, Kiếp đắc địa hội hợp",
+      "id": "menh/pha-quan/12",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá hãm địa gặp Kình, Đà, Không Kiếp đắc địa hội hợp"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Suốt đời khốn cùng, cô đơn, phải lang thang trôi dạt; lại có tàn tật, bệnh khó chữa, thường gặp tai nạn khủng khiếp, chân tay hay bị xiềng xích; nếu không thì cũng chết yểu, và chết một cách thê thảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Sát tinh hãm địa hay Song Hao, Hổ, Kỵ, Hình",
+      "correction": "Đại cương in \"có bệnh có chữa\"; câu lặp ở Nam mệnh cùng trang in \"có bệnh khó chữa\", nên theo đó. Hai câu Đại cương và Nam mệnh cùng lời nên gộp một đoạn.",
+      "id": "menh/pha-quan/13",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "hay Song Hao, Hổ, Kỵ, Hình, thật là chung thân cùng khốn cô đơn",
+          "Phá hãm địa, gặp nhiều sao mờ ám xấu xa hội hợp, thật"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc, thường hiển đạt về võ nghiệp, uy quyền hiển hách và sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Sách in \"sánh sủa\" và \"tột bật\", hiểu là sáng sủa, tột bậc.",
+      "id": "menh/pha-quan/14",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Phá miếu, vượng hay đắc địa thủ mệnh, gặp nhiều sao sánh sủa tốt đẹp"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tài giỏi, đảm đang, gan dạ nhưng hay ghen. Tuy được giàu sang, sống lâu, nhưng phải lập gia đình muộn mới tránh được những nỗi ưu phiền, đau đớn vì chồng con."
+      ],
+      "id": "menh/pha-quan/15",
+      "section": "NuMenh",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá miếu, vượng hay đắc địa thủ Mệnh, là người tài giỏi, đảm đang, gan"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt hưởng phú quý đến tột bậc."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/pha-quan/16",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "Phá gặp nhiều sao sáng sủa tốt đẹp hội hợp, tất được hưởng phú qúy"
+        ],
+        "pages": [
+          99
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Người dâm dật, độc ác, lăng loàn; phải làm vợ kế, vợ lẽ may ra mới tránh được những lần buồn thương. Suốt đời khổ cực, nhiều bệnh tật, lại hay gặp tai nạn."
+      ],
+      "id": "menh/pha-quan/17",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá hãm địa là người dâm dật, ác độc, lăng loàn"
+        ],
+        "pages": [
+          99,
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Suốt đời khốn cùng, cô đơn, khắc chồng hại con, phải lang thang trôi dạt, thường gặp tai nạn khủng khiếp, lại có tàn tật hoặc bệnh khó chữa; nếu không thì cũng chết yểu, và chết rất thê thảm."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/pha-quan/18",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "khốn cô đơn, khắc chồng hại con, phải lang thang phiêu bạt"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Là người không sáng suốt, hay nghe lời nịnh hót."
+      ],
+      "correction": "Sách in \"không sát suốt\", hiểu là không sáng suốt.",
+      "id": "menh/pha-quan/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tý, Ngọ, Thìn, Tuất, Dần, Thân có Phá đơn thủ"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân nhất diệu, tính nan minh",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo",
+            "Thin",
+            "Tuat",
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt được hưởng phú quý song toàn."
+      ],
+      "id": "menh/pha-quan/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Ngọ có Phá tọa thủ, tất được hưởng phú qúy song"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân, tý, Ngọ, gia quan tiến lộc",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt phải sớm xa cách cha mẹ, anh em; nếu không thì cũng khắc vợ (hay chồng) hoặc hiếm con."
+      ],
+      "id": "menh/pha-quan/21",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Ngọ (Ly) có Phá tọa thủ, tất phải sớm xa"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân Khảm, Ly, Cô thân độc ảnh",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Ham chơi bời, hoang đãng, thích đi đây đi đó ngao du."
+      ],
+      "id": "menh/pha-quan/22",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "đàn ông hay chơi bời hoang đãng, thích ngao du nay đây mai đó"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
+      "when": [
+        {
+          "any_loc": true,
+          "gender": "Male",
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Rất dâm dật."
+      ],
+      "id": "menh/pha-quan/23",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "mai đó, đàn bà rất dâm dật"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
+      "when": [
+        {
+          "any_loc": true,
+          "gender": "Female",
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Là người vô hạnh, nhưng kiếm tiền dễ dàng."
+      ],
+      "condition_text": "gặp thêm Hình (Kình Dương hay Thiên Hình)",
+      "id": "menh/pha-quan/24",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Có thêm Hình, là người vô hạnh, nhưng kiếm tiền dễ dàng"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Thật khó tránh khỏi những tai nạn khủng khiếp."
+      ],
+      "id": "menh/pha-quan/25",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "(hay có Sát tọa thủ) gặp Hỏa Hao hội hợp"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá, Sát khủng phùng hỏa, Hao, mạc ngộ Việt, Hình lão hạn quy thân họa nghiệp lai",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh"
+          ],
+          "meets_any": [
+            "@SongHao"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ắt về già sẽ chết vì tai nạn."
+      ],
+      "condition_text": "gặp thêm Hình (Kình Dương hay Thiên Hình)",
+      "id": "menh/pha-quan/26",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Có thêm Việt, Hình, tất về già sẽ chết vì mắc tai nạn"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá, Sát khủng phùng hỏa, Hao, mạc ngộ Việt, Hình lão hạn quy thân họa nghiệp lai",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "ThienViet"
+          ],
+          "meets_any": [
+            "@SongHao"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Là người độc ác, hay giết hại, gây loạn thiên hạ như Hoàng Sào đời Đường."
+      ],
+      "id": "menh/pha-quan/27",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Mão, Dậu, có Phá, Kình tọa thủ đồng cung"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá, Kình, Mão, Dậu, Nhi phùng Phụ, Bật, Khởi ngụy Hoàng Sào",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "meets_all": [
+            "TaPhu",
+            "HuuBat"
+          ],
+          "with_all": [
+            "PhaQuan",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Suốt đời phải bôn ba vất vả."
+      ],
+      "id": "menh/pha-quan/28",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "gặp Hỏa, Linh hội hợp, nên suốt đời phải bôn"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân, Hỏa, Linh, bôn ba lao toái",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Người giỏi về máy móc, thường theo nghề kỹ nghệ."
+      ],
+      "id": "menh/pha-quan/29",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Việt hội hợp là người giỏi về máy móc"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dần, Thân, Phá, Hỏa, Việt lâm ư, Tân, Đinh, Tuế cơ xảo tài hành",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "ThienViet"
+          ],
+          "year_stems": [
+            "Tan",
+            "Dinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Các tuổi khác có cách này cũng rất khéo tay."
+      ],
+      "id": "menh/pha-quan/30",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "mà cung Mệnh an tại Dần, Thân, có cách này cũng rất khéo tay"
+        ],
+        "pages": [
+          100
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dần, Thân, Phá, Hỏa, Việt lâm ư, Tân, Đinh, Tuế cơ xảo tài hành",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "ThienViet"
+          ],
+          "year_stems": [
+            "Giap",
+            "At",
+            "Binh",
+            "Mau",
+            "Ky",
+            "Canh",
+            "Nham",
+            "Quy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Là người gian ác, bất nhân."
+      ],
+      "condition_text": "không có cả Khoa đồng cung lẫn Tuần án ngữ",
+      "id": "menh/pha-quan/31",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Tuất có Phá tọa thủ, là người gian ác bất nhân"
+        ],
+        "pages": [
+          100,
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lại rất thẳng thắn, lương thiện."
+      ],
+      "correction": "Sách in \"Khao\", hiểu là Khoa như câu phú.",
+      "id": "menh/pha-quan/32",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đây, nếu Phá gặp Khao đồng cung, gặp tuần án ngữ"
+        ],
+        "pages": [
+          100,
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "tuan_triet": "Tuan",
+          "with_transformations": [
+            "HoaKhoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Người tuổi Mậu, Quý có cách này ắt phát nhanh về danh và tài."
+      ],
+      "correction": "Sách in \"Đến Mậu, Qúy\", hiểu là đến tuổi Mậu, Quý.",
+      "id": "menh/pha-quan/33",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đến Mậu, Qúy, mà cung Mệnh an tại Thìn, Tuất"
+        ],
+        "pages": [
+          100,
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "tuan_triet": "Tuan",
+          "with_transformations": [
+            "HoaKhoa"
+          ],
+          "year_stems": [
+            "Mau",
+            "Quy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Hay gắt gỏng, ăn nói thô lỗ."
+      ],
+      "correction": "Loại trừ các trường hợp của đoạn sau: Lộc đồng cung (Lộc Tồn, hoặc Hóa Lộc; tại Ngọ Phá đơn thủ nên Hóa Lộc đồng cung chỉ có khi Phá hóa Lộc, tức tuổi Quý), Thiếu Dương đồng cung, hay Lộc và Thiếu Dương hội hợp.",
+      "id": "menh/pha-quan/34",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ngọ có Phá tọa thủ, nên hay gắt gỏng"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá tọa ly, ngôn ngữ thô bạo, phùng lộ, Dương nan giải xướng cuồng",
+      "when": [
+        {
+          "any_loc": false,
+          "branches": [
+            "Ngo"
+          ],
+          "not_with": [
+            "ThieuDuong"
+          ]
+        },
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "not_meets": [
+            "ThieuDuong"
+          ],
+          "not_with": [
+            "LocTon"
+          ],
+          "year_stems": [
+            "Giap",
+            "At",
+            "Binh",
+            "Dinh",
+            "Mau",
+            "Ky",
+            "Canh",
+            "Tan",
+            "Nham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lại rất vui tính, hay nói đùa."
+      ],
+      "id": "menh/pha-quan/35",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đây nếu Phá hoặc gặp Lộc đồng cung, hoặc gặp Thiếu Dương đồng cung"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá tọa ly, ngôn ngữ thô bạo, phùng lộ, Dương nan giải xướng cuồng",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        },
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThieuDuong"
+          ]
+        },
+        {
+          "any_loc": true,
+          "branches": [
+            "Ngo"
+          ],
+          "meets_all": [
+            "ThieuDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Là người cương quyết, gặp thời loạn thì dựng được sự nghiệp lớn."
+      ],
+      "id": "menh/pha-quan/36",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại tứ Mộ có Phá tọa thủ, là người cương quả"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá cư Mộ, cương quả chi nhân, phùng thời loạn thế, phùng Hình, Lộc, chấn động uy danh",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt có uy quyền hiển hách, tiếng tăm lẫy lừng."
+      ],
+      "condition_text": "gặp Hình (Kình Dương hay Thiên Hình) hội hợp",
+      "id": "menh/pha-quan/37",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Đây, nếu Phá gặp Hình, Lộc hội hợp, tất có uy quyền"
+        ],
+        "pages": [
+          101
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Phá cư Mộ, cương quả chi nhân, phùng thời loạn thế, phùng Hình, Lộc, chấn động uy danh",
+      "when": [
+        {
+          "any_loc": true,
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ]
+        }
+      ]
+    }
+  ]
+}
