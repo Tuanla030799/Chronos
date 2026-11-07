@@ -1,8 +1,10 @@
 //! The JSON schema of `data/interpretations/`, section 3 and section 7 of the specification.
 
 use astro_core::almanac::Luck;
-use astro_core::tuvi::{FourTransformations, StarBrightness, TuViPalaceRole, TuViStar};
-use astro_core::{Branch, Gender, Stem};
+use astro_core::tuvi::{
+    FourTransformations, StarBrightness, TuViPalaceRole, TuViPolarity, TuViStar, YinYangHarmony,
+};
+use astro_core::{Branch, FiveElements, Gender, Stem};
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value};
 
@@ -101,8 +103,9 @@ pub enum Dau {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct StarProfile {
-    /// Dipper.
-    pub dau: Dau,
+    /// Dipper, when the heading names one.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub dau: Option<Dau>,
     /// Element as printed, e.g. "Dương Thổ".
     pub element: String,
     /// Labels as printed, e.g. "Đế tinh".
@@ -282,6 +285,14 @@ pub struct When {
     pub than_here: Option<bool>,
     /// Sex of the person.
     pub gender: Option<Gender>,
+    /// Sex and polarity of the birth year: Dương Nam, Âm Nữ…
+    #[serde(default)]
+    pub polarity: Vec<TuViPolarity>,
+    /// Thuận lý or nghịch lý between the birth year and the Mệnh palace.
+    pub harmony: Option<YinYangHarmony>,
+    /// Element of the Bản Mệnh.
+    #[serde(default)]
+    pub ban_menh: Vec<FiveElements>,
     /// Stem of the birth year.
     #[serde(default)]
     pub year_stems: Vec<Stem>,

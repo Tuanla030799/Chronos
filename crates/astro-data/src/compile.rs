@@ -190,6 +190,17 @@ pub fn gate(
     }
     group(
         &mut gate,
+        facts("polarity", &when.polarity, |p| format!("{p:?}")),
+    );
+    if let Some(harmony) = when.harmony {
+        gate.all.push(format!("harmony:{harmony:?}"));
+    }
+    group(
+        &mut gate,
+        facts("ban_menh", &when.ban_menh, |e| format!("{e:?}")),
+    );
+    group(
+        &mut gate,
         facts("year_stem", &when.year_stems, |s| format!("{s:?}")),
     );
     group(

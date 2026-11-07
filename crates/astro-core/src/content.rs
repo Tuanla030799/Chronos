@@ -277,6 +277,9 @@ fn palace_facts(chart: &TuViChart, palace: &TuViPalace) -> BTreeSet<String> {
         }
     }
     facts.insert(format!("gender:{:?}", chart.gender));
+    facts.insert(format!("polarity:{:?}", chart.polarity));
+    facts.insert(format!("harmony:{:?}", chart.harmony));
+    facts.insert(format!("ban_menh:{:?}", chart.ban_menh.element()));
     facts.insert(format!("year_stem:{:?}", chart.year_can_chi.stem));
     facts.insert(format!("year_branch:{:?}", chart.year_can_chi.branch));
     let menh = chart.palace_of_role(TuViPalaceRole::Menh);
@@ -720,6 +723,9 @@ mod tests {
         let branch = chart.palace_of_role(TuViPalaceRole::TaiBach).branch;
         let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
         assert!(facts.contains(&"gender:Female".to_string()));
+        assert!(facts.contains(&format!("polarity:{:?}", chart.polarity)));
+        assert!(facts.contains(&format!("harmony:{:?}", chart.harmony)));
+        assert!(facts.contains(&format!("ban_menh:{:?}", chart.ban_menh.element())));
         assert!(facts.contains(&format!("year_stem:{:?}", chart.year_can_chi.stem)));
         assert!(facts.contains(&format!("year_branch:{:?}", chart.year_can_chi.branch)));
         for star in stars(chart.palace_of_role(TuViPalaceRole::Menh)) {

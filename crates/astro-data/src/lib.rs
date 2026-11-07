@@ -9,6 +9,7 @@
 #![warn(missing_docs)]
 
 pub mod collections;
+pub mod compact;
 pub mod compile;
 pub mod dataset;
 pub mod model;

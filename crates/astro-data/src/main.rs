@@ -6,9 +6,12 @@
 //! cargo run -p astro-data -- stats
 //! cargo run -p astro-data -- review --batch TV-15
 //! cargo run --release -p astro-data -- scan
+//! cargo run -p astro-data -- expand build/ingest/TV-02.jsonl
 //! ```
 
+use astro_data::compact;
 use astro_data::compile::compile;
+use astro_data::dataset::DATA_DIR;
 use astro_data::dataset::{Dataset, load};
 use astro_data::model::{SourceRef, SourceType, Status};
 use astro_data::output::{self, SQLITE_FILE};
@@ -20,7 +23,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
-const USAGE: &str = "usage: astro-data validate [--complete] | build [--release] | stats | scan | review --batch <id>";
+const USAGE: &str = "usage: astro-data validate [--complete] | build [--release] | stats | scan | review --batch <id> | expand <file>";
 
 fn root() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../..")
@@ -164,6 +167,21 @@ fn run_scan() -> Result<bool, String> {
     Ok(unseen.is_empty())
 }
 
+/// Writes the data files of a compact batch, replacing those of the same batch and collection.
+fn run_expand(path: &str) -> Result<bool, String> {
+    let compact = fs::read_to_string(path).map_err(|error| format!("{path}: {error}"))?;
+    let dir = root().join(DATA_DIR);
+    for (relative, file) in compact::expand(&compact)? {
+        let target = dir.join(&relative);
+        fs::create_dir_all(target.parent().expect("data files sit in a module"))
+            .map_err(|error| error.to_string())?;
+        fs::write(&target, compact::pretty(&file)).map_err(|error| error.to_string())?;
+        let count = file["entries"].as_array().map_or(0, Vec::len);
+        println!("{relative}: {count} mục");
+    }
+    Ok(true)
+}
+
 fn run_review(batch: &str) -> Result<bool, String> {
     let root = root();
     let dataset = load(&root)?;
@@ -188,6 +206,7 @@ fn main() -> ExitCode {
         ["stats"] => run_stats(),
         ["scan"] => run_scan(),
         ["review", "--batch", batch] => run_review(batch),
+        ["expand", path] => run_expand(path),
         _ => Err(USAGE.to_string()),
     };
     match result {
