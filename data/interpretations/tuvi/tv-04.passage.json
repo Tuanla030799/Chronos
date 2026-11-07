@@ -24,7 +24,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -58,7 +58,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -90,7 +90,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -122,7 +122,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -155,7 +155,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Neither"
@@ -189,7 +189,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Either"
@@ -219,7 +219,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -244,7 +244,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -261,12 +261,12 @@
           "TuVi"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông: hưởng phú quý đến cực độ và sống lâu."
       ],
       "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
       "id": "menh/tu-vi/09",
+      "section": "NamMenh",
       "source_ref": {
         "keywords": [
           "Tử miếu, vượng hay đắc địa thủ Mệnh, gặp nhiều sao sáng sủa tốt đẹp"
@@ -277,7 +277,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -297,11 +297,11 @@
           "TuVi"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông: chỉ được giàu sang khi có nhiều sao sáng sủa tốt đẹp hội hợp."
       ],
       "id": "menh/tu-vi/10",
+      "section": "NamMenh",
       "source_ref": {
         "keywords": [
           "Tử bình hòa, cần phải gặp nhiều sao sáng sủa tốt đẹp hộp hợp"
@@ -312,7 +312,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -329,11 +329,11 @@
           "TuVi"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông: thời trẻ lao khổ, về già mới được như ý. Nếu không sớm rời gia đình đi bôn tẩu phương xa thì tất phải yểu tử."
       ],
       "id": "menh/tu-vi/11",
+      "section": "NamMenh",
       "sensitivity": [
         "Death"
       ],
@@ -347,7 +347,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Male",
@@ -362,12 +362,12 @@
           "TuVi"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông: chắc chắn suốt đời lao tâm khổ tứ, lo toan sinh kế và hay mắc tai họa."
       ],
       "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp",
       "id": "menh/tu-vi/12",
+      "section": "NamMenh",
       "source_ref": {
         "keywords": [
           "Tử gặp nhiều sao mờ ám xấu xa hội hợp, chắc chắn là suốt đời"
@@ -378,7 +378,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Male"
@@ -393,11 +393,11 @@
           "ThamLang"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông có Tử Vi, Tham Lang đồng cung: chỉ có tu hành mới mong được yên thân."
       ],
       "id": "menh/tu-vi/13",
+      "section": "NamMenh",
       "source_ref": {
         "keywords": [
           "Tử gặp Tham đồng cung, thật chỉ có tu hành mới mong được yên thân"
@@ -408,7 +408,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Male",
@@ -442,7 +442,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Female",
@@ -477,7 +477,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Female",
@@ -512,7 +512,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "gender": "Female"
@@ -541,7 +541,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi trung hậu",
       "when": [
         {
@@ -575,7 +575,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đế tọa La, Võng, hoàn vi phi nghĩa chi nhân",
       "when": [
         {
@@ -609,7 +609,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi cư Ngọ, vô Hình Kỵ, Giáp, Đinh, Kỷ vị chí công khanh",
       "when": [
         {
@@ -652,7 +652,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi cư Ngọ, vô Hình Kỵ, Giáp, Đinh, Kỷ vị chí công khanh",
       "when": [
         {
@@ -697,7 +697,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi nam Hợi, nữ Dần cung, Nhâm Giáp sinh nhân phú qúy đồng.",
       "when": [
         {
@@ -734,7 +734,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi nam Hợi, nữ Dần cung, Nhâm Giáp sinh nhân phú qúy đồng.",
       "when": [
         {
@@ -771,7 +771,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi nam Hợi, nữ Dần cung, Nhâm Giáp sinh nhân phú qúy đồng.",
       "when": [
         {
@@ -832,7 +832,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Phủ đồng cung vô Sát, Giáp nhân hưởng phúc chung thân.",
       "when": [
         {
@@ -873,7 +873,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Phủ đồng cung vô Sát, Giáp nhân hưởng phúc chung thân.",
       "when": [
         {
@@ -922,7 +922,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Thiên Phủ toàn y, Phụ, Bật chỉ công.",
       "when": [
         {
@@ -956,7 +956,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Phủ, Kình Dương tại cư thương.",
       "when": [
         {
@@ -976,7 +976,6 @@
       "body": [
         "Mệnh có Tử Vi, gặp Thiên Phủ, Vũ Khúc, Thiên Tướng, Tả Phụ, Hữu Bật, Long Trì, Phượng Các, Khoa, Quyền, Lộc, Quốc Ấn hội hợp: cách Quân thần khánh hội, rực rỡ như vua tôi gặp nhau nơi triều đình. Chắc chắn hưởng phú quý đến cực độ, uy danh lừng lẫy, tuổi thọ gia tăng."
       ],
-      "condition_text": "gặp Lộc (Hóa Lộc hay Lộc Tồn) hội hợp",
       "id": "menh/tu-vi/28",
       "section": "PhuGiai",
       "source_ref": {
@@ -990,10 +989,11 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Phủ, Vũ, Tướng, Tả, Hữu, Long, Phương, Khoa, Quyền, Lộc áo quần thần khánh hội chi cách gia đình, kiếp loạn thế nan thành đại sự",
       "when": [
         {
+          "any_loc": true,
           "meets_all": [
             "ThienPhu",
             "VuKhuc",
@@ -1039,7 +1039,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Phủ, Vũ, Tướng, Tả, Hữu, Long, Phương, Khoa, Quyền, Lộc áo quần thần khánh hội chi cách gia đình, kiếp loạn thế nan thành đại sự",
       "when": [
         {
@@ -1081,7 +1081,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lưu Huyền Đức thừa Hán nghiệp thi ư Tử, Phủ, Khoa, Quyền, Hình, Ấn, Hồng, Khôi, Mệnh, Thân",
       "when": [
         {
@@ -1126,7 +1126,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Trương Tử Phòng thao lược, đa mưu, do phùng Tử, Phù, Kỵ, Quyền",
       "when": [
         {
@@ -1154,7 +1154,7 @@
       "body": [
         "Mệnh có Tử Vi, Thiên Tướng đồng cung, cung Thân có Phá Quân hội Vượng, Kình: người nhiều mưu mô thủ đoạn, gian hùng, xảo quyệt."
       ],
-      "condition_text": "cung Thân có Phá Quân tọa thủ, gặp Vượng, Kình hội hợp",
+      "condition_text": "Phá Quân gặp Vượng, Kình hội hợp",
       "id": "menh/tu-vi/32",
       "section": "PhuGiai",
       "source_ref": {
@@ -1168,10 +1168,13 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Thiên Tướng, Thân phụng Phá kiêm ngọ Vượng, Kình, đa mưu, yếm trá.",
       "when": [
         {
+          "in_than": [
+            "PhaQuan"
+          ],
           "with_all": [
             "TuVi",
             "ThienTuong"
@@ -1203,7 +1206,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Sát đồng lâm Tỵ, Hợi, nhất triều phú qúy song toàn",
       "when": [
         {
@@ -1238,7 +1241,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Thất Sát gia Không Vong, hư danh, thụ ấm.",
       "when": [
         {
@@ -1273,7 +1276,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Thất Sát, Hóa Quyền phản tác trinh tường",
       "when": [
         {
@@ -1310,7 +1313,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, tài năng",
       "when": [
         {
@@ -1346,7 +1349,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Vũ Khúc, Phá Quân, hội Dương, Đà, khi công danh, chi nghị kinh thương.",
       "when": [
         {
@@ -1381,7 +1384,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Vũ Khúc, Sát diệu phùng nhất sinh tăng, lại, sính anh hùng.",
       "when": [
         {
@@ -1414,7 +1417,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử, Phá tại Mộ cung, bất trung bất hiếu.",
       "when": [
         {
@@ -1451,7 +1454,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử, Phá, Mệnh, lâm ư Thìn, Tuất, Sửu, Mùi tái gia cát diệu, phú qúy thâm kỳ.",
       "when": [
         {
@@ -1489,7 +1492,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Phá Quân vô Tả, Hữu, vô cát diệu hung ác hôn lại chí đồ.",
       "when": [
         {
@@ -1531,7 +1534,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi cư Mão, Dậu, Kiếp, Không đa vi thoát tục chỉ tăng.",
       "when": [
         {
@@ -1572,7 +1575,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi mạc phùng Kiếp, Không, Hồng, Đào nhập Mệnh giảm thọ",
       "when": [
         {
@@ -1607,7 +1610,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Xương, Khúc phú qúy khả kỷ",
       "when": [
         {
@@ -1640,7 +1643,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Phụ, Bật đồng cung nhất hô bá nặc cư thượng phẩm.",
       "when": [
         {
@@ -1674,7 +1677,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi tu cần Tam Hóa, nhược phùng Tứ Sát, phong bãi hà hoa.",
       "when": [
         {
@@ -1741,7 +1744,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi tu cần Tam Hóa, nhược phùng Tứ Sát, phong bãi hà hoa.",
       "when": [
         {
@@ -1778,7 +1781,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi cư Tý, Ngọ, Khoa, Quyền, Lộc chiếu tối vi kỳ",
       "when": [
         {
@@ -1803,7 +1806,6 @@
       "body": [
         "Mệnh có Tử Vi, gặp Quyền, Lộc hội hợp mà bị Kình Dương, Đà La xâm phạm: vẫn sáng sủa tốt đẹp; là người giàu sang nhưng vô đạo, bất chính."
       ],
-      "condition_text": "gặp Lộc (Hóa Lộc hay Lộc Tồn) hội hợp",
       "id": "menh/tu-vi/49",
       "section": "PhuGiai",
       "source_ref": {
@@ -1816,10 +1818,11 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử Vi, Quyền, Lộc ngộ Dương, Đà tuy mỹ cát nhi vô đạo, vi nhân, thâm, thuật bất chính",
       "when": [
         {
+          "any_loc": true,
           "meets_all": [
             "KinhDuong",
             "DaLa"
@@ -1853,7 +1856,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử, Lộc đồng cung Phụ, Bật chiếu qúy bất khả ngôn",
       "when": [
         {
@@ -1884,7 +1887,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử, Phù giáp Mệnh vi qúy cách",
       "when": [
         {
@@ -1915,7 +1918,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tử, Phủ triều viên, thực lộc vạn chung",
       "when": [
         {
@@ -1948,7 +1951,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1972,7 +1975,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2007,7 +2010,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2040,7 +2043,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2080,7 +2083,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2118,7 +2121,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2158,7 +2161,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2189,7 +2192,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2232,7 +2235,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2288,7 +2291,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2312,11 +2315,11 @@
           "LiemTrinh"
         ]
       },
-      "section": "NamMenh",
       "body": [
         "Đàn ông có Liêm Trinh đắc địa gặp Văn Xương, Văn Khúc đồng cung: có tài văn võ, là bậc anh hùng cái thế."
       ],
       "id": "menh/liem-trinh/11",
+      "section": "NamMenh",
       "source_ref": {
         "keywords": [
           "Liêm đắc địa gặp Xương, Khúc đồng cung là người có tài văn võ"
@@ -2327,7 +2330,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2364,7 +2367,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2399,7 +2402,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2438,7 +2441,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2470,7 +2473,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh thanh bạch năng tương thủ.",
       "when": [
         {
@@ -2504,7 +2507,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh chủ hạ tiện, cơ hàn",
       "when": [
         {
@@ -2536,7 +2539,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh Thân, Mùi cung vô Sát, phú qúy thanh dương phiêu viên danh.",
       "when": [
         {
@@ -2577,7 +2580,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh, Phá Quân, Hỏa Tinh cư hãm địa, tự ải đầu hà.",
       "when": [
         {
@@ -2612,7 +2615,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh phùng Văn quế cánh bôn ba",
       "when": [
         {
@@ -2646,7 +2649,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh Mão Dậu gia Sát công tư vô diện quan nhân.",
       "when": [
         {
@@ -2682,7 +2685,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh, Mão, Dậu, mạc ngộ Kiếp, Kình tu phòng hình ngục.",
       "when": [
         {
@@ -2722,7 +2725,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh, Sát tinh cư Tỵ, Hợi, lưu đăng thiên thai.",
       "when": [
         {
@@ -2762,7 +2765,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh, Tứ Sát, tao hình lục",
       "when": [
         {
@@ -2800,7 +2803,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Tù ngộ Kình, Đà, Hỏa, Linh hữu già tỏa thất cốc chỉ ưu.",
       "when": [
         {
@@ -2842,7 +2845,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh, Bạch Hổ, hình ngục nan đào.",
       "when": [
         {
@@ -2876,7 +2879,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Liêm Trinh nhập Miếu hội Tướng Quân Trong Do uy mãnh",
       "when": [
         {
@@ -2908,7 +2911,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -2932,7 +2935,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2965,7 +2968,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3000,7 +3003,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3044,7 +3047,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3081,7 +3084,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3116,7 +3119,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3147,7 +3150,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3184,7 +3187,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3218,7 +3221,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3258,7 +3261,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3295,7 +3298,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3326,7 +3329,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3366,7 +3369,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3402,7 +3405,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3436,7 +3439,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3481,7 +3484,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3519,7 +3522,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3553,7 +3556,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng nhập Mệnh, hoán cải vô thường"
     },
     {
@@ -3579,7 +3582,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng hội cát thọ nguyên thời"
     },
     {
@@ -3604,7 +3607,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng, Tuất cung vi phản bội, định nhân hóa cát, chủ đại qúy",
       "when": [
         {
@@ -3647,7 +3650,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng, Tuất cung vi phản bội, định nhân hóa cát, chủ đại qúy",
       "when": [
         {
@@ -3683,7 +3686,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Dần, Thân tối hỷ, Đồng, Lương hội",
       "when": [
         {
@@ -3718,7 +3721,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Lương viên ngộ Khôi Quyền, tăng phùng Linh, Kỵ, giao lai Song Lộc, doanh thương dị phát phú",
       "when": [
         {
@@ -3759,7 +3762,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Nguyệt hãm cung gia Sát, trọng kỹ nghệ doanh thương",
       "when": [
         {
@@ -3800,7 +3803,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Nguyệt, Dương cư Ngọ vị, Bính, Mậu, trấn ngự biên cương",
       "when": [
         {
@@ -3842,7 +3845,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Âm tại Tý, Nguyệt lãng Thiên môn dung nhan mỹ ái Hổ, Khốc, Riêu, Tang xâm nhập chung thân đa lệ phối duyên",
       "when": [
         {
@@ -3879,7 +3882,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Âm tại Tý, Nguyệt lãng Thiên môn dung nhan mỹ ái Hổ, Khốc, Riêu, Tang xâm nhập chung thân đa lệ phối duyên",
       "when": [
         {
@@ -3920,7 +3923,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Đồng, Âm tại Tý, Nguyệt lãng Thiên môn dung nhan mỹ ái Hổ, Khốc, Riêu, Tang xâm nhập chung thân đa lệ phối duyên",
       "when": [
         {
@@ -3963,7 +3966,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phúc Diệu phùng Việt diệu, định thị hải hà dúc tú",
       "when": [
         {
@@ -3996,7 +3999,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng Tuất cung Hóa Kỵ, Đinh nhân Mệnh ngộ phải vi giai",
       "when": [
         {
@@ -4043,7 +4046,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Đồng Tuất cung Hóa Kỵ, Đinh nhân Mệnh ngộ phải vi giai",
       "when": [
         {
