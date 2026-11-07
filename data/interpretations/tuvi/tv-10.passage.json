@@ -1,0 +1,3397 @@
+{
+  "batch": "TV-10",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Người cao, thô, da xám, mặt choắt, lộ hầu, mắt lồi."
+      ],
+      "condition_text": "Kình Dương đơn thủ",
+      "id": "menh/kinh-duong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kình, Dương đơn thủ, nên thân hình cao và thô"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Tính cứng rắn, quả quyết, dũng mãnh, nhiều mưu kế, ưa mạo hiểm, nhưng hay kiêu căng, tự đắc."
+      ],
+      "correction": "Sách in \"dũng mảnh\", hiểu là dũng mãnh.",
+      "id": "menh/kinh-duong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Kình đắc địa, nên tính khí cương cường, quả quyết, dũng mảnh"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Tính hung bạo, liều lĩnh, bướng bỉnh, ngang ngạnh và gian trá."
+      ],
+      "correction": "Sách in \"bướng binh\", hiểu là bướng bỉnh.",
+      "id": "menh/kinh-duong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhưng nếu Kình hãm địa, thì tính khí lại hung bạo, liều lĩnh"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Ắt tay chân có thương tích và mắt rất kém."
+      ],
+      "id": "menh/kinh-duong/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình tọa thủ tại Mão, Dậu, tất chân tay có thương tích"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Kình Dương gặp Thái Dương hay Thái Âm đồng cung: nam ắt khắc vợ, nữ ắt sát chồng."
+      ],
+      "correction": "Sách in \"gái sát chổng\", hiểu là sát chồng.",
+      "id": "menh/kinh-duong/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình gặp Nhật hay Nguyệt đồng cung, tất trai khắc vợ"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "ThaiDuong"
+          ]
+        },
+        {
+          "with_all": [
+            "KinhDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Ắt có ám tật."
+      ],
+      "condition_text": "gặp Liêm, Cự, Kỵ đồng cung",
+      "correction": "Liêm Trinh và Cự Môn không bao giờ đồng cung (Liêm chỉ đi cùng Tham, Phá, Sát, Tướng, Phủ hoặc đơn thủ), nên đọc đúng chữ \"Liêm, Cự, Kỵ đồng cung\" thì không lá số nào có. Chưa rõ sách muốn nói Liêm hay Cự cùng Kỵ, hay một trong ba sao: máy chỉ lọc điều kiện cần (Kình đồng cung với Liêm, với Cự, hoặc với Hóa Kỵ), giữ nguyên lời ở condition_text, chờ chủ dự án quyết.",
+      "id": "menh/kinh-duong/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình gặp Liêm, Cự, Kỵ đồng cung, tất có ám tật"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LiemTrinh"
+          ]
+        },
+        {
+          "with_all": [
+            "KinhDuong",
+            "CuMon"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Ắt tay chân bị thương tật, hay vướng kiện tụng, tù tội; càng về già càng khốn khổ."
+      ],
+      "condition_text": "gặp Liêm, Cự, Kỵ đồng cung, mà Liêm, Cự, Kỵ hãm địa",
+      "correction": "Sách in \"càng về gia\", hiểu là về già. Liêm Trinh và Cự Môn không bao giờ đồng cung: mã hóa như menh/kinh-duong/06.",
+      "id": "menh/kinh-duong/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Liêm, Cự, Kỵ hãm địa, tất chân tay bị thương tàn"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LiemTrinh"
+          ]
+        },
+        {
+          "with_all": [
+            "KinhDuong",
+            "CuMon"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Người tuổi Thìn, Tuất gặp cách này là đáng lo ngại nhất."
+      ],
+      "condition_text": "gặp Liêm, Cự, Kỵ đồng cung",
+      "correction": "Liêm Trinh và Cự Môn không bao giờ đồng cung: mã hóa như menh/kinh-duong/06.",
+      "id": "menh/kinh-duong/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đáng lo ngại nhất là tuổi Thìn, Tuất gặp cách này"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LiemTrinh"
+          ],
+          "year_branches": [
+            "Thin",
+            "Tuat"
+          ]
+        },
+        {
+          "with_all": [
+            "KinhDuong",
+            "CuMon"
+          ],
+          "year_branches": [
+            "Thin",
+            "Tuat"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaKy"
+          ],
+          "year_branches": [
+            "Thin",
+            "Tuat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Ắt trên người có nốt ruồi ở chỗ kín, hoặc có nhiều vết rỗ, sẹo."
+      ],
+      "correction": "Sách in \"nốt ruổi\", hiểu là nốt ruồi.",
+      "id": "menh/kinh-duong/09",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Kình gặp Tả, Hữu, Xương, Khúc hội hợp, tất trong mình"
+        ],
+        "pages": [
+          110
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Nên theo nghiệp quân sự, về sau có uy quyền lừng lẫy."
+      ],
+      "id": "menh/kinh-duong/10",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Kình đắc địa thủ Mệnh: nên chuyên về quân sự"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Kình Dương đắc địa gặp Tử Vi hay Thiên Phủ đồng cung: ắt buôn bán lớn mà trở nên giàu có."
+      ],
+      "condition_text": "Tử, Phủ cũng đắc địa",
+      "id": "menh/kinh-duong/11",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Kình đắc địa gặp Tử, Phủ cũng đắc địa đồng cung"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male",
+          "with_all": [
+            "KinhDuong",
+            "TuVi"
+          ]
+        },
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male",
+          "with_all": [
+            "KinhDuong",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Thật khó thoát tai họa, tuổi thọ bị giảm; còn sống ngày nào là còn sầu khổ ngày ấy."
+      ],
+      "condition_text": "không gặp nhiều sao sáng sủa tốt đẹp hội hợp cứu giải",
+      "id": "menh/kinh-duong/12",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình hãm địa, không gặp Tuần, Triệt án ngữ, hay gặp nhiều sao"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male",
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Chắc chắn phải chết ngoài đường sá, hoặc phơi thây nơi chiến trường."
+      ],
+      "condition_text": "không gặp nhiều sao sáng sủa tốt đẹp hội hợp cứu giải, lại gặp thêm Sát hội hợp",
+      "correction": "Sách ghi \"gặp Kình lại thêm Đà, Hỏa, Linh, Kiếp, Sát hội hợp\". Đà La luôn cách Kình Dương hai cung (hai bên Lộc Tồn), nên không bao giờ đồng cung, tam hợp hay xung chiếu với cung có Kình tọa thủ: bỏ Đà khỏi điều kiện, như D14. \"Sát\" chưa rõ Thất Sát hay Sát tinh nên để ở điều kiện lời. Sách in \"xa trường\", hiểu là sa trường.",
+      "id": "menh/kinh-duong/13",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "chắc chắn là phải chết ở nơi đường sá"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male",
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKiep"
+          ],
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Rất giàu có, giúp chồng, lợi con."
+      ],
+      "id": "menh/kinh-duong/14",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "Kình đắc địa thủ Mệnh nên rất giàu có và vượng phu ích tử"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Là người hạ tiện, dâm dật, khắc hại chồng con."
+      ],
+      "id": "menh/kinh-duong/15",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình hãm địa là hạng hạ tiện, dâm dật, khắc hại chồng con"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Thìn, Tuất, Sửu, Mùi có Kình Dương tọa thủ: được hưởng giàu sang và nổi danh."
+      ],
+      "condition_text": "gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/kinh-duong/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tứ Mộ, có Kình tọa thủ"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Dương nhập Miếu, phú qúy thanh dương",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Người tuổi Thìn, Tuất, Sửu, Mùi có cách này càng quý hiển."
+      ],
+      "condition_text": "gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Kình Dương chỉ đóng tại Tứ Mộ với tuổi Can âm (Ất, Đinh, Kỷ, Tân, Quý), mà Can âm chỉ đi với Chi âm, nên tuổi Thìn, Tuất không bao giờ có cách này. Giữ nguyên lời sách; đoạn chỉ hiện với tuổi Sửu, Mùi.",
+      "id": "menh/kinh-duong/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Tuổi Thìn, Tuất, Sửu, Mùi có cách này lại càng qúy hiển"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Dương nhập Miếu, phú qúy thanh dương",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "year_branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tý, Ngọ, Mão, Dậu có Kình Dương tọa thủ: ắt chết non; nếu sống lâu thì ắt mang tàn tật và hiếm khi được toại nguyện."
+      ],
+      "id": "menh/kinh-duong/18",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "có Kình tọa thủ, tất phải chết non"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương Tý, Ngọ, Mão, Dậu phi yểu chiết nhi hình thương",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo",
+            "Mao",
+            "Dau"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Ngọ có Kình Dương tọa thủ, như gươm kề cổ ngựa: rất đáng lo ngại."
+      ],
+      "condition_text": "Kình không xa lánh được Sát tinh, Sát, Hình, hay không gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Câu phú in \"kiêm\", câu phú kế tiếp in \"kiếm\", hiểu là kiếm. Điều kiện lời là phần loại trừ của câu \"nhưng nếu Kình xa lánh được Sát tinh…\" (menh/kinh-duong/21), để hai đoạn trái nghĩa không cùng hiện.",
+      "id": "menh/kinh-duong/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ngọ có Kình tọa thủ, ví như kiếm kề cổ ngựa"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mã đầu đới kiêm, phi yểu chiết nhi chủ hình thương",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Ắt chết yểu một cách thê thảm; nếu sống lâu thì ắt mang tàn tật, nghèo khổ cô đơn."
+      ],
+      "condition_text": "Kình gặp thêm nhiều Sát tinh, hay Sát, Hình",
+      "correction": "\"Sát, Hình\" chưa rõ Thất Sát, Thiên Hình hay Kình Dương, \"nhiều Sát tinh\" không có ngưỡng: để ở điều kiện lời.",
+      "id": "menh/kinh-duong/20",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Kình lại gặp thêm nhiều Sát tinh hay Sát, Hình, tất phải chết"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mã đầu đới kiêm, phi yểu chiết nhi chủ hình thương",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Ngọ có Kình Dương tọa thủ: ắt hiển đạt về võ nghiệp, có uy quyền lớn, trấn giữ nơi biên thùy."
+      ],
+      "condition_text": "Kình xa lánh được Sát, Hình, và gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Lộc, Mã, Khôi, Quyền",
+      "correction": "\"Xa lánh Sát tinh\" mã hóa not_meets Hỏa, Linh, Không, Kiếp: Kình tự là Sát tinh, còn Đà La không bao giờ hội hợp với cung có Kình. \"Sát, Hình\" chưa rõ Thất Sát, Thiên Hình nên để ở điều kiện lời.",
+      "id": "menh/kinh-duong/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "nhưng nếu Kình xa lánh được Sát tinh, hay Sát, Hình"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mã đầu đới kiếm, trấn ngự biên cương",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "not_meets": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Người tuổi Bính Tuất có cách này thì cả tài lẫn quan đều tốt đẹp."
+      ],
+      "condition_text": "Kình xa lánh được Sát, Hình, và gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Lộc, Mã, Khôi, Quyền",
+      "id": "menh/kinh-duong/22",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Tuổi Bính Tuất có cách này thật là tài quan song mỹ"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mã đầu đới kiếm, trấn ngự biên cương",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "not_meets": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ],
+          "year_branches": [
+            "Tuat"
+          ],
+          "year_stems": [
+            "Binh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Người các tuổi khác (không phải Bính Tuất) có cách này tuy cũng quý hiển, nhưng sự nghiệp không bền và hay gặp tai họa khủng khiếp."
+      ],
+      "condition_text": "Kình xa lánh được Sát, Hình, và gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp, nhất là Lộc, Mã, Khôi, Quyền",
+      "correction": "Sách in \"Con các tuổi khác\", hiểu là Còn. Kình Dương ở Ngọ chỉ có với tuổi Bính, Mậu (Lộc Tồn ở Tỵ), nên \"các tuổi khác\" là mọi tuổi Mậu và các tuổi Bính trừ Bính Tuất.",
+      "id": "menh/kinh-duong/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "sự nghiệp chẳng được lâu bền và hay mắc tai họa khủng khiếp"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mã đầu đới kiếm, trấn ngự biên cương",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "not_meets": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ],
+          "year_stems": [
+            "Mau"
+          ]
+        },
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "not_meets": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ],
+          "year_branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than"
+          ],
+          "year_stems": [
+            "Binh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Ngọ có Kình Dương, Thiên Đồng, Thái Âm đồng cung, gặp Phượng Các, Giải hội hợp: ắt hiển đạt về võ nghiệp, lập chiến công, uy quyền lớn, danh tiếng lẫy lừng, giàu sang suốt đời. Mệnh vua Hán Quang Vũ có cách này."
+      ],
+      "condition_text": "gặp thêm Giải hội hợp (sách không ghi rõ Giải Thần, Thiên Giải hay Địa Giải)",
+      "id": "menh/kinh-duong/24",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ngọ có Kình, Đồng, Âm tọa thủ đồng cung"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương, Đồng, Âm, nhi phùng, Phượng, Giải, nhất thế uy danh.",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "meets_all": [
+            "PhuongCac"
+          ],
+          "with_all": [
+            "KinhDuong",
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tý có Kình Dương, Thiên Đồng, Thái Âm đồng cung, gặp Phượng, Giải hội hợp: cũng tốt đẹp, nhưng không rực rỡ bằng tại Ngọ."
+      ],
+      "condition_text": "gặp thêm Giải hội hợp (sách không ghi rõ Giải Thần, Thiên Giải hay Địa Giải)",
+      "id": "menh/kinh-duong/25",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Mệnh an tại Tý, có những sao kể trên cũng tốt đẹp"
+        ],
+        "pages": [
+          111
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương, Đồng, Âm, nhi phùng, Phượng, Giải, nhất thế uy danh.",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "meets_all": [
+            "PhuongCac"
+          ],
+          "with_all": [
+            "KinhDuong",
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh bị Kình Dương, Liêm Trinh, Thiên Tướng giáp hai bên: khó thoát tù tội; nếu làm quan thì về sau cũng bị cách chức, suốt đời hiếm khi được toại nguyện."
+      ],
+      "correction": "Sách in \"giáp Kim, Liêm, Tướng\"; câu phú ghi Kình (Tù là Liêm Trinh, Ấn là Thiên Tướng), nên hiểu Kim là Kình. Mã hóa đúng chữ: Mệnh giáp cả ba sao. Câu phú gần giống ở tr. 92 lại giải là Mệnh có Liêm, Tướng đồng cung và giáp Kình; đoạn đó đã nạp ở TV-06 (menh/thien-tuong/19), hai đoạn không cùng hiện trên một lá số.",
+      "id": "menh/kinh-duong/26",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh giáp Kim, Liêm, Tướng, nên khó tránh thoát được tù tội"
+        ],
+        "pages": [
+          111,
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Tù, Giáp, Ấn, hình trượng nan đào",
+      "when": [
+        {
+          "flanked_by": [
+            "KinhDuong",
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong",
+          "HoaTinh"
+        ]
+      },
+      "body": [
+        "Mệnh tại Thìn, Tuất, Sửu, Mùi có Kình Dương, Hỏa Tinh đồng cung: có uy quyền lừng lẫy."
+      ],
+      "id": "menh/kinh-duong/27",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tứ Mộ, có Kình, Hỏa tọa thủ đồng cung"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương, Hỏa Tướng, oai quyền xuất chúng đồng hành Tham, Vũ, uy yểm biên di",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "KinhDuong",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong",
+          "HoaTinh"
+        ]
+      },
+      "body": [
+        "Kình Dương, Hỏa Tinh lại gặp Tham Lang, Vũ Khúc đồng cung: ắt là bậc anh hùng hiếm có, danh tiếng lừng lẫy, khiến giặc nơi biên cương phải khiếp sợ."
+      ],
+      "id": "menh/kinh-duong/28",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu Kình, Hỏa, lại gặp thêm Tham, Vũ đồng cung, tất là bậc"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương, Hỏa Tướng, oai quyền xuất chúng đồng hành Tham, Vũ, uy yểm biên di",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "KinhDuong",
+            "HoaTinh",
+            "ThamLang",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh hay Thân gặp Kình Dương, Đà La, Linh Tinh, Hỏa Tinh hội hợp: người gù lưng hoặc có tật ở lưng."
+      ],
+      "id": "menh/kinh-duong/29",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh hay cung Thân có Kình, Đà, Linh, Hỏa hội hợp"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Đà, Linh, Hỏa thủ Thân, Mệnh yếu đà bối khúc сhi nhân",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "LinhTinh",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Nếu các sao ấy lại hãm địa: ắt suốt đời nghèo khổ cô đơn, hoặc phải chết thê thảm."
+      ],
+      "condition_text": "các sao Kình, Đà, Linh, Hỏa đều hãm địa",
+      "id": "menh/kinh-duong/30",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu những sao kể trên lại hãm địa, tất suốt đời cùng khổ"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Đà, Linh, Hỏa thủ Thân, Mệnh yếu đà bối khúc сhi nhân",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "LinhTinh",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh gặp Kình, Đà, Hỏa, Linh hội hợp mà có thêm nhiều sao tốt: ắt có tài lộc."
+      ],
+      "condition_text": "gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/kinh-duong/31",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kình, Đà, Hỏa, Linh họp nếu gặp thêm nhiều sao"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dương, Đà, Hỏa, Linh phùng phát tài, hung tắc kỵ",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh gặp Kình, Đà, Hỏa, Linh hội hợp mà có thêm nhiều sao xấu: ắt suốt đời nghèo khổ, về sau gặp tai họa mà chết thảm thương."
+      ],
+      "condition_text": "gặp thêm nhiều sao mờ ám xấu xa hội hợp",
+      "id": "menh/kinh-duong/32",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhưng nếu gặp thêm nhiều sao mờ ám xấu xa, tất"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dương, Đà, Hỏa, Linh phùng phát tài, hung tắc kỵ",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Mệnh có Kình Dương hay Đà La tọa thủ, gặp Địa Kiếp đồng cung: tuổi thọ bị giảm."
+      ],
+      "correction": "Sách in \"nén giảm thọ\", hiểu là nên giảm thọ.",
+      "id": "menh/kinh-duong/33",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kình hay Đà tọa thủ, gặp Kiếp đồng cung"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mệnh, Dương, Đà gia Kiếp, thọ giảm",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "DiaKiep"
+          ]
+        },
+        {
+          "with_all": [
+            "DaLa",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh xấu mà lại bị Kình, Đà giáp hai bên: suốt đời nghèo khổ, trôi dạt, có khi phải đi ăn xin."
+      ],
+      "condition_text": "cung Mệnh xấu xa",
+      "correction": "Sách in \"tại giáp Kình\", hiểu là lại giáp Kình.",
+      "id": "menh/kinh-duong/34",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh xấu xa, tại giáp Kình, giáp Đà"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Giáp Dương, giáp Đà vi khất điếu",
+      "when": [
+        {
+          "flanked_by": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Mệnh có Hóa Kỵ tọa thủ lại bị Kình, Đà giáp hai bên: suốt đời nghèo túng, khổ sở, hay gặp tai họa. Chỉ có sớm xa gia đình may ra mới yên thân, đủ ăn đủ mặc."
+      ],
+      "correction": "Sách in \"Chí có sớm xa gia đình\", hiểu là Chỉ có.",
+      "id": "menh/kinh-duong/35",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kỵ tọa thủ, lại giáp Kình, giáp Đà"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dương, Đà giáp Kỵ vi bại cục",
+      "when": [
+        {
+          "flanked_by": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh có Kình Dương, lại gặp Thiên Hư, Tuế, Điếu Khách hội hợp: suốt đời sầu khổ; nam sát vợ, nữ khắc chồng; nếu không thì cũng phải sớm xa cha mẹ, anh em."
+      ],
+      "condition_text": "gặp thêm Tuế hội hợp",
+      "correction": "\"Tuế\" chưa rõ Thái Tuế hay Tuế Phá nên để ở điều kiện lời; Hư là Thiên Hư, Khách là Điếu Khách.",
+      "id": "menh/kinh-duong/36",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kình tọa thủ, lại gặp thêm Hư, Tuế, Khách hội hợp"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình, Hư, Tuế, Khách gia lâm, mãn thế đa phùng tang sự",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHu",
+            "DieuKhach"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh có Kình Dương, Lực Sĩ đồng cung: thân hình lực lưỡng, sức địch muôn người, như Lý Quảng đời Hán (Mệnh Lý Quảng có cách này)."
+      ],
+      "id": "menh/kinh-duong/37",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kình, Lực tọa thủ đồng cung, nên thân hình lực lưỡng"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Lý Quảng sức dịch vạn chứng",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LucSy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mệnh có Kình Dương, Lực Sĩ đồng cung: người tài giỏi, lập nhiều công trạng nhưng không được bề trên xét đến mà phong thưởng, như Lý Quảng có chiến công lớn mà vua không phong tước."
+      ],
+      "id": "menh/kinh-duong/38",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "là người tài giỏi, lập được nhiều công trạng, nhưng không được"
+        ],
+        "pages": [
+          112
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kình Dương phùng Lực Sỹ, Lý Quảng nan phong",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "LucSy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Người cao, dài, hơi gầy, da xám, lông tóc rậm, mặt thô, răng xấu, mắt kém."
+      ],
+      "id": "menh/da-la/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Đà La tọa thủ, nên thân hình cao dài"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Can đảm, dũng mãnh, nhưng thâm trầm, có mưu kế và thủ đoạn."
+      ],
+      "id": "menh/da-la/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đà đắc địa là người can đảm, dũng mãnh, nhưng thâm trầm"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Hung bạo, gian hiểm, độc ác và dâm dật; trên người thường có tì vết hoặc nhiều vết rỗ, sẹo."
+      ],
+      "id": "menh/da-la/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đà hãm địa là người hung bạo, gian hiểm, độc ác và dâm dật"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Thật là trọn đời nghèo khổ cô đơn, phải lang thang trôi dạt; hay đau răng, đau mắt; thường vướng kiện cáo, tù tội, gặp tai nạn khủng khiếp. Nếu tay chân không bị thương tật và mắt không có tật thì ắt không thể sống lâu."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa hội hợp, nhất là Hỏa, Linh, Không, Kiếp, Kỵ, Hình",
+      "correction": "Sách in \"khung khiếp\" và \"không thể sông lâu\", hiểu là khủng khiếp và sống lâu.",
+      "id": "menh/da-la/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nhất là Hỏa, Linh, Không, Kiếp, Kỵ, Hình thật là chung thân cùng khổ"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Người thô xấu, lông tóc vàng hoặc đỏ, thường có tì vết ở tay chân hoặc răng miệng; tính ương ngạnh, nóng nảy."
+      ],
+      "id": "menh/hoa-linh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Hỏa Tinh hay Linh Tinh tọa thủ, nên thân hình thô xấu"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Can đảm, dũng mãnh, chí khí hiên ngang; sức khỏe dồi dào, ít khi gặp tai nạn."
+      ],
+      "correction": "Sách in \"dồi sào\", hiểu là dồi dào.",
+      "id": "menh/hoa-linh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh đắc địa thủ Mệnh, là người can đảm, dũng mãnh"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Sinh năm Dần, Mão, Tỵ hay Ngọ mà Mệnh có Hỏa, Linh đắc địa là hợp cách."
+      ],
+      "id": "menh/hoa-linh/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Người sinh năm Dần, Mão, Tỵ, Ngọ có Hỏa, Linh đắc địa thủ Mệnh"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "year_branches": [
+            "Dan",
+            "Mao",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Sinh năm Dần, Mão, Tỵ hay Ngọ, Mệnh có Hỏa, Linh đắc địa lại gặp nhiều sao tốt: chắc chắn được hưởng giàu sang suốt đời."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/hoa-linh/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "thì chắc chắn là được hưởng giàu sang trọn đời"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "year_branches": [
+            "Dan",
+            "Mao",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Cũng là hợp cách, nên cũng được hưởng phú quý."
+      ],
+      "condition_text": "sinh ở phương Đông, Nam",
+      "id": "menh/hoa-linh/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Người sinh ở phương Đông, Nam, mà cung Mệnh có Hỏa, Linh đắc địa"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Tuy cũng được hưởng giàu sang nhưng không bền."
+      ],
+      "condition_text": "sinh ở phương Tây, Bắc",
+      "id": "menh/hoa-linh/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Người sinh ở phương Tây, Bắc mà cung Mệnh có Hỏa, Linh đắc địa"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Thâm hiểm, gian ác, rất liều lĩnh; thường mắc bệnh thần kinh hoặc khí huyết nên sức khỏe ngày càng suy; suốt đời nghèo khổ, khó tránh tai họa khủng khiếp; nếu không mang tật thì ắt chết yểu. Chỉ khi sớm rời gia đình, đi làm con nuôi nhà khác, thì may ra mới tạm yên thân."
+      ],
+      "correction": "Sách in \"Chi có sớm xa gia đình\", hiểu là Chỉ có.",
+      "id": "menh/hoa-linh/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Hỏa, Linh hãm địa tọa thủ, là người thâm hiểm, gian ác"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Thật nguy khốn đến cùng cực."
+      ],
+      "condition_text": "sinh ở phương Tây, Bắc",
+      "id": "menh/hoa-linh/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Người sinh ở phương Tây, Bắc mà cung Mệnh có Hỏa Linh hãm địa"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Mệnh tại Thìn, Tuất, Sửu, Mùi có Hỏa hay Linh tọa thủ, gặp Tham Lang, Vũ Khúc đồng cung: rất rực rỡ tốt đẹp. Chắc chắn là người ra trận làm tướng, vào triều làm quan, văn võ toàn tài, uy quyền lừng lẫy, danh tiếng vang dội và giàu sang suốt đời."
+      ],
+      "correction": "Sách in \"xuất tướng, nhập tinh\"; cùng cụm này ở tr. 114 in \"xuất tướng nhập tướng\", nên hiểu là nhập tướng.",
+      "id": "menh/hoa-linh/09",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Tứ Mộ, có Hỏa, Linh tọa thủ gặp Tham, Vũ đồng"
+        ],
+        "pages": [
+          113
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThamLang",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Chắc chắn được hưởng phú quý song toàn và hiển đạt về võ nghiệp."
+      ],
+      "condition_text": "nơi sinh ứng hợp phương hướng (phương Đông, Nam)",
+      "correction": "Sách in \"ứng hợp nam sinh\"; câu song song ở Nữ mệnh cùng trang in \"ứng hợp năm sinh\", nên hiểu là năm sinh. Năm sinh hợp cách là Dần, Mão, Tỵ, Ngọ và phương hướng hợp cách là Đông, Nam, theo Đại cương tr. 113. Sách in \"hiển dạt\", hiểu là hiển đạt.",
+      "id": "menh/hoa-linh/10",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "ứng hợp nam sinh và phương hướng của"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male",
+          "year_branches": [
+            "Dan",
+            "Mao",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Thật đáng lo ngại: hay mắc bệnh tật, tai họa nguy hiểm, suốt đời nghèo khổ cô đơn, thường sớm lìa gia đình, bôn ba lang thang; nếu tay chân không bị thương tật thì ắt không thể sống lâu."
+      ],
+      "id": "menh/hoa-linh/11",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh hãm địa thật rất đáng lo ngại"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Ắt là con nhà quyền quý, nhưng tính cứng cỏi, nóng nảy, gan dạ không kém đàn ông; cả đời vẫn giàu sang."
+      ],
+      "condition_text": "nơi sinh ứng hợp phương hướng (phương Đông, Nam)",
+      "correction": "Năm sinh hợp cách là Dần, Mão, Tỵ, Ngọ và phương hướng hợp cách là Đông, Nam, theo Đại cương tr. 113.",
+      "id": "menh/hoa-linh/12",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "tất là con nhà khuê các, nhưng có tính cương cường"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female",
+          "year_branches": [
+            "Dan",
+            "Mao",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Là người hạ tiện, dâm dật, đêm ngủ hay mộng thấy đàn ông, thường khắc chồng hại con."
+      ],
+      "id": "menh/hoa-linh/13",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh hãm địa, là người hạ tiện, dâm dật, đêm ngủ hay nằm"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hỏa, Linh là hai sao gây tai họa. Đắc địa thủ Mệnh thì cũng không đáng lo ngại lắm."
+      ],
+      "correction": "Sách in \"cùng không đáng lo ngại\", hiểu là cũng không.",
+      "id": "menh/hoa-linh/14",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nếu Hỏa, Linh đắc địa thủ Mệnh, cùng không đáng lo ngại lắm"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa Tinh, Linh Tinh chuyên tác họa",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hỏa, Linh là hai sao gây tai họa. Hãm địa thủ Mệnh thì thật khó tránh những chuyện chẳng lành."
+      ],
+      "id": "menh/hoa-linh/15",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Nhưng nếu Hỏa, Linh hãm địa thủ Mệnh, thật khó"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa Tinh, Linh Tinh chuyên tác họa",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Mệnh có Hỏa đắc địa tọa thủ gặp Linh chiếu, hoặc Linh đắc địa tọa thủ gặp Hỏa chiếu, hoặc Hỏa, Linh đắc địa đồng cung: người tài ba xuất chúng, thường hiển đạt về võ nghiệp, có uy quyền và danh tiếng lừng lẫy."
+      ],
+      "id": "menh/hoa-linh/16",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Hỏa đắc địa tọa thủ, gặp Linh chiếu"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa, Linh tương ngột đa trấn chư bang",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Mệnh tại Sửu, Mùi có Hỏa hay Linh tọa thủ (tuy hãm địa nhưng không đáng lo), gặp Thiên Việt, Tham Lang, Vũ Khúc đồng cung: ra trận làm tướng, vào triều làm quan, hiển đạt về võ nghiệp, có uy quyền và giàu sang suốt đời."
+      ],
+      "id": "menh/hoa-linh/17",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Sửu Mùi, có Hỏa, Linh tọa thủ (tuy hãm địa"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa, Linh khả Tỵ, Sửu, Mùi, Việt, Tham, Vũ ưng ngộ lai phùng Kiếp diệu, đao binh dị tác tai thương",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "not_meets": [
+            "DiaKiep"
+          ],
+          "with_all": [
+            "ThienViet",
+            "ThamLang",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Cách trên mà Mệnh có thêm Địa Kiếp tọa thủ hay chiếu: thật khó tránh tai họa về đao thương, súng đạn."
+      ],
+      "id": "menh/hoa-linh/18",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu cung Mệnh có thêm Kiếp tọa thủ hay chiếu"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa, Linh khả Tỵ, Sửu, Mùi, Việt, Tham, Vũ ưng ngộ lai phùng Kiếp diệu, đao binh dị tác tai thương",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "meets_all": [
+            "DiaKiep"
+          ],
+          "with_all": [
+            "ThienViet",
+            "ThamLang",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh gặp Hỏa, Linh, Kình hội hợp: công danh trắc trở, tiền bạc không dư dả, hay gặp tai nạn."
+      ],
+      "id": "menh/hoa-linh/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Hỏa, Linh, Kình hội hợp, nên công danh trắc trở"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa, Linh, Kình Dương vi hạ cách",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh bị Hỏa, Linh giáp hai bên: suốt đời hiếm khi toại nguyện, thường phải bôn ba nơi xa."
+      ],
+      "id": "menh/hoa-linh/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh giáp Hỏa, Linh nên suốt đời chẳng mấy khi"
+        ],
+        "pages": [
+          114
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa, Linh giáp Mệnh vi bại cục",
+      "when": [
+        {
+          "flanked_by": [
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "HoaTinh"
+        ]
+      },
+      "body": [
+        "Mệnh tại Hợi có Hỏa Tinh, Tuyệt đồng cung, gặp Tham Lang, Hình hội hợp: người dũng mãnh, khí phách hiên ngang, làm nên về đường võ, uy danh lừng lẫy."
+      ],
+      "condition_text": "gặp Hình hội hợp (Thiên Hình hay Kình Dương)",
+      "id": "menh/hoa-linh/21",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Hợi có Hỏa, Tuyệt tọa thủ đồng cung"
+        ],
+        "pages": [
+          114,
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Hỏa diệu phùng Tuyệt tại Hợi cung, nhi ngộ Tham, Hình, uy danh quán thế",
+      "when": [
+        {
+          "branches": [
+            "Hoi"
+          ],
+          "meets_all": [
+            "ThamLang"
+          ],
+          "with_all": [
+            "HoaTinh",
+            "Tuyet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Mệnh có Linh Tinh, Thiên Mã đồng cung, lại gặp Kình, Đà hội hợp: tay chân tàn tật."
+      ],
+      "id": "menh/hoa-linh/22",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Linh, Mã tọa thủ đồng cung, lại gặp Kình, Đà"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Linh phùng Mã, nhi ngộ Dương, Đà, hữu tật tứ chi",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ],
+          "with_all": [
+            "LinhTinh",
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Người thô xấu, da dẻ kém tươi."
+      ],
+      "condition_text": "Địa Kiếp hay Địa Không đơn thủ",
+      "id": "menh/dia-khong-kiep/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Địa Kiếp hay Địa Không đơn thủ"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kín đáo, hay cân nhắc, nhiều mưu trí, rất can đảm; nhưng sự nghiệp lên xuống thất thường, giàu sang như đám mây trôi nổi."
+      ],
+      "id": "menh/dia-khong-kiep/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không đắc địa, là người kín đáo, hay suy xét"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Gian tà, xảo quyệt, ích kỷ, hẹp hòi keo kiệt; suốt đời hiếm khi toại nguyện, lại thường mang tật trong người."
+      ],
+      "id": "menh/dia-khong-kiep/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không, hãm địa là người gian tà, xảo quyệt"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Dù đắc địa hay hãm địa, cũng thường mắc bệnh phổi, khó thở, nghẹt cổ họng; nếu không thì cũng bị bệnh ngoài da như ghẻ lở, mụn nhọt có mủ."
+      ],
+      "correction": "Sách in \"cũng thưởng hay mắc\", hiểu là thường hay mắc.",
+      "id": "menh/dia-khong-kiep/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "hay mắc bệnh đau phổi, khó thở, nghẹt cuống họng"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kiếp, Không đắc địa mà gặp Tử, Phủ đắc địa thì hóa ra xấu, thật khó tránh tai họa."
+      ],
+      "condition_text": "hội hợp với Tử, Phủ cũng đắc địa",
+      "correction": "Chưa rõ \"Tử, Phủ\" là gặp đủ hai sao hay một trong hai, và độ sáng của sao hội hợp máy không xét được: máy chỉ lọc điều kiện cần (gặp Tử Vi hay Thiên Phủ), giữ nguyên lời ở condition_text. Áp dụng cho menh/dia-khong-kiep/05 đến 08.",
+      "id": "menh/dia-khong-kiep/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không đắc địa hội hợp với Tử, Phủ cũng đắc địa"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_any": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kiếp, Không đắc địa gặp Tử, Phủ hãm địa thì càng nguy khốn, như người bị vây hãm nơi hiểm nghèo."
+      ],
+      "condition_text": "hội hợp với Tử, Phủ hãm địa",
+      "id": "menh/dia-khong-kiep/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "nếu Tử, Phủ hãm địa lại càng nguy khốn"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "meets_any": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kiếp, Không hãm địa gặp Tử, Phủ đắc địa thì cũng không đáng lo ngại lắm."
+      ],
+      "condition_text": "hội hợp với Tử, Phủ đắc địa",
+      "correction": "Sách in \"cùng không đáng lo ngại\", hiểu là cũng không.",
+      "id": "menh/dia-khong-kiep/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không hãm địa hội hợp với Tử, Phủ đắc địa"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_any": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kiếp, Không hãm địa gặp Tử, Phủ cũng hãm địa: ắt tuổi thọ bị giảm, tai họa dồn dập không kể xiết."
+      ],
+      "condition_text": "hội hợp với Tử, Phủ cũng hãm địa",
+      "id": "menh/dia-khong-kiep/08",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu Tử, Phủ cũng hãm địa, tất tuổi thọ bị chiết"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_any": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Nam ắt khắc vợ, nữ ắt khắc chồng."
+      ],
+      "condition_text": "hội hợp với nhiều Sát tinh",
+      "id": "menh/dia-khong-kiep/09",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không hội hợp với nhiều Sát tinh, tất trai thì khắc vợ"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Cũng được hưởng giàu sang trong một thời gian ngắn."
+      ],
+      "condition_text": "hội hợp với nhiều Sát tinh, và các sao ấy cùng đắc địa",
+      "id": "menh/dia-khong-kiep/10",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nếu những sao kể trên cùng đắc địa thì cũng được hưởng"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Thật rất đáng lo ngại: suốt đời lao tâm khổ tứ, khóc nhiều hơn cười."
+      ],
+      "condition_text": "hội hợp với nhiều Sát tinh, và các sao ấy cùng hãm địa",
+      "id": "menh/dia-khong-kiep/11",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "nhưng nếu cùng hãm địa, thật rất đáng lo ngại"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Duyên tình dang dở, thường phải lập gia đình hai lần, hay mắc bệnh hoa liễu, tuổi thọ cũng bị giảm."
+      ],
+      "id": "menh/dia-khong-kiep/12",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality",
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không hội hợp với Đào, Hồng, nên duyên tình dang dở"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Làm việc gì cũng nhanh chóng, nhưng sự nghiệp không bền."
+      ],
+      "correction": "Sách in \"lầu bền\", hiểu là lâu bền.",
+      "id": "menh/dia-khong-kiep/13",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không đắc địa thủ Mệnh, nên làm việc gì cũng mau chóng"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Là kẻ gian xảo, ti tiện."
+      ],
+      "id": "menh/dia-khong-kiep/14",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không hãm địa là hạng gian xảo, ty tiện"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Thật suốt đời nghèo khổ cô đơn, khó tránh tai họa."
+      ],
+      "condition_text": "hội hợp với nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"cùng khổ có đơn\", hiểu là cô đơn.",
+      "id": "menh/dia-khong-kiep/15",
+      "section": "NamMenh",
+      "source_ref": {
+        "keywords": [
+          "nếu hội hợp với nhiều sao mờ ám xấu xa, thật là suốt đời"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Cứng cỏi, nhiều mưu lược, can đảm không kém đàn ông; việc gì cũng chóng xong, nhưng không bền."
+      ],
+      "id": "menh/dia-khong-kiep/16",
+      "section": "NuMenh",
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không đắc địa chủ Mệnh là người cương cường, có mưu lược"
+        ],
+        "pages": [
+          115
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Khắc chồng hại con, suốt đời khốn khổ."
+      ],
+      "id": "menh/dia-khong-kiep/17",
+      "section": "NuMenh",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Không hãm địa, nên khắc chồng hại con, suốt đời khốn khổ"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Dù đắc địa hay hãm địa, gặp Đào, Hồng hội hợp thì ắt khó giữ trọn danh tiết, thường là hạng hồng nhan bạc mệnh."
+      ],
+      "id": "menh/dia-khong-kiep/18",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "hội hợp với Đào, Hồng, tất khó giữ"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Là người ích kỷ."
+      ],
+      "condition_text": "Kiếp đơn thủ",
+      "id": "menh/dia-khong-kiep/19",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kiếp đơn thủ, là người ích kỷ"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Địa Kiếp độc thủ thị kỷ phi nhân"
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi có Địa Kiếp, Địa Không đồng cung: công danh đến sớm, nhưng không bền."
+      ],
+      "correction": "Sách in \"an tại Ty, Hợi\", hiểu là Tỵ.",
+      "id": "menh/dia-khong-kiep/20",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "có Kiếp, Không tọa thủ đồng cung, nên công"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kiếp, Không, Tỵ, Hợi, đồng vị, tảo đạt công danh.",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "with_all": [
+            "DiaKiep",
+            "DiaKhong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Kiếp, Không hãm địa thủ Mệnh: không thể sống lâu, như chim đang bay bị gãy cánh giữa trời."
+      ],
+      "correction": "Sách ghi \"Kiếp, Không hãm địa thủ Mệnh (Mênh an tại Tứ Sinh)\", nhưng Tứ Sinh (Dần, Thân, Tỵ, Hợi, tr. 25) lại đúng là nơi Kiếp, Không đắc địa (tr. 40), nên hai điều kiện không bao giờ cùng đúng. Giữ \"hãm địa\", bỏ \"Tứ Sinh\": các câu phú cùng trang luận Kiếp, Không tại Tỵ, Hợi, Dần, Thân là công danh sớm đạt hay thăng trầm, không phải yểu. Chờ chủ dự án xác nhận. Sách in \"Mênh\", hiểu là Mệnh.",
+      "id": "menh/dia-khong-kiep/21",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nên không thể sống lâu được, ví như con chim đang bay"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Sinh sử Kiếp, Không do như bán thiên chiết sí",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Dần, Thân có Địa Không hay Địa Kiếp tọa thủ, gặp nhiều sao tốt hội hợp: đời nhiều bước thăng trầm, công danh tiền tài như mây nổi, lúc tụ lúc tan."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "menh/dia-khong-kiep/22",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Dần Thân, có Không hay Kiếp tọa thủ"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Dần, Thân, Kiếp, Không nhi ngộ Qúy tinh thăng trầm vô độ",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi bị Kiếp, Không giáp hai bên: nghèo hèn, suốt đời vất vả, thường sớm lìa gia đình, trôi dạt nơi góc biển chân trời."
+      ],
+      "correction": "Sách in \"Ty, Hợi\", hiểu là Tỵ, Hợi.",
+      "id": "menh/dia-khong-kiep/23",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh an tại Ty, Hợi, giáp Kiếp, Không, là người nghèo hèn"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kiếp, Không giáp Mệnh vi bại cục, chủ bần tiện",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "flanked_by": [
+            "DiaKiep",
+            "DiaKhong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Mệnh có Địa Kiếp, Thiên Cơ đồng cung, gặp Hỏa Tinh đồng cung hoặc xung chiếu: ắt hay gặp hỏa tai như cháy nhà, bỏng lửa."
+      ],
+      "id": "menh/dia-khong-kiep/24",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kiếp, Cơ tọa thủ đồng cung, gặp Hỏa hoặc cũng đồng"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kiếp, Cơ ngộ Hỏa, tất ngộ hỏa tai",
+      "when": [
+        {
+          "with_all": [
+            "DiaKiep",
+            "ThienCo",
+            "HoaTinh"
+          ]
+        },
+        {
+          "opposite_only": [
+            "HoaTinh"
+          ],
+          "with_all": [
+            "DiaKiep",
+            "ThienCo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Mệnh có Địa Kiếp, Tham Lang đồng cung, như ngồi thuyền trôi giữa sông lớn: suốt đời lao khổ, lang thang trôi dạt, hay gặp tai nạn sông nước."
+      ],
+      "id": "menh/dia-khong-kiep/25",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kiếp, Tham tọa thủ đồng cung, ví như ngồi thuyền"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Mệnh trung ngộ Kiếp, Tham do như lãng lý hành thuyền",
+      "when": [
+        {
+          "with_all": [
+            "DiaKiep",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep",
+          "DiaKhong"
+        ]
+      },
+      "body": [
+        "Mệnh tại Tỵ, Hợi có Địa Kiếp, Địa Không, Tướng, Thiên Mã đồng cung, gặp Hóa Khoa đồng cung hoặc xung chiếu: người tài giỏi, gặp được minh chủ trong thời loạn và dựng nên sự nghiệp lớn giữa cảnh binh lửa."
+      ],
+      "condition_text": "có Tướng (Thiên Tướng hay Tướng Quân) đồng cung, và Khoa ở ngay cung Mệnh hoặc xung chiếu",
+      "correction": "Sách in \"cứ Kiếp\", hiểu là có Kiếp. \"Tướng\" chưa rõ Thiên Tướng hay Tướng Quân (mục 7.7) nên để ở điều kiện lời. Hóa Khoa chưa có trường \"chỉ đồng cung hoặc xung chiếu\": máy lọc Khoa hội hợp (gồm cả tam hợp), phần \"đồng cung hoặc xung chiếu\" giữ ở điều kiện lời.",
+      "id": "menh/dia-khong-kiep/26",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "cứ Kiếp, Không, Tướng, Mã tọa thủ đồng cung"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kiếp, Không hà hiềm Tỵ, Hợi, Tướng, Mã đồng cư chi hội Khoa tinh loạn thế phùng quân nhi cách",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "transformations": [
+            "HoaKhoa"
+          ],
+          "with_all": [
+            "DiaKiep",
+            "DiaKhong",
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh",
+        "stars": [
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Mệnh có Địa Kiếp tọa thủ, gặp Thiên Phủ, Thiên Khốc, Điếu Khách hội hợp cùng với Cự Môn, Thái Dương: suốt đời cô đơn sầu khổ."
+      ],
+      "condition_text": "gặp Phủ hội hợp",
+      "correction": "Sách in \"gập Phủ\", hiểu là gặp. Câu phú ghi \"Cự, Dương\", lời giải ghi \"Cự, Nhật\": Dương là Thái Dương. Thiên Phủ luôn cách Cự Môn ba cung (Phủ, Âm, Tham, Cự), nên không bao giờ cùng hội hợp với một cung (V7); \"Phủ\" ở đây có thể không phải Thiên Phủ, nên để ở điều kiện lời, máy chỉ xét Khốc, Khách, Cự, Nhật.",
+      "id": "menh/dia-khong-kiep/27",
+      "section": "PhuGiai",
+      "source_ref": {
+        "keywords": [
+          "Cung Mệnh có Kiếp tọa thủ, gập Phủ, Khốc, Khách hội hợp"
+        ],
+        "pages": [
+          116
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Kiếp, Phủ, Khốc, Khách, mạc ngộ Cự, Dương chung thân đa lệ",
+      "when": [
+        {
+          "meets_all": [
+            "ThienKhoc",
+            "DieuKhach",
+            "CuMon",
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "Menh"
+      },
+      "body": [
+        "Mệnh gặp Kiếp, Không, Đào, Hồng, Đà, Linh: không thể sống lâu. Nhan Hồi, học trò Khổng Tử, chết non vì Mệnh có cách này."
+      ],
+      "correction": "Sách ghi sáu sao \"tọa thủ đồng cung\", nhưng điều đó không bao giờ xảy ra: Kiếp, Không chỉ đồng cung tại Tỵ, Hợi, Đào, Hồng chỉ đồng cung tại Tý, Ngọ, và Đà La không bao giờ ở Tý, Ngọ. Câu phú chỉ ghi \"thủ Mệnh\", nên mã hóa là sáu sao cùng hội hợp với Mệnh. Chờ chủ dự án xác nhận.",
+      "id": "menh/dia-khong-kiep/28",
+      "section": "PhuGiai",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Người nào mà cung Mệnh có cách này cũng không thể sống lâu được"
+        ],
+        "pages": [
+          117
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "verse": "Nhan Hồi yếu tử do hữu Kiếp, Không, Đào, Hồng Đà, Linh thủ Mệnh",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKiep",
+            "DiaKhong",
+            "DaoHoa",
+            "HongLoan",
+            "DaLa",
+            "LinhTinh"
+          ]
+        }
+      ]
+    }
+  ]
+}
