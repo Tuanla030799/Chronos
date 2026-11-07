@@ -2252,7 +2252,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
       "body": [
         "Công danh trắc trở, chức nhỏ, thăng trầm thất thường; đôi khi chỉ có hư danh, không thực quyền. Suốt đời không toại nguyện vì thiếu cơ hội thi thố và hay bị tiểu nhân ghen ghét, hãm hại."
       ],
@@ -2276,7 +2283,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
       "body": [
         "Không thể hiển đạt, thường gặp nhiều tai họa và bị tiểu nhân hãm hại."
       ],
@@ -2300,7 +2314,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
       "body": [
         "Công danh lên nhanh, có chức võ lớn, hiển hách trong thời loạn nhưng thăng trầm thất thường. Nhờ liều lĩnh mà làm được việc khó và giàu sang, nhưng không bền: phát nhanh thì tán nhanh."
       ],
@@ -2324,7 +2345,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Sát, Phá, Liêm, Tham mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Sát, Phá, Liêm, Tham mờ ám xấu xa",
       "body": [
         "Có chức nhưng nhỏ, thăng trầm thất thường, tuy vẫn gặp người dìu dắt, nâng đỡ."
       ],
@@ -2349,7 +2377,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Vũ, Tướng sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Vũ, Tướng sáng sủa tốt đẹp",
       "body": [
         "Công danh lên nhanh, chức võ lớn, uy quyền cao. Được kính trọng, nể sợ và có người giúp việc đắc lực."
       ],
@@ -2373,7 +2408,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh sáng sủa tốt đẹp; Vũ, Tướng mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
+      "condition_text": "Vũ, Tướng mờ ám xấu xa",
       "body": [
         "Có chức nhưng nhỏ, tuy vẫn được nhiều người dìu dắt, nâng đỡ."
       ],
@@ -2397,7 +2439,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương sáng sủa tốt đẹp",
       "body": [
         "Có chức lớn nhưng chưa toại nguyện. Đường công danh hay gặp trở ngại, thường bị cấp dưới lừa dối, người giúp việc đều kém."
       ],
@@ -2421,7 +2470,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương mờ ám xấu xa",
       "body": [
         "Không thể hiển đạt; nên rời đường công danh, an phận để tránh tai ương."
       ],
@@ -2445,7 +2501,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Sát, Phá, Liêm, Tham sáng sủa tốt đẹp",
       "body": [
         "Có chức nhưng không toại nguyện, thiếu người giúp việc đắc lực."
       ],
@@ -2469,7 +2532,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Sát, Phá, Liêm, Tham mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Sát, Phá, Liêm, Tham mờ ám xấu xa",
       "body": [
         "Nên an phận."
       ],
@@ -2493,7 +2563,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Vũ, Tướng sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Vũ, Tướng sáng sủa tốt đẹp",
       "body": [
         "Có chức và uy quyền, vượt được mọi trở ngại, thắng mọi mưu kế lừa lọc của cấp dưới."
       ],
@@ -2518,7 +2595,14 @@
           "@LucSat"
         ]
       },
-      "condition_text": "Sát tinh mờ ám xấu xa; Vũ, Tướng mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
+      "condition_text": "Vũ, Tướng mờ ám xấu xa",
       "body": [
         "Không thể hiển đạt, đường công danh đầy trở ngại, tai ương."
       ],
@@ -2786,7 +2870,13 @@
           "ThienHu"
         ]
       },
-      "condition_text": "Khốc, Hư sáng sủa tốt đẹp",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ],
       "body": [
         "Có uy quyền, ăn nói hoạt bát, hùng hồn, ra ngoài được nhiều người kính phục. Thời trẻ nhiều trở ngại, đứng tuổi mới toại nguyện. Nên theo pháp lý hoặc chính trị."
       ],
@@ -2811,7 +2901,13 @@
           "ThienHu"
         ]
       },
-      "condition_text": "Khốc, Hư mờ ám xấu xa",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ],
       "body": [
         "Hay gặp chuyện phiền lòng, đường công danh nhiều trở ngại."
       ],
