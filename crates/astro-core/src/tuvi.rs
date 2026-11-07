@@ -743,6 +743,16 @@ impl TuViStar {
         }
     }
 
+    /// Ngũ hành of a Chính Tinh, ignoring Âm/Dương, from the heading of each star (pp. 33–38);
+    /// `None` for every other star.
+    pub const fn element(self) -> Option<FiveElements> {
+        if (self as usize) < 14 {
+            Some(ELEMENT[self as usize])
+        } else {
+            None
+        }
+    }
+
     /// Brightness in the palace at `branch`: every palace for the Chính Tinh, the places listed by
     /// [`minor_brightness`] for 17 other stars, `None` otherwise.
     pub const fn brightness_at(self, branch: Branch) -> Option<StarBrightness> {
@@ -926,6 +936,16 @@ const BRIGHTNESS: [[StarBrightness; 12]; 14] = {
         [M, D, M, H, H, V, M, D, M, H, H, V],
         [M, V, H, H, D, H, M, V, H, H, D, H],
     ]
+};
+
+/// Ngũ hành of the Chính Tinh, in the order of [`TuViStar`], read from the heading of each star
+/// (pp. 33–38 of the book): Tử Vi Dương Thổ, Thiên Cơ Âm Mộc, Thái Dương Dương Hỏa, Vũ Khúc Âm
+/// Kim, Thiên Đồng Dương Thủy, Liêm Trinh Âm Hỏa, Thiên Phủ Âm Thổ, Thái Âm Âm Thủy, Tham Lang Âm
+/// Thủy, Cự Môn Âm Thủy, Thiên Tướng Dương Thủy, Thiên Lương Âm Mộc, Thất Sát Dương Kim, Phá Quân
+/// Âm Thủy.
+const ELEMENT: [FiveElements; 14] = {
+    use FiveElements::{Hoa, Kim, Moc, Tho, Thuy};
+    [Tho, Moc, Hoa, Kim, Thuy, Hoa, Tho, Thuy, Thuy, Thuy, Thuy, Moc, Kim, Thuy]
 };
 
 /// The Four Transformations (Tứ Hóa). Each one attaches to a star set by the year stem.
@@ -1187,6 +1207,35 @@ impl TuViPolarity {
     }
 }
 
+/// Day (giờ Mão đến Thân) or night (giờ Dậu đến Dần) birth, used by passages that say "sinh ban
+/// ngày" or "sinh ban đêm" without a sharper boundary.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum BirthTimeOfDay {
+    /// Mão, Thìn, Tỵ, Ngọ, Mùi, Thân
+    Day,
+    /// Dậu, Tuất, Hợi, Tý, Sửu, Dần
+    Night,
+}
+
+impl BirthTimeOfDay {
+    /// Day for an `hour` from Mão to Thân, night otherwise.
+    pub const fn of(hour: Branch) -> Self {
+        match hour {
+            Mao | Thin | Ti | Ngo | Mui | Than => BirthTimeOfDay::Day,
+            _ => BirthTimeOfDay::Night,
+        }
+    }
+
+    /// Vietnamese name, e.g. "Ban ngày".
+    pub const fn name_vi(self) -> &'static str {
+        match self {
+            BirthTimeOfDay::Day => "Ban ngày",
+            BirthTimeOfDay::Night => "Ban đêm",
+        }
+    }
+}
+
 /// Whether the birth year and the Mệnh palace share their polarity (pp. 31 and 52 of the book).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
@@ -1256,6 +1305,51 @@ impl MenhCucRelation {
             MenhCucRelation::MenhKhacCuc => "Bản Mệnh khắc Cục",
             MenhCucRelation::CucKhacMenh => "Cục khắc Bản Mệnh",
             MenhCucRelation::BinhHoa => "Bình hòa",
+        }
+    }
+}
+
+/// Sinh, khắc relation from a first Ngũ Hành to a second, generic version of [`MenhCucRelation`].
+/// Used to compare the Bản Mệnh, the Ngũ hành of a cung and the Ngũ hành of a Chính Tinh.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum ElementRelation {
+    /// First sinh second
+    Sinh,
+    /// Second sinh first
+    DuocSinh,
+    /// First khắc second
+    Khac,
+    /// Second khắc first
+    BiKhac,
+    /// Same element
+    BinhHoa,
+}
+
+impl ElementRelation {
+    /// Relation from a first Ngũ Hành to a second.
+    pub const fn of(first: FiveElements, second: FiveElements) -> Self {
+        if first as u8 == second as u8 {
+            ElementRelation::BinhHoa
+        } else if generated_by(first) as u8 == second as u8 {
+            ElementRelation::Sinh
+        } else if generated_by(second) as u8 == first as u8 {
+            ElementRelation::DuocSinh
+        } else if controlled_by(first) as u8 == second as u8 {
+            ElementRelation::Khac
+        } else {
+            ElementRelation::BiKhac
+        }
+    }
+
+    /// Vietnamese name, e.g. "Sinh".
+    pub const fn name_vi(self) -> &'static str {
+        match self {
+            ElementRelation::Sinh => "Sinh",
+            ElementRelation::DuocSinh => "Được sinh",
+            ElementRelation::Khac => "Khắc",
+            ElementRelation::BiKhac => "Bị khắc",
+            ElementRelation::BinhHoa => "Bình hòa",
         }
     }
 }
@@ -3371,6 +3465,62 @@ mod tests {
         assert_eq!(first.harmony, YinYangHarmony::NghichLy);
         let second = from_lunar(lunar(1891, 6, 6), Mao, Gender::Male);
         assert_eq!(second.menh_cuc, MenhCucRelation::CucSinhMenh);
+    }
+
+    #[test]
+    fn element_relation_is_the_generic_form_of_menh_cuc_relation() {
+        use FiveElements::{Hoa, Kim, Moc, Tho, Thuy};
+        assert_eq!(ElementRelation::of(Kim, Thuy), ElementRelation::Sinh);
+        assert_eq!(ElementRelation::of(Kim, Tho), ElementRelation::DuocSinh);
+        assert_eq!(ElementRelation::of(Kim, Moc), ElementRelation::Khac);
+        assert_eq!(ElementRelation::of(Kim, Hoa), ElementRelation::BiKhac);
+        assert_eq!(ElementRelation::of(Kim, Kim), ElementRelation::BinhHoa);
+        for (menh, cuc) in [
+            (Kim, Thuy),
+            (Kim, Tho),
+            (Kim, Moc),
+            (Kim, Hoa),
+            (Kim, Kim),
+            (Moc, Hoa),
+        ] {
+            let generic = ElementRelation::of(menh, cuc);
+            let specific = MenhCucRelation::of(menh, cuc);
+            let same_shape = matches!(
+                (generic, specific),
+                (ElementRelation::Sinh, MenhCucRelation::MenhSinhCuc)
+                    | (ElementRelation::DuocSinh, MenhCucRelation::CucSinhMenh)
+                    | (ElementRelation::Khac, MenhCucRelation::MenhKhacCuc)
+                    | (ElementRelation::BiKhac, MenhCucRelation::CucKhacMenh)
+                    | (ElementRelation::BinhHoa, MenhCucRelation::BinhHoa)
+            );
+            assert!(same_shape, "{menh:?} vs {cuc:?}: {generic:?}, {specific:?}");
+        }
+    }
+
+    #[test]
+    fn birth_time_of_day_splits_the_twelve_hours_in_two_halves_of_six() {
+        for hour in [Mao, Thin, Ti, Ngo, Mui, Than] {
+            assert_eq!(BirthTimeOfDay::of(hour), BirthTimeOfDay::Day);
+        }
+        for hour in [Dau, Tuat, Hoi, Ty, Suu, Dan] {
+            assert_eq!(BirthTimeOfDay::of(hour), BirthTimeOfDay::Night);
+        }
+    }
+
+    #[test]
+    fn only_the_fourteen_chinh_tinh_have_an_element() {
+        // P. 33: Tử Vi is Dương Thổ, p. 39: Hỏa Tinh carries no Ngũ hành of its own.
+        assert_eq!(TuViStar::TuVi.element(), Some(FiveElements::Tho));
+        assert_eq!(TuViStar::VuKhuc.element(), Some(FiveElements::Kim));
+        assert_eq!(TuViStar::PhaQuan.element(), Some(FiveElements::Thuy));
+        assert_eq!(TuViStar::HoaTinh.element(), None);
+        assert_eq!(TuViStar::LocTon.element(), None);
+        for star in TuViStar::ALL {
+            assert_eq!(
+                star.element().is_some(),
+                star.category() == StarCategory::ChinhTinh
+            );
+        }
     }
 
     #[test]

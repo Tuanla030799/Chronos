@@ -453,6 +453,14 @@ Trong một phương án, các trường là quan hệ VÀ. Trong một danh sá
 | `gender` | `Gender` | Giới tính | "Nữ mệnh" |
 | `year_stems`, `year_branches` | `Stem[]`, `Branch[]` | Can, Chi năm sinh | "Tuổi Giáp, Đinh, Kỷ" |
 | `menh_any`, `menh_all` | sao | Một, hoặc mọi sao ở cung Mệnh | Ma trận Mệnh × Nô Bộc |
+| `birth_time_of_day` | `BirthTimeOfDay`: `Day`, `Night` | Giờ sinh. `Day`: Mão, Thìn, Tỵ, Ngọ, Mùi, Thân. `Night`: Dậu, Tuất, Hợi, Tý, Sửu, Dần | "sinh ban ngày", "sinh ban đêm" |
+| `lunar_day_range` | `{ from, to }`, 1–30 | Ngày sinh âm lịch nằm trong khoảng, hai đầu đều tính | "từ mồng Một đến Rằm", ngày cụ thể |
+| `opposite_only` | sao | Một trong các sao này đóng tại đúng cung xung chiếu, không phải tam hợp hay đồng cung | "chỉ xung chiếu", để phân biệt với tam hợp chiếu |
+| `in_than` | sao | Một trong các sao này đóng tại cung an Thân, bất kể đang xét cung nào | "sao X thủ cung Thân" khi đang luận cung Mệnh |
+| `any_loc` | bool | Lộc Tồn hoặc Hóa Lộc có mặt, tọa thủ hoặc hội hợp tùy ngữ cảnh | "gặp Lộc" khi sách không nói rõ Lộc Tồn hay Hóa Lộc |
+| `element_relation`, `element_relation_all` | `{ pair, relation }[]` | Một, hoặc mọi quan hệ sinh khắc giữa hai Ngũ hành của `pair` đúng với `relation`. `pair`: `BanMenhCung` (Bản Mệnh, Ngũ hành Cung), `BanMenhChinhTinh` (Bản Mệnh, Ngũ hành Chính Tinh), `CungChinhTinh` (Ngũ hành Cung, Ngũ hành Chính Tinh). `relation`: `Sinh`, `DuocSinh`, `Khac`, `BiKhac`, `BinhHoa`, đọc từ tên thứ nhất của `pair` sang tên thứ hai | "Mệnh Thủy gặp sao Kim sinh phù", "cung Mệnh sinh Chính diệu, Chính diệu lại sinh Bản Mệnh" |
+
+Ngũ hành Chính Tinh chỉ có ở 14 Chính Tinh (`TuViStar::element`), lấy từ tiêu đề mỗi sao ở `tuvi.star` (tr. 33–38), không suy đoán cho phụ tinh.
 
 ### 7.4. Neo, độ phủ và quy tắc đọc
 
@@ -634,6 +642,12 @@ Neo `Menh/<sao>` được thêm cho cung có `is_than`; mục 7.4 nêu các quy 
 | `bright:<TuViStar hoặc Hóa>:<StarBrightness>` | Độ sáng của sao, Hóa trong cung |
 | `gender:<Gender>`, `polarity:<TuViPolarity>`, `harmony:<YinYangHarmony>`, `ban_menh:<FiveElements>`, `year_stem:<Stem>`, `year_branch:<Branch>` | Người xem |
 | `menh:<TuViStar>` | Sao tại cung Mệnh |
+| `oppose:<TuViStar>` | Sao đóng tại đúng cung xung chiếu, tách riêng khỏi `meet` để xét "chỉ xung chiếu" |
+| `than_sit:<TuViStar>` | Sao đóng tại cung an Thân, luôn có mặt dù đang xét cung nào |
+| `birth_time:<BirthTimeOfDay>` | Giờ sinh ban ngày hay ban đêm |
+| `lunar_day:<1..30>` | Ngày sinh âm lịch |
+| `any_loc` | Lộc Tồn hoặc Hóa Lộc có mặt, tọa thủ hoặc hội hợp |
+| `element:<ElementPair>:<ElementRelation>` | Quan hệ sinh khắc giữa hai Ngũ hành của `ElementPair`, mục 7.3 |
 
 ## 10. Kiểm tra tự động
 
@@ -838,6 +852,14 @@ Dò bằng biểu thức chính quy, khoảng 200 đoạn có từ ngữ nặng:
 | :-- | :-- | :-- |
 | D13 | Bảng D8 của Task 5A.3 khác *Tân Biên* tr. 39 ở hai nhóm. Hỏa, Linh: bảng ghi Đắc tại Dần, Ngọ, Tuất, Mão, Tỵ; sách ghi Dần, Mão, Thìn, Tỵ, Ngọ. Xương, Khúc: bảng ghi Tỵ, Dậu, Sửu, Thân, Tý, Thìn; sách ghi Thìn, Tuất, Sửu, Mùi, Tỵ, Hợi | Giữ theo tr. 39 của sách, như đã cài. Chốt cùng 17 phụ tinh và Hóa Kỵ, và quy tắc mượn Chính diệu xung chiếu ở 8 cung |
 | — | `rights` của *Tân Biên* | `paraphrased`: dữ liệu chỉ diễn đạt lại theo D3, không chép nguyên văn. V11 chặn mọi mục `quote` của nguồn này |
+
+### 12.4. Chốt Task 5A.5
+
+| Mã | Vấn đề | Quyết định |
+| :-- | :-- | :-- |
+| D14 | "Phục" đi cùng Song Hao ở TV-03 | Trong vòng Bác Sỹ, Tiểu Hao (3) và Đại Hao (9) xung nhau, Phục Binh (10) nằm sát Đại Hao nên không bao giờ hội hợp (tam hợp, xung chiếu) cùng Song Hao. Lỗi nhầm vị trí sao của sách, như D10: bỏ điều kiện Phục Binh khỏi tổ hợp Song Hao, ghi `correction` |
+| D15 | "Lộc" khi sách không ghi rõ Lộc Tồn hay Hóa Lộc (mục 7.7) | Quy ước chuẩn: khớp Lộc Tồn HOẶC Hóa Lộc, tọa thủ hoặc hội hợp tùy ngữ cảnh. Fact mới `any_loc`, mục 7.3, 9. "Song Lộc" vẫn là có cả hai cùng hội hợp, không dùng `any_loc` |
+| D16 | Giảm `condition_text` ở cung Mệnh sau TV-02 đến TV-06 (mục 11.6) | Thêm 6 trường `when` tính được từ `TuViChart`: `birth_time_of_day`, `lunar_day_range`, `opposite_only`, `in_than`, `any_loc`, `element_relation`, cùng fact tương ứng ở mục 9. Ngũ hành Chính Tinh lấy từ `profile.element` đã duyệt của `tuvi.star` (TV-01), không suy đoán thêm |
 
 ## 13. Phạm vi
 

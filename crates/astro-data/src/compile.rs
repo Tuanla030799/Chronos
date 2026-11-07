@@ -218,6 +218,42 @@ pub fn gate(
     );
     gate.all
         .extend(facts("menh", &expand(&when.menh_all, groups)?, debug));
+    if let Some(time) = when.birth_time_of_day {
+        gate.all.push(format!("birth_time:{time:?}"));
+    }
+    if let Some(range) = when.lunar_day_range {
+        group(
+            &mut gate,
+            (range.from..=range.to)
+                .map(|day| format!("lunar_day:{day}"))
+                .collect(),
+        );
+    }
+    group(
+        &mut gate,
+        facts("oppose", &expand(&when.opposite_only, groups)?, debug),
+    );
+    group(
+        &mut gate,
+        facts("than_sit", &expand(&when.in_than, groups)?, debug),
+    );
+    match when.any_loc {
+        Some(true) => gate.all.push("any_loc".to_string()),
+        Some(false) => gate.none.push("any_loc".to_string()),
+        None => {}
+    }
+    group(
+        &mut gate,
+        when.element_relation
+            .iter()
+            .map(|c| format!("element:{:?}:{:?}", c.pair, c.relation))
+            .collect(),
+    );
+    gate.all.extend(
+        when.element_relation_all
+            .iter()
+            .map(|c| format!("element:{:?}:{:?}", c.pair, c.relation)),
+    );
     Ok(gate)
 }
 
@@ -365,6 +401,43 @@ mod tests {
             ]
         );
         assert_eq!(gate.none, ["meet:ThatSat"]);
+    }
+
+    #[test]
+    fn a_gate_gathers_the_new_person_and_position_conditions() {
+        use crate::model::{ElementCondition, LunarDayRange};
+        use astro_core::content::ElementPair;
+        use astro_core::tuvi::{BirthTimeOfDay, ElementRelation, TuViStar::LocTon};
+        let when = When {
+            birth_time_of_day: Some(BirthTimeOfDay::Day),
+            lunar_day_range: Some(LunarDayRange { from: 1, to: 3 }),
+            opposite_only: vec![StarRef::Star(LocTon)],
+            in_than: vec![StarRef::Star(ThatSat)],
+            any_loc: Some(true),
+            element_relation: vec![ElementCondition {
+                pair: ElementPair::BanMenhCung,
+                relation: ElementRelation::Sinh,
+            }],
+            element_relation_all: vec![ElementCondition {
+                pair: ElementPair::CungChinhTinh,
+                relation: ElementRelation::Khac,
+            }],
+            ..When::default()
+        };
+        let gate = gate(&when, &[], &no_groups()).unwrap();
+        assert_eq!(
+            gate.all,
+            ["birth_time:Day", "any_loc", "element:CungChinhTinh:Khac"]
+        );
+        assert_eq!(
+            gate.any,
+            [
+                vec!["lunar_day:1", "lunar_day:2", "lunar_day:3"],
+                vec!["oppose:LocTon"],
+                vec!["than_sit:ThatSat"],
+                vec!["element:BanMenhCung:Sinh"],
+            ]
+        );
     }
 
     #[test]

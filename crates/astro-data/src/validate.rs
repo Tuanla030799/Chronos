@@ -4,7 +4,7 @@
 use crate::collections::{COLLECTIONS, Collection, KeyInfo, PASSAGE_COLLECTION, find};
 use crate::compile::{Gate, anchors, bright_subjects, gate};
 use crate::dataset::{Dataset, LoadedFile};
-use crate::model::{ActivityNote, Entry, Gap, Passage, SourceRef, SourceType};
+use crate::model::{ActivityNote, Entry, Gap, Passage, SourceRef, SourceType, When};
 use crate::reach::{Resolved, expand, impossible, resolve};
 use crate::source::words;
 use astro_core::Branch;
@@ -340,6 +340,22 @@ fn check_brightness(
     when.brightness.clear();
 }
 
+/// Reports a `lunar_day_range` outside 1–30, or inverted.
+fn check_lunar_day_range(place: &str, when: &When, out: &mut Validated) {
+    if let Some(range) = when.lunar_day_range {
+        if range.from < 1 || range.to > 30 || range.from > range.to {
+            out.report(
+                "V1",
+                place,
+                format!(
+                    "lunar_day_range {}..{} phải trong 1..=30 và from <= to",
+                    range.from, range.to
+                ),
+            );
+        }
+    }
+}
+
 fn check_conditions(
     dataset: &Dataset,
     place: &str,
@@ -357,6 +373,7 @@ fn check_conditions(
     let mut resolved: Vec<Resolved> = Vec::new();
     let mut gates = Vec::new();
     for when in &passage.when {
+        check_lunar_day_range(place, when, out);
         match (
             resolve(when, &dataset.groups),
             gate(when, &subjects, &dataset.groups),
@@ -705,6 +722,27 @@ mod tests {
             r#"[{ "meets_any": ["@KinhDa"] }]"#,
         );
         assert_eq!(passages(&group), []);
+    }
+
+    #[test]
+    fn v1_rejects_a_lunar_day_range_outside_1_to_30_or_inverted() {
+        let good = passage(r#"{ "role": "QuanLoc" }"#, r#"[{ "lunar_day_range": { "from": 1, "to": 15 } }]"#);
+        assert_eq!(passages(&good), []);
+        let zero = passage(
+            r#"{ "role": "QuanLoc" }"#,
+            r#"[{ "lunar_day_range": { "from": 0, "to": 15 } }]"#,
+        );
+        assert_eq!(codes(&passages(&zero)), ["V1"]);
+        let over = passage(
+            r#"{ "role": "QuanLoc" }"#,
+            r#"[{ "lunar_day_range": { "from": 1, "to": 31 } }]"#,
+        );
+        assert_eq!(codes(&passages(&over)), ["V1"]);
+        let inverted = passage(
+            r#"{ "role": "QuanLoc" }"#,
+            r#"[{ "lunar_day_range": { "from": 20, "to": 10 } }]"#,
+        );
+        assert_eq!(codes(&passages(&inverted)), ["V1"]);
     }
 
     #[test]

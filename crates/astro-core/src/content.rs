@@ -8,9 +8,27 @@ use crate::almanac::{AgeRestrictions, AlmanacDay};
 use crate::bazi_analysis::BaziAnalysis;
 use crate::canchi::{Branch, CanChi};
 use crate::fengshui::{EightMansionsStar, KuaCompatibility, KuaInfo, NineStar};
-use crate::tuvi::{TuViChart, TuViPalace, TuViPalaceRole, TuViPlacedStar};
+use crate::tuvi::{
+    BirthTimeOfDay, ElementRelation, FourTransformations, TuViChart, TuViPalace, TuViPalaceRole,
+    TuViPlacedStar, TuViStar,
+};
 use std::collections::BTreeSet;
 use std::fmt::Debug;
+
+/// Which pair of Ngũ hành an `element:` fact compares: the Bản Mệnh against the Ngũ hành of the
+/// cung, the Bản Mệnh against that of a Chính Tinh, or the cung against that of a Chính Tinh. The
+/// relation always reads from the first name to the second, e.g. `BanMenhCung` reads Bản Mệnh to
+/// cung.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum ElementPair {
+    /// Bản Mệnh against the Ngũ hành of the cung (Địa Chi).
+    BanMenhCung,
+    /// Bản Mệnh against the Ngũ hành of a Chính Tinh in the cung.
+    BanMenhChinhTinh,
+    /// Ngũ hành of the cung against that of a Chính Tinh in it.
+    CungChinhTinh,
+}
 
 /// Where a star of the Eight Mansions is read.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
@@ -268,6 +286,9 @@ fn palace_facts(chart: &TuViChart, palace: &TuViPalace) -> BTreeSet<String> {
             }
         }
     }
+    for placed in stars(chart.palace(palace.branch.clash())) {
+        facts.insert(format!("oppose:{:?}", placed.star));
+    }
     for placed in stars(chart.palace(palace.branch.six_combination())) {
         facts.insert(format!("pair:{:?}", placed.star));
     }
@@ -283,9 +304,45 @@ fn palace_facts(chart: &TuViChart, palace: &TuViPalace) -> BTreeSet<String> {
     facts.insert(format!("ban_menh:{:?}", chart.ban_menh.element()));
     facts.insert(format!("year_stem:{:?}", chart.year_can_chi.stem));
     facts.insert(format!("year_branch:{:?}", chart.year_can_chi.branch));
+    facts.insert(format!(
+        "birth_time:{:?}",
+        BirthTimeOfDay::of(chart.hour_branch)
+    ));
+    facts.insert(format!("lunar_day:{}", chart.lunar.day));
     let menh = chart.palace_of_role(TuViPalaceRole::Menh);
     for placed in stars(menh) {
         facts.insert(format!("menh:{:?}", placed.star));
+    }
+    for placed in stars(chart.palace(chart.than_branch)) {
+        facts.insert(format!("than_sit:{:?}", placed.star));
+    }
+    let ban_menh = chart.ban_menh.element();
+    let cung = palace.branch.element();
+    facts.insert(format!(
+        "element:{:?}:{:?}",
+        ElementPair::BanMenhCung,
+        ElementRelation::of(ban_menh, cung)
+    ));
+    for element in palace.main_stars.iter().filter_map(|p| p.star.element()) {
+        facts.insert(format!(
+            "element:{:?}:{:?}",
+            ElementPair::BanMenhChinhTinh,
+            ElementRelation::of(ban_menh, element)
+        ));
+        facts.insert(format!(
+            "element:{:?}:{:?}",
+            ElementPair::CungChinhTinh,
+            ElementRelation::of(cung, element)
+        ));
+    }
+    let has_loc = |star: TuViStar, hoa: FourTransformations| {
+        facts.contains(&format!("with:{star:?}"))
+            || facts.contains(&format!("meet:{star:?}"))
+            || facts.contains(&format!("hoa_with:{hoa:?}"))
+            || facts.contains(&format!("hoa:{hoa:?}"))
+    };
+    if has_loc(TuViStar::LocTon, FourTransformations::HoaLoc) {
+        facts.insert("any_loc".to_string());
     }
     facts
 }
@@ -747,6 +804,93 @@ mod tests {
         assert!(facts.contains(&format!("year_branch:{:?}", chart.year_can_chi.branch)));
         for star in stars(chart.palace_of_role(TuViPalaceRole::Menh)) {
             assert!(facts.contains(&format!("menh:{:?}", star.star)));
+        }
+    }
+
+    #[test]
+    fn oppose_lists_only_the_stars_at_the_clash_branch() {
+        let (chart, branch) = find_palace(TuViPalaceRole::QuanLoc, |chart, palace| {
+            stars(chart.palace(palace.branch.clash())).next().is_some()
+        });
+        let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
+        let opposite = chart.palace(branch.clash());
+        for placed in stars(opposite) {
+            assert!(facts.contains(&format!("oppose:{:?}", placed.star)));
+            assert!(facts.contains(&format!("meet:{:?}", placed.star)));
+        }
+        for at in branch.trine() {
+            for placed in stars(chart.palace(at)) {
+                assert!(!facts.contains(&format!("oppose:{:?}", placed.star)));
+            }
+        }
+    }
+
+    #[test]
+    fn than_sit_lists_the_stars_of_the_than_palace_from_every_palace() {
+        let (chart, branch) = find_palace(TuViPalaceRole::TaiBach, |chart, _| {
+            stars(chart.palace(chart.than_branch)).next().is_some()
+        });
+        let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
+        for placed in stars(chart.palace(chart.than_branch)) {
+            assert!(facts.contains(&format!("than_sit:{:?}", placed.star)));
+        }
+    }
+
+    #[test]
+    fn birth_time_and_lunar_day_are_facts_of_every_palace() {
+        let chart = chart(2024, 3, 15, Branch::Dau, Gender::Male);
+        let branch = chart.palace_of_role(TuViPalaceRole::TaiBach).branch;
+        let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
+        assert!(facts.contains(&"birth_time:Night".to_string()));
+        assert!(facts.contains(&format!("lunar_day:{}", chart.lunar.day)));
+    }
+
+    #[test]
+    fn element_relation_facts_compare_ban_menh_cung_and_chinh_tinh() {
+        use crate::tuvi::ElementRelation;
+        let (chart, branch) =
+            find_palace(TuViPalaceRole::Menh, |_, palace| !palace.main_stars.is_empty());
+        let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
+        let palace = chart.palace(branch);
+        let ban_menh = chart.ban_menh.element();
+        let cung = palace.branch.element();
+        assert!(facts.contains(&format!(
+            "element:{:?}:{:?}",
+            ElementPair::BanMenhCung,
+            ElementRelation::of(ban_menh, cung)
+        )));
+        for star in &palace.main_stars {
+            if let Some(element) = star.star.element() {
+                assert!(facts.contains(&format!(
+                    "element:{:?}:{:?}",
+                    ElementPair::BanMenhChinhTinh,
+                    ElementRelation::of(ban_menh, element)
+                )));
+                assert!(facts.contains(&format!(
+                    "element:{:?}:{:?}",
+                    ElementPair::CungChinhTinh,
+                    ElementRelation::of(cung, element)
+                )));
+            }
+        }
+    }
+
+    #[test]
+    fn any_loc_is_set_when_loc_ton_or_hoa_loc_meets_the_palace() {
+        let (chart, branch) = find_palace(TuViPalaceRole::QuanLoc, |_, palace| {
+            stars(palace).any(|s| s.star == TuViStar::LocTon)
+        });
+        let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
+        assert!(facts.contains(&"any_loc".to_string()));
+        for facts in [TuViPalaceRole::Menh, TuViPalaceRole::QuanLoc, TuViPalaceRole::TaiBach]
+            .map(|role| chart.palace_of_role(role).branch)
+            .map(|branch| tuvi_palace_query(&chart, branch).lookups[0].facts.clone())
+        {
+            let expect_any_loc = facts.contains(&"with:LocTon".to_string())
+                || facts.contains(&"meet:LocTon".to_string())
+                || facts.contains(&"hoa_with:HoaLoc".to_string())
+                || facts.contains(&"hoa:HoaLoc".to_string());
+            assert_eq!(facts.contains(&"any_loc".to_string()), expect_any_loc);
         }
     }
 }

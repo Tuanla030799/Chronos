@@ -1,8 +1,10 @@
 //! The JSON schema of `data/interpretations/`, section 3 and section 7 of the specification.
 
 use astro_core::almanac::Luck;
+use astro_core::content::ElementPair;
 use astro_core::tuvi::{
-    FourTransformations, StarBrightness, TuViPalaceRole, TuViPolarity, TuViStar, YinYangHarmony,
+    BirthTimeOfDay, ElementRelation, FourTransformations, StarBrightness, TuViPalaceRole,
+    TuViPolarity, TuViStar, YinYangHarmony,
 };
 use astro_core::{Branch, FiveElements, Gender, Stem};
 use serde::{Deserialize, Serialize};
@@ -226,6 +228,26 @@ pub struct Anchor {
     pub no_main_star: bool,
 }
 
+/// An inclusive range of lunar days, 1 to 30.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct LunarDayRange {
+    /// First day, inclusive.
+    pub from: u8,
+    /// Last day, inclusive.
+    pub to: u8,
+}
+
+/// One comparison of two Ngũ hành, for `element_relation`.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct ElementCondition {
+    /// Which pair of Ngũ hành to compare.
+    pub pair: ElementPair,
+    /// Required relation, read from the first name of `pair` to the second.
+    pub relation: ElementRelation,
+}
+
 /// Tuần or Triệt on a palace.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
 pub enum TuanTriet {
@@ -310,6 +332,24 @@ pub struct When {
     /// All these stars sit in the Mệnh palace.
     #[serde(default)]
     pub menh_all: Vec<StarRef>,
+    /// Birth in the six double-hours of the day, or the six of the night.
+    pub birth_time_of_day: Option<BirthTimeOfDay>,
+    /// Lunar day of birth within this inclusive range.
+    pub lunar_day_range: Option<LunarDayRange>,
+    /// One of these stars sits only at the cung xung chiếu, not in this cung nor in its tam hợp.
+    #[serde(default)]
+    pub opposite_only: Vec<StarRef>,
+    /// One of these stars sits at the cung an Thân, wherever that falls.
+    #[serde(default)]
+    pub in_than: Vec<StarRef>,
+    /// Whether Lộc Tồn or Hóa Lộc sits in, or hội hợp, the palace.
+    pub any_loc: Option<bool>,
+    /// One of these Ngũ hành comparisons must hold.
+    #[serde(default)]
+    pub element_relation: Vec<ElementCondition>,
+    /// All these Ngũ hành comparisons must hold.
+    #[serde(default)]
+    pub element_relation_all: Vec<ElementCondition>,
 }
 
 /// A passage of `tuvi.passage` (section 7.2).
