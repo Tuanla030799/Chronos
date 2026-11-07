@@ -19,9 +19,10 @@ Nạp một batch dữ liệu luận giải theo `docs/INTERPRETATION_DB_SPEC.md
 - "Đơn thủ tại X, Y đồng cung" là **hai phương án** trong mảng `when`, không gộp.
 - "Cũng như trên": viết lại đầy đủ để đoạn đứng độc lập.
 - "Sáng sủa tốt đẹp" của một sao có bảng độ sáng: `brightness: [Mieu, Vuong, Dac]` (Chính Tinh) hoặc `[Dac]` (phụ tinh); "mờ ám xấu xa": `[Ham]`. Độ sáng phụ tinh ở `docs/TUVI_SPEC.md` mục 6.1.
-- Fact có sẵn: `branches`, `brightness`, `solo`, `with_all`, `not_with`, `meets_any`, `meets_all`, `not_meets`, `paired_with`, `flanked_by`, `transformations`, `transformations_all`, `with_transformations`, `tuan_triet` (`Tuan`, `Triet`, `Either`, `Neither`), `than_here`, `gender`, `polarity` (`DuongNam`, `AmNam`, `DuongNu`, `AmNu`), `harmony` (`ThuanLy`, `NghichLy`), `ban_menh` (ngũ hành Bản Mệnh: `Kim`, `Moc`, `Thuy`, `Hoa`, `Tho`), `year_stems`, `year_branches`, `menh_any`, `menh_all`.
+- Fact có sẵn: `branches`, `brightness`, `solo`, `with_all`, `not_with`, `meets_any`, `meets_all`, `not_meets`, `paired_with`, `flanked_by`, `transformations`, `transformations_all`, `with_transformations`, `tuan_triet` (`Tuan`, `Triet`, `Either`, `Neither`), `than_here`, `is_menh`, `gender`, `polarity` (`DuongNam`, `AmNam`, `DuongNu`, `AmNu`), `harmony` (`ThuanLy`, `NghichLy`), `ban_menh` (ngũ hành Bản Mệnh: `Kim`, `Moc`, `Thuy`, `Hoa`, `Tho`), `year_stems`, `year_branches`, `menh_any`, `menh_all`.
 - Tên `Branch`: `Ty` là Tý, `Ti` là Tỵ, `Than` là Thân, `Thin` là Thìn. Nhóm sao viết `@Ten` theo `data/interpretations/vocab/star_groups.json`.
-- `section`: `DaiCuong`, `NuMenh`, `PhuGiai`. Khối Phú giải: câu phú vào `v` nguyên văn (là câu thơ ngắn, được phép), lời giải vào `b`.
+- `section`: `DaiCuong`, `NuMenh`, `NamMenh`, `PhuGiai`. Khối Phú giải: câu phú vào `v` **nguyên văn, không lược, không chuẩn hóa chính tả** (V5 kiểm nó có trên trang); lời giải diễn đạt lại vào `b`.
+- Đoạn nói về chính cung Mệnh (Chi của Mệnh, Mệnh vô Chính diệu, thuận lý…) cần `is_menh: true`: neo Mệnh còn được áp cho cung Thân. Đoạn "cung Mệnh - Thân" của mục 4.2 thì không cần.
 
 ## Các bước
 

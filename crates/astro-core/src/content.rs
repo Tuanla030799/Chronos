@@ -244,6 +244,7 @@ fn palace_facts(chart: &TuViChart, palace: &TuViPalace) -> BTreeSet<String> {
     facts.insert(format!("branch:{:?}", palace.branch));
     insert_placed(&mut facts, palace);
     for (present, fact) in [
+        (palace.role == TuViPalaceRole::Menh, "is_menh"),
         (palace.main_stars.is_empty(), "no_main"),
         (palace.is_than, "than"),
         (palace.has_tuan, "tuan"),
@@ -708,6 +709,22 @@ mod tests {
         );
         assert!(query.lookups[0].anchors.contains(&format!("Menh/{star:?}")));
         assert!(query.lookups[0].facts.contains(&"than".to_string()));
+        assert!(!query.lookups[0].facts.contains(&"is_menh".to_string()));
+    }
+
+    #[test]
+    fn only_the_menh_palace_itself_is_menh() {
+        let chart = chart(2024, 3, 12, Branch::Ngo, Gender::Male);
+        for palace in &chart.palaces {
+            let facts = &tuvi_palace_query(&chart, palace.branch).lookups[0].facts;
+            let is_menh = facts.contains(&"is_menh".to_string());
+            assert_eq!(
+                is_menh,
+                palace.role == TuViPalaceRole::Menh,
+                "{:?}",
+                palace.role
+            );
+        }
     }
 
     #[test]

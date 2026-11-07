@@ -200,7 +200,10 @@ mod tests {
         assert_eq!(palace["key"], "QuanLoc");
         assert_eq!(palace["source_ref"]["source"], "book");
         assert_eq!(palace["source_ref"]["source_type"], "quote");
-        assert_eq!(palace["status"], "approved", "a line may override the default");
+        assert_eq!(
+            palace["status"], "approved",
+            "a line may override the default"
+        );
     }
 
     #[test]

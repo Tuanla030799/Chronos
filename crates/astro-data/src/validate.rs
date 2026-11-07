@@ -181,6 +181,28 @@ fn check_source(
     }
 }
 
+/// A verse of Phú giải is a traditional saying quoted whole, not the author's prose, so V12 does
+/// not apply to it. It must stand verbatim on the pages instead, short and uncut.
+fn check_verse(
+    dataset: &Dataset,
+    place: &str,
+    reference: &SourceRef,
+    verse: &str,
+    out: &mut Validated,
+) {
+    if verse.contains('…') || verse.contains("...") {
+        out.report("V5", place, "câu phú phải nguyên văn, không lược");
+    }
+    if words(verse).len() > QUOTE_WORDS {
+        out.report("V12", place, format!("câu phú quá {QUOTE_WORDS} từ"));
+    }
+    if let Some(packet) = dataset.packets.get(&reference.source) {
+        if !packet.contains(&reference.pages, verse) {
+            out.report("V5", place, format!("không thấy câu phú: {verse}"));
+        }
+    }
+}
+
 fn check_text(place: &str, parts: &[&str], out: &mut Validated) {
     if parts.is_empty() || parts.iter().any(|text| text.trim().is_empty()) {
         out.report("V8", place, "văn bản rỗng");
@@ -398,13 +420,13 @@ fn check_passage(
     let Some(gates) = check_conditions(dataset, &place, &passage, &anchor_stars, out) else {
         return;
     };
-    let mut texts: Vec<&str> = passage.body.iter().map(String::as_str).collect();
+    let texts: Vec<&str> = passage.body.iter().map(String::as_str).collect();
     check_text(&place, &texts, out);
     if let Some(condition) = &passage.condition_text {
         check_text(&place, &[condition], out);
     }
     if let Some(verse) = &passage.verse {
-        texts.push(verse);
+        check_verse(dataset, &place, &passage.source_ref, verse, out);
     }
     check_source(
         dataset,
@@ -766,6 +788,25 @@ mod tests {
         assert_eq!(codes(&entries(copied)), ["V12"]);
         let quoted = copied.replace("\"paraphrase\"", "\"quote\"");
         assert_eq!(entries(&quoted), []);
+    }
+
+    #[test]
+    fn a_verse_is_quoted_whole_from_its_page() {
+        let with_verse = |verse: &str| {
+            format!(
+                r#"{{ "id": "x/1", "anchor": {{ "role": "QuanLoc" }}, "verse": "{verse}", "body": ["Có thực quyền."], {PARAPHRASE}, "status": "draft" }}"#
+            )
+        };
+        let long = "một hai ba bốn năm sáu bảy tám chín mười mười một mười hai";
+        assert_eq!(passages(&with_verse(long)), []);
+        assert_eq!(
+            codes(&passages(&with_verse("một hai … mười hai"))),
+            ["V5", "V5"]
+        );
+        assert_eq!(
+            codes(&passages(&with_verse("câu phú không có trong sách"))),
+            ["V5"]
+        );
     }
 
     #[test]

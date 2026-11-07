@@ -180,6 +180,11 @@ pub fn gate(
         }
         None => {}
     }
+    match when.is_menh {
+        Some(true) => gate.all.push("is_menh".to_string()),
+        Some(false) => gate.none.push("is_menh".to_string()),
+        None => {}
+    }
     match when.than_here {
         Some(true) => gate.all.push("than".to_string()),
         Some(false) => gate.none.push("than".to_string()),

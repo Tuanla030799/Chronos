@@ -203,6 +203,8 @@ pub enum Section {
     DaiCuong,
     /// Nữ mệnh
     NuMenh,
+    /// Nam mệnh
+    NamMenh,
     /// Phú giải
     PhuGiai,
 }
@@ -283,6 +285,9 @@ pub struct When {
     pub tuan_triet: Option<TuanTriet>,
     /// Whether the Thân palace falls here.
     pub than_here: Option<bool>,
+    /// Whether this is the Mệnh palace itself. Passages of Mệnh also reach the palace of Thân, so
+    /// a statement about the Mệnh palace alone needs `true`.
+    pub is_menh: Option<bool>,
     /// Sex of the person.
     pub gender: Option<Gender>,
     /// Sex and polarity of the birth year: Dương Nam, Âm Nữ…
