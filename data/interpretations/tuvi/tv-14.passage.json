@@ -23,7 +23,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -54,7 +54,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -93,7 +93,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -125,7 +125,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -149,7 +149,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -173,7 +173,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -196,7 +196,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -220,7 +220,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -244,7 +244,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -269,7 +269,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -293,7 +293,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -317,7 +317,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -341,7 +341,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -365,7 +365,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -388,7 +388,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -411,7 +411,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -434,7 +434,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -457,7 +457,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -481,7 +481,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -512,7 +512,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -542,7 +542,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -566,7 +566,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -590,7 +590,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -613,7 +613,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -636,7 +636,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -659,7 +659,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -682,7 +682,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -706,7 +706,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -729,7 +729,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -752,7 +752,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -776,7 +776,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -799,7 +799,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -822,7 +822,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -845,7 +845,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -868,7 +868,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -891,7 +891,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -915,7 +915,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -938,7 +938,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -961,7 +961,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -984,7 +984,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1007,7 +1007,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1030,7 +1030,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1054,7 +1054,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1077,7 +1077,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1101,7 +1101,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1124,7 +1124,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1147,7 +1147,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1172,7 +1172,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1195,7 +1195,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1218,7 +1218,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1241,7 +1241,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1264,7 +1264,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1287,7 +1287,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1310,7 +1310,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1333,7 +1333,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1356,7 +1356,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1379,7 +1379,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1402,7 +1402,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1425,7 +1425,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1448,7 +1448,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1471,7 +1471,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1494,7 +1494,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1517,7 +1517,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1540,7 +1540,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1563,7 +1563,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1586,7 +1586,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1609,7 +1609,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1632,7 +1632,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1655,7 +1655,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1676,7 +1676,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1697,7 +1697,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Tuan"
@@ -1723,7 +1723,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1747,7 +1747,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1768,7 +1768,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1788,7 +1788,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Triet"
@@ -1815,7 +1815,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1837,7 +1837,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1858,7 +1858,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1879,7 +1879,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1900,7 +1900,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "element_relation": [
@@ -1933,7 +1933,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "element_relation": [
@@ -1965,7 +1965,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "element_relation": [
@@ -1976,6 +1976,27 @@
           ]
         }
       ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Phúc Đức vô Chính diệu: xem Chính diệu xung chiếu như đang tọa thủ, rồi áp các quy định ảnh hưởng âm phần ở trên theo Chính diệu đó."
+      ],
+      "id": "phuc-duc/am-phan/80",
+      "source_ref": {
+        "keywords": [
+          "Cung Phúc Đức vô Chính diệu: coi Chính diệu xung chiếu như Chính"
+        ],
+        "pages": [
+          147
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1999,7 +2020,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -2022,7 +2043,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -2050,7 +2071,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2096,7 +2117,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2130,7 +2151,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2165,7 +2186,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2199,7 +2220,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2230,7 +2251,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2265,7 +2286,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2296,7 +2317,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2330,7 +2351,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2364,7 +2385,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2399,7 +2420,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2430,7 +2451,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -2453,7 +2474,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2496,7 +2517,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2539,7 +2560,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2571,7 +2592,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2606,7 +2627,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2640,7 +2661,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2671,7 +2692,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2706,7 +2727,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2737,7 +2758,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2772,7 +2793,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2807,7 +2828,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2841,7 +2862,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -2872,7 +2893,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2905,7 +2926,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2943,7 +2964,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -2991,7 +3012,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3037,7 +3058,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -3069,7 +3090,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3103,7 +3124,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3139,7 +3160,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -3173,7 +3194,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3210,7 +3231,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3247,7 +3268,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3284,7 +3305,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3318,7 +3339,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -3342,7 +3363,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3374,7 +3395,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3408,7 +3429,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3441,7 +3462,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3474,7 +3495,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3506,7 +3527,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3543,7 +3564,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -3566,7 +3587,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3599,7 +3620,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3632,7 +3653,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3666,7 +3687,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3698,7 +3719,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3730,7 +3751,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3762,7 +3783,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3794,7 +3815,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3826,7 +3847,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3862,7 +3883,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3894,7 +3915,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3926,7 +3947,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3958,7 +3979,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3990,7 +4011,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -4020,7 +4041,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -4050,7 +4071,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_any": [
@@ -4081,7 +4102,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4105,7 +4126,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "not_with": [
@@ -4141,7 +4162,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "with_all": [
@@ -4181,7 +4202,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_any": [
@@ -4213,7 +4234,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -4244,7 +4265,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -4276,7 +4297,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4301,7 +4322,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4325,7 +4346,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4350,7 +4371,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4376,7 +4397,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4399,7 +4420,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4424,7 +4445,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4447,7 +4468,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4471,7 +4492,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4494,7 +4515,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4518,7 +4539,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4542,7 +4563,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4568,7 +4589,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4592,7 +4613,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4616,7 +4637,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4640,7 +4661,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -4660,7 +4681,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Either"
@@ -4690,7 +4711,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Either"
@@ -4715,7 +4736,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4743,7 +4764,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -4777,7 +4798,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4811,7 +4832,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4841,7 +4862,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4869,7 +4890,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4897,7 +4918,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4931,7 +4952,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -4965,7 +4986,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -4997,7 +5018,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5025,7 +5046,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5054,7 +5075,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5086,7 +5107,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5115,7 +5136,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5147,7 +5168,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5179,7 +5200,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5207,7 +5228,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "not_meets": [
@@ -5236,7 +5257,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5267,7 +5288,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5297,7 +5318,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5326,7 +5347,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "flanked_by": [
@@ -5356,7 +5377,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5390,7 +5411,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5422,7 +5443,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5450,7 +5471,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5482,7 +5503,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5512,7 +5533,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5541,7 +5562,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -5588,7 +5609,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -5633,7 +5654,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5662,7 +5683,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5698,7 +5719,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5752,7 +5773,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -5774,7 +5795,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "tuan_triet": "Either"
@@ -5802,7 +5823,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
@@ -5833,7 +5854,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "meets_all": [
