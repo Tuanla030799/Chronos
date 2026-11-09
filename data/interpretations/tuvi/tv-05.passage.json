@@ -3742,7 +3742,8 @@
       "body": [
         "Tất lập được sự nghiệp vĩ đại trong thời loạn."
       ],
-      "condition_text": "gặp thêm Tướng, Hình giao hội",
+      "condition_text": "gặp thêm Tướng giao hội",
+      "correction": "Tr. 73 không giải riêng \"Binh\", \"Hình\" trong cụm \"Tướng, Ấn, Binh, Hình\". Theo tiêu đề 8.38 tr. 166 \"Binh, Hình, Tướng, Ấn\" (đã duyệt ở TV-15, quan-loc/bo-sao/16: Binh là Phục Binh, Hình là Thiên Hình, Ấn là Quốc Ấn, riêng Tướng không rõ Thiên Tướng hay Tướng Quân nên để condition_text), dùng cùng cách đọc: Binh là Phục Binh, Hình là Thiên Hình.",
       "id": "menh/thai-duong/61",
       "section": "PhuGiai",
       "source_ref": {
@@ -3755,7 +3756,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Nhật tại Tỵ cung, Nhật mỹ huy thiên, kiêm lai Lộc Mã, Tràng Sinh, Phụ, Bật thế sự thanh bình vi đại phú nhược kiêm Tướng, Ấn, Binh, Hình vô lai Tuần, Triệt loạn thế thành công",
       "when": [
         {
@@ -3764,7 +3765,8 @@
           ],
           "meets_all": [
             "QuocAn",
-            "PhucBinh"
+            "PhucBinh",
+            "ThienHinh"
           ],
           "tuan_triet": "Neither"
         }
