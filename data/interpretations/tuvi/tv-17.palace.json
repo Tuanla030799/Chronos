@@ -21,7 +21,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "summary": "Cho biết giàu nghèo và sinh kế."
     },
     {
@@ -42,7 +42,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "summary": "Cho biết về anh chị em trong nhà."
     }
   ]
