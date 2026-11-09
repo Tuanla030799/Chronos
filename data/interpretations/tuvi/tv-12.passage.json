@@ -1,0 +1,5498 @@
+{
+  "batch": "TV-12",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cung có Nhật không gặp Tuần, Triệt, cung có Nguyệt gặp Tuần hay Triệt (Nhật sáng sủa, Nguyệt mờ ám)",
+      "id": "phu-mau/nhat-nguyet/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "Nhật sáng sủa, Nguyệt mờ ám: mẹ mất trước cha"
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cung có Nhật gặp Tuần hay Triệt, cung có Nguyệt không gặp Tuần, Triệt (Nhật mờ ám, Nguyệt sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "Nhật mờ ám, Nguyệt sáng sủa: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cả hai cung đều không gặp Tuần, Triệt (Nhật, Nguyệt cùng sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "+ Sinh ban ngày: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cả hai cung đều không gặp Tuần, Triệt (Nhật, Nguyệt cùng sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "+ Sinh ban đêm: mẹ mất trước cha."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cả hai cung đều gặp Tuần hay Triệt (Nhật, Nguyệt cùng mờ ám)",
+      "id": "phu-mau/nhat-nguyet/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "+ Sinh ban ngày: mẹ mất trước cha."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ và Nguyệt tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý; cả hai cung đều gặp Tuần hay Triệt (Nhật, Nguyệt cùng mờ ám)",
+      "id": "phu-mau/nhat-nguyet/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.1. Nhật tọa thủ Dần, Mão, Thìn, Tỵ, Ngọ. Nguyệt tọa thủ Thân,",
+          "+ Sinh ban đêm: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cung có Nhật gặp Tuần hay Triệt, cung có Nguyệt không gặp Tuần, Triệt (Nhật sáng sủa, Nguyệt mờ ám)",
+      "id": "phu-mau/nhat-nguyet/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "Nhật sáng sủa, Nguyệt mờ ám: mẹ mất trước cha"
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cung có Nhật không gặp Tuần, Triệt, cung có Nguyệt gặp Tuần hay Triệt (Nhật mờ ám, Nguyệt sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/08",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "Nhật mờ ám, Nguyệt sáng sủa: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cả hai cung đều gặp Tuần hay Triệt (Nhật, Nguyệt cùng sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/09",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "+ Sinh ban ngày: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cả hai cung đều gặp Tuần hay Triệt (Nhật, Nguyệt cùng sáng sủa)",
+      "id": "phu-mau/nhat-nguyet/10",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "+ Sinh ban đêm: mẹ mất trước cha."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cả hai cung đều không gặp Tuần, Triệt (Nhật, Nguyệt cùng mờ ám)",
+      "id": "phu-mau/nhat-nguyet/11",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "+ Sinh ban ngày: mẹ mất trước cha."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật tọa thủ tại Thân, Dậu, Tuất, Hợi hay Tý và Nguyệt tọa thủ tại Dần, Mão, Thìn, Tỵ hay Ngọ; cả hai cung đều không gặp Tuần, Triệt (Nhật, Nguyệt cùng mờ ám)",
+      "id": "phu-mau/nhat-nguyet/12",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.2. Nhật tọa thủ Thân, Dậu, Tuất, Hợi, Tý. Nguyệt tọa thủ Dần,",
+          "+ Sinh ban đêm: cha mất trước mẹ."
+        ],
+        "pages": [
+          124
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật, Nguyệt đồng cung tại Sửu hay Mùi, không gặp Tuần, Triệt án ngữ",
+      "id": "phu-mau/nhat-nguyet/13",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.3. Nhật, Nguyệt tọa thủ đồng cung tại Sửu, Mùi",
+          "- Không gặp Tuần hay Triệt án ngữ:",
+          "+ Sinh ban ngày: mẹ mất trước cha."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật, Nguyệt đồng cung tại Sửu hay Mùi, không gặp Tuần, Triệt án ngữ",
+      "id": "phu-mau/nhat-nguyet/14",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.3. Nhật, Nguyệt tọa thủ đồng cung tại Sửu, Mùi",
+          "- Không gặp Tuần hay Triệt án ngữ:",
+          "+ Sinh ban đêm: cha mất trước mẹ."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cha mất trước mẹ."
+      ],
+      "condition_text": "Nhật, Nguyệt đồng cung tại Sửu hay Mùi, gặp Tuần hay Triệt án ngữ",
+      "id": "phu-mau/nhat-nguyet/15",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.3. Nhật, Nguyệt tọa thủ đồng cung tại Sửu, Mùi",
+          "- Gặp Tuần hay Triệt án ngữ:",
+          "+ Sinh ban ngày: cha mất trước mẹ."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Mẹ mất trước cha."
+      ],
+      "condition_text": "Nhật, Nguyệt đồng cung tại Sửu hay Mùi, gặp Tuần hay Triệt án ngữ",
+      "id": "phu-mau/nhat-nguyet/16",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "5.1.3. Nhật, Nguyệt tọa thủ đồng cung tại Sửu, Mùi",
+          "- Gặp Tuần hay Triệt án ngữ:",
+          "+ Sinh ban đêm: mẹ mất trước cha."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Cha mẹ quý hiển, giàu có và sống lâu."
+      ],
+      "id": "phu-mau/tu-vi/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ: cha mẹ qúy hiển, giàu có và sống lâu."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả."
+      ],
+      "id": "phu-mau/tu-vi/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: cha mẹ khá giả."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang; con được hưởng rất nhiều của cải cha mẹ để lại."
+      ],
+      "id": "phu-mau/tu-vi/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: cha mẹ giàu sang.",
+          "Tử đồng cung: cha mẹ giàu sang."
+        ],
+        "pages": [
+          125,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ vinh hiển; gia đình êm ấm, phúc lộc dồi dào."
+      ],
+      "id": "phu-mau/tu-vi/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: cha mẹ vinh hiển.",
+          "Tử đồng cung: cha mẹ vinh hiển."
+        ],
+        "pages": [
+          125,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang nhưng bất hòa; con không hợp tính cha mẹ; gia đình ly tán."
+      ],
+      "id": "phu-mau/tu-vi/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: cha mẹ phú qúy, nhưng bất hòa.",
+          "Tử đồng cung: cha mẹ phú qúy, nhưng bất hòa."
+        ],
+        "pages": [
+          125,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Trong nhà hay bất hòa; cha mẹ khá giả, nhưng sớm khắc một trong hai thân, hoặc phải xa cách cha mẹ từ thuở nhỏ."
+      ],
+      "correction": "Cả tr. 125 và tr. 129 in \"cha mc khá giả\" và \"sớm khắc mộc trong hai thân\"; hiểu là cha mẹ khá giả, sớm khắc một trong hai thân (cách viết \"sớm khắc một trong hai thân\" lặp ở nhiều mục cùng chương, như 5.2.4, 5.2.9).",
+      "id": "phu-mau/tu-vi/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: trong nhà hay có sự bất hòa: cha mc khá giả.",
+          "Tử đồng cung: trong nhà hay có sự bất hòa: cha mc khá giả."
+        ],
+        "pages": [
+          125,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bố mẹ ở mức bình thường. Con nên làm con nuôi họ khác, bằng không ắt sớm xa cha hoặc mẹ."
+      ],
+      "id": "phu-mau/tu-vi/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: cha mẹ bình thường.",
+          "Tử đồng cung: cha mẹ bình thường."
+        ],
+        "pages": [
+          125,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Cha mẹ nghèo nhưng có đức. Sớm xa cách cha mẹ; phải làm con nuôi họ khác mới tránh được mọi hình khắc."
+      ],
+      "correction": "Sách in \"tránh được mọi bình khắc\"; hiểu là hình khắc, chữ sách dùng ở các câu cùng ý (\"tránh được mọi sự hình khắc\" tr. 126, \"để tránh mọi hình khắc\" tr. 128).",
+      "id": "phu-mau/liem-trinh/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: cha mẹ nghèo, nhưng có đức."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu có nhưng bất hòa; con không hợp tính cha mẹ."
+      ],
+      "id": "phu-mau/liem-trinh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: hai thân giàu có, nhưng bất hòa.",
+          "Liêm Trinh đồng cung: hai thân giàu có, nhưng bất hòa."
+        ],
+        "pages": [
+          125,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ hay gặp tai nạn bất ngờ và rất vất vả. Con không thể sống chung với cha mẹ; nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/liem-trinh/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: cha mẹ hay gặp tai nạn bất kỳ và rất vất vả.",
+          "Liêm đồng cung: cha mẹ hay gặp tai nạn bất kỳ"
+        ],
+        "pages": [
+          125,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Sớm khắc cha hoặc mẹ; bằng không, bố mẹ và con cũng không thể ở chung. Trong nhà thường bất hòa; bố mẹ hay gặp tai họa rất đáng lo."
+      ],
+      "id": "phu-mau/liem-trinh/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: sớm khắc một trong hai thân.",
+          "Liêm đồng cung: sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          125,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bố mẹ khốn khó, hay gặp tai ương và sống xa nhau. Con sớm lìa bỏ song thân."
+      ],
+      "id": "phu-mau/liem-trinh/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: cha mẹ khốn cùng hay mắc tai ương",
+          "Liêm đồng cung: cha mẹ khốn cùng hay mắc tai ương"
+        ],
+        "pages": [
+          125,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả; lợi cho mẹ hơn cho cha."
+      ],
+      "id": "phu-mau/thien-dong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: cha mẹ khá giả."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Cha mẹ bình thường; mẹ sức khỏe kém."
+      ],
+      "id": "phu-mau/thien-dong/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: cha mẹ bình thường."
+        ],
+        "pages": [
+          125
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Bố mẹ sống xa nhau; con thường phải ở xa bố mẹ, nhưng nhà cửa sung túc."
+      ],
+      "correction": "Sách in \"hai thân cách xa cách nhau\" (thừa một chữ \"cách\"); hiểu là hai thân xa cách nhau.",
+      "id": "phu-mau/thien-dong/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: hai thân cách xa cách nhau."
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Trong nhà hay bất hòa, cha mẹ xa cách nhau. Con và cha mẹ không thể sống chung lâu dài; nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/thien-dong/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: Trong nhà hay có sự bất hòa."
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả và sống lâu."
+      ],
+      "correction": "Cả tr. 126 và tr. 129 in \"cha me\"; hiểu là cha mẹ.",
+      "id": "phu-mau/thien-dong/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: cha me khá giả và sống lâu.",
+          "Đồng đồng cung: cha me khá giả và sống lâu."
+        ],
+        "pages": [
+          126,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Cha mẹ vinh hiển và nhiều của cải."
+      ],
+      "id": "phu-mau/thien-dong/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Tý: cha mẹ vinh hiển và nhiều của cải.",
+          "Đồng đồng cung tại Tý: cha mẹ vinh hiển"
+        ],
+        "pages": [
+          126,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Trong nhà hay bất hòa; sớm xa cách một trong hai thân."
+      ],
+      "id": "phu-mau/thien-dong/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: Trong nhà hay có sự bất hòa.",
+          "Đồng đồng cung tại Ngọ: Trong nhà hay có sự bất hòa."
+        ],
+        "pages": [
+          126,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Sớm xa song thân, trong nhà thiếu hòa khí. Phải đi xa hoặc làm con nuôi họ khác thì mới tránh được hình khắc; dù vậy, ít nhất cũng sớm lìa cha hoặc mẹ."
+      ],
+      "id": "phu-mau/thien-dong/08",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: sớm xa cách hai thân.",
+          "Đồng đồng cung: sớm xa cách hai thân."
+        ],
+        "pages": [
+          126,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào cũng sớm khắc một trong hai thân."
+      ],
+      "id": "phu-mau/vu-khuc/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào cũng sớm khắc một trong hai thân"
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu có, khá giả."
+      ],
+      "id": "phu-mau/vu-khuc/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cha mẹ giàu có, khá giả."
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu có và vinh hiển."
+      ],
+      "id": "phu-mau/vu-khuc/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: cha mẹ giàu có và vinh hiển.",
+          "Vũ Khúc đồng cung: cha mẹ giàu có và vinh hiển."
+        ],
+        "pages": [
+          126,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ có uy quyền và nhiều của cải."
+      ],
+      "id": "phu-mau/vu-khuc/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: cha mẹ có uy quyền và nhiều của cải.",
+          "Vũ đồng cung: cha mẹ có uy quyền và nhiều của cải."
+        ],
+        "pages": [
+          126,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bố mẹ giàu, nhưng con khác tính bố mẹ; nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/vu-khuc/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: cha mẹ giàu, nhưng con không hợp tính cha mẹ.",
+          "Vũ đồng cung: cha mẹ giàu, nhưng con không hợp tính cha mẹ."
+        ],
+        "pages": [
+          126,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Song thân bất hòa; bố mẹ với con không hợp tính, gia đình thường ly tán. Nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/vu-khuc/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: hai thân bất hòa.",
+          "Vũ đồng cung: hai thân bất hòa."
+        ],
+        "pages": [
+          126,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cha mẹ nghèo khổ, hay mắc tai ương; nếu không, ắt phải mang bệnh tật, hay đau yếu. Nên sớm xa cách cha mẹ, làm con nuôi họ khác để tránh mọi hình khắc."
+      ],
+      "id": "phu-mau/vu-khuc/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: hai thân bần khổ, hay mắc tai ương.",
+          "Vũ đồng cung: hai thân bần khổ, hay mắc tai ương."
+        ],
+        "pages": [
+          126,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu có, quý hiển và sống lâu; lợi cho cha hơn cho mẹ."
+      ],
+      "id": "phu-mau/thai-duong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ: hai thân giàu có,",
+          "Nhật đồng cung tại Dần: hai thân giàu có, qúy hiển",
+          "Nhật đồng cung tại Mão: hai thân giàu có, qúy hiển"
+        ],
+        "pages": [
+          126,
+          128,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Mao",
+            "Thin",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Bố mẹ vất vả, sớm khắc cha hoặc mẹ. Nên làm con nuôi họ khác."
+      ],
+      "correction": "Cả ba nơi (tr. 126, 128, 129) in \"vất và\"; hiểu là vất vả.",
+      "id": "phu-mau/thai-duong/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Thân, Dậu, Tuất, Hợi, Tý: hai thân vất và,",
+          "Nhật đồng cung tại Thân: hai thân vất và, sớm khắc một trong hai thân.",
+          "Nhật đồng cung tại Dậu: hai thân vất và, sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          126,
+          128,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than",
+            "Dau",
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Song thân bất hòa; bố mẹ khá giả nhưng con không thể sống gần."
+      ],
+      "id": "phu-mau/thai-duong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Sửu, Mùi: hai thân bất hòa, cha mẹ khá giả nhưng",
+          "Nhật đồng cung tại Sửu, Mùi: hai thân bất hòa,"
+        ],
+        "pages": [
+          126,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả."
+      ],
+      "id": "phu-mau/thien-co/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: cha mẹ khá giả."
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Bố mẹ bình thường; bố mẹ với con khác tính nhau. Nên làm con nuôi họ khác, bằng không rất khó tránh hình khắc."
+      ],
+      "id": "phu-mau/thien-co/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: cha mẹ bình thường"
+        ],
+        "pages": [
+          126
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả."
+      ],
+      "correction": "Cả tr. 126 và tr. 127 in \"khá giá\"; hiểu là khá giả.",
+      "id": "phu-mau/thien-co/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: hai thân khá giá.",
+          "Cơ đồng cung tại Thân: hai thân khá giá."
+        ],
+        "pages": [
+          126,
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Bố mẹ giàu có nhưng sớm phải xa cha hoặc mẹ; không lợi cho mẹ."
+      ],
+      "id": "phu-mau/thien-co/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: hai thân giàu có, nhưng sớm xa cách một trong",
+          "Cơ đồng cung tại Dần: hai thân giàu có, nhưng sớm xa cách"
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang và sống lâu."
+      ],
+      "id": "phu-mau/thien-co/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: cha mẹ giàu sang và sống lâu.",
+          "Cơ đồng cung: cha mẹ giàu sang và sống lâu."
+        ],
+        "pages": [
+          127,
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Sớm khắc một trong hai thân, nên phải xa cách cha mẹ. Trong nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/thien-co/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: sớm khắc một trong hai thân.",
+          "Cơ đồng cung: sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          127,
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào, cha mẹ cũng có của."
+      ],
+      "id": "phu-mau/thien-phu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cha mẹ cũng có của."
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả, có chức danh."
+      ],
+      "id": "phu-mau/thien-phu/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: cha mẹ khá giả"
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cha mẹ vừa giàu vừa sang, nhưng sớm xa cách một trong hai thân."
+      ],
+      "id": "phu-mau/thien-phu/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: hai thân phú qúy song toàn"
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang; lợi cho mẹ hơn cho cha."
+      ],
+      "id": "phu-mau/thai-am/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: hai thân giàu sang."
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Bố mẹ vất vả, sớm khắc cha hoặc mẹ. Nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/thai-am/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: hai thân vất vả."
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Ở vị trí nào cũng sớm khắc cha hoặc mẹ; bằng không cũng phải sống xa bố mẹ."
+      ],
+      "id": "phu-mau/tham-lang/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào cũng sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu có nhưng con không được hưởng; trong nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/tham-lang/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cha mẹ giàu có, nhưng con không được thừa"
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bố mẹ túng thiếu, bất hòa, hay sống xa nhau; bố mẹ không hợp tính con."
+      ],
+      "id": "phu-mau/tham-lang/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hai thân túng thiếu, bất hòa,"
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Cha mẹ bình thường, trong nhà thiếu hòa khí. Nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/tham-lang/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: cha mẹ bình thường. Trong nhà thiếu hòa khí."
+        ],
+        "pages": [
+          127
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào, cha mẹ cũng bất hòa; trong nhà có tranh chấp."
+      ],
+      "id": "phu-mau/cu-mon/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cha mẹ cũng bất hòa."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang nhưng không hợp tính con."
+      ],
+      "id": "phu-mau/cu-mon/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Ngọ: cha mẹ giàu sang, nhưng không hợp tính với"
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Bố mẹ thường sống xa nhau; bằng không cũng sớm khắc cha hoặc mẹ."
+      ],
+      "id": "phu-mau/cu-mon/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ: hai thân thường xa cách nhau."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Cha mẹ bỏ nhau, hoặc một người còn một người mất từ khi con còn nhỏ."
+      ],
+      "id": "phu-mau/cu-mon/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cha mẹ bỏ nhau, hay một còn một mất"
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào, cha mẹ cũng sống lâu."
+      ],
+      "id": "phu-mau/thien-tuong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cha mẹ cũng sống lâu."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả nhưng hay bất hòa."
+      ],
+      "id": "phu-mau/thien-tuong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mùi: hai thân khá giả nhưng hay bất hòa."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Bố mẹ bình thường. Nên làm con nuôi họ khác để tránh hình khắc."
+      ],
+      "id": "phu-mau/thien-tuong/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: hai thân bình thường."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ nhân đức, giàu sang và sống lâu."
+      ],
+      "correction": "Sách in \"Đơn thủ tại Tỵ, Ngọ\", rồi hai dòng sau tr. 129 lại có \"Đơn thủ tại Ty, Hợi\" với lời trái hẳn, nên Tỵ bị nói hai lần. Hiểu dòng này là Tý, Ngọ: các chương khác viết Thiên Lương đơn thủ thành cặp \"Tý, Ngọ\" và \"Tỵ, Hợi\" (Phúc Đức tr. 136, Thiên Di tr. 177), và bảng độ sáng tr. 37 cho Lương ở Tý vượng, Ngọ miếu, còn Tỵ, Hợi hãm.",
+      "id": "phu-mau/thien-luong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ: cha mẹ nhân đức, giàu sang và sống lâu."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cha mẹ bình thường; trong nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/thien-luong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: hai thân bình thường. Trong nhà thiếu hòa khí."
+        ],
+        "pages": [
+          128
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Bố mẹ bất hòa, hay sống xa nhau; con sớm lìa cha hoặc mẹ. Bằng không, bố mẹ với con cũng không ở chung lâu được."
+      ],
+      "correction": "Sách in \"Ty, Hợi\" (thiếu dấu); hiểu là Tỵ, Hợi, vì dòng \"Tỵ, Ngọ\" ở tr. 128 là Tý, Ngọ (xem phu-mau/thien-luong/01) và Thiên Lương đơn thủ chỉ ở Tý, Ngọ, Sửu, Mùi, Tỵ, Hợi.",
+      "id": "phu-mau/thien-luong/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ty, Hợi: hai thân bất hòa, hay xa cách nhau."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ở vị trí nào bố mẹ cũng bất hòa; bằng không thì bố mẹ với con không hợp tính."
+      ],
+      "id": "phu-mau/that-sat/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cha mẹ cũng bất hòa."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cha mẹ quý hiển và sống lâu."
+      ],
+      "correction": "Sách in \"qúy hiến\"; hiểu là quý hiển.",
+      "id": "phu-mau/that-sat/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: cha mẹ qúy hiến và sống lâu."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Bố mẹ khá giả, nhưng sớm phải xa cha hoặc mẹ."
+      ],
+      "correction": "Sách in \"Đơn thủ tại Tỵ, Ngọ\"; hiểu là Tý, Ngọ. Thất Sát ở Tỵ luôn đồng cung Tử Vi (bộ Tử Sát ở Tỵ, Hợi) nên không thể đơn thủ ở Tỵ; Thất Sát đơn thủ chỉ ở Tý, Ngọ, Dần, Thân, Thìn, Tuất, và các chương khác viết \"Đơn thủ tại Tý, Ngọ\" (Phúc Đức tr. 137, Thiên Di tr. 177).",
+      "id": "phu-mau/that-sat/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ: cha mẹ khá giả, nhưng sớm xa cách"
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Bố mẹ túng thiếu, vất vả, thường mang tật lâu năm hoặc mắc bệnh hiểm nghèo; bằng không, ắt gặp nhiều tai họa. Sớm khắc cha hoặc mẹ, bố mẹ với con cũng không ở chung lâu được. Nên làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/that-sat/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cha mẹ túng thiếu, vất vả, thường mang cố tật,"
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ở vị trí nào cũng sớm khắc cha hoặc mẹ; bằng không, song thân cũng phải xa nhau. Trong nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/pha-quan/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cũng sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả."
+      ],
+      "correction": "Sách in \"khá giá\"; hiểu là khá giả.",
+      "id": "phu-mau/pha-quan/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: cha mẹ khá giá."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cha mẹ bất hòa. Con nên ở xa cha mẹ hoặc làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/pha-quan/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: cha mẹ bất hòa."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cha mẹ vất vả, không hợp tính con; sớm xa cách một trong hai thân."
+      ],
+      "id": "phu-mau/pha-quan/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cha mẹ vất vả, không hợp tính với con."
+        ],
+        "pages": [
+          129
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Ở vị trí nào thì bố mẹ với con cũng khác tính nhau."
+      ],
+      "id": "phu-mau/kinh-da/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cha mẹ và con cũng không hợp tính nhau"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Bố mẹ hay gặp nạn, nhất là kiện tụng, tù tội, và thường phải sống xa nhau. Nhà túng thiếu."
+      ],
+      "id": "phu-mau/kinh-da/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Liêm đồng cung: hai thân hay mắc nạn, nhất là kiện cáo tù tội và"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Sớm xa cách cha mẹ; cha mẹ khó tránh được hình thương, họa hại."
+      ],
+      "id": "phu-mau/kinh-da/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: Sớm xa cách hai thân, cha mẹ khó tránh được hình thương"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Cha hoặc mẹ là người ăn chơi hoang đàng. Con sớm xa cha hoặc mẹ."
+      ],
+      "id": "phu-mau/kinh-da/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: cha hay mẹ là người hoang đàng chơi bời."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào, cha mẹ cũng giảm thọ. Trong nhà thiếu hòa khí."
+      ],
+      "id": "phu-mau/hoa-linh/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, cũng giảm thọ. Trong nhà thiếu hòa khí."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Cha mẹ quý hiển và giàu sang."
+      ],
+      "correction": "Sách in \"qúy hiến\"; hiểu là quý hiển.",
+      "id": "phu-mau/hoa-linh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: cha mẹ qúy hiến và giàu sang"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Sớm khắc cả hai thân; nếu không, cũng phải sớm xa cách, đi sống nơi đất khách quê người. Cha mẹ thường gặp tai nạn bất ngờ, rất đáng lo ngại."
+      ],
+      "id": "phu-mau/hoa-linh/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: sớm khắc hai thân."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Ở bất cứ vị trí nào, cha mẹ cũng vất vả; nếu không thì bất hòa, cha mẹ và con không hợp tính nhau."
+      ],
+      "id": "phu-mau/khong-kiep/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Bất cứ tại vị trí nào, hai thân cũng vất vả."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Cha mẹ có chức danh."
+      ],
+      "id": "phu-mau/xuong-khuc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân có danh chức."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Cha thường là con trưởng; nếu không, cũng giành phần trưởng và có chức danh."
+      ],
+      "id": "phu-mau/khoi-viet/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cha thường là con trưởng. Nếu không, cũng đoạt trưởng có danh chức"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Cha mẹ khá giả, giúp đỡ con trong nhiều việc. Trong nhà có hòa khí."
+      ],
+      "condition_text": "không gặp nhiều Sát tinh xâm phạm",
+      "id": "phu-mau/ta-huu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân khá giả, nâng đỡ con trong nhiều công việc."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Cha mẹ thật khó tránh những điều chẳng lành: hoặc hình khắc chia lìa, hoặc tai ương họa bại."
+      ],
+      "condition_text": "gặp nhiều Sát tinh xâm phạm",
+      "id": "phu-mau/ta-huu/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Tả, Hữu lại gặp nhiều Sát tinh xâm phạm, cha mẹ thật khó"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Bố mẹ có của, nhưng con phá tán khá nhiều. Bố mẹ với con khác tính nhau; con nên ở xa bố mẹ."
+      ],
+      "id": "phu-mau/loc-ton/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân có của, nhưng con phá tán mất khá nhiều."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaLoc"
+        ]
+      },
+      "body": [
+        "Cha mẹ có của."
+      ],
+      "id": "phu-mau/hoa-loc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "5.2.22. Hóa Lộc",
+          "Hai thân có của."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Cha mẹ có quyền thế."
+      ],
+      "id": "phu-mau/hoa-quyen/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân có quyền thế."
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Cha mẹ thông minh, nhân hậu, có chức danh."
+      ],
+      "id": "phu-mau/hoa-khoa/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân thông minh, nhân hậu, có danh chức"
+        ],
+        "pages": [
+          130
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Song thân bất hòa; bằng không thì bố mẹ với con khác tính nhau."
+      ],
+      "id": "phu-mau/hoa-ky/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân bất hòa. Nếu không, cha mẹ và con cũng không hợp tính nhau."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Cha mẹ giàu sang."
+      ],
+      "id": "phu-mau/hoa-ky/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt đồng cung tại Sửu, Mùi: cha mẹ giàu sang."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Cha mẹ giảm thọ."
+      ],
+      "id": "phu-mau/hoa-ky/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Xương, Khúc đồng cung: cha mẹ giảm thọ."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VanXuong"
+          ]
+        },
+        {
+          "with_all": [
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Cha mẹ có danh giá nhưng thường hay xa cách nhau."
+      ],
+      "id": "phu-mau/thien-ma/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân có danh giá, nhưng thường hay xa cách nhau."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Bố mẹ rất khá giả, nhưng con nên sống xa bố mẹ."
+      ],
+      "id": "phu-mau/thien-ma/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lộc: cha mẹ rất khá giả. Nhưng con nên ở xa cha mẹ."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Cha mẹ bất hòa, thường xung đột. Cha mẹ và con không hợp tính nhau; con nên ở xa cha mẹ."
+      ],
+      "id": "phu-mau/thien-ma/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đà: hai thân bất hòa, thường hay xung đột."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Chắc chắn cha mẹ bỏ nhau; nếu không, cũng một người còn một người mất từ khi con còn nhỏ. Ngoài ra cha mẹ thường gặp những tai nạn rất đáng lo ngại."
+      ],
+      "condition_text": "Mã, Đà gặp thêm nhiều Sát tinh xâm phạm",
+      "id": "phu-mau/thien-ma/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Mã, Đà lại gặp thêm nhiều Sát tinh xâm phạm, chắc chắn là cha"
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Trong nhà thiếu hòa khí, hay tranh chấp. Cha mẹ và con không hợp tính nhau."
+      ],
+      "id": "phu-mau/thai-tue/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trong nhà thiếu hòa khí, hay có sự tranh chấp."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Ắt bố mẹ phải xa nhau, gia đình tan tác. Bố mẹ còn hay mắc tai họa, đáng lo nhất là kiện tụng."
+      ],
+      "condition_text": "Thái Tuế gặp thêm nhiều Sát tinh, nhất là Đà, Kỵ, xâm phạm",
+      "id": "phu-mau/thai-tue/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Legal",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Tuế lại gặp thêm nhiều Sát tinh nhất là Đà, Kỵ xâm phạm,"
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Song thân khác tính nhau. Bố mẹ với con không thể sống gần nhau lâu."
+      ],
+      "id": "phu-mau/co-qua/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hai thân không hợp tính nhau."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Ắt sớm khắc cha hoặc mẹ. Nên làm con nuôi họ khác."
+      ],
+      "condition_text": "gặp nhiều Sát tinh xâm phạm",
+      "id": "phu-mau/co-qua/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Cô, Quả lại gặp nhiều Sát tinh xâm phạm, tất sớm khắc"
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Cha hoặc mẹ thường là người tài hoa, phóng đãng."
+      ],
+      "id": "phu-mau/dao-hong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cha hay mẹ thường là người tài hoa, phóng đãng."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuMau",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Ắt cha có vợ lẽ, ngoại tình, hoặc mẹ là người bất chính."
+      ],
+      "correction": "Sách in \"Đào, Hoa\" và \"Vượng, Thái\"; hiểu là Đào, Hồng (tiêu đề mục 5.2.29) và Đế Vượng, Thai (Nô Bộc mục 9.2.16 tr. 173 viết cùng bộ \"Thai, Vượng, Đào, Hồng\"). Đế Vượng và Thai thuộc vòng Trường Sinh, luôn ở hai cung xung chiếu nhau nên không thể cùng đồng cung với Đào, Hồng; mã hóa là Đào hay Hồng đồng cung với Đế Vượng hoặc với Thai, sao kia khi đó tất ở cung xung chiếu.",
+      "id": "phu-mau/dao-hong/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Đào, Hoa lại gặp Vượng, Thái đồng cung, tất cha có vợ lẽ,"
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "DeVuong"
+          ]
+        },
+        {
+          "with_all": [
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Cung Phụ Mẫu dù tốt hay xấu cũng sớm khắc cha hoặc mẹ; bằng không, ắt phải sớm xa bố mẹ hoặc làm con nuôi họ khác."
+      ],
+      "id": "phu-mau/tuan-triet/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Dù cung Phụ Mẫu tốt hay xấu, cũng sớm khắc một trong hai thân."
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuMau"
+      },
+      "body": [
+        "Ảnh hưởng của các sao tọa thủ phải đọc ngược lại, tốt thành xấu, xấu thành tốt, khi luận cha mẹ giàu hay nghèo, sang hay hèn."
+      ],
+      "id": "phu-mau/tuan-triet/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phải nhận định nghịch đảo ảnh hưởng của những sao tọa thủ: tốt hóa xấu,"
+        ],
+        "pages": [
+          131
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "ThatSat",
+          "PhaQuan",
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Người giúp việc đắc lực, đông đảo; bạn bè khá giả."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc đắc lực, đông đảo, bạn bè khá giả."
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "ThatSat",
+          "PhaQuan",
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Người giúp việc kém cỏi, về sau hay bỏ đi; ít bạn bè."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc kém cỏi, về sau hay ly tán, ít"
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Người giúp việc rất tài giỏi; bạn bè quý hiển, giàu có."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc rất tài giỏi, bạn bè qúy hiển,"
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Người giúp việc bất lực, hay bỏ đi và mang lòng oán hận; bạn bè nghèo khốn."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc bất lực hay ly tán và mang lòng"
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Kẻ dưới và bạn hữu tuy giỏi nhưng thuộc hạng bất lương, hay hãm hại, hay lừa phản; ban đầu tụ họp, sau tan tác."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "correction": "Sách in \"hay lừa phần\"; hiểu là lừa phản, chữ sách dùng ở tr. 171 (\"tìm cách lừa phản\").",
+      "id": "no-boc/ket-hop/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "là hạng bất lương, hay làm hại, hay lừa phần, trước quần tụ, sau"
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Khó tìm được người làm; kẻ dưới và bạn hữu đều không tài, bất lực mà còn bất nhân, bất nghĩa."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: khó thuê mượn người giúp việc, người giúp việc"
+        ],
+        "pages": [
+          168
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "ThatSat",
+          "PhaQuan",
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Người làm đắc lực nhưng hay lấn quyền bề trên; bạn hữu giỏi giang, biết giúp đỡ."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc đắc lực, nhưng hay lấn quyền"
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "ThatSat",
+          "PhaQuan",
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Người làm ít ỏi và kém cỏi; bạn hữu tan tác."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc thưa thớt và kém cỏi, bạn bè ly tán."
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Người làm đắc lực, trung thành; bạn hữu khá giả."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/09",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc đắc lực và trung thành, bạn bè"
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Người giúp việc hèn kém; ít bạn bè."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/10",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: người giúp việc hèn kém, ít bạn bè."
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Rất đáng lo: kẻ dưới lẫn bạn hữu phần lớn là hạng bất lương, đến đi thất thường để kiếm lợi, hay hãm hại."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/11",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "rất đáng lo ngại vì những người giúp việc cũng"
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Người giúp việc kém cỏi, không bền lâu; bạn bè thưa thớt, thường là hạng bất nhân."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Tử, Phủ, Cự, Nhật, Cơ, Nguyệt, Đồng, Lương) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/12",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: người giúp việc kém cỏi và không được lâu bền,"
+        ],
+        "pages": [
+          169
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thuê người giúp việc lúc đầu khó, về sau dễ; bạn bè tốt, khá giả. Dù vậy vẫn không bao giờ được vừa lòng, vì trên dưới không đồng lòng, không hợp tính nhau."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/13",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "thuê mượn người giúp việc trước khó sau dễ, bạn"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Người làm bất lực, ngày càng bỏ đi và hay nói xấu bề trên; bạn hữu thường tìm đến nhờ vả."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/14",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc bất lực, càng ngày càng ly tán và hay"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Người giúp việc đắc lực, ngày càng kéo đến đông; có thể thu phục, cảm hóa cả bọn giặc cướp. Bạn bè tài giỏi và rất khá giả."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) sáng sủa tốt đẹp",
+      "correction": "Sách in \"người giáp việc\" và \"lui tới đồng đảo\"; hiểu là người giúp việc, đông đảo.",
+      "id": "no-boc/ket-hop/17",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giáp việc đắc lực, càng ngày càng lui tới đồng"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Người giúp việc thưa thớt và bất lực; bạn bè nghèo khổ, ly tán."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/18",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc thưa thớt và bất lực, bạn bè cùng khổ ly"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Người làm đông, đắc lực và trung thành; bạn hữu khá giả, tử tế. Gặp hoạn nạn thường có người cứu giúp."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/19",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc đông đảo, đắc lực và trung thành,"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Rất ít người giúp việc, bạn bè cũng vậy."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/20",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: rất ít người giúp việc, cũng như là bạn bè."
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Người giúp việc và bạn bè tài giỏi, khá giả, nhưng lúc tụ lúc tán thất thường."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/23",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc và bạn bè tài giỏi và khá giả, nhưng tụ"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Hay bị nói xấu; kẻ dưới và bạn hữu đều bất lực, không tài và nghèo khổ."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Sát, Phá, Liêm, Tham) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/24",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: hay bị nói xấu, người giúp việc và bạn bè"
+        ],
+        "pages": [
+          170
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang"
+          ],
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "CuMon",
+            "ThaiDuong",
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong",
+            "ThatSat",
+            "PhaQuan",
+            "LiemTrinh",
+            "ThamLang",
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Kẻ dưới và bạn hữu đều khá giả, có tài và tử tế."
+      ],
+      "id": "no-boc/ket-hop/25",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc và bạn bè đều khá giả, có tài năng và"
+        ],
+        "pages": [
+          171
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "menh_any": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Người làm không có tài; bạn hữu tử tế nhưng không khá giả."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Vũ, Tướng) sáng sủa tốt đẹp",
+      "id": "no-boc/ket-hop/26",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: giúp việc bất tài, bạn bè có lòng tốt"
+        ],
+        "pages": [
+          171
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "CuMon",
+          "ThaiDuong",
+          "ThienCo",
+          "ThaiAm",
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Kẻ dưới và bạn hữu đều ít ỏi, kém cỏi."
+      ],
+      "condition_text": "Chính diệu ở cung Mệnh (Vũ, Tướng) mờ ám xấu xa",
+      "id": "no-boc/ket-hop/29",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc và bạn bè đều thưa thớt và kém cỏi."
+        ],
+        "pages": [
+          171
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "menh_any": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Bạn bè có chức danh."
+      ],
+      "id": "no-boc/van-tinh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.1. Xương, Khúc, Khôi, Việt",
+          "- Bạn bè có danh chức."
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "@VanTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Nên kết giao với người có địa vị hay quyền thế, nhất là người có học thức."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp",
+      "id": "no-boc/van-tinh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: nên kết giao với những người có địa vị"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "@VanTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Nên tránh xa những người có tiếng tăm, học thức; chính họ thường hay hãm hại."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa",
+      "id": "no-boc/van-tinh/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: nên lánh xa những người có danh giá, học"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "@VanTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Người làm rất đắc lực; bạn hữu tốt, khá giả."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp",
+      "id": "no-boc/ta-huu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.2. Tả Phụ, Hữu Bật",
+          "người giúp việc rất đắc lực, bạn bè tốt và khá"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Người làm tuy giỏi nhưng điên đảo, hãm hại; bạn hữu hay lừa đảo."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa",
+      "id": "no-boc/ta-huu/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc tuy tài giỏi nhưng điên đảo làm"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Khó thuê người làm, ít bạn bè."
+      ],
+      "id": "no-boc/loc-ton/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.3. Lộc Tồn",
+          "Khó thuê mượn người làm, ít bạn bè."
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Người làm khá giả nhưng hay lấn át bề trên; bạn hữu tử tế và rất quý hiển."
+      ],
+      "id": "no-boc/khoa-quyen-loc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.4. Khoa, Quyền, Lộc",
+          "Người giúp việc khá giả nhưng hay lấn át người trên"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "transformations_all": [
+            "HoaKhoa",
+            "HoaQuyen"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Hay vướng thị phi, thường bị người giúp việc hay bạn bè nói xấu và oán trách."
+      ],
+      "id": "no-boc/hoa-ky/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hay mắc thị phi, thường bị những người giúp việc hay bạn bè nói xấu"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@SongHao"
+        ]
+      },
+      "body": [
+        "Khó tìm người làm; có người làm thì cũng là hạng gian giảo, nay đến mai đi. Bạn hữu là phường du đãng, ăn chơi, hay lui tới bòn của."
+      ],
+      "id": "no-boc/song-hao/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Khó thuê mượn người làm, nếu có người giúp việc cũng là hạng gian giảo,"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "@KhocHu"
+        ]
+      },
+      "body": [
+        "Hay bị người giúp việc oán trách."
+      ],
+      "id": "no-boc/khoc-hu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.7. Khốc, Hư",
+          "Hay bị người giúp việc oán trách."
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "TuongQuan"
+        ]
+      },
+      "body": [
+        "Người giúp việc hay lấn át người trên."
+      ],
+      "id": "no-boc/tuong-quan/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.8. Tướng Quân",
+          "Người giúp việc hay lấn át người trên."
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "PhucBinh"
+        ]
+      },
+      "body": [
+        "Người làm đắc lực, đông; ra ngoài được nhiều người giúp; bạn hữu tốt."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp",
+      "id": "no-boc/phuc-binh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.9. Phục Binh",
+          "người giúp việc đắc lực và đông đảo, ra ngoài"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "PhucBinh"
+        ]
+      },
+      "body": [
+        "Người giúp việc hay lừa đảo, làm hại; bạn bè gian quyệt, bất nhân."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"lừa đào\"; hiểu là lừa đảo.",
+      "id": "no-boc/phuc-binh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "người giúp việc hay lừa đào làm hại, bạn bè gian"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Mang lụy vì tình."
+      ],
+      "id": "no-boc/dao-hoa/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.10. Đào Hoa",
+          "Mang lụy vì tình, đàn ông thường đa mang lẽ mọn"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Đàn ông thường có nhiều vợ lẽ, ham chuyện trăng hoa."
+      ],
+      "id": "no-boc/dao-hoa/02",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mang lụy vì tình, đàn ông thường đa mang lẽ mọn"
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Đàn bà là người bất chính, hay lừa dối chồng."
+      ],
+      "id": "no-boc/dao-hoa/03",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "bướm hoa, đàn bà là người bất chính, hay lừa chồng."
+        ],
+        "pages": [
+          172
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Thuê người giúp việc lúc đầu khó, về sau dễ; dù vậy cũng chẳng được lâu bền."
+      ],
+      "correction": "Sách in \"cùng chẳng được lâu bền\"; hiểu là cũng chẳng được lâu bền.",
+      "id": "no-boc/tuan-triet/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Thuê mượn người giúp việc trước khó sau dễ, tuy vậy cùng chẳng được lâu"
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Phải luận ngược lại như các sao mờ ám xấu xa."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp",
+      "id": "no-boc/tuan-triet/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: nhận định mờ ám xấu xa."
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Phải luận ngược lại như các sao sáng sủa tốt đẹp."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa",
+      "id": "no-boc/tuan-triet/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: nhận định sáng sủa tốt đẹp."
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Kẻ dưới và bạn hữu đều là hạng gian quyệt, bất nhân, hay lừa đảo, hãm hại."
+      ],
+      "id": "no-boc/ta-huu-khong-kiep/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.12. Tả, Hữu, Không, Kiếp",
+          "Người giúp việc và bạn bè đều là hạng gian quyệt"
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Người giúp việc đắc lực, tận tâm và trung thành; bạn bè tốt."
+      ],
+      "condition_text": "gặp cả Tướng (chưa rõ Thiên Tướng hay Tướng Quân)",
+      "correction": "Sách in \"trung chành\", \"bạn bè rốt\"; hiểu là trung thành, bạn bè tốt. \"Tướng\" có thể là Thiên Tướng hoặc Tướng Quân (đi cùng Phục Binh ở mục 9.2.8, 9.2.9): máy chỉ lọc Tả, Hữu, Phục Binh hội hợp, phần Tướng để condition_text.",
+      "id": "no-boc/ta-huu-tuong-binh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "9.2.13. Tả, Hữu, Tướng, Binh",
+          "Người giúp việc đắc lực, tận tâm và trung chành, bạn bè rốt."
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Đàn ông có vợ lẽ giành quyền vợ cả."
+      ],
+      "id": "no-boc/dao-quyen/01",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.14. Đào, Quyền đồng cung",
+          "Đàn ông có vợ lẽ cướp quyền vợ cả"
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male",
+          "with_transformations": [
+            "HoaQuyen"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Đàn bà bất chính, hay lấn lướt chồng để làm điều xằng bậy."
+      ],
+      "id": "no-boc/dao-quyen/02",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.14. Đào, Quyền đồng cung",
+          "đàn bà bất chính hay lấn át chồng để"
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "with_transformations": [
+            "HoaQuyen"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Đàn ông có vợ lẽ, nhưng trong nhà không ghen tuông vì vợ cả, vợ lẽ hòa thuận."
+      ],
+      "condition_text": "Đào, Hồng, Cái, Tả, Hữu đồng cung",
+      "correction": "Sách đánh số mục này là 9.2.14, trùng số với mục Đào, Quyền ngay trên; theo thứ tự là 9.2.15 (mục sau là 9.2.16). Đào Hoa và Hoa Cái luôn cách nhau 5 cung (không đồng cung, không tam hợp, không xung chiếu), nên đọc đúng chữ \"Đào, Hồng, Cái, Tả, Hữu đồng cung\", hay cả năm sao cùng hội hợp, thì không lá số nào có (V13). Theo tiền lệ quan-loc/bo-sao/14 và TV-19 bo-sao/16, máy chỉ lọc Hồng, Tả, Hữu hội hợp cùng Đào hoặc Cái; lời gốc giữ ở condition_text, chờ chủ dự án quyết.",
+      "id": "no-boc/dao-hong-cai-ta-huu/01",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.14. Đào, Hồng, Cái, Tả, Hữu đồng cung",
+          "Đàn ông có vợ lẽ, nhưng trong nhà không có chuyện ghen tuông"
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male",
+          "meets_all": [
+            "HongLoan",
+            "TaPhu",
+            "HuuBat"
+          ],
+          "meets_any": [
+            "DaoHoa",
+            "HoaCai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Đàn bà ra ngoài được nhiều người khác giới quý mến, chiều chuộng và thường có ngoại tình."
+      ],
+      "condition_text": "Đào, Hồng, Cái, Tả, Hữu đồng cung",
+      "correction": "Sách đánh số mục này là 9.2.14, trùng số với mục Đào, Quyền ngay trên; theo thứ tự là 9.2.15 (mục sau là 9.2.16). Đào Hoa và Hoa Cái luôn cách nhau 5 cung (không đồng cung, không tam hợp, không xung chiếu), nên đọc đúng chữ \"Đào, Hồng, Cái, Tả, Hữu đồng cung\", hay cả năm sao cùng hội hợp, thì không lá số nào có (V13). Theo tiền lệ quan-loc/bo-sao/14 và TV-19 bo-sao/16, máy chỉ lọc Hồng, Tả, Hữu hội hợp cùng Đào hoặc Cái; lời gốc giữ ở condition_text, chờ chủ dự án quyết.",
+      "id": "no-boc/dao-hong-cai-ta-huu/02",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.14. Đào, Hồng, Cái, Tả, Hữu đồng cung",
+          "chiều chuộng và thường có ngoại tình."
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "HongLoan",
+            "TaPhu",
+            "HuuBat"
+          ],
+          "meets_any": [
+            "DaoHoa",
+            "HoaCai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "NoBoc"
+      },
+      "body": [
+        "Trong nhà có chuyện gian dâm."
+      ],
+      "id": "no-boc/thai-vuong-dao-hong/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "9.2.16. Thai, Vượng, Đào, Hồng",
+          "Trong nhà có sự gian dâm."
+        ],
+        "pages": [
+          173
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "Thai",
+            "DeVuong",
+            "DaoHoa",
+            "HongLoan"
+          ]
+        }
+      ]
+    }
+  ]
+}

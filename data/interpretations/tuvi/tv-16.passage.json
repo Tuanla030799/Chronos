@@ -1,0 +1,8262 @@
+{
+  "batch": "TV-16",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Ra ngoài lúc nào cũng có quý nhân giúp đỡ, mọi việc suôn sẻ; càng đi xa càng được như ý."
+      ],
+      "correction": "Sách in \"luôn tuôn\", hiểu là luôn luôn.",
+      "id": "thien-di/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ, Phủ đồng cung: ra ngoài luôn tuôn gặp",
+          "Tử đồng cung: ra ngoài luôn tuôn gặp qúy nhân phù trợ"
+        ],
+        "pages": [
+          174,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true,
+          "with_all": [
+            "TuVi"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Được nhiều người giúp đỡ, nhưng không trọn vẹn bằng khi Tử Vi ở Ngọ hay đồng cung với Thiên Phủ."
+      ],
+      "id": "thien-di/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: gặp nhiều người giúp đỡ"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuVi",
+          "ThienTuong",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Được nhiều người nể trọng, hay ra vào nơi quyền quý. Ra ngoài được hưởng nhiều tài lộc, nói ra được nhiều người tin theo."
+      ],
+      "id": "thien-di/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng hay Sát đồng cung: được nhiều người kính nể",
+          "Tử đồng cung: được nhiều người kính nể, hay lui tới những chỗ quyền"
+        ],
+        "pages": [
+          174,
+          177,
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Ra ngoài nhiều hơn ở nhà, có quý nhân giúp đỡ, nhưng về già thường mất ở nơi xa quê."
+      ],
+      "id": "thien-di/tu-vi/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: ra ngoài nhiều hơn là ở nhà"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Rời nhà hay gặp chuyện phiền lòng, may ít rủi nhiều, thường bị kẻ tiểu nhân rình rập quấy phá. Về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/tu-vi/05",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: rời khỏi nhà hay gặp những sự phiền lòng",
+          "Tử đồng cung: rời khỏi nhà hay gặp những sự phiền lòng"
+        ],
+        "pages": [
+          174,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Lúc nào cũng gặp quý nhân, được nhiều người kính trọng, mọi việc suôn sẻ."
+      ],
+      "correction": "Sách in \"gập\", hiểu là gặp.",
+      "id": "thien-di/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: luôn luôn gập qúy nhân"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Ra ngoài có lợi hơn ở nhà, tiền bạc dễ kiếm, cũng nhiều quý nhân giúp đỡ."
+      ],
+      "id": "thien-di/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: ra ngoài lợi ích hơn ở nhà, tài lộc dễ kiếm",
+          "Liêm đồng cung: ra ngoài lợi ích hơn ở nhà"
+        ],
+        "pages": [
+          174,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Được nhiều người nể vì, hay ra vào nơi sang trọng. Sẵn có oai phong nên kẻ tiểu nhân vừa trông thấy đã sợ phục."
+      ],
+      "id": "thien-di/liem-trinh/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: được nhiều người vị nể",
+          "Liêm đồng cung: được nhiều người vị nể, hay lui tới những chỗ sang"
+        ],
+        "pages": [
+          174,
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Xa nhà không được lợi gì, may ít rủi nhiều; về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/liem-trinh/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: xa nhà không được lợi ích"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn dọc đường; không nên lui tới chỗ có nhiều súng ống, gươm đao. Khi mất, thi hài phải tạm quàn một nơi chờ người thân đến đưa về."
+      ],
+      "id": "thien-di/liem-trinh/05",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: hay gặp tai nạn ở giữa nơi đường xá",
+          "Liêm đồng cung: hay gặp tai nạn ở giữa nơi đường xá"
+        ],
+        "pages": [
+          174,
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Ra ngoài tất bất lợi, hay gặp tai ương bất ngờ, nhất là tù ngục, kiện tụng. Ít gặp quý nhân, còn kẻ tiểu nhân, kẻ ác lúc nào cũng chực hại."
+      ],
+      "correction": "Sách in \"bít lợi\", hiểu là bất lợi.",
+      "id": "thien-di/liem-trinh/06",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: ra ngoài tất bít lợi",
+          "Liêm đồng cung: ra ngoài tất bít lợi"
+        ],
+        "pages": [
+          174,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Càng xa nhà mọi việc càng suôn sẻ; không nên ở lâu một chỗ; hay gặp quý nhân giúp đỡ."
+      ],
+      "id": "thien-di/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: càng xa nhà mọi sự càng được hành thông"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Hay phải xa nhà mà lại hay gặp chuyện phiền lòng. Về sau chết ở xa quê."
+      ],
+      "id": "thien-di/thien-dong/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: hay phải xa nhà nhưng hay gặp"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Sống trôi nổi nay đây mai đó, chết ở xa nhà."
+      ],
+      "id": "thien-di/thien-dong/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: nay đây mai đó, chết ở xa nhà"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Ra ngoài hay gặp tai họa, nhất là thị phi, kiện tụng."
+      ],
+      "id": "thien-di/thien-dong/04",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn Tuất: ra ngoài hay mắc tai họa"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong",
+          "ThaiAm",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Lúc nào cũng có quý nhân giúp đỡ, được nhiều người kính trọng, buôn bán phát tài."
+      ],
+      "correction": "Ở mục Thái Âm (tr. 176) sách chép lại cả vế \"Lương đồng cung\", nhưng Thái Âm và Thiên Lương không bao giờ đồng cung (Thái Âm luôn cách Thiên Lương 4 cung theo cách an Chính Tinh), nên vế này chỉ thuộc Thiên Đồng như ở tr. 175 và tr. 177. Sách in \"luôn luồn\" ở tr. 177, hiểu là luôn luôn.",
+      "id": "thien-di/thien-dong/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Tý, Lương đồng cung: luôn luôn gặp qúy nhân",
+          "Đồng đồng cung tại Tý, Lương đồng cung: luôn luôn gặp qúy nhân",
+          "Đồng đồng cung: luôn luồn gặp qúy nhân phù"
+        ],
+        "pages": [
+          175,
+          176,
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Hay gặp cạnh tranh, ghen ghét; ra ngoài rất bất lợi."
+      ],
+      "id": "thien-di/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: hay gặp sự cạnh tranh và ghen ghét",
+          "Đồng đồng cung tại Ngọ: hay gặp sự cạnh tranh và ghen ghét"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Hay vướng thị phi, việc quan, nhưng lại hay được gần nơi quyền quý. Lời nói được nhiều người tin, dù đôi khi nói quá hoặc sai sự thật. Lúc mất thường ở xa nhà."
+      ],
+      "id": "thien-di/thien-dong/07",
+      "sensitivity": [
+        "Legal",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: hay mắc thị phi, quan sự"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Buôn bán phát tài; đi xa có lợi hơn ở nhà."
+      ],
+      "id": "thien-di/vu-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: buôn bán phát tài"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Có quý nhân giúp đỡ, được nhiều người nể trọng, tiền bạc thịnh vượng."
+      ],
+      "id": "thien-di/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ, hay Tướng đồng cung: gặp qúy nhân phù trợ",
+          "Vũ đồng cung: gặp qúy nhân phù trợ, được nhiều người kính nể, tài lộc"
+        ],
+        "pages": [
+          175,
+          176,
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Buôn bán phát tài, lúc đầu khó về sau dễ, thường gặp cạnh tranh gay gắt."
+      ],
+      "id": "thien-di/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: buôn bán phát tài, trước khó sau dễ",
+          "Vũ đồng cung: buôn bán phát tài, trước khó sau dễ"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Buôn bán cũng có lợi, nhưng ra ngoài hay gặp chuyện phiền lòng, đôi khi còn gặp tai nạn đáng lo ngại."
+      ],
+      "correction": "Sách in \"ta ngoài\", hiểu là ra ngoài.",
+      "id": "thien-di/vu-khuc/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: buôn bán cũng được lợi ích, ta ngoài"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Có oai phong, nói ra được nhiều người tin phục, nhưng hay gặp tai ương nguy hiểm. Về sau chết ở xa nhà."
+      ],
+      "correction": "Sách in \"chiết\" ở tr. 175 và tr. 178, hiểu là chết.",
+      "id": "thien-di/vu-khuc/05",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: có oai phong, lời nói được nhiều người tin phục",
+          "Vũ đồng cung: có oai phong, lời nói được nhiều người tin phục"
+        ],
+        "pages": [
+          175,
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Có quý nhân giúp đỡ, ra ngoài được nhiều người kính trọng, tiền bạc dồi dào."
+      ],
+      "correction": "Mục Thiên Lương (tr. 177) in lại nguyên dòng này của Thái Dương. Hiểu theo nghĩa đen là Thiên Lương tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ thì trái với dòng \"Đơn thủ tại Tỵ, Hợi: nay đây mai đó, chết ở xa nhà\" ngay trên cùng mục, và Thái Dương không có dòng nào khác cho các vị trí này; nên coi là dòng của Thái Dương in lặp, không nạp thành đoạn riêng của Thiên Lương.",
+      "id": "thien-di/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ: gặp qúy nhân phù trợ"
+        ],
+        "pages": [
+          175,
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Mao",
+            "Thin",
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn, nhất là sông nước; bị nhiều người khinh ghét; về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/thai-duong/02",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Thân, Dậu, Tuất, Hợi: hay gặp tai nạn"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than",
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Được nhiều người mến phục, kính trọng."
+      ],
+      "id": "thien-di/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: nhiều người mến phục kính trọng"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Ra ngoài có lợi hơn ở nhà, hay gần nơi quyền quý, được nhiều người tôn phục. Lúc mất tuy ở xa nhà nhưng được chôn cất chu đáo."
+      ],
+      "id": "thien-di/thai-duong/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: ra ngoài lợi ích hơn ở nhà, hay gần nơi quyền qúy",
+          "Nhật đồng cung: ra ngoài lợi ích hơn ở nhà, hay gần nơi quyền qúy"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhật, Nguyệt đồng cung mà gặp Tuần, Triệt án ngữ hoặc có Hóa Kỵ đồng cung thì càng rực rỡ."
+      ],
+      "correction": "Sách in \"Tuần, Tuần án ngữ\" ở tr. 175 và tr. 176, hiểu là Tuần, Triệt án ngữ.",
+      "id": "thien-di/thai-duong/05",
+      "source_ref": {
+        "keywords": [
+          "Nếu gặp Tuần, Tuần án ngữ hay Kỵ đồng cung lại"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either",
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        },
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Ra ngoài mọi việc suôn sẻ, còn ở nhà lại hay vướng thị phi; lúc nào cũng có quý nhân giúp đỡ."
+      ],
+      "id": "thien-di/thien-co/01",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: ra ngoài mọi sự được hành thông"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Xa nhà thì không được yên thân."
+      ],
+      "id": "thien-di/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: xa nhà không được yên thân"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Càng xa nhà càng nhiều may mắn, hay được ra vào nơi quyền quý, được nhiều người tôn kính, nể vì."
+      ],
+      "id": "thien-di/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: càng xa nhà càng gặp nhiều may mắn",
+          "Cơ đồng cung: càng xa nhà càng gặp nhiều may mắn"
+        ],
+        "pages": [
+          175,
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Ra ngoài có tài lộc, hay gặp quý nhân, buôn bán phát tài, nhưng thường vướng thị phi, khẩu thiệt."
+      ],
+      "id": "thien-di/thien-co/04",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: ra ngoài tuy có tài lộc, hay gặp qúy nhân"
+        ],
+        "pages": [
+          175
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Buôn bán phát tài, được nhiều người quý mến."
+      ],
+      "id": "thien-di/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: buôn bán phát tài",
+          "Cơ đồng cung tại Thân: buôn bán phát tài"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Chớ đi xa lâu ngày; làm ăn buôn bán có lời nhưng hay bị người đời đố kỵ, ghen ghét."
+      ],
+      "id": "thien-di/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: không nên xa nhà lâu",
+          "Cơ đồng cung tại Dần: không nên xa nhà lâu"
+        ],
+        "pages": [
+          175,
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Gặp quý nhân, có tiền bạc."
+      ],
+      "id": "thien-di/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: gặp qúy nhân, có tài lộc"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Xa nhà có lợi và yên thân hơn ở nhà, buôn bán phát tài."
+      ],
+      "id": "thien-di/thien-phu/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: xa nhà được lợi ích"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Được nhiều người kính trọng, dễ kiếm tiền."
+      ],
+      "correction": "Sách in \"lại Dậu\", hiểu là tại Dậu.",
+      "id": "thien-di/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Dậu, Tuất, Hợi: được nhiều người kính trọng"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Ra ngoài hay gặp tai ương vì những chuyện phiền lòng, bị nhiều người ghét."
+      ],
+      "id": "thien-di/thai-am/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: ra ngoài hay gặp tai ương"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Dễ kiếm tiền, hay gặp quý nhân."
+      ],
+      "id": "thien-di/tham-lang/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: dễ kiếm tiền, hay gặp qúy nhân"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Ra ngoài rất bất lợi, hay gặp chuyện phiền lòng; về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/tham-lang/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: ra ngoài rất bất lợi"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn; xa nhà rất bất lợi."
+      ],
+      "id": "thien-di/tham-lang/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hay mắc tai nạn, xa nhà rất bất lợi"
+        ],
+        "pages": [
+          176
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Ra ngoài được nhiều người nể vì, tiền bạc dễ kiếm, nói ra được nhiều người tin phục."
+      ],
+      "correction": "Sách in \"tài lộc di kiếm\", hiểu là tài lộc dễ kiếm.",
+      "id": "thien-di/cu-mon/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ, Hợi: ra ngoài được nhiều người vị nể"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Hay vướng thị phi, kiện tụng và tai nạn nguy hiểm; về sau chết ở xa nhà."
+      ],
+      "correction": "Sách in \"thị phì\", hiểu là thị phi.",
+      "id": "thien-di/cu-mon/02",
+      "sensitivity": [
+        "Legal",
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Tỵ: hay mắc thị phì kiện tụng"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Được nhiều người kính trọng, tiền bạc dễ kiếm."
+      ],
+      "id": "thien-di/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mùi: được nhiều người kính trọng"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Xa nhà không được lợi, dù vậy vẫn được nhiều người quý mến."
+      ],
+      "id": "thien-di/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: xa nhà không được lợi ích"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Được nhiều người kính trọng, yêu mến, hay ra vào nơi quyền quý."
+      ],
+      "id": "thien-di/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: được nhiều người kính trọng, yêu mến"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Gặp quý nhân."
+      ],
+      "id": "thien-di/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: gặp qúy nhân"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Sống trôi nổi nay đây mai đó, chết ở xa nhà."
+      ],
+      "id": "thien-di/thien-luong/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: nay đây mai đó, chết ở xa nhà"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Hay gặp quý nhân; có oai nên được nhiều người nể, nói ra được nhiều người tin phục, hay ra vào nơi có uy quyền."
+      ],
+      "id": "thien-di/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hay gặp qúy nhân, vì có oai"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Được nhiều người nể sợ và tin phục, thường gần nơi quyền quý. Tuy vậy chớ ra ngoài nhiều: điều may thường kèm điều rủi, hay gặp tai nạn; về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/that-sat/02",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: được nhiều nể sợ và tin phục"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Ra ngoài rất bất lợi. Lúc mất không được ở gần nhà."
+      ],
+      "id": "thien-di/that-sat/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: ra ngoài rất bất lợi"
+        ],
+        "pages": [
+          177
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Được nhiều người nể sợ, tiền bạc dễ kiếm, nhưng đôi khi gặp tai nạn nguy hiểm."
+      ],
+      "id": "thien-di/pha-quan/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: nhiều người nể sợ, tài lộc dễ kiếm"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn, nhất là xe cộ và thú dữ; hay đụng phải kẻ rình rập ám hại. Càng hay xoay xở tiền bạc càng dễ gặp tai họa. Về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/pha-quan/02",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hay mắc tai nạn nhất là về xe cộ"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "May đi liền với rủi: người kính trọng có, kẻ ghen ghét muốn hại cũng nhiều. Tai ương đầy rẫy mà vẫn thích sống nay đây mai đó. Về sau chết ở xa nhà."
+      ],
+      "correction": "Sách in \"rùi\", hiểu là rủi.",
+      "id": "thien-di/pha-quan/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: may đi liền với rùi"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn; về sau chết ở xa nhà."
+      ],
+      "id": "thien-di/kinh-da/01",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay mắc tai nạn. Sau này chết ở xa nhà"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Dễ kiếm tiền; tuy hay gặp quý nhân nhưng vẫn bị nhiều người khinh rẻ."
+      ],
+      "id": "thien-di/kinh-da/02",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: dễ kiếm tiền, tuy hay gặp qúy nhân"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Tai họa đầy rẫy, hay vướng thị phi, khó kiếm tiền, lúc nào cũng gặp chuyện phiền lòng."
+      ],
+      "id": "thien-di/kinh-da/03",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: hung họa đầy rẫy, hay mắc thị phi"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Ra ngoài không được yên ổn."
+      ],
+      "id": "thien-di/hoa-linh/01",
+      "source_ref": {
+        "keywords": [
+          "Ra ngoài chẳng được yên chân"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Hay bị lừa gạt, mưu hại; lúc mất không ở gần nhà."
+      ],
+      "id": "thien-di/khong-kiep/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay bị lừa đảo, mưu hại, lúc chết không ở gần nhà"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "VanXuong",
+          "VanKhuc",
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Gặp nhiều quý nhân, thường được gần những người quyền cao chức trọng."
+      ],
+      "correction": "Sách in \"qúy nhàn\", \"quyến cao\", hiểu là quý nhân, quyền cao. Tiêu đề 10.18 kể bốn sao cùng loại Văn tinh (Xương, Khúc, Khôi, Việt) có chung một lời, như danh sách sao; nạp là một trong bốn sao tọa thủ, không phải phải hội đủ cả bốn.",
+      "id": "thien-di/van-tinh/01",
+      "source_ref": {
+        "keywords": [
+          "Gặp nhiều qúy nhàn. Thường được gần những bậc quyến cao"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Được nhiều người giúp đỡ."
+      ],
+      "id": "thien-di/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Gặp nhiều người giúp đỡ"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Dễ kiếm tiền, lúc nào cũng gặp may, buôn bán phát tài."
+      ],
+      "id": "thien-di/loc/01",
+      "source_ref": {
+        "keywords": [
+          "Dễ kiếm tiền, luôn luôn gặp may mắn, buôn bán phát tài"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "transformations": [
+          "HoaKhoa",
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Hay được ra vào nơi quyền quý; ra ngoài có danh giá, được nhiều người kính trọng."
+      ],
+      "correction": "Sách in \"chi qui quyền\", hiểu là chỗ quyền quý như các dòng khác của chương (\"lui tới những chỗ quyền qúy\").",
+      "id": "thien-di/khoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Hay được lui tới chi qui quyền, ra ngoài có danh giá"
+        ],
+        "pages": [
+          178
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Hay vướng thị phi và gặp nhiều chuyện phiền lòng."
+      ],
+      "correction": "Sách in \"thi phi\", hiểu là thị phi. Loại trường hợp Nhật, Nguyệt đồng cung có Kỵ, vì mục 10.5 và 10.8 nói khi đó càng rực rỡ.",
+      "id": "thien-di/hoa-ky/01",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay mắc thi phi và gặp nhiều sự phiền lòng"
+        ],
+        "pages": [
+          178,
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "ThaiDuong"
+          ]
+        },
+        {
+          "not_with": [
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Hay phải xa nhà, sống nay đây mai đó, nhưng được nhiều người quý mến."
+      ],
+      "id": "thien-di/song-hao/01",
+      "source_ref": {
+        "keywords": [
+          "Hay phải xa nhà, nay đây mai đó nhưng được nhiều người mến chuộng"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Sống nay đây mai đó, được nhiều người quý mến."
+      ],
+      "id": "thien-di/thien-ma/01",
+      "source_ref": {
+        "keywords": [
+          "Nay đây mai đó, được nhiều người mến chuộng"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Hay gặp tai nạn xe cộ, gươm đao."
+      ],
+      "id": "thien-di/thien-hinh/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay mắc tai nạn xe cộ gươm đao"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Gặp nhau ở nơi xa rồi nên duyên vợ chồng."
+      ],
+      "id": "thien-di/tam-minh/01",
+      "source_ref": {
+        "keywords": [
+          "Gặp nhau ở nơi đường xa mà nên duyên vợ chồng"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "ThienHy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Đàn ông ra ngoài có gái theo."
+      ],
+      "id": "thien-di/tam-minh/02",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "đàn ông ra ngoài có gái theo"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male",
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "ThienHy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Đàn bà ra ngoài được nhiều người thầm thương trộm nhớ."
+      ],
+      "correction": "Sách in \"thâm yêu\", hiểu là thầm yêu.",
+      "id": "thien-di/tam-minh/03",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "đàn bà ra ngoài được nhiều người thâm yêu vụng nhớ"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "ThienHy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Ra ngoài hay gặp nhiều chuyện phiền lòng; lúc mất ở xa nhà."
+      ],
+      "id": "thien-di/tuan-triet/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Ra ngoài hay gặp nhiều sự phiền lòng, lúc chết ở xa nhà"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThamLang",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Có Tuần, Triệt án ngữ: dễ gặp tai nạn vì xe cộ, dao hoặc súng; không thì cũng bị đánh đập, giam cầm."
+      ],
+      "id": "thien-di/tuan-triet/02",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham, Phá: hay mắc tai nạn xe cộ, dao, súng"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "TuongQuan",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Có Tuần, Triệt án ngữ: chết vì tai nạn xe cộ hoặc bị giết."
+      ],
+      "id": "thien-di/tuan-triet/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng Quân, Thiên Tướng: chết vì tai nạn xe cộ hay bị giết"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Có Tuần, Triệt án ngữ: cả đời long đong, vất vả, trôi nổi nhiều nơi, khó tránh tai nạn xe cộ; chân tay hay đau đớn vì thương tích."
+      ],
+      "id": "thien-di/tuan-triet/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mã: suốt đời long đong vất vả, nay đây mai đó"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Có nhiều kẻ thù nhắm hãm hại."
+      ],
+      "correction": "Sách in \"ham hại\", hiểu là hãm hại.",
+      "id": "thien-di/bo-sao/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều kẻ thù nhắm ham hại"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Buôn bán nay đây mai đó, rất phát tài."
+      ],
+      "id": "thien-di/bo-sao/02",
+      "source_ref": {
+        "keywords": [
+          "Buôn bán nay đây mai đó, rất phát tài"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Vướng thị phi, kiện cáo liên miên."
+      ],
+      "id": "thien-di/bo-sao/03",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc thị phi, kiện cáo liên miên"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiTue",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Gặp tai nạn gươm đao hoặc súng đạn."
+      ],
+      "id": "thien-di/bo-sao/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tai nạn về gươm đao hay súng đạn"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "DiaKiep",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Có kẻ nhắm lừa gạt hoặc mưu hại."
+      ],
+      "id": "thien-di/bo-sao/05",
+      "source_ref": {
+        "keywords": [
+          "Có kẻ nhắm lừa đảo hay mưu hại"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Duyên tình rắc rối, hay bị lừa vì tình."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ Thiên Tướng hay Tướng Quân)",
+      "id": "thien-di/bo-sao/06",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tơ duyên rắc rối, hay mắc lừa vì tình"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh",
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Đàn ông ra ngoài hay sa vào lưới tình; vì mê đắm sắc dục mà hại đến thân."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ Thiên Tướng hay Tướng Quân)",
+      "id": "thien-di/bo-sao/07",
+      "section": "NamMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đàn ông ra ngoài hay vướng vào lưới tình"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male",
+          "meets_all": [
+            "Thai",
+            "DeVuong",
+            "PhucBinh",
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Đàn bà ra ngoài khó giữ trọn danh tiết."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ Thiên Tướng hay Tướng Quân)",
+      "id": "thien-di/bo-sao/08",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đàn bà ra ngoài khó giữ được toàn danh tiết"
+        ],
+        "pages": [
+          179
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "Thai",
+            "DeVuong",
+            "PhucBinh",
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "ThienDi"
+      },
+      "body": [
+        "Gặp tai nạn xe cộ hoặc bị ám sát."
+      ],
+      "id": "thien-di/bo-sao/09",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc tai nạn xe cộ hay bị ám sát"
+        ],
+        "pages": [
+          180
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LuuHa",
+            "KiepSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cứu giải được khá nhiều bệnh tật, tai ương."
+      ],
+      "correction": "Tật Ách không có mục riêng cho Thiên Phủ; sách nói Thiên Phủ trong thân bài mục 11.1.1, cùng Tử Vi (đơn thủ tại Tý, Ngọ; Phủ hay Sát đồng cung) và Thiên Lương. \"Sáng sủa tốt đẹp\" hiểu là áp cho cả Thiên Phủ và Thiên Lương đứng trước nó.",
+      "id": "tat-ach/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung, Sát đồng cung, Thiên Phủ, Thiên Lương sáng sủa tốt",
+          "cứu giải khá nhiều bệnh tật, tai ương"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true,
+          "with_all": [
+            "TuVi"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        },
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "not_with": [
+            "TuVi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Sức cứu giải khá mạnh, làm giảm bớt nguy hiểm: gặp nạn có người cứu, đau ốm gặp thầy gặp thuốc."
+      ],
+      "id": "tat-ach/hoa-khoa/01",
+      "source_ref": {
+        "keywords": [
+          "Ảnh hướng cứu giải khá mạnh mẽ, giảm bớt sự nguy hiểm"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienGiai",
+          "DiaGiai",
+          "GiaiThan"
+        ]
+      },
+      "body": [
+        "Giải trừ bệnh tật, tai ương."
+      ],
+      "correction": "Tiêu đề 11.1.3 kể ba sao giải (Thiên Giải, Địa Giải, Giải Thần) trong danh mục \"những sao cứu giải\", mỗi sao một tác dụng như nhau; nạp là một trong ba sao tọa thủ, không phải phải hội đủ cả ba.",
+      "id": "tat-ach/giai-tinh/01",
+      "source_ref": {
+        "keywords": [
+          "Giải trừ bệnh tật tai ương"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch"
+      },
+      "body": [
+        "Cứu giải như Hóa Khoa: giảm bớt nguy hiểm, gặp nạn có người cứu, đau ốm gặp thầy gặp thuốc."
+      ],
+      "condition_text": "không bị nhiều Sát tinh xâm phạm",
+      "correction": "Tiêu đề 11.1.4 kể Lộc Tồn, Hóa Lộc, Bác Sĩ trong danh mục \"những sao cứu giải\" và câu sau nói từng sao mất sức cứu giải khi gặp nhiều Sát tinh; nạp là một trong ba sao (Hóa) tọa thủ.",
+      "id": "tat-ach/loc/01",
+      "source_ref": {
+        "keywords": [
+          "Cũng như Hóa Khoa nhưng nếu Lộc Tồn, Hóa Lộc, Bác Sĩ"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "with_all": [
+            "BacSy"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch"
+      },
+      "body": [
+        "Mất hẳn sức cứu giải, đôi khi còn trở thành sao gây họa."
+      ],
+      "condition_text": "gặp nhiều Sát tinh xâm phạm",
+      "id": "tat-ach/loc/02",
+      "source_ref": {
+        "keywords": [
+          "sẽ mất hẳn ảnh hưởng cứu giải và đôi khi lại thành ra những sao"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ],
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "meets_any": [
+            "@LucSat"
+          ],
+          "with_all": [
+            "BacSy"
+          ]
+        },
+        {
+          "meets_any": [
+            "@LucSat"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DeVuong"
+        ]
+      },
+      "body": [
+        "Ít bệnh tật."
+      ],
+      "id": "tat-ach/de-vuong/01",
+      "source_ref": {
+        "keywords": [
+          "11.1.5. Đế Vượng"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Ít bệnh tật."
+      ],
+      "condition_text": "không gặp nhiều sao tác họa hội hợp",
+      "id": "tat-ach/truong-sinh/01",
+      "source_ref": {
+        "keywords": [
+          "Ít bệnh tật nhưng nếu Tràng Sinh"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Chắc chắn đau ốm lâu khỏi."
+      ],
+      "condition_text": "gặp nhiều sao tác họa hội hợp",
+      "id": "tat-ach/truong-sinh/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "gặp nhiều sao tác họa hội hợp, chắc"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThieuDuong",
+          "ThieuAm",
+          "ThienDuc",
+          "PhucDuc",
+          "ThanhLong"
+        ]
+      },
+      "body": [
+        "Cứu giải những bệnh tật, tai ương nhỏ."
+      ],
+      "correction": "Tiêu đề 11.1.7 kể năm sao trong danh mục \"những sao cứu giải\" có chung một tác dụng nhỏ; nạp là một trong năm sao tọa thủ, không phải phải hội đủ cả năm. Phúc Đức ở đây là sao Phúc Đức, không phải cung.",
+      "id": "tat-ach/phuc-tinh/01",
+      "source_ref": {
+        "keywords": [
+          "Cứu giải những bệnh tật hay tai ương nhỏ"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Qua khỏi bệnh nạn nhanh chóng, bất ngờ."
+      ],
+      "condition_text": "gặp nhiều sao cứu giải",
+      "id": "tat-ach/hoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao cứu giải: qua khỏi bệnh nạn một cách nhanh chóng"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Rất nguy nan."
+      ],
+      "condition_text": "gặp nhiều sao tác họa",
+      "id": "tat-ach/hoa-quyen/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "11.1.8. Hóa Quyền",
+          "Nhiều sao tác họa: rất nguy nan"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Lúc lâm nguy có người giúp đỡ."
+      ],
+      "condition_text": "gặp nhiều sao cứu giải",
+      "id": "tat-ach/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao cứu giải: lúc lâm nguy gặp người trợ giúp"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Rất nguy nan."
+      ],
+      "condition_text": "gặp nhiều sao tác họa",
+      "id": "tat-ach/ta-huu/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "11.1.9. Tả, Hữu",
+          "Nhiều sao tác họa: rất nguy nan"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch"
+      },
+      "body": [
+        "Suốt đời khỏe mạnh, không mấy đáng lo về bệnh nạn."
+      ],
+      "id": "tat-ach/tuan-triet/01",
+      "source_ref": {
+        "keywords": [
+          "Suốt đời mạnh khỏe, không đáng lo ngại nhiều về bệnh nạn"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Có tì vết ở chân tay hoặc ở lưng."
+      ],
+      "id": "tat-ach/liem-trinh/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Có tỳ vết ở chân tay hay ở lưng"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Mắt kém, hay vướng tù tội."
+      ],
+      "id": "tat-ach/liem-trinh/02",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: mắt kém, hay mắc tù tội"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Tự tử."
+      ],
+      "correction": "\"Tướng\" đồng cung ở đây là Tướng Quân: cung đã có Liêm Trinh, Tham Lang thì không còn chỗ cho Chính Tinh thứ ba là Thiên Tướng.",
+      "id": "tat-ach/liem-trinh/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung tại Tỵ, Tướng, Hỏa đồng cung: tự tử"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang",
+            "TuongQuan",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Chết một cách thê thảm."
+      ],
+      "id": "tat-ach/liem-trinh/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham, Không, Kiếp đồng cung: chết một cách thê thảm"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Mắt rất kém; gặp tai nạn xe cộ hoặc đao thương."
+      ],
+      "id": "tat-ach/liem-trinh/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: mắt rất kém, mắc tai nạn xe cộ hay đao thương"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Chết bất đắc kỳ tử, do tai nạn hoặc do ngộ độc."
+      ],
+      "id": "tat-ach/liem-trinh/06",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung tại Dần, Thân: chết bất đắc kỳ tử"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Đau bụng; bộ máy tiêu hóa không được lành mạnh."
+      ],
+      "id": "tat-ach/thien-dong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đau bụng, bộ máy tiêu hóa không được lành mạnh"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh tâm khí."
+      ],
+      "id": "tat-ach/thien-dong/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: bệnh tâm khí"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh huyết khí."
+      ],
+      "id": "tat-ach/thien-dong/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: bệnh huyết khí"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Đau dạ dày hoặc ruột gan."
+      ],
+      "id": "tat-ach/thien-dong/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung: đau dạ dày hay ruột gan"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phạm phòng."
+      ],
+      "condition_text": "gặp thêm Thai, Mộc",
+      "correction": "\"Thai\" và \"Mộc\" nếu là sao Thai và Mộc Dục của vòng Trường Sinh thì không bao giờ cùng hội hợp một cung (hai sao cách nhau 3 cung), nên để \"gặp thêm Thai, Mộc\" ở phần điều kiện máy không xét.",
+      "id": "tat-ach/thien-dong/05",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ, Hình, Thai, Mộc: bệnh phạm phòng"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ngoài da; chân tay có tì vết."
+      ],
+      "id": "tat-ach/vu-khuc/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh ngoài da, chân tay có tỳ vết"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Có bệnh kín."
+      ],
+      "id": "tat-ach/vu-khuc/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: có ám tật"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Có nhiều nốt ruồi, hay mắc bệnh liên quan đến lông tóc."
+      ],
+      "id": "tat-ach/vu-khuc/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham, Xương, Khúc đồng cung: nhiều nốt ruồi"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang",
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Bộ máy tiêu hóa hư hại, hay bị bệnh trĩ; không thì chân tay cũng mang thương tích."
+      ],
+      "id": "tat-ach/vu-khuc/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: bệnh ở bộ máy tiêu hóa",
+          "Vũ đồng cung: bộ máy tiêu hóa bị hư hại, thường mắc bệnh trĩ"
+        ],
+        "pages": [
+          182,
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Có nốt ruồi đỏ."
+      ],
+      "id": "tat-ach/vu-khuc/05",
+      "source_ref": {
+        "keywords": [
+          "Long đồng cung: có nốt ruồi đỏ"
+        ],
+        "pages": [
+          182
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Mắc bệnh tê thấp hoặc phù chân tay."
+      ],
+      "correction": "Sách in \"tè thấp\", hiểu là tê thấp.",
+      "id": "tat-ach/vu-khuc/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu đồng cung: bệnh tè thấp hay phù chân tay"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Bị câm."
+      ],
+      "id": "tat-ach/vu-khuc/07",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu, Việt, Toái: câm"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu",
+            "ThienViet",
+            "PhaToai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Căng mạch máu, hay nhức đầu."
+      ],
+      "id": "tat-ach/thai-duong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Căng mạch máu, hay nhức đầu"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Bệnh nạn liên miên."
+      ],
+      "id": "tat-ach/thai-duong/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: bệnh nạn liên miên"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Đau mắt, mắt rất kém."
+      ],
+      "id": "tat-ach/thai-duong/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa, Tuần, Triệt án ngữ: đau mắt, mắt rất kém"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Đau mắt, có tật ở mắt."
+      ],
+      "id": "tat-ach/thai-duong/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa, Riêu, Đà, Kỵ: đau mắt,có tật ở mắt"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Mieu",
+            "Vuong",
+            "Dac"
+          ],
+          "meets_all": [
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Nếu không mù mắt hay què chân thì cũng đau mắt nặng và khản tiếng."
+      ],
+      "id": "tat-ach/thai-duong/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám, Riêu, Đà, Kỵ: nếu không mù mắt, què chân"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Gặp nạn sông nước."
+      ],
+      "correction": "Sách in \"mác nạn\", hiểu là mắc nạn.",
+      "id": "tat-ach/thai-duong/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thanh Long đồng cung: mác nạn sông nước"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThanhLong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Bị vật kim loại sắc nhọn đâm vào mắt."
+      ],
+      "correction": "Mục Thái Dương và mục Thái Âm (cùng tr. 183) in cùng một lời cho \"Hình đồng cung\"; gộp làm một đoạn hai neo để không hiện hai lần khi Nhật, Nguyệt đồng cung.",
+      "id": "tat-ach/thai-duong/07",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình đồng cung: vật kim khí sắc nhọn đâm vào mắt"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ngoài da hoặc tê thấp."
+      ],
+      "id": "tat-ach/thien-co/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh ngoài da hay bệnh tê thấp"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mắc bệnh khí huyết."
+      ],
+      "correction": "Sách in \"khi huyết\", hiểu là khí huyết.",
+      "id": "tat-ach/thien-co/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: bệnh khi huyết"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở hạ bộ."
+      ],
+      "id": "tat-ach/thien-co/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: bệnh ở hạ bộ"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Có nhiều mụn nhọt."
+      ],
+      "id": "tat-ach/thien-co/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: có nhiều mụn nhọt"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Chân tay yếu gân."
+      ],
+      "id": "tat-ach/thien-co/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà: chân tay yếu gân"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phong đàm, ho ra máu."
+      ],
+      "id": "tat-ach/thien-co/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Khốc, Hư: bệnh phong đàm, ho ra máu"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Gặp bệnh tật hoặc tai nạn bất ngờ, rất đáng lo ngại."
+      ],
+      "id": "tat-ach/thien-co/07",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Không, Kiếp: mắc bệnh tật hay tai nạn bất ngờ"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mắc bệnh do ma làm."
+      ],
+      "id": "tat-ach/thien-co/08",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh: bệnh ma làm"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Bị cây cối đè vào chân tay, mang thương tích."
+      ],
+      "id": "tat-ach/thien-co/09",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ: cây cối đè phải chân tay, bị thương"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Đau bụng."
+      ],
+      "id": "tat-ach/thai-am/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "11.2.6. Thái Âm"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Đau phổi."
+      ],
+      "id": "tat-ach/thai-am/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám: đau phổi"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Mắt kém, thường bị lòa hoặc thông manh."
+      ],
+      "correction": "Sách in \"Ky\", \"mất kém\", hiểu là Kỵ, mắt kém.",
+      "id": "tat-ach/thai-am/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám, Riêu, Đà, Ky: mất kém, thường bị lòa hay thông manh"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ],
+          "meets_all": [
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở chân."
+      ],
+      "id": "tat-ach/tham-lang/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: bệnh ở chân"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn xe cộ hoặc bị súc vật cắn, đá; nếu không thì cũng vì ăn uống mà sinh bệnh khó chữa."
+      ],
+      "id": "tat-ach/tham-lang/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đà đồng cung tại Dần, Thân: mắc tai nạn xe cộ"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "with_all": [
+            "ThamLang",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bị thú dữ cắn, đá; nếu không thì cũng gặp tai nạn xe cộ rất nguy hiểm."
+      ],
+      "correction": "Sách in \"mác tai nạn\", hiểu là mắc tai nạn.",
+      "id": "tat-ach/tham-lang/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: thú dữ cắn đá"
+        ],
+        "pages": [
+          183
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bị thú dữ cắn chết."
+      ],
+      "id": "tat-ach/tham-lang/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ đồng cung tại Tuất: thú dữ cắn chết"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Tuat"
+          ],
+          "with_all": [
+            "ThamLang",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Vì chơi bời mà mắc bệnh."
+      ],
+      "id": "tat-ach/tham-lang/05",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: chơi bời mà mắc bệnh"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn sông nước."
+      ],
+      "correction": "Sách in \"sòng nước\", hiểu là sông nước.",
+      "id": "tat-ach/tham-lang/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung: tai nạn sòng nước"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Vướng kiện cáo, tù tội."
+      ],
+      "condition_text": "gặp Lương",
+      "correction": "Sách in \"mác\", hiểu là mắc. \"Lương\" không thể là Thiên Lương hội hợp: theo cách an Chính Tinh, Thiên Lương luôn cách Tham Lang 3 cung nên không bao giờ đồng cung, tam hợp hay xung chiếu với nó. Không rõ sách định chỉ sao nào, nên để \"gặp Lương\" ở phần điều kiện máy không xét.",
+      "id": "tat-ach/tham-lang/07",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lương, Kỵ: mác kiện cáo tù tội"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn sông nước, hay mắc bệnh phong tình."
+      ],
+      "id": "tat-ach/tham-lang/08",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu đồng cung: mắc tai nạn sông nước, hay mang bệnh phong tình"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThamLang",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở hạ bộ; mặt thường có vết; lúc nhỏ có nhiều mụn nhọt."
+      ],
+      "id": "tat-ach/cu-mon/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh ở hạ bộ, mặt thường có vết"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Hình dáng kỳ dị."
+      ],
+      "id": "tat-ach/cu-mon/02",
+      "source_ref": {
+        "keywords": [
+          "Nhật đồng cung: hình dáng kỳ dị"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CuMon",
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Mắc bệnh do rượu chè, sắc dục gây nên."
+      ],
+      "id": "tat-ach/cu-mon/03",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Hỏa đồng cung: bệnh do tửu sắc gây nên"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CuMon",
+            "KinhDuong",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Chết đuối."
+      ],
+      "id": "tat-ach/cu-mon/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung: chết đuối"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở đầu hoặc mặt."
+      ],
+      "id": "tat-ach/thien-tuong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh ở đầu hay mặt"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Da mặt vàng; mắc bệnh khí huyết hoặc bệnh ngoài da."
+      ],
+      "correction": "Mục 11.2.42 Thiên Khôi (tr. 189) in lại nguyên văn bốn dòng của mục 11.2.9 Thiên Tướng (đơn thủ tại Mão, Dậu; Vũ đồng cung; Hình đồng cung; Tuần, Triệt). Thiên Khôi là phụ tinh nên không \"đơn thủ\" theo nghĩa tr. 33, và theo bảng an sao Thiên Khôi không bao giờ đóng tại Dậu; nên coi mục 11.2.42 là in lặp của Thiên Tướng, không nạp thành đoạn của Thiên Khôi.",
+      "id": "tat-ach/thien-tuong/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: da mặt vàng, có bệnh thuộc về khí huyết"
+        ],
+        "pages": [
+          184,
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Mang tật ở đầu."
+      ],
+      "correction": "Mục 11.2.42 Thiên Khôi (tr. 189) in lại nguyên văn hai dòng này của Thiên Tướng; xem tat-ach/thien-tuong/02.",
+      "id": "tat-ach/thien-tuong/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Vũ đồng cung: mang tật ở đầu",
+          "Hình đồng cung: mang tật ở đầu"
+        ],
+        "pages": [
+          184,
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienTuong",
+            "VuKhuc"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienTuong",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn, đầu hoặc mặt bị thương khá nặng."
+      ],
+      "correction": "Mục 11.2.42 Thiên Khôi (tr. 189) in lại nguyên văn dòng này của Thiên Tướng; xem tat-ach/thien-tuong/02.",
+      "id": "tat-ach/thien-tuong/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ: mắc tai nạn, đầu hay mặt bị thương khá nặng"
+        ],
+        "pages": [
+          184,
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh hàn nhiệt, nhưng không đáng lo ngại."
+      ],
+      "id": "tat-ach/thien-luong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: mắc bệnh hàn nhiệt"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Bị cây cối hoặc đồ gỗ đè trúng chân tay."
+      ],
+      "id": "tat-ach/thien-luong/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung: cây cối hay đồ gỗ đè trúng chân tay"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Mặt có vết; lúc nhỏ sức khỏe rất kém."
+      ],
+      "id": "tat-ach/that-sat/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mặt có vết, lúc ít tuổi sức khỏe rất kém"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn súng đạn hoặc đao thương."
+      ],
+      "id": "tat-ach/that-sat/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Hình: mắc tai nạn về súng đạn hay đao thương"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Chân tay có tì vết, thường gặp tai nạn đao thương."
+      ],
+      "id": "tat-ach/that-sat/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát tinh: chân tay có tỳ vết"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Có bệnh tật ở mặt."
+      ],
+      "id": "tat-ach/that-sat/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ, Đà: bệnh tật ở mặt"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Có ung thư; nếu không thì cũng mắc bệnh phải mổ xẻ mới qua khỏi."
+      ],
+      "correction": "Mục Thất Sát (tr. 184) và Phá Quân (tr. 185) in cùng một lời; gộp làm một đoạn hai neo. \"Hao\" không rõ Đại Hao hay Tiểu Hao nên lấy một trong hai.",
+      "id": "tat-ach/that-sat/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hao, Mộc, Kỵ: có ung thư, nếu không, cũng mắc bệnh sẽ phải mổ xẻ",
+          "Hao, Mộc, Kỵ: có ung thư, nếu không, cũng mắc bệnh cần phải mổ xẻ"
+        ],
+        "pages": [
+          184,
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "MocDuc"
+          ],
+          "meets_any": [
+            "@SongHao"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Khó thoát khỏi tù tội."
+      ],
+      "condition_text": "gặp thêm Phá (sách không rõ Phá Quân hay Phá Toái)",
+      "id": "tat-ach/that-sat/06",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đà, Phá, Hình: khó thoát được tù tội"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaLa",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Máu nóng nên lúc nhỏ nhiều mụn nhọt, chốc lở; lớn lên hay gặp tai nạn xe cộ, nếu không thì cũng khó tránh tù tội."
+      ],
+      "correction": "Sách in \"chóc lở\", hiểu là chốc lở.",
+      "id": "tat-ach/pha-quan/01",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Máu nóng, nên lúc ít tuổi có nhiều mụn nhọt, chóc lở"
+        ],
+        "pages": [
+          184
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Mắt kém."
+      ],
+      "id": "tat-ach/pha-quan/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Vũ đồng cung: mắt kém"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "PhaQuan",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Chân tay có tì vết."
+      ],
+      "id": "tat-ach/pha-quan/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Liêm đồng cung: chân tay có tỳ vết"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "PhaQuan",
+            "LiemTrinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Chết đuối."
+      ],
+      "id": "tat-ach/pha-quan/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Liêm, Hỏa đồng cung: chết đuối"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "PhaQuan",
+            "LiemTrinh",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Điên cuồng; nếu không thì cũng có tật ở mắt."
+      ],
+      "id": "tat-ach/pha-quan/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà, Hình, Kỵ: điên cuồng"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "ThienHinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Vướng tù tội, bị đánh đập tàn nhẫn."
+      ],
+      "correction": "Sách in \"đánh dập\", hiểu là đánh đập.",
+      "id": "tat-ach/pha-quan/06",
+      "sensitivity": [
+        "Legal",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp: mắc tù tội, bị đánh dập tàn nhẫn"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Bị đánh đập, mang thương tích; nếu không thì cũng gặp tai nạn xe cộ hoặc vướng tù tội."
+      ],
+      "id": "tat-ach/pha-quan/07",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình: bị đánh đập, mang thương tích. Nếu không, cũng mắc tai nạn"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Bị điện giật hoặc sét đánh rất nguy nan; nếu không thì cũng gặp tai nạn súng đạn."
+      ],
+      "id": "tat-ach/pha-quan/08",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Việt, Hỏa, Linh: bị điện giật hay sét đánh rất nguy nan"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "ThienViet",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Bị ám sát."
+      ],
+      "id": "tat-ach/pha-quan/09",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Phục, Không, Kiếp: bị ám sát"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "PhucBinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Mắc bệnh mộng tinh."
+      ],
+      "id": "tat-ach/pha-quan/10",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu, Hồng: mắc bệnh mộng tinh"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu",
+            "HongLoan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở tai, thường có bệnh trĩ; nếu không thì cũng có tì vết ở chân."
+      ],
+      "id": "tat-ach/kinh-duong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc bệnh ở tai, thường có bệnh trĩ"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Vướng tù tội hoặc gặp tai nạn đao thương."
+      ],
+      "id": "tat-ach/kinh-duong/02",
+      "sensitivity": [
+        "Legal",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Ngọ, Sát, Hình: mắc tù tội hay tai nạn đao thương"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "meets_all": [
+            "ThatSat",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Mù lòa."
+      ],
+      "id": "tat-ach/kinh-duong/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ đồng cung tại Hợi, Tý: mù lòa"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Tự sát hoặc bị giết."
+      ],
+      "id": "tat-ach/kinh-duong/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh, Không, Kiếp: tự sát hay bị giết"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Bị chó dại cắn."
+      ],
+      "id": "tat-ach/kinh-duong/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ đồng cung: chó dại cắn"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Phát ban hoặc lên đậu, sởi rất đáng lo ngại."
+      ],
+      "id": "tat-ach/kinh-duong/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cái, Không, Kiếp: phát ban hay lên đậu sởi rất đáng lo ngại"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaCai",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Bị đánh đập, mang thương tích; nếu không thì cũng gặp tai nạn xe cộ hoặc máy móc."
+      ],
+      "id": "tat-ach/kinh-duong/07",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình: bị đánh đập, mang thương tích, nếu không cũng mắc tai nạn về xe"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Bị giết chết; nếu không thì cũng vướng tù tội khốn khổ."
+      ],
+      "id": "tat-ach/kinh-duong/08",
+      "sensitivity": [
+        "Death",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Không, Kiếp: bị giết chết"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Vướng kiện cáo, tù tội."
+      ],
+      "id": "tat-ach/kinh-duong/09",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuế đồng cung: mắc kiện cáo, tù tội"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Lúc nhỏ hay đau răng; đầu và mặt thường có tì vết."
+      ],
+      "id": "tat-ach/da-la/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lúc ít tuổi hay đau răng, đầu và mặt thường có tỳ vết"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Bị sét đánh ngã hoặc mang thương tích."
+      ],
+      "condition_text": "gặp Phủ (sách không rõ Thiên Phủ hay Quan Phủ)",
+      "id": "tat-ach/da-la/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Tỵ, Ngọ, Phủ: bị sét đánh ngã hay có thương tích"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Có tật ở chân tay, thường hay gặp tai nạn xe cộ."
+      ],
+      "id": "tat-ach/da-la/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mã đồng cung: có tật ở chân tay, thường hay mắc tai nạn xe cộ"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "DaLa",
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Nhiều bệnh tật, hay đau ốm luôn; đáng lo nhất là đau mắt, đau ruột gan hoặc dạ dày."
+      ],
+      "id": "tat-ach/da-la/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu, Kỵ: nhiều bệnh tật, hay đau yếu luôn"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Thân thể tráng kiện."
+      ],
+      "id": "tat-ach/hoa-linh/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: thân thể tráng kiện"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Mắc bệnh nóng lạnh."
+      ],
+      "id": "tat-ach/hoa-linh/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: mắc bệnh nóng lạnh"
+        ],
+        "pages": [
+          185
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh"
+        ]
+      },
+      "body": [
+        "Chết đuối."
+      ],
+      "correction": "Dòng này ở mục Hỏa, Linh mà kể thêm \"Linh\", nên hiểu là Hỏa Tinh tọa thủ tại Thìn gặp Linh Tinh, Kình Dương.",
+      "id": "tat-ach/hoa-linh/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Thìn, Linh, Kình: chết đuối"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin"
+          ],
+          "meets_all": [
+            "LinhTinh",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn đao thương hoặc súng đạn."
+      ],
+      "id": "tat-ach/hoa-linh/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Việt: mắc tai nạn về đao thương hay súng đạn"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Bị sét đánh hoặc súng bắn."
+      ],
+      "id": "tat-ach/hoa-linh/05",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Việt, Phi: bị sét đánh hay súng bắn"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "ThienViet",
+            "PhiLiem"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hay sốt nóng; đáng lo nhất là sốt thương hàn hoặc lên đậu lào."
+      ],
+      "condition_text": "có Bệnh, Phủ đồng cung (sách không rõ là sao Bệnh và Thiên Phủ hay Quan Phủ, hay sao Bệnh Phù)",
+      "id": "tat-ach/hoa-linh/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh, Phủ đồng cung: hay sốt nóng"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Bị bỏng nước hoặc bỏng lửa."
+      ],
+      "correction": "Sách in \"phòng lửa\", hiểu là phỏng lửa.",
+      "id": "tat-ach/hoa-linh/07",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mộc đồng cung: phỏng nước hay phòng lửa"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "MocDuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Máu xấu nên hay có mụn nhọt, chốc lở."
+      ],
+      "id": "tat-ach/khong-kiep/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Xấu máu nên hay có mụn nhọt, chốc lở"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Có mụn nhọt hôi thối."
+      ],
+      "id": "tat-ach/khong-kiep/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cơ: có mụn nhọt hôi thối"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Vướng tù tội hoặc bị đâm chém."
+      ],
+      "id": "tat-ach/khong-kiep/03",
+      "sensitivity": [
+        "Legal",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình đồng cung: mắc tù tội hay bị đâm chém"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Bị đánh đập, mang thương tích."
+      ],
+      "id": "tat-ach/khong-kiep/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Việt đồng cung: bị đánh đập mang thương tích"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn đao thương rất đáng lo ngại."
+      ],
+      "id": "tat-ach/khong-kiep/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Việt, Tuế: mắc tai nạn về đao thương rất đáng lo ngại"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienViet",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch"
+      },
+      "body": [
+        "Phải mang bệnh kín mới sống lâu."
+      ],
+      "correction": "Sách in \"sống tâu\", hiểu là sống lâu.",
+      "id": "tat-ach/bo-sao/01",
+      "sensitivity": [
+        "Illness",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu có ám tật mới sống tâu"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LocTon",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Thường đau bụng lặt vặt. Đàn ông dương hư nên ít con; đàn bà thường khó sinh đẻ."
+      ],
+      "id": "tat-ach/hoa-ky/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay đau bụng vặt, đàn ông vì dương hư nên hiếm con"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Đàn bà mắc bệnh khí huyết, mất khả năng sinh đẻ."
+      ],
+      "id": "tat-ach/hoa-ky/02",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhật, Hư: đàn bà mắc bệnh về khí huyết, mất sinh đẻ"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "ThaiDuong",
+            "ThienHu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Đau mắt nặng, có tật ở mắt; nếu không thì cũng vướng tù tội."
+      ],
+      "id": "tat-ach/hoa-ky/03",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình đồng cung tại Hợi, Tý: đau mắt nặng, có tật ở mắt"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty"
+          ],
+          "with_all": [
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Tự sát."
+      ],
+      "id": "tat-ach/hoa-ky/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tang, Điếu: tự sát"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TangMon",
+            "DieuKhach"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phải mổ cắt hoặc châm chích mới qua khỏi."
+      ],
+      "correction": "\"Hao\" không rõ Đại Hao hay Tiểu Hao nên lấy một trong hai.",
+      "id": "tat-ach/hoa-ky/05",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hao, Mộc: mắc bệnh cần phải mổ cắt hay châm chích"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "MocDuc"
+          ],
+          "meets_any": [
+            "@SongHao"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Môi có tì vết."
+      ],
+      "id": "tat-ach/hoa-ky/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu đồng cung: môi có tỳ vết"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Chết vì bị đâm chém."
+      ],
+      "id": "tat-ach/thien-ma/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp, Tuế: chết vì đâm chém"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKiep",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn xe cộ hoặc té ngã, chân tay mang thương tích."
+      ],
+      "id": "tat-ach/thien-ma/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình đồng cung: mắc tai nạn xe cộ hay vì ngã té"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienMa",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn xe cộ rất nguy hiểm; nếu không thì chân tay cũng mang tật từ lúc mới sinh."
+      ],
+      "id": "tat-ach/thien-ma/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ: mắc tai nạn xe cộ rất nguy hiểm"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Hay vướng kiện cáo, tù tội; nếu không thì cũng bị đánh đập."
+      ],
+      "id": "tat-ach/thai-tue/01",
+      "sensitivity": [
+        "Legal",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay mắc kiện cáo, tù tội, nếu không cũng bị đánh đập"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Chết vì bị đâm chém."
+      ],
+      "id": "tat-ach/thai-tue/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát, Đà, Kỵ: chết vì đâm chém"
+        ],
+        "pages": [
+          186
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThatSat",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Bộ máy tiêu hóa không lành mạnh; vì ăn uống mà mắc bệnh khó chữa."
+      ],
+      "id": "tat-ach/song-hao/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bộ máy tiêu hóa không được lành mạnh vì ăn uống"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TangMon"
+        ]
+      },
+      "body": [
+        "Mắc bệnh khí huyết, có thể là thiếu máu hoặc căng mạch máu. Tim yếu; đàn bà khó đẻ."
+      ],
+      "correction": "Sách in \"có thế là\", hiểu là có thể là.",
+      "id": "tat-ach/tang-mon/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc bệnh thuộc về khí huyết, có thế là thiếu máu"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TangMon"
+        ]
+      },
+      "body": [
+        "Khó thoát khỏi tù tội."
+      ],
+      "condition_text": "có Tử đồng cung (sách không rõ Tử Vi hay sao Tử của vòng Trường Sinh)",
+      "id": "tat-ach/tang-mon/02",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tử đồng cung: khó thoát được tù tội"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TangMon"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ho lao."
+      ],
+      "id": "tat-ach/tang-mon/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ, Khốc, Hư: ho lao"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "BachHo",
+            "ThienKhoc",
+            "ThienHu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "TangMon"
+        ]
+      },
+      "body": [
+        "Té ngã đau, mang thương tích."
+      ],
+      "id": "tat-ach/tang-mon/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Điếu: ngã đau, có thương tích"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DieuKhach"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Máu xấu, thường đau nhức xương cốt; đàn bà sinh nở khó khăn."
+      ],
+      "id": "tat-ach/bach-ho/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Máu xấu, hay đau xương cốt"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Bị thú dữ cắn rất nguy hiểm."
+      ],
+      "id": "tat-ach/bach-ho/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà: thú dữ cắn rất nguy hiểm"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Bị chó dại cắn."
+      ],
+      "id": "tat-ach/bach-ho/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu đồng cung: chó dại cắn"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "BachHo",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Vướng kiện cáo hoặc bị bắt bớ, giam cầm."
+      ],
+      "condition_text": "gặp Phù (sách không rõ sao Phù nào)",
+      "id": "tat-ach/bach-ho/04",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phù: mắc kiện cáo hay bị bắt bớ giam cầm"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienKhoc"
+        ]
+      },
+      "body": [
+        "Phổi yếu, hay ho vặt, thận kém."
+      ],
+      "id": "tat-ach/thien-khoc/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phổi yếu, hay ho vặt, thận kém"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHu"
+        ]
+      },
+      "body": [
+        "Thận suy, răng xấu, hay bị sâu răng."
+      ],
+      "id": "tat-ach/thien-hu/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thận suy, răng xấu, hay bị sâu"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phong sang, phải châm chích luôn; hay bị dao kéo chạm phải, rất đau đớn."
+      ],
+      "id": "tat-ach/thien-hinh/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc bệnh phong sang, thường phải châm chích"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Bị châm chích, mổ xẻ."
+      ],
+      "id": "tat-ach/thien-hinh/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đẩu đồng cung: bị châm chích mổ xẻ"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh",
+            "KinhDuong",
+            "DauQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phong tình."
+      ],
+      "id": "tat-ach/thien-hinh/03",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu, Không, Kiếp: mắc bệnh phong tình"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Nói ngọng hoặc nói lắp."
+      ],
+      "id": "tat-ach/thien-hinh/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phục đồng cung: nói ngọng hay nói lắp"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn đao thương hoặc bị giam cầm."
+      ],
+      "id": "tat-ach/thien-hinh/05",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ, Kiếp đồng cung: mắc tai nạn đao thương hay bị giam cầm"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh",
+            "DiaKiep"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LongTri"
+        ]
+      },
+      "body": [
+        "Đau đầu."
+      ],
+      "correction": "\"Sát\" không thể là Thất Sát: theo cách an Chính Tinh, Thất Sát và Thái Dương luôn cách nhau một số lẻ cung nên không bao giờ cùng hội hợp một cung. Hiểu là Sát tinh.",
+      "id": "tat-ach/long-tri/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhật, Sát: đau đầu"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LongTri"
+        ]
+      },
+      "body": [
+        "Đau bụng."
+      ],
+      "correction": "\"Sát\" không thể là Thất Sát: Thái Âm luôn cách Thất Sát 5 cung nên không bao giờ cùng hội hợp một cung. Hiểu là Sát tinh.",
+      "id": "tat-ach/long-tri/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt, Sát: đau bụng"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiAm"
+          ],
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LongTri"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn sông nước, hay đau mắt; đàn bà thường khó đẻ."
+      ],
+      "correction": "Sách in \"sổng nước\", hiểu là sông nước.",
+      "id": "tat-ach/long-tri/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Mộc: mắc tai nạn sổng nước, hay đau mắt"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "MocDuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Tim yếu, mắc bệnh ở hạ bộ."
+      ],
+      "id": "tat-ach/dao-hong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tim yếu, bệnh ở hạ bộ"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phong tình."
+      ],
+      "id": "tat-ach/dao-hong/02",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp: mắc bệnh phong tình"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Mộng tinh, di tinh."
+      ],
+      "correction": "Sách in \"mộng tình\", hiểu là mộng tinh, như tr. 185 và tr. 188.",
+      "id": "tat-ach/dao-hong/03",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu, Hỉ: mộng tình, di tinh"
+        ],
+        "pages": [
+          187
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu",
+            "ThienHy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "DieuKhach"
+        ]
+      },
+      "body": [
+        "Té ngã đau, mang thương tích."
+      ],
+      "correction": "Sách in \"Nga đau\", hiểu là ngã đau.",
+      "id": "tat-ach/dieu-khach/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nga đau, có thương tích"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "QuanPhuThaiTue",
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Bị sét đánh hoặc điện giật; nếu không thì cũng khó tránh tù tội."
+      ],
+      "id": "tat-ach/quan-phu/01",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bị sét đánh hay điện giật, nếu không cũng khó tránh thoát được tù tội"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "QuanPhuThaiTue",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "Thai"
+        ]
+      },
+      "body": [
+        "Đàn bà mắc bệnh đau tử cung hoặc lệch tử cung."
+      ],
+      "id": "tat-ach/thai/01",
+      "section": "NuMenh",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp: đàn bà mắc bệnh đau tử cung"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "Thai"
+        ]
+      },
+      "body": [
+        "Đàn ông mắc bệnh phạm phòng; đàn bà đau yếu vì sẩy thai hoặc sau khi sinh."
+      ],
+      "condition_text": "gặp thêm Mộc",
+      "correction": "\"Mộc\" nếu là Mộc Dục thì không bao giờ hội hợp với sao Thai (vòng Trường Sinh: Thai cách Mộc Dục 3 cung), nên để \"gặp thêm Mộc\" ở phần điều kiện máy không xét.",
+      "id": "tat-ach/thai/02",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hồng, Đào, Kình, Kỵ, Mộc: đàn ông mắc bệnh phạm phòng"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "DaoHoa",
+            "KinhDuong"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "MocDuc"
+        ]
+      },
+      "body": [
+        "Mắc bệnh tê thấp, thận suy."
+      ],
+      "id": "tat-ach/moc-duc/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc bệnh tê thấp, thận suy"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "Benh"
+        ]
+      },
+      "body": [
+        "Hay bị cảm sốt."
+      ],
+      "id": "tat-ach/benh/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay cảm sốt luôn"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BenhPhu"
+        ]
+      },
+      "body": [
+        "Sức khỏe rất kém."
+      ],
+      "id": "tat-ach/benh-phu/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "11.2.34. Bệnh Phù",
+          "Sức khỏe rất kém"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BenhPhu"
+        ]
+      },
+      "body": [
+        "Có bệnh phong sang, thường mắc ác bệnh; đáng lo nhất là bệnh hủi (cùi)."
+      ],
+      "id": "tat-ach/benh-phu/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Kỵ: có bệnh phong sang, thường mắc ác bệnh"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "BenhPhu"
+        ]
+      },
+      "body": [
+        "Mắc ác bệnh rất khó chữa."
+      ],
+      "correction": "Sách ghi \"Hao, Sát tinh\". Trong vòng Bác Sỹ, Bệnh Phù (9) nằm sát Đại Hao (10) và cách Tiểu Hao (4) 5 cung, nên không bao giờ hội hợp với Song Hao: lỗi nhầm vị trí sao như D14. Bỏ điều kiện Hao, giữ Sát tinh.",
+      "id": "tat-ach/benh-phu/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hao, Sát tinh: mắc ác bệnh rất khó chữa"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Thận suy, hay đau răng, bộ máy tiêu hóa không lành mạnh."
+      ],
+      "id": "tat-ach/thien-rieu/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thận suy, hay đau răng, bộ tiêu hóa không được lành mạnh"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Té ngã đau, mang thương tích."
+      ],
+      "id": "tat-ach/thien-rieu/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tang đồng cung: té đau, có thương tích"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienRieu",
+            "TangMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Đau ốm vì ma quỷ quấy phá."
+      ],
+      "id": "tat-ach/thien-rieu/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh: đau yếu vì ma qủy phá phách"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LuuHa"
+        ]
+      },
+      "body": [
+        "Gặp tai nạn sông nước. Đàn bà thường sinh khó, trước khi sinh hay gặp nhiều nguy hiểm."
+      ],
+      "id": "tat-ach/luu-ha/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc tai nạn sông nước, đàn bà thường khó đẻ"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LuuHa"
+        ]
+      },
+      "body": [
+        "Chết bất đắc kỳ tử."
+      ],
+      "id": "tat-ach/luu-ha/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp : chết bất đắc kỳ tử"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "LuuHa"
+        ]
+      },
+      "body": [
+        "Chết vì tai nạn xe cộ hoặc bị đâm chém."
+      ],
+      "id": "tat-ach/luu-ha/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kiếp (Sát) đồng cung: chết vì tai nạn xe cộ hay bị đâm chém"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LuuHa",
+            "KiepSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaCai"
+        ]
+      },
+      "body": [
+        "Có bệnh di tinh, mộng tinh."
+      ],
+      "id": "tat-ach/hoa-cai/01",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mộc đồng cung: có bệnh di mộng tinh"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "HoaCai",
+            "MocDuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HoaCai"
+        ]
+      },
+      "body": [
+        "Mắc bệnh phong tình."
+      ],
+      "id": "tat-ach/hoa-cai/02",
+      "sensitivity": [
+        "Illness",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu: bệnh phong tình"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "HyThan"
+        ]
+      },
+      "body": [
+        "Mắc bệnh ở hậu môn, hay đau bụng đi ngoài."
+      ],
+      "correction": "Sách in \"đi rửa\" (cũng ở mục Cô, Quả tr. 189); hiểu là đi ngoài.",
+      "id": "tat-ach/hy-than/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mắc bệnh ở hậu môn, hay đau bụng đi rửa"
+        ],
+        "pages": [
+          188
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch"
+      },
+      "body": [
+        "Bị kẻ thù đâm chém."
+      ],
+      "id": "tat-ach/bo-sao/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bị kẻ thù đâm chém"
+        ],
+        "pages": [
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh",
+            "ThienHinh",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Thường có tì vết ở hậu môn, hay đau bụng đi ngoài. Khi đau ốm hay gặp tai nạn mà không có người giúp đỡ."
+      ],
+      "correction": "Sách in \"đi rửa\", hiểu là đi ngoài.",
+      "id": "tat-ach/co-qua/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thường có tỳ vết ở hậu môn, hay đau bụng đi rửa"
+        ],
+        "pages": [
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TatAch",
+        "stars": [
+          "Duong"
+        ]
+      },
+      "body": [
+        "Bệnh tật hay kéo dài, lâu khỏi."
+      ],
+      "id": "tat-ach/duong/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Bệnh tật hay kéo dài, lâu khỏi"
+        ],
+        "pages": [
+          189
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    }
+  ]
+}

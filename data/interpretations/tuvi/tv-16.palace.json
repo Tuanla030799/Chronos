@@ -1,0 +1,44 @@
+{
+  "batch": "TV-16",
+  "collection": "tuvi.palace",
+  "entries": [
+    {
+      "key": "ThienDi",
+      "source_ref": {
+        "keywords": [
+          "để biết rõ những điều có liên quan đến việc giao thiệp",
+          "Cung Thiên Di xung chiếu cung Mệnh"
+        ],
+        "pages": [
+          174
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cho biết việc giao thiệp bên ngoài và những may rủi có thể gặp khi rời khỏi nhà. Thiên Di xung chiếu cung Mệnh nên phải xét kỹ các sao tọa thủ ở đây."
+    },
+    {
+      "body": [
+        "Trước khi xét sao ở Tật Ách phải xét kỹ ba cung Mệnh, Thân, Phúc Đức, vì chúng làm tăng hoặc giảm tốt xấu của Tật Ách. Tật Ách mờ ám xấu xa mà Mệnh, Thân hay Phúc Đức sáng sủa, có nhiều phúc tinh, cứu tinh hội hợp thì không đáng lo ngại, vì những sao ấy giải trừ được khá nhiều điều chẳng lành.",
+        "Cần tìm ngay các phúc tinh, cứu tinh hội hợp cùng lúc với các sao ác gây bệnh tật, tai ương, rồi cân nhắc sức cứu giải và sức tác họa của hai nhóm để bù trừ. Nên xét tính chất từng sao và những gì sao tượng trưng (bộ phận cơ thể, đồ ăn, thức uống, đồ dùng) để suy ra dạng bệnh, tai ương, nguyên nhân và bộ phận bị hại."
+      ],
+      "correction": "Sách in \"nếu cô\", \"làm lăng\", \"tốt dẹp\", \"cần thận\", \"đề suy ra\"; hiểu là nếu có, làm tăng, tốt đẹp, cẩn thận, để suy ra.",
+      "key": "TatAch",
+      "source_ref": {
+        "keywords": [
+          "Xem cung Tật Ách để biết rõ những tì vết trong người",
+          "phải luận đoán сẩn thận ba cung Mệnh, Thân và Phúc Đức",
+          "tìm ngay những phúc"
+        ],
+        "pages": [
+          181
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cho biết tì vết trên người, bệnh tật có thể mắc, tai ương trong cả đời và cả lúc chết."
+    }
+  ]
+}

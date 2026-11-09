@@ -1,0 +1,5848 @@
+{
+  "batch": "TV-14",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Nhật, Nguyệt chiếu hư không: hưởng phúc và thọ, thoát được nhiều tai họa. Trong họ khá giả, lắm người quý hiển, giàu sang. Tổ tiên xa đời đã có danh giá, tiếng tăm lưu lại đến nay."
+      ],
+      "condition_text": "Nhật, Nguyệt sáng sủa tốt đẹp hội chiếu",
+      "id": "phuc-duc/nhat-nguyet-chieu-hu-khong/01",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt chiếu hư không",
+          "Nhật, Nguyệt sáng sủa tốt đẹp hội chiếu được hưởng phúc sống lâu"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Phúc Đức vô Chính diệu được Nhật, Nguyệt tốt đẹp chiếu, lại có thêm Tuần, Triệt án ngữ hoặc Tam Không hội hợp: phúc càng rực rỡ."
+      ],
+      "condition_text": "Nhật, Nguyệt sáng sủa tốt đẹp hội chiếu; với phương án không có Tuần, Triệt án ngữ thì phải có Tam Không hội hợp",
+      "id": "phuc-duc/nhat-nguyet-chieu-hu-khong/02",
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ, hay có Tam",
+          "Không hội hợp lại càng rực rỡ"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        },
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm",
+            "ThienKhong",
+            "DiaKhong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Đà La độc thủ: hưởng phúc, sống lâu, cả đời hay gặp may. Họ hàng mỗi ngày một khá giả, nhiều người quý hiển, giỏi cả văn lẫn võ."
+      ],
+      "id": "phuc-duc/da-la-doc-thu/01",
+      "source_ref": {
+        "keywords": [
+          "Đà La độc thủ, cung Phúc Đức vô Chính diệu an tại Dần, Thân",
+          "sẽ không được coi là Đà La độc thủ"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "tuan_triet": "Neither",
+          "with_all": [
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Âm phần (mồ mả) chi phối phần lớn việc thọ yểu, phúc đức của mỗi người và sự tụ tán của cả họ. Luận phúc đức xong cần xét đến âm phần để biết mình chịu ảnh hưởng của ngôi mộ nào."
+      ],
+      "id": "phuc-duc/am-phan/01",
+      "source_ref": {
+        "keywords": [
+          "Âm phần chi phối một phần lớn sự yểu thọ và phúc đức"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Mộ tổ đời xa, thường năm đời. Thế đất lớn rộng, gần núi đồi, linh khí chầu về từ bên tay trái."
+      ],
+      "id": "phuc-duc/am-phan/02",
+      "source_ref": {
+        "keywords": [
+          "Tử Vi: mộ tổ xa đời (thường là năm đời)",
+          "linh khí từ phía tay trái triều lại"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Mộ chú, nếu chú đã mất trước khi đương số ra đời; nếu chú còn mà ông chú đã mất thì là mộ ông chú. Đất khô cằn, lồi lõm, nhô cao như người ngồi, màu đỏ hoặc vàng."
+      ],
+      "id": "phuc-duc/am-phan/03",
+      "source_ref": {
+        "keywords": [
+          "Liêm Trinh: mộ chú",
+          "nổi cao như hình người ngồi, lại có sắc đỏ hay vàng"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Mộ tổ bốn đời, đặt ở đất trũng, có nước bao quanh."
+      ],
+      "id": "phuc-duc/am-phan/04",
+      "source_ref": {
+        "keywords": [
+          "Thiên Đồng: mộ tổ bốn đời, để nơi đất trũng"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Mộ tổ năm đời. Đất cao, trơ trọi, có hình quả chuông dựng đứng."
+      ],
+      "correction": "Sách in \"đát cao trơ trọi, cỏ hình như quả chuông\", hiểu là \"đất cao trơ trọi, có hình như quả chuông\".",
+      "id": "phuc-duc/am-phan/05",
+      "source_ref": {
+        "keywords": [
+          "Vũ Khúc: mộ tổ năm đời, đát cao trơ trọi"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Mộ cha, nếu cha đã mất trước khi đương số ra đời; nếu cha còn mà ông nội đã mất thì là mộ ông nội; nếu cha và ông còn mà cụ đã mất thì là mộ cụ nội ông. Đất bằng phẳng."
+      ],
+      "id": "phuc-duc/am-phan/06",
+      "source_ref": {
+        "keywords": [
+          "Thái Dương: mộ cha",
+          "Đất bằng phẳng"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Mộ ông nội, nếu ông đã mất trước khi đương số ra đời; nếu ông còn mà cụ đã mất thì là mộ cụ nội. Đất rất tốt nên cây cỏ mọc um tùm."
+      ],
+      "correction": "Sách in \"nhiều cây có mọc rậm rạp\", hiểu là cây cỏ.",
+      "id": "phuc-duc/am-phan/07",
+      "source_ref": {
+        "keywords": [
+          "Thiên Cơ: mộ ông nội",
+          "Đất rất tốt nên nhiều cây có mọc rậm rạp"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Mộ tổ đời xa, thường năm đời. Thế đất lớn rộng, gần núi đồi, linh khí chầu về từ bên tay phải."
+      ],
+      "id": "phuc-duc/am-phan/08",
+      "source_ref": {
+        "keywords": [
+          "Thiên Phủ: mộ tổ xa đời (thường là năm đời)",
+          "linh khí từ phía tay phải triều lại"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Mộ mẹ, nếu mẹ đã mất khi đương số ra đời; nếu mẹ còn mà bà đã mất thì là mộ bà nội; nếu mẹ và bà còn mà cụ đã mất thì là mộ cụ nội bà. Thế đất hơi cao, chạy dài, uốn cong như vầng bán nguyệt."
+      ],
+      "id": "phuc-duc/am-phan/09",
+      "source_ref": {
+        "keywords": [
+          "Thái Âm: mộ mẹ",
+          "uốn cong như hình bán nguyệt"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Mộ tổ xa đời, thường là sáu hoặc bảy đời. Đất nhô cao như con chó ngồi, đen như bùn, cây cỏ mọc um tùm."
+      ],
+      "id": "phuc-duc/am-phan/10",
+      "source_ref": {
+        "keywords": [
+          "Tham Lang: mộ tổ xa đời (thường là sáu hay bảy đời)",
+          "hình con chó ngồi, sắc đen như bùn"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Mộ bác ruột, nếu bác đã mất trước khi đương số ra đời; nếu bác còn mà ông bác bên nội đã mất thì là mộ ông bác. Đất vuông vức, thường gần đình hay lâu đài; đào sâu thấy bên dưới có lớp đất vàng."
+      ],
+      "id": "phuc-duc/am-phan/11",
+      "source_ref": {
+        "keywords": [
+          "Cự Môn: mộ bác ruột",
+          "Đất vuông vắn, thường ở gần"
+        ],
+        "pages": [
+          143
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Mộ tổ năm đời. Đất nhô cao, vuông vức như cái ấn."
+      ],
+      "id": "phuc-duc/am-phan/12",
+      "source_ref": {
+        "keywords": [
+          "Thiên Tướng: mộ tổ năm đời"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Mộ tổ bốn đời. Đất rời, lẫn nhiều cát, hình như con thoi dệt vải, thường gần đường đi lối lại."
+      ],
+      "id": "phuc-duc/am-phan/13",
+      "source_ref": {
+        "keywords": [
+          "Thiên Lương: mộ tổ bốn đời"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Mộ tổ năm đời. Đất khô, nóng, màu đỏ, hình như thân cây dài nằm ngang."
+      ],
+      "id": "phuc-duc/am-phan/14",
+      "source_ref": {
+        "keywords": [
+          "Thất Sát: mộ tổ năm đời"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Mộ tổ bốn đời. Đất sạt lở, không có hình thù nhất định."
+      ],
+      "id": "phuc-duc/am-phan/15",
+      "source_ref": {
+        "keywords": [
+          "Phá Quân: mộ tổ bốn đời"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Kình Dương sáng sủa tốt đẹp: hình đất như con voi quỳ."
+      ],
+      "correction": "Sách in \"con voi qùy\", hiểu là voi quỳ.",
+      "id": "phuc-duc/am-phan/16",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp (tọa thủ tại Tứ Mộ)"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Kình Dương mờ ám xấu xa: hình đất như mũi dùi, tháp bút hay chiếc răng nhọn."
+      ],
+      "correction": "Sách ghi Kình mờ ám \"tọa thủ tại Tứ Sinh, Tứ Tuyệt\". Kình Dương đóng ở cung sau Lộc Tồn, mà Lộc Tồn chỉ ở Dần, Mão, Tỵ, Ngọ, Thân, Dậu, Hợi, Tý, nên Kình không bao giờ ở Tứ Sinh (Dần, Thân, Tỵ, Hợi). Mã hóa theo nghĩa \"mờ ám xấu xa\" là hãm địa (bảng phụ tinh tr. 39), tức Tý, Ngọ, Mão, Dậu.",
+      "id": "phuc-duc/am-phan/17",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa (tọa thủ tại Tứ Sinh, Tứ Tuyệt)"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Đất lẫn cát, hình như cái răng hoặc mũi nhọn."
+      ],
+      "id": "phuc-duc/am-phan/18",
+      "source_ref": {
+        "keywords": [
+          "Đà La: đất lẫn cát"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Đất nóng, hình như cây sào dài."
+      ],
+      "id": "phuc-duc/am-phan/19",
+      "source_ref": {
+        "keywords": [
+          "Hỏa Tinh, Linh Tinh: đất nóng, có hình cái sào dài"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Đất khô, nóng. Trong họ có nhiều mồ mả thất lạc đã lâu không tìm thấy."
+      ],
+      "id": "phuc-duc/am-phan/20",
+      "source_ref": {
+        "keywords": [
+          "Địa Không, Địa Kiếp: đất khô nóng"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VanXuong"
+        ]
+      },
+      "body": [
+        "Đất cứng, hình tròn."
+      ],
+      "id": "phuc-duc/am-phan/21",
+      "source_ref": {
+        "keywords": [
+          "Văn Xương: đất rắn (cứng), có hình tròn"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Có dòng nước chảy uốn quanh mộ."
+      ],
+      "id": "phuc-duc/am-phan/22",
+      "source_ref": {
+        "keywords": [
+          "Văn Khúc: có dòng nước chảy lượn quanh mộ"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienKhoi"
+        ]
+      },
+      "body": [
+        "Đất nhô cao như cái mũ."
+      ],
+      "id": "phuc-duc/am-phan/23",
+      "source_ref": {
+        "keywords": [
+          "Thiên Khôi: đất nổi cao, giống như cái mũ"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Hình đất dài như cái búa."
+      ],
+      "id": "phuc-duc/am-phan/24",
+      "source_ref": {
+        "keywords": [
+          "Thiên Việt: hình dài giống như cái búa"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thế đất cao, đẹp, hình như mép cạp chiếu nổi lên."
+      ],
+      "id": "phuc-duc/am-phan/25",
+      "source_ref": {
+        "keywords": [
+          "Tả Phụ, Hữu Bật: thế đất cao đẹp"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Đất hình như lưỡi thương."
+      ],
+      "id": "phuc-duc/am-phan/26",
+      "source_ref": {
+        "keywords": [
+          "Lộc Tồn: đất có hình giống như lưỡi thương"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaLoc"
+        ]
+      },
+      "body": [
+        "Đất hình như lá cờ hoặc lưỡi thương; đào sâu thấy bên dưới nhiều mảnh kim loại vụn."
+      ],
+      "id": "phuc-duc/am-phan/27",
+      "source_ref": {
+        "keywords": [
+          "Hóa Lộc: đất có hình giống như lá cờ hay lưỡi thương"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Hình đất như cái yên ngựa; nếu không thì ắt gần mộ có một bụi cây to cũng có dáng yên ngựa."
+      ],
+      "correction": "Sách in \"cung giống nhu yên ngựa\", hiểu là \"cũng giống như yên ngựa\".",
+      "id": "phuc-duc/am-phan/28",
+      "source_ref": {
+        "keywords": [
+          "Hóa Quyền: hình đất giống như cái yên ngựa"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Hình đất như cái bảng."
+      ],
+      "id": "phuc-duc/am-phan/29",
+      "source_ref": {
+        "keywords": [
+          "Hóa Khoa: hình đất giống như cái bảng"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Đất úng nước, lẫn bùn lầy; mộ dễ nằm ở chỗ trũng."
+      ],
+      "id": "phuc-duc/am-phan/30",
+      "source_ref": {
+        "keywords": [
+          "Hóa Kỵ: đất úng thủy, lẫn bùn lầy"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@SongHao"
+        ]
+      },
+      "body": [
+        "Đất khô, nóng và sạt lở."
+      ],
+      "id": "phuc-duc/am-phan/31",
+      "source_ref": {
+        "keywords": [
+          "Song Hao: đất khô, nóng và tan lở"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TangMon"
+        ]
+      },
+      "body": [
+        "Đất khô, nóng."
+      ],
+      "id": "phuc-duc/am-phan/32",
+      "source_ref": {
+        "keywords": [
+          "Tang Môn: đất khô nóng"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Đất lẫn nhiều đá."
+      ],
+      "id": "phuc-duc/am-phan/33",
+      "source_ref": {
+        "keywords": [
+          "Bạch Hổ: đất có lẫn nhiều đá"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "body": [
+        "Đất mục nát, sạt lở. Trong mộ có mối mọt hoặc chuột làm tổ."
+      ],
+      "id": "phuc-duc/am-phan/34",
+      "source_ref": {
+        "keywords": [
+          "Thiên Khốc, Thiên Hư: đất hư nát và tan lở"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Đất hình như con ngựa."
+      ],
+      "id": "phuc-duc/am-phan/35",
+      "source_ref": {
+        "keywords": [
+          "Thiên Mã: đất có hình giống như con ngựa"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Đất cứng, khô cằn, nổi gò như sống lưng trâu."
+      ],
+      "id": "phuc-duc/am-phan/36",
+      "source_ref": {
+        "keywords": [
+          "Thái Tuế: đất rắn, khô khan"
+        ],
+        "pages": [
+          144
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LongTri"
+        ]
+      },
+      "body": [
+        "Gần mộ có ao hoặc giếng."
+      ],
+      "id": "phuc-duc/am-phan/37",
+      "source_ref": {
+        "keywords": [
+          "Long Trì: gần mộ có ao hay giếng"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhuongCac"
+        ]
+      },
+      "body": [
+        "Mộ ở gần nơi nhiều nhà cửa, lâu đài. Đất đỏ, hình như cánh chim phượng."
+      ],
+      "id": "phuc-duc/am-phan/38",
+      "source_ref": {
+        "keywords": [
+          "Phượng Các: mộ để ở gần nơi có nhiều nhà cửa"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Đất hình tròn, nhô cao như cái bát úp."
+      ],
+      "id": "phuc-duc/am-phan/39",
+      "source_ref": {
+        "keywords": [
+          "Đào Hoa: đất hình tròn"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Đất hình như cánh cung hay mí mắt, thường gọi là thế đất Nga mi."
+      ],
+      "id": "phuc-duc/am-phan/40",
+      "source_ref": {
+        "keywords": [
+          "Hồng Loan: đất có hình giống như cái cung",
+          "thế đất Nga mi"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienHy"
+        ]
+      },
+      "body": [
+        "Đất lẫn nhiều bùn lầy, cát hoặc phù sa."
+      ],
+      "id": "phuc-duc/am-phan/41",
+      "source_ref": {
+        "keywords": [
+          "Thiên Hỷ: đất có lẫn nhiều bùn lầy"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Đất hình như lưỡi đao, lẫn nhiều mảnh sành, mảnh chai và kim loại vụn."
+      ],
+      "correction": "Sách in \"mành sành\", hiểu là mảnh sành.",
+      "id": "phuc-duc/am-phan/42",
+      "source_ref": {
+        "keywords": [
+          "Thiên Hình: đất có hình giống như lưỡi đao"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Có dòng nước chảy xói vào lòng mộ."
+      ],
+      "id": "phuc-duc/am-phan/43",
+      "source_ref": {
+        "keywords": [
+          "Thiên Riêu: có dòng nước chảy xói vào lòng mộ"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@QuanPhuc"
+        ]
+      },
+      "body": [
+        "Mộ đặt gần đình, đền hoặc chùa."
+      ],
+      "id": "phuc-duc/am-phan/44",
+      "source_ref": {
+        "keywords": [
+          "Quan, Phúc: mộ để ở gần đình, đền hay chùa"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Có ân nhân tìm đất giúp cho việc mồ mả."
+      ],
+      "correction": "Sách in \"tìm đất đế giúp\", hiểu là \"tìm đất để giúp\".",
+      "id": "phuc-duc/am-phan/45",
+      "source_ref": {
+        "keywords": [
+          "Ân Quang, Thiên Qúy: có ân nhân"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiPhu"
+        ]
+      },
+      "body": [
+        "Đất vuông, hình như cái nón."
+      ],
+      "id": "phuc-duc/am-phan/46",
+      "source_ref": {
+        "keywords": [
+          "Thai Phụ: đất hình vuông giống như cái nón"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhongCao"
+        ]
+      },
+      "body": [
+        "Đất vuông, hình như cái chiếu."
+      ],
+      "id": "phuc-duc/am-phan/47",
+      "source_ref": {
+        "keywords": [
+          "Phong Cáo: đất hình vuông giống như cái chiếu"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaCai"
+        ]
+      },
+      "body": [
+        "Đất hình như bông hoa nở, như chiếc lọng xòe hoặc cái bát úp."
+      ],
+      "id": "phuc-duc/am-phan/48",
+      "source_ref": {
+        "keywords": [
+          "Hoa Cái: đất có hình giống như bông hoa nở"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TamThai"
+        ]
+      },
+      "body": [
+        "Đất có hình tam tinh."
+      ],
+      "id": "phuc-duc/am-phan/49",
+      "source_ref": {
+        "keywords": [
+          "Tam Thai: đất hình tam tinh"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "BatToa"
+        ]
+      },
+      "body": [
+        "Thế đất như tám ngôi sao bày ra rất cân đối."
+      ],
+      "id": "phuc-duc/am-phan/50",
+      "source_ref": {
+        "keywords": [
+          "Bát Tọa: thế đất giống như tám ngôi sao"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThanhLong"
+        ]
+      },
+      "body": [
+        "Mộ ở gần sông ngòi. Đất hình như người cầm gươm."
+      ],
+      "id": "phuc-duc/am-phan/51",
+      "source_ref": {
+        "keywords": [
+          "Thanh Long: mộ để ở gần sông ngòi"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuongQuan"
+        ]
+      },
+      "body": [
+        "Đất hình như áo giáp."
+      ],
+      "id": "phuc-duc/am-phan/52",
+      "source_ref": {
+        "keywords": [
+          "Tướng Quân: đất có hình giống như áo giáp"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TauThu"
+        ]
+      },
+      "body": [
+        "Mộ ở chỗ thấp trũng, có thế đất như con rồng chầu ở một bên."
+      ],
+      "id": "phuc-duc/am-phan/53",
+      "source_ref": {
+        "keywords": [
+          "Tấu Thư: mộ để ở chỗ thấp, trũng"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhiLiem"
+        ]
+      },
+      "body": [
+        "Mộ gần núi hay đồi trơ trọi. Đất khô nóng, sạt lở."
+      ],
+      "id": "phuc-duc/am-phan/54",
+      "source_ref": {
+        "keywords": [
+          "Phi Liêm: mộ để ở gần núi hay đồi trơ trọi"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HyThan"
+        ]
+      },
+      "body": [
+        "Đất bằng phẳng, lẫn nhiều cát."
+      ],
+      "id": "phuc-duc/am-phan/55",
+      "source_ref": {
+        "keywords": [
+          "Hỷ Thần: đất bằng phẳng"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "BenhPhu"
+        ]
+      },
+      "body": [
+        "Đất hình như cái đai; có mạch nước ngầm chảy xói vào lòng mộ."
+      ],
+      "id": "phuc-duc/am-phan/56",
+      "source_ref": {
+        "keywords": [
+          "Bệnh Phù: đất có hình giống như cái đai"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhucBinh"
+        ]
+      },
+      "body": [
+        "Đất hình như cái chiêng, hoặc như người lính cầm gươm."
+      ],
+      "id": "phuc-duc/am-phan/57",
+      "source_ref": {
+        "keywords": [
+          "Phục Binh: đất có hình giống như cái chiêng"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Đất úng nước, có dòng nước nhỏ chảy uốn quanh mộ."
+      ],
+      "id": "phuc-duc/am-phan/58",
+      "source_ref": {
+        "keywords": [
+          "Trường Sinh: đất úng thủy"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "MocDuc"
+        ]
+      },
+      "body": [
+        "Mộ thường ở gần suối hay lạch nước nên đất ẩm."
+      ],
+      "id": "phuc-duc/am-phan/59",
+      "source_ref": {
+        "keywords": [
+          "Mộc Dục: mộ thường gần suối hay lạch nước"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "QuanDoi"
+        ]
+      },
+      "body": [
+        "Đất hình bán nguyệt."
+      ],
+      "id": "phuc-duc/am-phan/60",
+      "source_ref": {
+        "keywords": [
+          "Quan Đới: đất hình bán nguyệt"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Suy"
+        ]
+      },
+      "body": [
+        "Đất khô, trơ trụi, gồ lên như sống lưng trâu."
+      ],
+      "id": "phuc-duc/am-phan/61",
+      "source_ref": {
+        "keywords": [
+          "Suy: đất khô, trơ trụi"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Benh"
+        ]
+      },
+      "body": [
+        "Đất ẩm ướt, ô uế."
+      ],
+      "id": "phuc-duc/am-phan/62",
+      "source_ref": {
+        "keywords": [
+          "Bệnh: đất ẩm ướt và uế tạp"
+        ],
+        "pages": [
+          145
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Tu"
+        ]
+      },
+      "body": [
+        "Có dòng nước nhỏ chảy uốn quanh mộ."
+      ],
+      "id": "phuc-duc/am-phan/63",
+      "source_ref": {
+        "keywords": [
+          "Tử: có dòng nước nhỏ chảy lượn quanh mộ"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Mo"
+        ]
+      },
+      "body": [
+        "Gần mộ có lạch nước."
+      ],
+      "id": "phuc-duc/am-phan/64",
+      "source_ref": {
+        "keywords": [
+          "Mộ: gần mộ có lạch nước"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Thai"
+        ]
+      },
+      "body": [
+        "Có mạch nước ngầm chảy vào trong mộ."
+      ],
+      "id": "phuc-duc/am-phan/65",
+      "source_ref": {
+        "keywords": [
+          "Thai: có dòng nước ngầm chảy vào trong mộ"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "Duong"
+        ]
+      },
+      "body": [
+        "Có dòng nước từ nơi rất xa chảy đến, uốn quanh mộ."
+      ],
+      "id": "phuc-duc/am-phan/66",
+      "source_ref": {
+        "keywords": [
+          "Dưỡng: có dòng nước ở nơi thật xa chảy đến"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Gần mộ có một khoảng đất trơ trụi, rất rộng."
+      ],
+      "condition_text": "Tuần chiếu cung Phúc Đức",
+      "id": "phuc-duc/am-phan/67",
+      "source_ref": {
+        "keywords": [
+          "Chiếu: gần mộ có khoảng đất trơ trụi và rất rộng"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Tuần án ngữ: mộ đặt ở nơi đất hung, hoang vắng; địa khí từ xa bị chắn nên không thể đến được."
+      ],
+      "correction": "Sách in \"mộ đế ở\", hiểu là \"mộ để ở\".",
+      "id": "phuc-duc/am-phan/68",
+      "source_ref": {
+        "keywords": [
+          "mộ đế ở nơi đất hung và hoang vắng"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Tuan"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Cát khí mỗi ngày một hao mòn, hung khí phát ra rất mạnh. Vì thế họ hàng đời trước khá giả, đến đời này suy bại, ly tán."
+      ],
+      "condition_text": "có Tuần (sách không nói rõ án ngữ hay chiếu) và nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/am-phan/69",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: cát khí càng ngày càng tiêu hao"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Cát khí mỗi ngày một phát mạnh, hung khí hao mòn dần. Vì thế họ hàng đời trước ly tán, lụn bại, nhiều người cùng khổ, hay gặp tai họa, chết non; đến đời nay thì khá giả, nhiều người quý hiển, giàu sang và sống lâu."
+      ],
+      "condition_text": "có Tuần (sách không nói rõ án ngữ hay chiếu) và nhiều sao mờ ám xấu xa",
+      "id": "phuc-duc/am-phan/70",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: cát khí càng ngày càng phát ra mạnh mẽ"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Gần mộ có đường đi, ngõ hẻm, cầu cống hoặc hố vực."
+      ],
+      "condition_text": "Triệt chiếu cung Phúc Đức",
+      "id": "phuc-duc/am-phan/71",
+      "source_ref": {
+        "keywords": [
+          "Chiếu: gần mộ có đường đi, ngõ hẻm, cầu cống hay hố vực"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Triệt án ngữ: mộ nằm sát đường đi, ngõ hẻm, cầu cống hoặc hố vực. Địa khí từ xa đến thì cát hóa hung, hung hóa cát."
+      ],
+      "id": "phuc-duc/am-phan/72",
+      "source_ref": {
+        "keywords": [
+          "Án ngữ: mộ để ở sát đường đi"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Triet"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Địa khí bị tỏa chiết do đất bị đào bới, xẻ cắt hay bị công trình xây cất ngăn chặn; cũng có thể mộ đã sạt lở hoặc thất lạc lâu ngày không tìm thấy. Cát khí mỗi ngày một hao mòn, hung khí phát rất mạnh; vì vậy cả họ trước kia khá giả, nay sa sút, ly tán."
+      ],
+      "condition_text": "có Triệt (sách không nói rõ án ngữ hay chiếu) và nhiều sao sáng sủa tốt đẹp",
+      "correction": "Sách in \"cũng có thổ là mộ bị tan lở\", hiểu là \"cũng có thể là\".",
+      "id": "phuc-duc/am-phan/73",
+      "source_ref": {
+        "keywords": [
+          "địa khí bị tỏa chiết vì đất bị đào bới, xẻ cắt"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Địa khí cũng bị tỏa chiết do đất bị đào bới, xẻ cắt hay bị xây cất ngăn chặn; cũng có thể mộ đã sạt lở hoặc thất lạc lâu ngày. Nhưng may là cát khí mỗi ngày một phát mạnh, kết tụ tốt đẹp, hung khí hao mòn dần; vì vậy cả họ trước kia ly tán, sa sút, nay lại khá giả, nhiều người quý hiển, giàu sang."
+      ],
+      "condition_text": "có Triệt (sách không nói rõ án ngữ hay chiếu) và nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"cũng có thổ là mộ bị tan lở\", hiểu là \"cũng có thể là\".",
+      "id": "phuc-duc/am-phan/74",
+      "source_ref": {
+        "keywords": [
+          "Nhưng may mắn cát khí càng ngày càng phát ra mạnh mẽ"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Xét âm phần: Chính diệu ấy tượng trưng cho ngôi mộ nào thì đương số chịu ảnh hưởng của ngôi mộ đó."
+      ],
+      "condition_text": "cung Phúc Đức có một Chính diệu tọa thủ",
+      "id": "phuc-duc/am-phan/75",
+      "source_ref": {
+        "keywords": [
+          "Cung Phúc Đức có một Chính diệu tọa thủ"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Xét âm phần: chịu ảnh hưởng của cả hai ngôi mộ đặt gần nhau, mỗi ngôi do một Chính diệu tượng trưng."
+      ],
+      "condition_text": "cung Phúc Đức có hai Chính diệu cùng một hành đồng cung",
+      "id": "phuc-duc/am-phan/76",
+      "source_ref": {
+        "keywords": [
+          "Hai Chính diệu cùng thuộc một hành"
+        ],
+        "pages": [
+          146
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Xét âm phần: chịu ảnh hưởng của ngôi mộ do Chính diệu sinh được Bản Mệnh tượng trưng; ngôi mộ của Chính diệu kia dù đặt gần cũng không ảnh hưởng."
+      ],
+      "condition_text": "cung Phúc Đức có hai Chính diệu khác hành đồng cung, một trong hai sao sinh được Bản Mệnh",
+      "id": "phuc-duc/am-phan/77",
+      "source_ref": {
+        "keywords": [
+          "Một trong hai Chính diệu sinh được Bản Mệnh"
+        ],
+        "pages": [
+          147
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "DuocSinh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Xét âm phần: Bản Mệnh sinh được Chính diệu nào thì chịu ảnh hưởng của ngôi mộ do Chính diệu đó tượng trưng; ngôi mộ kia dù đặt gần cũng không ảnh hưởng."
+      ],
+      "condition_text": "cung Phúc Đức có hai Chính diệu khác hành đồng cung, không sao nào sinh được Bản Mệnh",
+      "correction": "Sách viết \"Một trong hai Chính diệu không sinh được Bản Mệnh\". Theo thứ tự các trường hợp (trường hợp trước là một sao sinh được Bản Mệnh) và thí dụ cung Mão có Cự, Cơ với Kim Mệnh tr. 147 (cả hai sao đều không sinh Kim), hiểu là cả hai Chính diệu đều không sinh được Bản Mệnh.",
+      "id": "phuc-duc/am-phan/78",
+      "source_ref": {
+        "keywords": [
+          "Xem Bản",
+          "Mệnh sinh được Chính diệu nào"
+        ],
+        "pages": [
+          147
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "Sinh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Xét âm phần: Bản Mệnh hòa với Chính diệu nào thì chịu ảnh hưởng của ngôi mộ do Chính diệu đó tượng trưng; ngôi mộ kia dù đặt gần cũng không ảnh hưởng."
+      ],
+      "condition_text": "cung Phúc Đức có hai Chính diệu khác hành đồng cung, không sao nào sinh được Bản Mệnh và Bản Mệnh cũng không sinh được sao nào",
+      "id": "phuc-duc/am-phan/79",
+      "source_ref": {
+        "keywords": [
+          "Xem Bản Mệnh hòa với Chính",
+          "diệu nào, tất chịu ảnh hưởng"
+        ],
+        "pages": [
+          147
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "element_relation": [
+            {
+              "pair": "BanMenhChinhTinh",
+              "relation": "BinhHoa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Vị trí âm phần: cung Phúc Đức là chính mộ; cung liền trước là bên tả (mặt trước), cung liền sau là bên hữu (mặt sau); cung xung chiếu là tiền án; hai cung hợp chiếu là Long (bên trái) và Hổ (bên phải). Ví dụ Phúc Đức ở Dần: Dần là chính mộ, Mão là tả, Sửu là hữu, Thân là tiền án, Ngọ là Long, Tuất là Hổ.",
+        "Biết rõ vị trí rồi thì kết hợp với các nhận định về hình sắc, thế đất để luận đoán thật cẩn thận."
+      ],
+      "id": "phuc-duc/am-phan/81",
+      "source_ref": {
+        "keywords": [
+          "Cung xung chiếu: tiền án",
+          "Hai cung hợp chiếu: một là Long (bên trái) một là Hổ",
+          "kết hợp mọi nhận định về hình sắc"
+        ],
+        "pages": [
+          147,
+          148
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Phần lớn cơ nghiệp do tiền nhân để lại."
+      ],
+      "id": "dien-trach/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Một phần lớn cơ nghiệp là của tiền nhân để lại"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nhà đất rất nhiều, cơ nghiệp mỗi ngày một thịnh; tự tay gây dựng thì càng ngày càng phát đạt."
+      ],
+      "id": "dien-trach/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ, Phủ đồng cung, Tướng đồng cung: rất nhiều nhà đất",
+          "Tử đồng cung: rất nhiều nhà đất. Cơ nghiệp ngày càng thịnh vượng"
+        ],
+        "pages": [
+          149,
+          151,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true,
+          "with_all": [
+            "TuVi"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường, yên ổn; giữ vững được cơ nghiệp tổ tiên, cha mẹ để lại."
+      ],
+      "id": "dien-trach/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: nhà đất bình thường, yên ổn"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tổ tiên để lại cơ nghiệp rất lớn nhưng không giữ được."
+      ],
+      "id": "dien-trach/tu-vi/04",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: cơ nghiệp của tổ tiên để lại rất vĩ đại",
+          "Tử đồng cung: cơ nghiệp của tổ tiên để lại rất vĩ đại"
+        ],
+        "pages": [
+          149,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Phá tán hoặc phải rời bỏ tổ nghiệp; về sau lập nghiệp ở nơi xa và được bền vững."
+      ],
+      "correction": "Sách in \"mà bên vững\" ở cả tr. 149 và tr. 153, hiểu là bền vững.",
+      "id": "dien-trach/tu-vi/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: phá tán tổ nghiệp, hay lìa bỏ tổ nghiệp",
+          "Tử đồng cung: phá tán tổ nghiệp, hay lìa bỏ tổ nghiệp"
+        ],
+        "pages": [
+          149,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Không giữ được tổ nghiệp, về sau sa sút."
+      ],
+      "id": "dien-trach/tu-vi/06",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: không gìn giữ được tổ nghiệp",
+          "Tử đồng cung: không gìn giữ được tổ nghiệp"
+        ],
+        "pages": [
+          149,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Phá tán tổ nghiệp, hoặc có mà không được hưởng; lao tâm khổ tứ vì những chuyện liên quan đến nhà đất."
+      ],
+      "id": "dien-trach/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "phá tán tổ nghiệp, hay là có mà không được thừa"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Được hưởng tổ nghiệp, nhưng cơ nghiệp càng về sau càng sa sút, không giữ bền được."
+      ],
+      "id": "dien-trach/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: được hưởng của tổ nghiệp để lại",
+          "Liêm đồng cung: được hưởng của tổ nghiệp để lại"
+        ],
+        "pages": [
+          149,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Nhà đất lúc đầu ít, về sau nhiều."
+      ],
+      "id": "dien-trach/liem-trinh/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: nhà đất trước ít sau nhiều"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tự lập nghiệp, lúc thành lúc bại; thuở đầu rất vất vả, nhưng khi có tuổi thì có chỗ ăn ở chắc chắn."
+      ],
+      "id": "dien-trach/liem-trinh/04",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: tự tay lập nghiệp. Thành bại thất thường",
+          "Liêm đồng cung: tự tay lập nghiệp. Thành bại thất thường"
+        ],
+        "pages": [
+          149,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Buổi đầu lập nghiệp hay thất bại, phá tán; về sau mới bền vững."
+      ],
+      "id": "dien-trach/liem-trinh/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: lập nghiệp ở buổi đầu hay bị thất bại",
+          "Liêm đồng cung: lập nghiệp ở buổi đầu hay bị thất bại"
+        ],
+        "pages": [
+          149,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp để lại khá nhiều nhà đất nhưng không được hưởng; về già cũng không có chỗ ăn ở chắc chắn."
+      ],
+      "correction": "Sách in \"nơi an chốn ở\" ở cả tr. 149 và tr. 151, hiểu là nơi ăn chốn ở.",
+      "id": "dien-trach/liem-trinh/06",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: nhà đất của tổ nghiệp để lại khá nhiều",
+          "Liêm đồng cung: nhà đất của tổ nghiệp để lại khá nhiều"
+        ],
+        "pages": [
+          149,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Tự tay lập nghiệp, trước khó sau dễ."
+      ],
+      "id": "dien-trach/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Tự tay lập nghiệp, trước khó sau dễ"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Giàu có lớn: tay trắng lập nghiệp mà mỗi ngày một thịnh vượng."
+      ],
+      "id": "dien-trach/thien-dong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão hoặc Nguyệt đồng cung tại Tý: giàu có lớn"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        },
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thành bại thất thường, nhưng về già cũng có chỗ nương thân."
+      ],
+      "id": "dien-trach/thien-dong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu hoặc Nguyệt đồng cung tại Ngọ: thành bại thất",
+          "Đồng đồng cung tại Ngọ: thành bại thất thường"
+        ],
+        "pages": [
+          149,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true,
+          "with_all": [
+            "ThienDong"
+          ]
+        },
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Có nhà đất nhưng rất ít, lại hay thay đổi, mua vào bán ra liên tục."
+      ],
+      "id": "dien-trach/thien-dong/04",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: có nhà đất, nhưng rất ít"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Hầu như không có nhà đất, nếu có thì cũng rất nhỏ mọn. Suốt đời hay gặp tranh chấp về đất đai."
+      ],
+      "id": "dien-trach/thien-dong/05",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: nhà đất hầu như không có"
+        ],
+        "pages": [
+          149
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Lúc đầu ít nhà đất, về sau có rất nhiều."
+      ],
+      "id": "dien-trach/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: ban đầu có ít nhà đất",
+          "Đồng đồng cung: ban đầu có ít nhà đất"
+        ],
+        "pages": [
+          149,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; về già may lắm mới có một chỗ nương thân."
+      ],
+      "id": "dien-trach/thien-dong/07",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: không có nhà đất, về già may mắn lắm",
+          "Đồng đồng cung: không có nhà đất, về già may mắn lắm"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp để lại rất lớn, càng về sau càng thịnh."
+      ],
+      "id": "dien-trach/vu-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: cơ nghiệp của tổ nghiệp để lại rất lớn"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Giữ được tổ nghiệp; về sau làm ăn thịnh đạt gấp bội."
+      ],
+      "id": "dien-trach/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: gìn giữ được tổ nghiệp",
+          "Vũ đồng cung: gìn giữ được tổ nghiệp"
+        ],
+        "pages": [
+          150,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Thuở đầu nhà đất lúc mua lúc bán, thất thường; đến già thì có nhiều nhà đất."
+      ],
+      "id": "dien-trach/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: nhà đất ban đầu mua vào, bán ra thất thường"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp có để lại nhà đất nhưng rất ít, không đáng kể. Phải tự lập nghiệp, và ngoài ba mươi tuổi mới có nhà đất vững chắc."
+      ],
+      "correction": "Sách in \"của có nghiệp\" ở cả tr. 150 và tr. 151, hiểu là của tổ nghiệp. Ở tr. 150 chữ \"chắn.\" cuối câu bị in lệch lên trước dòng \"- Tham đồng cung\"; đọc theo câu nguyên vẹn ở mục Tham Lang tr. 151.",
+      "id": "dien-trach/vu-khuc/04",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: có nhà đất của có nghiệp để lại",
+          "Vũ đồng cung: có nhà đất của có nghiệp để lại"
+        ],
+        "pages": [
+          150,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Mua tậu nhà đất rồi lại phá tán; về sau mới có chỗ ăn ở chắc chắn."
+      ],
+      "correction": "Sách in \"nhà đề rồi lại pha tán\" ở cả tr. 150 và tr. 153, hiểu là \"nhà đất rồi lại phá tán\".",
+      "id": "dien-trach/vu-khuc/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: mua tậu nhà đề rồi lại pha tán",
+          "Vũ đồng cung: mua tậu nhà đề rồi lại pha tán"
+        ],
+        "pages": [
+          150,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; may lắm về già mới có một căn nhà nhỏ để nương náu."
+      ],
+      "id": "dien-trach/vu-khuc/06",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: không có nhà đất. May mắn lắm về già",
+          "Vũ đồng cung: không có nhà đất. May mắn lắm về già"
+        ],
+        "pages": [
+          150,
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp để lại rất lớn, nhưng về sau sa sút dần."
+      ],
+      "id": "dien-trach/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tỵ, Ngọ: tổ nghiệp để lại rất lớn lao"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; may lắm về già mới có chút ít."
+      ],
+      "id": "dien-trach/thai-duong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tuất, Hợi, Tý: không có nhà đất"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Giữ vững được tổ nghiệp, về sau mua thêm được nhiều nhà đất."
+      ],
+      "id": "dien-trach/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Dần hoặc Lương đồng cung tại Mão: giữ vững",
+          "Nhật đồng cung tại Dần: giữ vững được tổ nghiệp",
+          "Nhật đồng cung tại Mão: giữ vững được tổ nghiệp"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        },
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Buổi đầu phá tán hoặc phải rời bỏ tổ nghiệp; phải đến già mới có nhà đất, mà cũng rất ít."
+      ],
+      "id": "dien-trach/thai-duong/04",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Thân hoặc Lương đồng cung tại Dậu: buổi đầu",
+          "Nhật đồng cung tại Thân: buổi đầu phá tán tổ nghiệp",
+          "Nhật đồng cung tại Dậu: buổi đầu phá tán tổ nghiệp"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        },
+        {
+          "branches": [
+            "Dau"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Rất nhiều nhà đất: một phần do tổ nghiệp để lại, một phần do tự tay gây dựng."
+      ],
+      "id": "dien-trach/thai-duong/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: rất nhiều nhà đất, một phần là của tổ nghiệp",
+          "Nhật đồng cung: rất nhiều nhà đất, một phần là của tổ nghiệp"
+        ],
+        "pages": [
+          150,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Không được hưởng tổ nghiệp, nhưng tự gây dựng nên rất nhiều nhà đất."
+      ],
+      "correction": "Sách in \"Ty\" không dấu. Hiểu là Tỵ: Tý đã có ở dòng sau (\"Hợi, Tý, Sửu\"), và hai nhóm Tỵ, Ngọ, Mùi với Hợi, Tý, Sửu đối xứng nhau, phủ đủ sáu cung Thiên Cơ đơn thủ.",
+      "id": "dien-trach/thien-co/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ty, Ngọ, Mùi: không được thừa hưởng tổ nghiệp"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường."
+      ],
+      "correction": "Sách in \"Đơn thu\", hiểu là Đơn thủ.",
+      "id": "dien-trach/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thu tại Hợi, Tý, Sửu: nhà đất bình thường"
+        ],
+        "pages": [
+          150
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Tự tay lập nghiệp, về sau mua được nhiều nhà đất."
+      ],
+      "id": "dien-trach/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: tự tay lập nghiệp, về sau mua tậu",
+          "Cơ đồng cung: tự tay lập nghiệp, về sau mua tậu"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Khá nhiều nhà đất."
+      ],
+      "id": "dien-trach/thien-co/04",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: khá nhiều nhà đất",
+          "Cơ đồng cung tại Thân: khá nhiều nhà đất"
+        ],
+        "pages": [
+          150,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường."
+      ],
+      "id": "dien-trach/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: nhà đất bình thường",
+          "Cơ đồng cung tại Dần: nhà đất bình thường"
+        ],
+        "pages": [
+          150,
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Rất nhiều nhà đất, một phần do tổ nghiệp để lại."
+      ],
+      "id": "dien-trach/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Mão: rất nhiều nhà đất",
+          "Cơ đồng cung tại Mão: rất nhiều nhà đất"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Phá tán hoặc rời bỏ tổ nghiệp; tự lập cơ nghiệp nhưng nhà đất cũng không nhiều."
+      ],
+      "id": "dien-trach/thien-co/07",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Dậu: phá tán tổ nghiệp",
+          "Cơ đồng cung tại Dậu: phá tán tổ nghiệp"
+        ],
+        "pages": [
+          150,
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Được hưởng tổ nghiệp để lại."
+      ],
+      "id": "dien-trach/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "Được thừa hưởng của tổ nghiệp để lại"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Khá nhiều nhà đất."
+      ],
+      "correction": "Sách in \"Đơn thủ tại Dần, Thân\". Thiên Phủ ở Dần, Thân luôn đồng cung với Tử Vi nên không bao giờ đơn thủ ở đó; Phủ đơn thủ chỉ ở Tỵ, Hợi, Sửu, Mùi, Mão, Dậu, và dòng kế tiếp đã có Sửu, Mùi, Mão, Dậu. Các cung khác của sách chia Phủ đơn thủ đúng thành \"Tỵ, Hợi\" và \"Sửu, Mùi, Mão, Dậu\" (Phụ Mẫu tr. 127, Quan Lộc tr. 160, Thiên Di tr. 176), nên hiểu là Tỵ, Hợi.",
+      "id": "dien-trach/thien-phu/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: khá nhiều nhà đất"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường."
+      ],
+      "id": "dien-trach/thien-phu/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: nhà đất bình thường"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp để lại rất ít; tự tay gây dựng mà trở nên giàu có, mua được nhiều nhà đất."
+      ],
+      "id": "dien-trach/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: tổ nghiệp để lại rất ít"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; may lắm về già mới có chỗ nương thân."
+      ],
+      "id": "dien-trach/thai-am/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: không có nhà đất"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Phá tán hoặc phải rời bỏ tổ nghiệp, nhưng về sau mua được khá nhiều nhà đất."
+      ],
+      "id": "dien-trach/tham-lang/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: phá tán tổ nghiệp, hay phải lìa bỏ tổ nghiệp"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp nếu có cũng phá tán hết hoặc phải bỏ đi, không được hưởng. Gây dựng cơ nghiệp rất vất vả, chật vật; may lắm về già mới có nhà ở chắc chắn."
+      ],
+      "id": "dien-trach/tham-lang/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân, Tý, Ngọ: nếu có nhà đất của tổ nghiệp"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Hay vướng thị phi, kiện cáo về nhà đất."
+      ],
+      "id": "dien-trach/cu-mon/01",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hay mắc thị phi, kiện cáo về nhà đất"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Có tổ nghiệp nhưng không được hưởng; tự gây dựng ở nơi xa quê, về sau mua được nhiều nhà đất."
+      ],
+      "id": "dien-trach/cu-mon/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Ngọ: có tổ nghiệp để lại"
+        ],
+        "pages": [
+          151
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; nếu có cũng rất ít, nhỏ mọn, tầm thường."
+      ],
+      "id": "dien-trach/cu-mon/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Thìn, Tuất: không có nhà đất"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Mua tậu nhà đất dễ dàng."
+      ],
+      "id": "dien-trach/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Tỵ, Hợi: mua tậu nhà đất dễ dàng"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường. Nếu may được hưởng tổ nghiệp thì về sau cũng phá tán hết, rồi lại phải tự tay gây dựng lại."
+      ],
+      "id": "dien-trach/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: nhà đất bình thường"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Có nhà đất do tổ nghiệp để lại, về sau còn mua thêm được rất nhiều."
+      ],
+      "id": "dien-trach/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: có nhà đất của tổ nghiệp để lại"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Nhà đất bình thường; cả đời không phải lo về chỗ ăn ở."
+      ],
+      "id": "dien-trach/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: nhà đất bình thường"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Có nhà đất nhưng rất ít, lại hay thay đổi, mua vào bán ra liên tục."
+      ],
+      "id": "dien-trach/thien-luong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: có nhà đất, nhưng rất ít"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp để lại rất ít; tự lập, về sau rất khá giả, mua được nhiều nhà đất."
+      ],
+      "id": "dien-trach/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: tổ nghiệp để lại rất ít"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Nhà đất lúc mua vào, lúc bán ra, thất thường. Tổ nghiệp nếu có cũng phá tán hết hoặc phải bỏ đi, không được hưởng; tự tay gây dựng, về sau có nhà đất bền vững."
+      ],
+      "id": "dien-trach/that-sat/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: nhà đất khi mua vào, khi bán ra"
+        ],
+        "pages": [
+          152
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; nếu có chút ít thì về sau cũng vì nó mà gặp tai họa, tuổi thọ cũng bị giảm."
+      ],
+      "correction": "Sách in \"Đơn chủ\", hiểu là Đơn thủ.",
+      "id": "dien-trach/that-sat/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn chủ tại Thìn, Tuất: không có nhà đất"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Mua tậu nhà đất rất nhanh, nhưng về già cơ nghiệp sa sút. Tổ nghiệp nếu có cũng không thể giữ được lâu bền."
+      ],
+      "id": "dien-trach/pha-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: mua tậu nhà đất một cách nhanh chóng"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Không có nhà đất."
+      ],
+      "id": "dien-trach/pha-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: không có nhà đất"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Có nhà đất rồi lại phá tán hết; lập nghiệp lúc thành lúc bại, đến già mới có nhà đất bền vững."
+      ],
+      "id": "dien-trach/pha-quan/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: có nhà đất, rồi lại phá tán đến hết"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Cơ nghiệp trước phá sau thành."
+      ],
+      "id": "dien-trach/kinh-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: cơ nghiệp trước phá sau thành"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; có chút ít cũng không giữ được lâu bền."
+      ],
+      "id": "dien-trach/kinh-duong/02",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: không có nhà đất. Nếu có chút ít"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "KinhDuong"
+        ]
+      },
+      "body": [
+        "Kình Dương gặp Không, Kiếp: hủy hoại tổ nghiệp; buổi đầu có mua được nhà đất thì về sau cũng bán hết."
+      ],
+      "id": "dien-trach/kinh-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp: hủy hoại tổ nghiệp"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Không có nhà đất. Tổ nghiệp nếu có cũng phá tán hoặc phải bỏ đi, không được hưởng."
+      ],
+      "id": "dien-trach/da-la/01",
+      "source_ref": {
+        "keywords": [
+          "Không có nhà đất. Nếu có tổ nghiệp để lại rồi cũng phá tán"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Có tổ nghiệp để lại, nhưng về sau cũng phá tán, hoặc bỏ đi lập nghiệp nơi xa."
+      ],
+      "id": "dien-trach/hoa-linh/01",
+      "source_ref": {
+        "keywords": [
+          "Có nhà đất của tổ nghiệp để lại, nhưng sau cũng phá tán"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "ThamLang"
+          ]
+        },
+        {
+          "not_with": [
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hỏa hoặc Linh đồng cung với Tham, Vũ: tự tay gây dựng, về sau rất khá giả, mua được nhiều nhà đất."
+      ],
+      "id": "dien-trach/hoa-linh/02",
+      "source_ref": {
+        "keywords": [
+          "Tham, Vũ đồng cung: tự tay gây dựng, sau rất khá giả"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "HoaTinh",
+            "ThamLang",
+            "VuKhuc"
+          ]
+        },
+        {
+          "with_all": [
+            "LinhTinh",
+            "ThamLang",
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hỏa, Linh gặp Không, Kiếp: không có nhà đất; có đôi chút rồi cũng lụn bại."
+      ],
+      "id": "dien-trach/hoa-linh/03",
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp: không có nhà đất. Nếu có đôi chút, rồi cũng lụn bại"
+        ],
+        "pages": [
+          153
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Mua nhà đất rất nhanh, nhưng đã mua nhanh thì ắt bán cũng nhanh."
+      ],
+      "id": "dien-trach/khong-kiep/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: mua tậu nhà đất một cách nhanh chóng"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Không có nhà đất."
+      ],
+      "id": "dien-trach/khong-kiep/02",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: không có nhà đất"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Mua bán nhà đất rất dễ dàng, cơ nghiệp mỗi ngày một thịnh; có tổ nghiệp thì cũng giữ được lâu bền."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "dien-trach/xuong-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: mua bán nhà đất rất dễ dàng"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Không có nhà đất; có chút ít về sau cũng bán hết."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "dien-trach/xuong-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: không có nhà đất"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Nhà cửa to lớn, đẹp đẽ."
+      ],
+      "id": "dien-trach/khoi-viet/01",
+      "source_ref": {
+        "keywords": [
+          "Nhà cửa to tát đẹp đẽ"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Giữ được tổ nghiệp, mua tậu nhà đất dễ dàng."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "dien-trach/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: gìn giữ được tổ nghiệp"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Cơ nghiệp bị phá tán rất nhanh. Nhưng dù không có nhà cửa, vẫn được nhiều người giúp đỡ, cho ở nhờ những nơi cao ráo, đẹp đẽ."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"giúp dỡ\", hiểu là giúp đỡ.",
+      "id": "dien-trach/ta-huu/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: cơ nghiệp bị phá tán một cách nhanh chóng"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Tổ nghiệp có để lại nhà đất nhưng rất ít; phải tự tay gây dựng mới khá giả."
+      ],
+      "id": "dien-trach/loc-ton/01",
+      "source_ref": {
+        "keywords": [
+          "Có nhà đất của tổ nghiệp để lại nhưng rất ít"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "transformations": [
+          "HoaLoc",
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Nhà đất rộng rãi."
+      ],
+      "id": "dien-trach/loc-khoa/01",
+      "source_ref": {
+        "keywords": [
+          "7.23. Lộc, Khoa",
+          "Nhà đất rộng rãi"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Thường được ở dinh thự; nếu không thì cũng là nhà cao cửa rộng, rất sang trọng."
+      ],
+      "id": "dien-trach/hoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Thường được ở dinh thự"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Nhà đất bền vững."
+      ],
+      "id": "dien-trach/hoa-ky/01",
+      "source_ref": {
+        "keywords": [
+          "7.25. Hóa Kỵ",
+          "Nhà đất bền vững"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Mua tậu nhà đất ở nơi xa quê hương."
+      ],
+      "id": "dien-trach/thien-ma/01",
+      "source_ref": {
+        "keywords": [
+          "Mua tậu nhà đất ở xa quê hương"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "body": [
+        "Nhà cửa mục nát hoặc có mối mọt."
+      ],
+      "id": "dien-trach/khoc-hu/01",
+      "source_ref": {
+        "keywords": [
+          "Nhà cửa mục nát hay có mối mọt"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "LongTri",
+          "PhuongCac"
+        ]
+      },
+      "body": [
+        "Nhà cửa cao rộng, đẹp đẽ."
+      ],
+      "id": "dien-trach/long-phuong/01",
+      "source_ref": {
+        "keywords": [
+          "Nhà cửa cao rộng, đẹp đẽ"
+        ],
+        "pages": [
+          154
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Cơ nghiệp bền vững; nhà đất rất khó bán."
+      ],
+      "id": "dien-trach/co-qua/01",
+      "source_ref": {
+        "keywords": [
+          "7.29. Cô, Quả",
+          "Cơ Nghiệp bền vững. Rất khó bán nhà đất"
+        ],
+        "pages": [
+          154,
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Được hưởng của thừa tự."
+      ],
+      "id": "dien-trach/quang-quy/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng của thừa tự"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Nhà đất bền vững, về sau mua thêm được rất nhiều."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "dien-trach/dau-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: nhà đất bền vững"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Cơ nghiệp mỗi ngày một lụn bại."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "dien-trach/dau-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: cơ nghiệp càng ngày càng lụn bại"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ: đọc ngược ảnh hưởng của các sao tọa thủ, tốt hóa xấu, xấu hóa tốt."
+      ],
+      "id": "dien-trach/tuan-triet/01",
+      "source_ref": {
+        "keywords": [
+          "Nhận định nghịch đảo ảnh hưởng của những sao tọa thủ"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Không có nhà đất của tổ nghiệp; may có đôi chút thì về sau cũng phá tán hết hoặc phải bỏ đi, không được hưởng.",
+        "Tự lập cơ nghiệp nhưng lúc thành lúc bại, hay phải đổi chỗ ăn ở; đến lúc già mới có nhà đất, song nhỏ mọn, tầm thường.",
+        "Trường hợp này không cần chú trọng nhiều đến ảnh hưởng của các sao tọa thủ."
+      ],
+      "condition_text": "Tuần và Triệt cùng án ngữ trong cung Điền Trạch",
+      "correction": "Sách in \"nhà đất của của nghiệp\", hiểu là của tổ nghiệp; \"ảnh hưởng của không sao tọa thủ\", hiểu là của các sao tọa thủ.",
+      "id": "dien-trach/tuan-triet/02",
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ đồng cung",
+          "Không có nhà đất của của nghiệp để lại"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có chó đá, đặt ở phương ứng với cung Điền Trạch."
+      ],
+      "id": "dien-trach/bo-sao/01",
+      "source_ref": {
+        "keywords": [
+          "Trong nhà có chó đá. Cung Điền Trạch ứng phương nào"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Chó đá chìm sâu dưới đất."
+      ],
+      "id": "dien-trach/bo-sao/02",
+      "source_ref": {
+        "keywords": [
+          "Cung Điền Trạch an tại Hợi, Tý, Thìn: chó đá chìm sâu"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Thin"
+          ],
+          "meets_all": [
+            "ThaiDuong",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Chó đá nằm dưới ao."
+      ],
+      "id": "dien-trach/bo-sao/03",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Hổ, Long Trì",
+          "Chó đá ở dưới ao"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "BachHo",
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có ao giếng, đã có người chết đuối ở đó."
+      ],
+      "condition_text": "Thái Dương mờ ám xấu xa",
+      "id": "dien-trach/bo-sao/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhật mờ ám, Thanh Long, Long Trì",
+          "ở đó có người chết đuối"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThanhLong",
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Nhà hay bị cháy."
+      ],
+      "id": "dien-trach/bo-sao/05",
+      "source_ref": {
+        "keywords": [
+          "7.38. Cự, Hỏa",
+          "Nhà hay bị cháy"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "CuMon",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Nhà cửa cao ráo, rộng rãi, nhưng hay có lửa."
+      ],
+      "id": "dien-trach/bo-sao/06",
+      "source_ref": {
+        "keywords": [
+          "Nhà cửa cao ráo rộng rãi, nhưng hay có lửa"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "CuMon",
+            "TangMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong vườn, dưới một gốc cây có hòn đá để lâu ngày đã thành tinh."
+      ],
+      "id": "dien-trach/bo-sao/07",
+      "source_ref": {
+        "keywords": [
+          "Dưới gốc cây trong vườn có hòn đá lâu ngày thành tinh"
+        ],
+        "pages": [
+          155
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Yêu tinh rất quái gở, hay trêu chọc khiến người trong nhà đau mắt hoặc đau bụng."
+      ],
+      "correction": "Sách in \"trêu tròng\", hiểu là trêu chọc.",
+      "id": "dien-trach/bo-sao/08",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cơ, Nguyệt, Đà, Kỵ",
+          "Yêu tinh rất quái gở, hay trêu tròng làm cho người trong nhà"
+        ],
+        "pages": [
+          155,
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Gần nhà có người lấy trộm của đình chùa, nên bị thần thánh trừng phạt."
+      ],
+      "correction": "Sách in \"Gần nhà cố kẻ\", hiểu là có kẻ.",
+      "id": "dien-trach/bo-sao/09",
+      "source_ref": {
+        "keywords": [
+          "Cơ, Nguyệt (đồng cung, cung Điền Trạch an tại Thân)",
+          "ăn trộm của đình chùa"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Nhà cháy, lụn bại."
+      ],
+      "id": "dien-trach/bo-sao/10",
+      "source_ref": {
+        "keywords": [
+          "7.43. Cơ, Hỏa",
+          "Nhà cháy, lụn bại"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Chỗ ở trước kia có nhiều cây cối, về sau bị chặt hết."
+      ],
+      "id": "dien-trach/bo-sao/11",
+      "source_ref": {
+        "keywords": [
+          "Chỗ ở xưa kia có nhiều cây cối, sau bị chặt hết"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Cây trong vườn bị sét đánh."
+      ],
+      "id": "dien-trach/bo-sao/12",
+      "source_ref": {
+        "keywords": [
+          "Cơ, Hỏa, Linh, Hình, Việt",
+          "Cây trong vườn bị sét đánh"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "HoaTinh",
+            "LinhTinh",
+            "ThienHinh",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có chó đá."
+      ],
+      "id": "dien-trach/bo-sao/13",
+      "source_ref": {
+        "keywords": [
+          "7.46. Cơ, Hổ",
+          "Trong nhà có chó đá"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Chó đá thành tinh."
+      ],
+      "id": "dien-trach/bo-sao/14",
+      "source_ref": {
+        "keywords": [
+          "Cơ, Hổ, Kình, Đà",
+          "Chó đá thành tinh"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "BachHo",
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có ma quái ẩn náu."
+      ],
+      "correction": "\"Mộc\" đọc là Mộc Dục: sách cũng viết tắt như vậy ở mục 3.75 tr. 50 (\"Cung Mệnh có Mộc tọa thủ\" trong mục Mộc Dục).",
+      "id": "dien-trach/bo-sao/15",
+      "source_ref": {
+        "keywords": [
+          "Cơ, Không, Kiếp, Mộc",
+          "Trong nhà có ma quái ẩn náu"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "DiaKhong",
+            "DiaKiep",
+            "MocDuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Nhà có của chôn, hoặc đào được của."
+      ],
+      "condition_text": "sao Tử tọa thủ cung Điền Trạch (Tử Vi hay sao Tử của vòng Trường Sinh, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/16",
+      "source_ref": {
+        "keywords": [
+          "Lộc Tồn, Tử",
+          "Nhà có của chôn, hay đào được của"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LocTon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Có sao Tử mà không gặp Lộc Tồn: chỉ đào được đồ sứ, đồ sành mà thôi."
+      ],
+      "condition_text": "sao Tử tọa thủ cung Điền Trạch (Tử Vi hay sao Tử của vòng Trường Sinh, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/17",
+      "source_ref": {
+        "keywords": [
+          "không gặp Lộc, tất chỉ đào được đồ sứ, đồ sành"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_meets": [
+            "LocTon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà rất nhiều ma."
+      ],
+      "condition_text": "gặp thêm Hỉ (Thiên Hỷ hay Hỷ Thần, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/18",
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh, Riêu, Hỉ",
+          "Trong nhà rất nhiều ma"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Kẻ gian phóng hỏa đốt nhà."
+      ],
+      "condition_text": "gặp thêm Tướng (Thiên Tướng hay Tướng Quân, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/19",
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh, Tướng, Binh",
+          "Quân gian phóng hỏa đốt nhà"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Cháy nhà, lửa bắt đầu từ phương ứng với cung Điền Trạch."
+      ],
+      "id": "dien-trach/bo-sao/20",
+      "source_ref": {
+        "keywords": [
+          "7.52. Hỏa, Tang",
+          "Nếu cung Điền Trạch ứng phương nào tất bắt đầu từ phương đó"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HoaTinh",
+            "TangMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Kẻ gian rình rập gần nhà; trộm cướp ở ngay hàng xóm."
+      ],
+      "id": "dien-trach/bo-sao/21",
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, giáp cung Điền Trạch",
+          "Gian phi rình mò ở gần nhà"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "flanked_by": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trộm cướp lẻn vào nhà, thường có kẻ nội ứng từ trước."
+      ],
+      "condition_text": "gặp thêm Tướng (Thiên Tướng hay Tướng Quân, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/22",
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Tướng, Binh, Tả, Hữu",
+          "thường có nội công từ trước"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "PhucBinh",
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Giặc cướp phá nhà, lấy của."
+      ],
+      "condition_text": "gặp thêm Tướng (Thiên Tướng hay Tướng Quân, sách không nói rõ) và Binh (Phục Binh)",
+      "correction": "Đọc đúng chữ thì Phục Binh không bao giờ hội hợp cùng lúc với cả Kình Dương và Đà La: Kình, Đà ở hai bên Lộc Tồn, muốn cùng hội một cung thì Lộc Tồn phải cách cung đó 5 hoặc 7 cung, khi ấy Phục Binh (cách Lộc Tồn 2 cung, vòng Bác Sĩ) rơi ra ngoài tam hợp và xung chiếu. Máy chỉ lọc Không, Kiếp, Kình, Đà; Tướng, Binh để ở condition_text, chờ chủ dự án quyết.",
+      "id": "dien-trach/bo-sao/23",
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Tướng, Binh, Kình, Đà",
+          "Giặc cướp phá nhà lấy của"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có ao giếng, trên bờ cây cối mọc um tùm."
+      ],
+      "correction": "Sách in \"Trên bờ cỏ nhiều cây cối\", hiểu là \"có nhiều cây cối\".",
+      "id": "dien-trach/bo-sao/24",
+      "source_ref": {
+        "keywords": [
+          "7.56. Thanh Long, Long Trì",
+          "Trong nhà có ao giếng"
+        ],
+        "pages": [
+          156
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThanhLong",
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Thanh Long không gặp Long Trì: trong nhà vẫn có ao giếng nhưng không đẹp."
+      ],
+      "id": "dien-trach/bo-sao/25",
+      "source_ref": {
+        "keywords": [
+          "Long không gặp Long Trì trong nhà cũng có ao giếng nhưng không đẹp"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThanhLong"
+          ],
+          "not_meets": [
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Ao giếng lâu ngày bị bồi lấp."
+      ],
+      "condition_text": "gặp Long (Long Trì hay Thanh Long, sách không nói rõ)",
+      "id": "dien-trach/bo-sao/26",
+      "source_ref": {
+        "keywords": [
+          "Long, Không, Kiếp",
+          "Ao giếng lâu ngày bị bồi lấp"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Trong nhà có ma."
+      ],
+      "correction": "Sách in \"ma mộc\", không rõ nghĩa (có thể lỗi in); chỉ giữ ý chắc chắn là trong nhà có ma.",
+      "id": "dien-trach/bo-sao/27",
+      "source_ref": {
+        "keywords": [
+          "7.58. Khốc, Hư",
+          "Trong nhà có ma mộc"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Con ma rất quái ác."
+      ],
+      "id": "dien-trach/bo-sao/28",
+      "source_ref": {
+        "keywords": [
+          "Khốc, Hư, Hỏa, Linh",
+          "Con ma rất quái ác"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Suu",
+            "Dan",
+            "Mao",
+            "Ti",
+            "Ngo",
+            "Mui",
+            "Than",
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu",
+            "HoaTinh",
+            "LinhTinh"
+          ],
+          "not_meets": [
+            "TauThu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Khốc, Hư, Hỏa, Linh mà cung Điền Trạch ở Thìn hoặc gặp thêm Tấu Thư: con ma sẽ bị đánh đuổi đi."
+      ],
+      "id": "dien-trach/bo-sao/29",
+      "source_ref": {
+        "keywords": [
+          "Nếu cung Điền Trạch an tại Thìn, hay nếu gặp thêm",
+          "Tấu, con ma sẽ bị đánh bật đi"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin"
+          ],
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        },
+        {
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu",
+            "HoaTinh",
+            "LinhTinh",
+            "TauThu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Có ma đàn bà lẩn khuất trong nhà."
+      ],
+      "condition_text": "gặp thêm Cái (Hoa Cái)",
+      "correction": "Hồng Loan và Hoa Cái không bao giờ hội hợp: Hồng Loan an từ Mão đếm ngược theo Chi năm sinh, Hoa Cái ở Thìn, Tuất, Sửu, Mùi theo tam hợp tuổi, nên hai sao luôn cách nhau một số lẻ cung, mà đồng cung, tam hợp, xung chiếu đều cách số chẵn. Máy chỉ lọc Hồng, Riêu; Cái để ở condition_text, chờ chủ dự án quyết.",
+      "id": "dien-trach/bo-sao/30",
+      "source_ref": {
+        "keywords": [
+          "Hồng, Riêu, Cái",
+          "Ma đàn bà lần khuất ở trong nhà"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Được hưởng của thừa tự do một người đàn bà để lại."
+      ],
+      "id": "dien-trach/bo-sao/31",
+      "source_ref": {
+        "keywords": [
+          "Quang, Qúy, Cô, Quả, Hồng, Đào",
+          "Được thừa hưởng của thừa tự của người đàn bà để lại"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "AnQuang",
+            "ThienQuy",
+            "CoThan",
+            "QuaTu",
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "DienTrach"
+      },
+      "body": [
+        "Các bộ Cơ, Nguyệt; Cơ, Không, Kiếp, Mộc Dục; Hỏa, Linh, Riêu, Hỉ; Hồng, Riêu, Cái mà có Tuần hoặc Triệt án ngữ: nhà có ma một chân, phần nhiều là oan hồn quấy phá."
+      ],
+      "condition_text": "với bộ Hỏa, Linh, Riêu thì phải gặp thêm Hỉ (Thiên Hỷ hay Hỷ Thần, sách không nói rõ); với bộ Hồng, Riêu thì phải gặp thêm Cái (Hoa Cái)",
+      "correction": "Bộ Hồng, Riêu, Cái (7.60): Hồng Loan và Hoa Cái không bao giờ hội hợp, xem dien-trach/bo-sao/30; máy chỉ lọc Hồng, Riêu.",
+      "id": "dien-trach/bo-sao/32",
+      "source_ref": {
+        "keywords": [
+          "Những trường hợp 7.40",
+          "được Tuần hay Triệt án ngữ",
+          "Trong nhà có ma một chân"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        },
+        {
+          "meets_all": [
+            "ThienCo",
+            "DiaKhong",
+            "DiaKiep",
+            "MocDuc"
+          ],
+          "tuan_triet": "Either"
+        },
+        {
+          "meets_all": [
+            "HoaTinh",
+            "LinhTinh",
+            "ThienRieu"
+          ],
+          "tuan_triet": "Either"
+        },
+        {
+          "meets_all": [
+            "HongLoan",
+            "ThienRieu"
+          ],
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "DienTrach"
+      },
+      "body": [
+        "Không được hưởng tổ nghiệp, phải tự tay gây dựng."
+      ],
+      "id": "dien-trach/vo-chinh-dieu/01",
+      "source_ref": {
+        "keywords": [
+          "Không được thừa hưởng tổ nghiệp: phải tự tay gây dựng"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "DienTrach"
+      },
+      "body": [
+        "Lập nghiệp trước khó sau dễ. Mua nhà đất rồi lại bán, chỗ ăn ở luôn thay đổi; phải đến già mới có chỗ ở ổn định, song nhỏ mọn, tầm thường."
+      ],
+      "condition_text": "không có Nhật, Nguyệt cùng sáng sủa xung chiếu hay hợp chiếu",
+      "id": "dien-trach/vo-chinh-dieu/02",
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ: lập nghiệp trước khó sau dễ"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "DienTrach"
+      },
+      "body": [
+        "Nhà đất rất nhiều, nơi ở cao ráo, đẹp đẽ; càng về sau mua được càng nhiều."
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "correction": "Sách in \"xung chiến\", hiểu là xung chiếu.",
+      "id": "dien-trach/vo-chinh-dieu/03",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt (cùng sáng sủa) xung chiến hay hợp chiếu: rất nhiều nhà"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "DienTrach"
+      },
+      "body": [
+        "Vô Chính diệu có Tuần, Triệt án ngữ lại được Nhật, Nguyệt sáng sủa chiếu: rất rực rỡ. Buổi đầu lập nghiệp tuy chật vật, nhưng về sau rất giàu có, nhà cửa hàng dãy, ruộng đất thẳng cánh cò bay."
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "correction": "Sách in \"Tuấn\", hiểu là Tuần.",
+      "id": "dien-trach/vo-chinh-dieu/04",
+      "source_ref": {
+        "keywords": [
+          "Vô Chính diệu được Tuấn, Triệt án ngữ"
+        ],
+        "pages": [
+          157
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4107 @@
+{
+  "batch": "TV-13",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Hưởng phúc bền lâu, tránh được nhiều tai họa. Trong họ có nhiều người quý hiển."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\" như các đoạn khác cùng chương.",
+      "id": "phuc-duc/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ: hưởng phúc lâu dài"
+        ],
+        "pages": [
+          132
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Cả đời thường gặp may mắn. Trong họ tuy ít người nhưng ai cũng khá giả."
+      ],
+      "correction": "Sách in \"nhưng cùng khá giả\", hiểu là \"nhưng cũng khá giả\".",
+      "id": "phuc-duc/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: suốt đời hay gặp những sự may mắn"
+        ],
+        "pages": [
+          132
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi",
+          "ThienPhu",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cả đời được toại nguyện, hưởng phúc và sống lâu. Trong họ nhiều người giàu sang."
+      ],
+      "correction": "Mục Thiên Phủ (tr. 134) in \"Tử đồng cung, Tướng đồng cung\", nhưng Thiên Tướng luôn cách Thiên Phủ bốn cung nên Phủ, Tướng không bao giờ đồng cung. Đây là lời của mục Tử Vi (tr. 132) chép sang; ở mục Thiên Phủ chỉ giữ cặp Tử, Phủ. Cặp Tử, Tướng lấy theo mục Tử Vi và mục Thiên Tướng (tr. 136).",
+      "id": "phuc-duc/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung, Tướng đồng cung: suốt đời được xứng ý toại lòng",
+          "Tử đồng cung, Tướng đồng cung: suốt đời được xứng ý toại lòng, sống lâu",
+          "Tử đồng cung: suốt đời được xứng ý toại lòng, sống lâu và hưởng phúc."
+        ],
+        "pages": [
+          132,
+          134,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Phải rời quê tổ, bôn ba thì mới được hưởng phúc và sống lâu. Trong họ nhiều người giàu sang, hiển đạt về võ nghiệp, nhưng đều sống xa quê."
+      ],
+      "id": "phuc-duc/tu-vi/04",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: phải ly tổ, bôn ba mới được hưởng phúc sống lâu",
+          "Tử đồng cung: phải ly tổ, bôn ba mới được hưởng phúc sống lâu"
+        ],
+        "pages": [
+          132,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lao tâm khổ tứ, không được yên thân. Phải bỏ quê mà đi thì mới khá giả, sống lâu. Họ hàng ly tán."
+      ],
+      "id": "phuc-duc/tu-vi/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: Lao tâm khổ tứ, chẳng được yên thân",
+          "Tử đồng cung: Lao tâm khổ tứ, chẳng được yên thân"
+        ],
+        "pages": [
+          132,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Cả đời không được toại nguyện; bạc phúc nên giảm thọ. Họ hàng ly tán, ai khá giả lại chết sớm."
+      ],
+      "id": "phuc-duc/tu-vi/06",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: suốt đời chẳng được xứng ý toại lòng",
+          "Tử đồng cung: suốt đời chẳng được xứng ý toại lòng, giảm thọ vì bạc"
+        ],
+        "pages": [
+          132,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc. Trong họ ít của cải, ít người."
+      ],
+      "id": "phuc-duc/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: được hưởng phúc. Trong họ ít của, hiếm người."
+        ],
+        "pages": [
+          132
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Cả đời sung sướng, có cả phúc lẫn thọ. Trong họ nhiều người giàu sang."
+      ],
+      "id": "phuc-duc/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: suốt đời sung sướng, phúc thọ song toàn",
+          "Liêm đồng cung: suốt đời sung sướng, phúc thọ song toàn"
+        ],
+        "pages": [
+          132,
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc. Họ hàng khá giả nhưng ít người."
+      ],
+      "id": "phuc-duc/liem-trinh/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: được hưởng phúc. Họ hàng khá giả nhưng hiếm người.",
+          "Liêm đồng cung: được hưởng phúc. Họ hàng khá giả nhưng hiếm người."
+        ],
+        "pages": [
+          132,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cuộc sống vất vả lao khổ; phải rời quê mới được sống lâu. Họ hàng ly tán."
+      ],
+      "id": "phuc-duc/liem-trinh/04",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: vất vả lao khổ, phải xa quê hương mới sống lâu",
+          "Liêm đồng cung: vất vả lao khổ, phải xa quê hương mới sống lâu"
+        ],
+        "pages": [
+          132,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Giảm thọ, khó tránh tai ương, họa hại. Trong họ nhiều người nghèo hèn hoặc mắc tù tội, thường phải bỏ quê đi sống trôi dạt nơi khác."
+      ],
+      "id": "phuc-duc/liem-trinh/05",
+      "sensitivity": [
+        "Death",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: giảm thọ, khó tránh được tai ương, họa hại",
+          "Liêm đồng cung: giảm thọ, khó tránh được tai ương, họa hại"
+        ],
+        "pages": [
+          132,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Giảm thọ, hay gặp nguy hiểm; phải xa quê mới mong được an toàn. Trong họ nhiều người chết non một cách thê thảm; nếu không cũng mang tàn tật, ác bệnh, hoặc mắc tù tội, khốn cùng."
+      ],
+      "id": "phuc-duc/liem-trinh/06",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: giảm thọ, hay gặp nguy hiểm",
+          "Liêm đồng cung: giảm thọ, hay gặp nguy hiểm, phải xa quê hương mới"
+        ],
+        "pages": [
+          132,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu, nhưng hay đổi chí hướng, thay đổi công việc. Càng xa quê lại càng khá giả. Họ hàng tản mác làm ăn nơi xa. Trong họ hay xuất hiện thần đồng."
+      ],
+      "id": "phuc-duc/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: được hưởng phúc, sống lâu, nhưng thường hay thay",
+          "Trong họ thường có thần đồng xuất hiện."
+        ],
+        "pages": [
+          132
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Cả đời lao tâm khổ tứ, hay đổi việc, đổi chí hướng mà vẫn không được toại nguyện. Có lập nghiệp xa quê mới mong đủ ăn đủ mặc. Họ hàng ly tán."
+      ],
+      "id": "phuc-duc/thien-dong/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: giảm thọ",
+          "quê hương mới mong được đủ ăn, đủ mặc. Họ hàng ly tán."
+        ],
+        "pages": [
+          132,
+          133
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Sung sướng cả đời nhưng tuổi thọ bị giảm. Muốn sống lâu thì nên xuất ngoại, sống nay đây mai đó. Trong họ ly tán, phiêu bạt; cả trai lẫn gái đều rất phóng đãng."
+      ],
+      "id": "phuc-duc/thien-dong/03",
+      "sensitivity": [
+        "Death",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: suốt đời sung sướng, nhưng giảm thọ",
+          "trai gái rất phóng đãng"
+        ],
+        "pages": [
+          133
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Giảm thọ; cả đời vui ít buồn nhiều, hay gặp tai nạn, khẩu thiệt, kiện cáo. Phải rời quê tổ, xa gia đình mới mong yên thân. Họ hàng ly tán, thường tranh chấp với nhau."
+      ],
+      "id": "phuc-duc/thien-dong/04",
+      "sensitivity": [
+        "Death",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Cự đồng cung: giảm thọ, suốt đời vui ít buồn"
+        ],
+        "pages": [
+          133
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Giảm thọ; cả đời vui ít buồn nhiều, hay gặp tai nạn, khẩu thiệt, kiện cáo. Phải rời quê tổ, xa gia đình mới mong yên thân. Họ hàng ly tán, thường tranh chấp với nhau."
+      ],
+      "id": "phuc-duc/thien-dong/05",
+      "sensitivity": [
+        "Death",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Cự đồng cung: giảm thọ, suốt đời vui ít buồn",
+          "Đồng đồng cung: giảm thọ, suốt đời vui ít buồn nhiều, hay mắc tai nạn",
+          "khẩu thiệt, kiện cáo. Phải ly tổ, xa gia đình mới mong được yên thân."
+        ],
+        "pages": [
+          133,
+          135,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Cả đời nhàn hạ, hưởng phúc và sống lâu. Trong họ nhiều người quý hiển, giàu sang, lại thường có thần nhân giáng hạ."
+      ],
+      "correction": "Sách in \"qúy hiến\" (tr. 133, 136), hiểu là \"quý hiển\".",
+      "id": "phuc-duc/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: suốt đời thanh nhàn, được hưởng phúc sống lâu.",
+          "Đồng đồng cung: suốt đời thanh nhàn, được hưởng phúc sống lâu."
+        ],
+        "pages": [
+          133,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu; nên lập nghiệp xa quê, xa bản quán. Họ hàng quý hiển, có danh giá và uy quyền giúp đời."
+      ],
+      "id": "phuc-duc/thien-dong/07",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Tý: được hưởng phúc, sống lâu",
+          "Đồng đồng cung tại Tý: được hưởng phúc, sống lâu"
+        ],
+        "pages": [
+          133,
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Phải rời quê tổ, bôn ba mới mong yên thân. Họ hàng ngày càng sa sút, phiêu bạt."
+      ],
+      "id": "phuc-duc/thien-dong/08",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: giảm thọ",
+          "Đồng đồng cung tại Ngọ: giảm thọ"
+        ],
+        "pages": [
+          133,
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Trong họ ít người."
+      ],
+      "id": "phuc-duc/vu-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Trong họ hiếm người."
+        ],
+        "pages": [
+          133
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu; về già càng được toại nguyện. Trong họ thường có người giàu sang hoặc hiển đạt về võ nghiệp."
+      ],
+      "id": "phuc-duc/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Tham đồng cung: được hưởng phúc sống lâu"
+        ],
+        "pages": [
+          133
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu; về già càng được toại nguyện. Trong họ thường có người giàu sang hoặc hiển đạt về võ nghiệp."
+      ],
+      "id": "phuc-duc/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Tham đồng cung: được hưởng phúc sống lâu",
+          "Vũ đồng cung: được hưởng phúc sống lâu. Về già, lại càng xứng ý toại"
+        ],
+        "pages": [
+          133,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu. Họ hàng khá giả."
+      ],
+      "id": "phuc-duc/vu-khuc/04",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: được hưởng phúc, sống lâu. Họ hàng khá giả.",
+          "Vũ đồng cung: được hưởng phúc, sống lâu. Họ hàng khá giả."
+        ],
+        "pages": [
+          133,
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Có cả phúc lẫn thọ; cả đời hay gặp may. Họ hàng quý hiển, giàu sang."
+      ],
+      "id": "phuc-duc/vu-khuc/05",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: phúc thọ song toàn",
+          "Vũ đồng cung: phúc thọ song toàn. Suốt đời hay gặp may mắn."
+        ],
+        "pages": [
+          133,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Phải lập nghiệp xa quê và sớm rời gia đình thì mới được yên thân, hưởng phúc và sống lâu. Họ hàng tuy ly tán nhưng có người giỏi kỹ thuật, mỹ thuật hoặc buôn bán kinh doanh."
+      ],
+      "correction": "Sách in \"giỏi vế kỹ thuật\" (tr. 133, 137), hiểu là \"giỏi về kỹ thuật\".",
+      "id": "phuc-duc/vu-khuc/06",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: phải lập nghiệp ở xa quê hương",
+          "Vũ đồng cung: phải lập nghiệp ở xa quê hương"
+        ],
+        "pages": [
+          133,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ. Cả đời lao tâm khổ tứ, hay gặp tai họa; dù xa quê, xa gia đình cũng không yên thân. Trong họ sa sút, ly tán, hay có người chết non, mang ác tật hoặc nghèo khổ."
+      ],
+      "id": "phuc-duc/vu-khuc/07",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: giảm thọ vì bạc phúc",
+          "Vũ đồng cung: giảm thọ vì bạc phúc. Suốt đời lao tâm khổ tứ"
+        ],
+        "pages": [
+          133,
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thái Dương ở Dần, Mão, Thìn, Tỵ hoặc Ngọ: hưởng phúc, sống lâu, sung sướng. Họ hàng quý hiển, giàu sang, danh giá, có uy quyền giúp đời."
+      ],
+      "correction": "Mục Cự Môn (tr. 135) và Thiên Lương (tr. 136) in lại nguyên hai đoạn \"Tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ\" và \"Tọa thủ tại Thân, Dậu, Tuất, Hợi, Tý\" của Thái Dương, không ghi sao đồng cung. Nếu đọc là Cự hay Lương tọa thủ thì trái với chính hai mục đó (Cự đơn thủ tại Tỵ, Thìn giảm thọ; Lương đơn thủ tại Tỵ giảm thọ). Ở các chương Phụ Mẫu (tr. 128–129) và Quan Lộc (tr. 161–162), đúng chỗ này là \"Nhật đồng cung tại Dần, Thân\" (Cự) và \"tại Mão, Dậu\" (Lương). Vì vậy hiểu là Cự hay Lương có Nhật đồng cung, luận theo vị trí của Thái Dương; điều kiện ghi theo Thái Dương tọa thủ.",
+      "id": "phuc-duc/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ: được hưởng phúc, sống lâu và sung",
+          "Họ hàng qúy hiển, giàu sang, có danh giá và uy quyền tế thế."
+        ],
+        "pages": [
+          133,
+          135,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Mao",
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "with_all": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thái Dương ở Thân, Dậu, Tuất, Hợi hoặc Tý: phúc mỏng nên tuổi thọ bị giảm. Cả đời không được toại nguyện; nên rời quê tổ hoặc sống xa gia đình. Họ hàng ngày càng sa sút, ly tán: nhiều người gian quyệt mà vẫn bần cùng, kẻ phiêu bạt giang hồ, kẻ mang ác tật hoặc gặp tai nạn chết thê thảm."
+      ],
+      "correction": "Như phuc-duc/thai-duong/01: đoạn này in lại ở mục Cự Môn (tr. 135) và Thiên Lương (tr. 136), hiểu là Cự hay Lương có Nhật đồng cung (Cự tại Thân, Lương tại Dậu), luận theo vị trí của Thái Dương.",
+      "id": "phuc-duc/thai-duong/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ tại Thân, Dậu, Tuất, Hợi, Tý: bạc phúc nên tuổi thọ",
+          "có nhiều người gian quyệt nhưng bần cùng"
+        ],
+        "pages": [
+          133,
+          135,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than",
+            "Dau",
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "with_all": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Phúc không dồi dào nên đường đời hay gặp trở ngại. Nên lập nghiệp ở nơi thật xa quê. Họ hàng khá giả nhưng ly tán."
+      ],
+      "correction": "Sách in \"Nên tập nghiệp\" (tr. 133, 135), hiểu là \"Nên lập nghiệp\".",
+      "id": "phuc-duc/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: không được hưởng phúc dồi dào, nên hay gặp trở",
+          "Nhật đồng cung: không được hưởng phúc dồi dào, nên hay gặp trở ngại"
+        ],
+        "pages": [
+          133,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhật, Nguyệt đồng cung, sinh ban ngày: nam giới trong họ hiển đạt; nữ giới thì vất vả vì chồng con, hoặc chết yểu."
+      ],
+      "id": "phuc-duc/thai-duong/04",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu sinh ban ngày, phải luận đoán trong họ đàn ông, con trai hiển"
+        ],
+        "pages": [
+          133,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day",
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhật, Nguyệt đồng cung, sinh ban đêm: nữ giới trong họ giàu có, sung sướng; nam giới thì khốn khổ, phiêu bạt."
+      ],
+      "id": "phuc-duc/thai-duong/05",
+      "source_ref": {
+        "keywords": [
+          "phải luận đoán là trong họ đàn bà, con gái giàu có, sung sướng"
+        ],
+        "pages": [
+          133,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night",
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Trong họ ít người."
+      ],
+      "id": "phuc-duc/thien-co/01",
+      "source_ref": {
+        "keywords": [
+          "Trong họ hiếm người"
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu. Họ hàng khá giả."
+      ],
+      "id": "phuc-duc/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: được hưởng phúc, sống lâu."
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Bạc phúc; họ hàng ly tán."
+      ],
+      "id": "phuc-duc/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: bạc phúc: họ hàng ly tán."
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Tuy được hưởng phúc, nhưng thời trẻ không được toại nguyện; về già hay gặp may. Họ hàng khá giả."
+      ],
+      "correction": "Sách in \"hưởng phục\" (tr. 134, 136), hiểu là \"hưởng phúc\".",
+      "id": "phuc-duc/thien-co/04",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: tuy được hưởng phục",
+          "Cơ đồng cung: tuy được hưởng phục, nhưng lúc thiếu thời chẳng được"
+        ],
+        "pages": [
+          134,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Được sống lâu, nhàn hạ và sung sướng. Trong họ có người giàu sang; họ hàng thường có thần nhân giáng hạ."
+      ],
+      "id": "phuc-duc/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: sống lâu, thanh nhàn, sung sướng",
+          "Cơ đồng cung: sống lâu, thanh nhàn, sung sướng. Họ hàng có người giàu"
+        ],
+        "pages": [
+          134,
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Hưởng phúc và sống lâu. Họ có người giàu sang, song phụ nữ thường khá giả hơn đàn ông."
+      ],
+      "id": "phuc-duc/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: được hưởng phúc, sống lâu",
+          "Cơ đồng cung tại Thân: được hưởng phúc, sống lâu"
+        ],
+        "pages": [
+          134,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Không được hưởng phúc dồi dào nên cả đời không được toại nguyện. Họ hàng ở mức bình thường, song phụ nữ trong họ hay trắc trở về chồng con, lại có người phong tình hoa nguyệt."
+      ],
+      "correction": "Mục Thái Âm (tr. 135) in \"Cơ cung tại Dần\", thiếu chữ \"đồng\": hiểu là \"Cơ đồng cung tại Dần\" như mục Thiên Cơ (tr. 134).",
+      "id": "phuc-duc/thien-co/07",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: không được hưởng phúc dồi dào",
+          "Cơ cung tại Dần: không được hưởng phúc dồi dào nên suốt đời chẳng"
+        ],
+        "pages": [
+          134,
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu. Họ hàng đông và khá giả."
+      ],
+      "id": "phuc-duc/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "được hưởng phúc, sống lâu. Họ hàng đông đảo, khá"
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Phúc không dồi dào; nên đi lập nghiệp thật xa quê. Trong họ nhiều người giàu sang nhưng ly tán."
+      ],
+      "id": "phuc-duc/thien-phu/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: không được hưởng phúc dồi dào"
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc trọn đời, sung sướng và sống lâu. Trong họ nhiều người quý hiển, giàu sang."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: được hưởng phúc trọn đời"
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên tuổi thọ bị giảm. Cả đời buồn nhiều hơn vui, lao tâm khổ tứ. Nên đi lập nghiệp thật xa quê, hoặc sớm rời gia đình, mới mong yên thân. Họ hàng ly tán; nhiều người khốn khổ, cô đơn, mang ác tật, phiêu bạt giang hồ, hoặc gặp tai nạn chết thê thảm. Đàn bà, con gái trong họ rất vất vả vì chồng con."
+      ],
+      "id": "phuc-duc/thai-am/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: bạc phúc nên tuổi thọ bị chiết giảm"
+        ],
+        "pages": [
+          134
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Hưởng phúc, tuổi già rất sung sướng. Trong họ có nhiều người giàu, nhưng thường đi lập nghiệp thật xa quê."
+      ],
+      "id": "phuc-duc/tham-lang/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: được hưởng phúc. Về già rất sung sướng."
+        ],
+        "pages": [
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Phúc không dồi dào nhưng vẫn sống lâu. Họ hàng bình thường; nhiều người lập thân bằng võ nghiệp."
+      ],
+      "id": "phuc-duc/tham-lang/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: Không được hưởng phúc dồi dào, nhưng cũng"
+        ],
+        "pages": [
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ. Phải lập nghiệp xa quê, sớm rời gia đình mới mong yên thân. Họ hàng ly tán, ngày càng sa sút, lại có nhiều người rất dâm đãng."
+      ],
+      "id": "phuc-duc/tham-lang/03",
+      "sensitivity": [
+        "Death",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: bạc phúc nên giảm thọ",
+          "lại có nhiều người rất dâm đãng"
+        ],
+        "pages": [
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu; tuổi già rất sung sướng. Họ hàng giàu có, quý hiển."
+      ],
+      "correction": "Sách in \"Đơn thủ lại Hợi\", hiểu là \"Đơn thủ tại Hợi\".",
+      "id": "phuc-duc/cu-mon/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Hợi, Tý, Ngọ: được hưởng phúc, sống lâu"
+        ],
+        "pages": [
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Cả đời lao tâm khổ tứ, không được toại nguyện, lại hay vướng tai nạn khẩu thiệt, kiện cáo. Phải rời gia đình sớm mới mong yên thân. Trong họ thường tranh chấp; lắm người phiêu bạt giang hồ, không thì cũng khốn cùng, mắc hình ngục hoặc chết yểu."
+      ],
+      "id": "phuc-duc/cu-mon/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Thìn, Tuất: giảm thọ",
+          "khốn cùng, mắc hình ngục, hay yểu tử"
+        ],
+        "pages": [
+          135
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, cả đời hay gặp may. Trong họ nhiều người quý hiển, giàu sang."
+      ],
+      "correction": "Sách in \"Sửu, Mủi\" và \"suốt đời bay gặp may\", hiểu là \"Sửu, Mùi\" và \"hay gặp may\".",
+      "id": "phuc-duc/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mủi: được hưởng phúc"
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Không được hưởng phúc dồi dào nên thời trẻ không được toại nguyện; về già hay gặp may. Họ hàng ngày càng khá giả."
+      ],
+      "id": "phuc-duc/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: không được hưởng phúc dồi dào"
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, nhàn hạ, sung sướng, sống lâu và tránh được nhiều tai họa. Trong họ nhiều người quý hiển, danh tiếng lừng lẫy."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: được hưởng phúc, thanh nhàn, sung sướng tránh"
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và sống lâu. Họ hàng bình thường."
+      ],
+      "id": "phuc-duc/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: được hưởng phúc, sống lâu. Họ hàng bình thường."
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Giảm thọ, khó tránh tai họa; thường sớm xa gia đình, sống nay đây mai đó, hay đổi công việc và chí hướng. Họ hàng ngày càng sa sút, ly tán; đàn ông, con trai nhiều người chơi bời, du đãng; đàn bà, con gái cũng nhiều người dâm dật, hay trắc trở về chồng con."
+      ],
+      "correction": "Sách in \"Đớn thủ\", hiểu là \"Đơn thủ\".",
+      "id": "phuc-duc/thien-luong/03",
+      "sensitivity": [
+        "Death",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đớn thủ tại Tỵ, Hợi: giảm thọ, khó tránh được tai họa"
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, song nên đi lập nghiệp thật xa quê. Họ hàng khá giả, có danh giá và uy quyền giúp đời, lại nhiều người hiển đạt về võ nghiệp."
+      ],
+      "id": "phuc-duc/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: được hưởng phúc, nhưng nên lập nghiệp ở nơi"
+        ],
+        "pages": [
+          136
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Không được hưởng phúc dồi dào; cả đời may thường đi liền với rủi. Nên rời quê tổ hoặc sớm xa gia đình mới mong yên thân. Họ hàng khá giả nhưng ly tán, nhiều người hiển đạt về võ nghiệp."
+      ],
+      "correction": "Sách in \"vỗ nghiệp\", hiểu là \"võ nghiệp\".",
+      "id": "phuc-duc/that-sat/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: không được hưởng phúc dồi dào, suốt đời may"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ. Khó tránh tai nạn về đao thương, dễ mắc hình ngục. Phải rời quê tổ, sống xa gia đình, may ra mới yên thân. Họ hàng ngày càng sa sút, nghèo khổ, ly tán, lại nhiều người chết non."
+      ],
+      "correction": "Sách in \"lai nạn vẻ đao thương\", hiểu là \"tai nạn về đao thương\".",
+      "id": "phuc-duc/that-sat/03",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "bạc phúc nên giảm thọ. Khó tránh được lai nạn"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Họ hàng ly tán, thường lập nghiệp ở nơi xa quê."
+      ],
+      "id": "phuc-duc/pha-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Họ hàng ly tán, thường lập nghiệp ở xa quê hương."
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu, song nên đi lập nghiệp thật xa quê. Họ hàng khá giả; tuy vậy ngành trưởng lúc nào cũng phiêu bạt, lụn bại."
+      ],
+      "id": "phuc-duc/pha-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: được hưởng phúc, sống lâu, nhưng nên lập nghiệp",
+          "ngành trưởng bao giờ cũng"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Không được hưởng phúc dồi dào. Phải chịu ly tán, sớm xa gia đình mới mong yên thân. Trong họ có người quý hiển."
+      ],
+      "id": "phuc-duc/pha-quan/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: không được hưởng phúc dồi dào. Phải ly tán"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ, khó tránh tai họa. Phải rời quê tổ, sớm xa gia đình, may ra mới yên thân. Họ hàng ngày càng sa sút."
+      ],
+      "id": "phuc-duc/pha-quan/04",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: bạc phúc nên giảm thọ. Khó tránh được tai họa."
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Họ hàng ly tán."
+      ],
+      "id": "phuc-duc/kinh-da/01",
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Cả đời may rủi thường đi liền nhau; tuổi già được an nhàn. Trong họ lúc đầu ly tán, về sau quần tụ, ngày càng khá giả."
+      ],
+      "id": "phuc-duc/kinh-da/02",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: suốt đời may thường đi liền với rủi"
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ, khó tránh tai họa; thường phải lập nghiệp thật xa quê, ít khi được toại nguyện. Trong họ có kẻ tàn tật, chết non, hoặc trộm cắp, du đãng."
+      ],
+      "id": "phuc-duc/kinh-da/03",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xâu xa: bạc phúc nên giảm thọ",
+          "có người tàn tật, chết non hoặc trộm cắp, du đãng."
+        ],
+        "pages": [
+          137
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Giảm thọ."
+      ],
+      "id": "phuc-duc/hoa-linh/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa, Linh"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Cả đời may thường đi liền với rủi. Trong họ nhiều người quý hiển, nhưng hay chết non."
+      ],
+      "id": "phuc-duc/hoa-linh/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Trong họ có nhiều",
+          "người qúy hiển, nhưng hay chết non."
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Cả đời lao tâm khổ tứ, ít khi được toại nguyện; khó tránh tai họa. Họ hàng ngày càng sa sút."
+      ],
+      "id": "phuc-duc/hoa-linh/03",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xâu xa: suốt đời lao tâm khổ tứ"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Bạc phúc; cả đời mưu sự lúc đầu thường trắc trở, về sau mới hanh thông, đắc ý. Trong may có chứa nhiều rủi. Họ hàng khá giả nhưng ly tán."
+      ],
+      "correction": "Sách in \"chứa dựng\" và \"hành thông\", hiểu là \"chứa đựng\" và \"hanh thông\".",
+      "id": "phuc-duc/khong-kiep/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: bạc phúc, suốt đời mưu sự buổi đầu thường trắc trở"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Giảm thọ, khó tránh tai họa. Phải lập nghiệp ở nơi thật xa quê, may ra mới yên thân. Họ hàng ngày càng sa sút, ly tán."
+      ],
+      "id": "phuc-duc/khong-kiep/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: giảm thọ, khó tránh được tai họa."
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Hưởng phúc, sung sướng, vinh hiển, sống lâu. Trong họ nhiều người đỗ đạt cao, có danh giá."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/xuong-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: được hưởng phúc sung sướng, vinh hiển và"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Giảm thọ, khó tránh tai họa. Phải sớm xa gia đình, may ra mới yên thân. Họ hàng tuy khá giả và có người đỗ cao, nhưng ly tán. Ai có danh giá lại hay bị tàn tật, ác bệnh, không thì cũng chết non."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phuc-duc/xuong-khuc/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: giảm thọ, khó tránh được tai họa.",
+          "Những người có danh giá lại hay mang tàn tật, ác bệnh"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Tăng tuổi thọ."
+      ],
+      "id": "phuc-duc/khoi-viet/01",
+      "source_ref": {
+        "keywords": [
+          "Tăng tuổi thọ"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, vinh hiển và sống lâu. Trong họ nhiều người đỗ đạt, có danh giá; lại thường xuất hiện vĩ nhân hoặc thần đồng."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/khoi-viet/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: được hưởng phúc vinh hiển và sống lâu."
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Trong may có chứa nhiều rủi. Nếu có danh giá thì tất khó tránh tai họa. Họ hàng mỗi ngày một suy bại."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phuc-duc/khoi-viet/03",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: trong cái may có chứa đựng nhiều cái rủi.",
+          "Họ hàng mỗi ngày một suy bại."
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu; cả đời hay gặp may. Càng ở xa quê lại càng khá giả. Họ hàng quý hiển, giàu sang, nhưng không ở gần nhau."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: được hưởng phúc sống lâu. Suốt đời hay gặp"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ, khó tránh tai họa. Phải lập nghiệp ở nơi thật xa quê, hoặc sớm xa gia đình, may ra mới yên thân. Trong họ có người khốn khổ phiêu bạt, hoặc du đãng, bất lương; nếu không cũng mang tàn tật, ác bệnh, hoặc gặp tai nạn chết thê thảm. Họ hàng ngày càng ly tán, lụn bại."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"nếu không, cùng mang tàn tật\", hiểu là \"cũng mang\".",
+      "id": "phuc-duc/ta-huu/02",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: bạc phúc nên giảm thọ.",
+          "Trong họ có người cùng khổ phiêu bạt, hoặc du đãng, bất lương"
+        ],
+        "pages": [
+          138
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Tăng tuổi thọ, được hưởng phúc. Trong họ ít người và thường có tranh chấp, bất hòa. Họ hàng khá giả nhưng ly tán."
+      ],
+      "id": "phuc-duc/loc-ton/01",
+      "source_ref": {
+        "keywords": [
+          "Tăng tuổi thọ, được hưởng phúc, trong họ hiếm người và thường có sự",
+          "tranh chấp bất hòa. Họ hàng khá giả nhưng ly tán."
+        ],
+        "pages": [
+          138,
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaLoc"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, không phải lo những lúc túng thiếu. Tai họa phần nhiều tránh được; họ hàng giàu có."
+      ],
+      "id": "phuc-duc/hoa-loc/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc, khỏi phải lo lắng những lúc túng thiếu."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc và được nhiều người nể trọng. Họ hàng quý hiển, có danh giá truyền từ đời này sang đời khác. Sách dặn nhận định thêm theo Thiên Khôi, Thiên Việt."
+      ],
+      "id": "phuc-duc/hoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc. Được nhiều người vị nể.",
+          "Nhận định theo Thiên Khôi, Thiên Việt"
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Hưởng phúc, sống lâu, tránh được nhiều tai họa. Trong họ khá giả, có người đỗ cao."
+      ],
+      "id": "phuc-duc/hoa-khoa/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc sống lâu. Tránh được nhiều tai họa. Họ hàng khá giả, có"
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Họ hàng ly tán, hay tranh chấp với nhau."
+      ],
+      "id": "phuc-duc/hoa-ky/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Giảm thọ. Họ hàng ly tán, hay tranh chấp lẫn nhau."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@SongHao"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Nên sớm xa gia đình; trong họ nhiều người nghèo túng, phải đi biệt xứ."
+      ],
+      "id": "phuc-duc/song-hao/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nên sớm xa gia đình, trong họ có nhiều người nghèo túng"
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TangMon",
+          "BachHo"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Họ hàng ly tán; ai khá giả lại chết sớm."
+      ],
+      "id": "phuc-duc/tang-ho/01",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Giảm thọ. Họ hàng ly tán, những người khá giả lại chết sớm."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@KhocHu"
+        ]
+      },
+      "body": [
+        "Giảm thọ. Họ hàng hay oán trách nhau."
+      ],
+      "id": "phuc-duc/khoc-hu/01",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Giảm thọ. Họ hàng hay oán trách lẫn nhau."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Tăng tuổi thọ. Càng ở xa quê lại càng khá giả. Trong họ nhiều người hiển đạt, nhưng không ở gần nhau."
+      ],
+      "id": "phuc-duc/thien-ma/01",
+      "source_ref": {
+        "keywords": [
+          "Tăng tuổi thọ. Càng ở xa quê hương lại càng khá giả."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Không được hưởng phúc dồi dào, khó tránh tai họa. Trong họ thiếu hòa khí, thường tranh chấp với nhau."
+      ],
+      "id": "phuc-duc/thai-tue/01",
+      "source_ref": {
+        "keywords": [
+          "Không được hưởng phúc dồi dào, khó tránh được tai họa. Trong họ thiếu"
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@LongPhuong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc. Trong họ nhiều người khá giả."
+      ],
+      "id": "phuc-duc/long-phuong/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc. Trong họ có nhiều người khá giả."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@CoQua"
+        ]
+      },
+      "body": [
+        "Trong họ ít người."
+      ],
+      "id": "phuc-duc/co-qua/01",
+      "source_ref": {
+        "keywords": [
+          "Trong họ hiếm người."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@CoQua"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, tránh được nhiều tai họa. Trong họ khá giả."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/co-qua/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: được hưởng phúc. Tránh được nhiều tai họa."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@CoQua"
+        ]
+      },
+      "body": [
+        "Giảm thọ, khó tránh tai họa. Họ hàng ngày càng lụn bại."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phuc-duc/co-qua/03",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: giảm thọ, khó tránh được tai họa."
+        ],
+        "pages": [
+          139
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@DaoHong"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, sống lâu; cả đời hay gặp may. Trong họ nhiều người quý hiển, giàu sang, nhưng bao giờ đàn bà, con gái cũng khá giả hơn đàn ông, con trai."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "correction": "Sách in \"đàn ba con gái cung khá giả\", hiểu là \"đàn bà con gái cũng khá giả\".",
+      "id": "phuc-duc/dao-hong/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: được hưởng phúc sống lâu. Suốt đời hay gặp"
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@DaoHong"
+        ]
+      },
+      "body": [
+        "Bạc phúc nên giảm thọ, khó tránh tai họa. Họ hàng ngày càng lụn bại, ly tán. Đàn bà, con gái trong họ rất trắc trở về chồng con, lại nhiều người dâm đãng."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"Khó tranh được tai họa\", hiểu là \"Khó tránh được\".",
+      "id": "phuc-duc/dao-hong/02",
+      "sensitivity": [
+        "Death",
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: bạc phúc nên giảm thọ. Khó tranh được tai",
+          "lại có nhiều người dâm đãng."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@QuangQuy"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc; cả đời hay gặp may. Họ hàng khá giả."
+      ],
+      "id": "phuc-duc/quang-quy/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc. Suốt đời hay gặp may mắn. Họ hàng khá giả."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "@QuanPhuc"
+        ]
+      },
+      "body": [
+        "Được hưởng phúc, tránh được nhiều tai họa. Trong họ nhiều người khá giả và nhân đức."
+      ],
+      "id": "phuc-duc/quan-phuc/01",
+      "source_ref": {
+        "keywords": [
+          "Được hưởng phúc. Tránh được nhiều tai họa. Trong họ có nhiều người khá"
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ: lập nghiệp ở nơi thật xa quê; rời gia đình càng sớm thì càng khá giả. Họ hàng ly tán; ngành trưởng lụn bại."
+      ],
+      "id": "phuc-duc/tuan-triet/01",
+      "source_ref": {
+        "keywords": [
+          "Lập nghiệp ở nơi thật xa quê hương."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ: giảm thọ, khó tránh tai họa; cả đời không được toại nguyện. Họ hàng ngày càng ly tán, lụn bại."
+      ],
+      "condition_text": "cung Phúc Đức có nhiều sao sáng sủa tốt đẹp",
+      "id": "phuc-duc/tuan-triet/02",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: giảm thọ, khó tránh được tai họa. Suốt đời"
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ: tăng thọ, tránh được nhiều tai họa. Mưu sự lúc đầu hay trắc trở, nhưng về sau hanh thông, toại ý. Họ hàng ngày càng khá giả."
+      ],
+      "condition_text": "cung Phúc Đức có nhiều sao mờ ám xấu xa",
+      "correction": "Sách in \"Mưu sự gay trắc trở\" và \"hành thông\", hiểu là \"hay trắc trở\" và \"hanh thông\".",
+      "id": "phuc-duc/tuan-triet/03",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: tăng thọ, tránh được nhiều tai họa."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Tử Vi gặp Sát tinh đồng cung: giảm thọ, khó tránh tai họa. Phải lập nghiệp ở nơi thật xa quê, may ra mới yên thân. Họ hàng ly tán, nhiều người chết bất đắc kỳ tử. Ngành trưởng suy bại."
+      ],
+      "id": "phuc-duc/bo-sao/01",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tử Vi, Sát tinh đồng cung",
+          "có nhiều người chết bất đắc kỳ tử."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "KinhDuong"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "DaLa"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "HoaTinh"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "LinhTinh"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "DiaKhong"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Vũ Khúc, Xương, Khúc, Khôi, Việt hội hợp: được hưởng phúc, sống lâu, cả đời gặp may. Trong họ nhiều người quý hiển, lại thường có vĩ nhân hoặc anh hùng dân tộc xuất hiện."
+      ],
+      "id": "phuc-duc/bo-sao/02",
+      "source_ref": {
+        "keywords": [
+          "Vũ, Xương, Khúc, Khôi, Việt",
+          "vĩ nhân hay anh hùng dân tộc xuất hiện."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "VuKhuc",
+            "VanXuong",
+            "VanKhuc",
+            "ThienKhoi",
+            "ThienViet"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Nhật sáng sủa gặp Riêu, Đà, Kỵ: giảm thọ, mắt kém, khó tránh tai họa; cả đời không được toại nguyện. Họ hàng ly tán, hay tranh chấp với nhau. Những người quý hiển lại hay gặp chuyện chẳng lành."
+      ],
+      "condition_text": "Thái Dương sáng sủa",
+      "id": "phuc-duc/bo-sao/03",
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhật sáng sủa, Riêu, Đà, Kỵ",
+          "Giảm thọ, mắt kém. Khó tránh được tai họa. Suốt đời chẳng được xứng ý"
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Nhật mờ ám gặp Riêu, Đà, Kỵ: giảm thọ, mắt kém, khó tránh tai họa; cả đời bất đắc chí. Họ hàng ly tán, hay tranh chấp với nhau. Những người quý hiển lại hay gặp chuyện chẳng lành. Đàn bà, con gái trong họ thường buồn phiền vì chồng con."
+      ],
+      "condition_text": "Thái Dương mờ ám",
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/bo-sao/04",
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhật mờ ám, Riêu, Đà, Kỵ",
+          "Đàn bà con gái trong họ thường phải buồn phiền vì chồng con."
+        ],
+        "pages": [
+          140
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Nguyệt sáng sủa gặp Riêu, Đà, Kỵ: giảm thọ, mắt kém, khó tránh tai họa; cả đời bất đắc chí. Họ hàng ly tán, hay tranh chấp với nhau. Những người quý hiển lại hay gặp chuyện chẳng lành. Đàn bà, con gái trong họ thường buồn phiền vì chồng con."
+      ],
+      "condition_text": "Thái Âm sáng sủa",
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/bo-sao/05",
+      "sensitivity": [
+        "Death",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt sáng sủa, Riêu, Đà, Kỵ",
+          "chẳng lành. Đàn bà con gái trong họ thường phải buồn phiền vì chồng con."
+        ],
+        "pages": [
+          140,
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiAm",
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Nguyệt mờ ám gặp Riêu, Đà, Kỵ: giảm thọ, mắt kém rất đáng lo. Tai họa nhiều không kể xiết. Họ hàng ngày càng ly tán, suy bại. Phụ nữ trong họ nếu không vất vả vì chồng con thì cũng chết sớm."
+      ],
+      "condition_text": "Thái Âm mờ ám",
+      "id": "phuc-duc/bo-sao/06",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nguyệt mờ ám, Riêu, Đà, Kỵ",
+          "Giảm thọ, mắt kém rất đáng lo ngại."
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiAm",
+            "ThienRieu",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhật, Nguyệt, Kỵ đồng cung tại Sửu, Mùi: được hưởng phúc, sống lâu, cả đời gặp may. Càng ở xa quê lại càng khá giả. Trong họ nhiều người quý hiển nhưng hay bất hòa, sống cách xa nhau. Tổ tiên nhiều đời trước đã có danh giá, tiếng tăm còn truyền đến nay."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/bo-sao/07",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt, Kỵ đồng cung Sửu, Mùi",
+          "Tổ tiên xa đời cũng đã có danh giá"
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Thiên Phủ gặp Tam Không đồng cung: bạc phúc nên giảm thọ, khó tránh tai họa. Phải lập nghiệp ở nơi thật xa quê, hoặc sớm xa gia đình, may ra mới yên thân. Họ hàng ngày càng ly tán, suy bại; ngành trưởng phiêu bạt, khốn khổ."
+      ],
+      "condition_text": "Tam Không đồng cung",
+      "id": "phuc-duc/bo-sao/08",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phủ, Tam Không đồng cung",
+          "Ngành trưởng họ phiêu bạt cùng khổ."
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThamLang",
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Tham Lang, Vũ Khúc, Hỏa (hay Linh) đồng cung tại Sửu, Mùi: được hưởng phúc, thêm tuổi thọ; cả đời hay gặp may. Họ hàng khá giả, nhiều người giàu có, quý hiển."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là \"quý hiển\".",
+      "id": "phuc-duc/bo-sao/09",
+      "source_ref": {
+        "keywords": [
+          "Tham, Vũ, Hỏa (hay Linh) đồng cung Sửu, Mùi.",
+          "Được hưởng phúc, tăng thêm tuổi thọ."
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThamLang",
+            "VuKhuc",
+            "HoaTinh"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "with_all": [
+            "ThamLang",
+            "VuKhuc",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Cự Môn, Hóa Kỵ đồng cung: giảm thọ, khó tránh tai họa; cả đời không được toại nguyện. Họ hàng bất hòa, ly tán, ngày càng suy bại; lại có người mắc hình ngục hoặc chết thê thảm."
+      ],
+      "id": "phuc-duc/bo-sao/10",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự, Kỵ đồng cung",
+          "Lại có người mắc hình ngục"
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Cự Môn, Hỏa Tinh đồng cung: giảm thọ, tai họa liên miên. Họ hàng bất hòa, ly tán và suy bại dần. Nhà thờ họ từng bị cháy một lần."
+      ],
+      "id": "phuc-duc/bo-sao/11",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự, Hỏa đồng cung",
+          "Nhà thờ họ đã có lần bị cháy."
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CuMon",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Thất Sát, Kình Dương đồng cung: giảm thọ, khó tránh tai họa. Trong họ nhiều người chết bất đắc kỳ tử."
+      ],
+      "id": "phuc-duc/bo-sao/12",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát, Kình đồng cung",
+          "Trong họ có nhiều người chết bất đắc kỳ"
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThatSat",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Kình, Đà, Không, Kiếp hội hợp: giảm thọ, khó tránh chuyện chẳng lành; cả đời lao tâm khổ tứ. Họ hàng ly tán, lại nhiều người mang tàn tật hoặc ác bệnh; nếu không cũng là hạng du đãng, khốn khổ và chết non."
+      ],
+      "id": "phuc-duc/bo-sao/13",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà, Không, Kiếp",
+          "Khó tránh được những sự chẳng lành."
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Kình, Đà, Hỏa hội hợp: bạc phúc nên giảm thọ, tai họa liên miên. Họ hàng ly tán, ngày càng suy bại; nhiều người khốn khổ, du đãng, nếu không cũng điên cuồng, mang tàn tật, ác bệnh hoặc chết non."
+      ],
+      "id": "phuc-duc/bo-sao/14",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà, Hỏa",
+          "nếu không cũng điên cuồng, hay mang"
+        ],
+        "pages": [
+          141
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "KinhDuong",
+            "DaLa",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Hỏa (hay Linh) và Tang Môn đồng cung: giảm thọ, khó tránh tai họa. Họ hàng ly tán; ai khá giả lại hay chết non. Nhà thờ họ từng bị cháy một lần."
+      ],
+      "correction": "Sách in \"đả có lần\", hiểu là \"đã có lần\".",
+      "id": "phuc-duc/bo-sao/15",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hỏa (hay Linh), Tang đồng cung",
+          "lại hay chết non. Nhà thờ họ đả có lần bị cháy."
+        ],
+        "pages": [
+          141,
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "HoaTinh",
+            "TangMon"
+          ]
+        },
+        {
+          "with_all": [
+            "LinhTinh",
+            "TangMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Hóa Kỵ và Kình (hay Đà) đồng cung: bạc phúc nên cả đời lao tâm khổ tứ, rủi nhiều may ít. Trong họ hay tranh chấp nhau, ngày càng sa sút, lại có nhiều kẻ du đãng, trộm cướp."
+      ],
+      "id": "phuc-duc/bo-sao/16",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ Kình (hay Đà) đồng cung",
+          "hạng du đãng trộm"
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "KinhDuong"
+          ]
+        },
+        {
+          "with_all": [
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Hóa Kỵ, Địa Không, Địa Kiếp đồng cung: giảm thọ; cả đời không được toại nguyện. Họ hàng ly tán, ngày càng suy bại, lại nhiều người bất lương."
+      ],
+      "id": "phuc-duc/bo-sao/17",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ, Không, Kiếp đồng cung",
+          "lại có nhiều người bất lương."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Hóa Kỵ, Bệnh, Phù, Thiên Hình hội hợp: giảm thọ, khó tránh tai họa; ốm đau lâu khỏi. Trong họ nhiều người mắc ác tật, ác bệnh như điên, lao, hủi; nếu không thì cũng nghèo hèn hoặc chết non."
+      ],
+      "condition_text": "gặp thêm Bệnh, Phù (sách không rõ là sao Bệnh cùng một sao Phù, hay sao Bệnh Phù)",
+      "id": "phuc-duc/bo-sao/18",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kỵ, Bệnh, Phù, Hình",
+          "Đau ốm lâu khỏi."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Cô (hay Quả) đồng cung với Thiên Quan (hay Thiên Phúc): cả đời hay gặp may, tránh được nhiều tai họa vì luôn có thần linh che chở. Trong họ có phúc thần."
+      ],
+      "id": "phuc-duc/bo-sao/19",
+      "source_ref": {
+        "keywords": [
+          "Cô (hay Qủa), Thiên Quan (hay Thiên Phúc) đồng cung"
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CoThan",
+            "ThienQuan"
+          ]
+        },
+        {
+          "with_all": [
+            "CoThan",
+            "ThienPhuc"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "ThienQuan"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "ThienPhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Cô (hay Quả) đồng cung với Ân Quang (hay Thiên Quý): cả đời hay gặp may, tránh được nhiều tai họa vì luôn có thần linh che chở. Trong họ có phúc thần."
+      ],
+      "id": "phuc-duc/bo-sao/20",
+      "source_ref": {
+        "keywords": [
+          "Cô (hay Qủa), Quang (hay Qúy) đồng cung"
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CoThan",
+            "AnQuang"
+          ]
+        },
+        {
+          "with_all": [
+            "CoThan",
+            "ThienQuy"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "AnQuang"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "ThienQuy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Cô (hay Quả) đồng cung với Hồng Loan (hay Đào Hoa): có bà tổ linh thiêng phù hộ. Đàn bà, con gái trong họ thường trắc trở về chồng con, nếu không cũng chết yểu."
+      ],
+      "id": "phuc-duc/bo-sao/21",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cô (hay Qủa), Hồng (hay Đào) đồng cung",
+          "Có bà tổ linh thiêng hộ trì."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "CoThan",
+            "HongLoan"
+          ]
+        },
+        {
+          "with_all": [
+            "CoThan",
+            "DaoHoa"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "HongLoan"
+          ]
+        },
+        {
+          "with_all": [
+            "QuaTu",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Đào, Hồng, Binh, Tướng hội hợp: trong họ có nhiều con gái không đứng đắn."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ là Thiên Tướng hay Tướng Quân)",
+      "id": "phuc-duc/bo-sao/22",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Hồng, Binh, Tướng",
+          "Trong họ có nhiều con gái bất chính."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Đào, Hồng, Binh, Tướng hội hợp, gặp thêm Dưỡng hoặc Thai: trong họ nhiều con gái chửa hoang, hoặc bỏ nhà theo trai."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ là Thiên Tướng hay Tướng Quân)",
+      "correction": "Dưỡng và Thai nằm ở hai cung liền nhau trên vòng Trường Sinh, nên không bao giờ cùng hội hợp vào một cung (V13 không thấy lá số nào); hiểu là gặp Dưỡng hay Thai.",
+      "id": "phuc-duc/bo-sao/23",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Hồng, Binh, Tướng, Dưỡng, Thai",
+          "chửa hoang, hay bỏ nhà theo trai."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "PhucBinh"
+          ],
+          "meets_any": [
+            "Duong",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Riêu (hay Tử) gặp nhiều sao thuộc Thủy: giảm thọ. Phải rời bỏ quê hương, đi lập nghiệp thật xa xôi. Họ hàng càng nghèo khổ, ly tán, lại nhiều người mang ác bệnh, ác tật, nếu không cũng chết yểu. Đàn bà, con gái trong họ thường trắc trở về chồng con."
+      ],
+      "condition_text": "có Thiên Riêu (hay Tử: sách không rõ là Tử Vi hay sao Tử của vòng Trường Sinh), gặp nhiều sao thuộc Thủy",
+      "id": "phuc-duc/bo-sao/24",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Riêu (hay Tử), nhiều sao thuộc Thủy",
+          "Phải lìa bỏ quê hương, đi lập nghiệp ở nơi thật xa xôi."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Phúc Đức vô Chính diệu có Tuần, Triệt án ngữ: được hưởng phúc, sống lâu."
+      ],
+      "id": "phuc-duc/vo-chinh-dieu/01",
+      "source_ref": {
+        "keywords": [
+          "Nếu cung Phúc Đức vô Chính diệu có Tuần, Triệt án ngữ"
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Phúc Đức vô Chính diệu có Tam Không hội hợp: được hưởng phúc, sống lâu."
+      ],
+      "condition_text": "có Tam Không hội hợp",
+      "id": "phuc-duc/vo-chinh-dieu/02",
+      "source_ref": {
+        "keywords": [
+          "hội hợp, phải luận đoán là được hưởng phúc sống lâu."
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "PhucDuc"
+      },
+      "body": [
+        "Phúc Đức vô Chính diệu, không có Tuần, Triệt án ngữ, cũng không có Tam Không hội hợp: kém phúc, dù có nhiều sao sáng sủa tốt đẹp hội hợp cũng vậy."
+      ],
+      "condition_text": "không có Tam Không hội hợp",
+      "id": "phuc-duc/vo-chinh-dieu/03",
+      "source_ref": {
+        "keywords": [
+          "đoán là kém phúc (dù có sự hội hợp của nhiều sao sáng sủa"
+        ],
+        "pages": [
+          142
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ]
+    }
+  ]
+}

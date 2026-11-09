@@ -1,0 +1,7149 @@
+{
+  "batch": "TV-17",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Giàu có, của cải tích tụ, tiền bạc đầy kho."
+      ],
+      "id": "tai-bach/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại tại Ngọ, Tướng đồng cung: giàu có súc tích",
+          "Tử đồng cung: giàu có súc tích, tiền của chất đống trong kho đụn."
+        ],
+        "pages": [
+          190,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Giàu có, nhưng không rực rỡ bằng khi ở Ngọ."
+      ],
+      "id": "tai-bach/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: giàu có, nhưng không được rực rỡ như ở trên."
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Của cải rất nhiều; thường làm quan về tài chính, được giao trông coi kho tàng."
+      ],
+      "id": "tai-bach/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: rất nhiều của cải, thường làm quan về tài chánh",
+          "Tử đồng cung: rất nhiều của cải, thường làm quan về tài chánh"
+        ],
+        "pages": [
+          190,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Kiếm tiền rất nhanh, giàu lên rất chóng."
+      ],
+      "id": "tai-bach/tu-vi/04",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: kiếm tiền rất nhanh, làm giàu rất chóng.",
+          "Tử đồng cung: kiếm tiền rất nhanh, làm giàu rất chóng."
+        ],
+        "pages": [
+          190,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lúc đầu chật vật, về sau kiếm tiền rất dễ và cũng được sung túc."
+      ],
+      "id": "tai-bach/tu-vi/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: buổi đầu chật vật nhưng về sau rất dễ kiếm tiền",
+          "Tử đồng cung: buổi đầu chật vật nhưng về sau rất dễ kiếm tiền"
+        ],
+        "pages": [
+          190,
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Bình thường; được hưởng của hương hỏa ông cha để lại, nhưng về sau cũng suy kém."
+      ],
+      "id": "tai-bach/tu-vi/06",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: bình thường, được hưởng của hương hỏa để lại",
+          "Tử đồng cung: bình thường, được hưởng của hương hỏa để lại"
+        ],
+        "pages": [
+          190,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Phải cạnh tranh gắt gao mới có tiền; giàu lên chậm nhưng chắc chắn."
+      ],
+      "id": "tai-bach/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "Độc thủ tại Dần, Thân: phải cạnh tranh ráo riết mới kiếm được tiền"
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Giàu có lớn, giữ của được bền vững."
+      ],
+      "id": "tai-bach/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ hay Tướng đồng cung: giàu có lớn, giữ của bền vững.",
+          "Liêm đồng cung: giàu có lớn, giữ của bền vững."
+        ],
+        "pages": [
+          190,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Giàu có lớn, giữ của được bền vững."
+      ],
+      "id": "tai-bach/liem-trinh/03",
+      "source_ref": {
+        "keywords": [
+          "Phủ hay Tướng đồng cung: giàu có lớn, giữ của bền vững.",
+          "Liêm đồng cung: giàu có lớn, giữ của bền vững."
+        ],
+        "pages": [
+          190,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Đi kiếm tiền giữa lúc loạn lạc, nhưng tai ương thường theo liền với tiền bạc."
+      ],
+      "id": "tai-bach/liem-trinh/04",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: đi kiếm tiền trong lúc náo loạn nhưng tai ương thường đi",
+          "Liêm đồng cung: đi kiếm tiền trong lúc náo loạn nhưng tai ương thường đi"
+        ],
+        "pages": [
+          190,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tiền bạc thất thường, hay tiêu hoang, hao tán, nhưng hết rồi lại có."
+      ],
+      "id": "tai-bach/liem-trinh/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: tiền tài thất thường, hay hoang phí hao tán nhưng hết lại",
+          "Liêm đồng cung: tiền tài thất thường, hay hoang phí hao tán nhưng hết lại"
+        ],
+        "pages": [
+          190,
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Túng thiếu, cả đời khổ sở vì tiền. Hay gặp tai họa vì tiền, nhất là kiện tụng và hình ngục."
+      ],
+      "id": "tai-bach/liem-trinh/06",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: túng thiếu, suốt đời khổ sở vì tiền.",
+          "Liêm đồng cung: túng thiếu, suốt đời khổ sở vì tiền."
+        ],
+        "pages": [
+          190,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Tay trắng làm nên giàu có; càng về sau càng nhiều của."
+      ],
+      "id": "tai-bach/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Nguyệt đồng cung tại Tý: tay trắng làm giàu"
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        },
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Tiền bạc lúc tụ lúc tán, thất thường."
+      ],
+      "id": "tai-bach/thien-dong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: tiền tài tụ tán thất thường."
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Phải lang bạt nay đây mai đó để kiếm tiền, song tiêu xài rất hoang phí, lại bị hao tán, nên không giữ được tiền của."
+      ],
+      "id": "tai-bach/thien-dong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: lang thang nay đây mai đó đi kiếm tiền"
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Túng thiếu."
+      ],
+      "id": "tai-bach/thien-dong/04",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: túng thiếu"
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ắt giàu có; buôn bán kinh doanh ngày một phát đạt."
+      ],
+      "id": "tai-bach/thien-dong/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: tất giàu có, buôn bán kinh doanh càng ngày càng phát",
+          "Đồng đồng cung: tất giàu có, buôn bán kinh doanh càng ngày càng phát"
+        ],
+        "pages": [
+          191,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Phải vất vả mới có tiền; về già mới có của."
+      ],
+      "id": "tai-bach/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: phải vất vả mới kiếm",
+          "Đồng đồng cung tại Ngọ: phải vất vả mới kiếm"
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Tiền bạc tụ tán thất thường, lại hay túng thiếu và thường vướng thị phi, kiện tụng vì tiền. Phải xa nhà, hoặc lưu lạc nơi đất khách quê người, mới phát đạt."
+      ],
+      "correction": "Sách in \"hay túng chiếu\" ở cả hai nơi (tr. 191, 192), hiểu là \"hay túng thiếu\", như dòng Cự Môn đơn thủ tại Tỵ, Thìn, Tuất cùng tr. 192: \"hay túng thiếu và thường mắc thị phi, kiện tụng vì tiền\".",
+      "id": "tai-bach/thien-dong/07",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: tiền tài tụ tán thất thường nhưng hay túng chiếu",
+          "Đồng đồng cung: tiền tài tụ tán thất thường nhưng hay túng chiếu"
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Giàu có lớn."
+      ],
+      "id": "tai-bach/vu-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: giàu có lớn."
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Rất giàu, giữ của bền vững; thường làm quan về tài chính hoặc trông coi kho tàng."
+      ],
+      "id": "tai-bach/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: rất giàu có, giữ của bền vững",
+          "Vũ đồng cung: rất giàu có, giữ của bền vững"
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Phải từ ngoài 30 tuổi trở đi mới giàu."
+      ],
+      "id": "tai-bach/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: từ ngoài 30 trở đi, mới giàu.",
+          "Vũ đồng cung: từ ngoài 30 trở đi, mới giàu."
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Của cải chồng chất; hay được quý nhân nâng đỡ."
+      ],
+      "id": "tai-bach/vu-khuc/04",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: của cải chồng chất, hay gặp qúy nhân nâng đỡ.",
+          "Vũ đồng cung: của cải chồng chất, hay gặp qúy nhân nâng đỡ."
+        ],
+        "pages": [
+          191,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tay trắng lập nghiệp; lúc đầu vất vả khó khăn, về sau mới dễ dàng."
+      ],
+      "id": "tai-bach/vu-khuc/05",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: tay trắng lập nghiệp, buổi đầu vất vả khó khăn",
+          "Vũ đồng cung: tay trắng lập nghiệp, buổi đầu vất vả khó khăn"
+        ],
+        "pages": [
+          191,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tiền qua tay này lại sang tay khác, trước không có, sau mới có. Nên chuyên về kỹ nghệ hoặc thương mại."
+      ],
+      "id": "tai-bach/vu-khuc/06",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: tiền vào tay này sang tay kia, trước không sau có.",
+          "Vũ đồng cung: tiền vào tay này sang tay kia, trước không sau có."
+        ],
+        "pages": [
+          191,
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Giàu có lớn, dễ kiếm tiền."
+      ],
+      "id": "tai-bach/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ từ Dần đến Ngọ: giàu có lớn, dễ kiếm tiền.",
+          "Nhật đồng cung tại Dần: giàu có lớn, dễ kiếm tiền.",
+          "Nhật đồng cung tại Mão: giàu có lớn, dễ kiếm tiền."
+        ],
+        "pages": [
+          191,
+          192,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Mao",
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "with_all": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiDuong",
+          "CuMon",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Phải vất vả mới có tiền; phải gặp thời loạn, hoặc làm ăn đi ngang về tắt, mới đủ tiêu dùng; về già mới sung túc."
+      ],
+      "id": "tai-bach/thai-duong/02",
+      "source_ref": {
+        "keywords": [
+          "Tọa thủ từ Thân đến Tý: vất vả mới kiếm được tiền",
+          "Nhật đồng cung tại Thân: vất vả mới kiếm được tiền",
+          "Nhật đồng cung tại Dậu: vất vả mới kiếm được tiền"
+        ],
+        "pages": [
+          191,
+          192,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than",
+            "Dau",
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "with_all": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Tiền bạc trước ít sau nhiều."
+      ],
+      "id": "tai-bach/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: trước ít sau nhiều"
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhật, Nguyệt đồng cung mà có thêm Hóa Kỵ cùng cung, hoặc bị Tuần, Triệt án ngữ, thì lại càng dễ làm giàu."
+      ],
+      "id": "tai-bach/thai-duong/04",
+      "source_ref": {
+        "keywords": [
+          "nếu gặp Kỵ đồng cung hay Tuần,",
+          "Triệt án ngữ lại càng dễ làm giàu."
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "with_transformations": [
+            "HoaKy"
+          ]
+        },
+        {
+          "tuan_triet": "Either",
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Tiền bạc sung túc."
+      ],
+      "correction": "Sách in \"Ty, Ngọ, Mùi\", hiểu là Tỵ, Ngọ, Mùi: dòng dưới đối lại là Hợi, Tý, Sửu, và mục Thiên Cơ của chương Huynh Đệ tr. 219 in \"Tỵ, Ngọ, Mùi\".",
+      "id": "tai-bach/thien-co/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ty, Ngọ, Mùi: tiền tài sung túc."
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Kiếm tiền chậm và khó."
+      ],
+      "id": "tai-bach/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu : kiếm tiền chậm chạp và khó khăn."
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Làm giàu dễ dàng."
+      ],
+      "id": "tai-bach/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: làm giàu dễ dàng.",
+          "Cơ đồng cung: làm giàu dễ dàng."
+        ],
+        "pages": [
+          191,
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Nhờ kinh doanh, năng động, cạnh tranh gắt gao mà trở nên giàu có."
+      ],
+      "id": "tai-bach/thien-co/04",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: kinh doanh, hoạt động, cạnh tranh ráo riết mà trở nên giàu",
+          "Cơ đồng cung: kinh doanh, hoạt động, cạnh tranh ráo riết mà trở nên giàu"
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Tay trắng lập nghiệp mà vẫn khá giả."
+      ],
+      "id": "tai-bach/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: tay trắng lập nghiệp nhưng khá giả.",
+          "Cơ đồng cung tại Thân: tay trắng lập nghiệp nhưng khá giả."
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thành bại thất thường; kiếm tiền khó khăn và chậm chạp."
+      ],
+      "id": "tai-bach/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: thành bại, thất thường, kiếm tiền khó khăn và",
+          "Cơ đồng cung tại Dần: thành bại, thất thường, kiếm tiền khó khăn và"
+        ],
+        "pages": [
+          191,
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Rất giàu có và giữ của bền vững."
+      ],
+      "id": "tai-bach/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: rất giàu có và giữ của bền vững"
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Giàu có, nhưng không rực rỡ bằng khi ở Tỵ, Hợi."
+      ],
+      "id": "tai-bach/thien-phu/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: giàu có, nhưng không được rực rỡ như"
+        ],
+        "pages": [
+          191
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Giàu có lớn, dễ kiếm tiền."
+      ],
+      "id": "tai-bach/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: giàu có lớn, dễ kiếm tiền."
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Phải vất vả mới có tiền; phải gặp thời loạn, hoặc làm ăn đi ngang về tắt, mới đủ tiêu dùng; về già mới sung túc."
+      ],
+      "id": "tai-bach/thai-am/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: vất vả mới kiếm được tiền"
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Hoạnh phát về tiền bạc: kiếm tiền nhanh và dễ; càng về già càng giàu."
+      ],
+      "correction": "Sách in \"hoạnh phái\", hiểu là hoạnh phát (phát lên bất ngờ), như \"hoạnh phát hoạnh phá\" ở mục Hỏa, Linh tr. 194.",
+      "id": "tai-bach/tham-lang/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tai Thìn, Tuất: hoạnh phái tiền tài"
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tiêu xài hoang phí, ăn chơi nên hao tán; cả đời túng thiếu."
+      ],
+      "id": "tai-bach/tham-lang/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: hoang phí, chơi bời nên hao tán"
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tiền qua tay này lại sang tay khác."
+      ],
+      "id": "tai-bach/tham-lang/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: tiền vào tay này sang tay kia."
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Tay trắng lập nghiệp, hoạnh phát về tiền bạc, nhất là giữa lúc loạn lạc, cạnh tranh."
+      ],
+      "correction": "Sách in \"hoạnh phái\", hiểu là hoạnh phát, như \"hoạnh phát hoạnh phá\" ở mục Hỏa, Linh tr. 194.",
+      "id": "tai-bach/cu-mon/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Ngọ: tay trắng lập nghiệp, hoạnh phái tiền tài"
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Tiền bạc tụ tán thất thường, hay túng thiếu và thường vướng thị phi, kiện tụng vì tiền."
+      ],
+      "id": "tai-bach/cu-mon/02",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Thìn, Tuất: tiền tài tụ tán thất thường, hay túng thiếu"
+        ],
+        "pages": [
+          192
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Tiền bạc sung túc; hay có những món lợi tự nhiên đưa tới."
+      ],
+      "id": "tai-bach/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mùi: tiền tài sung túc"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Bình thường; nên chuyên về công nghệ."
+      ],
+      "id": "tai-bach/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão. Dậu: bình thường, nên chuyên về công nghệ."
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Giàu có lớn; cả đời không phải bận lòng lo chuyện sinh kế hằng ngày."
+      ],
+      "id": "tai-bach/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: giàu có lớn, suốt đời không phải bận tâm"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Bình thường."
+      ],
+      "id": "tai-bach/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: bình thường."
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Phải lang bạt nay đây mai đó để kiếm tiền, song tiêu xài rất hoang phí, lại bị hao tán, nên không giữ được tiền của."
+      ],
+      "id": "tai-bach/thien-luong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: lang thang nay đây mai đó đi kiếm tiền"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Trước ít sau nhiều; đến tuổi trung niên thì kiếm tiền nhanh chóng, dễ dàng."
+      ],
+      "id": "tai-bach/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: trước ít sau nhiều, lúc đứng tuổi kiếm tiền một"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tiền bạc tụ tán thất thường, nhưng hay tìm ra mối lợi và hay có những khoản tiền đến bất ngờ, gọi là hoạnh tài."
+      ],
+      "id": "tai-bach/that-sat/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: tiền tài tụ tán thất thường nhưng hay tìm được"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cả đời thiếu thốn."
+      ],
+      "id": "tai-bach/that-sat/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: suốt đời thiếu thốn."
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Giàu có, của cải tích tụ; kiếm tiền nhanh và dễ. Rất hay vung tiền chi tiêu, nhưng sau đó lại thu về những món lợi rất lớn. Buôn bán kinh doanh liều lĩnh, bạo tay."
+      ],
+      "correction": "Sách in \"Tỷ Ngọ\", hiểu là Tý, Ngọ: Phá Quân chỉ đơn thủ tại Tý, Ngọ, Thìn, Tuất, Dần, Thân, và hai dòng dưới là Thìn, Tuất và Dần, Thân.",
+      "id": "tai-bach/pha-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỷ Ngọ: giàu có súc tích"
+        ],
+        "pages": [
+          193
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tiền bạc tụ tán thất thường, nhưng hết rồi lại có."
+      ],
+      "correction": "Sách in \"những hết lại có\", hiểu là \"nhưng hết lại có\", như dòng Liêm Phá cùng tr. 194.",
+      "id": "tai-bach/pha-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: tiền tài tụ tán thất thường những hết lại có."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Kiếm tiền khó khăn, thu vào ít mà chi ra nhiều; nên làm nghề thủ công hoặc mỹ thuật."
+      ],
+      "id": "tai-bach/pha-quan/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: kiếm tiền khó khăn, thu vào ít phóng ra nhiều"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Kiếm tiền giữa lúc loạn lạc, dễ dàng và nhanh chóng."
+      ],
+      "id": "tai-bach/kinh-da/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: kiếm tiền trong lúc náo loạn, dễ dàng và nhanh chóng."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "KinhDuong",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Thiếu thốn và phá tán; phải xoay xở bằng cách ám muội, phi nghĩa mới có tiền."
+      ],
+      "id": "tai-bach/kinh-da/02",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: thiếu thốn và phá tán, phải xoay sở"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Kiếm tiền rất nhanh nhưng hao tán cũng rất chóng, gọi là hoạnh phát hoạnh phá."
+      ],
+      "id": "tai-bach/hoa-linh/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: kiếm tiền rất nhanh, nhưng hao tán rất chóng"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Túng thiếu; nếu gom góp được chút ít thì về sau cũng phá tán hết."
+      ],
+      "id": "tai-bach/hoa-linh/02",
+      "source_ref": {
+        "keywords": [
+          "nếu cố được chút ít, sau cũng phá tán đến hết."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Phát nhanh nhưng phá cũng nhanh: lúc đầu giàu lên nhanh chóng, về sau lại sụp đổ bất ngờ. Thường buôn bán táo bạo và ám muội."
+      ],
+      "id": "tai-bach/khong-kiep/01",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt đẹp: hoạnh phát nhưng hoạnh phá"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Túng thiếu, cùng khốn."
+      ],
+      "id": "tai-bach/khong-kiep/02",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: túng thiếu, cùng khốn."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thích đánh bạc."
+      ],
+      "id": "tai-bach/xuong-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Thích đánh bạc."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Giàu có lớn."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "tai-bach/xuong-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: giàu có lớn."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Phá tán, hao tài, hay buồn phiền vì tiền, nhưng vẫn có người giúp đỡ."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "tai-bach/xuong-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: phá tán, hao tài, hay buồn bực vì tiền"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Dễ kiếm tiền, hay được quý nhân giúp đỡ."
+      ],
+      "id": "tai-bach/khoi-viet/01",
+      "source_ref": {
+        "keywords": [
+          "Dễ kiếm tiền, hay gặp qúy nhân giúp đỡ."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Dễ làm giàu; lúc nào cũng có người giúp đỡ về tiền bạc."
+      ],
+      "id": "tai-bach/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Dễ làm giàu, luôn luôn gặp người giúp đỡ về tiền bạc."
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Có Lộc Tồn hoặc Hóa Lộc tọa thủ: dễ kiếm tiền, cả đời sung túc."
+      ],
+      "id": "tai-bach/loc/01",
+      "source_ref": {
+        "keywords": [
+          "Lộc Tồn, Hóa Lộc",
+          "Dễ kiếm tiền, suốt đời sung túc"
+        ],
+        "pages": [
+          194
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LocTon"
+          ]
+        },
+        {
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "transformations": [
+          "HoaKhoa",
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Giàu lên nhanh chóng, hay được người giúp đỡ."
+      ],
+      "id": "tai-bach/khoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Làm giàu mau chónh, hay gặp người giúp đỡ."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Tiền của hao tán."
+      ],
+      "id": "tai-bach/hoa-ky/01",
+      "source_ref": {
+        "keywords": [
+          "12.23. Hóa Kỵ",
+          "Tán tài."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Dễ kiếm tiền ở phương xa."
+      ],
+      "id": "tai-bach/thien-ma/01",
+      "source_ref": {
+        "keywords": [
+          "Dễ kiếm tiền ở phương xa."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Tính hà tiện, khéo giữ tiền của."
+      ],
+      "id": "tai-bach/co-qua/01",
+      "source_ref": {
+        "keywords": [
+          "Hà tiện, khéo giữ của."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Có sẵn tiền. Phụ nữ muốn dễ kiếm tiền thì phải nhờ vào nhan sắc; đàn ông thì nhờ vợ hoặc nhân tình."
+      ],
+      "id": "tai-bach/dao-hong/01",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sẵn tiền, đàn bà phải nhờ nhan sắc mới dễ kiếm tiền"
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Thích cờ bạc, tiêu hoang, hay nghiện một thứ gì đó."
+      ],
+      "id": "tai-bach/song-hao/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Thích đánh bạc, tiêu hoang, hay nghiện (ghiền) một thứ gì."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Dễ kiếm tiền nhưng lại tiêu xài hoang phí, thường bị hao tán hết."
+      ],
+      "id": "tai-bach/song-hao/02",
+      "source_ref": {
+        "keywords": [
+          "Sáng sủa tốt dẹp: dễ kiếm tiền nhưng lại tiêu pha hoang phí"
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "brightness": [
+            "Dac"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Cả đời thiếu thốn."
+      ],
+      "correction": "Sách chỉ liệt kê Đắc địa của Song Hao (Dần, Thân, Mão, Dậu, tr. 41) và không dùng chữ hãm địa cho hai sao này, nên \"mờ ám xấu xa\" mã hóa là Song Hao ở tám cung còn lại.",
+      "id": "tai-bach/song-hao/03",
+      "source_ref": {
+        "keywords": [
+          "Mờ ám xấu xa: suốt đời thiếu thốn."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Suu",
+            "Thin",
+            "Ti",
+            "Ngo",
+            "Mui",
+            "Tuat",
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Hay có người giúp tiền; thường được hưởng của thừa tự."
+      ],
+      "id": "tai-bach/quang-quy/01",
+      "source_ref": {
+        "keywords": [
+          "Hay có người giúp tiền, thường được hưởng của thừa tự."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Giữ của bền vững."
+      ],
+      "id": "tai-bach/dau-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Giữ của vững bền."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "PhucBinh"
+        ]
+      },
+      "body": [
+        "Hay bị mất cắp, mất trộm."
+      ],
+      "id": "tai-bach/phuc-binh/01",
+      "source_ref": {
+        "keywords": [
+          "Hay bị mất cắp, mất trộm."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "Tu"
+        ]
+      },
+      "body": [
+        "Có của chôn giấu."
+      ],
+      "id": "tai-bach/tu/01",
+      "source_ref": {
+        "keywords": [
+          "Có của chôn giấu."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienRieu",
+          "ThienY"
+        ]
+      },
+      "body": [
+        "Buôn thuốc rất phát tài."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "tai-bach/rieu-y/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: hay buôn thuốc rất phát tài."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienRieu",
+          "ThienY"
+        ]
+      },
+      "body": [
+        "Ăn chơi, phá tán."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "tai-bach/rieu-y/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: chơi bời, phá tán."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "DieuKhach"
+        ]
+      },
+      "body": [
+        "Mê cờ bạc dây dưa, liên miên."
+      ],
+      "id": "tai-bach/dieu-khach/01",
+      "source_ref": {
+        "keywords": [
+          "Cờ bạc dông dài."
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Kiếm tiền khó khăn, tiền qua tay này lại sang tay khác; không được hưởng của ông cha để lại; cả đời túng thiếu."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "correction": "Sách in \"sang lay kia\", hiểu là \"sang tay kia\".",
+      "id": "tai-bach/tuan-triet/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: kiếm tiền khó khăn, vào tay này sang lay"
+        ],
+        "pages": [
+          195
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Lúc đầu khó kiếm tiền, về sau rất dễ, nhưng không thể giàu lớn."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "tai-bach/tuan-triet/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: trước khó kiếm tiền, sau rất dễ"
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Tính gian lận, keo bẩn, nhưng lại hay tán tài."
+      ],
+      "correction": "Kình Dương, Đà La luôn đứng hai bên Lộc Tồn, cách nhau 2 cung, mà các cung hội hợp (đồng cung, tam hợp, xung chiếu) chỉ cách nhau 0, 4, 6 hoặc 8 cung, nên hai sao không bao giờ cùng hội hợp một cung. Hiểu là gặp Kình hoặc Đà cùng các sao còn lại.",
+      "id": "tai-bach/bo-sao/01",
+      "source_ref": {
+        "keywords": [
+          "Liêm, Kình, Đà, Hỏa, Linh, Không, Kiếp",
+          "Tính gian lận và keo bẩn nhưng lại hay tán tài."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LiemTrinh",
+            "HoaTinh",
+            "LinhTinh",
+            "DiaKhong",
+            "DiaKiep"
+          ],
+          "meets_any": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Cung Tài Bạch bị Không, Kiếp giáp hai bên, hoặc gặp Không, Kiếp, Phục Binh: có kẻ trộm cướp rình rập gần nhà, hoặc ngay nhà hàng xóm."
+      ],
+      "id": "tai-bach/bo-sao/02",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp giáp cung Tài Bạch, Không, Kiếp, Phục",
+          "Kẻ trộm cướp rình mò ở gần nhà, hay ở ngay bên hàng xóm."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "flanked_by": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        },
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Lừa đảo, lấy của người khác để làm giàu."
+      ],
+      "id": "tai-bach/bo-sao/03",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Tả, Hữu",
+          "Lừa đảo, lấy của người khác để làm giàu."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "TaPhu",
+            "HuuBat"
+          ],
+          "not_meets": [
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Đi cướp của người khác."
+      ],
+      "condition_text": "gặp thêm Sát tinh khác và Tướng (sách không nói rõ Thiên Tướng hay Tướng Quân)",
+      "id": "tai-bach/bo-sao/04",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Không, Kiếp, Tả, Hữu, Sát tinh, Tướng, Phục",
+          "Đi cướp của người khác."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep",
+            "TaPhu",
+            "HuuBat",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Lộc (Lộc Tồn hoặc Hóa Lộc) và Thiên Mã cùng cung: tiền của đến tận tay."
+      ],
+      "id": "tai-bach/bo-sao/05",
+      "source_ref": {
+        "keywords": [
+          "Lộc, Mã đồng cung",
+          "Của đến tận tay."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LocTon",
+            "ThienMa"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienMa"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Lộc (Lộc Tồn hoặc Hóa Lộc) và Hồng Loan cùng cung: đàn ông tiêu tiền của vợ, đàn bà nhờ nhan sắc mà dễ kiếm tiền."
+      ],
+      "id": "tai-bach/bo-sao/06",
+      "source_ref": {
+        "keywords": [
+          "Lộc, Hồng đồng cung",
+          "Trai tiêu tiền của vợ, gái nhờ nhan sắc mà dễ kiếm tiền."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LocTon",
+            "HongLoan"
+          ]
+        },
+        {
+          "with_all": [
+            "HongLoan"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Hóa Lộc cùng cung với Đại Hao hoặc Tiểu Hao: kiếm được ít mà tiêu nhiều, rất hoang phí; không những thế còn bị hao tán, mất mát."
+      ],
+      "correction": "Sách ghi \"Lộc, Hao đồng cung\" không nói rõ Lộc nào. Bác Sỹ luôn đóng cùng Lộc Tồn, Tiểu Hao và Đại Hao cách Bác Sỹ 3 và 9 cung, nên Lộc Tồn không bao giờ đồng cung với Song Hao; chỉ còn Hóa Lộc.",
+      "id": "tai-bach/bo-sao/07",
+      "source_ref": {
+        "keywords": [
+          "Lộc, Hao đồng cung",
+          "Kiếm tiền ít, nhưng lại tiêu nhiều và rất hoang phí."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "DaiHao"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        },
+        {
+          "with_all": [
+            "TieuHao"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Gặp Lộc, Tang Môn, Đà La: được hưởng của thừa tự do một người trong họ để lại."
+      ],
+      "id": "tai-bach/bo-sao/08",
+      "source_ref": {
+        "keywords": [
+          "Lộc, Tang, Đà",
+          "Được của thừa tự của một người trong họ để lại."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "TangMon",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Gặp Lộc, Không, Kiếp: tính ích kỷ, bủn xỉn, nhưng lại hay hao tốn tiền của rất nhiều."
+      ],
+      "correction": "Sách in \"biến lận\", hiểu là \"bỉ lận\" (bủn xỉn, keo kiệt), hợp với \"ích kỷ\" đứng trước.",
+      "id": "tai-bach/bo-sao/09",
+      "source_ref": {
+        "keywords": [
+          "Lộc, Không, Kiếp",
+          "Tính ích kỷ, biến lận nhưng lại hay bị hao tốn tiền tài rất nhiều."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Gặp Lộc, Mã: buôn bán phát tài; đi xa kiếm tiền, nhất là kinh doanh nơi xa, nay đây mai đó, cũng chóng giàu lên."
+      ],
+      "id": "tai-bach/bo-sao/10",
+      "source_ref": {
+        "keywords": [
+          "Buôn bán phát tài, đi kiếm tiền, nhất là kinh doanh ở nơi xa"
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Mắc nghiện; nếu không thì cũng mê cờ bạc, phá tán rất nhiều tiền của."
+      ],
+      "id": "tai-bach/bo-sao/11",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Song Hao, Hỏa, Linh",
+          "Mắc nghiện, nếu không cũng say mè cờ bạc"
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaiHao",
+            "TieuHao",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Tốn tiền vì chuyện trai gái: đàn ông thường bị vợ hoặc nhân tình bòn rút của; đàn bà thường bị chồng hoặc nhân tình lợi dụng, dễ bị moi tiền."
+      ],
+      "id": "tai-bach/bo-sao/12",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Song Hao, Hồng, Đào",
+          "Tốn tiền vì chuyện trai gái"
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaiHao",
+            "TieuHao",
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Mất trộm lớn, bị cướp, hoặc bị lừa đảo đến sạt nghiệp."
+      ],
+      "id": "tai-bach/bo-sao/13",
+      "source_ref": {
+        "keywords": [
+          "Song Hao, Không, Kiếp",
+          "Mất trộm lớn, mất cướp hay bị lừa đảo sạt nghiệp."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaiHao",
+            "TieuHao",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Được hưởng của ông cha để lại."
+      ],
+      "id": "tai-bach/bo-sao/14",
+      "source_ref": {
+        "keywords": [
+          "Long, Phượng, Mộ",
+          "Được hưởng của tiền nhân dể lại."
+        ],
+        "pages": [
+          196
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LongTri",
+            "PhuongCac",
+            "Mo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Thái Tuế và Lộc (Lộc Tồn hoặc Hóa Lộc) cùng cung: buôn bán giỏi, được nhiều người tin cậy, ăn nói ra tiền."
+      ],
+      "correction": "Sách in tiêu đề \"Tuế, Lộc cung\", thiếu chữ; hiểu là \"Tuế, Lộc đồng cung\" theo cách viết các tiêu đề 12.39–12.41 tr. 196.",
+      "id": "tai-bach/bo-sao/15",
+      "source_ref": {
+        "keywords": [
+          "Tuế, Lộc cung",
+          "Buôn bán giỏi, được nhiều người tin cậy"
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiTue",
+            "LocTon"
+          ]
+        },
+        {
+          "with_all": [
+            "ThaiTue"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Hay gặp tranh chấp về tiền bạc; phải vướng thị phi, kiện tụng mới kiếm ra tiền."
+      ],
+      "correction": "Sách in \"thị phú\", hiểu là thị phi.",
+      "id": "tai-bach/bo-sao/16",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuế, Đà, Kỵ",
+          "Hay gặp sự tranh chấp về tiền tài, có mắc thị phú kiện tụng"
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiTue",
+            "DaLa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Làm thợ khéo tay, kiếm tiền dễ dàng."
+      ],
+      "id": "tai-bach/bo-sao/17",
+      "source_ref": {
+        "keywords": [
+          "Hình, Cơ, Tuế",
+          "Làm thợ khéo, kiếm tiền dề dàng."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh",
+            "ThienCo",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienHinh",
+          "LucSy"
+        ]
+      },
+      "body": [
+        "Hay đi ăn trộm."
+      ],
+      "id": "tai-bach/bo-sao/18",
+      "sensitivity": [
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hình, Lực đồng cung",
+          "Hay đi ăn trộm."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh",
+            "LucSy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Làm nghề thủ công, rất phát đạt."
+      ],
+      "correction": "Tang Môn đứng cách Chi năm sinh 2 cung, cùng âm dương với Chi năm; Đào Hoa luôn ở cung khác âm dương với Chi năm (Dậu, Mão, Ngọ, Tý theo tam hợp). Hai sao cách nhau số lẻ cung nên không bao giờ cùng hội hợp một cung (quét 510.432 lá số xác nhận). Hiểu là Thiên Hình gặp Tang Môn hoặc Đào Hoa.",
+      "id": "tai-bach/bo-sao/19",
+      "source_ref": {
+        "keywords": [
+          "Hình, Tang, Đào",
+          "Làm nghề thủ công, rất phát đạt."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienHinh"
+          ],
+          "meets_any": [
+            "TangMon",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach"
+      },
+      "body": [
+        "Vì tiền mà rước họa vào thân; thường bị cướp, bị đánh đập rất đau đớn."
+      ],
+      "id": "tai-bach/bo-sao/20",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lưu Hà, Kiếp Sát, Hình",
+          "Vì tiền mà mang họa vào thân"
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "LuuHa",
+            "KiepSat",
+            "ThienHinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TaiBach",
+        "stars": [
+          "ThienKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Bần cùng, khốn khổ."
+      ],
+      "id": "tai-bach/bo-sao/21",
+      "source_ref": {
+        "keywords": [
+          "Thiên Không, Kiếp đồng cung",
+          "Bần cùng, khốn khổ."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "TaiBach"
+      },
+      "body": [
+        "Cung Tài Bạch vô Chính diệu: dẫu gặp nhiều sao sáng sủa tốt đẹp hội hợp vẫn không thể giàu lớn."
+      ],
+      "condition_text": "không có Nhật, Nguyệt cùng sáng sủa xung chiếu hay hợp chiếu",
+      "id": "tai-bach/vo-chinh-dieu/01",
+      "source_ref": {
+        "keywords": [
+          "Dù có nhiều sao sáng",
+          "sủa tốt đẹp hội hợp cũng không thể giàu to lớn được"
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "TaiBach"
+      },
+      "body": [
+        "Cung Tài Bạch vô Chính diệu có Tuần, Triệt án ngữ: lúc đầu kiếm tiền khó khăn, về sau dễ dàng, càng về già càng sung túc."
+      ],
+      "id": "tai-bach/vo-chinh-dieu/02",
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ: buổi đầu kiếm tiền khó khăn, nhưng về sau dễ dàng"
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "TaiBach"
+      },
+      "body": [
+        "Cung Tài Bạch vô Chính diệu được Nhật, Nguyệt cùng sáng sủa xung chiếu hoặc hợp chiếu: giàu có lớn."
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "correction": "Sách in \"hợp chiến\", hiểu là hợp chiếu.",
+      "id": "tai-bach/vo-chinh-dieu/03",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt (cùng sáng sủa) xung chiếu hay hợp chiến: giàu có lớn."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "no_main_star": true,
+        "role": "TaiBach"
+      },
+      "body": [
+        "Cung Tài Bạch vô Chính diệu được Nhật, Nguyệt sáng sủa chiếu, lại có Tuần, Triệt án ngữ: tốt đẹp bội phần."
+      ],
+      "condition_text": "Nhật, Nguyệt cùng sáng sủa",
+      "id": "tai-bach/vo-chinh-dieu/04",
+      "source_ref": {
+        "keywords": [
+          "thật là tốt đẹp bội phần."
+        ],
+        "pages": [
+          197
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienPhu",
+          "ThienTuong",
+          "ThienLuong",
+          "ThatSat",
+          "ThienDong",
+          "ThaiDuong",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cung Huynh Đệ có Chính diệu Nam Đẩu tinh tọa thủ (Thái Dương, Thiên Cơ, Thiên Đồng, Thiên Lương, Thiên Phủ, Thiên Tướng, Thất Sát): anh em trai nhiều hơn chị em gái."
+      ],
+      "correction": "Sách in \"Nam Đầu tinh\" và \"Thiên Phu\", hiểu là Nam Đẩu tinh, Thiên Phủ. Nhóm @NamDau có cả phụ tinh, nên neo ghi rõ bảy Chính Tinh sách kể.",
+      "id": "huynh-de/tien-quyet/01",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ có Chính diệu Nam Đầu tinh tọa thủ như Thiên Phu,"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "TuVi",
+            "ThaiAm",
+            "ThamLang",
+            "CuMon",
+            "LiemTrinh",
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiAm",
+          "ThamLang",
+          "CuMon",
+          "LiemTrinh",
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Cung Huynh Đệ có Chính diệu Bắc Đẩu tinh tọa thủ (Liêm Trinh, Vũ Khúc, Thái Âm, Tham Lang, Cự Môn, Phá Quân): chị em gái nhiều hơn anh em trai."
+      ],
+      "id": "huynh-de/tien-quyet/02",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ có Chính diệu Bắc Đẩu tinh tọa thủ như Thái Âm,"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "ThienTuong",
+            "ThienLuong",
+            "ThatSat",
+            "ThienDong",
+            "ThaiDuong",
+            "ThienCo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienPhu",
+          "ThienTuong",
+          "ThienDong",
+          "ThaiDuong",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cung Huynh Đệ có hai Chính diệu đồng cung, một Nam Đẩu tinh và một Bắc Đẩu tinh, mà cung ở Dương cung: anh em trai nhiều hơn chị em gái."
+      ],
+      "id": "huynh-de/tien-quyet/03",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ là Dương cung thì anh em trai nhiều hơn thị em"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "ThaiAm"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "CuMon"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "LiemTrinh"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThatSat",
+          "ThienDong",
+          "ThaiDuong",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cung Huynh Đệ có hai Chính diệu đồng cung, một Nam Đẩu tinh và một Bắc Đẩu tinh, mà cung ở Âm cung: chị em gái nhiều hơn anh em trai."
+      ],
+      "id": "huynh-de/tien-quyet/04",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ là Âm cung: chị em gái nhiều hơn anh em trai."
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThaiAm"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "CuMon"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "LiemTrinh"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "VuKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Tử Vi là sao Nam Bắc Đẩu: cung Huynh Đệ có Tử Vi đồng cung với một Chính diệu Nam Đẩu tinh (Phủ, Tướng hoặc Sát): số anh em trai nhiều hơn số chị em gái."
+      ],
+      "id": "huynh-de/tien-quyet/05",
+      "source_ref": {
+        "keywords": [
+          "Chính diệu Nam Đẩu tinh đồng cung thì anh em trai nhiều"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Tử Vi là sao Nam Bắc Đẩu: cung Huynh Đệ có Tử Vi đồng cung với một Chính diệu Bắc Đẩu tinh (Tham hoặc Phá): số chị em gái nhiều hơn số anh em trai."
+      ],
+      "id": "huynh-de/tien-quyet/06",
+      "source_ref": {
+        "keywords": [
+          "Chính diệu Bắc Đẩu tinh đồng cung thì chị em gái nhiều hơn"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Cung Huynh Đệ ở Dương cung: nếu không phải con đầu lòng thì ắt có anh trai sinh trước mình."
+      ],
+      "condition_text": "là con thứ, không phải con đầu lòng",
+      "correction": "Sách in \"nếu là con thứ nhất, tất có anh trai sinh trước mình\": con đầu lòng thì không thể có anh sinh trước. Vế song song cho Âm cung ngay sau in \"nếu là cung thứ\", nên hiểu cả hai là \"nếu là con thứ\".",
+      "id": "huynh-de/tien-quyet/07",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ là Dương cung thì nếu là con thứ nhất, tất có anh"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Cung Huynh Đệ ở Âm cung: nếu không phải con đầu lòng thì ắt có chị gái sinh trước mình."
+      ],
+      "condition_text": "là con thứ, không phải con đầu lòng",
+      "correction": "Sách in \"nếu là cung thứ\", hiểu là \"nếu là con thứ\".",
+      "id": "huynh-de/tien-quyet/08",
+      "source_ref": {
+        "keywords": [
+          "Cung Huynh Đệ là Âm cung thì nếu là cung thứ, tất có"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Có anh chị em dị bào khi cung Huynh Đệ có một trong các bộ: Thiên Tướng gặp Tuyệt; Thái Âm gặp Thiên Phúc; Cự Môn cùng cung Thiên Cơ; đủ bộ Cơ, Nguyệt, Đồng, Lương; Phục Binh gặp Tướng Quân; Thai gặp Đế Vượng. Cung Huynh Đệ ở Dương cung thì là anh chị em cùng cha khác mẹ."
+      ],
+      "correction": "Phục Binh và Tướng Quân (vòng Bác Sỹ, cách nhau 6 cung), Thai và Đế Vượng (vòng Tràng Sinh, cách nhau 6 cung) không bao giờ cùng cung; Cơ, Nguyệt, Đồng, Lương không thể cùng đóng một cung. Ba bộ này hiểu là hội hợp.",
+      "id": "huynh-de/tien-quyet/09",
+      "source_ref": {
+        "keywords": [
+          "Có anh chị em dị bào nếu tại cung Huynh Đệ",
+          "Cung Huynh Đệ là Dương cung: anh chị em cùng cha khác mẹ."
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "ThienTuong",
+            "Tuyet"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "ThaiAm",
+            "ThienPhuc"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "PhucBinh",
+            "TuongQuan"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "Thai",
+            "DeVuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Có anh chị em dị bào khi cung Huynh Đệ có một trong các bộ: Thiên Tướng gặp Tuyệt; Thái Âm gặp Thiên Phúc; Cự Môn cùng cung Thiên Cơ; đủ bộ Cơ, Nguyệt, Đồng, Lương; Phục Binh gặp Tướng Quân; Thai gặp Đế Vượng. Cung Huynh Đệ ở Âm cung thì là anh chị em cùng mẹ khác cha."
+      ],
+      "correction": "Phục Binh và Tướng Quân (vòng Bác Sỹ, cách nhau 6 cung), Thai và Đế Vượng (vòng Tràng Sinh, cách nhau 6 cung) không bao giờ cùng cung; Cơ, Nguyệt, Đồng, Lương không thể cùng đóng một cung. Ba bộ này hiểu là hội hợp.",
+      "id": "huynh-de/tien-quyet/10",
+      "source_ref": {
+        "keywords": [
+          "Có anh chị em dị bào nếu tại cung Huynh Đệ",
+          "Cung Huynh Đệ là Âm cung: anh chị em cùng mẹ khác cha."
+        ],
+        "pages": [
+          217,
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThienTuong",
+            "Tuyet"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThaiAm",
+            "ThienPhuc"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "CuMon",
+            "ThienCo"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "meets_all": [
+            "PhucBinh",
+            "TuongQuan"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "meets_all": [
+            "Thai",
+            "DeVuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Có anh trên; anh chị em đều khá giả."
+      ],
+      "id": "huynh-de/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ: có anh trên, anh chị em đều khá giả."
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Cũng có anh trên; anh chị em thường phải xa nhau từ thuở nhỏ."
+      ],
+      "id": "huynh-de/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: cũng có anh trên"
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Từ ba anh chị em trở lên, ai cũng quý hiển."
+      ],
+      "id": "huynh-de/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: ba người trở lên, đều qúy hiển",
+          "Coi Tử Vi (Phủ đồng cung)"
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Từ bốn anh chị em trở lên, nhưng trong nhà hay bất hòa vì không ai chịu nhường ai; dù vậy tất cả đều khá giả."
+      ],
+      "id": "huynh-de/tu-vi/04",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: bốn người trở lên, nhưng trong nhà hay có sự bất hòa",
+          "Tử đồng cung: bốn người trở lên, nhưng trong nhà hay có sự bất hòa"
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, đều được hưởng phú quý."
+      ],
+      "id": "huynh-de/tu-vi/05",
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: nhiều nhất là ba người, đều được hưởng phú qúy.",
+          "Tử đồng cung: nhiều nhất là ba người, đều được hưởng phú qúy."
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, lại thêm những anh chị em dị bào. Anh chị em sớm phải xa nhau; trong nhà thiếu hòa khí."
+      ],
+      "id": "huynh-de/tu-vi/06",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: nhiều nhất là ba người, ngoài ra còn có thêm",
+          "Tử đồng cung: nhiều nhất là ba người, ngoài ra còn có thêm"
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, thường ly tán và vất vả trên đường đời."
+      ],
+      "id": "huynh-de/tu-vi/07",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: nhiều nhất là ba người, thường ly tán và vất vả trên",
+          "Tử đồng cung: nhiều nhất là ba người, thường ly tán"
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là hai anh chị em."
+      ],
+      "id": "huynh-de/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: nhiều nhất là hai người"
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, đều khá giả nhưng không hợp tính nhau."
+      ],
+      "id": "huynh-de/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: nhiều nhất là ba người, đều khá giả, nhưng không hợp",
+          "Liêm Trinh (Phủ đồng cung)"
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Hai anh chị em, đều quý hiển."
+      ],
+      "id": "huynh-de/liem-trinh/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: hai người, đều qúy hiển.",
+          "Liêm đồng cung: hai người, đều qúy hiển."
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Một anh chị em, nhưng nghèo khổ và thường mang tật."
+      ],
+      "id": "huynh-de/liem-trinh/04",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: một người, nhưng bần cùng và thường mang tật.",
+          "Liêm đồng cung: một người, nhưng bần cùng và thường mang tật."
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, thường mang tật nên cả đời cùng khổ, hay chết non; anh chị em bất hòa."
+      ],
+      "id": "huynh-de/liem-trinh/05",
+      "sensitivity": [
+        "Illness",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung may mắn lắm mới có một người, thường mang tật",
+          "Liêm đồng cung may mắn lắm mới có một người, thường mang tật"
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "May lắm mới có hai anh chị em, mà lại ly tán, khổ cực. Gia đình thiếu hòa khí; anh chị em oán giận nhau, có khi còn cãi cọ."
+      ],
+      "id": "huynh-de/liem-trinh/06",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: may mắn lắm mới có hai người nhưng ly tán, cùng khổ.",
+          "Liêm đồng cung: may mắn lắm mới có hai người nhưng ly tán, cùng khổ."
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Từ bốn anh chị em trở lên."
+      ],
+      "id": "huynh-de/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: bốn người trở lên."
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, thường sớm xa nhau."
+      ],
+      "correction": "Sách in \"Dâu\", hiểu là Dậu.",
+      "id": "huynh-de/thien-dong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dâu: nhiều nhất là ba người, thường sớm xa cách nhau."
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là hai anh chị em, thường xa nhau từ thuở nhỏ; có người du đãng, hoang tàng."
+      ],
+      "id": "huynh-de/thien-dong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: nhiều nhất là hai người, thường xa cách nhau từ"
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, mà cũng phiêu bạt hoặc cùng khổ, cô đơn."
+      ],
+      "id": "huynh-de/thien-dong/04",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: may mắn lắm mới có một người nhưng cũng"
+        ],
+        "pages": [
+          218
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Ba anh chị em, khá giả."
+      ],
+      "id": "huynh-de/thien-dong/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: ba người, khá giả.",
+          "Đồng đồng cung: ba người, khá giả."
+        ],
+        "pages": [
+          218,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Bốn hoặc năm anh chị em, chị em gái nhiều hơn anh em trai; tất cả đều hòa thuận và khá giả."
+      ],
+      "correction": "Mục Thái Âm tr. 220 dẫn sang \"Thiên Đồng (Đơn thủ tại Tỵ, Hợi; Nguyệt đồng cung tại Ngọ)\". Thiên Đồng đơn thủ thì không có Thái Âm cùng cung, còn mục Thiên Đồng tr. 218 chỉ có hai dòng có Nguyệt là tại Tý và tại Ngọ, nên hiểu \"Đơn thủ tại Tỵ, Hợi\" là \"Nguyệt đồng cung tại Tý\".",
+      "id": "huynh-de/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Tý: bốn hay năm người, chị em nhiều hơn anh em,",
+          "Coi Thiên Đồng (Đơn thủ tại Tỵ, Hợi; Nguyệt đồng cung tại Ngọ)"
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là hai anh chị em; anh chị em bất hòa và xa cách nhau."
+      ],
+      "id": "huynh-de/thien-dong/07",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: nhiều nhất là hai người",
+          "Nguyệt đồng cung tại Ngọ)"
+        ],
+        "pages": [
+          218,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "May lắm mới có hai anh chị em; trong nhà thiếu hòa khí; anh chị em phải sớm xa nhau mới được vẹn toàn; có người mang cố tật hoặc vướng hình ngục."
+      ],
+      "id": "huynh-de/thien-dong/08",
+      "sensitivity": [
+        "Illness",
+        "Legal"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: may mắn lắm mới có hai người, trong nhà thiếu hòa khí,",
+          "Đồng đồng cung: may mắn lắm mới có hai người, trong nhà thiếu hòa"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Hai anh chị em, khá giả nhưng không hợp tính nhau."
+      ],
+      "id": "huynh-de/vu-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: hai người khá giả, nhưng không hợp tính nhau."
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, đều giàu có và quý hiển."
+      ],
+      "id": "huynh-de/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: nhiều nhất là ba người đều giàu có và qúy hiển.",
+          "Vũ Khúc"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Hai anh chị em."
+      ],
+      "id": "huynh-de/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: hai người.",
+          "Vũ đồng cung: hai người."
+        ],
+        "pages": [
+          219,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em; về sau đều giàu có nhưng sớm xa nhau."
+      ],
+      "id": "huynh-de/vu-khuc/04",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: nhiều nhất là ba người, sau đều giàu có nhưng sớm xa",
+          "Vũ Tham đồng cung: nhiều nhất là ba người, sau đều giàu có nhưng sớm"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Một anh chị em; trong nhà hay xô xát, anh chị em phải xa nhau."
+      ],
+      "id": "huynh-de/vu-khuc/05",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: một người, trong nhà hay có sự xô xát",
+          "Vũ đồng cung: một người, trong nhà hay có sự xô xát"
+        ],
+        "pages": [
+          219,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Một anh chị em, nhưng mang cố tật hoặc bị hình thương; nếu không sớm xa nhau ắt bị hình khắc."
+      ],
+      "correction": "Sách in \"tất bị hình khác\" ở cả tr. 219 và 221, hiểu là hình khắc.",
+      "id": "huynh-de/vu-khuc/06",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: một người, nhưng mang cố tật hay bị hình thương",
+          "Vũ đồng cung: một người, nhưng mang cố tật hay bị hình thương"
+        ],
+        "pages": [
+          219,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Từ sáu anh chị em trở lên, đều quý hiển; anh em trai nhiều hơn chị em gái."
+      ],
+      "id": "huynh-de/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tỵ, Ngọ: sáu người trở lên, đều qúy hiển"
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em, nhưng bất hòa."
+      ],
+      "id": "huynh-de/thai-duong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tuất, Hợi, Tý: nhiều nhất là ba người, nhưng bất hòa."
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Ba anh chị em, cũng khá giả."
+      ],
+      "id": "huynh-de/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Dần: ba người, cũng khá giả.",
+          "Cự đồng cung Thái Dương tại Dần: ba người, cũng khá giả."
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "May lắm mới có hai anh chị em, nhưng bất hòa, phải xa nhau."
+      ],
+      "id": "huynh-de/thai-duong/04",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Thân: may mắn lắm mới có hai người, nhưng bất hòa",
+          "Cự đồng cung Thái Dương tại Thân: may mắn lắm mới có hai người,"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Năm anh chị em, đều quý hiển."
+      ],
+      "id": "huynh-de/thai-duong/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung tại Mão: năm người, đều quý hiển.",
+          "Lương đồng cung Thái Dương tại Mão: năm người, đều quý hiển."
+        ],
+        "pages": [
+          219,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Từ năm anh chị em trở lên; tuy khá giả nhưng thiếu hòa thuận."
+      ],
+      "id": "huynh-de/thai-duong/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: năm người trở lên, tuy khá giả nhưng khiếm hòa.",
+          "Dương (Nguyệt đồng cung)"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba anh chị em."
+      ],
+      "id": "huynh-de/thien-co/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: nhiều nhất là ba người."
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "May lắm mới có hai anh chị em."
+      ],
+      "id": "huynh-de/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: may mắn lắm mới có hai người."
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Ba anh chị em."
+      ],
+      "id": "huynh-de/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: ba người.",
+          "Thiên Cơ (Nguyêt đồng cung tại Thân"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em."
+      ],
+      "id": "huynh-de/thien-co/04",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tai Dần: may mắn lắm mới có một người.",
+          "đồng cung tại Dần)"
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Hai anh chị em, khá giả và hòa thuận."
+      ],
+      "id": "huynh-de/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: hai người, khá giả và thuận hòa.",
+          "Lương đồng cung Thiên Cơ: hai người, khá giả và thuận hòa."
+        ],
+        "pages": [
+          219,
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Hai anh chị em, khá giả nhưng không hợp tính nhau."
+      ],
+      "id": "huynh-de/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: hai người, khá giả, nhưng không hợp tính nhau.",
+          "Cự đồng cung Thiên Cơ hai người, khá giả, nhưng không hợp tính nhau."
+        ],
+        "pages": [
+          219,
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Từ năm anh chị em trở lên."
+      ],
+      "id": "huynh-de/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: năm người trở lên."
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là bốn anh chị em, nhưng gia đình thiếu hòa khí; có người bị hình thương, mang cố tật."
+      ],
+      "id": "huynh-de/thien-phu/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: nhiều nhất là bốn người, nhưng trong"
+        ],
+        "pages": [
+          219
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Từ sáu anh chị em trở lên, đều khá giả; số chị em gái đông hơn anh em trai."
+      ],
+      "id": "huynh-de/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: sáu người trở lên, khá giả."
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "May lắm mới có ba anh chị em, nhưng trong số đó ắt có người mang cố tật hoặc cùng khổ, cô đơn. Anh chị em không thể sống chung với nhau lâu."
+      ],
+      "id": "huynh-de/thai-am/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: may mắn lắm mới có ba người"
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Hai anh chị em."
+      ],
+      "id": "huynh-de/tham-lang/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: hai người."
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Một anh chị em."
+      ],
+      "id": "huynh-de/tham-lang/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: một người"
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, nhưng ham chơi bời, cả đời lang thang đây đó. Có khi lại thêm nhiều anh chị em dị bào, những người này rất khá giả."
+      ],
+      "id": "huynh-de/tham-lang/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: may mắn lắm mời có một người, nhưng hay chơi"
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Hai anh chị em, nhưng bất hòa."
+      ],
+      "id": "huynh-de/cu-mon/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Ngọ: hai người, nhưng bất hòa."
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, nên ở riêng. Nhưng có khi lại có thêm rất nhiều anh chị em dị bào."
+      ],
+      "id": "huynh-de/cu-mon/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Thìn, Tuất: may mắn lắm mới có một người"
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Từ hai anh chị em trở lên."
+      ],
+      "id": "huynh-de/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mùi: hai người trở lên."
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là hai anh chị em."
+      ],
+      "id": "huynh-de/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: nhiều nhất là hai người."
+        ],
+        "pages": [
+          220
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Hai hoặc ba anh chị em, khá giả và hòa thuận."
+      ],
+      "id": "huynh-de/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: hai hay ba người, khá giả và thuận hòa."
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em."
+      ],
+      "id": "huynh-de/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: may mắn lắm mới có một người."
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là hai anh chị em, thường xa nhau từ thuở nhỏ; có người du đãng, hoang tàng."
+      ],
+      "id": "huynh-de/thien-luong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: nhiều nhất là hai người, thường xa cách nhau từ"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "May lắm mới có hai anh chị em; tuy khá giả nhưng thiếu hòa thuận."
+      ],
+      "id": "huynh-de/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: may mắn lắm mới có hai người"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, thường bị hình thương hoặc mang tật; trong gia đình thiếu hòa khí."
+      ],
+      "id": "huynh-de/that-sat/02",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: may mắn lắm mới có một người, thường bị hình"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Không có anh chị em."
+      ],
+      "id": "huynh-de/that-sat/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: không có anh chị em."
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ba anh chị em, khá giả nhưng thiếu hòa thuận, sớm xa nhau."
+      ],
+      "id": "huynh-de/pha-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: ba người, khá giả, nhưng khiếm hòa, sớm xa cách"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, mà cũng không thể ở gần nhau."
+      ],
+      "id": "huynh-de/pha-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: may mắn lắm mới có một người nhưng cũng"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "May lắm mới có một anh chị em, mà phải mang cố tật hoặc không nên người."
+      ],
+      "correction": "Sách in \"bất hành nhân\", không có nghĩa rõ; hiểu là \"bất thành nhân\" (không nên người). Chỗ này cần chủ dự án xác nhận.",
+      "id": "huynh-de/pha-quan/03",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "may mắn lắm mới có một người phải mang cố tật,",
+          "hay bất hành nhân"
+        ],
+        "pages": [
+          221
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Số anh chị em giảm đi một nửa; trong nhà hay bất hòa, thường có người mang tật."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/sat-tinh/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: giảm một nửa số anh chị em"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Không có anh chị em; nếu có thì rồi cũng phiêu bạt, lụi tàn đến hết."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/sat-tinh/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "không có anh chị em, nếu có rồi cũng phải phiêu"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thêm ba anh chị em; ai cũng khá giả, có danh chức, rất thông minh."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/xuong-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: thêm ba người, anh chị em khá giả"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Không có anh chị em."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/xuong-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "15.2.16. Xương, Khúc",
+          "Nhiều sao mờ ám xấu xa: không có anh chị em."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Anh chị em quý hiển."
+      ],
+      "id": "huynh-de/khoi-viet/01",
+      "source_ref": {
+        "keywords": [
+          "15.2.17. Khôi, Việt",
+          "Anh chị em qúy hiển."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thêm ba anh chị em, biết giúp đỡ lẫn nhau."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: thêm ba người, biết giúp đỡ lẫn nhau."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thêm một anh chị em."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/ta-huu/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: thêm một người"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Ít anh chị em; họ khá giả nhưng sớm xa nhau, trong nhà thiếu hòa khí."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/loc-ton/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: ít anh chị em."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Không có anh chị em."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/loc-ton/02",
+      "source_ref": {
+        "keywords": [
+          "15.2.19. Lộc Tồn",
+          "Nhiều sao mờ ám xấu xa: không có anh chị em"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh chị em giàu có, quý hiển, thông minh và học giỏi."
+      ],
+      "id": "huynh-de/khoa-quyen-loc/01",
+      "source_ref": {
+        "keywords": [
+          "Anh chị em giàu có, qúy hiển và thông minh, học giỏi."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "transformations_all": [
+            "HoaKhoa",
+            "HoaQuyen",
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Anh chị em bất hòa, xa cách nhau."
+      ],
+      "id": "huynh-de/hoa-ky/01",
+      "source_ref": {
+        "keywords": [
+          "Anh chị em bất hòa, xa cách nhau."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Số anh chị em bị giảm bớt; gia đình thiếu hòa khí, anh chị em thường xa nhau, lại có người ăn chơi phá tán."
+      ],
+      "id": "huynh-de/song-hao/01",
+      "source_ref": {
+        "keywords": [
+          "Chiết giảm số anh chị em, trong gia đình thiếu hòa khí"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Anh chị em khá giả, nhưng không ở gần nhau."
+      ],
+      "id": "huynh-de/thien-ma/01",
+      "source_ref": {
+        "keywords": [
+          "Anh chị em khá giả, nhưng không ở gần nhau."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Có anh chị em nuôi."
+      ],
+      "id": "huynh-de/quang-quy/01",
+      "source_ref": {
+        "keywords": [
+          "Có anh chị em nuôi."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Số anh chị em bị giảm; trong nhà thiếu hòa khí."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/co-qua/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: số anh chị em bị chiết giảm"
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Không có anh chị em."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/co-qua/02",
+      "source_ref": {
+        "keywords": [
+          "15.2.25. Cô, Qủa",
+          "Nhiều sao mờ ám xấu xa: không có anh chị em."
+        ],
+        "pages": [
+          222
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Thêm tám anh chị em."
+      ],
+      "id": "huynh-de/truong-sinh/01",
+      "source_ref": {
+        "keywords": [
+          "Thêm tám người."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "DeVuong"
+        ]
+      },
+      "body": [
+        "Thêm năm anh chị em."
+      ],
+      "id": "huynh-de/de-vuong/01",
+      "source_ref": {
+        "keywords": [
+          "Thêm năm người."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "QuanDoi",
+          "LamQuan"
+        ]
+      },
+      "body": [
+        "Thêm ba hoặc bốn anh chị em."
+      ],
+      "id": "huynh-de/quan-doi-lam-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Thêm ba hay bốn người."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Suy"
+        ]
+      },
+      "body": [
+        "Thêm ba anh chị em."
+      ],
+      "id": "huynh-de/suy/01",
+      "source_ref": {
+        "keywords": [
+          "15.2.29. Suy",
+          "Thêm ba người."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Benh",
+          "Thai"
+        ]
+      },
+      "body": [
+        "Thêm một anh chị em."
+      ],
+      "id": "huynh-de/benh-thai/01",
+      "source_ref": {
+        "keywords": [
+          "15.2.30. Bệnh, Thai",
+          "Thêm một người."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Duong"
+        ]
+      },
+      "body": [
+        "Thêm hai anh chị em; có em nuôi."
+      ],
+      "id": "huynh-de/duong/01",
+      "source_ref": {
+        "keywords": [
+          "Thêm hai người, có em nuôi."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Tu"
+        ]
+      },
+      "body": [
+        "Anh chị em bất hòa."
+      ],
+      "id": "huynh-de/tu/01",
+      "source_ref": {
+        "keywords": [
+          "15.2.32. Tử"
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Tuyet"
+        ]
+      },
+      "body": [
+        "Trong số anh chị em có người bị mù lòa hoặc mang tật."
+      ],
+      "id": "huynh-de/tuyet/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Trong số anh chị em có người bị mù lòa hay mang tật."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh cả hoặc chị cả chết non; nếu không thì cũng cùng khổ, cô đơn, phải làm ăn nơi xa. Trong nhà thiếu hòa khí; anh chị em không thể sống gần nhau lâu."
+      ],
+      "id": "huynh-de/tuan-triet/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Anh cả hay chị cả chết non, nếu không cũng cùng khổ cô đơn"
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Số anh chị em bị giảm mất một nửa."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "huynh-de/tuan-triet/02",
+      "source_ref": {
+        "keywords": [
+          "số anh chị em bị chiết giảm hết một nửa."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Số anh chị em bị giảm rất ít."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "huynh-de/tuan-triet/03",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: số anh chị em bị chiết giảm rất ít."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh chị em khá giả, hòa thuận, nhưng có người lận đận về hôn nhân."
+      ],
+      "id": "huynh-de/bo-sao/01",
+      "source_ref": {
+        "keywords": [
+          "15.2.35. Tử Vi, Tả, Hữu",
+          "Anh chị em khá giả, thuận hòa, nhưng có người trắc trở về hôn phối."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TuVi",
+            "TaPhu",
+            "HuuBat"
+          ],
+          "not_meets": [
+            "TangMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh chị em khá giả mà bất hòa; trong số đó có người bỏ vợ hoặc bỏ chồng."
+      ],
+      "id": "huynh-de/bo-sao/02",
+      "source_ref": {
+        "keywords": [
+          "Tử Vi, Tang, Tả, Hữu",
+          "Anh chị em khá giả nhưng bất hòa, có người bỏ vợ hay bỏ chồng."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TuVi",
+            "TangMon",
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Nhật, Nguyệt cùng Thai đồng cung, hoặc Thai tọa thủ mà Nhật, Nguyệt giáp hai bên: có anh chị em sinh đôi."
+      ],
+      "correction": "Tiêu đề in \"Tử Tức có Thai tọa thủ và có Nhật Nguyệt giáp\" giữa chương Huynh Đệ, trong khi lời giải nói về anh chị em sinh đôi; như đoạn mở đầu chương (tr. 217) cũng in nhầm \"Tử Tức\", hiểu là cung Huynh Đệ.",
+      "id": "huynh-de/bo-sao/03",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt, Thai đồng cung - Tử Tức có Thai tọa thủ và có",
+          "Có anh chị em sinh đôi."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm",
+            "Thai"
+          ]
+        },
+        {
+          "flanked_by": [
+            "ThaiDuong",
+            "ThaiAm"
+          ],
+          "with_all": [
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Trong anh chị em có người không đứng đắn, ham chuyện liễu ngõ hoa tường, chơi bời trăng hoa."
+      ],
+      "condition_text": "gặp Tướng (sách không nói rõ Thiên Tướng hay Tướng Quân)",
+      "id": "huynh-de/bo-sao/04",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "15.2.38. Phá, Tướng",
+          "Anh chị em có người không đứng đắn, ưa việc liễu ngõ hoa tường."
+        ],
+        "pages": [
+          223
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh chị em làm hại lẫn nhau."
+      ],
+      "id": "huynh-de/bo-sao/05",
+      "source_ref": {
+        "keywords": [
+          "15.2.39. Phá, Hình, Kỵ",
+          "Anh chị em làm hại nhau."
+        ],
+        "pages": [
+          223,
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhaQuan",
+            "ThienHinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Gia đình ly tán, anh chị em bất hòa."
+      ],
+      "id": "huynh-de/bo-sao/06",
+      "source_ref": {
+        "keywords": [
+          "15.2.40. Tang, Mã",
+          "Gia đình ly tán, anh chị em bất hòa."
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TangMon",
+            "ThienMa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Anh chị em hay tranh giành, cãi vã nhau."
+      ],
+      "correction": "Tiêu đề ghi \"Tang, Trực, Tuế\". Trực Phù đứng cung thứ 12 của vòng Thái Tuế, cách Thái Tuế 11 cung và Tang Môn 9 cung, nên không bao giờ cùng hội hợp một cung với Thái Tuế hay Tang Môn (các cung hội hợp chỉ cách nhau 0, 4, 6 hoặc 8 cung). Chỉ mã hóa được Tang Môn, Thái Tuế; cần chủ dự án xác nhận.",
+      "id": "huynh-de/bo-sao/07",
+      "source_ref": {
+        "keywords": [
+          "15.2.41. Tang, Trực, Tuế",
+          "Anh chị em hay tranh chấp, cãi lộn."
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TangMon",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Trong số anh chị em có người rất quý hiển, công danh hiển đạt nhanh chóng, văn tài xuất chúng."
+      ],
+      "id": "huynh-de/bo-sao/08",
+      "source_ref": {
+        "keywords": [
+          "15.2.42. Tuế, Xương, Khúc",
+          "Trong số anh chị em có người rất qúy hiển, hoạnh đạt công danh"
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiTue",
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Chị em gái rất lẳng lơ."
+      ],
+      "correction": "Hoa Cái đóng ở cung Mộ của tam hợp năm sinh, cùng âm dương với Chi năm; Hồng Loan và Đào Hoa luôn ở cung khác âm dương với Chi năm. Hoa Cái cách hai sao này số lẻ cung nên không bao giờ cùng hội hợp một cung với sao nào trong hai sao (V13 xác nhận không lá số nào có). Chỉ mã hóa được Hồng Loan, Đào Hoa; cần chủ dự án xác nhận.",
+      "id": "huynh-de/bo-sao/09",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "15.2.43. Hồng, Đào, Cái",
+          "Chị em gái rất lẳng lơ"
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "DaoHoa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Trong nhà có người loạn luân, hoặc có chị em gái chửa hoang."
+      ],
+      "condition_text": "gặp Tướng (sách không nói rõ Thiên Tướng hay Tướng Quân)",
+      "id": "huynh-de/bo-sao/10",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "15.2.44. Hồng, Đào, Thai, Binh, Tướng",
+          "Trong nhà có người loạn luân, hay có chị em gái chửa hoang."
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "DaoHoa",
+            "Thai",
+            "PhucBinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe"
+      },
+      "body": [
+        "Có hai chị em gái rất dâm đãng."
+      ],
+      "id": "huynh-de/bo-sao/11",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "15.2.45. Đào, Riêu, Hỉ",
+          "Hai chị em gái rất dâm đãng."
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "ThienRieu",
+            "ThienHy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "HuynhDe",
+        "stars": [
+          "Duong"
+        ]
+      },
+      "body": [
+        "Có em nuôi rất khá giả và trung hậu."
+      ],
+      "condition_text": "gặp Tam Không (sách không kể ba sao nào)",
+      "id": "huynh-de/bo-sao/12",
+      "source_ref": {
+        "keywords": [
+          "15.2.46. Dưỡng, Tam Không",
+          "Có em nuôi rất khá giả và trung hậu."
+        ],
+        "pages": [
+          224
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    }
+  ]
+}

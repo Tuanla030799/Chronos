@@ -1,10 +1,10 @@
 # Tiến trình dự án — Viet Astro Engine (Chronos)
 
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
-> Cập nhật lần cuối: **2026-11-07**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Cập nhật lần cuối: **2026-11-09**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D16 đã chốt. TV-01 đến TV-06, TV-15 đã duyệt (487/488 đoạn); TV-07 đến TV-11 đã nạp, chờ duyệt.
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D16 đã chốt. TV-01 đến TV-11, TV-15 đã duyệt (995/995 đoạn, 100%); TV-12 đến TV-14, TV-16 đến TV-19 đã nạp (1.204 đoạn mới: 1.199 `tuvi.passage` + 5 `tuvi.palace`), còn `draft`, chờ duyệt. **19/19 batch Tử Vi đã nạp.**
 
 ## 1. Trạng thái
 
@@ -28,7 +28,7 @@
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
 | Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `scan`, `review`; V1–V13; 80 test |
-| Dữ liệu luận giải | 🟡 Đang làm | TV-01 đến TV-06, TV-15 đã duyệt (487/488 đoạn); TV-07 đến TV-11 `draft`, chờ duyệt; còn 8 batch Tử Vi và 11 batch khác |
+| Dữ liệu luận giải | 🟡 Đang làm | TV-01 đến TV-11, TV-15 đã duyệt (995/995 đoạn); TV-12 đến TV-14, TV-16 đến TV-19 đã nạp, `draft`, chờ duyệt; 19/19 batch Tử Vi đã nạp, còn 11 batch khác (Bát Tự, Phong Thủy…) |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
@@ -44,8 +44,9 @@
 - [x] Chốt D14–D16; thêm 6 fact mới (`birth_time_of_day`, `lunar_day_range`, `opposite_only`, `in_than`, `any_loc`, `element_relation`/`_all`)
 - [x] Duyệt TV-02 đến TV-06 ở `build/content/review/` (kiểm định độc lập, 487/488 đoạn)
 - [x] Nạp TV-07 đến TV-11
-- [ ] Duyệt TV-07 đến TV-11 ở `build/content/review/`
-- [ ] Nạp TV-12 đến TV-14, TV-16 đến TV-19
+- [x] Duyệt TV-07 đến TV-11 ở `build/content/review/` (kiểm định độc lập, 507/507 đoạn)
+- [x] Nạp TV-12 đến TV-14, TV-16 đến TV-19
+- [ ] Duyệt TV-12 đến TV-14, TV-16 đến TV-19 ở `build/content/review/`
 - [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -63,6 +64,14 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-09 — Task 5A.6: chốt TV-02 đến TV-11, nạp 7 batch Tử Vi cuối
+
+- Sửa đoạn `draft` còn lại của cụm TV-02–TV-06 (`menh/thai-duong/61`, TV-05): dùng cùng cách đọc đã duyệt ở TV-15 (`quan-loc/bo-sao/16`) cho cụm "Tướng, Ấn, Binh, Hình" — Binh là Phục Binh, Hình là Thiên Hình; ghi rõ căn cứ vào `correction`, chuyển `approved`. Cụm TV-02 đến TV-06 khóa sổ 100% (488/488 đoạn).
+- **Kiểm định độc lập TV-07 đến TV-11** (5 Agent độc lập, mỗi batch một Agent, đối chiếu từng mục với nguyên văn *Tân Biên*, cùng cách đã làm với TV-02 đến TV-06): TV-07 (119 đoạn, không lỗi), TV-08 (103 đoạn, không lỗi, duyệt thẳng), TV-09 (101 đoạn, sửa và thắt lại `correction` của `xuong-khuc/34`), TV-10 (92 đoạn, xác nhận 3 `correction` bị đánh dấu nghi vấn, không có lỗi), TV-11 (92 đoạn, sửa một khẳng định bất khả thi sai). 507/507 đoạn chuyển `approved`.
+- **Nạp 7 batch Tử Vi cuối cùng** bằng `/ingest-content`: Nhóm 1 — TV-12 Phụ Mẫu, Nô Bộc (159 đoạn), TV-13 Phúc Đức mục 6.1 (123 đoạn), TV-14 Phúc Đức mục 6.2, Điền Trạch (204 đoạn); Nhóm 2 — TV-16 Thiên Di, Tật Ách (248 đoạn + 2 đoạn `tuvi.palace`), TV-17 Tài Bạch, Huynh Đệ (217 đoạn + 2 đoạn `tuvi.palace`), TV-18 Tử Tức (143 đoạn), TV-19 Thê Thiếp (105 đoạn + 1 đoạn `tuvi.palace`). Tổng 1.204 đoạn mới (1.199 `tuvi.passage` + 5 `tuvi.palace`), 0 gap mới, tất cả còn `draft`. **19/19 batch Tử Vi đã nạp — hết nguồn *Tân Biên* cho phần Tử Vi Đẩu Số.**
+- **Kiểm chứng:** `validate` 146 mục, 2.194 đoạn, 18 gap (không đổi so với trước, không gap mới), 0 lỗi; `cargo test --workspace` 401 test (288 core + 70 astro-data + 17 repository_data + 26 FFI) đều qua; `scan` (V13) 0 đoạn không bao giờ hiện trên 510.432 lá số — cả 12 cung ngoài Mệnh giờ đều có dữ liệu (Thiên Di, Tật Ách, Tài Bạch, Huynh Đệ, Tử Tức, Thê Thiếp mới có lần đầu).
+- Còn mở: duyệt (kiểm định độc lập) TV-12 đến TV-14, TV-16 đến TV-19; sau đó toàn bộ dữ liệu Tử Vi Đẩu Số mới `approved` 100%.
 
 ### 2026-11-08 — Task 5A.5: D14–D16, kiểm định TV-02 đến TV-06, nạp TV-07 đến TV-11
 

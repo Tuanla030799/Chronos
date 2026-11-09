@@ -1,0 +1,49 @@
+{
+  "batch": "TV-17",
+  "collection": "tuvi.palace",
+  "entries": [
+    {
+      "body": [
+        "Trước khi xét các sao ở cung Tài Bạch, phải xem kỹ các cung Mệnh, Thân, Phúc Đức, Quan Lộc và Thiên Di. Nếu các cung ấy sáng sủa tốt đẹp thì dù Tài Bạch mờ ám xấu xa cũng không phải lo nhiều về túng thiếu, quẫn bách. Ngược lại, các cung ấy mờ ám xấu xa thì dù Tài Bạch rực rỡ cũng chưa nên mừng: có thể giàu có, kiếm sống dễ dàng mà không may chết non, khi ấy Tài Bạch cũng thành vô nghĩa."
+      ],
+      "key": "TaiBach",
+      "sensitivity": [
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Xem cung Tài Bạch để biết rõ sự giàu nghèo, và sinh kế.",
+          "những cung Mệnh, Thân, Phúc Đức, Quan Lộc và Thiên Di"
+        ],
+        "pages": [
+          190
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cho biết giàu nghèo và sinh kế."
+    },
+    {
+      "body": [
+        "Trước khi xét các sao ở cung Huynh Đệ, phải xem kỹ cung Phúc Đức, vì tốt xấu của cung này gắn chặt với số anh chị em nhiều hay ít, và gia đình đoàn tụ hay ly tán. Nếu Huynh Đệ có nhiều sao sáng sủa tốt đẹp hội hợp mà Phúc Đức bị khắc hãm, số anh chị em cũng bị giảm, hoặc vì bất hòa mà xa nhau. Ngược lại, Huynh Đệ có nhiều sao mờ ám xấu xa mà Phúc Đức rực rỡ thì số anh chị em tăng thêm, cũng không phải lo nhiều về hình khắc hay ly tán.",
+        "Các nhận định của chương chỉ tương đối chính xác; người xem phải suy xét thêm bớt cho hợp lý tùy độ số tăng hay giảm."
+      ],
+      "correction": "Sách in \"cung Tử Tức\" hai lần trong đoạn mở đầu chương Huynh Đệ. Đoạn đang nói về số anh chị em và đối chiếu với cung Phúc Đức của chính chương này, nên hiểu là cung Huynh Đệ.",
+      "key": "HuynhDe",
+      "source_ref": {
+        "keywords": [
+          "Xem cung Huynh Đệ để biết rõ anh chị em trong một nhà.",
+          "Nếu cung Tử Tức có nhiều sao sáng sủa tốt đẹp hội hợp"
+        ],
+        "pages": [
+          217
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cho biết về anh chị em trong nhà."
+    }
+  ]
+}

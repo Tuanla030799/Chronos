@@ -1,0 +1,22 @@
+{
+  "batch": "TV-19",
+  "collection": "tuvi.palace",
+  "entries": [
+    {
+      "key": "PhuThe",
+      "source_ref": {
+        "keywords": [
+          "Xem cung Thê Thiếp (Phu Quân) để biết rõ những điều có liên quan",
+          "luận đoán cẩn thận cung Mệnh, Thân, Phúc Đức, Quan Lộc và Nô Bộc"
+        ],
+        "pages": [
+          208
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "summary": "Cho biết chuyện vợ chồng, lập gia đình và hạnh phúc trọn đời; phải xét cùng Mệnh, Thân, Phúc Đức, Quan Lộc, Nô Bộc."
+    }
+  ]
+}

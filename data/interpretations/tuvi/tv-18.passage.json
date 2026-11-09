@@ -1,0 +1,4771 @@
+{
+  "batch": "TV-18",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Cũng khó nuôi con, số con thường bị chiết giảm."
+      ],
+      "condition_text": "cung Tử Tức có nhiều sao sáng sủa tốt đẹp hội hợp, nhưng cung Phúc Đức hay Mệnh, Thân bị khắc hãm",
+      "correction": "Sách in \"Nếu với có nhiều sao sáng sủa\"; chữ \"với\" thừa, hiểu là cung Tử Tức có nhiều sao sáng sủa, đối với vế \"Trái lại, nếu cung Tử Tức có nhiều sao mờ ám\" ngay sau.",
+      "id": "tu-tuc/chung/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "như vậy cũng khó nuôi con, số con thường bị chiết giảm"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Không đáng lo về chuyện dòng giống bị bại tuyệt."
+      ],
+      "condition_text": "cung Tử Tức có nhiều sao mờ ám xấu xa hội hợp, nhưng cung Phúc Đức hay Mệnh, Thân rực rỡ",
+      "id": "tu-tuc/chung/02",
+      "source_ref": {
+        "keywords": [
+          "cũng chẳng đáng lo ngại về sự bại tuyệt dòng giống"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienPhu",
+          "ThienTuong",
+          "ThienLuong",
+          "ThatSat",
+          "ThienDong",
+          "ThaiDuong",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Chính diệu Nam Đẩu tinh tọa thủ cung Tử Tức: con trai nhiều hơn con gái."
+      ],
+      "correction": "Khi có thêm một Chính diệu Bắc Đẩu tinh đồng cung, hay Tử Vi, sách phân định riêng ở các dòng sau, nên đoạn này loại các trường hợp đó.",
+      "id": "tu-tuc/tien-quyet/01",
+      "source_ref": {
+        "keywords": [
+          "Cung Tử Tức có Chính diệu Nam Đẩu tinh tọa thủ như Thiên Phủ",
+          "thì con trai nhiều hơn con gái"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "TuVi",
+            "ThaiAm",
+            "ThamLang",
+            "CuMon",
+            "LiemTrinh",
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiAm",
+          "ThamLang",
+          "CuMon",
+          "LiemTrinh",
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Chính diệu Bắc Đẩu tinh tọa thủ cung Tử Tức: con gái nhiều hơn con trai."
+      ],
+      "correction": "Sách in \"Cung Từ Tức\", hiểu là Tử Tức. Khi có thêm một Chính diệu Nam Đẩu tinh đồng cung, hay Tử Vi, sách phân định riêng ở các dòng sau, nên đoạn này loại các trường hợp đó.",
+      "id": "tu-tuc/tien-quyet/02",
+      "source_ref": {
+        "keywords": [
+          "Cung Từ Tức có Chính diệu Bắc Đẩu tinh tọa thủ như Thái Âm",
+          "thì con gái nhiều hơn con trai"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "not_with": [
+            "TuVi",
+            "ThienPhu",
+            "ThienTuong",
+            "ThienLuong",
+            "ThatSat",
+            "ThienDong",
+            "ThaiDuong",
+            "ThienCo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "VuKhuc",
+          "ThienPhu",
+          "ThienTuong",
+          "ThienDong",
+          "ThaiAm",
+          "ThaiDuong",
+          "CuMon",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cung Tử Tức có hai Chính diệu, một Nam Đẩu, một Bắc Đẩu, đồng cung tại Dương cung: con trai nhiều hơn con gái."
+      ],
+      "correction": "Bảy cặp Nam Đẩu – Bắc Đẩu đồng cung (không kể Tử Vi) chỉ đóng ở Dương cung theo cách an Chính Tinh: Liêm Phủ tại Thìn, Tuất; Liêm Tướng, Vũ Phủ, Đồng Nguyệt tại Tý, Ngọ; Vũ Tướng, Nhật Cự, Cơ Nguyệt tại Dần, Thân. Nên liệt kê từng cặp thay cho điều kiện Dương cung.",
+      "id": "tu-tuc/tien-quyet/03",
+      "source_ref": {
+        "keywords": [
+          "một là Nam Đẩu tinh một là Bắc Đầu",
+          "Cung Tử Tức là Dương cung: con trai nhiều hơn con gái"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        },
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        },
+        {
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "VuKhuc",
+          "ThatSat",
+          "ThienDong",
+          "CuMon",
+          "ThaiDuong",
+          "ThaiAm",
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Cung Tử Tức có hai Chính diệu, một Nam Đẩu, một Bắc Đẩu, đồng cung tại Âm cung: con gái nhiều hơn con trai."
+      ],
+      "correction": "Sách in \"nhiêu\", hiểu là nhiều. Năm cặp Nam Đẩu – Bắc Đẩu đồng cung (không kể Tử Vi) chỉ đóng ở Âm cung: Liêm Sát, Đồng Cự, Nhật Nguyệt tại Sửu, Mùi; Vũ Sát, Cơ Cự tại Mão, Dậu. Nên liệt kê từng cặp thay cho điều kiện Âm cung.",
+      "id": "tu-tuc/tien-quyet/04",
+      "source_ref": {
+        "keywords": [
+          "Cung Tử Tức là Âm cung: con gái nhiêu hơn con trai"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        },
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        },
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Tử Vi là Nam Bắc Đẩu tinh: cung Tử Tức có Tử Vi gặp Chính diệu Nam Đẩu đồng cung thì con trai nhiều hơn con gái."
+      ],
+      "id": "tu-tuc/tien-quyet/05",
+      "source_ref": {
+        "keywords": [
+          "Tử Vi là Nam Bắc Đẩu tinh",
+          "Chính diệu Nam Đẩu tinh đồng cung: con trai nhiều hơn con"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Tử Vi là Nam Bắc Đẩu tinh: cung Tử Tức có Tử Vi gặp Chính diệu Bắc Đẩu đồng cung thì con gái nhiều hơn con trai."
+      ],
+      "id": "tu-tuc/tien-quyet/06",
+      "source_ref": {
+        "keywords": [
+          "Tử Vi là Nam Bắc Đẩu tinh",
+          "Chính diệu Bắc Đẩu tinh đồng cung: con gái nhiều hơn con"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Cung Tử Tức ở Dương cung: con đầu lòng là trai thì mới dễ nuôi."
+      ],
+      "id": "tu-tuc/tien-quyet/07",
+      "source_ref": {
+        "keywords": [
+          "Cung Tử Tức là Dương cung: sinh con trai đầu lòng mới dễ nuôi"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Cung Tử Tức ở Âm cung: con đầu lòng là gái thì mới dễ nuôi."
+      ],
+      "correction": "Sách in \"Tử Túc\", hiểu là Tử Tức.",
+      "id": "tu-tuc/tien-quyet/08",
+      "source_ref": {
+        "keywords": [
+          "Cung Tử Túc là Âm cung: sinh con gái đầu lòng mới dễ nuôi"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Sinh ban ngày mà cung Tử Tức có Thái Dương mờ ám tọa thủ: khó nuôi con, rất đáng lo về sự hiếm muộn."
+      ],
+      "id": "tu-tuc/tien-quyet/09",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Người sinh ban ngày, cung Tử Tức có Thái Dương mờ ám tọa thủ",
+          "khó nuôi, rất đáng lo ngại về sự hiếm muộn"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day",
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Sinh ban ngày mà cung Tử Tức có Thái Âm chiếu: khó nuôi con, rất đáng lo về sự hiếm muộn."
+      ],
+      "id": "tu-tuc/tien-quyet/10",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "hay Thái Âm chiếu: khó nuôi, rất đáng lo ngại về sự hiếm muộn"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Day",
+          "meets_any": [
+            "ThaiAm"
+          ],
+          "not_with": [
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Sinh ban đêm mà cung Tử Tức có Thái Âm mờ ám tọa thủ: cũng khó nuôi con, rất đáng lo về sự hiếm muộn."
+      ],
+      "correction": "Sách in \"cùng rất đáng lo ngại\", hiểu là cũng; \"như trên\" viết lại theo dòng sinh ban ngày ngay trên.",
+      "id": "tu-tuc/tien-quyet/11",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Người sinh ban đêm, cung Tử Tức có Thái Âm mờ ám tọa thủ",
+          "cùng rất đáng lo ngại như trên"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night",
+          "brightness": [
+            "Ham"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Sinh ban đêm mà cung Tử Tức có Thái Dương chiếu: cũng khó nuôi con, rất đáng lo về sự hiếm muộn."
+      ],
+      "correction": "Sách in \"cùng rất đáng lo ngại\", hiểu là cũng; \"như trên\" viết lại theo dòng sinh ban ngày.",
+      "id": "tu-tuc/tien-quyet/12",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "hay Thái Dương chiếu: cùng rất đáng lo ngại như trên"
+        ],
+        "pages": [
+          198
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "birth_time_of_day": "Night",
+          "meets_any": [
+            "ThaiDuong"
+          ],
+          "not_with": [
+            "ThaiDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Cung Tử Tức ở Dương cung có Thiên Tướng với Tuyệt, hay Thái Âm với Thiên Phúc, hay gặp đủ Cơ, Nguyệt, Đồng, Lương, hay gặp Phục Binh, Tướng Quân, hay gặp Thai, Đế Vượng: có con cùng cha khác mẹ."
+      ],
+      "correction": "Danh sách in liền, các nhóm cách nhau dấu gạch: Thiên Tướng, Tuyệt - Thái Âm, Thiên Phúc - Cự Môn, Thiên Cơ đồng cung - Cơ, Nguyệt, Đồng, Lương - Phục Binh, Tướng Quân - Thai, Đế Vượng. Cự Cơ đồng cung chỉ ở Mão, Dậu (Âm cung) nên không có trong đoạn Dương cung. Phục Binh và Tướng Quân cách nhau 6 cung trên vòng Bác Sỹ, Thai và Đế Vượng cách nhau 6 cung trên vòng Tràng Sinh, nên không bao giờ đồng cung: hiểu là hội hợp. Cơ, Nguyệt, Đồng, Lương (4 tên) hiểu là hội đủ.",
+      "id": "tu-tuc/tien-quyet/13",
+      "source_ref": {
+        "keywords": [
+          "Có con dị bào nếu tại cung Tử Tức có những sao sau đây",
+          "Cung Tử Tức là Dương cung : có con cùng cha khác mẹ"
+        ],
+        "pages": [
+          198,
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "ThienTuong",
+            "Tuyet"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "with_all": [
+            "ThaiAm",
+            "ThienPhuc"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "ThienCo",
+            "ThaiAm",
+            "ThienDong",
+            "ThienLuong"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "PhucBinh",
+            "TuongQuan"
+          ]
+        },
+        {
+          "branches": [
+            "Ty",
+            "Dan",
+            "Thin",
+            "Ngo",
+            "Than",
+            "Tuat"
+          ],
+          "meets_all": [
+            "Thai",
+            "DeVuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Cung Tử Tức ở Âm cung có Thiên Tướng với Tuyệt, hay Thái Âm với Thiên Phúc, hay Cự Môn, Thiên Cơ đồng cung, hay gặp Phục Binh, Tướng Quân, hay gặp Thai, Đế Vượng: có con cùng mẹ khác cha."
+      ],
+      "correction": "Như tien-quyet/13. Cự Cơ đồng cung chỉ ở Mão, Dậu nên không cần ghi thêm điều kiện Âm cung. Nhóm Cơ, Nguyệt, Đồng, Lương hội đủ không bao giờ xảy ra ở Âm cung (V7), nên bỏ khỏi đoạn này.",
+      "id": "tu-tuc/tien-quyet/14",
+      "source_ref": {
+        "keywords": [
+          "Có con dị bào nếu tại cung Tử Tức có những sao sau đây",
+          "Cung Tử Tức là Âm cung: có con cùng mẹ khác cha"
+        ],
+        "pages": [
+          198,
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThienTuong",
+            "Tuyet"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "with_all": [
+            "ThaiAm",
+            "ThienPhuc"
+          ]
+        },
+        {
+          "with_all": [
+            "CuMon",
+            "ThienCo"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "meets_all": [
+            "PhucBinh",
+            "TuongQuan"
+          ]
+        },
+        {
+          "branches": [
+            "Suu",
+            "Mao",
+            "Ti",
+            "Mui",
+            "Dau",
+            "Hoi"
+          ],
+          "meets_all": [
+            "Thai",
+            "DeVuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Nếu lấy vợ lẽ thì ắt đông con; con cũng dễ nuôi và về sau khá giả."
+      ],
+      "condition_text": "cung Tử Tức có nhiều sao mờ ám xấu xa hội hợp, nhưng ba cung hội chiếu và cung Phúc Đức, Mệnh, Thân có nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Sách in \"nhiều tao sáng sủa\", hiểu là nhiều sao sáng sủa.",
+      "id": "tu-tuc/tien-quyet/15",
+      "source_ref": {
+        "keywords": [
+          "lấy vợ lẽ tất sinh được nhiều con, con lại dễ nuôi"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Ba con trai, hai con gái; về sau đều quý hiển."
+      ],
+      "id": "tu-tuc/tu-vi/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ: ba trai, hai gái, về sau đều qúy hiển"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Bốn con, về sau cũng khá giả."
+      ],
+      "id": "tu-tuc/tu-vi/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: bốn con, sau cũng khá giả"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Tử Vi, Thiên Phủ đồng cung: từ năm con trở lên."
+      ],
+      "id": "tu-tuc/tu-vi/03",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: từ năm con trở lên",
+          "Tử đồng cung: từ năm con trở lên"
+        ],
+        "pages": [
+          199,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Tử Vi, Thiên Tướng đồng cung: từ ba đến năm con."
+      ],
+      "id": "tu-tuc/tu-vi/04",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: từ ba con đến năm con",
+          "Coi Tử Vi (Tướng đồng cung)"
+        ],
+        "pages": [
+          199,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Tử Vi, Thất Sát đồng cung: nhiều nhất là ba con và rất khó nuôi; về sau con thường ở xa cha mẹ."
+      ],
+      "id": "tu-tuc/tu-vi/05",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: nhiều nhất là ba con, rất khó nuôi",
+          "Tử đồng cung: nhiều nhất là ba con, rất khó nuôi"
+        ],
+        "pages": [
+          199,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Tử Vi, Phá Quân đồng cung: nhiều nhất là hai con; về sau con hay xung khắc với cha mẹ."
+      ],
+      "id": "tu-tuc/tu-vi/06",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: nhiều nhất là hai con, về sau hay xung khắc",
+          "Tử đồng cung: nhiều nhất là hai con, về sau hay xung khắc"
+        ],
+        "pages": [
+          199,
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tử Vi, Tham Lang đồng cung: phải may mắn lắm mới có được hai con."
+      ],
+      "id": "tu-tuc/tu-vi/07",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: may mắn lắm mới có hai con",
+          "Coi Tử Vi (Tham đồng cung)"
+        ],
+        "pages": [
+          199,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Hai con."
+      ],
+      "id": "tu-tuc/liem-trinh/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hai con"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Liêm Trinh, Thiên Phủ đồng cung: từ ba đến năm con, về sau con đều khá giả."
+      ],
+      "id": "tu-tuc/liem-trinh/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: từ ba đến năm con, về sau đều khá giả",
+          "Liêm đồng cung: từ ba đến năm con, về sau đều khá giả"
+        ],
+        "pages": [
+          199,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Liêm Trinh, Thiên Tướng đồng cung: hai con, rất khó nuôi, nhưng lớn lên con rất hiển đạt."
+      ],
+      "id": "tu-tuc/liem-trinh/03",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: hai con, rất khó nuôi nhưng lớn lên rất hiển đạt",
+          "Liêm Trinh (Tướng đồng cung)"
+        ],
+        "pages": [
+          199,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Liêm Trinh, Phá Quân đồng cung: chỉ một con; có sinh nhiều cũng không nuôi được đủ cả. Con khó nuôi, lớn lên cũng chẳng khá giả."
+      ],
+      "correction": "Sách in \"công không nuôi được\" ở cả tr. 199 và 203, hiểu là \"cũng không nuôi được\".",
+      "id": "tu-tuc/liem-trinh/04",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: một con, nếu sinh nhiều công không nuôi được",
+          "Liêm đồng cung: một con, nếu sinh nhiều công không nuôi được"
+        ],
+        "pages": [
+          199,
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Liêm Trinh, Thất Sát đồng cung: sinh nhiều mà nuôi được ít, rất hiếm con; gặp may lắm thì còn được một đứa, nhưng đứa ấy phải mang tàn tật hay mắc bệnh hiểm nghèo, khiến cha mẹ suốt đời phiền muộn."
+      ],
+      "id": "tu-tuc/liem-trinh/05",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: sinh nhiều, nuôi ít. rất hiếm con",
+          "Liêm đồng cung: sinh nhiều, nuôi ít. rất hiếm con",
+          "Nhưng phải mang tàn tật hay mắc ác bệnh"
+        ],
+        "pages": [
+          199,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Liêm Trinh, Tham Lang đồng cung: con rất khó nuôi, thường chỉ được một đứa, về sau đứa con ấy cũng chẳng khá giả."
+      ],
+      "id": "tu-tuc/liem-trinh/06",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: rất khó nuôi con, thường chỉ có một con",
+          "Liêm Trinh (Tham đồng cung)"
+        ],
+        "pages": [
+          199,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Từ bốn con trở lên."
+      ],
+      "correction": "Sách in \"từ bốn cung trở lên\", hiểu là bốn con, theo mọi dòng khác của chương đều đếm số con.",
+      "id": "tu-tuc/thien-dong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: từ bốn cung trở lên"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Hai con; phải đổi chỗ ở luôn thì mới có nhiều con."
+      ],
+      "id": "tu-tuc/thien-dong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: hai con, nếu đổi chỗ ở luôn mới có nhiều con"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Có hai con; sinh thêm cũng không nuôi được đủ cả. Về sau con cái thường ly tán, trôi dạt mỗi người một nơi, và ít nhất phải có một đứa du đãng, chơi bời."
+      ],
+      "id": "tu-tuc/thien-dong/03",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: hai con, nếu sinh thêm cũng không nuôi"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Rất khó nuôi con, may mắn lắm mới có một con."
+      ],
+      "id": "tu-tuc/thien-dong/04",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: rất khó nuôi con, may mắn lắm mới có"
+        ],
+        "pages": [
+          199
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thiên Đồng, Thái Âm đồng cung tại Tý: năm con, trong đó có quý tử là thần nhân giáng thế."
+      ],
+      "id": "tu-tuc/thien-dong/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung Tý: năm con, trong số đó có qúy tử",
+          "Coi Thiên Đồng (Nguyệt đồng cung tại Tý"
+        ],
+        "pages": [
+          199,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thiên Đồng, Thái Âm đồng cung tại Ngọ: may mắn lắm mới có hai con."
+      ],
+      "id": "tu-tuc/thien-dong/06",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: may mắn lắm mới có hai con",
+          "Nguyệt đồng cung tại Ngọ) – Thái Dương"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thiên Đồng, Thiên Lương đồng cung tại Dần: năm con, trong đó có quý tử."
+      ],
+      "id": "tu-tuc/thien-dong/07",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung tại Dần: năm con, trong số đó có qúy tử",
+          "Đồng đồng cung tại Dần: năm con, trong số đó có qúy tử"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thiên Đồng, Thiên Lương đồng cung tại Thân: ba con; nếu con đầu lòng là gái thì ắt được năm con."
+      ],
+      "correction": "Sách in \"lại Thân\" và \"dầu lòng\" ở cả tr. 200 và 202, hiểu là \"tại Thân\", \"đầu lòng\".",
+      "id": "tu-tuc/thien-dong/08",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung lại Thân: ba con, nếu sinh con gái dầu lòng",
+          "Đồng đồng cung lại Thân: ba con, nếu sinh con gái dầu lòng"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Thiên Đồng, Cự Môn đồng cung: gặp may lắm mới được ba con, mà con rất khó nuôi; lớn lên anh em bất hòa và ly tán."
+      ],
+      "id": "tu-tuc/thien-dong/09",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: may mắn lắm mới có ba con nhưng rất khó nuôi",
+          "Đồng (Cự đồng cung)"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, về sau thường chỉ còn một con nhưng con rất khá giả."
+      ],
+      "id": "tu-tuc/vu-khuc/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: sinh nhiều, nuôi ít, sau thường chỉ có"
+        ],
+        "pages": [
+          200
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Vũ Khúc, Thiên Phủ đồng cung: hai con, về sau đều quý hiển."
+      ],
+      "id": "tu-tuc/vu-khuc/02",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: hai con, sau đều qúy hiển",
+          "Vũ đồng cung: hai con, sau đều qúy hiển"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Vũ Khúc, Thiên Tướng đồng cung: gặp may lắm mới được một con; nhận con nuôi thì ắt có thêm con đẻ."
+      ],
+      "id": "tu-tuc/vu-khuc/03",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: may mắn lắm mới có một con, nếu có con nuôi",
+          "Khúc (Tướng đồng cung)"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Vũ Khúc, Tham Lang đồng cung: muộn sinh con thì mới dễ nuôi, về sau có hai con."
+      ],
+      "id": "tu-tuc/vu-khuc/04",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: muộn sinh con mới dễ nuôi, sau có hai con",
+          "Vũ Khúc (Tham đồng cung)"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Vũ Khúc, Thất Sát đồng cung: cô đơn, hiếm muộn. Gặp may mà được một đứa thì ắt đứa ấy cũng chỉ là phế nhân, bằng không thì cũng thuộc hạng chơi bời phá tán; cha mẹ và con cái hình khắc nhau."
+      ],
+      "id": "tu-tuc/vu-khuc/05",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: cô đơn, hiếm con, nếu may mắn có một con",
+          "Vũ đồng cung: cô đơn, hiếm con, nếu may mắn có một con"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Vũ Khúc, Phá Quân đồng cung: hai con nhưng rất khó nuôi."
+      ],
+      "id": "tu-tuc/vu-khuc/06",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: hai con, nhưng rất khó nuôi",
+          "Vũ đồng cung: hai con, nhưng rất khó nuôi"
+        ],
+        "pages": [
+          200,
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Từ năm con trở lên, về sau đều quý hiển; con trai nhiều hơn con gái. Con đầu lòng ắt nuôi được toàn vẹn."
+      ],
+      "correction": "Sách in \"qúy hiến\", hiểu là quý hiển.",
+      "id": "tu-tuc/thai-duong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tỵ, Ngọ: có năm con trở lên, sau đều qúy hiến",
+          "Nếu sinh con đầu lòng tất nuôi được toàn vẹn"
+        ],
+        "pages": [
+          200
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong"
+        ]
+      },
+      "body": [
+        "Muộn sinh con thì mới dễ nuôi; về sau thường chỉ có ba con."
+      ],
+      "id": "tu-tuc/thai-duong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tuất, Hợi Tý: muộn sinh con mới dễ nuôi"
+        ],
+        "pages": [
+          200
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Thái Dương, Cự Môn đồng cung tại Dần: bốn con, về sau đều khá giả."
+      ],
+      "correction": "Sách in \"lại Dần\", hiểu là tại Dần.",
+      "id": "tu-tuc/thai-duong/03",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung lại Dần: bốn con, sau đều khá giả",
+          "Coi Thái Dương (Cự đồng cung tại Dần"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Thái Dương, Cự Môn đồng cung tại Thân: nhiều nhất là ba con; muộn sinh mới dễ nuôi. Con sinh muộn lại rất quý hiển."
+      ],
+      "id": "tu-tuc/thai-duong/04",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Thân: nhiều nhất là ba con, nếu muộn sinh",
+          "Cự đồng cung tại Thân) – Thiên"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thái Dương, Thiên Lương đồng cung tại Mão: nhiều nhất là năm con, về sau đều khá giả."
+      ],
+      "id": "tu-tuc/thai-duong/05",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung tại Mão: nhiều nhất là năm con, sau đều khá giả",
+          "Nhật đồng cung tại Mão: nhiều nhất là năm con, sau đều khá giả"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thái Dương, Thiên Lương đồng cung tại Dậu: sinh muộn thì mới được ba con; sinh sớm ắt con khó nuôi, cha mẹ khổ sở vì con."
+      ],
+      "id": "tu-tuc/thai-duong/06",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung tại Dậu: muộn sinh mới có ba con",
+          "Nhật đồng cung tại Dậu: muộn sinh mới có ba con"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thái Dương, Thái Âm đồng cung: từ năm con trở lên, có quý tử."
+      ],
+      "id": "tu-tuc/thai-duong/07",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: từ năm con trở lên, có qúy tử",
+          "Thái Dương (Nguyệt đồng cung)"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Hai con."
+      ],
+      "id": "tu-tuc/thien-co/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ, Mùi: hai con"
+        ],
+        "pages": [
+          200
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "May mắn lắm mới có hai con."
+      ],
+      "id": "tu-tuc/thien-co/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: may mắn lắm mới có hai con"
+        ],
+        "pages": [
+          200
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thiên Cơ, Thiên Lương đồng cung: năm con, chưa kể con dị bào; về sau đều khá giả, có quý tử."
+      ],
+      "id": "tu-tuc/thien-co/03",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: năm con chưa kể con dị bào",
+          "Cơ đồng cung: năm con chưa kể con dị bào"
+        ],
+        "pages": [
+          200,
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thiên Cơ, Thái Âm đồng cung tại Thân: từ năm con trở lên; con gái nhiều hơn con trai thì mới dễ nuôi; thường có con dị bào."
+      ],
+      "correction": "Sách in \"nếu nếu gái nhiều hơn\", lặp chữ; hiểu là \"nếu gái nhiều hơn trai\".",
+      "id": "tu-tuc/thien-co/04",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: từ năm con trở lên, nếu nếu gái nhiều hơn",
+          "Thiên Cơ (Nguyệt đồng cung tại Thân"
+        ],
+        "pages": [
+          200,
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thiên Cơ, Thái Âm đồng cung tại Dần: tối đa ba con, và có nhiều con dị bào."
+      ],
+      "id": "tu-tuc/thien-co/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: nhiều nhất là ba con, có nhiều con dị bào",
+          "Nguyệt đồng cung tại Dần)"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Thiên Cơ, Cự Môn đồng cung: may mắn lắm mới có hai con; muộn sinh thì mới dễ nuôi con và sau này con mới khá giả."
+      ],
+      "id": "tu-tuc/thien-co/06",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: may mắn lắm mới có hai con, nếu muộn sinh",
+          "Thiên Cơ (Cự đồng cung)"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Từ năm con trở lên, có quý tử."
+      ],
+      "correction": "Sách in \"cố qúy tử\", hiểu là có quý tử.",
+      "id": "tu-tuc/thien-phu/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: từ năm con trở lên, cố qúy tử"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là bốn con."
+      ],
+      "id": "tu-tuc/thien-phu/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: nhiều nhất là bốn con"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Từ năm con trở lên, có quý tử; con gái nhiều hơn con trai. Con đầu lòng là gái thì về sau mới nuôi được toàn vẹn."
+      ],
+      "id": "tu-tuc/thai-am/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: từ năm con trở lên, có qúy tử",
+          "nếu sinh con gái đầu lòng về sau mới được toàn vẹn"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Gặp may lắm mới được ba con; sinh muộn thì con mới dễ nuôi. Con lớn lên chẳng khá giả, lại thường xung khắc với cha mẹ."
+      ],
+      "id": "tu-tuc/thai-am/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ: may mắn lắm mới có ba con"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, gặp may lắm mới còn ba con. Con cái bất hiếu, bất mục, xung khắc với cha mẹ."
+      ],
+      "id": "tu-tuc/tham-lang/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: sinh nhiều nuôi ít",
+          "Con bất hiếu, bất mục, xung khắc với cha mẹ"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Tối đa hai con. Về sau con hiển đạt, song tính tình không hợp với cha mẹ."
+      ],
+      "id": "tu-tuc/tham-lang/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: nhiều nhứt là hai con"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, gặp may lắm mới còn một con; đứa ấy chơi bời hư hỏng, nhỏ thì khó nuôi, lớn lại khó dạy."
+      ],
+      "correction": "Sách in \"Đơn thủ lại Tý, Ngọ\", hiểu là tại Tý, Ngọ.",
+      "id": "tu-tuc/tham-lang/03",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Tý, Ngọ: sinh nhiều nuôi ít",
+          "lúc bé khó nuôi, lớn lên lại khó dạy"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Từ năm con trở lên; con sớm xa cha mẹ."
+      ],
+      "id": "tu-tuc/cu-mon/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Ngọ: từ năm con trở lên",
+          "Con sớm xa cha mẹ"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Gặp may lắm mới được hai con; sinh nhiều mà nuôi được ít. Con lớn lên chẳng hiển đạt, hay xung khắc với cha mẹ; trong nhà thiếu hòa khí."
+      ],
+      "id": "tu-tuc/cu-mon/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Thìn, Tuất: may mắn lắm mới có hai con",
+          "Thường xung khắc với cha mẹ. Trong nhà"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là bốn con."
+      ],
+      "id": "tu-tuc/thien-tuong/01",
+      "source_ref": {
+        "keywords": [
+          "Thiên Tướng",
+          "Đơn thủ tại Tỵ, Hợi: nhiều nhứt là bốn con"
+        ],
+        "pages": [
+          201
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba con."
+      ],
+      "id": "tu-tuc/thien-tuong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi: nhiều nhứt là ba con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "May mắn lắm mới có hai con; muộn sinh thì mới dễ nuôi và sau này con mới khá giả."
+      ],
+      "id": "tu-tuc/thien-tuong/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: may mắn lắm mới có hai con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Từ năm con trở lên, có quý tử."
+      ],
+      "id": "tu-tuc/thien-luong/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: từ năm con trở lên, có qúy tử"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Nhiều nhất là ba con."
+      ],
+      "correction": "Sách in \"Đơn thủ lại Sửu, Mùi\", hiểu là tại Sửu, Mùi.",
+      "id": "tu-tuc/thien-luong/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Sửu, Mùi: nhiều nhất là ba con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Có hai con; sinh thêm cũng không nuôi được đủ cả. Về sau con cái thường ly tán, trôi dạt mỗi người một nơi, và ít nhất phải có một đứa du đãng, chơi bời."
+      ],
+      "id": "tu-tuc/thien-luong/03",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: hai con, nếu sinh thêm cũng không nuôi"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Dù sinh nhiều, về sau cũng chỉ còn hai con, nhưng đều khá giả, có quý tử."
+      ],
+      "correction": "Sách in \"Đơn thủ lại Dần, Thân\", hiểu là tại Dần, Thân.",
+      "id": "tu-tuc/that-sat/01",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Dần, Thân: dù có sinh nhiều sau cũng chỉ còn hai con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "May mắn lắm mới có hai con."
+      ],
+      "correction": "Sách in \"mới có lai con\", hiểu là hai con.",
+      "id": "tu-tuc/that-sat/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: may mắn lắm mới có lai con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, may mắn lắm mới có một con; nhưng đứa con ấy phải mang tật bệnh, bằng không thì cũng thuộc hạng bất lương. Có như thế mới nuôi được."
+      ],
+      "id": "tu-tuc/that-sat/03",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: sinh nhiều nuôi ít",
+          "nếu không cũng là hạng bất lương. Như thế mới có"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, về sau còn ba con nhưng không hợp tính với cha mẹ, thường ở xa cha mẹ."
+      ],
+      "correction": "Sách in \"Đơn thủ lại Tý, Ngọ\", hiểu là tại Tý, Ngọ.",
+      "id": "tu-tuc/pha-quan/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ lại Tý, Ngọ: sinh nhiều nuôi ít, sau còn ba con"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "May mắn lắm mới có hai con; dù sinh nhiều, về sau cũng bị hình khắc."
+      ],
+      "correction": "Sách in \"sinh nhiêu\", hiểu là sinh nhiều.",
+      "id": "tu-tuc/pha-quan/02",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: may mắn lắm mới có hai con, dù sinh nhiêu"
+        ],
+        "pages": [
+          202
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "May mắn lắm mới có hai con, nhưng con không hợp tính cha mẹ, thường xa cách cha mẹ."
+      ],
+      "id": "tu-tuc/pha-quan/03",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: may mắn lắm mới có hai con, nhưng không"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "KinhDuong",
+          "DaLa",
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít, con khó nuôi. Về sau con chẳng khá giả, lại thường bất hòa với cha mẹ."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "correction": "Tiêu đề 4 tên nhưng Kình Dương và Đà La luôn cách nhau 2 cung nên không bao giờ cùng hội hợp một cung; tiêu đề mở đầu khối sao lẻ (như Hỏa, Linh; Xương, Khúc ngay sau), hiểu là một trong các sao này tọa thủ. Sách in số mục 13.3.14 trùng với Phá Quân, bỏ qua.",
+      "id": "tu-tuc/kinh-da-khong-kiep/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà, Không, Kiếp",
+          "Nhiều sao sáng sủa tốt đẹp: sinh nhiều nuôi ít, khó nuôi con"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "KinhDuong",
+          "DaLa",
+          "DiaKhong",
+          "DiaKiep"
+        ]
+      },
+      "body": [
+        "Tuyệt tự, cô đơn; nếu may mắn có một con thì đứa con ấy cũng phải mang tật bệnh, hoặc thuộc hạng du đãng bất lương."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/kinh-da-khong-kiep/02",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: tuyệt tự, cô đơn"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Muộn sinh con, nhưng con khá giả; thường có con với vợ lẽ."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/hoa-linh/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: muộn sinh, nhưng con khá giả"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "HoaTinh",
+          "LinhTinh"
+        ]
+      },
+      "body": [
+        "Không có con; gặp may mà được một hai đứa thì lúc lâm chung cũng không được thấy mặt con."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/hoa-linh/02",
+      "sensitivity": [
+        "FamilyLoss",
+        "Death"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: không có con",
+          "thì đến lúc chết cũng không được gặp mặt"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Thêm ba con, có quý tử; các con đều thông minh, sớm hiển đạt."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/xuong-khuc/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: thêm ba con, có qúy tử"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Rất khó nuôi con."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/xuong-khuc/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: rất khó nuôi con"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Có quý tử."
+      ],
+      "correction": "Sách in \"Có qúy tứ\", hiểu là quý tử. Lớp chữ PDF đẩy dòng này xuống sau mục Hóa Khoa; ảnh trang 203 cho thấy nó nằm ngay dưới tiêu đề 13.3.18 Khôi, Việt.",
+      "id": "tu-tuc/khoi-viet/01",
+      "source_ref": {
+        "keywords": [
+          "Khôi, Việt",
+          "Có qúy tứ"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Thêm ba con."
+      ],
+      "id": "tu-tuc/ta-huu/01",
+      "source_ref": {
+        "keywords": [
+          "Tả, Hữu",
+          "Thêm ba con. Nếu Tả Hữu gặp thêm"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Ắt có quý tử."
+      ],
+      "condition_text": "Tả, Hữu gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/ta-huu/02",
+      "source_ref": {
+        "keywords": [
+          "Nếu Tả Hữu gặp thêm nhiều sao sáng sủa tốt đẹp hội hợp, tất"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Số con bớt đi hai; sinh muộn tốt hơn sinh sớm. Con cái bất hòa và hay sống xa cha mẹ."
+      ],
+      "condition_text": "Lộc Tồn không gặp thêm nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/loc-ton/01",
+      "source_ref": {
+        "keywords": [
+          "Giảm hai con, muộn sinh tốt hơn sớm, con cái bất hòa với cha mẹ"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Ắt bị tuyệt dòng dõi."
+      ],
+      "condition_text": "Lộc Tồn gặp thêm nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/loc-ton/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nếu Lộc gặp thêm nhiều sao mờ ám xấu xa hội hợp, tất bị tuyệt"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "transformations": [
+          "HoaLoc"
+        ]
+      },
+      "body": [
+        "Con khá giả; về sau được nhờ con."
+      ],
+      "id": "tu-tuc/hoa-loc/01",
+      "source_ref": {
+        "keywords": [
+          "Hóa Lộc",
+          "Con khá giả, sau được nhờ con"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Con sớm hiển đạt."
+      ],
+      "id": "tu-tuc/hoa-quyen/01",
+      "source_ref": {
+        "keywords": [
+          "Hóa Quyền",
+          "Con sớm hiển đạt"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Con thông minh."
+      ],
+      "id": "tu-tuc/hoa-khoa/01",
+      "source_ref": {
+        "keywords": [
+          "Hóa Khoa",
+          "Con thông minh"
+        ],
+        "pages": [
+          203
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Muộn con, khó nuôi con; con cái xung khắc với cha mẹ."
+      ],
+      "correction": "Sách in \"Còn cái\", hiểu là con cái.",
+      "id": "tu-tuc/hoa-ky/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Muộn con, khó nuôi con. Còn cái xung khắc với cha mẹ"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Muộn con; con hay đau yếu, rất khó nuôi."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/co-qua/01",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: muộn con, con hay đau yếu rất khó nuôi"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Tuyệt tự."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/co-qua/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cô, Quả",
+          "Nhiều sao mờ ám xấu xa: tuyệt tự"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Con giàu có."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/dau-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: con giàu có"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Hiếm muộn, con rất khó nuôi; đứa con thường phá hoại gia sản (phá gia chi tử)."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/dau-quan/02",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: rất khó nuôi con, hiếm muộn"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Tám con."
+      ],
+      "id": "tu-tuc/trang-sinh/01",
+      "source_ref": {
+        "keywords": [
+          "Tràng Sinh",
+          "Tám con, gặp Tuần, Triệt án ngữ thì có bốn con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Neither"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "TruongSinh"
+        ]
+      },
+      "body": [
+        "Tràng Sinh gặp Tuần, Triệt án ngữ: bốn con."
+      ],
+      "id": "tu-tuc/trang-sinh/02",
+      "source_ref": {
+        "keywords": [
+          "Tám con, gặp Tuần, Triệt án ngữ thì có bốn con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "MocDuc"
+        ]
+      },
+      "body": [
+        "Sinh bảy lần, về sau nuôi được sáu con."
+      ],
+      "id": "tu-tuc/moc-duc/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mộc Dục",
+          "Bảy lần sinh, sau nuôi được sáu con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "QuanDoi",
+          "LamQuan"
+        ]
+      },
+      "body": [
+        "Ba hay bốn con."
+      ],
+      "id": "tu-tuc/quan-doi-lam-quan/01",
+      "source_ref": {
+        "keywords": [
+          "Quan Đới, Lâm Quan",
+          "Ba hay bốn con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "DeVuong"
+        ]
+      },
+      "body": [
+        "Năm con."
+      ],
+      "correction": "Lớp chữ PDF in ba tiêu đề Đế Vượng, Bệnh, Tử liền nhau rồi mới đến các dòng \"Năm con.\", \"Một con.\", \"Rất khó nuôi con…\"; ảnh trang 204 cho thấy mỗi dòng nằm dưới đúng tiêu đề của nó theo thứ tự đó.",
+      "id": "tu-tuc/de-vuong/01",
+      "source_ref": {
+        "keywords": [
+          "Đế Vượng",
+          "Năm con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Benh"
+        ]
+      },
+      "body": [
+        "Một con."
+      ],
+      "correction": "Như de-vuong/01: dòng \"Một con.\" thuộc mục 13.3.31 Bệnh theo ảnh trang 204.",
+      "id": "tu-tuc/benh/01",
+      "source_ref": {
+        "keywords": [
+          "Bệnh",
+          "Một con"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Tu"
+        ]
+      },
+      "body": [
+        "Rất khó nuôi con; nếu có con thì lớn lên con cũng khắc với cha mẹ."
+      ],
+      "correction": "Như de-vuong/01: dòng này thuộc mục 13.3.32 Tử theo ảnh trang 204.",
+      "id": "tu-tuc/tu/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Rất khó nuôi con, nếu có con, con lớn lên cũng khắc với cha mẹ"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Mo"
+        ]
+      },
+      "body": [
+        "Buổi đầu khó nuôi con nhưng về sau lại dễ nuôi. Muộn con, nên nhận con nuôi."
+      ],
+      "correction": "Chữ \"nuôi.\" cuối câu \"nên kiếm con nuôi\" bị lớp chữ PDF tách lên trước; ảnh trang 204 cho thấy câu liền. Tiêu đề in \"Mộ (Thai, Dưỡng)\" nhưng Thai, Dưỡng có mục riêng 13.3.35, 13.3.36 ngay sau, và ba sao kề nhau trên vòng Tràng Sinh nên không bao giờ đồng cung hay hội hợp: chỉ neo Mộ.",
+      "id": "tu-tuc/mo/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Mộ (Thai, Dưỡng)",
+          "Khó nuôi con buổi đầu nhưng về sau lại dễ nuôi"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Tuyet"
+        ]
+      },
+      "body": [
+        "Có một con bị mù."
+      ],
+      "id": "tu-tuc/tuyet/01",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuyệt",
+          "Có một con mù lòa"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Thai"
+        ]
+      },
+      "body": [
+        "Sinh hai con gái, về sau nuôi được một."
+      ],
+      "id": "tu-tuc/thai/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sinh hai con gái, sau nuôi được một"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Duong"
+        ]
+      },
+      "body": [
+        "Sinh ba lần, về sau nuôi được hai con; có con nuôi."
+      ],
+      "id": "tu-tuc/duong/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Dưỡng",
+          "Sinh ba lần, sau nuôi được hai con, có con nuôi"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "LongTri",
+          "PhuongCac"
+        ]
+      },
+      "body": [
+        "Con đẹp, có quý tử."
+      ],
+      "id": "tu-tuc/long-phuong/01",
+      "source_ref": {
+        "keywords": [
+          "Long, Phượng",
+          "Con đẹp, có qúy tử"
+        ],
+        "pages": [
+          204
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Có con nuôi rất hiếu thảo."
+      ],
+      "id": "tu-tuc/quang-quy/01",
+      "source_ref": {
+        "keywords": [
+          "Quang, Qúy",
+          "Có con nuôi rất hiếu thảo"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienKhoc",
+          "ThienHu"
+        ]
+      },
+      "body": [
+        "Khó nuôi con; con xung khắc với cha mẹ."
+      ],
+      "id": "tu-tuc/khoc-hu/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Khốc, Hư",
+          "Khó nuôi con, con xung khắc với cha mẹ"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Sinh nhiều mà nuôi được ít; con hay chơi bời, tiêu phá, không thể ở gần cha mẹ lâu."
+      ],
+      "correction": "Sách in \"nuối ít\", hiểu là nuôi ít.",
+      "id": "tu-tuc/song-hao/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Song Hao",
+          "Sinh nhiều nuối ít, con hay chơi bời, phá tán"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Con chơi bời."
+      ],
+      "id": "tu-tuc/thien-rieu/01",
+      "source_ref": {
+        "keywords": [
+          "Thiên Riêu",
+          "Con chơi bời"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Muộn con."
+      ],
+      "condition_text": "Thiên Hình không gặp thêm nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/thien-hinh/01",
+      "source_ref": {
+        "keywords": [
+          "Thiên Hình",
+          "Muộn con, nếu Hình gặp thêm nhiều sao mờ ám xấu xa"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Ắt bị tuyệt tự; may mắn lắm mới có được một con thì đứa con ấy cũng phải mang tật bệnh, cùng khổ."
+      ],
+      "condition_text": "Thiên Hình gặp thêm nhiều sao mờ ám xấu xa hội hợp",
+      "correction": "Sách in \"mới cỏ được\", hiểu là mới có được.",
+      "id": "tu-tuc/thien-hinh/02",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "nếu Hình gặp thêm nhiều sao mờ ám xấu xa hội hợp tất bị tuyệt",
+          "May mắn lắm mới cỏ được một con"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "DaoHoa"
+        ]
+      },
+      "body": [
+        "Con dâm đãng."
+      ],
+      "id": "tu-tuc/dao-hoa/01",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào Hoa",
+          "Con dâm đãng"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Con khéo tay."
+      ],
+      "id": "tu-tuc/hong-loan/01",
+      "source_ref": {
+        "keywords": [
+          "Hồng Loan",
+          "Con khéo tay"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Con đầu lòng rất khó nuôi; về sau con cái hay xung khắc với cha mẹ và không thể sống chung một nhà."
+      ],
+      "id": "tu-tuc/tuan-triet/01",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tuần, Triệt án ngữ",
+          "Rất khó nuôi con đầu lòng, sau này con cái hay xung khắc"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ cung Tử Tức: số con giảm một nửa."
+      ],
+      "condition_text": "nhiều sao sáng sủa tốt đẹp hội hợp",
+      "id": "tu-tuc/tuan-triet/02",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: số con giảm một nửa"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Tuần, Triệt án ngữ cung Tử Tức: số con tăng thêm."
+      ],
+      "condition_text": "nhiều sao mờ ám xấu xa hội hợp",
+      "id": "tu-tuc/tuan-triet/03",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: số con tăng thêm"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Thiên Đồng gặp Đức đồng cung: con sớm lập gia đình."
+      ],
+      "condition_text": "có Đức đồng cung (sách không ghi rõ Thiên Đức, Nguyệt Đức, Long Đức hay Phúc Đức)",
+      "id": "tu-tuc/bo-sao/01",
+      "source_ref": {
+        "keywords": [
+          "Đồng, Đức đồng cung",
+          "Con sớm thành gia thất"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Thái Dương sáng sủa gặp Quang, Quý: có quý tử là thần nhân giáng thế."
+      ],
+      "condition_text": "Thái Dương sáng sủa",
+      "id": "tu-tuc/bo-sao/02",
+      "source_ref": {
+        "keywords": [
+          "Nhật sáng sủa, Quang, Qúy",
+          "Có qúy tử là thần nhân giáng thế"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiDuong",
+            "AnQuang",
+            "ThienQuy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thái Dương, Thái Âm, Thai đồng cung: con sinh đôi."
+      ],
+      "correction": "\"Thai\" trong chương này đọc là sao Thai của vòng Tràng Sinh (mục 13.3.35), không phải Tam Thai.",
+      "id": "tu-tuc/bo-sao/03",
+      "source_ref": {
+        "keywords": [
+          "Nhật, Nguyệt, Thai đồng cung",
+          "Con sinh đôi"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Thái Âm, Thiên Đồng, Thái Tuế cùng ở cung Tý: có một người con là thần nhân giáng thế."
+      ],
+      "correction": "\"Tuế\" đọc là Thái Tuế, như các batch trước.",
+      "id": "tu-tuc/bo-sao/04",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt, Đồng, Tuế đồng cung tại Tý",
+          "Có con là thần nhân giáng thế"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Thái Âm, Hỏa Tinh, Thai hội hợp: có con cầu tự."
+      ],
+      "id": "tu-tuc/bo-sao/05",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt, Hỏa, Thai",
+          "Có con cầu tự"
+        ],
+        "pages": [
+          205
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThaiAm",
+            "HoaTinh",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienTuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Thiên Tướng (hay Thiên Lương) đồng cung với Quan Đới: sinh con thánh thần."
+      ],
+      "correction": "\"Tướng\" đọc là Thiên Tướng vì sách đặt \"hay Lương\" (Thiên Lương, Chính Tinh) làm phương án thay thế; \"Đới\" là Quan Đới.",
+      "id": "tu-tuc/bo-sao/06",
+      "source_ref": {
+        "keywords": [
+          "Tướng (hay Lương), Đới đồng cung",
+          "Sinh con thánh thần"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienTuong",
+            "QuanDoi"
+          ]
+        },
+        {
+          "with_all": [
+            "ThienLuong",
+            "QuanDoi"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "ThienHinh"
+        ]
+      },
+      "body": [
+        "Sát, Thiên Hình, Bạch Hổ đồng cung: tuyệt tự."
+      ],
+      "condition_text": "có thêm Sát đồng cung (sách không rõ Thất Sát hay Sát tinh)",
+      "id": "tu-tuc/bo-sao/07",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát, Hình, Hổ đồng cung",
+          "Tuyệt tự"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienHinh",
+            "BachHo"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "Thai"
+        ]
+      },
+      "body": [
+        "Sát gặp Thai: hay bị sẩy thai."
+      ],
+      "condition_text": "gặp Sát (sách không rõ Thất Sát hay Sát tinh)",
+      "id": "tu-tuc/bo-sao/08",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát, Thai",
+          "Hay bị sẩy thai"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Gặp Kình hay Đà cùng Không, Kiếp hội hợp: hiếm con, thường sinh con ngẩn ngơ."
+      ],
+      "correction": "Tiêu đề 4 tên ở phần bộ sao hiểu là hội đủ, nhưng Kình Dương và Đà La luôn cách nhau 2 cung nên không bao giờ cùng hội hợp: mã hóa Không, Kiếp hội hợp cùng Kình hoặc Đà.",
+      "id": "tu-tuc/bo-sao/09",
+      "sensitivity": [
+        "FamilyLoss",
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Kình, Đà, Không, Kiếp",
+          "Hiếm con, thường sinh con ngẩn ngơ"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKhong",
+            "DiaKiep"
+          ],
+          "meets_any": [
+            "KinhDuong",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Thiên Lương, Thiên Khốc, Thái Tuế hội hợp: con hiển đạt."
+      ],
+      "id": "tu-tuc/bo-sao/10",
+      "source_ref": {
+        "keywords": [
+          "Lương, Khốc, Tuế",
+          "Con hiển đạt"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienLuong",
+            "ThienKhoc",
+            "ThaiTue"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Tả Phù, Hữu Bật, Thai hội hợp: con dị bào rất khá giả và hiếu thảo."
+      ],
+      "id": "tu-tuc/bo-sao/11",
+      "source_ref": {
+        "keywords": [
+          "Tả, Hữu, Thai",
+          "Con dị bào rất khá giả và hiếu thảo"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "TaPhu",
+            "HuuBat",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Thiên Khốc, Thiên Hư, Dưỡng hội hợp: sinh nhiều mà nuôi được ít."
+      ],
+      "id": "tu-tuc/bo-sao/12",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Khốc, Hư, Dưỡng",
+          "Sinh nhiều nuôi ít"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienKhoc",
+            "ThienHu",
+            "Duong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Bạch Hổ, Tang Môn, Địa Không, Địa Kiếp hội hợp: ít nhất phải ba hay bốn lần sinh con mà không nuôi được, rồi về sau mới nuôi con dễ dàng."
+      ],
+      "id": "tu-tuc/bo-sao/13",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ, Tang, Không, Kiếp",
+          "Ít nhất phải ba hay bốn lần hữu sinh vô dưỡng"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "BachHo",
+            "TangMon",
+            "DiaKhong",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Bạch Hổ, Tang Môn, Mộc Dục, Địa Kiếp hội hợp: sinh con thiếu tháng, hay con thừa ngón chân, ngón tay."
+      ],
+      "correction": "\"Mộc\" đọc là Mộc Dục (mục 13.3.28).",
+      "id": "tu-tuc/bo-sao/14",
+      "sensitivity": [
+        "Illness"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ, Tang, Mộc, Kiếp",
+          "Sinh con thiếu tháng, hay thừa ngón chân, ngón tay"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "BachHo",
+            "TangMon",
+            "MocDuc",
+            "DiaKiep"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc",
+        "stars": [
+          "BachHo",
+          "Thai"
+        ]
+      },
+      "body": [
+        "Bạch Hổ, Thai đồng cung: người đàn bà hay bị sẩy thai."
+      ],
+      "id": "tu-tuc/bo-sao/15",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ, Thai đồng cung",
+          "Đàn bà hay sẩy thai"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "BachHo",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Bạch Hổ, Kình Dương, Sát hội hợp: không có con."
+      ],
+      "condition_text": "gặp thêm Sát (sách không rõ Thất Sát hay Sát tinh)",
+      "id": "tu-tuc/bo-sao/16",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Hổ, Kình, Sát",
+          "Không có con"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "BachHo",
+            "KinhDuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Tướng, Phục Binh, Thai hội hợp: vợ chồng có con trước khi lấy nhau, đôi khi ăn ở với nhau trước khi cưới; cũng có thể vợ hoặc chồng đã có con riêng trước khi lập gia đình."
+      ],
+      "condition_text": "gặp thêm Tướng (sách không rõ Thiên Tướng hay Tướng Quân)",
+      "id": "tu-tuc/bo-sao/17",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng, Binh, Thai",
+          "Vợ chồng có con trước khi lấy nhau"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Hỷ Thần, Dưỡng hội hợp: có con thần đồng."
+      ],
+      "id": "tu-tuc/bo-sao/18",
+      "source_ref": {
+        "keywords": [
+          "Hỷ Thần, Dưỡng",
+          "Có con thần đồng"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HyThan",
+            "Duong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Đào Hoa, Tử Vi, Thiên Phủ hội hợp: con gái dùng nhan sắc để tiến thân, vinh hiển hơn con trai."
+      ],
+      "correction": "Sách in \"vinh hiến\", hiểu là vinh hiển.",
+      "id": "tu-tuc/bo-sao/19",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Tử, Phủ",
+          "Con gái dùng nhan sắc để tiến thân, vinh hiến hơn con trai"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Đào Hoa, Hồng Loan, Văn Xương, Văn Khúc hội hợp: con gái dâm đãng, trăng hoa bừa bãi."
+      ],
+      "id": "tu-tuc/bo-sao/20",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Hồng, Xương, Khúc",
+          "Con gái dâm đãng, nguyệt hoa, bừa bãi"
+        ],
+        "pages": [
+          206
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "VanXuong",
+            "VanKhuc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Đào Hoa, Thai hội hợp: hiếm con."
+      ],
+      "id": "tu-tuc/bo-sao/21",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Thai",
+          "Hiếm con"
+        ],
+        "pages": [
+          207
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "TuTuc"
+      },
+      "body": [
+        "Thiên Quan, Thiên Phúc, Ân Quang, Tấu Thư hội hợp: thần thánh giáng sinh làm con."
+      ],
+      "id": "tu-tuc/bo-sao/22",
+      "source_ref": {
+        "keywords": [
+          "Quan, Phúc, Quang, Tấu",
+          "Thần thánh giáng sinh làm con"
+        ],
+        "pages": [
+          207
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienQuan",
+            "ThienPhuc",
+            "AnQuang",
+            "TauThu"
+          ]
+        }
+      ]
+    }
+  ]
+}

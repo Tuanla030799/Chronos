@@ -1,0 +1,3502 @@
+{
+  "batch": "TV-19",
+  "collection": "tuvi.passage",
+  "entries": [
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Vợ chồng hòa hợp, sống với nhau đến bạc đầu. Cả hai đều khá giả, cùng hưởng giàu sang."
+      ],
+      "id": "phu-the/tu-vi/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Ngọ, Phủ đồng cung: hòa hợp trắng răng đến thuở bạc đầu",
+          "Tử đồng cung: hòa hợp trắng răng đến thuở bạc đầu"
+        ],
+        "pages": [
+          208,
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "solo": true,
+          "with_all": [
+            "TuVi"
+          ]
+        },
+        {
+          "with_all": [
+            "TuVi",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi"
+        ]
+      },
+      "body": [
+        "Chuyện vợ chồng ở mức bình thường."
+      ],
+      "id": "phu-the/tu-vi/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý: bình thường"
+        ],
+        "pages": [
+          208
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Vợ chồng đều cứng cỏi, bướng bỉnh: lúc mới cưới thường hòa thuận, về sau hay xích mích. Cả hai đều khá giả. Chồng nên hơn tuổi vợ; trai nên lấy con gái trưởng, gái nên lấy con trai trưởng."
+      ],
+      "id": "phu-the/tu-vi/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: vợ chồng đều cứng cỏi, ương ngạnh",
+          "Tử đồng cung: vợ chồng đều cứng cỏi, ương ngạnh"
+        ],
+        "pages": [
+          208,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Phải trắc trở trước rồi mới thành thì mới tránh được hình khắc, chia ly. Nên lập gia đình muộn, như vậy mới được vừa ý và hưởng phú quý trọn đời."
+      ],
+      "correction": "Sách in \"hình khác\" ở cả tr. 208 và 213, hiểu là hình khắc.",
+      "id": "phu-the/tu-vi/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: tiên trở hậu thành mới tránh được hình khác, chia ly",
+          "Tử đồng cung: tiên trở hậu thành mới tránh được hình khác"
+        ],
+        "pages": [
+          208,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Ắt phải hình khắc hoặc chia ly; sống chung thì hay hờn giận nhau, cầm sắt không êm. Nên lấy vợ hơn tuổi mình."
+      ],
+      "correction": "Sách in \"sống chung với nhau tiếp hờn giận\" ở cả tr. 208 và 213; chữ \"tiếp\" không rõ nghĩa, hiểu là hay hờn giận nhau.",
+      "id": "phu-the/tu-vi/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: phải hình khắc hay chia ly",
+          "Tử đồng cung: phải hình khắc hay chia ly, sống chung với nhau tiếp hờn"
+        ],
+        "pages": [
+          208,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuVi",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Phải lập gia đình muộn mới mong sống với nhau trọn đời. Dù vậy trong nhà vẫn hay bất hòa vì một trong hai người hay ghen."
+      ],
+      "id": "phu-the/tu-vi/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: muộn lập gia đình mới mong được bách niên giai",
+          "Tử đồng cung: muộn lập gia đình mới mong được bách niên giai lao"
+        ],
+        "pages": [
+          208,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "TuVi",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh"
+        ]
+      },
+      "body": [
+        "Lập gia đình ba lần. Trai khó lấy vợ, gái lấy phải chồng nghèo."
+      ],
+      "id": "phu-the/liem-trinh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: ba lần lập gia đình, trai lấy vợ khó"
+        ],
+        "pages": [
+          208
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Nên lập gia đình muộn. Vợ chồng đều tính cứng rắn nhưng vẫn sống với nhau đến bạc đầu; gia đình đầy đủ và thường có danh giá."
+      ],
+      "id": "phu-the/liem-trinh/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: nên muộn lập gia đình. Vợ chồng tính cương cường",
+          "Liêm đồng cung: nên muộn lập gia đình. Vợ chồng tính cương cường"
+        ],
+        "pages": [
+          208,
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Vợ chồng bất hòa; không chết mà xa nhau thì cũng sống mà lìa nhau."
+      ],
+      "id": "phu-the/liem-trinh/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: vợ chồng bất hòa, nếu không tử biệt cũng sinh ly",
+          "Liêm đồng cung: vợ chồng bất hòa, nếu không tử biệt cũng sinh ly"
+        ],
+        "pages": [
+          208,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Hình khắc hoặc sống mà lìa nhau. Nên lập gia đình muộn để tránh những lần đau buồn."
+      ],
+      "id": "phu-the/liem-trinh/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: hình khắc hay sinh ly, nên muộn lập gia đình",
+          "Liêm đồng cung: hình khắc hay sinh ly, nên muộn lập gia đình"
+        ],
+        "pages": [
+          209,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Vợ chồng bất hòa, hay sống xa nhau, làm ăn sinh sống chật vật."
+      ],
+      "id": "phu-the/liem-trinh/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: vợ chồng bất hòa, hay xa cách nhau, sinh kế khó khăn",
+          "Liêm đồng cung: vợ chồng bất hòa, hay xa cách nhau, sinh kế khó khăn"
+        ],
+        "pages": [
+          209,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LiemTrinh",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Vợ chồng sống chung hay sinh tai họa; dễ đến với nhau thì cũng dễ bỏ nhau, nếu không thì cũng sớm hình khắc."
+      ],
+      "id": "phu-the/liem-trinh/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: vợ chồng ở với nhau hay sinh tai họa",
+          "Liêm đồng cung: vợ chồng ở với nhau hay sinh tai họa"
+        ],
+        "pages": [
+          209,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "LiemTrinh",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Cưới muộn thì mọi việc mới suôn sẻ và sống với nhau đến bạc đầu; vợ đẹp và hiền. Chồng nên là con trưởng, vợ nên là con thứ."
+      ],
+      "correction": "Sách in \"Chồng nên là cung trưởng, vợ nên là cung thứ\"; hiểu \"cung\" là \"con\", như \"chồng nên là con trưởng\" ở mục Thiên Cơ tr. 210.",
+      "id": "phu-the/thien-dong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão: chậm cưới mới được dễ dàng mọi sự",
+          "Chồng nên là cung trưởng, vợ nên là cung"
+        ],
+        "pages": [
+          209
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Gia đình hay bất hòa, vợ chồng thường phải xa nhau."
+      ],
+      "id": "phu-the/thien-dong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu: hay có sự bất hòa trong gia đình"
+        ],
+        "pages": [
+          209
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Dễ đến với nhau nhưng cũng dễ xa nhau."
+      ],
+      "id": "phu-the/thien-dong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ: dễ gặp nhau lại dễ xa nhau"
+        ],
+        "pages": [
+          209
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong"
+        ]
+      },
+      "body": [
+        "Vợ chồng hay cãi nhau; không chết mà xa nhau thì cũng sống mà lìa nhau."
+      ],
+      "id": "phu-the/thien-dong/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: vợ chồng hay cãi lộn, nếu không tử biệt"
+        ],
+        "pages": [
+          209
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Lập gia đình sớm. Hai người thường có họ hàng với nhau, nếu không thì cũng là con của hai nhà vốn giao du thân thiết từ lâu. Vợ chồng đẹp đôi, giàu sang."
+      ],
+      "correction": "Sách in \"cung của hai gia đình\" ở cả tr. 209 và 213; hiểu \"cung\" là \"con\".",
+      "id": "phu-the/thien-dong/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: sớm lập gia đình, hai người thường có họ với nhau",
+          "Đồng đồng cung: sớm lập gia đình, hai người thường có họ với nhau"
+        ],
+        "pages": [
+          209,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Lập gia đình sớm. Hai người thường có họ hàng với nhau, nếu không thì cũng là con của hai nhà vốn giao du thân thiết từ lâu. Vợ chồng đẹp đôi, giàu sang; chồng hay nể vợ và được nhờ vợ nhiều."
+      ],
+      "correction": "\"Cũng như trên\" ở tr. 209 là lời Lương đồng cung ngay trên. Câu ở mục Thái Âm tr. 211 chép nguyên từ mục Thiên Đồng, nên \"trên\" ở đó cũng là lời Đồng, Lương đồng cung, không phải lời Thái Âm đơn thủ Mão, Thìn, Tỵ đứng ngay trên nó.",
+      "id": "phu-the/thien-dong/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Tý: cũng như trên, nhưng chồng hay nể vợ",
+          "Đồng đồng cung tại Tý: cũng như trên, nhưng chồng hay nể vợ"
+        ],
+        "pages": [
+          209,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Phải lập gia đình muộn mới tránh được chia ly."
+      ],
+      "id": "phu-the/thien-dong/07",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Ngọ: muộn lập gia đình mới tránh được chia ly",
+          "Đồng đồng cung tại Ngọ: muộn lập gia đình mới tránh được chia ly"
+        ],
+        "pages": [
+          209,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ngo"
+          ],
+          "with_all": [
+            "ThienDong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienDong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Bỏ nhau; nếu không thì cũng phải xa cách rất lâu rồi mới sum họp. Vợ chồng đều rất thông minh."
+      ],
+      "correction": "Sách in \"rồi mỏi đoàn tụ\" ở tr. 212, hiểu là \"rồi mới đoàn tụ\" như tr. 209.",
+      "id": "phu-the/thien-dong/08",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: bỏ nhau, nếu không cũng phải xa cách rất lâu",
+          "Đồng đồng cung: bỏ nhau, nếu không cũng phải xa cách rất lâu rồi mỏi"
+        ],
+        "pages": [
+          209,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienDong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc"
+        ]
+      },
+      "body": [
+        "Nên lập gia đình muộn và lấy người bằng hoặc gần bằng tuổi. Đàn ông nhờ vợ mà có tiền, đàn bà nhờ chồng mà được giàu sang."
+      ],
+      "correction": "Sách in \"nhờ vụ\", hiểu là \"nhờ vợ\", đối với vế \"đàn bà nhờ chồng\" liền sau.",
+      "id": "phu-the/vu-khuc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: nên muộn lập gia đình",
+          "Đàn ông nhờ vụ mà có tiền"
+        ],
+        "pages": [
+          209
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc",
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Vợ chồng đôi lúc bất hòa nhưng cùng hưởng giàu sang đến bạc đầu."
+      ],
+      "id": "phu-the/vu-khuc/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phủ đồng cung: vợ chồng đôi khi có sự bất hòa",
+          "Vũ đồng cung: vợ chồng đôi khi có sự bất hòa"
+        ],
+        "pages": [
+          209,
+          210,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienPhu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc",
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Người chồng có vợ giỏi giang, đảm đang, giàu có; người vợ có chồng hiền lành, sang trọng. Hai người đều cứng rắn: lúc trẻ thuận hòa, về sau hay xích mích, nhưng đều hưởng phú quý trọn vẹn."
+      ],
+      "id": "phu-the/vu-khuc/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Tướng đồng cung: đàn ông lấy được vợ đảm đang, tài giỏi và giàu",
+          "Vũ đồng cung: đàn ông lấy được vợ đảm đang, tài giỏi và giàu"
+        ],
+        "pages": [
+          209,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThienTuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc",
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Nên lập gia đình muộn, vợ chồng phải chênh nhau nhiều tuổi. Cả hai đều giỏi giang, đảm đang, nhưng nếu kết hôn sớm ắt bị hình khắc."
+      ],
+      "id": "phu-the/vu-khuc/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham đồng cung: nên muộn lập gia đình, vợ chồng phải chênh lệch nhau",
+          "Vũ đồng cung: nên muộn lập gia đình, vợ chồng phải chênh lệch nhau"
+        ],
+        "pages": [
+          209,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThamLang"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc",
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Vợ chồng đều có tài thao lược, nhưng nếu gặp nhau sớm ắt phải hình khắc và lập gia đình ít nhất hai lần."
+      ],
+      "id": "phu-the/vu-khuc/05",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Phá đồng cung: vợ chồng đều thao lược nhưng nếu sớm gặp nhau tất",
+          "Vũ đồng cung: vợ chồng đều thao lược nhưng nếu sớm gặp nhau tất"
+        ],
+        "pages": [
+          209,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "PhaQuan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VuKhuc",
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Hình khắc nhau rất thê thảm. Sống chung hay sinh tai họa, rồi đi đến xa cách, hoặc một người sống một người chết."
+      ],
+      "correction": "Sách in \"thê thẳm\", \"chồng chung sống\" và \"hay hay một sống một chết\" ở cả tr. 209 và 213; hiểu là thê thảm, chung sống, và hay một sống một chết.",
+      "id": "phu-the/vu-khuc/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát đồng cung: hình khắc nhau rất thê thẳm",
+          "Vũ đồng cung: hình khắc nhau rất thê thẳm"
+        ],
+        "pages": [
+          209,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "VuKhuc",
+            "ThatSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Vợ chồng hợp nhau, sống chung trong cảnh giàu sang, vẻ vang đến lúc tóc bạc răng long."
+      ],
+      "correction": "Sách in \"Đơn thủ tại Mão, Thìn, Tỵ, Ngọ\". Thái Dương ở Mão luôn đồng cung Thiên Lương, không thể đơn thủ; mục Thiên Lương tr. 212 ghi đúng lời này cho \"Nhật đồng cung tại Mão\", nên Mão hiểu là Nhật, Lương đồng cung tại Mão.",
+      "id": "phu-the/thai-duong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ, Ngọ: vợ chồng hợp chung sống trong cảnh",
+          "Nhật đồng cung tại Mão: vợ chồng hợp chung sống trong cảnh phú qúy"
+        ],
+        "pages": [
+          210,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Ti",
+            "Ngo"
+          ],
+          "solo": true,
+          "with_all": [
+            "ThaiDuong"
+          ]
+        },
+        {
+          "branches": [
+            "Mao"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiDuong",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Việc cưới xin hay trắc trở; phải kết hôn muộn mới tránh được những điều chẳng lành."
+      ],
+      "correction": "Sách in \"Đơn thủ tại Dậu, Tuất, Hợi, Tý\". Thái Dương ở Dậu luôn đồng cung Thiên Lương, không thể đơn thủ; mục Thiên Lương tr. 212 ghi đúng lời này cho \"Nhật đồng cung tại Dậu\", nên Dậu hiểu là Nhật, Lương đồng cung tại Dậu.",
+      "id": "phu-the/thai-duong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi, Tý: việc cưới xin hay trắc trở",
+          "Nhật đồng cung tại Dậu: việc cưới xin hay trắc trở"
+        ],
+        "pages": [
+          210,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Tuat",
+            "Hoi",
+            "Ty"
+          ],
+          "solo": true,
+          "with_all": [
+            "ThaiDuong"
+          ]
+        },
+        {
+          "branches": [
+            "Dau"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Vợ chồng hay bất hòa nhưng vẫn sống với nhau trong giàu sang đến tuổi xế chiều."
+      ],
+      "id": "phu-the/thai-duong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Dần: vợ chồng hay có sự bất hòa",
+          "Nhật đồng cung tại Dần: vợ chồng hay có sự bất hòa"
+        ],
+        "pages": [
+          210,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiDuong",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Lập gia đình muộn thì may ra mới tránh được chia ly."
+      ],
+      "id": "phu-the/thai-duong/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung tại Thân: muộn lập gia đình, may ra mới tránh được",
+          "Nhật đồng cung tại Thân: muộn lập gia đình, may ra mới tránh được"
+        ],
+        "pages": [
+          210,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThaiDuong",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiDuong",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Nên kết hôn muộn, nếu không ắt phải xa nhau. Cả hai đều quý hiển; trai hay nể vợ, gái thường sợ chồng."
+      ],
+      "id": "phu-the/thai-duong/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung: nên muộn đường hôn phối, nếu không tất phải xa",
+          "Nhật đồng cung: nên muộn đường hôn phối, nếu không tất phải xa"
+        ],
+        "pages": [
+          210,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThaiDuong",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Lập gia đình sớm. Vợ chồng đều cứng rắn nhưng vẫn ở được với nhau; hai người đều giỏi và khá giả. Chồng nên là con trưởng."
+      ],
+      "id": "phu-the/thien-co/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ. Ngọ. Mùi: sớm lập gia đình, vợ chồng đều cương cường"
+        ],
+        "pages": [
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Ngo",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo"
+        ]
+      },
+      "body": [
+        "Nên lập gia đình muộn; hai người không hợp tính nhau."
+      ],
+      "id": "phu-the/thien-co/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Hợi, Tý, Sửu: nên muộn lập gia đình"
+        ],
+        "pages": [
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Hoi",
+            "Ty",
+            "Suu"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo",
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Sớm gặp người hiền lành, lấy nhau dễ dàng, làm ăn khá giả; thường là người quen biết từ trước hoặc có họ xa. Trai lấy vợ đẹp, gái lấy chồng hiền, hòa hợp đến tuổi xế chiều."
+      ],
+      "correction": "Sách in \"Trại lấy vợ đẹp\" ở cả tr. 210 và 213, hiểu là \"Trai\".",
+      "id": "phu-the/thien-co/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Lương đồng cung: sớm gặp người hiền lương, lấy nhau dễ dàng",
+          "Cơ đồng cung: sớm gặp người hiền lương, lấy nhau dễ dàng"
+        ],
+        "pages": [
+          210,
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "ThienLuong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo",
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ đẹp, giàu sang, có tài thao lược; gái lấy chồng giỏi giang, có danh chức. Nhưng nên kết hôn muộn, nếu không ắt hay tranh chấp, bất hòa, dễ dẫn tới chia ly."
+      ],
+      "id": "phu-the/thien-co/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cự đồng cung: trai vợ đẹp, giàu sang, thao lược",
+          "Cơ đồng cung: trai vợ đẹp, giàu sang, thao lược"
+        ],
+        "pages": [
+          210,
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienCo",
+            "CuMon"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Vợ chồng đều giỏi giang, khá giả, lấy nhau sớm; trai hay nể vợ."
+      ],
+      "id": "phu-the/thien-co/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Thân: vợ chồng đều tài giòi, khá giả",
+          "Cơ đồng cung tại Thân: vợ chồng đều tài giòi, khá giả"
+        ],
+        "pages": [
+          210,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Than"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienCo",
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Việc cưới hỏi thường gặp trở ngại; nên kết hôn muộn để tránh bất hòa hoặc xa cách. Cả hai đều có tài; trai thường sợ vợ."
+      ],
+      "id": "phu-the/thien-co/06",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nguyệt đồng cung tại Dần: thường gặp trở ngại trong việc cưới hỏi",
+          "Cơ đồng cung tại Dần: thường gặp trở ngại trong việc cưới hỏi"
+        ],
+        "pages": [
+          210,
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan"
+          ],
+          "with_all": [
+            "ThienCo",
+            "ThaiAm"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Vợ chồng khá giả, thuận hòa đến bạc đầu."
+      ],
+      "id": "phu-the/thien-phu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: vợ chồng khá giả, hòa thuận đến lúc đầu bạc"
+        ],
+        "pages": [
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienPhu"
+        ]
+      },
+      "body": [
+        "Vợ chồng sống đầy đủ nhưng hay cãi nhau."
+      ],
+      "id": "phu-the/thien-phu/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Sửu, Mùi, Mão, Dậu: vợ chồng chung sống sung túc"
+        ],
+        "pages": [
+          210
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Suu",
+            "Mui",
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Vợ chồng đều quý hiển, lấy nhau sớm, thuận hòa đến bạc đầu. Trai lấy được vợ đẹp, giàu sang, thường nể vợ, đôi khi nhờ vợ mới có danh giá và của cải. Gái lấy được chồng hiền, đường đường là bậc mệnh phụ."
+      ],
+      "id": "phu-the/thai-am/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dậu, Tuất, Hợi: vợ chồng đều qúy hiển, lấy nhau sớm"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dau",
+            "Tuat",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiAm"
+        ]
+      },
+      "body": [
+        "Vợ chồng hay bất hòa. Trai lấy phải vợ lăng loàn, dâm đãng; gái lấy phải chồng hèn kém, bất nhân. Cưới xin gặp nhiều trở ngại; nên kết hôn muộn để cố tránh những cảnh buồn khổ, chia ly."
+      ],
+      "correction": "Sách in \"dâm đăng\", hiểu là dâm đãng.",
+      "id": "phu-the/thai-am/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Thìn, Tỵ : vợ chồng hay bất hòa",
+          "trai lấy vợ lăng loàn, dâm đăng"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Thin",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Đàn ông có vợ giàu, giỏi giang nhưng ghen tuông; đàn bà có chồng sang trọng nhưng ham chơi bời. Nên lập gia đình muộn để tránh hình khắc hoặc chia ly."
+      ],
+      "id": "phu-the/tham-lang/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: trai lấy được vợ giàu, tài giỏi nhưng hay ghen"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Đàn ông gặp vợ ghen tuông, dâm đãng; đàn bà gặp chồng nghèo, hoặc hoang đàng, lưu manh. Nên kết hôn muộn, vì dễ đến với nhau rồi lại dễ xa nhau, hay hình khắc nhau."
+      ],
+      "id": "phu-the/tham-lang/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: trai lấy phải vợ hay ghen và dâm đãng"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Đàn ông gặp vợ ghen tuông, dâm đãng; đàn bà gặp chồng nghèo, hoặc hoang đàng, lưu manh. Nên kết hôn muộn, vì dễ đến với nhau rồi lại dễ xa nhau, hay hình khắc nhau. Vợ nên là con gái trưởng."
+      ],
+      "id": "phu-the/tham-lang/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: nhận xét như trên"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Vợ chồng đẹp đôi, đều quý hiển nhưng hay bất hòa."
+      ],
+      "id": "phu-the/cu-mon/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ, Hợi: vợ chồng đẹp đôi, đều qúy hiến"
+        ],
+        "pages": [
+          211
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Vợ chồng bỏ nhau; cả trai lẫn gái đều lập gia đình hai hoặc ba lần."
+      ],
+      "id": "phu-the/cu-mon/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất, Tỵ: vợ chồng bỏ nhau"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat",
+            "Ti"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Đàn ông có Thiên Tướng ở cung Thê Thiếp thì nể vợ, vợ thường là con gái trưởng."
+      ],
+      "id": "phu-the/thien-tuong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai có Thiên Tướng tọa thủ tại cung Thê Thiếp nên nể vợ"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Male"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Đàn bà có Thiên Tướng ở cung Phu Quân thì hay tìm cách lấn át chồng, chồng thường là con trai trưởng."
+      ],
+      "id": "phu-the/thien-tuong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Gái có Thiên Tướng tọa thủ tại cung Phu Quân nên hay tìm"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Nên kết hôn muộn để tránh bất hòa hoặc xa cách. Trai lấy được vợ đẹp, khôn ngoan, đảm đang, con nhà khá giả; gái lấy được chồng có danh chức, giỏi giang. Chồng nên lớn tuổi hơn vợ khá nhiều; hai người mà có họ hàng xa thì lại càng xứng đôi."
+      ],
+      "correction": "Sách in \"chống\" và \"giỏi dang\", hiểu là chồng và giỏi giang.",
+      "id": "phu-the/thien-tuong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi, Sửu, Mùi: nên muộn đường hôn phối",
+          "Gái lấy được chống có danh chức và giỏi dang"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi",
+            "Suu",
+            "Mui"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Cưới xin gặp nhiều trở ngại. Phải lập gia đình muộn mới tránh được mọi hình khắc, chia ly."
+      ],
+      "id": "phu-the/thien-tuong/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Mão, Dậu: nhiều trở ngại trong việc cưới xin"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Mao",
+            "Dau"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ có nhan sắc, gái lấy chồng phong lưu."
+      ],
+      "id": "phu-the/thien-luong/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai lấy vợ có nhan sắc, gái lấy chồng phong lưu"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Vợ chồng lấy nhau sớm và dễ dàng, cả hai đều quý hiển. Trai nên lấy con gái trưởng, gái nên lấy con trai trưởng."
+      ],
+      "correction": "Sách in \"Tỵ, Ngọ\", nhưng ngay dòng dưới in \"Đơn thủ tại Tỵ, Hợi: dễ gặp nhau lại dễ xa nhau\" với lời trái hẳn, nên Tỵ không thể thuộc cả hai. Thiên Lương đơn thủ ở Tý, Ngọ, Sửu, Mùi, Tỵ, Hợi; mục Thiên Lương chương Quan Lộc tr. 162 ghi \"Đơn thủ tại Tý, Ngọ\", nên sửa thành Tý, Ngọ (lỗi dấu Tý/Tỵ như mục Thiên Lương chương Phụ Mẫu tr. 128).",
+      "id": "phu-the/thien-luong/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Ngọ: vợ chồng lấy nhau sớm và dễ dàng"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienLuong"
+        ]
+      },
+      "body": [
+        "Dễ đến với nhau nhưng cũng dễ xa nhau."
+      ],
+      "id": "phu-the/thien-luong/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tỵ, Hợi: dễ gặp nhau lại dễ xa nhau"
+        ],
+        "pages": [
+          212
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ti",
+            "Hoi"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Nên kết hôn muộn. Trai lấy vợ giỏi giang nhưng hay ghen, thường là con gái trưởng; gái lấy chồng danh giá, thường là con trai trưởng. Cả hai đều cứng rắn."
+      ],
+      "id": "phu-the/that-sat/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: nên muộn đường hôn phối, trai lấy vợ tài giỏi"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Nên kết hôn muộn. Trai lấy vợ giỏi giang nhưng hay ghen, thường là con gái trưởng; gái lấy chồng danh giá, thường là con trai trưởng. Cả hai đều cứng rắn, vợ chồng hay bất hòa; nếu lập gia đình sớm ắt phải hình khắc hoặc chia ly."
+      ],
+      "id": "phu-the/that-sat/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: cũng như trên, vợ chồng hay bất hòa"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThatSat"
+        ]
+      },
+      "body": [
+        "Cả trai lẫn gái đều phải lập gia đình hai, ba lần; sống chung xảy ra rất nhiều tai ương."
+      ],
+      "id": "phu-the/that-sat/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: trai hay gái phải hai ba lần lập gia đình"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ hay ghen; gái lấy chồng bất nghĩa."
+      ],
+      "id": "phu-the/pha-quan/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai lấy vợ hay ghen. Gái lấy chồng bất nghĩa"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Vợ chồng tuy khá giả nhưng nên kết hôn muộn, nếu không ắt có lúc phải xa nhau."
+      ],
+      "id": "phu-the/pha-quan/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Tý, Ngọ: tuy vợ chồng khá giả nhưng nên muộn đường hôn"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Ty",
+            "Ngo"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Hình khắc không thể tránh khỏi. Đàn ông gặp vợ bất nhân, dâm đãng, lăng loàn; đàn bà gặp chồng bất nghĩa, hoang đàng, ham chơi bời."
+      ],
+      "id": "phu-the/pha-quan/03",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Dần, Thân: hình khắc không thế tránh được"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Dan",
+            "Than"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Nên lập gia đình muộn, nếu không ắt phải hai, ba lần nối lại duyên."
+      ],
+      "id": "phu-the/pha-quan/04",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Đơn thủ tại Thìn, Tuất: nên muộn lập gia đình"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "branches": [
+            "Thin",
+            "Tuat"
+          ],
+          "solo": true
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Vợ chồng hay bất hòa; nếu có phải chia ly thì cũng chỉ trong thời gian ngắn."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "correction": "Sách in \"nếu cô phải chia ly cũng chi trong một thời gian ngắn\", hiểu là \"nếu có\" và \"cũng chỉ\". Mục này in số 14.14, trùng với Phá Quân; theo thứ tự phải là 14.15.",
+      "id": "phu-the/sat-tinh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: hay bất hòa, nếu cô phải chia ly"
+        ],
+        "pages": [
+          213
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "@LucSat"
+        ]
+      },
+      "body": [
+        "Cưới xin khó khăn, hình khắc, chia ly càng dễ xảy ra, tai họa càng thêm nhiều. Đàn ông gặp vợ bất nhân, dâm đãng, ghen tuông; đàn bà gặp chồng bất nghĩa, hoang đàng, quỷ quyệt."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phu-the/sat-tinh/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: cưới xin khó khăn, sự hình khắc chia ly"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "VanXuong",
+          "VanKhuc"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ đẹp, thông minh, có học, và thường có thêm vợ lẽ hoặc nhân tình. Đàn bà có chồng danh giá, phong lưu, học rộng. Vợ chồng sống với nhau êm ấm."
+      ],
+      "id": "phu-the/xuong-khuc/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Trai lấy vợ đẹp, thông minh, có học và thường có vợ lẽ, nhân tình"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienKhoi",
+          "ThienViet"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ đẹp, có học, có của, thường là con gái trưởng; gái lấy chồng sang, thường là con trai trưởng."
+      ],
+      "id": "phu-the/khoi-viet/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai lấy vợ đẹp, có học, có của, thường là trưởng nữ"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Cưới xin dễ dàng, không cần mai mối hay lễ nghi rườm rà. Vợ chồng thuận hòa, giúp đỡ nhau trên nhiều bước đường."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phu-the/ta-huu/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: cưới xin dễ dàng, khỏi cần mối lái"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TaPhu",
+          "HuuBat"
+        ]
+      },
+      "body": [
+        "Hình khắc, chia ly càng dễ xảy ra."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phu-the/ta-huu/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: càng dễ hình khắc chia ly"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "transformations": [
+          "HoaLoc"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ có của, gái lấy chồng giàu sang."
+      ],
+      "id": "phu-the/hoa-loc/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai lấy vợ có của, gái lấy chồng giàu sang"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "transformations": [
+          "HoaQuyen"
+        ]
+      },
+      "body": [
+        "Trai nể vợ; gái được chồng danh giá."
+      ],
+      "id": "phu-the/hoa-quyen/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai nể vợ, gái được chồng danh giá"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "transformations": [
+          "HoaKhoa"
+        ]
+      },
+      "body": [
+        "Đàn ông có vợ học thức; đàn bà có chồng mang danh chức."
+      ],
+      "id": "phu-the/hoa-khoa/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Trai lấy được vợ có học thức, gái lấy chồng có danh chức"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "transformations": [
+          "HoaKy"
+        ]
+      },
+      "body": [
+        "Vợ chồng bất hòa."
+      ],
+      "id": "phu-the/hoa-ky/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.22. Hóa Kỵ"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "LocTon"
+        ]
+      },
+      "body": [
+        "Nên cưới muộn để sau này tránh bất hòa hoặc chia ly."
+      ],
+      "id": "phu-the/loc-ton/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nên chậm cưới để tránh sự bất hòa hay chia ly sau này"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienMa"
+        ]
+      },
+      "body": [
+        "Gặp nhau ở nơi xa rồi nên vợ nên chồng."
+      ],
+      "id": "phu-the/thien-ma/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Gặp nhau ở nơi xa mà nên duyên vợ chồng"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThaiTue"
+        ]
+      },
+      "body": [
+        "Trong gia đình hay xích mích."
+      ],
+      "id": "phu-the/thai-tue/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Hay có sự xích mích trong gia đình"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhucBinh"
+        ]
+      },
+      "body": [
+        "Quen biết, đi lại với nhau một thời gian rồi mới cưới."
+      ],
+      "id": "phu-the/phuc-binh/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Quen nhau, thường đi lại với nhau rồi mới cưới"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "TuongQuan"
+        ]
+      },
+      "body": [
+        "Quen biết, đi lại với nhau một thời gian rồi mới cưới. Người chồng sợ vợ vì vợ ghen tuông; người vợ tuy nể chồng mà vẫn tìm cách bắt nạt chồng."
+      ],
+      "id": "phu-the/tuong-quan/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cũng như trên nhưng trai sợ vợ vì vợ hay ghen"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "AnQuang",
+          "ThienQuy"
+        ]
+      },
+      "body": [
+        "Lấy nhau vì ân tình."
+      ],
+      "id": "phu-the/quang-quy/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Vợ chồng vì ân tình mà lấy nhau"
+        ],
+        "pages": [
+          214
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Cưới xin quá dễ dàng."
+      ],
+      "id": "phu-the/song-hao/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Cưới xin quá dễ dàng"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DaiHao",
+          "TieuHao"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ hoang phí; gái lấy chồng chơi bời, cờ bạc, phá của."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phu-the/song-hao/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "nếu gặp nhiều sao mờ ám xấu xa trai lấy vợ hoang"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "CoThan",
+          "QuaTu"
+        ]
+      },
+      "body": [
+        "Vợ chồng bất hòa hoặc phải xa nhau."
+      ],
+      "id": "phu-the/co-qua/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Vợ chồng bất hòa hay xa cách nhau"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Cưới xin dễ dàng. Trai lấy vợ đẹp nhưng thường lấy thêm vợ lẽ hoặc có nhân tình ở chỗ khác; gái lấy chồng tài hoa nhưng hay vướng rắc rối chuyện tình."
+      ],
+      "id": "phu-the/dao-hong/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cưới xin dễ dàng, trai lấy vợ đẹp nhưng thường lại lấy thêm vợ lẽ"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DaoHoa",
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Vợ chồng rất dễ bỏ nhau, hoặc một người mất một người còn."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phu-the/dao-hong/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Đào, Hồng gặp nhiều sao mờ ám xấu xa vợ chồng rất dễ bỏ nhau"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Vợ chồng thuận hòa, sống với nhau lâu bền."
+      ],
+      "condition_text": "gặp nhiều sao sáng sủa tốt đẹp",
+      "id": "phu-the/dau-quan/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao sáng sủa tốt đẹp: vợ chồng hòa thuận, chung sống lâu bền"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "DauQuan"
+        ]
+      },
+      "body": [
+        "Thường bị hình khắc, tai ương."
+      ],
+      "condition_text": "gặp nhiều sao mờ ám xấu xa",
+      "id": "phu-the/dau-quan/02",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Nhiều sao mờ ám xấu xa: thường bị hình khắc tai ương"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienRieu"
+        ]
+      },
+      "body": [
+        "Cả vợ lẫn chồng đều không đứng đắn và rất phóng đãng."
+      ],
+      "id": "phu-the/thien-rieu/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Cả hai vợ chồng đều bất chính và rất hoang đãng"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft"
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Nên lập gia đình muộn, hoặc đi xa mà kết hôn, thì may ra tránh khỏi hình khắc. Thường ít nhất cũng trải qua hai, ba lần buồn đau xa cách."
+      ],
+      "id": "phu-the/tuan-triet/01",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.34. Tuần, Triệt án ngữ",
+          "Nên muộn lập gia đình hay đi xa mà thành hôn phối"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "PhaQuan"
+        ]
+      },
+      "body": [
+        "Lập gia đình ba lần."
+      ],
+      "id": "phu-the/bo-sao/01",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.35. Phá Quân, Tuần, Triệt án ngữ",
+          "Ba lần lập gia đình"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "tuan_triet": "Either"
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Mai mối rất nhiều nhưng vẫn khó tìm được người kết hôn."
+      ],
+      "id": "phu-the/bo-sao/02",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.36. Cự, Hỏa, Linh",
+          "Mối lái rất nhiều nhưng vẫn khó tìm hôn phối"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "CuMon",
+            "HoaTinh",
+            "LinhTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "CuMon"
+        ]
+      },
+      "body": [
+        "Đàn bà lấy nhiều đời chồng và có nhiều con."
+      ],
+      "condition_text": "cung Mệnh có Cô, Quả, Kình, Đà, Linh; cung Tử Tức có Tràng Sinh",
+      "id": "phu-the/bo-sao/03",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Phu Quân có Cự, Kỵ - Mệnh có Cô, Qủa, Kình, Đà, Linh",
+          "Gái lấy nhiều chồng và có nhiều con"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "gender": "Female",
+          "with_transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThamLang"
+        ]
+      },
+      "body": [
+        "Chồng làm hại vợ, vợ làm hại chồng."
+      ],
+      "id": "phu-the/bo-sao/04",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.38. Tham, Sát Tinh",
+          "Trai hại vợ, gái hại chồng"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_any": [
+            "@LucSat"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThienTuong"
+        ]
+      },
+      "body": [
+        "Đàn ông có vợ đẹp, khá giả; đàn bà có chồng hiền lành, danh giá."
+      ],
+      "id": "phu-the/bo-sao/05",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "Thiên Tướng, Đào, Hồng đồng cung",
+          "Trai lấy vợ đẹp, khá giả, gái lấy chồng hiền, danh giá"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThienTuong",
+            "DaoHoa",
+            "HongLoan"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "ThamLang",
+          "DaLa"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ phóng đãng; gái lấy chồng mê rượu chè, sắc dục, chơi bời."
+      ],
+      "id": "phu-the/bo-sao/06",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Tham, Đà đồng cung",
+          "Trai lấy vợ hoang đãng, gái lấy chồng ham mê tửu sắc, chơi bời"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "ThamLang",
+            "DaLa"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Chồng giết vợ, vợ giết chồng."
+      ],
+      "id": "phu-the/bo-sao/07",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Death",
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "Sát, Đà, Riêu, Dưỡng, Linh, Hỏa",
+          "Trai giết vợ, gái giết chồng"
+        ],
+        "pages": [
+          215
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThatSat",
+            "DaLa",
+            "ThienRieu",
+            "Duong",
+            "LinhTinh",
+            "HoaTinh"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Vợ chồng làm hại nhau."
+      ],
+      "id": "phu-the/bo-sao/08",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.42. Kiếp, Kỵ",
+          "Vợ chồng hại nhau"
+        ],
+        "pages": [
+          215,
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DiaKiep"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Yêu nhau mà vẫn tìm cách lừa dối nhau: vợ lăng nhăng trăng hoa, chồng ngoại tình."
+      ],
+      "id": "phu-the/bo-sao/09",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.43. Kỵ, Đà, Hồng, Đào",
+          "Yêu nhau nhưng vẫn tìm cách lừa dối nhau"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaLa",
+            "HongLoan",
+            "DaoHoa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Trai lấy vợ dâm đãng, lăng loàn; gái lấy chồng chơi bời, ngoại tình nhiều."
+      ],
+      "correction": "Sách in \"loang toàng\", hiểu là lăng loàn, chữ sách dùng cho vợ ở các mục Thái Âm tr. 211 và Phá Quân tr. 213 cùng chương.",
+      "id": "phu-the/bo-sao/10",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.44. Kỵ, Riêu",
+          "Trai lấy vợ dâm đãng, loang toàng"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "ThienRieu"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Vợ chồng ghét nhau, tìm cách bôi nhọ nhau."
+      ],
+      "id": "phu-the/bo-sao/11",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.45. Kỵ, Phục cung chiếu",
+          "Vợ chồng ghét nhau, tìm cách bôi nhọ lẫn nhau"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "PhucBinh"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe",
+        "stars": [
+          "HongLoan"
+        ]
+      },
+      "body": [
+        "Trai lấy vợ có của."
+      ],
+      "correction": "Sách in \"cỏ của\", hiểu là có của. \"Lộc\" không ghi rõ nên hiểu là Lộc Tồn hoặc Hóa Lộc (D15); vì sách ghi \"đồng cung\" nên viết thành hai phương án đồng cung thay cho fact any_loc vốn khớp cả hội hợp.",
+      "id": "phu-the/bo-sao/12",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.46. Lộc, Hồng đồng cung",
+          "Trai lấy vợ cỏ của"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "HongLoan",
+            "LocTon"
+          ]
+        },
+        {
+          "with_all": [
+            "HongLoan"
+          ],
+          "with_transformations": [
+            "HoaLoc"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Trai lấy vợ rất giàu."
+      ],
+      "id": "phu-the/bo-sao/13",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.47. Lộc, Phượng, Long",
+          "Trai lấy vợ rất giàu"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "PhuongCac",
+            "LongTri"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Lấy nhau dễ dàng, thường gặp nhau ở nơi xa rồi nên vợ nên chồng; rất khá giả và thuận hòa."
+      ],
+      "id": "phu-the/bo-sao/14",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.48. Lộc, Mã, Thanh Long",
+          "Lấy nhau dễ dàng, thường gặp nhau ở xa mà nên duyên vợ chồng"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "any_loc": true,
+          "meets_all": [
+            "ThienMa",
+            "ThanhLong"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Đi lại với nhau, thường có con riêng rồi mới cưới."
+      ],
+      "id": "phu-the/bo-sao/15",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.49. Đào Hoa, Thai đồng cung hay xung chiếu",
+          "Vợ chồng hay đi lại, hay có con riêng rồi mới lấy nhau"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "with_all": [
+            "DaoHoa",
+            "Thai"
+          ]
+        },
+        {
+          "opposite_only": [
+            "Thai"
+          ],
+          "with_all": [
+            "DaoHoa"
+          ]
+        },
+        {
+          "opposite_only": [
+            "DaoHoa"
+          ],
+          "with_all": [
+            "Thai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Bỏ nhau vì chuyện loạn dâm hoặc ngoại tình."
+      ],
+      "correction": "Tiêu đề ghi \"Đào, Hồng, Cái\". Đào Hoa và Hoa Cái cùng an theo Chi năm sinh (Đào ở Dậu, Mão, Ngọ, Tý; Cái ở Thìn, Tuất, Sửu, Mùi theo cùng nhóm tam hợp), luôn cách nhau 5 cung, không đồng cung, không tam hợp, không xung chiếu: hai sao không bao giờ cùng hội hợp một cung. Hiểu là Hồng Loan gặp Đào Hoa hoặc Hoa Cái, như tiền lệ \"Cơ, Vũ\" ở quan-loc/bo-sao/14.",
+      "id": "phu-the/bo-sao/16",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.50. Đào, Hồng, Cái",
+          "Bỏ nhau vì những nguyên nhân loạn dâm hay ngoại tình"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan"
+          ],
+          "meets_any": [
+            "DaoHoa",
+            "HoaCai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Vừa bỏ nhau hoặc vừa góa đã có người tìm đến ngỏ ý muốn kết duyên."
+      ],
+      "id": "phu-the/bo-sao/17",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "FamilyLoss"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.51. Hồng, Đào, Kỵ",
+          "Vừa bỏ nhau hay vừa góa đã có người muốn lui tới"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "HongLoan",
+            "DaoHoa"
+          ],
+          "transformations": [
+            "HoaKy"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Trai lấy vợ không đứng đắn hoặc có ngoại tình; gái lấy chồng loạn dâm, nhiều vợ lẽ."
+      ],
+      "id": "phu-the/bo-sao/18",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.52. Đào, Riêu",
+          "Trai lấy vợ bất chính hay có ngoại tình"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "ThienRieu"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Trai lấy vợ rất dâm dật; gái lấy chồng phóng đãng."
+      ],
+      "id": "phu-the/bo-sao/19",
+      "section": "DaiCuong",
+      "sensitivity": [
+        "Sexuality"
+      ],
+      "source_ref": {
+        "keywords": [
+          "14.53. Mộc, Cái",
+          "Trai lấy vợ rất dâm dật, gái lấy chồng hoang đãng"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "MocDuc",
+            "HoaCai"
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": {
+        "role": "PhuThe"
+      },
+      "body": [
+        "Trai nhiều vợ nhưng vợ cả, vợ lẽ rất thuận hòa. Gái thường dễ lấy chồng mà cũng dễ bỏ chồng."
+      ],
+      "id": "phu-the/bo-sao/20",
+      "section": "DaiCuong",
+      "source_ref": {
+        "keywords": [
+          "14.54. Đào, Hồng, Tả, Hữu",
+          "Trai nhiều vợ, nhưng cả lẽ rất thuận hòa"
+        ],
+        "pages": [
+          216
+        ],
+        "source": "tan_bien",
+        "source_type": "paraphrase"
+      },
+      "status": "draft",
+      "when": [
+        {
+          "meets_all": [
+            "DaoHoa",
+            "HongLoan",
+            "TaPhu",
+            "HuuBat"
+          ]
+        }
+      ]
+    }
+  ]
+}
