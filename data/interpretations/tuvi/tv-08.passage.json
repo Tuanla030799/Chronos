@@ -24,7 +24,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -63,7 +63,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -97,7 +97,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -132,7 +132,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -168,7 +168,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -201,7 +201,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -234,7 +234,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -278,7 +278,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -317,7 +317,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -348,7 +348,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -389,7 +389,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -423,7 +423,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -461,7 +461,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -499,7 +499,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -538,7 +538,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -568,7 +568,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương thủ chiếu, cát tương phùng",
       "when": [
         {
@@ -601,7 +601,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương cư Ngọ vị, quan tư thanh hiển triều đình (ngọ thương Thiên Lương)",
       "when": [
         {
@@ -638,7 +638,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương cư Ngọ vị, quan tư thanh hiển triều đình (ngọ thương Thiên Lương)",
       "when": [
         {
@@ -680,7 +680,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương, Nhật, mão cung, Nhật xuất phù tang dung mạo phương viên",
       "when": [
         {
@@ -717,7 +717,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương, Thái Dương, Xương, Lộc hội lộ truyền đệ nhất danh",
       "when": [
         {
@@ -775,7 +775,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương, Thái Âm, khước tác phiêu bồng chi khách",
       "when": [
         {
@@ -825,7 +825,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương Tú, Âm, Linh, nghi tá đống lương chi khách",
       "when": [
         {
@@ -868,7 +868,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương, Đồng, Tỵ, Hợi, nam đa lãng đãng, nữ đa dâm",
       "when": [
         {
@@ -906,7 +906,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương, Đồng, Tỵ, Hợi, nam đa lãng đãng, nữ đa dâm",
       "when": [
         {
@@ -942,7 +942,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Ấm, Phúc tại Mệnh án ngữ, bất pha tai ương",
       "when": [
         {
@@ -977,7 +977,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương, Đồng, Cơ, Nguyệt, Dần, Thân vị nhất sinh lợi nghiệp thông minh",
       "when": [
         {
@@ -1019,7 +1019,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương, Văn Xương, cư Miếu, Vượng vị chi công khanh",
       "when": [
         {
@@ -1059,7 +1059,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Lương phùng Hao Sát tại cung đao nghiệp hình thương",
       "when": [
         {
@@ -1098,7 +1098,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương, Thiên Mã ví nhân phiêu đãng vô nghi",
       "when": [
         {
@@ -1147,7 +1147,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thiên Lương ngộ Mã, nữ Mệnh tiên nhi thả dâm",
       "when": [
         {
@@ -1196,7 +1196,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -1220,7 +1220,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1253,7 +1253,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -1289,7 +1289,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -1331,7 +1331,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1371,7 +1371,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1407,7 +1407,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1439,7 +1439,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -1479,7 +1479,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1526,7 +1526,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1562,7 +1562,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1599,7 +1599,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1633,7 +1633,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1675,7 +1675,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1710,7 +1710,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1749,7 +1749,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1787,7 +1787,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -1819,7 +1819,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát Dần, Thân, Tý, Ngọ nhất sinh tước lộc, vinh xương",
       "when": [
         {
@@ -1855,7 +1855,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
       "when": [
         {
@@ -1907,7 +1907,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
       "when": [
         {
@@ -1951,7 +1951,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Tử, Tốn cung, Đế huề bảo kiếm, Hỏa, Tuyệt nhập xâm, đa sát chi nhân hanh ngộ, Bật, Khoa, Mã, Ấn, Hồng, Sinh, di lập chiến công di đại tướng",
       "when": [
         {
@@ -1996,7 +1996,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát, Liêm Trinh đồng vị, lộ thượng mai thi",
       "when": [
         {
@@ -2034,7 +2034,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Liêm, Sửu, Mùi, Ất, Kỷ, Âm Nam, anh hùng trí dũng",
       "when": [
         {
@@ -2079,7 +2079,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Liêm, Sửu, Mùi, Ất, Kỷ, Âm Nam, anh hùng trí dũng",
       "when": [
         {
@@ -2142,7 +2142,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát, Phá Quân, nghi xuất ngoại, chư ban thủ nghệ bất năng tinh",
       "when": [
         {
@@ -2180,7 +2180,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Phá, Tham tại Nữ Mệnh nhi ngộ Văn Xương ư Tân Đinh tuế, sương phụ chi nhân",
       "when": [
         {
@@ -2241,7 +2241,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát trung phùng Tứ sát yêu đà bối khúc trận trung vong",
       "when": [
         {
@@ -2282,7 +2282,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Kình tại Ngọ, mã đầu đới kiếm tương giao sát diệu ư Bính Mậu nhân, mệnh nan toàn",
       "when": [
         {
@@ -2329,7 +2329,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát lâm Tuyệt địa hội Dương, Đà, Nhan Hồi yểu chiết",
       "when": [
         {
@@ -2405,7 +2405,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát, Hỏa, Dương bần thả tiện, đồ tể chi nhân",
       "when": [
         {
@@ -2443,7 +2443,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô",
       "when": [
         {
@@ -2492,7 +2492,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát cư Ly, Khảm nam nhân thê hiền đa hội mạc ngộ Kiếp, Riêu, ố phụ ái cô",
       "when": [
         {
@@ -2531,7 +2531,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "thân, nữ Mệnh ai oan trái hồng nhan nan tự chủ",
       "when": [
         {
@@ -2570,7 +2570,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Hình hội long thần định giáng",
       "when": [
         {
@@ -2602,7 +2602,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Sát, Hình tọa củng liêm trực vô tư",
       "when": [
         {
@@ -2637,7 +2637,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Thất Sát lâm, Thân chung thị yểu",
       "when": [
         {
@@ -2667,7 +2667,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft"
+      "status": "approved"
     },
     {
       "anchor": {
@@ -2691,7 +2691,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2724,7 +2724,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2755,7 +2755,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2787,7 +2787,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2820,7 +2820,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2857,7 +2857,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2905,7 +2905,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2944,7 +2944,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -2980,7 +2980,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3012,7 +3012,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "branches": [
@@ -3080,7 +3080,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3119,7 +3119,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3152,7 +3152,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3189,7 +3189,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3224,7 +3224,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3264,7 +3264,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3302,7 +3302,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "when": [
         {
           "brightness": [
@@ -3335,7 +3335,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân nhất diệu, tính nan minh",
       "when": [
         {
@@ -3373,7 +3373,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân, tý, Ngọ, gia quan tiến lộc",
       "when": [
         {
@@ -3409,7 +3409,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân Khảm, Ly, Cô thân độc ảnh",
       "when": [
         {
@@ -3443,7 +3443,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
       "when": [
         {
@@ -3481,7 +3481,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
       "when": [
         {
@@ -3517,7 +3517,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân, Tham Lang, phùng lộc, Mã nam đa lãng đãng, nữ đa dâm",
       "when": [
         {
@@ -3554,7 +3554,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá, Sát khủng phùng hỏa, Hao, mạc ngộ Việt, Hình lão hạn quy thân họa nghiệp lai",
       "when": [
         {
@@ -3594,7 +3594,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá, Sát khủng phùng hỏa, Hao, mạc ngộ Việt, Hình lão hạn quy thân họa nghiệp lai",
       "when": [
         {
@@ -3630,7 +3630,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá, Kình, Mão, Dậu, Nhi phùng Phụ, Bật, Khởi ngụy Hoàng Sào",
       "when": [
         {
@@ -3671,7 +3671,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân, Hỏa, Linh, bôn ba lao toái",
       "when": [
         {
@@ -3704,7 +3704,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Dần, Thân, Phá, Hỏa, Việt lâm ư, Tân, Đinh, Tuế cơ xảo tài hành",
       "when": [
         {
@@ -3745,7 +3745,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Dần, Thân, Phá, Hỏa, Việt lâm ư, Tân, Đinh, Tuế cơ xảo tài hành",
       "when": [
         {
@@ -3794,7 +3794,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
       "when": [
         {
@@ -3829,7 +3829,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
       "when": [
         {
@@ -3868,7 +3868,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá Quân Thìn, Tuất nhi ngộ Khoa, Tuần, cãi át vi lương ư hợp Mậu, qúy nhân, đa hoạnh dành tài",
       "when": [
         {
@@ -3910,7 +3910,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá tọa ly, ngôn ngữ thô bạo, phùng lộ, Dương nan giải xướng cuồng",
       "when": [
         {
@@ -3968,7 +3968,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá tọa ly, ngôn ngữ thô bạo, phùng lộ, Dương nan giải xướng cuồng",
       "when": [
         {
@@ -4028,7 +4028,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá cư Mộ, cương quả chi nhân, phùng thời loạn thế, phùng Hình, Lộc, chấn động uy danh",
       "when": [
         {
@@ -4064,7 +4064,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "verse": "Phá cư Mộ, cương quả chi nhân, phùng thời loạn thế, phùng Hình, Lộc, chấn động uy danh",
       "when": [
         {
