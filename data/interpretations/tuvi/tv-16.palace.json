@@ -15,7 +15,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "summary": "Cho biết việc giao thiệp bên ngoài và những may rủi có thể gặp khi rời khỏi nhà. Thiên Di xung chiếu cung Mệnh nên phải xét kỹ các sao tọa thủ ở đây."
     },
     {
@@ -28,7 +28,7 @@
       "source_ref": {
         "keywords": [
           "Xem cung Tật Ách để biết rõ những tì vết trong người",
-          "phải luận đoán сẩn thận ba cung Mệnh, Thân và Phúc Đức",
+          "phải luận đoán cẩn thận ba cung Mệnh, Thân và Phúc Đức",
           "tìm ngay những phúc"
         ],
         "pages": [
@@ -37,7 +37,7 @@
         "source": "tan_bien",
         "source_type": "paraphrase"
       },
-      "status": "draft",
+      "status": "approved",
       "summary": "Cho biết tì vết trên người, bệnh tật có thể mắc, tai ương trong cả đời và cả lúc chết."
     }
   ]
