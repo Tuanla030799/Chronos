@@ -5,7 +5,7 @@
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 > Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D19 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
-> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab; 27 test trên simulator đều qua.
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu; 34 test trên simulator đều qua.
 
 ## 1. Trạng thái
 
@@ -32,7 +32,7 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | Task 5B.1 xong: `apps/ios/`, tầng dịch vụ, khung 5 tab, `docs/IOS_APP_SPEC.md`; còn 5B.2–5B.5 (giao diện từng tab) |
+| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1 (dự án, tầng dịch vụ, khung 5 tab) và 5B.2 (tab Lịch, tab Xem tuổi, I1–I5) xong; còn 5B.3–5B.5 (Bát Tự, Tử Vi, Phong Thủy) |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
 
@@ -51,8 +51,9 @@
 - [x] Chốt điểm mở cuối cùng của phân hệ Tử Vi (`huynh-de/pha-quan/03`, TV-17)
 - [x] Nạp và duyệt 11 batch còn lại: AL-01 đến AL-04 (Trạch Nhật), BZ-01 đến BZ-04 (Bát Tự), FS-01 đến FS-03 (Phong Thủy); chốt D17–D19
 - [x] Liên kết `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode (Task 5B.1)
-- [ ] Task 5B.2–5B.5: giao diện chi tiết Lịch, Xem tuổi, Bát Tự, Tử Vi, Phong Thủy
-- [ ] Chốt I2 (bundle ID), I3 (Widget, App Group), I5 (nguồn quy tắc xung tuổi) ở `docs/IOS_APP_SPEC.md`
+- [x] Task 5B.2: chốt I1–I5; giao diện chi tiết tab Lịch và tab Xem tuổi
+- [ ] Task 5B.3–5B.5: giao diện chi tiết Bát Tự, Tử Vi, Phong Thủy
+- [ ] Widget lịch ngày theo I3; chốt cách Widget có Nên/Kỵ khi không nhúng SQLite
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -69,6 +70,16 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-11 — Task 5B.2: chốt I1–I5, Thái Tuế, tab Lịch và tab Xem tuổi
+
+- **I1–I5 đã chốt** ở mục 6 của `docs/IOS_APP_SPEC.md`: giữ `UserDefaults` và thêm hồ sơ mẫu (15/05/1990 09:30, Nam) cho lần mở đầu; giữ bundle ID; Widget không nhúng SQLite; xung tuổi theo năm là quan hệ với Thái Tuế.
+- **Thái Tuế trong `astro-core`** (`almanac.rs`): `enum TaiSui` (Trực, Xung, Hại, Hình, Phá, Lục Hợp, Tam Hợp), `tai_sui_relations`, `tai_sui`, `TaiSuiReading`, dùng `clash`, `harm`, `punishment`, `destruction`, `six_combination`, nhóm Tam Hợp có sẵn trong `canchi.rs`. Hình xét cả hai chiều, gồm tự hình. Trả mọi quan hệ cùng đúng. Đưa lên Swift (`taiSui`, `taiSuiName`, `taiSuiLuck`) và WASM (thêm kiểu TypeScript `TaiSui`, `TaiSuiReading`). 5 test core: từng quan hệ, trùng nhau, đối xứng và số cặp (12; Hình 18; Tam Hợp 24), năm âm.
+- **Tab Lịch:** lưới tháng (ngày dương, ngày âm, chấm Hoàng/Hắc Đạo, vuốt đổi tháng), tờ lịch ngày, 12 giờ Hoàng Đạo, Nên/Kỵ theo từng nguồn, Trực/Tú/thần/Thần Sát/ngày kỵ chạm mở sheet giải nghĩa.
+- **Tab Xem tuổi:** chọn năm, thẻ người xem, bốn ô Tam Tai/Kim Lâu/Hoang Ốc/Thái Tuế, vòng Hoang Ốc 6 cung, thẻ Thái Tuế, lời giải từ SQLite.
+- **Simulator:** Xcode 27.2 ở máy này không có `Simulator.app` (`open -a Simulator` báo không tìm thấy); cửa sổ thiết bị là `DeviceHub.app` trong Xcode. Thêm tham số `-ChronosInitialTab N` để mở thẳng một tab khi chụp màn hình. Đã chụp và xem cả 5 tab với hồ sơ mẫu.
+- **Sửa trong lúc làm:** lưới tháng và lưới giờ dùng `LazyVGrid` khiến tab Lịch mở ra bị cuộn xuống giữa; đổi sang bố cục thường thì mở đúng đầu trang. Hai kỳ vọng sai trong test Thái Tuế của chính tôi (Ngọ tự hình; Sửu–Tuất không Phá) đã sửa theo bảng của core.
+- **Kiểm chứng:** `cargo test --workspace` qua (293 core, 70 astro-data, 17 repository_data, 26 FFI); `wasm-pack test --node` 30 test qua; `cargo clippy --workspace --all-targets -- -D warnings` và `cargo fmt --check` sạch. 34 test Swift trên iPhone 17 simulator qua, build không cảnh báo.
 
 ### 2026-11-10 — Task 5B.1: dự án iOS, tầng dịch vụ, khung 5 tab
 
@@ -405,6 +416,7 @@
 | Phân tích lá số | `analyze_bazi(birth, &options, gender)` | `analyzeBazi(birth:options:gender:)` | `analyzeBazi(birth, options, gender)` |
 | Xem ngày | `almanac_day(date, tz_offset)` | `almanacDay(date:tzOffset:)` | `almanacDay(date, tz_offset?)` |
 | Hạn tuổi | `age_restrictions(birth_year, target_year)` | `ageRestrictions(birthLunarYear:targetLunarYear:)` | `ageRestrictions(birth_lunar_year, target_lunar_year)` |
+| Thái Tuế | `almanac::tai_sui(birth_year, target_year)`, `tai_sui_relations(birth, year)` | `taiSui(birthLunarYear:targetLunarYear:)`, `taiSuiName`, `taiSuiLuck` | `taiSui(birth_lunar_year, target_lunar_year)`, `taiSuiName`, `taiSuiLuck` |
 | Mệnh Quái | `kua_info(birth_lunar_year, gender)` | `kuaInfo(birthLunarYear:gender:)` | `kuaInfo(birth_lunar_year, gender)` |
 | Trạch Quái | `house_trigram(sitting)`, `house_trigram_from_facing(facing)` | `houseTrigram(sitting:)`, `houseTrigramFromFacing(facing:)` | `houseTrigram(sitting)`, `houseTrigramFromFacing(facing)` |
 | Tra sao Bát Trạch | `Trigram::star_towards(other)`, `star_at(direction)`, `chart()` | `starTowards(trigram:other:)`, `starAt(trigram:direction:)`, `eightMansionsChart(trigram:)` | `starTowards(trigram, other)`, `starAt(trigram, direction)`, `eightMansionsChart(trigram)` |
@@ -430,7 +442,7 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 288 test core + 70 astro-data + 17 repository_data + 26 FFI
+cargo test --workspace                                  # 293 test core + 70 astro-data + 17 repository_data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
@@ -441,7 +453,7 @@ cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 27 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 34 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

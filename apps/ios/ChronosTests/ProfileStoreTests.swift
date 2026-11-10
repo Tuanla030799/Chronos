@@ -23,7 +23,7 @@ struct ProfileStoreTests {
 
     @Test func theFirstProfileBecomesTheSelection() {
         withDefaults { defaults in
-            let store = ProfileStore(defaults: defaults)
+            let store = ProfileStore(defaults: defaults, seed: nil)
             #expect(store.selected == nil)
             let lan = person("Lan")
             store.save(lan)
@@ -35,14 +35,14 @@ struct ProfileStoreTests {
 
     @Test func profilesAndSelectionSurviveARelaunch() {
         withDefaults { defaults in
-            let store = ProfileStore(defaults: defaults)
+            let store = ProfileStore(defaults: defaults, seed: nil)
             let lan = person("Lan", kind: .lunar)
             let hoa = person("Hoa")
             store.save(lan)
             store.save(hoa)
             store.select(hoa.id)
 
-            let reopened = ProfileStore(defaults: defaults)
+            let reopened = ProfileStore(defaults: defaults, seed: nil)
             #expect(reopened.profiles == [lan, hoa])
             #expect(reopened.selected == hoa)
         }
@@ -50,7 +50,7 @@ struct ProfileStoreTests {
 
     @Test func savingAnExistingIdReplacesIt() {
         withDefaults { defaults in
-            let store = ProfileStore(defaults: defaults)
+            let store = ProfileStore(defaults: defaults, seed: nil)
             var lan = person("Lan")
             store.save(lan)
             lan.name = "Lan Anh"
@@ -61,7 +61,7 @@ struct ProfileStoreTests {
 
     @Test func deletingTheSelectionFallsBackToTheFirstProfile() {
         withDefaults { defaults in
-            let store = ProfileStore(defaults: defaults)
+            let store = ProfileStore(defaults: defaults, seed: nil)
             let lan = person("Lan")
             let hoa = person("Hoa")
             store.save(lan)
@@ -70,17 +70,28 @@ struct ProfileStoreTests {
             #expect(store.selected == hoa)
             store.delete([hoa.id])
             #expect(store.selected == nil)
-            #expect(ProfileStore(defaults: defaults).profiles.isEmpty)
+            #expect(ProfileStore(defaults: defaults, seed: nil).profiles.isEmpty)
         }
     }
 
     @Test func selectingAnUnknownIdChangesNothing() {
         withDefaults { defaults in
-            let store = ProfileStore(defaults: defaults)
+            let store = ProfileStore(defaults: defaults, seed: nil)
             let lan = person("Lan")
             store.save(lan)
             store.select(UUID())
             #expect(store.selected == lan)
+        }
+    }
+
+    @Test func aFirstLaunchSavesTheSampleProfileOnce() {
+        withDefaults { defaults in
+            let store = ProfileStore(defaults: defaults)
+            #expect(store.profiles == [.sample])
+            #expect(store.selected == .sample)
+            #expect(Profile.sample.birth == BirthDate(kind: .solar, year: 1990, month: 5, day: 15, hour: 9, minute: 30))
+            store.delete([Profile.sample.id])
+            #expect(ProfileStore(defaults: defaults).profiles.isEmpty)
         }
     }
 }

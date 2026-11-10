@@ -108,6 +108,17 @@ struct EngineService: Sendable {
         )
     }
 
+    /// Decision I5: the person's relation to the Thái Tuế of `targetLunarYear`.
+    func taiSui(for profile: Profile, targetLunarYear: Int32) throws -> TaiSuiReading {
+        Chronos.taiSui(birthLunarYear: try lunarBirthDate(of: profile).year, targetLunarYear: targetLunarYear)
+    }
+
+    /// Can Chi of a lunar year, read on its first day.
+    func yearCanChi(lunarYear: Int32) throws -> CanChi {
+        let newYear = try lunarToSolar(date: LunarDate(year: lunarYear, month: 1, day: 1, isLeapMonth: false), tzOffset: tzOffset)
+        return try day(newYear).yearCanChi
+    }
+
     func kua(for profile: Profile) throws -> KuaInfo {
         kuaInfo(birthLunarYear: try lunarBirthDate(of: profile).year, gender: profile.gender.engineValue)
     }

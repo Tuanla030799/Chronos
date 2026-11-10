@@ -1,6 +1,6 @@
 # Đặc tả ứng dụng iOS (IOS_APP_SPEC)
 
-> Giai đoạn 5B. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Giao diện chi tiết từng tab làm ở 5B.2–5B.5.
+> Giai đoạn 5B. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Task 5B.2 chốt I1–I5, hoàn thiện tab Lịch và tab Xem tuổi. Các tab còn lại làm ở 5B.3–5B.5.
 
 ## 1. Dự án Xcode
 
@@ -9,7 +9,7 @@
 | Vị trí | `apps/ios/Chronos.xcodeproj`, mã nguồn ở `apps/ios/Chronos/`, test ở `apps/ios/ChronosTests/` |
 | Hệ điều hành | iOS 17.0 trở lên, chỉ iPhone, khóa dọc |
 | Ngôn ngữ | Swift 6 (kiểm tra đồng thời đầy đủ), SwiftUI, Observation (`@Observable`) |
-| Bundle ID | `com.leanhtuan.chronos`, test `com.leanhtuan.chronos.tests` (I2) |
+| Bundle ID | `com.leanhtuan.chronos`, test `com.leanhtuan.chronos.tests` (I2, đã duyệt) |
 | Scheme | `Chronos` (dùng chung, có trong git), gồm cả target test |
 | Simulator | Chỉ arm64: `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64`, khớp với `build-ios.sh` |
 
@@ -34,6 +34,16 @@ cargo run -p astro-data -- build --release
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
   -destination 'platform=iOS Simulator,name=iPhone 17' test
 ```
+
+**Xem trên simulator.** Xcode 27.2 trên máy này không có `Simulator.app` nên `open -a Simulator` báo không tìm thấy; cửa sổ thiết bị ảo nằm trong `DeviceHub.app` (`/Applications/Xcode-27.2.0.app/Contents/Applications/DeviceHub.app`). Chạy từ Xcode (⌘R) hoặc:
+
+```bash
+open /Applications/Xcode-27.2.0.app/Contents/Applications/DeviceHub.app
+xcrun simctl launch booted com.leanhtuan.chronos -ChronosInitialTab 3   # mở thẳng tab Tử Vi
+xcrun simctl io booted screenshot man-hinh.png
+```
+
+`-ChronosInitialTab N` (0 Lịch … 4 Phong Thủy) chỉ chọn tab lúc mở app; sau đó đổi tab bình thường.
 
 ## 2. Kiến trúc
 
@@ -94,6 +104,7 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 - `@MainActor @Observable`, đặt vào môi trường SwiftUI ở `ChronosApp`; mọi tab đọc `store.selected`.
 - `Profile`: họ tên, giới tính, `BirthDate` (dương hoặc âm lịch, tháng nhuận, giờ phút), `tzOffset`, `longitude` (nil = giờ đồng hồ).
 - Lưu JSON ở `UserDefaults` khóa `chronos.profiles.v1` (I1). Hồ sơ đầu tiên tự được chọn; xóa hồ sơ đang chọn thì chọn hồ sơ đầu còn lại.
+- **Hồ sơ mẫu (I1):** lần mở app đầu tiên, khi khóa trên chưa từng có, lưu `Profile.sample`: "Hồ sơ mẫu", Nam, 15/05/1990 09:30 dương lịch, GMT+7. Đã lưu gì rồi, kể cả danh sách rỗng sau khi người dùng xóa hết, thì không thêm lại.
 
 ## 3. Điều hướng
 
@@ -101,13 +112,30 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 
 | Tab | Đã có ở 5B.1 | Việc của bước sau |
 | :-- | :-- | :-- |
-| Lịch Vạn Niên (`CalendarTab`) | Chọn ngày; ngày âm, Can Chi năm/tháng/ngày, tiết khí, Giờ Hoàng Đạo, Trực/Sao/Thần/ngày kỵ kèm Nên/Kỵ | 5B.2: lưới tháng, ô ngày, Widget |
-| Xem tuổi (`AlmanacTab`) | Tuổi mụ, Tam Tai, Kim Lâu, Hoang Ốc theo năm âm chọn | 5B.3: lọc ngày theo việc, xung tuổi (I5) |
+| Lịch Vạn Niên (`CalendarTab`) | **5B.2 xong**, mục 3.1 | Widget lịch ngày (I3) |
+| Xem tuổi (`AlmanacTab`) | **5B.2 xong**, mục 3.2 | Lọc ngày theo việc |
 | Bát Tự (`BaziTab`) | Bàn Tứ Trụ (Thập Thần, Can, Chi, Nạp Âm, Trường Sinh), các mục luận giải | 5B.3: Tàng Can, Đại Vận, Thần Sát theo trụ |
 | Tử Vi (`TuViTab`) | Địa Bàn 12 cung quanh Thiên Bàn; chạm cung mở sheet: sao, đoạn Primary theo section, "Xem thêm" cho đoạn More, mục tra cứu | 5B.4: vẽ đủ phụ tinh, Đại Hạn, Tiểu Hạn |
 | Phong Thủy (`FengShuiTab`) | Mệnh Quái, 8 hướng Bát Trạch, tương hợp với hồ sơ khác, Cửu Tinh năm/tháng/ngày/giờ theo trạng thái vận | 5B.5: bàn Cửu Cung, Trạch Quái theo hướng nhà |
 
 Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ. Lỗi engine hiện ngay trong tab, không làm app dừng.
+
+### 3.1. Tab Lịch
+
+- **Lưới tháng:** tuần bắt đầu thứ Hai, Chủ Nhật màu Chu Sa. Mỗi ô có ngày dương, ngày âm nhỏ bên dưới (mùng 1 ghi cả tháng, `n` cho tháng nhuận), chấm Kim là ngày Hoàng Đạo, chấm Chu Sa là Hắc Đạo (`pathGodIsHoangDao`). Hôm nay có viền, ngày chọn tô đặc. Đổi tháng bằng hai mũi tên hoặc vuốt ngang, có hiệu ứng trượt; giữ nguyên ngày trong tháng nếu tháng mới có ngày đó. Nút "Hôm nay" hiện khi đã chọn ngày khác.
+- **Tờ lịch ngày:** ngày dương cỡ lớn kiểu chữ có chân, thứ, ngày âm và năm Can Chi, ba cột Can Chi Năm/Tháng/Ngày, nhãn Hoàng Đạo hoặc Hắc Đạo kèm tên thần trực nhật, tiết khí (ghi "giao tiết" ngày bắt đầu tiết).
+- **Giờ Hoàng Đạo:** đủ 12 canh giờ với khung giờ (Tý 23–01 …), giờ Hoàng Đạo có biểu tượng mặt trời và nền Kim.
+- **Việc nên làm, kiêng kỵ:** theo từng nguồn (Trực, Tú, thần, ngày kỵ) như dữ liệu ghi, nhãn lấy từ `activities.json`. Không gộp hay tự loại trừ giữa các nguồn: khi Trực nói nên mà một thần nói kỵ, cả hai cùng hiện.
+- **Trực, Nhị Thập Bát Tú, Thần trực nhật, Thần Sát, Ngày kỵ dân gian:** mỗi mục một dòng có chấm Cát/Hung và câu tóm tắt; chạm mở sheet đọc đủ văn bản từ `ContentRepository`.
+
+### 3.2. Tab Xem tuổi
+
+- Chọn năm âm lịch bằng hai mũi tên (mặc định năm nay, có nút "Năm nay"), hiện Can Chi của năm. Hồ sơ chọn ở menu góc phải.
+- Thẻ người xem: chữ đầu của chi năm sinh, họ tên, tuổi Can Chi theo năm âm sinh, tuổi mụ.
+- Bốn ô tổng quan: Tam Tai, Kim Lâu, Hoang Ốc, Thái Tuế. Phạm hạn thì chữ Chu Sa; "không phạm" để màu trung tính, không ghi là Cát.
+- **Vòng Hoang Ốc:** 6 cung trên một vòng tròn theo thứ tự 1–6, màu theo `hoangOcLuck`, cung của tuổi năm đó tô đặc; giữa vòng là tuổi mụ. Dưới 10 tuổi thì không vẽ vòng.
+- **Thái Tuế (I5):** chi năm sinh và chi của năm, các quan hệ dạng nhãn Kim (Hợp) hoặc Chu Sa (còn lại).
+- **Lời giải:** các mục `almanac.restriction`, `tam_tai`, `kim_lau`, `hoang_oc` của hạn đang có, từ SQLite.
 
 ## 4. Bảng màu
 
@@ -135,20 +163,37 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 27 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 34 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
 - **EngineService.** Ngày dân sự GMT+7 qua nửa đêm UTC; mùng 1 Tết Giáp Thìn ra 10/02/2024; sinh trước Tết thuộc năm âm trước; tháng nhuận không có bị từ chối; hồ sơ âm lịch ra cùng lá số với `tuviChartFromLunar`; kinh độ bật giờ Mặt Trời thực.
-- **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng.
+- **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng; hồ sơ mẫu chỉ được thêm ở lần đầu.
+- **Lưới tháng, Thái Tuế.** Tháng 11/2026 có 6 ô trống trước Chủ Nhật mùng 1; mỗi ô tháng 2/2024 khớp `almanacDay` (Tết là "1/1"); cộng trừ tháng qua năm; hồ sơ mẫu năm 2026 là Trực và Hình Thái Tuế; Thái Tuế dùng năm âm sinh.
 - **Tốc độ** (Debug, simulator): 1.000 lần đọc mục mất 21 ms, khoảng 21 µs mỗi lần; đọc đủ 12 cung một lá số mất 56 ms.
 
 ## 6. Quyết định và việc mở
 
 | Mã | Nội dung | Trạng thái |
 | :-- | :-- | :-- |
-| I1 | Hồ sơ lưu ở `UserDefaults` thay vì SwiftData: dữ liệu nhỏ, một mảng; Widget đọc được qua App Group suite mà không cần chung model container | Đã chọn ở 5B.1, chủ dự án xem lại |
-| I2 | Bundle ID `com.leanhtuan.chronos` đặt theo tên trong git; cần đổi nếu tài khoản Apple Developer dùng tiền tố khác | Chờ xác nhận |
-| I3 | Widget và App Group (mục 2.5 của `INTERPRETATION_DB_SPEC.md`): SQLite thuộc cả hai target hay đặt ở App Group | Chốt ở 5B.2 |
+| I1 | Hồ sơ lưu JSON ở `UserDefaults`, không dùng SwiftData. Lần mở đầu tiên có sẵn hồ sơ mẫu 15/05/1990 09:30, Nam (mục 2.3) | **Đã duyệt** 2026-11-11 |
+| I2 | Bundle ID `com.leanhtuan.chronos` | **Đã duyệt** 2026-11-11 |
+| I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `activities.json` (thuộc cả target App và Widget). **Không** nhúng `chronos_content.sqlite` vào Widget, để giữ bộ nhớ Widget dưới giới hạn của iOS. Hệ quả: Widget hiện được những gì engine tính (ngày âm, Can Chi, tiết khí, Trực, Tú, thần trực nhật, Hoàng/Hắc Đạo, giờ Hoàng Đạo, Thần Sát, ngày kỵ). Danh sách Nên/Kỵ (`good_for`, `avoid`) chỉ nằm trong SQLite, nên `activities.json` (chỉ là nhãn) chưa giúp Widget hiện Nên/Kỵ; cần chốt thêm khi dựng Widget | **Đã duyệt** 2026-11-11; làm khi dựng Widget |
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |
-| I5 | "Xung tuổi theo năm" chưa có hàm engine, khóa hay dữ liệu luận giải. Cần quy tắc từ nguồn đã duyệt trước khi làm, không tự đặt | Chờ nguồn, trước 5B.3 |
+| I5 | Xung tuổi theo năm = quan hệ của chi năm sinh với Thái Tuế (chi của năm đang xét), tính bằng phép Địa Chi có sẵn trong core, không thêm văn bản vào SQLite. Mục 6.1 | **Đã duyệt** 2026-11-11; làm ở 5B.2 |
+
+### 6.1. Thái Tuế (I5)
+
+`astro_core::almanac::tai_sui(birth_lunar_year, target_lunar_year)` trả `TaiSuiReading { birth_branch, year_branch, relations }`; Swift `taiSui(birthLunarYear:targetLunarYear:)`, JS `taiSui(...)`, kèm `taiSuiName`, `taiSuiLuck`. Năm sinh là năm âm lịch (sinh trước Tết thuộc năm trước), như Tam Tai.
+
+| `TaiSui` | Tên | Điều kiện (chi sinh `b`, chi năm `y`) | Cát/Hung |
+| :-- | :-- | :-- | :-- |
+| `Truc` | Trực Thái Tuế (năm tuổi) | `b = y` | Hung |
+| `Xung` | Xung Thái Tuế | `b.clash() = y` (Lục Xung) | Hung |
+| `Hai` | Hại Thái Tuế | `b.harm() = y` (Lục Hại) | Hung |
+| `Hinh` | Hình Thái Tuế | `b.punishment() = y` hoặc `y.punishment() = b`, gồm tự hình Thìn, Ngọ, Dậu, Hợi | Hung |
+| `Pha` | Phá Thái Tuế | `b.destruction() = y` (Lục Phá) | Hung |
+| `LucHop` | Hợp Thái Tuế (Lục Hợp) | `b.six_combination() = y` | Cát |
+| `TamHop` | Hợp Thái Tuế (Tam Hợp) | cùng nhóm Tam Hợp, `b ≠ y` | Cát |
+
+Nhiều quan hệ có thể cùng đúng và đều được trả về, theo thứ tự bảng: Dần gặp năm Hợi là Phá và Lục Hợp; Tỵ gặp năm Thân là Hình, Phá, Lục Hợp; người tuổi Ngọ năm Ngọ là Trực và Hình (Ngọ tự hình). App hiện tất cả, không tự chọn một. Cát/Hung theo chỉ định của chủ dự án: chỉ hai loại Hợp là Cát.

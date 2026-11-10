@@ -18,10 +18,20 @@ final class ProfileStore {
         var selectedID: Profile.ID?
     }
 
-    init(defaults: UserDefaults = .standard) {
+    /// `seed` is saved on the very first launch only, so every tab has a chart to show. Once
+    /// anything is stored, even an empty list after the user deleted everything, it is not
+    /// added again.
+    init(defaults: UserDefaults = .standard, seed: Profile? = .sample) {
         self.defaults = defaults
-        let stored = defaults.data(forKey: Self.storageKey)
-            .flatMap { try? JSONDecoder().decode(Stored.self, from: $0) }
+        guard let data = defaults.data(forKey: Self.storageKey) else {
+            profiles = seed.map { [$0] } ?? []
+            selectedID = seed?.id
+            if seed != nil {
+                persist()
+            }
+            return
+        }
+        let stored = try? JSONDecoder().decode(Stored.self, from: data)
         profiles = stored?.profiles ?? []
         selectedID = stored?.selectedID ?? stored?.profiles.first?.id
     }
