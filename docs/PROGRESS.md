@@ -1,11 +1,11 @@
 # Tiến trình dự án — Viet Astro Engine (Chronos)
 
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
-> Cập nhật lần cuối: **2026-11-10**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Cập nhật lần cuối: **2026-11-11**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 > Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D19 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
-> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu; 34 test trên simulator đều qua.
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không; 50 test trên simulator đều qua.
 
 ## 1. Trạng thái
 
@@ -32,7 +32,7 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.2 xong (776d94b, 35a5893); còn 5B.3–5B.5 (Bát Tự, Tử Vi, Phong Thủy) |
+| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.3 xong (tab Lịch, Xem tuổi, Bát Tự, Phong Thủy); còn 5B.4 (Tử Vi) và Widget |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `776d94b`, `35a5893` trên `origin/develop` (GitHub, qua SSH; Task 5B.2) |
 
@@ -52,8 +52,9 @@
 - [x] Nạp và duyệt 11 batch còn lại: AL-01 đến AL-04 (Trạch Nhật), BZ-01 đến BZ-04 (Bát Tự), FS-01 đến FS-03 (Phong Thủy); chốt D17–D19
 - [x] Liên kết `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode (Task 5B.1)
 - [x] Task 5B.2: chốt I1–I5; giao diện chi tiết tab Lịch và tab Xem tuổi
-- [ ] Task 5B.3–5B.5: giao diện chi tiết Bát Tự, Tử Vi, Phong Thủy
-- [ ] Widget lịch ngày theo I3; chốt cách Widget có Nên/Kỵ khi không nhúng SQLite
+- [x] Task 5B.3: giao diện chi tiết Bát Tự và Phong Thủy; chốt I3 (Widget không hiện Nên/Kỵ), I5
+- [ ] Task 5B.4: giao diện chi tiết Tử Vi (phụ tinh, Đại Hạn, Tiểu Hạn, nền giấy cho sheet cung)
+- [ ] Widget lịch ngày theo I3 (không có Nên/Kỵ)
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -70,6 +71,17 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-11 — Task 5B.3: tab Bát Tự và tab Phong Thủy
+
+- **Chốt I3, I5:** Widget không hiện Nên/Kỵ (chỉ ngày dương/âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao, giờ Hoàng Đạo từ xcframework, không nhúng SQLite). I5 giữ nguyên thiết kế đã làm (Hình hai chiều gồm tự hình, trả mọi quan hệ).
+- **Thêm vào core, Swift và WASM** để app không tự ghép khóa hay chép bảng: `bazi_day_master_key`, `bazi_na_yin_key`, `bazi_ten_god_key`, `bazi_life_stage_key`, `bazi_shen_sha_key`, `bazi_khong_vong_key`, `bazi_khoi_canh_key` (`bazi_keys` viết lại trên các hàm này, thêm test), `stem_element`, `branch_element`, `na_yin_element`, `eight_use_name`. Build lại XCFramework.
+- **Tab Bát Tự:** nền giấy Dó thay cho `List` trắng. Đầu trang đổi hồ sơ, chọn ranh giới năm/tháng (Tiết khí hoặc mùng 1 âm lịch) và quy ước giờ Tý, giữ qua các lần mở app. Thẻ Nhật Chủ và Bản mệnh Nạp Âm. Bảng Tứ Trụ 4 cột, màu Ngũ Hành đi kèm tên: Thập Thần, Can, Chi, Tàng Can (Bản, Trung, Dư khí), Trường Sinh, Nạp Âm, Thần Sát; mọi ô chạm mở văn bản. Không Vong theo Ngày và theo Năm, Khôi Canh. Đại Vận: tuổi khởi vận, hàng cuộn ngang 10 bước, bước hiện tại nổi bật và tự cuộn vào giữa.
+- **Tab Phong Thủy:** Mệnh Quái; bốn hướng tốt và bốn hướng xấu, chạm mở sao với bốn ứng dụng (nhà, bếp, bàn, kết hôn); tương hợp Bát Biến với hồ sơ khác hoặc nhập nhanh năm sinh âm lịch; bàn Cửu Cung 3×3 chọn thời điểm, chọn bàn Năm/Tháng/Ngày/Giờ, mỗi ô có hướng, số sao, Ngũ Hành, trạng thái vận, chạm mở luận giải theo trạng thái. Bàn không cần hồ sơ.
+- **Màu Ngũ Hành:** năm màu mới, đo tương phản ≥ 4,5:1 cả trên nền pha 12%; `hoa` sáng phải đậm từ `#A8481A` xuống `#9C4116` (4,20:1 → 4,71:1). `EntrySheet` đổi sang nền giấy.
+- **Sửa trong lúc làm:** `baziKeys` không liệt kê Thập Thần của Tàng Can nên một số ô Tàng Can không chạm được; `BaziReading.entry` đọc thẳng kho khi thiếu khóa. Các ô cùng hàng của bảng Tứ Trụ lệch chiều cao; nay bằng nhau. Nhãn "Thời điểm" ở bàn Cửu Cung bị xuống dòng; đổi thành "Lúc". Cảnh báo cô lập actor của `qiName`.
+- **Chưa làm:** `TuViTab` còn dùng `List` nên sheet cung vẫn nền trắng mặc định (5B.4). Không Vong chỉ đánh dấu trụ trùng chi trống, chưa luận đoán.
+- **Kiểm chứng:** `cargo test --workspace` qua (294 core, 70 astro-data, 17 repository_data, 26 FFI); `wasm-pack test --node` 31 test qua; clippy `-D warnings`, `fmt --check` sạch. 50 test Swift trên iPhone 17 simulator qua, không cảnh báo. Đã chụp cả hai tab ở chế độ sáng và tối, cả sheet sao Bát Du Niên và sheet sao Cửu Cung.
 
 ### 2026-11-11 — Task 5B.2: chốt I1–I5, Thái Tuế, tab Lịch và tab Xem tuổi
 
@@ -427,7 +439,7 @@
 | Bàn Cửu Cung | `generate_loshu_grid(center_star, forward)`, `LoShuGrid::star_at`, `rows` | `generateLoshuGrid(centerStar:forward:)`, `loShuStarAt(grid:palace:)`, `loShuRows(grid:)` | `generateLoshuGrid(center_star, forward?)`, `loShuStarAt(grid, palace)`, `loShuRows(grid)` |
 | Lá số Tử Vi | `tuvi_chart(birth, gender, &config)`, `tuvi_chart_from_lunar(lunar, hour, gender, &config)` | `tuviChart(birth:gender:config:)`, `tuviChartFromLunar(lunar:hour:gender:config:)` | `tuviChart(birth, gender, options?)`, `tuviChartFromLunar(lunar, hour, gender, options?)` |
 | Hạn theo tuổi | `TuViChart::dai_han_palace(age)`, `tieu_han_palace(age)` | `tuviDaiHanPalace(chart:age:)`, `tuviTieuHanPalace(chart:age:)` | `tuviDaiHanPalace(chart, age)`, `tuviTieuHanPalace(chart, age)` |
-| Khóa luận giải | `almanac_day_keys`, `age_restriction_keys`, `bazi_keys`, `kua_key`, `kua_compatibility_keys`, `eight_star_key`, `eight_star_use_key`, `nine_star_key` | Cùng tên camelCase | Cùng tên camelCase |
+| Khóa luận giải | `almanac_day_keys`, `age_restriction_keys`, `bazi_keys`, `bazi_day_master_key`, `bazi_na_yin_key`, `bazi_ten_god_key`, `bazi_life_stage_key`, `bazi_shen_sha_key`, `bazi_khong_vong_key`, `bazi_khoi_canh_key`, `kua_key`, `kua_compatibility_keys`, `eight_star_key`, `eight_star_use_key`, `nine_star_key` | Cùng tên camelCase | Cùng tên camelCase |
 | Chọn đoạn Tử Vi | `tuvi_palace_query(&chart, branch)`, `gate_matches(&gates, &facts)` | `tuviPalaceQuery(chart:branch:)`, `gateMatches(gates:facts:)` | `tuviPalaceQuery(chart, branch)`, `gateMatches(gates, facts)` |
 | Trạng thái Cửu Tinh | `NineStar::phase_in(period)`, `NineStarPhase::name_vi`, `is_auspicious` | `nineStarPhase(star:period:)`, `nineStarPhaseName`, `nineStarPhaseIsAuspicious` | Cùng tên |
 | Thuộc tính sao | `TuViStar::name_vi`, `category`, `nature`, `brightness_at`; `FourTransformations::star_for` | `tuviStarName`, `tuviStarCategory`, `tuviStarNature`, `tuviStarBrightness`, `fourTransformationStar` | Cùng tên với Swift |
@@ -442,18 +454,18 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 293 test core + 70 astro-data + 17 repository_data + 26 FFI
+cargo test --workspace                                  # 294 test core + 70 astro-data + 17 repository_data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
-wasm-pack test --node crates/astro-wasm                 # 30 test
+wasm-pack test --node crates/astro-wasm                 # 31 test
 ./build-ios.sh                                          # cần Xcode
 cargo run -p astro-data -- validate                     # kiểm dữ liệu luận giải
 cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 34 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 50 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

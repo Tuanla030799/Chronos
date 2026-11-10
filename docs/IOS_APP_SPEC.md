@@ -114,9 +114,9 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 | :-- | :-- | :-- |
 | Lịch Vạn Niên (`CalendarTab`) | **5B.2 xong**, mục 3.1 | Widget lịch ngày (I3) |
 | Xem tuổi (`AlmanacTab`) | **5B.2 xong**, mục 3.2 | Lọc ngày theo việc |
-| Bát Tự (`BaziTab`) | Bàn Tứ Trụ (Thập Thần, Can, Chi, Nạp Âm, Trường Sinh), các mục luận giải | 5B.3: Tàng Can, Đại Vận, Thần Sát theo trụ |
-| Tử Vi (`TuViTab`) | Địa Bàn 12 cung quanh Thiên Bàn; chạm cung mở sheet: sao, đoạn Primary theo section, "Xem thêm" cho đoạn More, mục tra cứu | 5B.4: vẽ đủ phụ tinh, Đại Hạn, Tiểu Hạn |
-| Phong Thủy (`FengShuiTab`) | Mệnh Quái, 8 hướng Bát Trạch, tương hợp với hồ sơ khác, Cửu Tinh năm/tháng/ngày/giờ theo trạng thái vận | 5B.5: bàn Cửu Cung, Trạch Quái theo hướng nhà |
+| Bát Tự (`BaziTab`) | **5B.3 xong**, mục 3.3 | Đại Vận chi tiết (Thập Thần của vận), Lưu Niên |
+| Tử Vi (`TuViTab`) | Địa Bàn 12 cung quanh Thiên Bàn; chạm cung mở sheet: sao, đoạn Primary theo section, "Xem thêm" cho đoạn More, mục tra cứu | 5B.4: vẽ đủ phụ tinh, Đại Hạn, Tiểu Hạn, nền giấy cho sheet cung |
+| Phong Thủy (`FengShuiTab`) | **5B.3 xong**, mục 3.4 | Trạch Quái theo hướng nhà |
 
 Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ. Lỗi engine hiện ngay trong tab, không làm app dừng.
 
@@ -137,6 +137,23 @@ Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ.
 - **Thái Tuế (I5):** chi năm sinh và chi của năm, các quan hệ dạng nhãn Kim (Hợp) hoặc Chu Sa (còn lại).
 - **Lời giải:** các mục `almanac.restriction`, `tam_tai`, `kim_lau`, `hoang_oc` của hạn đang có, từ SQLite.
 
+### 3.3. Tab Bát Tự
+
+- **Đầu trang:** hồ sơ đang đọc (đổi nhanh bằng nút hai mũi tên khi có từ hai hồ sơ), hai lựa chọn lập trụ giữ qua các lần mở app (`@AppStorage`): *năm, tháng đổi tại* Tiết khí (mặc định) hoặc mùng 1 âm lịch (`YearMonthBoundary`), và *giờ Tý* chia ở nửa đêm (mặc định) hoặc sang ngày từ 23h (`RatHourConvention`); thêm một nhãn cho biết hồ sơ lập theo giờ đồng hồ hay giờ Mặt Trời thực (kinh độ đặt trong hồ sơ).
+- **Nhật Chủ và Bản mệnh Nạp Âm:** hai thẻ cạnh nhau, Can ngày và Nạp Âm của trụ năm, kèm Ngũ Hành và câu tóm tắt; chạm mở văn bản.
+- **Bảng Tứ Trụ:** bốn cột Giờ, Ngày, Tháng, Năm; trụ Ngày được gạch chân Chu Sa. Các hàng: Thập Thần của Thiên Can (cột Ngày ghi "Nhật Chủ"), Thiên Can và Địa Chi chữ lớn có nhãn Ngũ Hành, Tàng Can (Bản khí, Trung khí, Dư khí theo vị trí trong mảng của nguồn, mỗi Can kèm Thập Thần), Trường Sinh, Nạp Âm, Thần Sát của từng trụ. Mọi ô có nền giấy là ô chạm được và mở văn bản trong sheet.
+- **Không Vong, Khôi Canh:** hai dòng Không Vong tính từ trụ Ngày và trụ Năm theo mục 2.5C của `BAZI_ALMANAC_SPEC.md`, chạm mở văn bản; Khôi Canh hiện khi trụ Ngày là một trong bốn trụ của đặc tả. Nếu Địa Chi của một trụ trùng hai chi trống thì ô Địa Chi ghi "Không · Ngày" hoặc "Không · Năm". Đây là phép so sánh thẳng, không đi kèm luận đoán; trụ gốc không bị so với chính Không Vong của nó (đặc tả để phần này cho phần hiển thị).
+- **Đại Vận:** tuổi, tháng, ngày khởi vận, chiều thuận hoặc nghịch, rồi 10 bước (bước 0 "Trước vận") trong một hàng cuộn ngang; bước có năm hiện tại tô viền Chu Sa, ghi "HIỆN TẠI" và tự cuộn vào giữa.
+- **Luận giải:** mục lục theo nhóm (Nhật Chủ, Nạp Âm, Thập Thần, Trường Sinh, Thần Sát, Can Chi), mỗi dòng mở sheet. Văn bản đến từ `ContentRepository`; khóa của từng ô do AstroCore đưa ra (`baziDayMasterKey`, `baziTenGodKey`, `baziLifeStageKey`, `baziNaYinKey`, `baziShenShaKey`, `baziKhongVongKey`, `baziKhoiCanhKey`), app không tự ghép chuỗi. `baziKeys` chỉ liệt kê Thập Thần của Thiên Can, nên Thập Thần của Tàng Can được đọc thẳng từ kho theo khóa.
+- **Ngũ Hành (Kim, Mộc, Thủy, Hỏa, Thổ):** màu và tên luôn đi cùng nhau, không dùng màu một mình. Ngũ Hành của Can, Chi, Nạp Âm do `stemElement`, `branchElement`, `naYinElement` của core trả về.
+
+### 3.4. Tab Phong Thủy
+
+- **Mệnh Quái:** quái, chữ Hán, Ngũ Hành, quái số, Đông Tứ hoặc Tây Tứ Mệnh, hướng của quái, năm âm sinh, câu tóm tắt và "Đọc đầy đủ".
+- **Bát Trạch, tám hướng:** bốn hướng tốt (Sinh Khí, Thiên Y, Diên Niên, Phục Vị) và bốn hướng xấu (Tuyệt Mệnh, Ngũ Quỷ, Lục Sát, Họa Hại) lấy từ `eightMansionsChart`, chia theo `eightMansionsStarLuck`. Chạm một hướng mở sheet: ý nghĩa chung của sao rồi bốn ứng dụng (Hướng nhà, Bếp, Bàn làm việc, Kết hôn) của batch FS-02; bếp tại Sinh Khí hiện Hung nhờ `extra.verdict`.
+- **Tương hợp Bát Biến:** chọn hồ sơ khác, hoặc nhập nhanh năm sinh **âm lịch** và giới tính của đối tác (chọn "Nhập nhanh" tự bật khi chưa có hồ sơ thứ hai). Hiện hai quái, sao Bát Biến giữa hai người, Cát hoặc Hung, văn bản của sao và của hôn nhân, và nút mở bốn ứng dụng của sao đó.
+- **Cửu Cung Phi Tinh:** chọn thời điểm (mặc định bây giờ, GMT+7), hiện Vận và Nguyên, bốn ô Năm, Tháng, Ngày, Giờ (sao ở giữa và trạng thái vận) dùng để chọn bàn, rồi bàn 3×3 `LoShuBoard`. Bố cục Nam ở trên như mục 4.7 của `FENGSHUI_SPEC.md`; `LoShuLayout` giữ thứ tự cung và có test đối chiếu với `loShuRows`. Năm, Tháng bay thuận; Ngày, Giờ theo chiều của chuỗi sao (F3). Mỗi ô: hướng, số sao (màu Ngũ Hành), tên sao, nhãn Đương vận, Sinh khí, Thoái khí hoặc Thất vận. Chạm một ô mở sheet có `auspicious_meaning` hoặc `inauspicious_meaning` tùy trạng thái, rồi văn bản chung của sao. Không cần hồ sơ để dùng bàn này.
+
 ## 4. Bảng màu
 
 Phong cách Á Đông đương đại: ban ngày giấy Dó và mực Nho, ban đêm "Đêm Huyền Không", điểm nhấn Chu Sa và Kim. Định nghĩa ở `Design/Theme.swift` bằng `UIColor` động, đổi theo chế độ sáng/tối của hệ thống.
@@ -151,6 +168,18 @@ Phong cách Á Đông đương đại: ban ngày giấy Dó và mực Nho, ban �
 | `cinnabar` | `#B23A2B` Chu Sa | `#E0604C` | Tint, tên cung, Hung, Kỵ |
 | `gold` | `#85601E` Kim | `#D9AE5A` | Cát, Nên, Thập Thần |
 
+Ngũ Hành có năm màu riêng, chỉ dùng cho Can, Chi, Nạp Âm, quái và sao, luôn kèm tên:
+
+| Token | Sáng | Tối |
+| :-- | :-- | :-- |
+| `kim` | `#565E6B` | `#B9C2CF` |
+| `moc` | `#2E6B3B` | `#73C48A` |
+| `thuy` | `#1F5F8B` | `#6FB1E6` |
+| `hoa` | `#9C4116` | `#F28A5E` |
+| `tho` | `#7A5430` | `#CFA97E` |
+
+Cả năm đạt tối thiểu 4,5:1 trên `paper` và `surface`, cả khi làm chữ trên nền pha 12% của chính nó (thấp nhất: `hoa` sáng 4,71:1 trên giấy). `hoa` sáng phải tối từ `#A8481A` xuống `#9C4116` vì bản đầu chỉ đạt 4,20:1.
+
 Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ đạt WCAG AA (4,5:1) cho chữ nhỏ trên nền của nó. Kim sáng phải tối xuống `#85601E`: màu vàng đồng `#B8892E` chỉ đạt 2,69:1 trên giấy.
 
 | Cặp | Tỷ lệ |
@@ -163,13 +192,14 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 34 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 50 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
 - **EngineService.** Ngày dân sự GMT+7 qua nửa đêm UTC; mùng 1 Tết Giáp Thìn ra 10/02/2024; sinh trước Tết thuộc năm âm trước; tháng nhuận không có bị từ chối; hồ sơ âm lịch ra cùng lá số với `tuviChartFromLunar`; kinh độ bật giờ Mặt Trời thực.
 - **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng; hồ sơ mẫu chỉ được thêm ở lần đầu.
 - **Lưới tháng, Thái Tuế.** Tháng 11/2026 có 6 ô trống trước Chủ Nhật mùng 1; mỗi ô tháng 2/2024 khớp `almanacDay` (Tết là "1/1"); cộng trừ tháng qua năm; hồ sơ mẫu năm 2026 là Trực và Hình Thái Tuế; Thái Tuế dùng năm âm sinh.
+- **Bát Tự, Phong Thủy.** Hồ sơ mẫu ra Canh Ngọ, Tân Tỵ, Canh Thìn, Tân Tỵ; ranh giới năm giữa Tết và Lập Xuân đổi trụ năm (Kỷ Tỵ hoặc Canh Ngọ); quy ước giờ Tý đổi trụ ngày lúc 23h:30; mọi Can, Thập Thần, Trường Sinh, Nạp Âm, Thần Sát của bảng có văn bản; Thập Thần của Tàng Can được tìm thấy dù `baziKeys` không liệt kê; bước Đại Vận của năm 2026 là Giáp Thân (28–37 tuổi); đủ 8 sao × 4 ứng dụng; bếp tại Sinh Khí là Hung; mỗi quái có 4 hướng tốt, 4 xấu; `LoShuLayout` trùng `loShuRows` với cả 9 sao giữa, hai chiều bay; chiều bay của bốn bàn; ô bàn đọc đúng văn bản của trạng thái vận; tương hợp ra đúng hai khóa; năm màu Ngũ Hành khác nhau ở cả hai chế độ.
 - **Tốc độ** (Debug, simulator): 1.000 lần đọc mục mất 21 ms, khoảng 21 µs mỗi lần; đọc đủ 12 cung một lá số mất 56 ms.
 
 ## 6. Quyết định và việc mở
@@ -178,7 +208,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 | :-- | :-- | :-- |
 | I1 | Hồ sơ lưu JSON ở `UserDefaults`, không dùng SwiftData. Lần mở đầu tiên có sẵn hồ sơ mẫu 15/05/1990 09:30, Nam (mục 2.3) | **Đã duyệt** 2026-11-11 |
 | I2 | Bundle ID `com.leanhtuan.chronos` | **Đã duyệt** 2026-11-11 |
-| I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `activities.json` (thuộc cả target App và Widget). **Không** nhúng `chronos_content.sqlite` vào Widget, để giữ bộ nhớ Widget dưới giới hạn của iOS. Hệ quả: Widget hiện được những gì engine tính (ngày âm, Can Chi, tiết khí, Trực, Tú, thần trực nhật, Hoàng/Hắc Đạo, giờ Hoàng Đạo, Thần Sát, ngày kỵ). Danh sách Nên/Kỵ (`good_for`, `avoid`) chỉ nằm trong SQLite, nên `activities.json` (chỉ là nhãn) chưa giúp Widget hiện Nên/Kỵ; cần chốt thêm khi dựng Widget | **Đã duyệt** 2026-11-11; làm khi dựng Widget |
+| I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `activities.json` (thuộc cả target App và Widget). **Không** nhúng `chronos_content.sqlite` vào Widget, để giữ bộ nhớ Widget dưới giới hạn của iOS. Hệ quả: Widget hiện được những gì engine tính (ngày âm, Can Chi, tiết khí, Trực, Tú, thần trực nhật, Hoàng/Hắc Đạo, giờ Hoàng Đạo, Thần Sát, ngày kỵ). Danh sách Nên/Kỵ (`good_for`, `avoid`) chỉ nằm trong SQLite, nên `activities.json` (chỉ là nhãn) chưa giúp Widget hiện Nên/Kỵ; cần chốt thêm khi dựng Widget | **Đã duyệt** 2026-11-11. Chốt thêm (Task 5B.3): Widget **không** hiện Nên/Kỵ; chỉ hiện ngày dương/âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao và giờ Hoàng Đạo lấy từ xcframework | Làm khi dựng Widget |
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |
 | I5 | Xung tuổi theo năm = quan hệ của chi năm sinh với Thái Tuế (chi của năm đang xét), tính bằng phép Địa Chi có sẵn trong core, không thêm văn bản vào SQLite. Mục 6.1 | **Đã duyệt** 2026-11-11; làm ở 5B.2 |
 

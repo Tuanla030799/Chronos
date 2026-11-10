@@ -45,6 +45,61 @@ struct Chip: View {
     }
 }
 
+/// Name and birth of the person a tab reads, with a menu to switch to another profile.
+struct ProfileHeaderRow: View {
+    let profile: Profile
+    @Environment(ProfileStore.self) private var store
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "person.crop.circle.fill")
+                .font(.largeTitle)
+                .foregroundStyle(Theme.cinnabar)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(profile.name).font(.headline).foregroundStyle(Theme.ink)
+                Text(profile.summary).font(.caption).foregroundStyle(Theme.inkSecondary)
+            }
+            Spacer(minLength: 0)
+            if store.profiles.count > 1 {
+                Menu {
+                    ForEach(store.profiles) { other in
+                        Button {
+                            store.select(other.id)
+                        } label: {
+                            if other.id == profile.id {
+                                Label(other.name, systemImage: "checkmark")
+                            } else {
+                                Text(other.name)
+                            }
+                        }
+                    }
+                } label: {
+                    Label("Đổi hồ sơ", systemImage: "arrow.left.arrow.right")
+                        .labelStyle(.iconOnly)
+                        .font(.body.weight(.semibold))
+                        .frame(width: 36, height: 36)
+                        .background(Theme.paper, in: Circle())
+                }
+                .accessibilityLabel("Đổi hồ sơ")
+            }
+        }
+    }
+}
+
+/// The Ngũ Hành of a Can, Chi or Nạp Âm: its name in its color, never the color alone.
+struct ElementBadge: View {
+    let element: FiveElements
+
+    var body: some View {
+        Text(fiveElementsName(value: element))
+            .font(.system(size: 10, weight: .semibold))
+            .foregroundStyle(Theme.element(element))
+            .padding(.horizontal, 6)
+            .padding(.vertical, 2)
+            .background(Theme.element(element).opacity(0.12), in: Capsule())
+    }
+}
+
 /// Lays children out in rows, wrapping to the next row when one is full.
 struct FlowLayout: Layout {
     var spacing: CGFloat = 6
@@ -104,10 +159,12 @@ struct EntrySheet: View {
 
     var body: some View {
         NavigationStack {
-            List {
+            ScrollView {
                 EntryView(entry: entry, content: content)
+                    .card()
+                    .padding(16)
             }
-            .chronosBackground()
+            .background(Theme.paper)
             .navigationTitle(entry.title)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

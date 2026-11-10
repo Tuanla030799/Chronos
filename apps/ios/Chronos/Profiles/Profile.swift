@@ -66,3 +66,11 @@ struct Profile: Identifiable, Codable, Sendable, Hashable {
         birth: BirthDate(kind: .solar, year: 1990, month: 5, day: 15, hour: 9, minute: 30)
     )
 }
+
+extension Profile {
+    /// "Nam, Dương lịch 15/05/1990 09:30".
+    var summary: String {
+        let date = String(format: "%02d/%02d/%04d %02d:%02d", birth.day, birth.month, birth.year, birth.hour, birth.minute)
+        return "\(gender.label), \(birth.kind.label) \(date)\(birth.kind == .lunar && birth.isLeapMonth ? " (nhuận)" : "")"
+    }
+}

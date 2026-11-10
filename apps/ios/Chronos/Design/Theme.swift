@@ -12,6 +12,23 @@ enum Theme {
     static let cinnabar = dynamic(light: 0xB23A2B, dark: 0xE0604C)
     static let gold = dynamic(light: 0x85601E, dark: 0xD9AE5A)
 
+    /// Ngũ Hành, each at least 4.5:1 on paper and surface in both appearances, also as text on its own 12% tint.
+    static let kim = dynamic(light: 0x565E6B, dark: 0xB9C2CF)
+    static let moc = dynamic(light: 0x2E6B3B, dark: 0x73C48A)
+    static let thuy = dynamic(light: 0x1F5F8B, dark: 0x6FB1E6)
+    static let hoa = dynamic(light: 0x9C4116, dark: 0xF28A5E)
+    static let tho = dynamic(light: 0x7A5430, dark: 0xCFA97E)
+
+    static func element(_ element: FiveElements) -> Color {
+        switch element {
+        case .kim: kim
+        case .moc: moc
+        case .thuy: thuy
+        case .hoa: hoa
+        case .tho: tho
+        }
+    }
+
     static func luck(_ luck: ContentLuck?) -> Color {
         switch luck {
         case .cat: gold

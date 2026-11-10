@@ -85,10 +85,18 @@ struct EngineService: Sendable {
         }
     }
 
-    func bazi(for profile: Profile) throws -> BaziAnalysis {
+    /// `ratHour` and `boundary` default to the engine's own: Tý split at midnight, year and month
+    /// changing at the solar terms.
+    func bazi(
+        for profile: Profile,
+        ratHour: RatHourConvention? = nil,
+        boundary: YearMonthBoundary? = nil
+    ) throws -> BaziAnalysis {
         var options = defaultFourPillarsOptions()
         options.tzOffset = profile.tzOffset
         options.longitude = profile.longitude
+        options.ratHour = ratHour ?? options.ratHour
+        options.boundary = boundary ?? options.boundary
         return try analyzeBazi(birth: birth(of: profile), options: options, gender: profile.gender.engineValue)
     }
 

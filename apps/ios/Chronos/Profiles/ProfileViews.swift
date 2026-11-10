@@ -17,7 +17,7 @@ struct ProfileListView: View {
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(profile.name).foregroundStyle(Theme.ink)
-                                Text(summary(profile)).font(.caption).foregroundStyle(Theme.inkSecondary)
+                                Text(profile.summary).font(.caption).foregroundStyle(Theme.inkSecondary)
                             }
                         }
                         Spacer()
@@ -52,12 +52,6 @@ struct ProfileListView: View {
                 ProfileEditorView(profile: profile, engine: engine)
             }
         }
-    }
-
-    private func summary(_ profile: Profile) -> String {
-        let birth = profile.birth
-        let date = String(format: "%02d/%02d/%04d %02d:%02d", birth.day, birth.month, birth.year, birth.hour, birth.minute)
-        return "\(profile.gender.label), \(birth.kind.label) \(date)\(birth.kind == .lunar && birth.isLeapMonth ? " (nhuận)" : "")"
     }
 
     static func newProfile(engine: EngineService) -> Profile {
