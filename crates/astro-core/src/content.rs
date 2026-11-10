@@ -5,8 +5,8 @@
 //! and never repeat the logic of a chart. Keys use the variant names of the enums of this crate.
 
 use crate::almanac::{AgeRestrictions, AlmanacDay};
-use crate::bazi_analysis::BaziAnalysis;
-use crate::canchi::{Branch, CanChi};
+use crate::bazi_analysis::{BaziAnalysis, BaziStar, LifeStage, TenGod};
+use crate::canchi::{Branch, CanChi, NaYin, Stem};
 use crate::fengshui::{EightMansionsStar, KuaCompatibility, KuaInfo, NineStar};
 use crate::tuvi::{
     BirthTimeOfDay, ElementRelation, FourTransformations, TuViChart, TuViPalace, TuViPalaceRole,
@@ -139,29 +139,64 @@ fn can_chi_key(can_chi: CanChi) -> String {
     format!("bazi.can_chi/{:?}/{:?}", can_chi.stem, can_chi.branch)
 }
 
+/// Key of the Day Master text of a Heavenly Stem.
+pub fn bazi_day_master_key(stem: Stem) -> String {
+    key("bazi.day_master", stem)
+}
+
+/// Key of the text of a Nạp Âm.
+pub fn bazi_na_yin_key(na_yin: NaYin) -> String {
+    key("bazi.nayin", na_yin)
+}
+
+/// Key of the text of a Ten God (Thập Thần).
+pub fn bazi_ten_god_key(god: TenGod) -> String {
+    key("bazi.ten_god", god)
+}
+
+/// Key of the text of a life stage (Trường Sinh).
+pub fn bazi_life_stage_key(stage: LifeStage) -> String {
+    key("bazi.life_stage", stage)
+}
+
+/// Key of the text of a Thần Sát of the chart.
+pub fn bazi_shen_sha_key(star: BaziStar) -> String {
+    key("bazi.shen_sha", star)
+}
+
+/// Key of the text of Không Vong, which every chart has.
+pub fn bazi_khong_vong_key() -> String {
+    "bazi.shen_sha/KhongVong".to_string()
+}
+
+/// Key of the text of Khôi Canh, which only some day pillars have.
+pub fn bazi_khoi_canh_key() -> String {
+    "bazi.shen_sha/KhoiCanh".to_string()
+}
+
 /// Keys of a Bát Tự reading: the Day Master, then each pillar, then the Thần Sát.
 pub fn bazi_keys(analysis: &BaziAnalysis) -> Vec<String> {
-    let mut keys = vec![key("bazi.day_master", analysis.day.can_chi.stem)];
+    let mut keys = vec![bazi_day_master_key(analysis.day.can_chi.stem)];
     for pillar in [
         &analysis.year,
         &analysis.month,
         &analysis.day,
         &analysis.hour,
     ] {
-        keys.push(key("bazi.nayin", pillar.na_yin));
+        keys.push(bazi_na_yin_key(pillar.na_yin));
         keys.push(can_chi_key(pillar.can_chi));
-        keys.extend(pillar.ten_god.map(|god| key("bazi.ten_god", god)));
-        keys.push(key("bazi.life_stage", pillar.life_stage));
+        keys.extend(pillar.ten_god.map(bazi_ten_god_key));
+        keys.push(bazi_life_stage_key(pillar.life_stage));
     }
     keys.extend(
         analysis
             .stars
             .iter()
-            .map(|placement| key("bazi.shen_sha", placement.star)),
+            .map(|placement| bazi_shen_sha_key(placement.star)),
     );
-    keys.push("bazi.shen_sha/KhongVong".to_string());
+    keys.push(bazi_khong_vong_key());
     if analysis.is_khoi_canh {
-        keys.push("bazi.shen_sha/KhoiCanh".to_string());
+        keys.push(bazi_khoi_canh_key());
     }
     unique(keys)
 }
@@ -568,6 +603,46 @@ mod tests {
         );
         assert!(keys.contains(&"bazi.shen_sha/KhongVong".to_string()));
         assert_eq!(keys.len(), keys.iter().collect::<BTreeSet<_>>().len());
+    }
+
+    #[test]
+    fn bazi_item_keys_are_the_ones_bazi_keys_lists() {
+        let birth = SolarDateTime {
+            year: 1990,
+            month: 5,
+            day: 15,
+            hour: 10,
+            minute: 30,
+            second: 0,
+        };
+        let analysis = analyze_bazi(birth, &FourPillarsOptions::default(), Gender::Male).unwrap();
+        let keys = bazi_keys(&analysis);
+        for pillar in [
+            &analysis.year,
+            &analysis.month,
+            &analysis.day,
+            &analysis.hour,
+        ] {
+            assert!(keys.contains(&bazi_na_yin_key(pillar.na_yin)));
+            assert!(keys.contains(&bazi_life_stage_key(pillar.life_stage)));
+            if let Some(god) = pillar.ten_god {
+                assert!(keys.contains(&bazi_ten_god_key(god)));
+            }
+        }
+        for placement in &analysis.stars {
+            assert!(keys.contains(&bazi_shen_sha_key(placement.star)));
+        }
+        assert_eq!(
+            bazi_day_master_key(Stem::Giap),
+            "bazi.day_master/Giap".to_string()
+        );
+        assert_eq!(bazi_ten_god_key(TenGod::TyKien), "bazi.ten_god/TyKien");
+        assert_eq!(
+            bazi_life_stage_key(LifeStage::TruongSinh),
+            "bazi.life_stage/TruongSinh"
+        );
+        assert_eq!(bazi_khong_vong_key(), "bazi.shen_sha/KhongVong");
+        assert_eq!(bazi_khoi_canh_key(), "bazi.shen_sha/KhoiCanh");
     }
 
     #[test]

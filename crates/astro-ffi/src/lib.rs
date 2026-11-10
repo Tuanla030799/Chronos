@@ -1047,6 +1047,24 @@ pub fn solar_term_name(term: SolarTerm) -> String {
     term.name_vi().to_owned()
 }
 
+/// Element of a Heavenly Stem.
+#[uniffi::export]
+pub fn stem_element(stem: Stem) -> FiveElements {
+    stem.element()
+}
+
+/// Element of an Earthly Branch.
+#[uniffi::export]
+pub fn branch_element(branch: Branch) -> FiveElements {
+    branch.element()
+}
+
+/// Element of a Nạp Âm.
+#[uniffi::export]
+pub fn na_yin_element(value: NaYin) -> FiveElements {
+    value.element()
+}
+
 /// The main hidden stem (Bản khí) of a branch.
 #[uniffi::export]
 pub fn main_hidden_stem(branch: Branch) -> Stem {
@@ -1736,6 +1754,48 @@ pub fn bazi_keys(analysis: BaziAnalysis) -> Vec<String> {
     content::bazi_keys(&analysis)
 }
 
+/// Interpretation key of the Day Master text of a Heavenly Stem.
+#[uniffi::export]
+pub fn bazi_day_master_key(stem: Stem) -> String {
+    content::bazi_day_master_key(stem)
+}
+
+/// Interpretation key of a Nạp Âm.
+#[uniffi::export]
+pub fn bazi_na_yin_key(na_yin: NaYin) -> String {
+    content::bazi_na_yin_key(na_yin)
+}
+
+/// Interpretation key of a Ten God.
+#[uniffi::export]
+pub fn bazi_ten_god_key(god: TenGod) -> String {
+    content::bazi_ten_god_key(god)
+}
+
+/// Interpretation key of a life stage.
+#[uniffi::export]
+pub fn bazi_life_stage_key(stage: LifeStage) -> String {
+    content::bazi_life_stage_key(stage)
+}
+
+/// Interpretation key of a Thần Sát of a chart.
+#[uniffi::export]
+pub fn bazi_shen_sha_key(star: BaziStar) -> String {
+    content::bazi_shen_sha_key(star)
+}
+
+/// Interpretation key of Không Vong.
+#[uniffi::export]
+pub fn bazi_khong_vong_key() -> String {
+    content::bazi_khong_vong_key()
+}
+
+/// Interpretation key of Khôi Canh.
+#[uniffi::export]
+pub fn bazi_khoi_canh_key() -> String {
+    content::bazi_khoi_canh_key()
+}
+
 /// Interpretation key of a person's trigram.
 #[uniffi::export]
 pub fn kua_key(kua: KuaInfo) -> String {
@@ -1746,6 +1806,12 @@ pub fn kua_key(kua: KuaInfo) -> String {
 #[uniffi::export]
 pub fn eight_star_key(star: EightMansionsStar) -> String {
     content::eight_star_key(star)
+}
+
+/// Vietnamese name of a use of the Eight Mansions, e.g. "Hướng nhà".
+#[uniffi::export]
+pub fn eight_use_name(usage: EightUse) -> String {
+    usage.name_vi().to_owned()
 }
 
 /// Interpretation key of a star of the Eight Mansions in one use.
@@ -1962,6 +2028,23 @@ mod tests {
         let analysis = analyze_bazi(birth, default_four_pillars_options(), Gender::Male).unwrap();
         assert_eq!(na_yin_name(analysis.day.na_yin), "Phú Đăng Hỏa");
         assert_eq!(stem_name(main_hidden_stem(Branch::Dan)), "Giáp");
+        assert_eq!(stem_element(Stem::Giap), FiveElements::Moc);
+        assert_eq!(branch_element(Branch::Mui), FiveElements::Tho);
+        assert_eq!(na_yin_element(analysis.day.na_yin), FiveElements::Hoa);
+        assert_eq!(bazi_day_master_key(Stem::Giap), "bazi.day_master/Giap");
+        assert_eq!(bazi_ten_god_key(TenGod::ThucThan), "bazi.ten_god/ThucThan");
+        assert_eq!(
+            bazi_life_stage_key(LifeStage::TruongSinh),
+            "bazi.life_stage/TruongSinh"
+        );
+        assert_eq!(
+            bazi_na_yin_key(analysis.day.na_yin),
+            "bazi.nayin/PhuDangHoa"
+        );
+        assert_eq!(bazi_shen_sha_key(BaziStar::DichMa), "bazi.shen_sha/DichMa");
+        assert_eq!(bazi_khong_vong_key(), "bazi.shen_sha/KhongVong");
+        assert_eq!(bazi_khoi_canh_key(), "bazi.shen_sha/KhoiCanh");
+        assert_eq!(eight_use_name(EightUse::BanLamViec), "Bàn làm việc");
         assert_eq!(ten_god_name(analysis.month.ten_god.unwrap()), "Thực Thần");
         assert!(analysis.dai_van.forward);
 

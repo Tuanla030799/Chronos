@@ -814,3 +814,50 @@ fn nine_star_phases_and_keys_work_from_javascript() {
         "fengshui.nine_star/CuuTu"
     );
 }
+
+#[wasm_bindgen_test]
+fn bazi_item_keys_and_elements_work_from_javascript() {
+    use astro_wasm::{
+        bazi_day_master_key, bazi_khoi_canh_key, bazi_khong_vong_key, bazi_life_stage_key,
+        bazi_na_yin_key, bazi_shen_sha_key, bazi_ten_god_key, branch_element, na_yin_element,
+        stem_element,
+    };
+    assert_eq!(
+        bazi_day_master_key(variant("Giap")).unwrap(),
+        "bazi.day_master/Giap"
+    );
+    assert_eq!(
+        bazi_ten_god_key(variant("ThucThan")).unwrap(),
+        "bazi.ten_god/ThucThan"
+    );
+    assert_eq!(
+        bazi_life_stage_key(variant("TruongSinh")).unwrap(),
+        "bazi.life_stage/TruongSinh"
+    );
+    assert_eq!(
+        bazi_na_yin_key(variant("PhuDangHoa")).unwrap(),
+        "bazi.nayin/PhuDangHoa"
+    );
+    assert_eq!(
+        bazi_shen_sha_key(variant("DichMa")).unwrap(),
+        "bazi.shen_sha/DichMa"
+    );
+    assert_eq!(bazi_khong_vong_key(), "bazi.shen_sha/KhongVong");
+    assert_eq!(bazi_khoi_canh_key(), "bazi.shen_sha/KhoiCanh");
+    assert_eq!(
+        astro_wasm::eight_use_name(variant("BanLamViec")).unwrap(),
+        "Bàn làm việc"
+    );
+    assert_eq!(
+        stringify(&stem_element(variant("Giap")).unwrap()),
+        r#""Moc""#
+    );
+    assert_eq!(
+        stringify(&branch_element(variant("Mui")).unwrap()),
+        r#""Tho""#
+    );
+    assert_eq!(
+        stringify(&na_yin_element(variant("PhuDangHoa")).unwrap()),
+        r#""Hoa""#
+    );
+}

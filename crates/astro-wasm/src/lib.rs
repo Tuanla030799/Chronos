@@ -710,6 +710,30 @@ pub fn can_chi_han_name(
     Ok(from_js::<CanChi>(value)?.name_han())
 }
 
+/// Element of a Heavenly Stem.
+#[wasm_bindgen(js_name = stemElement, unchecked_return_type = "FiveElements")]
+pub fn stem_element(
+    #[wasm_bindgen(unchecked_param_type = "Stem")] stem: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Stem>(stem)?.element())
+}
+
+/// Element of an Earthly Branch.
+#[wasm_bindgen(js_name = branchElement, unchecked_return_type = "FiveElements")]
+pub fn branch_element(
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Branch>(branch)?.element())
+}
+
+/// Element of a Nạp Âm.
+#[wasm_bindgen(js_name = naYinElement, unchecked_return_type = "FiveElements")]
+pub fn na_yin_element(
+    #[wasm_bindgen(unchecked_param_type = "NaYin")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<NaYin>(value)?.element())
+}
+
 /// The main hidden stem (Bản khí) of a branch.
 #[wasm_bindgen(js_name = mainHiddenStem, unchecked_return_type = "Stem")]
 pub fn main_hidden_stem(
@@ -1339,6 +1363,58 @@ pub fn bazi_keys(
     Ok(content::bazi_keys(&from_js::<BaziAnalysis>(analysis)?))
 }
 
+/// Interpretation key of the Day Master text of a Heavenly Stem.
+#[wasm_bindgen(js_name = baziDayMasterKey)]
+pub fn bazi_day_master_key(
+    #[wasm_bindgen(unchecked_param_type = "Stem")] stem: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::bazi_day_master_key(from_js(stem)?))
+}
+
+/// Interpretation key of a Nạp Âm.
+#[wasm_bindgen(js_name = baziNaYinKey)]
+pub fn bazi_na_yin_key(
+    #[wasm_bindgen(unchecked_param_type = "NaYin")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::bazi_na_yin_key(from_js(value)?))
+}
+
+/// Interpretation key of a Ten God.
+#[wasm_bindgen(js_name = baziTenGodKey)]
+pub fn bazi_ten_god_key(
+    #[wasm_bindgen(unchecked_param_type = "TenGod")] god: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::bazi_ten_god_key(from_js(god)?))
+}
+
+/// Interpretation key of a life stage.
+#[wasm_bindgen(js_name = baziLifeStageKey)]
+pub fn bazi_life_stage_key(
+    #[wasm_bindgen(unchecked_param_type = "LifeStage")] stage: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::bazi_life_stage_key(from_js(stage)?))
+}
+
+/// Interpretation key of a Thần Sát of a chart.
+#[wasm_bindgen(js_name = baziShenShaKey)]
+pub fn bazi_shen_sha_key(
+    #[wasm_bindgen(unchecked_param_type = "BaziStar")] star: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::bazi_shen_sha_key(from_js(star)?))
+}
+
+/// Interpretation key of Không Vong.
+#[wasm_bindgen(js_name = baziKhongVongKey)]
+pub fn bazi_khong_vong_key() -> String {
+    content::bazi_khong_vong_key()
+}
+
+/// Interpretation key of Khôi Canh.
+#[wasm_bindgen(js_name = baziKhoiCanhKey)]
+pub fn bazi_khoi_canh_key() -> String {
+    content::bazi_khoi_canh_key()
+}
+
 /// Interpretation key of a person's trigram.
 #[wasm_bindgen(js_name = kuaKey)]
 pub fn kua_key(
@@ -1353,6 +1429,14 @@ pub fn eight_star_key(
     #[wasm_bindgen(unchecked_param_type = "EightMansionsStar")] star: JsValue,
 ) -> Result<String, JsValue> {
     Ok(content::eight_star_key(from_js(star)?))
+}
+
+/// Vietnamese name of a use of the Eight Mansions, e.g. "Hướng nhà".
+#[wasm_bindgen(js_name = eightUseName)]
+pub fn eight_use_name(
+    #[wasm_bindgen(unchecked_param_type = "EightUse")] usage: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<EightUse>(usage)?.name_vi().to_owned())
 }
 
 /// Interpretation key of a star of the Eight Mansions in one use.
