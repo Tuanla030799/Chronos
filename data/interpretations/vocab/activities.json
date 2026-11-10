@@ -46,5 +46,9 @@
   {
     "id": "KyKet",
     "label": "Ký kết"
+  },
+  {
+    "id": "KinhDoanh",
+    "label": "Kinh doanh, buôn bán"
   }
 ]

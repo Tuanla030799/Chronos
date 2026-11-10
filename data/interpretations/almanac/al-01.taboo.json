@@ -1,0 +1,190 @@
+{
+  "batch": "AL-01",
+  "collection": "almanac.taboo",
+  "entries": [
+    {
+      "avoid": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "SuaChua"
+        }
+      ],
+      "key": "TamNuongSat",
+      "source_ref": {
+        "keywords": [
+          "Kỵ khai trương, xuất hành, cưới hỏi, động thổ, sửa chữa"
+        ],
+        "locator": "mục 1",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày kỵ khai trương, xuất hành, cưới hỏi, động thổ, sửa chữa: mùng 3, 7, 13, 18, 22, 27 âm lịch hàng tháng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "KinhDoanh"
+        }
+      ],
+      "key": "NguyetKy",
+      "source_ref": {
+        "keywords": [
+          "Mùng năm, mười bốn, hai ba - Đi chơi cũng lỗ huống là đi buôn"
+        ],
+        "locator": "mục 1",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày kỵ xuất hành, mua bán, kinh doanh: mùng 5, 14, 23 âm lịch hàng tháng.",
+      "verse": "Mùng năm, mười bốn, hai ba - Đi chơi cũng lỗ huống là đi buôn"
+    },
+    {
+      "key": "NguyetTan",
+      "source_ref": {
+        "source": "vn_custom_rules",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ngày cuối cùng của tháng âm lịch (29 hoặc 30); dân gian coi là ngày khí tàn, nên tránh khởi sự lớn."
+    },
+    {
+      "key": "DuongCongKyNhat",
+      "source_ref": {
+        "source": "vn_custom_rules",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "13 ngày đại kỵ trong năm theo truyền thuyết Dương Công, mỗi tháng âm lịch một ngày; dân gian kỵ khởi sự lớn trong ngày này."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "NhamChuc"
+        },
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "ThuTu",
+      "source_ref": {
+        "keywords": [
+          "Đại kỵ mọi việc"
+        ],
+        "locator": "mục 3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày đại kỵ mọi việc quan trọng trong tháng, tính theo Địa Chi của ngày."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "NhamChuc"
+        }
+      ],
+      "key": "SatChuDuong",
+      "source_ref": {
+        "keywords": [
+          "Kỵ xây dựng, cưới gả, nhậm chức"
+        ],
+        "locator": "mục 3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày kỵ xây dựng, cưới gả, nhậm chức, tính theo Địa Chi của ngày."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "TuSuaMoPhan"
+        }
+      ],
+      "key": "SatChuAm",
+      "source_ref": {
+        "keywords": [
+          "Kỵ mai táng, tu sửa mộ phần"
+        ],
+        "locator": "mục 3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày kỵ mai táng, tu sửa mộ phần, tính theo Địa Chi của ngày."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CauTai"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "VangVong",
+      "source_ref": {
+        "keywords": [
+          "Kỵ xuất hành, cầu tài, ký kết"
+        ],
+        "locator": "mục 3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngày kỵ xuất hành, cầu tài, ký kết, tính theo Địa Chi của ngày."
+    },
+    {
+      "key": "ThienDiaChuyenSat",
+      "source_ref": {
+        "source": "vn_custom_rules",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sát khí chuyển theo một hướng chính (Đông, Nam, Tây hoặc Bắc) tùy tháng; dân gian kỵ động thổ, xuất hành về đúng hướng đó trong tháng."
+    }
+  ]
+}

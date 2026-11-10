@@ -1,0 +1,398 @@
+{
+  "batch": "FS-02",
+  "collection": "fengshui.eight_star_use",
+  "entries": [
+    {
+      "key": [
+        "SinhKhi",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Sinh Khí: rất tốt, vượng công danh, sự nghiệp, sức khỏe cho cả nhà."
+    },
+    {
+      "key": [
+        "SinhKhi",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Sinh Khí: không nên, vì hỏa khí của bếp sẽ làm hao tổn cát khí của sao tốt nhất.",
+      "verdict": "Hung"
+    },
+    {
+      "key": [
+        "SinhKhi",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Sinh Khí: rất tốt, giúp tăng hiệu suất, thuận lợi công danh."
+    },
+    {
+      "key": [
+        "SinhKhi",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Sinh Khí: rất tốt, vợ chồng hòa hợp, hỗ trợ nhau phát triển."
+    },
+    {
+      "key": [
+        "ThienY",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Thiên Y: tốt, vượng sức khỏe và tài lộc cho gia đình."
+    },
+    {
+      "key": [
+        "ThienY",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Thiên Y: không nên, làm hao tổn cát khí vốn tốt cho sức khỏe.",
+      "verdict": "Hung"
+    },
+    {
+      "key": [
+        "ThienY",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Thiên Y: tốt, hỗ trợ sức khỏe và duy trì tài lộc ổn định."
+    },
+    {
+      "key": [
+        "ThienY",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Thiên Y: tốt, vợ chồng cùng chăm lo sức khỏe và kinh tế gia đình."
+    },
+    {
+      "key": [
+        "DienNien",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Diên Niên: tốt, vượng tình duyên, hòa hợp gia đạo, trường thọ."
+    },
+    {
+      "key": [
+        "DienNien",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Diên Niên: không nên, làm hao tổn cát khí tốt cho tình duyên và trường thọ.",
+      "verdict": "Hung"
+    },
+    {
+      "key": [
+        "DienNien",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Diên Niên: tốt, không khí làm việc hòa thuận, ít xung đột với đồng nghiệp."
+    },
+    {
+      "key": [
+        "DienNien",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Diên Niên: rất tốt, vợ chồng hòa hợp lâu bền."
+    },
+    {
+      "key": [
+        "PhucVi",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Phục Vị: tốt nhẹ, ổn định, hợp tu dưỡng bản thân, bình an."
+    },
+    {
+      "key": [
+        "PhucVi",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Phục Vị: không nên, tuy cát khí nhẹ nhưng vẫn nên tránh để hỏa khí hao tổn.",
+      "verdict": "Hung"
+    },
+    {
+      "key": [
+        "PhucVi",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Phục Vị: tốt nhẹ, giúp tâm trí ổn định, làm việc đều đặn."
+    },
+    {
+      "key": [
+        "PhucVi",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Phục Vị: tốt nhẹ, vợ chồng bình ổn, ít biến động lớn."
+    },
+    {
+      "key": [
+        "TuyetMenh",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Tuyệt Mệnh: xấu nhất, dễ gặp họa lớn về sức khỏe hoặc tài sản."
+    },
+    {
+      "key": [
+        "TuyetMenh",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Tuyệt Mệnh: lại tốt, vì hỏa khí của bếp giúp hóa giải phần nào hung khí nặng nhất.",
+      "verdict": "Cat"
+    },
+    {
+      "key": [
+        "TuyetMenh",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Tuyệt Mệnh: xấu, dễ căng thẳng, hiệu suất giảm, nên tránh nếu có thể."
+    },
+    {
+      "key": [
+        "TuyetMenh",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Tuyệt Mệnh: xấu nhất, dễ xung khắc nặng, cần cân nhắc kỹ trước khi kết hôn."
+    },
+    {
+      "key": [
+        "NguQuy",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Ngũ Quỷ: xấu, dễ gặp thị phi, hao tài, tai họa bất ngờ."
+    },
+    {
+      "key": [
+        "NguQuy",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Ngũ Quỷ: lại tốt, hỏa khí của bếp giúp hóa giải phần nào hung khí.",
+      "verdict": "Cat"
+    },
+    {
+      "key": [
+        "NguQuy",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Ngũ Quỷ: xấu, dễ gặp thị phi nơi làm việc, nên tránh nếu có thể."
+    },
+    {
+      "key": [
+        "NguQuy",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Ngũ Quỷ: xấu, dễ gặp bất hòa, thị phi trong hôn nhân."
+    },
+    {
+      "key": [
+        "LucSat",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Lục Sát: xấu, dễ gặp kiện tụng, tai nạn, bất hòa trong nhà."
+    },
+    {
+      "key": [
+        "LucSat",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Lục Sát: lại tốt, hỏa khí của bếp giúp hóa giải phần nào hung khí.",
+      "verdict": "Cat"
+    },
+    {
+      "key": [
+        "LucSat",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Lục Sát: xấu, dễ vướng tranh chấp, kiện tụng liên quan công việc."
+    },
+    {
+      "key": [
+        "LucSat",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Lục Sát: xấu, dễ bất hòa, tranh chấp trong đời sống vợ chồng."
+    },
+    {
+      "key": [
+        "HoaHai",
+        "HuongNha"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hướng nhà tại Họa Hại: xấu nhẹ, dễ gặp phiền toái nhỏ, thị phi vụn vặt."
+    },
+    {
+      "key": [
+        "HoaHai",
+        "Bep"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đặt bếp tại hướng Họa Hại: lại tốt, hỏa khí của bếp giúp hóa giải phần hung khí nhẹ này.",
+      "verdict": "Cat"
+    },
+    {
+      "key": [
+        "HoaHai",
+        "BanLamViec"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bàn làm việc quay về Họa Hại: xấu nhẹ, dễ gặp phiền toái nhỏ, va chạm vụn vặt nơi làm việc."
+    },
+    {
+      "key": [
+        "HoaHai",
+        "KetHon"
+      ],
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hai quái mệnh hợp tại Họa Hại: xấu nhẹ, đời sống vợ chồng dễ có phiền toái nhỏ nhặt."
+    }
+  ]
+}

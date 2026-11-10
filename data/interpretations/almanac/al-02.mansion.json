@@ -1,0 +1,693 @@
+{
+  "batch": "AL-02",
+  "collection": "almanac.mansion",
+  "entries": [
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "TuSuaMoPhan"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "GiacMocGiao",
+      "source_ref": {
+        "keywords": [
+          "角星造作主荣昌"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng và cưới hỏi, thêm tài lộc và con cháu hiển đạt; rất kỵ mai táng hay xây mộ, dễ sinh họa dịch bệnh.",
+      "verse": "Tốt xây dựng, cưới hỏi; kỵ mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "NhamChuc"
+        }
+      ],
+      "key": "CangKimLong",
+      "source_ref": {
+        "keywords": [
+          "亢星造作长房当"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Xấu cho xây dựng (hại con trưởng), nhậm chức (mất chức), cưới hỏi (vợ chồng ly tán) và mai táng (họa nặng).",
+      "verse": "Kỵ xây dựng, nhậm chức, cưới hỏi, mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "key": "DeThoLac",
+      "source_ref": {
+        "keywords": [
+          "氐星造作主灾凶"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu toàn diện: xây dựng hao tài, mai táng và cưới hỏi đều gặp họa nặng, xuất hành cũng không nên.",
+      "verse": "Ngày đại hung, nên tránh mọi việc lớn."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "PhongNhatTho",
+      "source_ref": {
+        "keywords": [
+          "房星造作田园进"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng, mai táng và cưới hỏi: thêm tài lộc, con cháu hiển vinh, vợ chồng hòa hợp.",
+      "verse": "Tốt xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "TamNguyetHo",
+      "source_ref": {
+        "keywords": [
+          "心星造作大为凶"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày đại hung: xây dựng dễ vướng kiện tụng tù ngục, mai táng và cưới hỏi đều gặp họa nặng về con cái.",
+      "verse": "Ngày đại hung, kỵ xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "ViHoaHo",
+      "source_ref": {
+        "keywords": [
+          "尾星造作主天恩"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày rất tốt: xây dựng, mai táng, cưới hỏi đều thêm phúc lộc, con cháu vinh hiển đời đời.",
+      "verse": "Rất tốt cho xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "TuSuaMoPhan"
+        }
+      ],
+      "key": "CoThuyBao",
+      "source_ref": {
+        "keywords": [
+          "箕星造作主高强"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày đại cát: xây dựng, mai táng, tu sửa mộ phần đều thịnh vượng, của cải dư dả, lục thân an vui.",
+      "verse": "Đại cát cho xây dựng, mai táng, tu sửa mộ."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "DauMocGiai",
+      "source_ref": {
+        "keywords": [
+          "斗星造作主招财"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Sao lành: xây dựng và mai táng đều thêm tài lộc, công danh thăng tiến, gia đạo hòa thuận, ít gặp tai họa.",
+      "verse": "Sao lành, tốt cho xây dựng và mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "NguuKimNguu",
+      "source_ref": {
+        "keywords": [
+          "牛星造作主灾危"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu: xây dựng dễ gặp họa, nhà cửa bất an, cưới hỏi tự chuốc tổn hại, tài sản hao mòn.",
+      "verse": "Kỵ xây dựng, kỵ cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "NuThoBuc",
+      "source_ref": {
+        "keywords": [
+          "女星造作损婆娘"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu: xây dựng hại người vợ, anh em bất hòa, mai táng dễ vướng bệnh tà, việc kiện tụng hao tài.",
+      "verse": "Kỵ xây dựng, kỵ mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "HuNhatThu",
+      "source_ref": {
+        "keywords": [
+          "虚星造作主灾殃"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu: xây dựng dễ gặp tai ương, gia đạo lục đục, nhiều năm liền ốm đau, nhà cửa suy bại.",
+      "verse": "Kỵ xây dựng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "NguyNguyetYen",
+      "source_ref": {
+        "keywords": [
+          "危星不可造高楼"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Kỵ xây nhà cao, trẻ nhỏ dễ gặp họa nước; mai táng ngày này dễ mất thêm người thân trong năm.",
+      "verse": "Kỵ xây nhà cao, kỵ mai táng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "ThatHoaTru",
+      "source_ref": {
+        "keywords": [
+          "室星修造进田牛"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày rất tốt: xây dựng, cưới hỏi, mai táng đều vượng phúc lộc, gia đạo hưng thịnh lâu dài.",
+      "verse": "Rất tốt cho xây dựng, cưới hỏi, mai táng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "BichThuyDu",
+      "source_ref": {
+        "keywords": [
+          "壁星造作主增财"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày tốt: xây dựng thêm tài lộc, mai táng thêm quan lộc, cưới hỏi sinh con hiền quý, danh tiếng sớm nổi.",
+      "verse": "Tốt cho xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "KhueMocLang",
+      "source_ref": {
+        "keywords": [
+          "奎星造作得祯祥"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng, gia đạo hòa thuận; nhưng xấu cho mai táng, dễ gặp tang họa thêm trong năm.",
+      "verse": "Tốt xây dựng, kỵ mai táng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "LauKimCau",
+      "source_ref": {
+        "keywords": [
+          "娄星修造起门庭"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày tốt toàn diện: xây dựng, cưới hỏi đều vượng tài lộc, gia đạo hòa thuận, vợ chồng trường thọ.",
+      "verse": "Tốt cho xây dựng, cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "ViThoTri",
+      "source_ref": {
+        "keywords": [
+          "胃星造作事如何"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày tốt: xây dựng, mai táng, cưới hỏi đều vượng phú quý, ít gặp tai họa, con cháu vinh hiển.",
+      "verse": "Tốt cho xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "MaoNhatKe",
+      "source_ref": {
+        "keywords": [
+          "昴星造作进田牛"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng, thêm ruộng vườn gia súc; nhưng rất kỵ mai táng (dễ trùng tang) và cưới hỏi (dễ ly biệt).",
+      "verse": "Tốt xây dựng, rất kỵ mai táng và cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "TatNguyetO",
+      "source_ref": {
+        "keywords": [
+          "毕星造作主光前"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày tốt: xây dựng thêm của, mai táng thêm quan lộc, cưới hỏi sinh con phúc thọ vẹn toàn.",
+      "verse": "Tốt cho xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "ChuyHoaHau",
+      "source_ref": {
+        "keywords": [
+          "觜星造作有徒刑"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày đại hung: xây dựng dễ vướng án tù, mai táng dễ liên tiếp có người mất, gia sản suy bại.",
+      "verse": "Đại hung, kỵ xây dựng và mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "SamThuyVien",
+      "source_ref": {
+        "keywords": [
+          "参星造作旺人家"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng, vượng tài lộc và học hành; nhưng xấu cho mai táng (ốm đau) và cưới hỏi (dễ ly tán).",
+      "verse": "Tốt xây dựng, kỵ mai táng và cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "TinhMocHan",
+      "source_ref": {
+        "keywords": [
+          "井星造作旺蚕田"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt cho xây dựng và thi cử, vượng tài lộc; mai táng cần đề phòng kinh hãi, bệnh tật bất ngờ.",
+      "verse": "Tốt xây dựng, cẩn trọng khi mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "QuyKimDuong",
+      "source_ref": {
+        "keywords": [
+          "鬼星起造卒人亡"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Rất kỵ xây dựng (hại chủ nhà) và cưới hỏi (vợ chồng khó bền lâu); riêng mai táng lại tốt, thêm quan lộc cho con cháu.",
+      "verse": "Kỵ xây dựng và cưới hỏi; tốt cho mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "LieuThoChuong",
+      "source_ref": {
+        "keywords": [
+          "柳星造作主遭官"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu: xây dựng dễ vướng kiện tụng, mai táng dễ sinh bệnh dịch, gia sản suy kiệt.",
+      "verse": "Kỵ xây dựng, kỵ mai táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "TinhNhatMa",
+      "source_ref": {
+        "keywords": [
+          "星宿日好造新房"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Tốt để xây nhà mới, thuận đường công danh; nhưng rất kỵ mai táng, dễ gặp cảnh sinh ly tử biệt.",
+      "verse": "Tốt xây nhà mới, rất kỵ mai táng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "TruongNguyetLoc",
+      "source_ref": {
+        "keywords": [
+          "张星日好造龙轩"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày rất tốt: xây dựng, mai táng, cưới hỏi đều thêm công danh tài lộc, gia đạo an vui.",
+      "verse": "Rất tốt cho xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "DucHoaXa",
+      "source_ref": {
+        "keywords": [
+          "翼星不利架高堂"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày xấu: không nên xây nhà cao hay mai táng, dễ khiến con cháu phải lìa xa quê quán; cưới hỏi cũng không hợp.",
+      "verse": "Kỵ xây dựng, mai táng, cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "ChanThuyDan",
+      "source_ref": {
+        "keywords": [
+          "轸星临水造龙宫"
+        ],
+        "locator": "LunarUtil.XIU_SONG",
+        "source": "lunar_ts",
+        "source_type": "translation"
+      },
+      "status": "approved",
+      "summary": "Ngày rất tốt: xây dựng, mai táng, cưới hỏi đều vượng công danh tài lộc, gia trạch an lành.",
+      "verse": "Rất tốt cho xây dựng, mai táng, cưới hỏi."
+    }
+  ]
+}

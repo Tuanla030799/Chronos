@@ -6,7 +6,7 @@ This project derives data tables from the following third-party software.
 
 - Project: https://github.com/6tail/lunar-typescript
 - Version used: 1.8.6
-- Used for: the Bát Tự and Trạch Nhật lookup tables in `docs/BAZI_ALMANAC_SPEC.md`, the Cửu Tinh data and algorithms in `docs/FENGSHUI_SPEC.md`, and `crates/astro-core`
+- Used for: the Bát Tự and Trạch Nhật lookup tables in `docs/BAZI_ALMANAC_SPEC.md`, the Cửu Tinh data and algorithms in `docs/FENGSHUI_SPEC.md`, `crates/astro-core`, and the 28-mansion verses of `XIU_SONG` (`LunarUtil.ts`), translated into Vietnamese for `almanac.mansion` (batch AL-02)
 - License: MIT
 
 ```

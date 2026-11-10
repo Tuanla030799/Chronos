@@ -861,6 +861,14 @@ Dò bằng biểu thức chính quy, khoảng 200 đoạn có từ ngữ nặng:
 | D15 | "Lộc" khi sách không ghi rõ Lộc Tồn hay Hóa Lộc (mục 7.7) | Quy ước chuẩn: khớp Lộc Tồn HOẶC Hóa Lộc, tọa thủ hoặc hội hợp tùy ngữ cảnh. Fact mới `any_loc`, mục 7.3, 9. "Song Lộc" vẫn là có cả hai cùng hội hợp, không dùng `any_loc` |
 | D16 | Giảm `condition_text` ở cung Mệnh sau TV-02 đến TV-06 (mục 11.6) | Thêm 6 trường `when` tính được từ `TuViChart`: `birth_time_of_day`, `lunar_day_range`, `opposite_only`, `in_than`, `any_loc`, `element_relation`, cùng fact tương ứng ở mục 9. Ngũ hành Chính Tinh lấy từ `profile.element` đã duyệt của `tuvi.star` (TV-01), không suy đoán thêm |
 
+### 12.5. Chốt Task 5A.8
+
+| Mã | Vấn đề | Quyết định |
+| :-- | :-- | :-- |
+| D17 | `rights` của 6 nguồn mới (`vn_custom_rules`, `lunar_ts`, `ngoc_hap_thong_thu`, `hiep_ky_bien_phuong_thu`, `tam_menh_thong_hoi`, `tu_binh_chan_thuyen`, `bat_trach_minh_canh`, `tham_thi_huyen_khong_hoc`) | `vn_custom_rules` (`open`, tài liệu của chính dự án), `lunar_ts` (`licensed`, MIT như đã khai ở `THIRD_PARTY_NOTICES.md`); bốn sách Hán cổ (`ngoc_hap_thong_thu`, `hiep_ky_bien_phuong_thu`, `tam_menh_thong_hoi`, `tu_binh_chan_thuyen`, `bat_trach_minh_canh`, `tham_thi_huyen_khong_hoc`) đặt `open`: đều là cổ thư hàng trăm năm đã thuộc phạm vi công cộng, và mục `canonical_summary` là văn bản tự tổng hợp, không trích nguyên văn một bản dịch hiện đại nào, nên không cần `unverified` chặn `build --release` |
+| D18 | `bazi.can_chi` (60 cặp Hoa Giáp) không có nguồn riêng cho từng cặp ngoài Nạp Âm (đã ở `bazi.nayin`) và ngũ hành Can/Chi (đã ở core) | Ghi `gap` cho cả 60 cặp, không tự đặt lời tán riêng để tránh trùng dữ liệu core và tránh suy diễn ngoài nguồn, đúng tinh thần mục 3.5 và mục 5 |
+| D19 | `bazi.nayin` cần cả `image` (dự kiến `paraphrase` từ *Tân Biên* tr. 241–243) và `traits`, `fortune` (dự kiến `canonical_summary` theo *Tam Mệnh Thông Hội*), nhưng một mục chỉ có một `source_ref` | Gộp cả ba trường vào một mục `canonical_summary` nguồn `tam_menh_thong_hoi`: bảng nguyên thể 30 Nạp Âm của *Tân Biên* vốn cũng chỉ là chép lại từ *Tam Mệnh Thông Hội*, nên quy về một nguồn là hợp lý hơn tách hai `source_ref` mà schema không cho phép |
+
 ## 13. Phạm vi
 
 **Ngoài phạm vi Task 5A.1, có thể thêm sau mà không đổi schema:**
@@ -877,5 +885,5 @@ Không làm: tìm kiếm toàn văn, đa ngôn ngữ, cập nhật dữ liệu q
 
 **Việc tiếp theo:**
 
-1. Task 5A.4: skill `/ingest-content` với dạng viết gọn, chạy các batch còn lại.
-2. Thêm `XIU_SONG` vào `THIRD_PARTY_NOTICES.md` khi nạp AL-02.
+1. ~~Task 5A.4: skill `/ingest-content` với dạng viết gọn, chạy các batch còn lại.~~ Xong ở Task 5A.8: 11/11 batch AL/BZ/FS đã nạp và duyệt.
+2. ~~Thêm `XIU_SONG` vào `THIRD_PARTY_NOTICES.md` khi nạp AL-02.~~ Xong ở Task 5A.8.

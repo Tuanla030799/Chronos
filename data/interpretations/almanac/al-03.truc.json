@@ -1,0 +1,280 @@
+{
+  "batch": "AL-03",
+  "collection": "almanac.truc",
+  "entries": [
+    {
+      "avoid": [
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "NhamChuc"
+        },
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "Kien",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Kiến: ngày khởi đầu, tốt cho nhậm chức, xuất hành, cầu tài; khá kỵ động thổ và an táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "Tru",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Trừ: ngày trừ bỏ điều xấu, tốt cho việc trừ bệnh, cầu phúc; không hợp xuất hành xa hay động thổ."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "Man",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Mãn: ngày đầy đủ, tốt cho cưới hỏi, cầu tài, nhập trạch; không hợp an táng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "SuaChua"
+        }
+      ],
+      "key": "Binh",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Bình: ngày bình hòa, tốt cho tu sửa nhà cửa; không quá tốt cũng không quá xấu, nên tránh việc tranh chấp."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "NhamChuc"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "Dinh",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Định: ngày ổn định, tốt cho cưới hỏi, nhậm chức, ký kết; không hợp xuất hành xa."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "XayDung"
+        }
+      ],
+      "key": "Chap",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Chấp: ngày cầm giữ, tốt cho ký kết hợp đồng, xây dựng; không hợp khai trương, xuất hành."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "key": "Pha",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Phá: ngày phá vỡ, chỉ hợp việc dỡ bỏ, sửa chữa hư hỏng; rất kỵ cưới hỏi, động thổ, xuất hành."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "Nguy",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Nguy: ngày nguy hiểm, kỵ hầu hết việc lớn, đặc biệt xuất hành xa và các việc mạo hiểm."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "Thanh",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Thành: ngày thành tựu, rất tốt cho cưới hỏi, khai trương, động thổ, ký kết."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "Thu",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Thu: ngày thu hoạch, tốt cho cầu tài, nhập trạch; không hợp xuất hành hay kiện tụng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "NhamChuc"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "Khai",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Khai: ngày mở, tốt cho khai trương, động thổ, nhậm chức, cưới hỏi; không hợp an táng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "MaiTang"
+        }
+      ],
+      "key": "Be",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trực Bế: ngày đóng, hợp xây tường, đắp nền, an táng; không hợp khai trương, xuất hành, cưới hỏi."
+    }
+  ]
+}

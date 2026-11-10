@@ -1,0 +1,45 @@
+{
+  "batch": "AL-01",
+  "collection": "almanac.restriction",
+  "entries": [
+    {
+      "key": "TamTai",
+      "source_ref": {
+        "keywords": [
+          "Tam Tai kéo dài 3 năm liên tiếp"
+        ],
+        "locator": "mục 4.2",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Hạn Tam Tai kéo dài 3 năm liên tiếp; dân gian thường chỉ kỵ khởi sự lớn nặng nhất ở năm giữa (Cư), không phải cả 3 năm đều kỵ như nhau."
+    },
+    {
+      "key": "KimLau",
+      "source_ref": {
+        "keywords": [
+          "chia cho 9 lấy phần dư"
+        ],
+        "locator": "mục 4.3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Hạn Kim Lâu tính theo tuổi mụ chia 9 lấy số dư; dân gian kiêng làm nhà, cưới hỏi ở tuổi phạm, có tục mượn tuổi người khác đứng tên."
+    },
+    {
+      "key": "HoangOc",
+      "source_ref": {
+        "keywords": [
+          "Khởi tính 6 cung theo bàn tay"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Hạn Hoang Ốc tính theo 6 cung xoay vòng từ tuổi mụ; dân gian kiêng làm nhà ở ba cung xấu, cũng có tục mượn tuổi như Kim Lâu."
+    }
+  ]
+}

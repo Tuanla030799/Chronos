@@ -945,7 +945,9 @@ const BRIGHTNESS: [[StarBrightness; 12]; 14] = {
 /// Âm Thủy.
 const ELEMENT: [FiveElements; 14] = {
     use FiveElements::{Hoa, Kim, Moc, Tho, Thuy};
-    [Tho, Moc, Hoa, Kim, Thuy, Hoa, Tho, Thuy, Thuy, Thuy, Thuy, Moc, Kim, Thuy]
+    [
+        Tho, Moc, Hoa, Kim, Thuy, Hoa, Tho, Thuy, Thuy, Thuy, Thuy, Moc, Kim, Thuy,
+    ]
 };
 
 /// The Four Transformations (Tứ Hóa). Each one attaches to a star set by the year stem.

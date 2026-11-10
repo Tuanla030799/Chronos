@@ -848,8 +848,9 @@ mod tests {
     #[test]
     fn element_relation_facts_compare_ban_menh_cung_and_chinh_tinh() {
         use crate::tuvi::ElementRelation;
-        let (chart, branch) =
-            find_palace(TuViPalaceRole::Menh, |_, palace| !palace.main_stars.is_empty());
+        let (chart, branch) = find_palace(TuViPalaceRole::Menh, |_, palace| {
+            !palace.main_stars.is_empty()
+        });
         let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
         let palace = chart.palace(branch);
         let ban_menh = chart.ban_menh.element();
@@ -882,9 +883,13 @@ mod tests {
         });
         let facts = &tuvi_palace_query(&chart, branch).lookups[0].facts;
         assert!(facts.contains(&"any_loc".to_string()));
-        for facts in [TuViPalaceRole::Menh, TuViPalaceRole::QuanLoc, TuViPalaceRole::TaiBach]
-            .map(|role| chart.palace_of_role(role).branch)
-            .map(|branch| tuvi_palace_query(&chart, branch).lookups[0].facts.clone())
+        for facts in [
+            TuViPalaceRole::Menh,
+            TuViPalaceRole::QuanLoc,
+            TuViPalaceRole::TaiBach,
+        ]
+        .map(|role| chart.palace_of_role(role).branch)
+        .map(|branch| tuvi_palace_query(&chart, branch).lookups[0].facts.clone())
         {
             let expect_any_loc = facts.contains(&"with:LocTon".to_string())
                 || facts.contains(&"meet:LocTon".to_string())

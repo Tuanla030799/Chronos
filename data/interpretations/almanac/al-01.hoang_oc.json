@@ -1,0 +1,84 @@
+{
+  "batch": "AL-01",
+  "collection": "almanac.hoang_oc",
+  "entries": [
+    {
+      "key": "NhatCat",
+      "source_ref": {
+        "keywords": [
+          "Làm nhà an cư lập nghiệp, mọi việc hanh thông"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Nhất Cát: cung tốt, thuận để dựng nhà, ổn định đời sống, công việc trôi chảy."
+    },
+    {
+      "key": "NhiNghi",
+      "source_ref": {
+        "keywords": [
+          "Làm nhà hưng vượng, giàu có"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Nhì Nghi: tốt, làm nhà hưng vượng, giàu có."
+    },
+    {
+      "key": "TamDiaSat",
+      "source_ref": {
+        "keywords": [
+          "gia chủ dễ mắc bệnh tật"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Tam Địa Sát: xấu, dân gian cho là gia chủ dễ mắc bệnh tật nếu làm nhà năm này."
+    },
+    {
+      "key": "TuTanTai",
+      "source_ref": {
+        "keywords": [
+          "Làm nhà phúc lộc vẹn toàn"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Tứ Tấn Tài: tốt, làm nhà phúc lộc vẹn toàn."
+    },
+    {
+      "key": "NguThoTu",
+      "source_ref": {
+        "keywords": [
+          "gia đạo chia rẽ, sinh ly tử biệt"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Ngũ Thọ Tử: xấu nặng, dân gian cho là dễ gia đạo chia rẽ, sinh ly tử biệt nếu làm nhà năm này."
+    },
+    {
+      "key": "LucHoangOc",
+      "source_ref": {
+        "keywords": [
+          "làm ăn khó thành, nghèo túng"
+        ],
+        "locator": "mục 4.4",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Lục Hoang Ốc: xấu, dân gian cho là làm ăn khó thành, nghèo túng nếu làm nhà năm này."
+    }
+  ]
+}

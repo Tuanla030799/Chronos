@@ -1,0 +1,105 @@
+{
+  "batch": "FS-03",
+  "collection": "fengshui.nine_star",
+  "entries": [
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng trí tuệ, học hành, giao tiếp, quan hệ xã hội thuận lợi.",
+      "inauspicious_meaning": "Khi thất vận: dễ thị phi qua lời nói, lận đận tình cảm, giao tiếp trắc trở.",
+      "key": "NhatBach",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nhất Bạch Thủy: sao trí tuệ, giao tiếp, thuận lợi học hành và quan hệ xã hội."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng về đất đai, bất động sản, vai trò người mẹ, người vợ trong nhà.",
+      "inauspicious_meaning": "Khi thất vận: dễ sinh bệnh tật, đặc biệt về tiêu hóa hay phụ khoa; cần tĩnh, tránh động thổ mạnh.",
+      "key": "NhiHac",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nhị Hắc Thổ: sao liên quan sức khỏe và nữ chủ nhà, cần cẩn trọng dù ở vận nào."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng khởi sự, phát triển nhanh, có sức bật.",
+      "inauspicious_meaning": "Khi thất vận: dễ gây tranh chấp, thị phi pháp lý, nóng nảy hỏng việc.",
+      "key": "TamBich",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tam Bích Mộc: sao năng động, dễ gây tranh chấp hoặc thúc đẩy phát triển tùy theo vận."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng văn chương, thi cử, danh tiếng, hợp con đường học thuật.",
+      "inauspicious_meaning": "Khi thất vận: dễ phóng túng, sa đà tình cảm, thị phi liên quan danh dự.",
+      "key": "TuLuc",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tứ Lục Mộc: sao văn chương, danh tiếng, gắn với học vấn và thi cử."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận (Chính thần vận 5): vẫn là ngôi tôn quý, vượng khí tập trung, nhưng vẫn cần tĩnh, không nên động mạnh.",
+      "inauspicious_meaning": "Ngoài vận 5, khi thất vận: đại hung, dễ gặp bệnh tật, tai họa nặng; kỵ động thổ, xây cất tại vị trí sao này.",
+      "key": "NguHoang",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ngũ Hoàng Thổ: sao trung tâm, mang sát khí mạnh nhất, cần đặc biệt tĩnh và cẩn trọng."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng quyền uy, công danh, thích hợp vai trò lãnh đạo, quân sự.",
+      "inauspicious_meaning": "Khi thất vận: dễ cứng nhắc, cô độc, dễ vướng kiện tụng hay xung đột quyền lực.",
+      "key": "LucBach",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lục Bạch Kim: sao quyền uy, công danh, gắn với địa vị và quân sự."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng tài lộc, buôn bán, giao dịch thuận lợi.",
+      "inauspicious_meaning": "Khi thất vận: dễ mất của, trộm cắp, thị phi miệng lưỡi, tai nạn liên quan kim khí.",
+      "key": "ThatXich",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thất Xích Kim: sao tài lộc nhưng cũng gắn với thị phi, trộm cắp, cần xét theo vận."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng tài lộc bền vững, hợp tích lũy, bất động sản, hôn nhân muộn nhưng chắc.",
+      "inauspicious_meaning": "Khi thất vận: dễ trì trệ, tích tụ bất lợi kéo dài, khó giải quyết dứt điểm.",
+      "key": "BatBach",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bát Bạch Thổ: sao tài lộc bền vững, gắn với bất động sản và tích lũy lâu dài."
+    },
+    {
+      "auspicious_meaning": "Khi đương vận hoặc sinh khí: vượng danh tiếng, hỷ sự, lễ nghi, dễ được chú ý và nể trọng.",
+      "inauspicious_meaning": "Khi thất vận: dễ bốc đồng, hư danh, hao tổn vì phô trương, dễ xảy ra hỏa hoạn hoặc tranh cãi.",
+      "key": "CuuTu",
+      "source_ref": {
+        "source": "tham_thi_huyen_khong_hoc",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Cửu Tử Hỏa: sao danh tiếng, hỷ sự, gắn với lễ nghi và vẻ rực rỡ bên ngoài."
+    }
+  ]
+}

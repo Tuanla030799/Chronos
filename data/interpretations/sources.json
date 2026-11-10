@@ -6,5 +6,63 @@
     "edition": "Internet Archive TuViDdauSoTanBien-VDThaiThuLang-DV, bản đánh máy lại 2014",
     "rights": "paraphrased",
     "packet": ".ref/sources/tan_bien/pages.txt"
+  },
+  {
+    "id": "vn_custom_rules",
+    "title": "Đặc tả quy tắc lịch dân gian và hạn tuổi Việt Nam",
+    "author": "Dự án Chronos, tổng hợp theo Ngọc Hạp Thông Thư và Lịch Vạn Niên Việt Nam",
+    "edition": "docs/vietnam_custom_rules.md",
+    "rights": "open",
+    "packet": "docs/vietnam_custom_rules.md"
+  },
+  {
+    "id": "lunar_ts",
+    "title": "lunar-typescript, XIU_SONG (bài ca 28 Tú)",
+    "author": "6tail",
+    "edition": "1.8.6",
+    "rights": "licensed",
+    "packet": ".ref/lunar-ts/src/lib/LunarUtil.ts"
+  },
+  {
+    "id": "ngoc_hap_thong_thu",
+    "title": "Ngọc Hạp Thông Thư",
+    "author": "Cổ bản dân gian",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
+  },
+  {
+    "id": "hiep_ky_bien_phuong_thu",
+    "title": "Hiệp Kỷ Biện Phương Thư",
+    "author": "Khâm định (nhà Thanh)",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
+  },
+  {
+    "id": "tam_menh_thong_hoi",
+    "title": "Tam Mệnh Thông Hội",
+    "author": "Vạn Dân Anh (nhà Minh)",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
+  },
+  {
+    "id": "tu_binh_chan_thuyen",
+    "title": "Tử Bình Chân Thuyên",
+    "author": "Thẩm Hiếu Chiêm (nhà Thanh)",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
+  },
+  {
+    "id": "bat_trach_minh_canh",
+    "title": "Bát Trạch Minh Cảnh",
+    "author": "Cổ bản dân gian",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
+  },
+  {
+    "id": "tham_thi_huyen_khong_hoc",
+    "title": "Thẩm Thị Huyền Không Học",
+    "author": "Thẩm Trúc Nhưng (nhà Thanh)",
+    "edition": "Tổng hợp theo truyền thống, không có bản trong dự án",
+    "rights": "open"
   }
 ]

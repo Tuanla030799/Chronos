@@ -1,0 +1,486 @@
+{
+  "batch": "BZ-01",
+  "collection": "bazi.nayin",
+  "entries": [
+    {
+      "fortune": [
+        "Cần thời gian và duyên gặp mới phát huy được giá trị thật; đầu đời thường chưa thuận, về sau mới tỏ rõ tài năng."
+      ],
+      "image": "Vàng dưới biển",
+      "key": "HaiTrungKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hải Trung Kim: vàng dưới biển, nguyên thể của Nạp Âm Giáp Tý, Ất Sửu.",
+      "traits": [
+        "Vàng ẩn sâu dưới biển, hàm chứa nhưng chưa lộ, tính trầm lặng, kín kẽ."
+      ]
+    },
+    {
+      "fortune": [
+        "Vượng khi có người vun đắp, dễ thành đạt trong môi trường có tổ chức, khuôn khổ rõ ràng."
+      ],
+      "image": "Lửa trong lò",
+      "key": "LuTrungHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lư Trung Hỏa: lửa trong lò, nguyên thể của Nạp Âm Bính Dần, Đinh Mão.",
+      "traits": [
+        "Lửa trong lò, sức nóng tụ lại một chỗ, tính nồng nhiệt nhưng kín đáo."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ phát triển khi có môi trường rộng lớn, nhiều người cùng chí hướng; cần kiên trì vươn lên giữa cạnh tranh."
+      ],
+      "image": "Cây trong rừng lớn",
+      "key": "DaiLamMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đại Lâm Mộc: cây trong rừng lớn, nguyên thể của Nạp Âm Mậu Thìn, Kỷ Tỵ.",
+      "traits": [
+        "Cây mọc giữa rừng lớn, phải cạnh tranh ánh sáng và đất với cây khác, tính mạnh mẽ, chịu áp lực."
+      ]
+    },
+    {
+      "fortune": [
+        "Hợp công việc giao tiếp, qua lại nhiều người; dễ gặp cơ hội nhưng cũng dễ bị xáo trộn, ít khi yên ổn lâu."
+      ],
+      "image": "Đất giữa đường",
+      "key": "LoBangTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lộ Bàng Thổ: đất giữa đường, nguyên thể của Nạp Âm Canh Ngọ, Tân Mùi.",
+      "traits": [
+        "Đất ở giữa đường, nơi nhiều người qua lại, tính cởi mở, dễ gần."
+      ]
+    },
+    {
+      "fortune": [
+        "Thành tựu rõ rệt sau quá trình rèn luyện gian khó; hợp con đường cần bản lĩnh, quyết đoán."
+      ],
+      "image": "Vàng ở mũi kiếm",
+      "key": "KiemPhongKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kiếm Phong Kim: vàng ở mũi kiếm, nguyên thể của Nạp Âm Nhâm Thân, Quý Dậu.",
+      "traits": [
+        "Vàng luyện thành mũi kiếm, đã qua tôi luyện, tính cương quyết, sắc sảo."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ nổi bật, gây chú ý nhanh; cần biết giữ sức, tránh bộc phát quá độ rồi đuối sức."
+      ],
+      "image": "Lửa trên núi",
+      "key": "SonDauHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sơn Đầu Hỏa: lửa trên núi, nguyên thể của Nạp Âm Giáp Tuất, Ất Hợi.",
+      "traits": [
+        "Lửa trên đỉnh núi, sáng rực nhưng dễ lụi khi hết nhiên liệu, tính bộc phát."
+      ]
+    },
+    {
+      "fortune": [
+        "Khó làm việc lớn một mình nhưng bền vững lâu dài; hợp tích lũy dần, không hợp nóng vội."
+      ],
+      "image": "Nước dưới khe",
+      "key": "GianHaThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Giản Hạ Thủy: nước dưới khe, nguyên thể của Nạp Âm Bính Tý, Đinh Sửu.",
+      "traits": [
+        "Nước chảy trong khe nhỏ, lượng ít nhưng bền, tính khiêm nhường, kiên trì."
+      ]
+    },
+    {
+      "fortune": [
+        "Hợp vai trò gìn giữ, bảo vệ, nền tảng cho người khác; thành tựu thường gắn với sự ổn định lâu dài."
+      ],
+      "image": "Đất trên mặt thành",
+      "key": "ThanhDauTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thành Đầu Thổ: đất trên mặt thành, nguyên thể của Nạp Âm Mậu Dần, Kỷ Mão.",
+      "traits": [
+        "Đất đắp trên mặt thành, vừa là nền tảng vừa là ranh giới, tính vững chãi, biết giữ gìn."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ bị đánh giá thấp lúc đầu; giá trị thật chỉ lộ ra khi được thử thách hoặc qua thời gian."
+      ],
+      "image": "Vàng trong nến trắng",
+      "key": "BachLapKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bạch Lạp Kim: vàng trong nến trắng, nguyên thể của Nạp Âm Canh Thìn, Tân Tỵ.",
+      "traits": [
+        "Vàng ẩn trong nến sáp trắng, vẻ ngoài mềm mại che giấu chất cứng bên trong."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ xoay chuyển theo hoàn cảnh, ít gãy đổ trước khó khăn; cần cẩn trọng vì thiếu độ cứng rắn khi cần quyết đoán."
+      ],
+      "image": "Gỗ cây liễu",
+      "key": "DuongLieuMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Dương Liễu Mộc: gỗ cây liễu, nguyên thể của Nạp Âm Nhâm Ngọ, Quý Mùi.",
+      "traits": [
+        "Gỗ cây liễu, mềm dẻo, dễ uốn theo gió, tính linh hoạt, thích nghi."
+      ]
+    },
+    {
+      "fortune": [
+        "Cuộc sống thường bình lặng, ít xáo trộn lớn; hợp những công việc cần sự đều đặn, bền bỉ."
+      ],
+      "image": "Nước dưới suối",
+      "key": "TuyenTrungThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tuyền Trung Thủy: nước dưới suối, nguyên thể của Nạp Âm Giáp Thân, Ất Dậu.",
+      "traits": [
+        "Nước trong khe suối, trong sạch, chảy đều, tính thuần khiết, ôn hòa."
+      ]
+    },
+    {
+      "fortune": [
+        "Thường gánh vai trò bảo vệ, che chở cho người khác; áp lực cao nhưng được tin tưởng, nể trọng."
+      ],
+      "image": "Đất trên nóc nhà",
+      "key": "OcThuongTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ốc Thượng Thổ: đất trên nóc nhà, nguyên thể của Nạp Âm Bính Tuất, Đinh Hợi.",
+      "traits": [
+        "Đất trên nóc nhà, vị trí cao, có vai trò che chở, tính trách nhiệm."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ gặp biến động lớn, thành bại rõ rệt; hợp vai trò xông xáo, dẫn đầu nhưng cần tiết chế."
+      ],
+      "image": "Lửa sấm sét",
+      "key": "TichLichHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tích Lịch Hỏa: lửa sấm sét, nguyên thể của Nạp Âm Mậu Tý, Kỷ Sửu.",
+      "traits": [
+        "Lửa của sấm sét, mạnh mẽ, bất ngờ, tính cương liệt, quyết đoán."
+      ]
+    },
+    {
+      "fortune": [
+        "Càng trải qua thử thách càng vững vàng; hợp con đường dài hơi, giữ khí tiết."
+      ],
+      "image": "Gỗ cây tùng, bách",
+      "key": "TungBachMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tùng Bách Mộc: gỗ cây tùng, bách, nguyên thể của Nạp Âm Canh Dần, Tân Mão.",
+      "traits": [
+        "Gỗ cây tùng, bách, xanh tốt quanh năm, tính bền vững, ngay thẳng."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ đi xa, ít an phận một chỗ; thuận lợi khi lưu chuyển, giao thương, dịch chuyển."
+      ],
+      "image": "Nước chảy dòng lớn",
+      "key": "TruongLuuThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trường Lưu Thủy: nước chảy dòng lớn, nguyên thể của Nạp Âm Nhâm Thìn, Quý Tỵ.",
+      "traits": [
+        "Nước của dòng sông lớn, chảy không ngừng, tính phóng khoáng, năng động."
+      ]
+    },
+    {
+      "fortune": [
+        "Tài năng cần được khai thác, phát hiện đúng cách mới tỏ rõ; dễ bị bỏ qua nếu không gặp người tinh ý."
+      ],
+      "image": "Vàng trong cát",
+      "key": "SaTrungKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sa Trung Kim: vàng trong cát, nguyên thể của Nạp Âm Giáp Ngọ, Ất Mùi.",
+      "traits": [
+        "Vàng lẫn trong cát, cần sàng lọc mới lộ ra, tính ẩn tàng, cần người phát hiện."
+      ]
+    },
+    {
+      "fortune": [
+        "Không bộc phát ồn ào, nhưng bền và khó dập tắt hoàn toàn; hợp tích lũy nội lực âm thầm."
+      ],
+      "image": "Lửa dưới chân núi",
+      "key": "SonHaHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sơn Hạ Hỏa: lửa dưới chân núi, nguyên thể của Nạp Âm Bính Thân, Đinh Dậu.",
+      "traits": [
+        "Lửa dưới chân núi, âm ỉ, khó lan rộng, tính kín đáo, giữ mình."
+      ]
+    },
+    {
+      "fortune": [
+        "Phát triển thuận lợi, ít trở ngại lớn; cuộc sống tương đối bình ổn, dễ an nhàn."
+      ],
+      "image": "Cây ở đồng bằng",
+      "key": "BinhDiaMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bình Địa Mộc: cây ở đồng bằng, nguyên thể của Nạp Âm Mậu Tuất, Kỷ Hợi.",
+      "traits": [
+        "Cây mọc ở đồng bằng, không gian rộng, ít cạnh tranh, tính thong dong."
+      ]
+    },
+    {
+      "fortune": [
+        "Vững vàng trước khó khăn, nhưng cũng khó thay đổi linh hoạt; hợp vai trò trụ cột, nền tảng."
+      ],
+      "image": "Đất trên vách",
+      "key": "BichThuongTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bích Thượng Thổ: đất trên vách, nguyên thể của Nạp Âm Canh Tý, Tân Sửu.",
+      "traits": [
+        "Đất trên vách đá, cao và chắc, tính kiên định, khó lay chuyển."
+      ]
+    },
+    {
+      "fortune": [
+        "Cần trải qua rèn luyện, gạn lọc mới đạt độ tinh; thành tựu đến từ quá trình cải thiện bản thân."
+      ],
+      "image": "Vàng pha loài kim sắc trắng",
+      "key": "KimBachKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kim Bạch Kim: vàng pha loài kim sắc trắng, nguyên thể của Nạp Âm Nhâm Dần, Quý Mão.",
+      "traits": [
+        "Vàng pha kim loại sắc trắng, chưa tinh luyện hoàn toàn, tính còn pha tạp, cần rèn giũa."
+      ]
+    },
+    {
+      "fortune": [
+        "Hợp vai trò chỉ dẫn, soi sáng cho người khác; dễ được chú ý, nể trọng nhờ sự sáng suốt."
+      ],
+      "image": "Lửa ngọn đèn lớn",
+      "key": "PhuDangHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Phú Đăng Hỏa: lửa ngọn đèn lớn, nguyên thể của Nạp Âm Giáp Thìn, Ất Tỵ.",
+      "traits": [
+        "Lửa của ngọn đèn lớn, soi sáng xung quanh, tính minh mẫn, dẫn đường."
+      ]
+    },
+    {
+      "fortune": [
+        "Tư duy bay bổng, hướng về điều lớn lao; cần gắn với thực tế để tránh viển vông."
+      ],
+      "image": "Nước ở sông trên trời",
+      "key": "ThienHaThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Hà Thủy: nước ở sông trên trời, nguyên thể của Nạp Âm Bính Ngọ, Đinh Mùi.",
+      "traits": [
+        "Nước của sông Ngân Hà, cao xa, khó nắm bắt, tính siêu thoát, mơ mộng."
+      ]
+    },
+    {
+      "fortune": [
+        "Hợp vai trò quản lý, bao quát nhiều việc; dễ gánh trách nhiệm lớn hơn người thường."
+      ],
+      "image": "Đất thuộc một khu lớn",
+      "key": "DaiDichTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đại Dịch Thổ: đất thuộc một khu lớn, nguyên thể của Nạp Âm Mậu Thân, Kỷ Dậu.",
+      "traits": [
+        "Đất thuộc một vùng rộng lớn, bao quát, tính rộng rãi, có tầm nhìn."
+      ]
+    },
+    {
+      "fortune": [
+        "Dễ được chú ý nhờ vẻ ngoài, sự khéo léo; cần giữ thực chất bên trong tương xứng với vẻ đẹp bên ngoài."
+      ],
+      "image": "Vàng làm trang sức",
+      "key": "ThoaXuyenKim",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thoa Xuyến Kim: vàng làm trang sức, nguyên thể của Nạp Âm Canh Tuất, Tân Hợi.",
+      "traits": [
+        "Vàng chế tác thành trang sức, chú trọng vẻ ngoài, tính tinh tế, chăm chút hình thức."
+      ]
+    },
+    {
+      "fortune": [
+        "Thành quả đến từ sự chăm chỉ, cần cù tích lũy; hợp những công việc đòi hỏi kiên trì, tay nghề."
+      ],
+      "image": "Gỗ cây dâu",
+      "key": "TangDoMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tang Đố Mộc: gỗ cây dâu, nguyên thể của Nạp Âm Nhâm Tý, Quý Sửu.",
+      "traits": [
+        "Gỗ cây dâu, gắn với nghề tơ lụa, tính chăm chỉ, gắn bó với lao động."
+      ]
+    },
+    {
+      "fortune": [
+        "Có thể làm được việc lớn hơn mức thường nhưng cần biết giới hạn của mình; tránh tham vọng quá sức."
+      ],
+      "image": "Nước dưới khe lớn",
+      "key": "DaiKheThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đại Khê Thủy: nước dưới khe lớn, nguyên thể của Nạp Âm Giáp Dần, Ất Mão.",
+      "traits": [
+        "Nước của khe lớn, mạnh hơn khe nhỏ nhưng vẫn giới hạn, tính vừa phải, biết lượng sức."
+      ]
+    },
+    {
+      "fortune": [
+        "Nền tảng cần được củng cố thêm mới vững; thành tựu đòi hỏi bồi đắp dần, không nên chủ quan."
+      ],
+      "image": "Đất lẫn trong cát",
+      "key": "SaTrungTho",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sa Trung Thổ: đất lẫn trong cát, nguyên thể của Nạp Âm Bính Thìn, Đinh Tỵ.",
+      "traits": [
+        "Đất lẫn trong cát, kém chắc chắn, tính dễ thay đổi, cần bồi đắp."
+      ]
+    },
+    {
+      "fortune": [
+        "Tầm ảnh hưởng rộng, dễ được nhiều người biết đến; cần giữ sự ấm áp, tránh quá chói gắt."
+      ],
+      "image": "Lửa trên trời",
+      "key": "ThienThuongHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Thượng Hỏa: lửa trên trời, nguyên thể của Nạp Âm Mậu Ngọ, Kỷ Mùi.",
+      "traits": [
+        "Lửa trên trời, như ánh mặt trời, chiếu rọi khắp nơi, tính quang minh, rộng lượng."
+      ]
+    },
+    {
+      "fortune": [
+        "Thường gắn với phúc lộc về con cháu, gia đạo đông vui; thành quả đến từ sự tích lũy, nảy nở dần."
+      ],
+      "image": "Gỗ cây thạch lựu",
+      "key": "ThachLuuMoc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thạch Lựu Mộc: gỗ cây thạch lựu, nguyên thể của Nạp Âm Canh Thân, Tân Dậu.",
+      "traits": [
+        "Gỗ cây thạch lựu, sai quả, tính sum suê, gắn với sinh sôi, con cháu."
+      ]
+    },
+    {
+      "fortune": [
+        "Tiềm năng lớn, khó ai đo hết được; cuộc đời thường có những bước ngoặt lớn, thăng trầm rõ rệt."
+      ],
+      "image": "Nước trong biển lớn",
+      "key": "DaiHaiThuy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đại Hải Thủy: nước trong biển lớn, nguyên thể của Nạp Âm Nhâm Tuất, Quý Hợi.",
+      "traits": [
+        "Nước của biển lớn, bao la, sâu không lường, tính rộng lớn, khó đoán hết."
+      ]
+    }
+  ]
+}

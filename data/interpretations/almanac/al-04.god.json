@@ -1,0 +1,252 @@
+{
+  "batch": "AL-04",
+  "collection": "almanac.god",
+  "entries": [
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "ThienDuc",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Đức: phúc đức của trời, hóa giải hung sát; tốt cho hầu hết việc lớn trong ngày có sao này."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "NguyetDuc",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nguyệt Đức: phúc đức của tháng, hóa giải hung sát trong tháng; tốt cho cưới hỏi, cầu phúc."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "NhamChuc"
+        }
+      ],
+      "key": "ThienXa",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Xá: trời tha tội, hóa giải vận hạn cũ; tốt để khởi sự lại, xin việc, cầu phúc."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "ThienNguyen",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Nguyện: trời chứng cho lòng thành; tốt cho lễ bái, cầu nguyện, khởi sự theo tâm nguyện."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "SinhKhi",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sinh Khí: khí sinh trưởng, vượng sinh sôi; tốt cho khai trương, động thổ, cầu con cháu."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KhaiTruong"
+        }
+      ],
+      "key": "ThienHy",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Hỷ: niềm vui của trời; tốt cho cưới hỏi, khai trương, các việc hỷ sự."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "TamHop",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tam Hợp: hợp lực của ba phương; tốt cho ký kết, hợp tác làm ăn, cưới hỏi."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "DichMa",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Dịch Mã: ngựa trạm chuyển động; tốt cho xuất hành, cầu tài, chuyển dịch nơi ở hay công việc."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "NguyetPha",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nguyệt Phá: phá tán của tháng; kỵ xây dựng, cưới hỏi, dễ hao tổn tài sản."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "ThienCuong",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Cương: khí cương cứng của trời; kỵ cưới hỏi, ký kết, dễ xung khắc, đổ vỡ."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "HaKhoi",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hà Khôi: cùng nhóm hung với Thiên Cương; kỵ khởi sự lớn, đặc biệt cưới hỏi và ký kết."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "DongTho"
+        },
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "key": "NguyetSat",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nguyệt Sát: sát khí của tháng; kỵ động thổ, xuất hành."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "CauTai"
+        },
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "KiepSat",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kiếp Sát: khí cướp đoạt; kỵ cầu tài, ký kết, dễ mất của hay bị lừa gạt."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "TaiSat",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tai Sát: khí tai họa; kỵ xuất hành, động thổ."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "NguyetHinh",
+      "source_ref": {
+        "source": "hiep_ky_bien_phuong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nguyệt Hình: hình phạt của tháng; kỵ ký kết, các việc dễ vướng kiện tụng."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "batch": "BZ-04",
+  "collection": "bazi.shen_sha",
+  "entries": [
+    {
+      "key": "ThienAtQuyNhan",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Ất Quý Nhân: sao quý nhân phù trợ, gặp khó dễ có người giúp, gặp người trên dễ được nể trọng."
+    },
+    {
+      "key": "VanXuong",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Văn Xương: sao học vấn, thi cử, văn chương, hợp với đường học hành, trí tuệ."
+    },
+    {
+      "key": "LocTon",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lộc Tồn: sao tài lộc ổn định, của cải vững bền, ít biến động lớn."
+    },
+    {
+      "key": "KinhDuong",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kình Dương: sao sắc nhọn, cương liệt, dễ gặp va chạm hay tranh chấp nhưng cũng có uy lực riêng."
+    },
+    {
+      "key": "DaLa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đà La: sao trì trệ, cản trở, chậm chạp, dễ gặp trắc trở kéo dài."
+    },
+    {
+      "key": "DichMa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Dịch Mã: sao di chuyển, hợp với xuất hành, thay đổi nơi ở hoặc công việc."
+    },
+    {
+      "key": "DaoHoa",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đào Hoa: sao duyên dáng, thu hút người khác, dễ vướng vào chuyện tình cảm."
+    },
+    {
+      "key": "HoaCai",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Hoa Cái: sao nghệ thuật, tôn giáo, tâm linh; tài hoa nhưng thường mang nét cô độc."
+    },
+    {
+      "key": "TuongTinh",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tướng Tinh: sao chỉ huy, uy quyền, thể hiện khả năng lãnh đạo, dẫn dắt người khác."
+    },
+    {
+      "key": "KiepSat",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kiếp Sát: sao hao tài, dễ mất của hoặc gặp biến cố bất ngờ ngoài ý muốn."
+    },
+    {
+      "key": "KhongVong",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Không Vong: ngày hoặc giờ trống rỗng, việc làm dễ không đạt như mong đợi, cần đề phòng hụt hẫng."
+    },
+    {
+      "key": "KhoiCanh",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Khôi Canh: tổ hợp cương cường đặc biệt (Canh/Nhâm gặp Thìn, Tuất); tính quả quyết nhưng dễ cô độc, đường hôn nhân lận đận."
+    }
+  ]
+}

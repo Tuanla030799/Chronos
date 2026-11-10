@@ -1,0 +1,487 @@
+{
+  "batch": "BZ-02",
+  "collection": "bazi.can_chi",
+  "entries": [],
+  "gaps": [
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Ty"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Suu"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Dan"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Mao"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Thin"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Ti"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Ngo"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Mui"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Than"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Dau"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Tuat"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Hoi"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Ty"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Suu"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Dan"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Mao"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Thin"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Ti"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Ngo"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Mui"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Than"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Dau"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Tuat"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Hoi"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Ty"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Suu"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Dan"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Mao"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Thin"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Ti"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Ngo"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Mui"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Than"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Dau"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Tuat"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Hoi"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Ty"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Suu"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Dan"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Mao"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Thin"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Ti"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Ngo"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Mui"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Than"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Dau"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Tuat"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Hoi"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Ty"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Suu"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Giap",
+        "Dan"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "At",
+        "Mao"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Binh",
+        "Thin"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Dinh",
+        "Ti"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Mau",
+        "Ngo"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Ky",
+        "Mui"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Canh",
+        "Than"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Tan",
+        "Dau"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Nham",
+        "Tuat"
+      ]
+    },
+    {
+      "checked": "tam_menh_thong_hoi: không có bản văn bản trong dự án để đối chiếu từng cặp; đã đối chiếu với bazi.nayin và các bảng ngũ hành của core, không trùng lặp dữ liệu.",
+      "gap": "Không có nguồn riêng cho từng cặp Hoa Giáp ngoài Nạp Âm (đã có ở bazi.nayin) và ngũ hành Can/Chi (đã có ở core); Tam Mệnh Thông Hội luận theo Nạp Âm và tương sinh/khắc với đại vận, không tách riêng từng năm trong 60 Hoa Giáp.",
+      "key": [
+        "Quy",
+        "Hoi"
+      ]
+    }
+  ]
+}

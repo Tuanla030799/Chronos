@@ -1,0 +1,78 @@
+{
+  "batch": "FS-01",
+  "collection": "fengshui.kua",
+  "entries": [
+    {
+      "key": "Kham",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Khảm (Thủy, Đông Tứ Trạch): tính thông minh, linh hoạt như nước; hợp di chuyển, giao tiếp, thích nghi."
+    },
+    {
+      "key": "Khon",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Khôn (Thổ, Tây Tứ Trạch): tính điềm đạm, bao dung như đất; hợp sự ổn định, chăm lo gia đình."
+    },
+    {
+      "key": "Chan",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Chấn (Mộc, Đông Tứ Trạch): tính năng động, quyết đoán như sấm; hợp khởi sự, tiến thủ."
+    },
+    {
+      "key": "Ton",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tốn (Mộc, Đông Tứ Trạch): tính mềm mỏng, khéo xoay chuyển như gió; hợp giao thiệp, thích nghi linh hoạt."
+    },
+    {
+      "key": "CanKim",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Càn (Kim, Tây Tứ Trạch): tính cương kiện, có khí chất lãnh đạo như trời; hợp vai trò đứng đầu, quyết đoán."
+    },
+    {
+      "key": "Doai",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đoài (Kim, Tây Tứ Trạch): tính vui vẻ, khéo nói như hồ nước; hợp giao tiếp, ngoại giao."
+    },
+    {
+      "key": "CanTho",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Cấn (Thổ, Tây Tứ Trạch): tính kiên định, trầm tĩnh như núi; hợp tích lũy, bền vững lâu dài."
+    },
+    {
+      "key": "Ly",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ly (Hỏa, Đông Tứ Trạch): tính nhiệt tình, rực rỡ như lửa; hợp thể hiện bản thân, dễ nổi bật."
+    }
+  ]
+}

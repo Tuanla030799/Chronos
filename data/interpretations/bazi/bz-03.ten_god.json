@@ -1,0 +1,96 @@
+{
+  "batch": "BZ-03",
+  "collection": "bazi.ten_god",
+  "entries": [
+    {
+      "key": "TyKien",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tỷ Kiên: cùng hành, cùng âm dương với Nhật Chủ; là anh em, bạn bè, vừa hỗ trợ vừa cạnh tranh ngang hàng."
+    },
+    {
+      "key": "KiepTai",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kiếp Tài: cùng hành, khác âm dương với Nhật Chủ; giống Tỷ Kiên nhưng mang tính tranh giành tài lực, dễ hao tài vì người khác."
+    },
+    {
+      "key": "ThucThan",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thực Thần: hành do Nhật Chủ sinh ra, cùng âm dương; biểu thị tài năng, hưởng thụ, tính sáng tạo ôn hòa."
+    },
+    {
+      "key": "ThuongQuan",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thương Quan: hành do Nhật Chủ sinh ra, khác âm dương; tài năng sắc sảo, bộc lộ mạnh, thông minh nhưng dễ ngang ngạnh."
+    },
+    {
+      "key": "ThienTai",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Tài: hành bị Nhật Chủ khắc, khác âm dương; tài lộc bất ngờ, linh hoạt kiếm tiền, quan hệ rộng."
+    },
+    {
+      "key": "ChinhTai",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Chính Tài: hành bị Nhật Chủ khắc, cùng âm dương; tài sản chính đáng, chăm chỉ tích lũy, thực tế."
+    },
+    {
+      "key": "ThatSat",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thất Sát: hành khắc Nhật Chủ, khác âm dương; quyền uy mạnh mẽ, áp lực lớn, tính chiến đấu, quyết liệt."
+    },
+    {
+      "key": "ChinhQuan",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Chính Quan: hành khắc Nhật Chủ, cùng âm dương; danh vọng chính đáng, trách nhiệm, kỷ luật."
+    },
+    {
+      "key": "ThienAn",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Ấn: hành sinh ra Nhật Chủ, khác âm dương; trí tuệ riêng biệt, thiên về tâm linh, đôi khi khác người."
+    },
+    {
+      "key": "ChinhAn",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Chính Ấn: hành sinh ra Nhật Chủ, cùng âm dương; được che chở, trọng học vấn, nhân hậu, theo chính đạo."
+    }
+  ]
+}

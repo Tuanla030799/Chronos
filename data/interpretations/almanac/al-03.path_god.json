@@ -1,0 +1,213 @@
+{
+  "batch": "AL-03",
+  "collection": "almanac.path_god",
+  "entries": [
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "KhaiTruong"
+        }
+      ],
+      "key": "ThanhLong",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thanh Long, thần Hoàng Đạo: rất tốt, hợp mọi việc lớn, đặc biệt cưới hỏi, xuất hành, khai trương."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "NhamChuc"
+        }
+      ],
+      "key": "MinhDuong",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Minh Đường, thần Hoàng Đạo: tốt, hợp khai trương, ký kết, nhậm chức, yết kiến người trên."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "ThienHinh",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Hình, thần Hắc Đạo: xấu, dễ dính kiện tụng pháp luật; nên tránh ký kết và các việc dễ gây tranh chấp."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "ChuTuoc",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Chu Tước, thần Hắc Đạo: xấu, dễ sinh thị phi cãi vã; không hợp ký kết hay các việc cần hòa khí."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CauTai"
+        },
+        {
+          "activity": "CuoiHoi"
+        }
+      ],
+      "key": "KimQuy",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kim Quỹ, thần Hoàng Đạo: tốt, hợp cầu tài, cưới hỏi, cầu con cháu."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "CuoiHoi"
+        },
+        {
+          "activity": "KhaiTruong"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "ThienDuc",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Đức (còn gọi Bảo Quang), thần Hoàng Đạo: rất tốt, hợp hầu hết việc lớn, đặc biệt lễ nghi, cầu phúc."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "BachHo",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bạch Hổ, thần Hắc Đạo: xấu, kỵ xuất hành xa, động thổ; việc tang lễ cần đặc biệt cẩn trọng."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "XayDung"
+        },
+        {
+          "activity": "SuaChua"
+        },
+        {
+          "activity": "NhamChuc"
+        }
+      ],
+      "key": "NgocDuong",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ngọc Đường, thần Hoàng Đạo: tốt, hợp xây dựng, tu tạo nhà cửa, nhậm chức."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KyKet"
+        }
+      ],
+      "key": "ThienLao",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Lao, thần Hắc Đạo: xấu, dễ vướng tù tội, kiện tụng; không hợp ký kết việc quan trọng."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "XuatHanh"
+        }
+      ],
+      "key": "HuyenVu",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Huyền Vũ, thần Hắc Đạo: xấu, dễ liên quan trộm cắp hay việc mờ ám; không hợp xuất hành, đặc biệt ban đêm."
+    },
+    {
+      "good_for": [
+        {
+          "activity": "NhamChuc"
+        },
+        {
+          "activity": "CauTai"
+        }
+      ],
+      "key": "TuMenh",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tư Mệnh, thần Hoàng Đạo: tốt, hợp cầu phúc, xin việc, nhậm chức; theo truyền thống hợp hơn vào ban ngày."
+    },
+    {
+      "avoid": [
+        {
+          "activity": "KyKet"
+        },
+        {
+          "activity": "DongTho"
+        }
+      ],
+      "key": "CauTran",
+      "source_ref": {
+        "source": "ngoc_hap_thong_thu",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Câu Trần, thần Hắc Đạo: xấu, dễ vướng tranh chấp đất đai, nhà cửa; không hợp ký kết."
+    }
+  ]
+}

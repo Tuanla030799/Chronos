@@ -1,0 +1,114 @@
+{
+  "batch": "BZ-04",
+  "collection": "bazi.life_stage",
+  "entries": [
+    {
+      "key": "TruongSinh",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Trường Sinh: khởi đầu, non nớt nhưng đầy sức sống, như trẻ vừa chào đời."
+    },
+    {
+      "key": "MocDuc",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Mộc Dục: giai đoạn trưởng thành ban đầu, dễ bị cám dỗ, như thiếu niên mới lớn."
+    },
+    {
+      "key": "QuanDoi",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Quan Đới: bắt đầu gánh vai trò xã hội, như thanh niên vừa vào đời."
+    },
+    {
+      "key": "LamQuan",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lâm Quan: giai đoạn sung sức, đang thăng tiến, như tuổi trưởng thành trong sự nghiệp."
+    },
+    {
+      "key": "DeVuong",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đế Vượng: đỉnh cao, cực vượng, quyền lực mạnh nhất nhưng dễ cực đoan, như tuổi sung mãn nhất."
+    },
+    {
+      "key": "Suy",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Suy: bắt đầu giảm sút sau đỉnh cao, như tuổi trung niên chững lại, cần thay đổi hướng đi."
+    },
+    {
+      "key": "Benh",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bệnh: sức lực giảm rõ, như tuổi già bắt đầu đau yếu."
+    },
+    {
+      "key": "Tu",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tử: kết thúc một chu kỳ, như sự chấm hết của một giai đoạn, chuẩn bị bước sang trạng thái khác."
+    },
+    {
+      "key": "Mo",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Mộ: nhập mộ, cất giữ, tàng ẩn, tích lũy chờ tái sinh."
+    },
+    {
+      "key": "Tuyet",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tuyệt: điểm thấp nhất, dứt tuyệt, như trước lúc chưa thành hình."
+    },
+    {
+      "key": "Thai",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thai: bắt đầu hình thành trở lại, như thai nhi mới tạo trong bụng mẹ."
+    },
+    {
+      "key": "Duong",
+      "source_ref": {
+        "source": "tam_menh_thong_hoi",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Dưỡng: được nuôi dưỡng, chuẩn bị ra đời, như thai nhi đã đủ ngày đủ tháng."
+    }
+  ]
+}

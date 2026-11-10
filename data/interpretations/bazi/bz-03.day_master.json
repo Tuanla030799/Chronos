@@ -1,0 +1,136 @@
+{
+  "batch": "BZ-03",
+  "collection": "bazi.day_master",
+  "entries": [
+    {
+      "key": "Giap",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Giáp (Dương Mộc): như cây lớn, thẳng thắn, cương trực, có chí tiến thủ nhưng hơi cứng nhắc.",
+      "traits": [
+        "Thẳng thắn, cương trực, có chí tiến thủ, thích dẫn đầu.",
+        "Hơi cứng nhắc, khó uốn theo hoàn cảnh, đôi khi bảo thủ."
+      ]
+    },
+    {
+      "key": "At",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ất (Âm Mộc): như cây nhỏ, hoa cỏ, mềm mại, khéo thích nghi nhưng dễ dao động.",
+      "traits": [
+        "Mềm mại, khéo thích nghi, linh hoạt trước hoàn cảnh.",
+        "Dễ dao động, thiếu quyết đoán khi đứng trước áp lực lớn."
+      ]
+    },
+    {
+      "key": "Binh",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Bính (Dương Hỏa): như lửa mặt trời, rực rỡ, nhiệt tình, phóng khoáng, thẳng tính.",
+      "traits": [
+        "Nhiệt tình, phóng khoáng, thẳng tính, dễ gây chú ý.",
+        "Bộc phát, thiếu kiên nhẫn, dễ nguội nhiệt tình nếu không được đáp lại."
+      ]
+    },
+    {
+      "key": "Dinh",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Đinh (Âm Hỏa): như lửa đèn, nến, ấm áp, tinh tế, kiên trì, hướng nội hơn Bính.",
+      "traits": [
+        "Ấm áp, tinh tế, kiên trì bền bỉ.",
+        "Hướng nội, nhạy cảm, dễ suy nghĩ nhiều."
+      ]
+    },
+    {
+      "key": "Mau",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Mậu (Dương Thổ): như đất núi, dày dặn, đáng tin cậy, trọng nghĩa, hơi chậm thay đổi.",
+      "traits": [
+        "Dày dặn, đáng tin cậy, trọng nghĩa khí.",
+        "Chậm thay đổi, đôi khi cứng nhắc trong suy nghĩ."
+      ]
+    },
+    {
+      "key": "Ky",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Kỷ (Âm Thổ): như đất ruộng, mềm mại, bao dung, khéo chăm lo nhưng dễ bị chi phối.",
+      "traits": [
+        "Bao dung, khéo chăm lo, chu toàn việc nhỏ.",
+        "Dễ bị chi phối bởi người khác, thiếu chủ kiến riêng."
+      ]
+    },
+    {
+      "key": "Canh",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Canh (Dương Kim): như kim loại thô, gươm đao chưa mài, cương cường, quyết đoán, nghĩa khí.",
+      "traits": [
+        "Cương cường, quyết đoán, trọng nghĩa khí.",
+        "Cứng rắn thái quá, dễ va chạm, thiếu mềm mỏng."
+      ]
+    },
+    {
+      "key": "Tan",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tân (Âm Kim): như kim loại tinh, trang sức, sắc sảo, tinh tế, coi trọng thể diện.",
+      "traits": [
+        "Sắc sảo, tinh tế, coi trọng vẻ ngoài và thể diện.",
+        "Dễ tự ái, nhạy cảm với lời chê trách."
+      ]
+    },
+    {
+      "key": "Nham",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Nhâm (Dương Thủy): như nước sông biển, phóng khoáng, thông minh, biến hóa, giao thiệp rộng.",
+      "traits": [
+        "Phóng khoáng, thông minh, biến hóa linh hoạt.",
+        "Giao thiệp rộng nhưng đôi khi thiếu chiều sâu, dễ phân tán."
+      ]
+    },
+    {
+      "key": "Quy",
+      "source_ref": {
+        "source": "tu_binh_chan_thuyen",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Quý (Âm Thủy): như nước mưa, suối, mềm mỏng, tinh tế, sâu sắc, giàu cảm xúc.",
+      "traits": [
+        "Mềm mỏng, tinh tế, sâu sắc trong suy nghĩ.",
+        "Giàu cảm xúc, dễ bị tác động bởi hoàn cảnh xung quanh."
+      ]
+    }
+  ]
+}

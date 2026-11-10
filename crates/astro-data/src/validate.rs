@@ -726,7 +726,10 @@ mod tests {
 
     #[test]
     fn v1_rejects_a_lunar_day_range_outside_1_to_30_or_inverted() {
-        let good = passage(r#"{ "role": "QuanLoc" }"#, r#"[{ "lunar_day_range": { "from": 1, "to": 15 } }]"#);
+        let good = passage(
+            r#"{ "role": "QuanLoc" }"#,
+            r#"[{ "lunar_day_range": { "from": 1, "to": 15 } }]"#,
+        );
         assert_eq!(passages(&good), []);
         let zero = passage(
             r#"{ "role": "QuanLoc" }"#,

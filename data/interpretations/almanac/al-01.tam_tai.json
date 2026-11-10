@@ -1,0 +1,45 @@
+{
+  "batch": "AL-01",
+  "collection": "almanac.tam_tai",
+  "entries": [
+    {
+      "key": "Nhap",
+      "source_ref": {
+        "keywords": [
+          "Năm đầu - Nhập"
+        ],
+        "locator": "mục 4.2",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Năm đầu của hạn Tam Tai: họa mới bắt đầu, nhẹ hơn năm giữa, nên cẩn trọng khi khởi sự lớn."
+    },
+    {
+      "key": "Cu",
+      "source_ref": {
+        "keywords": [
+          "Năm giữa - Cư, nặng nhất"
+        ],
+        "locator": "mục 4.2",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Năm giữa của hạn Tam Tai, nặng nhất trong 3 năm; dân gian kỵ khởi sự lớn như làm nhà, cưới hỏi, xuất hành xa."
+    },
+    {
+      "key": "Xuat",
+      "source_ref": {
+        "keywords": [
+          "Năm cuối - Xuất"
+        ],
+        "locator": "mục 4.2",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Năm cuối của hạn Tam Tai: họa đang qua, vẫn nên giữ ý tứ nhưng nhẹ dần."
+    }
+  ]
+}

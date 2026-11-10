@@ -1,0 +1,58 @@
+{
+  "batch": "AL-01",
+  "collection": "almanac.kim_lau",
+  "entries": [
+    {
+      "key": "Than",
+      "source_ref": {
+        "keywords": [
+          "Kỵ bản thân người đứng tuổi làm nhà / cưới hỏi"
+        ],
+        "locator": "mục 4.3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Kim Lâu Thân: kỵ chính người đứng tuổi làm nhà hoặc cưới hỏi trong năm phạm."
+    },
+    {
+      "key": "The",
+      "source_ref": {
+        "keywords": [
+          "Gây họa cho người phối ngẫu / vợ chồng"
+        ],
+        "locator": "mục 4.3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Kim Lâu Thê: dân gian cho là dễ gây họa cho vợ hoặc chồng của người đứng tuổi."
+    },
+    {
+      "key": "Tu",
+      "source_ref": {
+        "keywords": [
+          "Gây họa cho con cái trong nhà"
+        ],
+        "locator": "mục 4.3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Kim Lâu Tử: dân gian cho là dễ gây họa cho con cái trong nhà."
+    },
+    {
+      "key": "Suc",
+      "source_ref": {
+        "keywords": [
+          "Hại vật nuôi, ảnh hưởng kinh tế gia đình"
+        ],
+        "locator": "mục 4.3",
+        "source": "vn_custom_rules",
+        "source_type": "paraphrase"
+      },
+      "status": "approved",
+      "summary": "Kim Lâu Súc: dân gian cho là dễ hại vật nuôi, ảnh hưởng kinh tế gia đình."
+    }
+  ]
+}

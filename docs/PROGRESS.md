@@ -4,7 +4,7 @@
 > Cập nhật lần cuối: **2026-11-10**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D16 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.**
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D19 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
 
 ## 1. Trạng thái
 
@@ -28,7 +28,7 @@
 | Phong Thủy — Bát Trạch, Cửu Tinh | ✅ Xong | `fengshui.rs`: Mệnh Quái, Trạch Quái, Bát Biến, Vận, Niên/Nguyệt/Nhật/Thời Tinh, bàn Cửu Cung; có trên Swift và WASM |
 | Đặc tả CSDL luận giải offline | ✅ Xong | `docs/INTERPRETATION_DB_SPEC.md`; D1–D12 đã chốt |
 | Crate `astro-data` | ✅ Xong | `validate`, `build`, `stats`, `scan`, `review`; V1–V13; 80 test |
-| Dữ liệu luận giải | 🟡 Đang làm | TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%); 19/19 batch Tử Vi đã nạp và duyệt, còn 11 batch khác (Bát Tự, Phong Thủy…) |
+| Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
 | App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
@@ -47,6 +47,8 @@
 - [x] Duyệt TV-07 đến TV-11 ở `build/content/review/` (kiểm định độc lập, 507/507 đoạn)
 - [x] Nạp TV-12 đến TV-14, TV-16 đến TV-19
 - [x] Duyệt TV-12 đến TV-14, TV-16 đến TV-19 ở `build/content/review/` (kiểm định độc lập, 1.205/1.205 đoạn)
+- [x] Chốt điểm mở cuối cùng của phân hệ Tử Vi (`huynh-de/pha-quan/03`, TV-17)
+- [x] Nạp và duyệt 11 batch còn lại: AL-01 đến AL-04 (Trạch Nhật), BZ-01 đến BZ-04 (Bát Tự), FS-01 đến FS-03 (Phong Thủy); chốt D17–D19
 - [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -78,6 +80,19 @@
   - Tổng: 1.205 đoạn (1.199 đoạn nạp ở Task 5A.6, cộng 1 đoạn mới khôi phục ở TV-14, cộng 5 đoạn `tuvi.palace`) chuyển `approved`.
 - **Kiểm chứng:** `cargo run -p astro-data -- validate` → 146 mục, 2195 đoạn, 18 gap, 0 lỗi; `tuvi.passage` 2195/2195 `approved` (100%). `cargo test --workspace` 401 test đều qua (288 core + 70 astro-data + 17 repository_data + 26 FFI). `cargo clippy --workspace --all-targets -- -D warnings` sạch. `cargo run --release -p astro-data -- scan` (V13): 0 đoạn không bao giờ hiện trên 510.432 lá số, đủ dữ liệu ở cả 12 cung. `cargo fmt --all -- --check` báo lệch ở 2 file `.rs` không liên quan (không file Rust nào bị sửa trong task này) — lệch có sẵn từ trước, không phải do task này gây ra, không sửa.
 - **19/19 batch Tử Vi Đẩu Số đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** Còn mở: 11 batch khác (Bát Tự, Phong Thủy…) chưa có nguồn hoặc chưa nạp.
+
+### 2026-11-10 — Task 5A.8: chốt điểm mở `huynh-de/pha-quan/03`, nạp & duyệt 11 batch cuối, đóng Giai đoạn 5A
+
+- **`huynh-de/pha-quan/03` (TV-17):** xác nhận cách đọc "bất thành nhân" (anh em có người bất hảo, không nên người) là đúng văn phong *Tân Biên*; đã bỏ ghi chú "cần chủ dự án xác nhận" trong `correction`. Toàn bộ 2.195/2.195 đoạn Tử Vi Đẩu Số giờ không còn điểm mở nào.
+- **`cargo fmt --all`:** sửa 3 file `.rs` (`crates/astro-core/src/content.rs`, `crates/astro-core/src/tuvi.rs`, `crates/astro-data/src/validate.rs`) còn lệch định dạng tồn đọng từ Task 5A.7 (không liên quan đến nội dung logic, chỉ format lại biểu thức dài dòng/mảng hằng và một lời gọi hàm dài).
+- **Nạp 11 batch còn lại** (`/ingest-content`, dạng viết gọn `build/ingest/*.jsonl`), tổng 369 − 146 = 223 mục mới, 60 `gap` mới:
+  - **Trạch Nhật (AL-01 đến AL-04, 92 mục):** AL-01 (25 mục — `taboo` 9, `restriction` 3, `tam_tai` 3, `kim_lau` 4, `hoang_oc` 6, nguồn `vn_custom_rules.md`, `quote`/`paraphrase`/`canonical_summary` cho 3 ngày thiếu lời); AL-02 (28 mục `mansion`, dịch bài ca *XIU_SONG* của `lunar-typescript`, thêm nguồn `lunar_ts` và dòng khai báo trong `THIRD_PARTY_NOTICES.md`); AL-03 (24 mục `truc` + `path_god`, `canonical_summary` theo *Ngọc Hạp Thông Thư*); AL-04 (15 mục `god`, `canonical_summary` theo *Hiệp Kỷ Biện Phương Thư*).
+  - **Bát Tự (BZ-01 đến BZ-04, 74 mục + 60 gap):** BZ-01 (30 mục `nayin`) gộp cả `image`, `traits`, `fortune` vào một mục `canonical_summary` nguồn `tam_menh_thong_hoi` — xem D19; BZ-02 (`can_chi`) ghi `gap` cho cả 60 cặp Hoa Giáp — xem D18, không có mục mới; BZ-03 (20 mục `day_master` + `ten_god`, theo *Tử Bình Chân Thuyên*); BZ-04 (24 mục `life_stage` + `shen_sha`, theo *Tam Mệnh Thông Hội*).
+  - **Phong Thủy (FS-01 đến FS-03, 57 mục):** FS-01 (16 mục `kua` + `eight_star`, theo *Bát Trạch Minh Cảnh*); FS-02 (32 mục `eight_star_use`, 8 sao × 4 ứng dụng — `HuongNha`, `BanLamViec`, `KetHon` giữ `luck()` gốc, `Bep` đảo cực theo thuật "dùng hỏa khí hóa sát" nên có `verdict` riêng cho cả 8 sao); FS-03 (9 mục `nine_star` với `auspicious_meaning`/`inauspicious_meaning`, theo *Thẩm Thị Huyền Không Học*).
+  - **Chốt D17–D19** ở `docs/INTERPRETATION_DB_SPEC.md` mục 12.5: `rights` của 6 nguồn Hán cổ mới đặt `open` (cổ thư phạm vi công cộng, mục `canonical_summary` tự tổng hợp); `bazi.can_chi` ghi `gap` toàn bộ thay vì suy diễn riêng từng cặp; `bazi.nayin` gộp `image` và `traits`/`fortune` vào một `source_ref` duy nhất vì schema chỉ cho một nguồn mỗi mục.
+  - Thêm 8 nguồn mới vào `sources.json` (`vn_custom_rules`, `lunar_ts`, `ngoc_hap_thong_thu`, `hiep_ky_bien_phuong_thu`, `tam_menh_thong_hoi`, `tu_binh_chan_thuyen`, `bat_trach_minh_canh`, `tham_thi_huyen_khong_hoc`) và hoạt động `KinhDoanh` vào `vocab/activities.json`.
+- **Kiểm chứng:** `cargo run -p astro-data -- validate` → 369 mục, 2195 đoạn, 78 gap, 0 lỗi. `cargo run -p astro-data -- build --release` → `chronos_content.sqlite` 1.069.056 byte; `web/almanac.*.json` 43.015 byte (92 mục); `web/bazi.*.json` 36.726 byte (74 mục); `web/fengshui.*.json` 25.761 byte (57 mục); `web/tuvi.*.json` 1.070.877 byte (184 mục, 2195 đoạn). `cargo test --workspace` toàn bộ qua. `cargo clippy --workspace -- -D warnings` sạch. `cargo fmt --all -- --check` sạch.
+- **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy đã nạp và duyệt. Giai đoạn 5A (Cơ sở dữ liệu luận giải) hoàn thành 100%.** Tiếp theo: Giai đoạn 5B (ứng dụng iOS SwiftUI).
 
 ### 2026-11-09 — Task 5A.6: chốt TV-02 đến TV-11, nạp 7 batch Tử Vi cuối
 

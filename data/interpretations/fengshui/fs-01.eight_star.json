@@ -1,0 +1,78 @@
+{
+  "batch": "FS-01",
+  "collection": "fengshui.eight_star",
+  "entries": [
+    {
+      "key": "SinhKhi",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Sinh Khí: sao tốt nhất trong Bát Du Niên, vượng công danh, sự nghiệp, sức sống."
+    },
+    {
+      "key": "ThienY",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Thiên Y: sao tốt về sức khỏe và tài lộc, như được thầy thuốc trời cho."
+    },
+    {
+      "key": "DienNien",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Diên Niên: sao tốt về tình duyên, hòa hợp gia đạo, trường thọ."
+    },
+    {
+      "key": "PhucVi",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Phục Vị: sao tốt nhẹ, mang lại sự ổn định, hợp tu dưỡng bản thân, bình an."
+    },
+    {
+      "key": "TuyetMenh",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Tuyệt Mệnh: sao xấu nhất, dễ gặp họa lớn về sức khỏe hoặc tài sản."
+    },
+    {
+      "key": "NguQuy",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Ngũ Quỷ: sao xấu, dễ gặp thị phi, hao tài, tai họa bất ngờ."
+    },
+    {
+      "key": "LucSat",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Lục Sát: sao xấu, dễ gặp kiện tụng, tai nạn, bất hòa."
+    },
+    {
+      "key": "HoaHai",
+      "source_ref": {
+        "source": "bat_trach_minh_canh",
+        "source_type": "canonical_summary"
+      },
+      "status": "approved",
+      "summary": "Họa Hại: sao xấu nhẹ hơn các sao hung khác, dễ gặp phiền toái nhỏ, thị phi vụn vặt."
+    }
+  ]
+}
