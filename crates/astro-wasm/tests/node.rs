@@ -25,10 +25,10 @@ use astro_wasm::{
     nine_star_home_palace, nine_star_luck, nine_star_name, nine_star_number,
     nine_star_xuan_kong_name, nine_stars, opposite_direction, palace_direction, palace_element,
     palace_han_name, palace_name, palace_number, palace_trigram, solar_term_name,
-    solar_terms_in_year, solar_to_lunar, star_at, star_of_year, star_towards, stem_name,
-    tam_nguyen_name, trigram_direction, trigram_element, trigram_group, trigram_group_name,
-    trigram_han_name, trigram_name, trigram_number, trigram_palace, truc_name, true_solar_time,
-    van_of_year, year_nine_star,
+    solar_terms_in_year, solar_to_lunar, star_at, star_of_year, star_towards, stem_name, tai_sui,
+    tai_sui_luck, tai_sui_name, tam_nguyen_name, trigram_direction, trigram_element, trigram_group,
+    trigram_group_name, trigram_han_name, trigram_name, trigram_number, trigram_palace, truc_name,
+    true_solar_time, van_of_year, year_nine_star,
 };
 use astro_wasm::{
     five_elements_bureau_element, five_elements_bureau_name, five_elements_bureau_number,
@@ -214,6 +214,16 @@ fn analysis_almanac_and_age_restrictions() {
         kim_lau_name(js(&restrictions.kim_lau.unwrap())).unwrap(),
         "Kim Lâu Thân"
     );
+
+    let reading: astro_core::almanac::TaiSuiReading = rust(tai_sui(1984, 2026));
+    assert_eq!(reading.relations, [astro_core::almanac::TaiSui::Xung]);
+    assert_eq!(
+        tai_sui_name(js(&reading.relations[0])).unwrap(),
+        "Xung Thái Tuế"
+    );
+    let luck: astro_core::almanac::Luck =
+        rust(tai_sui_luck(js(&astro_core::almanac::TaiSui::LucHop)));
+    assert_eq!(luck, astro_core::almanac::Luck::Cat);
 }
 
 #[wasm_bindgen_test]

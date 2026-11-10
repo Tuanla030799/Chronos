@@ -7,8 +7,8 @@
 //! `NineStarBoundary::default()`. Likewise, omitting a `TuViConfig` means `TuViConfig::default()`.
 
 use astro_core::almanac::{
-    AgeRestrictions, AlmanacDay, AlmanacGod, HoangOc, KimLau, Luck, Mansion, PathGod, TamTai, Truc,
-    VietnamTaboo,
+    AgeRestrictions, AlmanacDay, AlmanacGod, HoangOc, KimLau, Luck, Mansion, PathGod, TaiSui,
+    TaiSuiReading, TamTai, Truc, VietnamTaboo,
 };
 use astro_core::bazi_analysis::{
     BaziAnalysis, BaziStar, DaiVan, Gender, HiddenStem, KhongVong, LifeStage, LuckCycle,
@@ -525,6 +525,24 @@ pub struct AlmanacDay {
     pub hoang_dao_hours: Vec<Branch>,
     pub gods: Vec<AlmanacGod>,
     pub taboos: Vec<VietnamTaboo>,
+}
+
+#[uniffi::remote(Enum)]
+pub enum TaiSui {
+    Truc,
+    Xung,
+    Hai,
+    Hinh,
+    Pha,
+    LucHop,
+    TamHop,
+}
+
+#[uniffi::remote(Record)]
+pub struct TaiSuiReading {
+    pub birth_branch: Branch,
+    pub year_branch: Branch,
+    pub relations: Vec<TaiSui>,
 }
 
 #[uniffi::remote(Record)]
@@ -1061,6 +1079,24 @@ pub fn almanac_day(date: SolarDate, tz_offset: f64) -> Result<AlmanacDay, AstroE
 #[uniffi::export]
 pub fn age_restrictions(birth_lunar_year: i32, target_lunar_year: i32) -> AgeRestrictions {
     astro_core::age_restrictions(birth_lunar_year, target_lunar_year)
+}
+
+/// Relation to the Thái Tuế of one lunar year of a person born in another.
+#[uniffi::export]
+pub fn tai_sui(birth_lunar_year: i32, target_lunar_year: i32) -> TaiSuiReading {
+    astro_core::almanac::tai_sui(birth_lunar_year, target_lunar_year)
+}
+
+/// Vietnamese name of a Thái Tuế relation, e.g. "Xung Thái Tuế".
+#[uniffi::export]
+pub fn tai_sui_name(value: TaiSui) -> String {
+    value.name_vi().to_owned()
+}
+
+/// Fortune of a Thái Tuế relation: Cát for the two Hợp.
+#[uniffi::export]
+pub fn tai_sui_luck(value: TaiSui) -> Luck {
+    value.luck()
 }
 
 /// Fortune of a mansion.
@@ -1946,6 +1982,11 @@ mod tests {
         let restrictions = age_restrictions(1990, 2026);
         assert_eq!(kim_lau_name(restrictions.kim_lau.unwrap()), "Kim Lâu Thân");
         assert_eq!(hoang_oc_name(restrictions.hoang_oc.unwrap()), "Tứ Tấn Tài");
+
+        let reading = tai_sui(1984, 2026);
+        assert_eq!(reading.relations, [TaiSui::Xung]);
+        assert_eq!(tai_sui_name(TaiSui::Xung), "Xung Thái Tuế");
+        assert_eq!(tai_sui_luck(TaiSui::TamHop), Luck::Cat);
     }
 
     #[test]

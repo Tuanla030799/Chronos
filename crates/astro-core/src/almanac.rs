@@ -1122,6 +1122,109 @@ pub fn age_restrictions(birth_lunar_year: i32, target_lunar_year: i32) -> AgeRes
     }
 }
 
+/// Relation of a person's year branch to the Thái Tuế, the branch of the year being read.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+pub enum TaiSui {
+    /// Trực Thái Tuế: the year has the person's own branch (năm tuổi).
+    Truc,
+    /// Xung Thái Tuế: Lục Xung.
+    Xung,
+    /// Hại Thái Tuế: Lục Hại.
+    Hai,
+    /// Hình Thái Tuế: Hình in either direction, self-punishment included.
+    Hinh,
+    /// Phá Thái Tuế: Lục Phá.
+    Pha,
+    /// Hợp Thái Tuế by Lục Hợp.
+    LucHop,
+    /// Hợp Thái Tuế by Tam Hợp.
+    TamHop,
+}
+
+impl TaiSui {
+    /// All relations, in the order they are listed.
+    pub const ALL: [TaiSui; 7] = [
+        TaiSui::Truc,
+        TaiSui::Xung,
+        TaiSui::Hai,
+        TaiSui::Hinh,
+        TaiSui::Pha,
+        TaiSui::LucHop,
+        TaiSui::TamHop,
+    ];
+
+    /// Vietnamese name, e.g. "Xung Thái Tuế".
+    pub const fn name_vi(self) -> &'static str {
+        match self {
+            TaiSui::Truc => "Trực Thái Tuế (năm tuổi)",
+            TaiSui::Xung => "Xung Thái Tuế",
+            TaiSui::Hai => "Hại Thái Tuế",
+            TaiSui::Hinh => "Hình Thái Tuế",
+            TaiSui::Pha => "Phá Thái Tuế",
+            TaiSui::LucHop => "Hợp Thái Tuế (Lục Hợp)",
+            TaiSui::TamHop => "Hợp Thái Tuế (Tam Hợp)",
+        }
+    }
+
+    /// Cát for the two Hợp, Hung for the others.
+    pub const fn luck(self) -> Luck {
+        match self {
+            TaiSui::LucHop | TaiSui::TamHop => Luck::Cat,
+            _ => Luck::Hung,
+        }
+    }
+
+    /// Whether a person of `birth` meets the Thái Tuế of a `year` branch in this way.
+    pub const fn holds(self, birth: Branch, year: Branch) -> bool {
+        let same = birth as u8 == year as u8;
+        match self {
+            TaiSui::Truc => same,
+            TaiSui::Xung => birth.clash() as u8 == year as u8,
+            TaiSui::Hai => birth.harm() as u8 == year as u8,
+            TaiSui::Hinh => {
+                birth.punishment() as u8 == year as u8 || year.punishment() as u8 == birth as u8
+            }
+            TaiSui::Pha => birth.destruction() as u8 == year as u8,
+            TaiSui::LucHop => birth.six_combination() as u8 == year as u8,
+            TaiSui::TamHop => !same && birth.trine_group() == year.trine_group(),
+        }
+    }
+}
+
+/// Every relation of `birth` to the Thái Tuế of a `year` branch, in the order of [`TaiSui::ALL`].
+/// Several can hold at once: Dần in a Hợi year is both Lục Hợp and Lục Phá.
+pub fn tai_sui_relations(birth: Branch, year: Branch) -> Vec<TaiSui> {
+    TaiSui::ALL
+        .into_iter()
+        .filter(|relation| relation.holds(birth, year))
+        .collect()
+}
+
+/// The Thái Tuế of lunar year `target_lunar_year` for a person born in `birth_lunar_year`.
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+#[cfg_attr(feature = "serde", serde(rename_all = "camelCase"))]
+pub struct TaiSuiReading {
+    /// Branch of the birth year.
+    pub birth_branch: Branch,
+    /// Branch of the year read: the Thái Tuế.
+    pub year_branch: Branch,
+    /// The relations that hold; empty when the year neither harms nor helps.
+    pub relations: Vec<TaiSui>,
+}
+
+/// Relation to the Thái Tuế of `target_lunar_year` of a person born in `birth_lunar_year`.
+pub fn tai_sui(birth_lunar_year: i32, target_lunar_year: i32) -> TaiSuiReading {
+    let birth_branch = year_can_chi(birth_lunar_year).branch;
+    let year_branch = year_can_chi(target_lunar_year).branch;
+    TaiSuiReading {
+        birth_branch,
+        year_branch,
+        relations: tai_sui_relations(birth_branch, year_branch),
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -1649,5 +1752,76 @@ mod tests {
                 hoang_oc: Some(HoangOc::TuTanTai),
             }
         );
+    }
+
+    #[test]
+    fn tai_sui_relations_of_a_ty_person() {
+        assert_eq!(tai_sui_relations(Ty, Ty), [TaiSui::Truc]);
+        assert_eq!(tai_sui_relations(Ty, Ngo), [TaiSui::Xung]);
+        assert_eq!(tai_sui_relations(Ty, Mui), [TaiSui::Hai]);
+        assert_eq!(tai_sui_relations(Ty, Mao), [TaiSui::Hinh]);
+        assert_eq!(tai_sui_relations(Ty, Dau), [TaiSui::Pha]);
+        assert_eq!(tai_sui_relations(Ty, Suu), [TaiSui::LucHop]);
+        assert_eq!(tai_sui_relations(Ty, Thin), [TaiSui::TamHop]);
+        assert_eq!(tai_sui_relations(Ty, Than), [TaiSui::TamHop]);
+        for year in [Dan, Ti, Tuat, Hoi] {
+            assert!(tai_sui_relations(Ty, year).is_empty(), "{year:?}");
+        }
+    }
+
+    #[test]
+    fn tai_sui_relations_can_overlap() {
+        assert_eq!(tai_sui_relations(Dan, Hoi), [TaiSui::Pha, TaiSui::LucHop]);
+        assert_eq!(tai_sui_relations(Dan, Ti), [TaiSui::Hai, TaiSui::Hinh]);
+        assert_eq!(
+            tai_sui_relations(Ti, Than),
+            [TaiSui::Hinh, TaiSui::Pha, TaiSui::LucHop]
+        );
+        assert_eq!(tai_sui_relations(Than, Dan), [TaiSui::Xung, TaiSui::Hinh]);
+        assert_eq!(tai_sui_relations(Thin, Thin), [TaiSui::Truc, TaiSui::Hinh]);
+        assert_eq!(tai_sui_relations(Suu, Tuat), [TaiSui::Hinh]);
+    }
+
+    #[test]
+    fn tai_sui_relations_are_symmetric_and_each_pair_counts_twelve_times() {
+        for relation in TaiSui::ALL {
+            let mut count = 0;
+            for birth in Branch::ALL {
+                for year in Branch::ALL {
+                    let holds = relation.holds(birth, year);
+                    assert_eq!(holds, relation.holds(year, birth), "{relation:?}");
+                    count += usize::from(holds);
+                }
+            }
+            let expected = match relation {
+                TaiSui::TamHop => 24,
+                TaiSui::Hinh => 18,
+                _ => 12,
+            };
+            assert_eq!(count, expected, "{relation:?}");
+        }
+    }
+
+    #[test]
+    fn tai_sui_luck_and_names() {
+        assert_eq!(TaiSui::LucHop.luck(), Luck::Cat);
+        assert_eq!(TaiSui::TamHop.luck(), Luck::Cat);
+        assert_eq!(TaiSui::Xung.luck(), Luck::Hung);
+        assert_eq!(TaiSui::Truc.name_vi(), "Trực Thái Tuế (năm tuổi)");
+    }
+
+    #[test]
+    fn tai_sui_of_lunar_years() {
+        // Canh Ngọ 1990 in Bính Ngọ 2026: năm tuổi, and Ngọ punishes itself.
+        assert_eq!(
+            tai_sui(1990, 2026),
+            TaiSuiReading {
+                birth_branch: Ngo,
+                year_branch: Ngo,
+                relations: vec![TaiSui::Truc, TaiSui::Hinh],
+            }
+        );
+        // Giáp Tý 1984 in Bính Ngọ 2026.
+        assert_eq!(tai_sui(1984, 2026).relations, [TaiSui::Xung]);
     }
 }

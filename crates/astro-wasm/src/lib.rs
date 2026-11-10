@@ -8,7 +8,7 @@
 
 use astro_core::almanac::{AgeRestrictions, AlmanacDay};
 use astro_core::almanac::{
-    AlmanacGod, HoangOc, KimLau, Mansion, PathGod, TamTai, Truc, VietnamTaboo,
+    AlmanacGod, HoangOc, KimLau, Mansion, PathGod, TaiSui, TamTai, Truc, VietnamTaboo,
 };
 use astro_core::bazi_analysis::BaziAnalysis;
 use astro_core::bazi_analysis::{BaziStar, LifeStage, TenGod};
@@ -152,6 +152,12 @@ export interface AlmanacDay {
   hoangDaoHours: Branch[];
   gods: AlmanacGod[];
   taboos: VietnamTaboo[];
+}
+export type TaiSui = "Truc" | "Xung" | "Hai" | "Hinh" | "Pha" | "LucHop" | "TamHop";
+export interface TaiSuiReading {
+  birthBranch: Branch;
+  yearBranch: Branch;
+  relations: TaiSui[];
 }
 export interface AgeRestrictions {
   lunarAge: number;
@@ -449,6 +455,31 @@ pub fn age_restrictions(birth_lunar_year: i32, target_lunar_year: i32) -> Result
         birth_lunar_year,
         target_lunar_year,
     ))
+}
+
+/// Relation to the Thái Tuế of one lunar year of a person born in another.
+#[wasm_bindgen(js_name = taiSui, unchecked_return_type = "TaiSuiReading")]
+pub fn tai_sui(birth_lunar_year: i32, target_lunar_year: i32) -> Result<JsValue, JsValue> {
+    to_js(&astro_core::almanac::tai_sui(
+        birth_lunar_year,
+        target_lunar_year,
+    ))
+}
+
+/// Vietnamese name of a Thái Tuế relation, e.g. "Xung Thái Tuế".
+#[wasm_bindgen(js_name = taiSuiName)]
+pub fn tai_sui_name(
+    #[wasm_bindgen(unchecked_param_type = "TaiSui")] value: JsValue,
+) -> Result<String, JsValue> {
+    Ok(from_js::<TaiSui>(value)?.name_vi().to_owned())
+}
+
+/// Fortune of a Thái Tuế relation: Cát for the two Hợp.
+#[wasm_bindgen(js_name = taiSuiLuck, unchecked_return_type = "Luck")]
+pub fn tai_sui_luck(
+    #[wasm_bindgen(unchecked_param_type = "TaiSui")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TaiSui>(value)?.luck())
 }
 
 /// True solar time at `longitude` degrees east for a wall-clock time.
