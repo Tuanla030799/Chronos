@@ -32,9 +32,9 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1 (dự án, tầng dịch vụ, khung 5 tab) và 5B.2 (tab Lịch, tab Xem tuổi, I1–I5) xong; còn 5B.3–5B.5 (Bát Tự, Tử Vi, Phong Thủy) |
+| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.2 xong (776d94b, 35a5893); còn 5B.3–5B.5 (Bát Tự, Tử Vi, Phong Thủy) |
 | Web app | ⏳ Chưa làm | |
-| Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
+| Commit lên git | ✅ Xong | `776d94b`, `35a5893` trên `origin/develop` (GitHub, qua SSH; Task 5B.2) |
 
 ## 2. Việc tiếp theo
 
