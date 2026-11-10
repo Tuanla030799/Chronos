@@ -5,6 +5,7 @@
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 > Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D19 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab; 27 test trên simulator đều qua.
 
 ## 1. Trạng thái
 
@@ -31,7 +32,7 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | ⏳ Chưa làm | Đã có Xcode |
+| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | Task 5B.1 xong: `apps/ios/`, tầng dịch vụ, khung 5 tab, `docs/IOS_APP_SPEC.md`; còn 5B.2–5B.5 (giao diện từng tab) |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `332c75e`, `cb32eda` trên `origin/develop` (GitHub, qua SSH) |
 
@@ -49,7 +50,9 @@
 - [x] Duyệt TV-12 đến TV-14, TV-16 đến TV-19 ở `build/content/review/` (kiểm định độc lập, 1.205/1.205 đoạn)
 - [x] Chốt điểm mở cuối cùng của phân hệ Tử Vi (`huynh-de/pha-quan/03`, TV-17)
 - [x] Nạp và duyệt 11 batch còn lại: AL-01 đến AL-04 (Trạch Nhật), BZ-01 đến BZ-04 (Bát Tự), FS-01 đến FS-03 (Phong Thủy); chốt D17–D19
-- [ ] Kéo `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode, gọi thử `checkConnection`
+- [x] Liên kết `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode (Task 5B.1)
+- [ ] Task 5B.2–5B.5: giao diện chi tiết Lịch, Xem tuổi, Bát Tự, Tử Vi, Phong Thủy
+- [ ] Chốt I2 (bundle ID), I3 (Widget, App Group), I5 (nguồn quy tắc xung tuổi) ở `docs/IOS_APP_SPEC.md`
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -61,11 +64,19 @@
 - [x] Viết `tuvi.rs`, đưa lên Swift và WASM
 - [x] Chốt T8 (Mệnh Chủ, Thân Chủ) và T9 (bảng Cát, Hung)
 - [ ] Đối chiếu V3 (Dương Nam, tháng nhuận) với một lá số lập bằng nguồn khác
-- [ ] Bắt đầu app iOS (SwiftUI) dùng XCFramework
+- [x] Bắt đầu app iOS (SwiftUI) dùng XCFramework
 - [x] Commit Giai đoạn 3 cùng `docs/`, `.gitignore`, `THIRD_PARTY_NOTICES.md`
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-10 — Task 5B.1: dự án iOS, tầng dịch vụ, khung 5 tab
+
+- **Dự án `apps/ios/Chronos.xcodeproj`:** máy không có XcodeGen nên viết tay `project.pbxproj` dạng `objectVersion = 77` với thư mục đồng bộ — thêm file Swift không phải sửa project. Liên kết `build/ios/AstroCore.xcframework`, `build/ios/AstroCore.swift`, bundle `build/content/chronos_content.sqlite` và `vocab/activities.json`. iOS 17, Swift 6, scheme `Chronos` dùng chung. Simulator bỏ x86_64 vì XCFramework chỉ có lát arm64. Build lại XCFramework bằng `./build-ios.sh` vì core đã đổi sau ngày 7/11.
+- **Tầng dịch vụ:** `EngineService` (hồ sơ → đầu vào engine, GMT+7 mặc định, ngày âm qua `lunarToSolar`); `ContentRepository` (SQLite3 hệ thống, `immutable=1`, kiểm `application_id`/`user_version`, lọc đoạn Tử Vi bằng `gateMatches` theo mục 9 của đặc tả CSDL, tách Primary/More, D9 ẩn đoạn `Death`/`Sexuality` sau một lần chạm); `ProfileStore` (`@Observable`, JSON trong `UserDefaults`).
+- **Khung `MainTabView`:** 5 tab Lịch, Xem tuổi, Bát Tự, Tử Vi, Phong Thủy, mỗi tab đã đọc dữ liệu thật từ engine và SQLite; menu hồ sơ dùng chung. Bảng màu giấy Dó / Đêm Huyền Không, đã đo tương phản WCAG AA.
+- **`docs/IOS_APP_SPEC.md`:** kiến trúc, bảng màu, điều hướng, kiểm thử; việc mở I1–I5.
+- **Kiểm chứng:** `xcodebuild` build cho simulator không lỗi, không cảnh báo. 27 test Swift Testing trên iPhone 17 simulator đều qua, gồm đối chiếu từng `stable_id` của 5 cung với `scan::select` của Rust. Đọc một mục khoảng 21 µs, đọc đủ 12 cung 56 ms (Debug). Chạy app trên simulator, tab Lịch hiện đúng ngày 10/11/2026 (2/10 Bính Ngọ, ngày Mậu Tý, tiết Lập Đông, Trực Trừ). Các tab cần hồ sơ chưa được xem trực tiếp trên simulator vì XcodeBuildMCP ở đây không có công cụ chạm.
 
 ### 2026-11-10 — Task 5A.7: kiểm định độc lập 7 batch Tử Vi cuối, khóa sổ phân hệ Tử Vi
 
@@ -374,6 +385,11 @@
 | `crates/astro-data/` | Công cụ build-time: kiểm và biên dịch dữ liệu luận giải |
 | `data/interpretations/` | Nguồn chuẩn của dữ liệu luận giải |
 | `build-ios.sh` | Build static lib iOS, sinh Swift bindings, đóng gói `AstroCore.xcframework` |
+| `apps/ios/Chronos.xcodeproj` | Dự án iOS (thư mục đồng bộ), scheme `Chronos` |
+| `apps/ios/Chronos/Services/` | `EngineService`, `ContentRepository`, `SQLiteDatabase`, model luận giải |
+| `apps/ios/Chronos/Profiles/` | `Profile`, `ProfileStore`, màn hình hồ sơ |
+| `apps/ios/Chronos/Features/` | 5 tab và view dùng chung |
+| `apps/ios/ChronosTests/` | Test Swift Testing chạy trên simulator |
 
 ## 7. API công khai
 
@@ -423,6 +439,9 @@ wasm-pack test --node crates/astro-wasm                 # 30 test
 cargo run -p astro-data -- validate                     # kiểm dữ liệu luận giải
 cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
+cargo run -p astro-data -- build --release              # SQLite cho app iOS
+xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 27 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

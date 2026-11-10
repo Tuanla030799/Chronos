@@ -1,0 +1,61 @@
+import Foundation
+
+enum ProfileGender: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
+    case male
+    case female
+
+    var id: Self { self }
+
+    var label: String {
+        switch self {
+        case .male: "Nam"
+        case .female: "Nữ"
+        }
+    }
+
+    var engineValue: Gender {
+        switch self {
+        case .male: .male
+        case .female: .female
+        }
+    }
+}
+
+/// A birth date as the person knows it: on the solar or the lunar calendar, with clock time.
+struct BirthDate: Codable, Sendable, Hashable {
+    enum Kind: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
+        case solar
+        case lunar
+
+        var id: Self { self }
+
+        var label: String {
+            switch self {
+            case .solar: "Dương lịch"
+            case .lunar: "Âm lịch"
+            }
+        }
+    }
+
+    var kind: Kind
+    var year: Int
+    var month: Int
+    var day: Int
+    /// Read only for a lunar date.
+    var isLeapMonth: Bool = false
+    var hour: Int
+    var minute: Int
+}
+
+/// A person whose charts the app draws. Shared by every tab.
+struct Profile: Identifiable, Codable, Sendable, Hashable {
+    var id = UUID()
+    var name: String
+    var gender: ProfileGender
+    var birth: BirthDate
+    /// Offset of the birth clock from UTC, in hours: 7 for Vietnam.
+    var tzOffset: Double = EngineService.vietnamOffset
+    /// Birthplace longitude in degrees east. When set, Bát Tự and Tử Vi use true solar time
+    /// there; when nil they use the clock time.
+    var longitude: Double?
+}
