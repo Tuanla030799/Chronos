@@ -292,6 +292,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 | I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `AstroCore.swift`. **Không** nhúng `chronos_content.sqlite` (và không cần `activities.json`), để giữ bộ nhớ Widget dưới giới hạn của iOS. Widget hiện những gì engine tính: ngày dương và âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao, giờ Hoàng Đạo; **không** hiện Nên/Kỵ (chúng chỉ nằm trong SQLite) | **Đã duyệt** 2026-11-11, chốt phạm vi ở 5B.3; **đã làm** ở 5B.5 (mục 3.6) |
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |
 | I5 | Xung tuổi theo năm = quan hệ của chi năm sinh với Thái Tuế (chi của năm đang xét), tính bằng phép Địa Chi có sẵn trong core, không thêm văn bản vào SQLite. Mục 6.1 | **Đã duyệt** 2026-11-11; làm ở 5B.2 |
+| I6 | Bốn quy ước của Task 5B.6: (1) thông báo nhắc bắn lúc 08:00 giờ Việt Nam (GMT+7) dù máy ở múi giờ khác (mục 3.8); (2) ghi chú dương lịch hằng năm vào 29/2 tính ngày 28/2 ở năm không nhuận; (3) ghi chú hằng năm chỉ có từ năm của nó trở đi; (4) thẻ đối chiếu của form hồ sơ lấy Can Chi năm, tháng, ngày theo âm lịch và giờ theo đồng hồ (Tý chia nửa đêm), nên có thể khác trụ năm của tab Bát Tự với người sinh giữa Tết và Lập Xuân (mục 3.7) | **Đã duyệt** 2026-11-14 |
 
 ### 6.1. Thái Tuế (I5)
 
