@@ -5,7 +5,7 @@
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 > Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D20 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
-> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không. **Task 5B.4 xong** — tab Tử Vi: bàn cờ 4×4 với Thiên Bàn, chọn cung tô Tam Hợp và Xung Chiếu, Đại hạn và Tiểu hạn theo năm xem, chi tiết cung với sao chia Cát/Hung, luận giải *Tân Biên* kèm đính chính (D20); 62 test trên simulator đều qua. **Bốn tab chính đã xong.**
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không. **Task 5B.4 xong** — tab Tử Vi: bàn cờ 4×4 với Thiên Bàn, chọn cung tô Tam Hợp và Xung Chiếu, Đại hạn và Tiểu hạn theo năm xem, chi tiết cung với sao chia Cát/Hung, luận giải *Tân Biên* kèm đính chính (D20); 62 test trên simulator đều qua. **Bốn tab chính đã xong.** **Task 5B.5 xong** — Widget `ChronosWidget` (nhỏ, vừa, màn hình khóa; chỉ AstroCore, đổi theo từng canh giờ và lúc nửa đêm), rà soát hồ sơ qua các tab; 79 test trên simulator đều qua. **Giai đoạn 5B hoàn thành 100%. Giai đoạn 5 hoàn thành.**
 
 ## 1. Trạng thái
 
@@ -32,9 +32,9 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.4 xong (cả 5 tab); còn Widget |
+| App iOS SwiftUI (Phase 5 – UI) | ✅ Xong | 5B.1–5B.5: 5 tab, hồ sơ, Widget `ChronosWidget` (I3) |
 | Web app | ⏳ Chưa làm | |
-| Commit lên git | ✅ Xong | `776d94b`, `35a5893` trên `origin/develop` (GitHub, qua SSH; Task 5B.2) |
+| Commit lên git | ✅ Xong | Đến `261e80e` (Task 5B.4) trên `origin/develop` (GitHub, qua SSH); commit của 5B.5 chờ push |
 
 ## 2. Việc tiếp theo
 
@@ -54,7 +54,7 @@
 - [x] Task 5B.2: chốt I1–I5; giao diện chi tiết tab Lịch và tab Xem tuổi
 - [x] Task 5B.3: giao diện chi tiết Bát Tự và Phong Thủy; chốt I3 (Widget không hiện Nên/Kỵ), I5
 - [x] Task 5B.4: giao diện chi tiết Tử Vi; chốt D20 (đính chính vào file build)
-- [ ] Widget lịch ngày theo I3 (không có Nên/Kỵ)
+- [x] Task 5B.5: Widget lịch ngày theo I3 (không có Nên/Kỵ); rà soát hồ sơ qua các tab; đóng Giai đoạn 5
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -71,6 +71,15 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-14 — Task 5B.5: Widget, rà soát hồ sơ, đóng Giai đoạn 5
+
+- **Duyệt D20, push 5B.4:** giữ ghi chú đính chính thu gọn một dòng. `07a4c52` và `261e80e` đã ở `origin/develop` trước khi làm 5B.5.
+- **Widget `ChronosWidget`** (`com.leanhtuan.chronos.widget`), target app extension viết tay trong `project.pbxproj`, nhúng vào app, chỉ liên kết `AstroCore.xcframework` và `AstroCore.swift` (I3: không SQLite, không `activities.json`, không Nên/Kỵ). Một Widget `ChronosDay` ba cỡ: `systemSmall` (tờ lịch thu gọn), `systemMedium` (Can Chi năm/tháng/ngày, Tiết Khí, Trực, Sao, sáu giờ Hoàng Đạo), `accessoryRectangular` (ngày dương và âm, Can Chi ngày, giờ Hoàng Đạo đang chạy hoặc kế tiếp). Timeline có một mục ở mỗi ranh giới canh giờ và một mục lúc 00:00, chính sách `.atEnd`. Đã tra tài liệu WidgetKit qua Context7.
+- **Thư mục `apps/ios/Shared/`** thuộc cả app và Widget: `Theme`, tên thứ và khung giờ, `DaySnapshot`, `HourSlot`, `DayMoment`, `DayTimeline`, ba view Widget. Tab Lịch dùng chung nhãn khung giờ. Scheme dùng chung `ChronosWidget` để chạy Widget trong Xcode.
+- **Rà soát hồ sơ:** màn hình danh sách và form hồ sơ còn nền trắng mặc định (`listRowBackground` gắn ở cấp `List` không có tác dụng), nay nền giấy. Đổi Dương lịch ↔ Âm lịch trong form trước đây giữ nguyên số (15/05/1990 dương thành 15/05 âm, một ngày sinh khác); nay quy đổi bằng engine, giữ đúng tháng nhuận. Mọi tab đọc `ProfileStore.selected` nên thêm, sửa, xóa hiện ngay; thêm test báo thay đổi và test hồ sơ âm lịch tháng nhuận qua bốn tab.
+- **Sửa tài liệu:** hàng I3 trong `IOS_APP_SPEC.md` mục 6 thừa một ô (lỗi khi ghi ở 5B.3).
+- **Kiểm chứng:** `cargo test --workspace` qua (295 core, 70 astro-data, 17 repository_data, 26 FFI); clippy `-D warnings`, `fmt --check` sạch. `xcodebuild` scheme `Chronos` (Debug và Release) và `ChronosWidget` build không lỗi, không cảnh báo. 79 test Swift trên iPhone 17 simulator qua. `pluginkit` trên simulator xác nhận đã đăng ký `com.leanhtuan.chronos.widget`; đã xem ảnh dựng của ba cỡ Widget ở chế độ sáng và tối; ngày 14/11/2026 ra âm lịch 6/10, ngày Nhâm Thìn, giờ Hoàng Đạo Dần, Thìn, Tỵ, Thân, Dậu, Hợi.
 
 ### 2026-11-14 — Task 5B.4: tab Tử Vi
 
@@ -421,6 +430,8 @@
 | `apps/ios/Chronos/Services/` | `EngineService`, `ContentRepository`, `SQLiteDatabase`, model luận giải |
 | `apps/ios/Chronos/Profiles/` | `Profile`, `ProfileStore`, màn hình hồ sơ |
 | `apps/ios/Chronos/Features/` | 5 tab và view dùng chung |
+| `apps/ios/ChronosWidget/` | Widget `ChronosDay`: `TimelineProvider`, `WidgetBundle`, `Info.plist` |
+| `apps/ios/Shared/` | Mã thuộc cả app và Widget: bảng màu, `DaySnapshot`, khung giờ, timeline, view Widget |
 | `apps/ios/ChronosTests/` | Test Swift Testing chạy trên simulator |
 
 ## 7. API công khai
@@ -474,7 +485,7 @@ cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 62 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 79 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

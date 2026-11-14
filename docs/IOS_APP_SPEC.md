@@ -1,26 +1,35 @@
 # Đặc tả ứng dụng iOS (IOS_APP_SPEC)
 
-> Giai đoạn 5B. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Task 5B.2 chốt I1–I5, hoàn thiện tab Lịch và tab Xem tuổi. Các tab còn lại làm ở 5B.3–5B.5.
+> Giai đoạn 5B, **hoàn thành**. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Task 5B.2 chốt I1–I5, hoàn thiện tab Lịch và tab Xem tuổi. Task 5B.3 làm tab Bát Tự và Phong Thủy, 5B.4 tab Tử Vi, 5B.5 Widget và rà soát tổng thể.
 
 ## 1. Dự án Xcode
 
 | Mục | Giá trị |
 | :-- | :-- |
-| Vị trí | `apps/ios/Chronos.xcodeproj`, mã nguồn ở `apps/ios/Chronos/`, test ở `apps/ios/ChronosTests/` |
+| Vị trí | `apps/ios/Chronos.xcodeproj`; app ở `apps/ios/Chronos/`, Widget ở `apps/ios/ChronosWidget/`, mã dùng chung ở `apps/ios/Shared/`, test ở `apps/ios/ChronosTests/` |
 | Hệ điều hành | iOS 17.0 trở lên, chỉ iPhone, khóa dọc |
 | Ngôn ngữ | Swift 6 (kiểm tra đồng thời đầy đủ), SwiftUI, Observation (`@Observable`) |
-| Bundle ID | `com.leanhtuan.chronos`, test `com.leanhtuan.chronos.tests` (I2, đã duyệt) |
-| Scheme | `Chronos` (dùng chung, có trong git), gồm cả target test |
+| Bundle ID | `com.leanhtuan.chronos`, Widget `com.leanhtuan.chronos.widget`, test `com.leanhtuan.chronos.tests` (I2, đã duyệt) |
+| Scheme | `Chronos` (build app, Widget theo phụ thuộc, và target test) và `ChronosWidget` (chạy Widget trên SpringBoard, cỡ medium), cả hai dùng chung, có trong git |
 | Simulator | Chỉ arm64: `EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64`, khớp với `build-ios.sh` |
 
-**Cách tạo project.** Máy không có XcodeGen hay Tuist, nên `project.pbxproj` viết tay ở định dạng `objectVersion = 77` với *thư mục đồng bộ* (`PBXFileSystemSynchronizedRootGroup`): mọi file trong `Chronos/` và `ChronosTests/` tự vào target, thêm file Swift mới không phải sửa project. File project chỉ còn bốn tham chiếu ra ngoài thư mục app:
+**Cách tạo project.** Máy không có XcodeGen hay Tuist, nên `project.pbxproj` viết tay ở định dạng `objectVersion = 77` với *thư mục đồng bộ* (`PBXFileSystemSynchronizedRootGroup`): mọi file trong thư mục tự vào target, thêm file Swift mới không phải sửa project.
+
+| Thư mục | Thuộc target |
+| :-- | :-- |
+| `Chronos/` | App |
+| `ChronosWidget/` | Widget; `Info.plist` (khai báo `com.apple.widgetkit-extension`) được loại khỏi Resources bằng một `PBXFileSystemSynchronizedBuildFileExceptionSet` |
+| `Shared/` | App và Widget: `Theme` (bảng màu), tên thứ và khung giờ, `DaySnapshot` và timeline, ba view Widget. Vì thuộc cả app nên `ChronosTests` kiểm được logic và giao diện Widget |
+| `ChronosTests/` | Test |
+
+App nhúng `ChronosWidget.appex` qua bước "Embed Foundation Extensions". File project còn bốn tham chiếu ra ngoài thư mục app:
 
 | Tham chiếu | Đường dẫn | Sinh bởi |
 | :-- | :-- | :-- |
-| `AstroCore.xcframework` (Frameworks) | `../../build/ios/` | `./build-ios.sh` |
-| `AstroCore.swift` (Sources) | `../../build/ios/` | `./build-ios.sh` |
-| `chronos_content.sqlite` (Resources) | `../../build/content/` | `cargo run -p astro-data -- build --release` |
-| `activities.json` (Resources) | `../../data/interpretations/vocab/` | Có sẵn trong git |
+| `AstroCore.xcframework` (Frameworks, app và Widget) | `../../build/ios/` | `./build-ios.sh` |
+| `AstroCore.swift` (Sources, app và Widget) | `../../build/ios/` | `./build-ios.sh` |
+| `chronos_content.sqlite` (Resources, chỉ app) | `../../build/content/` | `cargo run -p astro-data -- build --release` |
+| `activities.json` (Resources, chỉ app) | `../../data/interpretations/vocab/` | Có sẵn trong git |
 
 `build/` không vào git, nên chạy hai lệnh sinh trước lần build đầu. Thiếu file nào thì Xcode báo đúng tên file đó.
 
@@ -60,7 +69,7 @@ ContentRepository ── khóa từ AstroCore ──► SQLite3 hệ thống, ch
 
 Quy tắc:
 
-1. **App không tự ghép khóa và không lặp logic lá số.** Khóa luôn đến từ `almanacDayKeys`, `ageRestrictionKeys`, `baziKeys`, `kuaKey`, `eightStarKey`, `eightStarUseKey`, `kuaCompatibilityKeys`, `nineStarKey`, `tuviPalaceQuery`. Lọc đoạn Tử Vi dùng `gateMatches` của Rust (mục 9 của `INTERPRETATION_DB_SPEC.md`).
+1. **App không tự ghép khóa và không lặp logic lá số.** Khóa luôn đến từ `almanacDayKeys`, `ageRestrictionKeys`, `baziKeys`, `kuaKey`, `eightStarKey`, `eightStarUseKey`, `kuaCompatibilityKeys`, `nineStarKey`, `tuviPalaceQuery`, cùng các khóa theo từng mục `bazi…Key` và `tuvi…Key`. Lọc đoạn Tử Vi dùng `gateMatches` của Rust (mục 9 của `INTERPRETATION_DB_SPEC.md`).
 2. **GMT+7 mặc định.** `EngineService.vietnamOffset = 7`; mỗi hồ sơ có `tzOffset` riêng.
 3. **Không văn bản tự sinh.** Mọi câu luận giải lấy từ SQLite; app chỉ thêm nhãn giao diện.
 
@@ -164,6 +173,26 @@ Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ.
 - **Sheet sao:** loại sao, Cát Hung, Ngũ Hành, độ sáng tại cung, Tứ Hóa, nhãn và ngũ hành trong `extra.profile`, rồi văn bản `tuvi.star`, `tuvi.star_brightness`, `tuvi.transformation`. Khóa do core trả (`tuviStarKey`, `tuviStarBrightnessKey`, `tuviTransformationKey`, `tuviPalaceKey`).
 - Mọi sheet của tab dùng nền giấy Dó hoặc Đêm Huyền Không; tab không còn `List` mặc định.
 
+### 3.6. Widget (`ChronosWidget`)
+
+Một Widget `ChronosDay`, `StaticConfiguration`, ba cỡ, nền giấy Dó hoặc Đêm Huyền Không qua `containerBackground`. Chỉ dùng `AstroCore.xcframework` và `AstroCore.swift` (I3): không SQLite, không `activities.json`, không Nên/Kỵ. Không cần hồ sơ. Giờ Việt Nam GMT+7 như toàn app.
+
+| Cỡ | Nội dung |
+| :-- | :-- |
+| `systemSmall` | Thứ, ngày dương cỡ lớn (Chủ Nhật màu Chu Sa), tháng và năm, ngày âm, Can Chi ngày, nhãn Hoàng Đạo hoặc Hắc Đạo có chấm |
+| `systemMedium` | Bên trái như tờ lịch nhỏ; bên phải Can Chi năm và tháng, Can Chi ngày kèm Hoàng/Hắc Đạo, Tiết Khí, Trực, Sao (Nhị Thập Bát Tú), sáu giờ Hoàng Đạo; giờ đang chạy hoặc kế tiếp in đậm màu Kim |
+| `accessoryRectangular` (màn hình khóa) | Ngày dương và ngày âm, Can Chi ngày và Hoàng/Hắc Đạo, giờ Hoàng Đạo đang chạy ("Đang giờ Tỵ 09–11") hoặc kế tiếp ("Giờ tới Thân 15–17", thêm "(mai)" nếu sang ngày sau). Không đặt màu: hệ thống tự phủ màu màn hình khóa |
+
+- **Giờ trong ngày.** Ngày đổi lúc nửa đêm, như mặc định `SplitAtMidnight` của engine, nên một ngày dân sự có 13 khung: Tý 00–01, Sửu 01–03 … Hợi 21–23, Tý 23–24; cả hai khung Tý dùng Hoàng Đạo của chính ngày đó (`HourSlot`). Giờ Hoàng Đạo kế tiếp là khung đang chạy nếu nó Hoàng Đạo, nếu không là khung Hoàng Đạo đầu tiên còn lại trong ngày, hết thì lấy khung đầu tiên của ngày mai (`DayMoment.upcoming`).
+- **Làm mới.** `DayTimeline` cho một mục ngay lúc này, một mục ở mỗi ranh giới canh giờ còn lại (01, 03 … 23 giờ) và một mục lúc 00:00 hôm sau, chính sách `.atEnd`: Widget đổi ngày đúng nửa đêm và giờ Hoàng Đạo luôn cập nhật.
+- **Kiểm tra giao diện.** Không có công cụ chạm để thêm Widget lên màn hình chính simulator, nên `DayWidgetTests` dựng ba view bằng `ImageRenderer` ở chế độ sáng và tối (đã xem ảnh khi làm 5B.5), và `pluginkit` xác nhận simulator đã đăng ký `com.leanhtuan.chronos.widget`.
+
+### 3.7. Hồ sơ
+
+- Danh sách và form hồ sơ dùng nền giấy, hàng nền `surface` (gắn `listRowBackground` vào từng hàng hoặc section, vì gắn ở `List` không có tác dụng).
+- Đổi giữa Dương lịch và Âm lịch trong form **quy đổi** ngày sinh bằng engine (`EngineService.birth(_:rewrittenAs:tzOffset:)`): 15/05/1990 dương thành 21/4/1990 âm và ngược lại, tháng nhuận giữ đúng. Ngày không tồn tại trên lịch cũ thì giữ nguyên số để form báo lỗi khi lưu.
+- Mọi tab đọc `ProfileStore.selected` (`@Observable`), nên thêm, sửa, xóa hồ sơ hiện ngay ở cả bốn tab cần hồ sơ; có test cho việc báo thay đổi và cho hồ sơ âm lịch tháng nhuận.
+
 ## 4. Bảng màu
 
 Phong cách Á Đông đương đại: ban ngày giấy Dó và mực Nho, ban đêm "Đêm Huyền Không", điểm nhấn Chu Sa và Kim. Định nghĩa ở `Design/Theme.swift` bằng `UIColor` động, đổi theo chế độ sáng/tối của hệ thống.
@@ -202,7 +231,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 62 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 79 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
@@ -211,6 +240,8 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 - **Lưới tháng, Thái Tuế.** Tháng 11/2026 có 6 ô trống trước Chủ Nhật mùng 1; mỗi ô tháng 2/2024 khớp `almanacDay` (Tết là "1/1"); cộng trừ tháng qua năm; hồ sơ mẫu năm 2026 là Trực và Hình Thái Tuế; Thái Tuế dùng năm âm sinh.
 - **Bát Tự, Phong Thủy.** Hồ sơ mẫu ra Canh Ngọ, Tân Tỵ, Canh Thìn, Tân Tỵ; ranh giới năm giữa Tết và Lập Xuân đổi trụ năm (Kỷ Tỵ hoặc Canh Ngọ); quy ước giờ Tý đổi trụ ngày lúc 23h:30; mọi Can, Thập Thần, Trường Sinh, Nạp Âm, Thần Sát của bảng có văn bản; Thập Thần của Tàng Can được tìm thấy dù `baziKeys` không liệt kê; bước Đại Vận của năm 2026 là Giáp Thân (28–37 tuổi); đủ 8 sao × 4 ứng dụng; bếp tại Sinh Khí là Hung; mỗi quái có 4 hướng tốt, 4 xấu; `LoShuLayout` trùng `loShuRows` với cả 9 sao giữa, hai chiều bay; chiều bay của bốn bàn; ô bàn đọc đúng văn bản của trạng thái vận; tương hợp ra đúng hai khóa; năm màu Ngũ Hành khác nhau ở cả hai chế độ.
 - **Tử Vi.** Bàn cờ đặt đủ 12 chi trên viền đúng thứ tự; mỗi cung có đúng 2 cung Tam Hợp và 1 cung Xung Chiếu, đối xứng; mỗi sao rơi vào đúng một nhóm; Tứ Hóa của tuổi Canh nằm ở Thái Dương, Vũ Khúc, Thái Âm, Thiên Đồng; nhãn sao có ký hiệu độ sáng; mọi sao của lá số mẫu có văn bản, chỉ Chính Tinh có Ngũ Hành; năm 2026 là 37 tuổi, Tiểu hạn ở Thìn (tuổi Ngọ khởi tại Thìn); năm trước khi sinh không có hạn; quy tắc tháng nhuận đổi tháng tính và cung Mệnh của người sinh 20 tháng 2 nhuận 2023; cung Mệnh đọc được nhận định chung, đoạn Primary và đính chính; cả 12 cung đọc được.
+- **Widget.** 13 khung giờ liền nhau, Tý ở hai đầu; giờ đồng hồ rơi đúng khung; nhãn khung giờ giống tab Lịch; `DaySnapshot` khớp engine; ngày đọc theo giờ Việt Nam (23:30 UTC là 06:30 hôm sau); giờ Hoàng Đạo kế tiếp là khung đang chạy, khung sau trong ngày, hoặc khung đầu của ngày mai; timeline đổi ở mỗi canh giờ và lúc nửa đêm, mục nửa đêm là ngày mới; ba view dựng đúng kích thước ở chế độ sáng và tối.
+- **Hồ sơ qua các tab.** Sửa hồ sơ đang chọn báo thay đổi ngay; bốn tab đọc được hồ sơ âm lịch 10 tháng 2 nhuận Quý Mão; xóa hồ sơ đang chọn chuyển sang hồ sơ kế tiếp; đổi loại lịch giữ đúng ngày sinh, kể cả tháng nhuận; ngày âm không tồn tại giữ nguyên số.
 - **Tốc độ** (Debug, simulator): 1.000 lần đọc mục mất 21 ms, khoảng 21 µs mỗi lần; đọc đủ 12 cung một lá số mất 56 ms.
 
 ## 6. Quyết định và việc mở
@@ -219,7 +250,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 | :-- | :-- | :-- |
 | I1 | Hồ sơ lưu JSON ở `UserDefaults`, không dùng SwiftData. Lần mở đầu tiên có sẵn hồ sơ mẫu 15/05/1990 09:30, Nam (mục 2.3) | **Đã duyệt** 2026-11-11 |
 | I2 | Bundle ID `com.leanhtuan.chronos` | **Đã duyệt** 2026-11-11 |
-| I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `activities.json` (thuộc cả target App và Widget). **Không** nhúng `chronos_content.sqlite` vào Widget, để giữ bộ nhớ Widget dưới giới hạn của iOS. Hệ quả: Widget hiện được những gì engine tính (ngày âm, Can Chi, tiết khí, Trực, Tú, thần trực nhật, Hoàng/Hắc Đạo, giờ Hoàng Đạo, Thần Sát, ngày kỵ). Danh sách Nên/Kỵ (`good_for`, `avoid`) chỉ nằm trong SQLite, nên `activities.json` (chỉ là nhãn) chưa giúp Widget hiện Nên/Kỵ; cần chốt thêm khi dựng Widget | **Đã duyệt** 2026-11-11. Chốt thêm (Task 5B.3): Widget **không** hiện Nên/Kỵ; chỉ hiện ngày dương/âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao và giờ Hoàng Đạo lấy từ xcframework | Làm khi dựng Widget |
+| I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `AstroCore.swift`. **Không** nhúng `chronos_content.sqlite` (và không cần `activities.json`), để giữ bộ nhớ Widget dưới giới hạn của iOS. Widget hiện những gì engine tính: ngày dương và âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao, giờ Hoàng Đạo; **không** hiện Nên/Kỵ (chúng chỉ nằm trong SQLite) | **Đã duyệt** 2026-11-11, chốt phạm vi ở 5B.3; **đã làm** ở 5B.5 (mục 3.6) |
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |
 | I5 | Xung tuổi theo năm = quan hệ của chi năm sinh với Thái Tuế (chi của năm đang xét), tính bằng phép Địa Chi có sẵn trong core, không thêm văn bản vào SQLite. Mục 6.1 | **Đã duyệt** 2026-11-11; làm ở 5B.2 |
 
