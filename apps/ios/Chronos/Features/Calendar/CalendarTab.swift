@@ -316,18 +316,13 @@ private struct HoursCard: View {
             Text(branchName(branch: branch))
                 .font(.subheadline.weight(good ? .semibold : .regular))
                 .foregroundStyle(good ? Theme.ink : Theme.inkSecondary)
-            Text(Self.range(index)).font(.system(size: 10)).foregroundStyle(Theme.inkSecondary)
+            Text(branch.hourRange).font(.system(size: 10)).foregroundStyle(Theme.inkSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 8)
         .background(good ? Theme.gold.opacity(0.12) : Theme.paper.opacity(0.5), in: RoundedRectangle(cornerRadius: 10))
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("Giờ \(branchName(branch: branch)), \(Self.range(index)), \(good ? "Hoàng Đạo" : "Hắc Đạo")")
-    }
-
-    /// Tý is 23–01, Sửu 01–03, and so on.
-    static func range(_ index: Int) -> String {
-        String(format: "%02d–%02d", (2 * index + 23) % 24, (2 * index + 1) % 24)
+        .accessibilityLabel("Giờ \(branchName(branch: branch)), \(branch.hourRange), \(good ? "Hoàng Đạo" : "Hắc Đạo")")
     }
 }
 

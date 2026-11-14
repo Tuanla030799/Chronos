@@ -11,6 +11,9 @@
 		C10000000000000000000002 /* AstroCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20000000000000000000002 /* AstroCore.xcframework */; };
 		C10000000000000000000003 /* chronos_content.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000003 /* chronos_content.sqlite */; };
 		C10000000000000000000004 /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000004 /* activities.json */; };
+		C10000000000000000000005 /* AstroCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000001 /* AstroCore.swift */; };
+		C10000000000000000000006 /* AstroCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20000000000000000000002 /* AstroCore.xcframework */; };
+		C10000000000000000000007 /* ChronosWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C20000000000000000000007 /* ChronosWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +24,28 @@
 			remoteGlobalIDString = CA0000000000000000000001;
 			remoteInfo = Chronos;
 		};
+		C30000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA0000000000000000000003;
+			remoteInfo = ChronosWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE0000000000000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C10000000000000000000007 /* ChronosWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C20000000000000000000001 /* AstroCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AstroCore.swift; path = ../../build/ios/AstroCore.swift; sourceTree = SOURCE_ROOT; };
@@ -30,7 +54,18 @@
 		C20000000000000000000004 /* activities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = activities.json; path = ../../data/interpretations/vocab/activities.json; sourceTree = SOURCE_ROOT; };
 		C20000000000000000000005 /* Chronos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20000000000000000000006 /* ChronosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20000000000000000000007 /* ChronosWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChronosWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CF0000000000000000000001 /* Exceptions for "ChronosWidget" folder in "ChronosWidget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CA0000000000000000000003 /* ChronosWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C40000000000000000000001 /* Chronos */ = {
@@ -41,6 +76,19 @@
 		C40000000000000000000002 /* ChronosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ChronosTests;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000003 /* ChronosWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CF0000000000000000000001 /* Exceptions for "ChronosWidget" folder in "ChronosWidget" target */,
+			);
+			path = ChronosWidget;
+			sourceTree = "<group>";
+		};
+		C40000000000000000000004 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C50000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000006 /* AstroCore.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +125,8 @@
 			children = (
 				C40000000000000000000001 /* Chronos */,
 				C40000000000000000000002 /* ChronosTests */,
+				C40000000000000000000003 /* ChronosWidget */,
+				C40000000000000000000004 /* Shared */,
 				C60000000000000000000002 /* Generated */,
 				C60000000000000000000003 /* Products */,
 			);
@@ -90,6 +148,7 @@
 			children = (
 				C20000000000000000000005 /* Chronos.app */,
 				C20000000000000000000006 /* ChronosTests.xctest */,
+				C20000000000000000000007 /* ChronosWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,13 +163,16 @@
 				C70000000000000000000001 /* Sources */,
 				C50000000000000000000001 /* Frameworks */,
 				C80000000000000000000001 /* Resources */,
+				CE0000000000000000000001 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD0000000000000000000002 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C40000000000000000000001 /* Chronos */,
+				C40000000000000000000004 /* Shared */,
 			);
 			name = Chronos;
 			productName = Chronos;
@@ -138,6 +200,27 @@
 			productReference = C20000000000000000000006 /* ChronosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CA0000000000000000000003 /* ChronosWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0000000000000000000004 /* Build configuration list for PBXNativeTarget "ChronosWidget" */;
+			buildPhases = (
+				C70000000000000000000003 /* Sources */,
+				C50000000000000000000003 /* Frameworks */,
+				C80000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C40000000000000000000003 /* ChronosWidget */,
+				C40000000000000000000004 /* Shared */,
+			);
+			name = ChronosWidget;
+			productName = ChronosWidget;
+			productReference = C20000000000000000000007 /* ChronosWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +237,9 @@
 					CA0000000000000000000002 = {
 						CreatedOnToolsVersion = 27.2;
 						TestTargetID = CA0000000000000000000001;
+					};
+					CA0000000000000000000003 = {
+						CreatedOnToolsVersion = 27.2;
 					};
 				};
 			};
@@ -173,6 +259,7 @@
 			targets = (
 				CA0000000000000000000001 /* Chronos */,
 				CA0000000000000000000002 /* ChronosTests */,
+				CA0000000000000000000003 /* ChronosWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +275,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C80000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C80000000000000000000003 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +306,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C70000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000005 /* AstroCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +321,11 @@
 			isa = PBXTargetDependency;
 			target = CA0000000000000000000001 /* Chronos */;
 			targetProxy = C30000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		CD0000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA0000000000000000000003 /* ChronosWidget */;
+			targetProxy = C30000000000000000000002 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -353,6 +460,52 @@
 			};
 			name = Release;
 		};
+		CC0000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChronosWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lịch Chronos";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leanhtuan.chronos.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CC0000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChronosWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lịch Chronos";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leanhtuan.chronos.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -379,6 +532,15 @@
 			buildConfigurations = (
 				CC0000000000000000000005 /* Debug */,
 				CC0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0000000000000000000004 /* Build configuration list for PBXNativeTarget "ChronosWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0000000000000000000007 /* Debug */,
+				CC0000000000000000000008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

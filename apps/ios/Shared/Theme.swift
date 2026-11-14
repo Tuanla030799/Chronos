@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 /// Palette of docs/IOS_APP_SPEC.md section 4: giấy Dó and mực Nho by day, Đêm Huyền Không by
-/// night, Chu Sa and Kim as accents.
+/// night, Chu Sa and Kim as accents. Shared by the app and the widget.
 enum Theme {
     static let paper = dynamic(light: 0xF4ECDC, dark: 0x0E1220)
     static let surface = dynamic(light: 0xFBF6EA, dark: 0x171C2E)
@@ -29,14 +29,6 @@ enum Theme {
         }
     }
 
-    static func luck(_ luck: ContentLuck?) -> Color {
-        switch luck {
-        case .cat: gold
-        case .hung: cinnabar
-        case .trung, nil: inkSecondary
-        }
-    }
-
     private static func dynamic(light: UInt32, dark: UInt32) -> Color {
         Color(uiColor: UIColor { traits in
             uiColor(traits.userInterfaceStyle == .dark ? dark : light)
@@ -50,14 +42,5 @@ enum Theme {
             blue: CGFloat(hex & 0xFF) / 255,
             alpha: 1
         )
-    }
-}
-
-extension View {
-    /// Paper background behind a scrolling list.
-    func chronosBackground() -> some View {
-        scrollContentBackground(.hidden)
-            .background(Theme.paper)
-            .listRowBackground(Theme.surface)
     }
 }
