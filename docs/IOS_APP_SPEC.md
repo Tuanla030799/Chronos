@@ -1,6 +1,6 @@
 # Đặc tả ứng dụng iOS (IOS_APP_SPEC)
 
-> Giai đoạn 5B, **hoàn thành**. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Task 5B.2 chốt I1–I5, hoàn thiện tab Lịch và tab Xem tuổi. Task 5B.3 làm tab Bát Tự và Phong Thủy, 5B.4 tab Tử Vi, 5B.5 Widget và rà soát tổng thể.
+> Giai đoạn 5B, **hoàn thành**. Task 5B.1 dựng dự án, tầng dịch vụ và khung điều hướng. Task 5B.2 chốt I1–I5, hoàn thiện tab Lịch và tab Xem tuổi. Task 5B.3 làm tab Bát Tự và Phong Thủy, 5B.4 tab Tử Vi, 5B.5 Widget và rà soát tổng thể. Task 5B.6 nâng cấp trải nghiệm: bỏ hồ sơ mẫu, đối chiếu Âm–Dương trong form, chú thích thuật ngữ, ghi chú và nhắc ngày giỗ, Widget cỡ lớn.
 
 ## 1. Dự án Xcode
 
@@ -19,8 +19,9 @@
 | :-- | :-- |
 | `Chronos/` | App |
 | `ChronosWidget/` | Widget; `Info.plist` (khai báo `com.apple.widgetkit-extension`) được loại khỏi Resources bằng một `PBXFileSystemSynchronizedBuildFileExceptionSet` |
-| `Shared/` | App và Widget: `Theme` (bảng màu), tên thứ và khung giờ, `DaySnapshot` và timeline, ba view Widget. Vì thuộc cả app nên `ChronosTests` kiểm được logic và giao diện Widget |
+| `Shared/` | App và Widget: `Theme` (bảng màu), tên thứ và khung giờ, `DaySnapshot` và timeline, `CalendarNote`, `NoteStorage` và quy tắc ngày lặp lại (`NoteCalendar`), các view Widget. Vì thuộc cả app nên `ChronosTests` kiểm được logic và giao diện Widget |
 | `ChronosTests/` | Test |
+| `Config/` (không đồng bộ) | `Chronos.entitlements`, `ChronosWidget.entitlements`: App Group `group.com.leanhtuan.chronos`, gắn qua `CODE_SIGN_ENTITLEMENTS` |
 
 App nhúng `ChronosWidget.appex` qua bước "Embed Foundation Extensions". File project còn bốn tham chiếu ra ngoài thư mục app:
 
@@ -113,7 +114,7 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 - `@MainActor @Observable`, đặt vào môi trường SwiftUI ở `ChronosApp`; mọi tab đọc `store.selected`.
 - `Profile`: họ tên, giới tính, `BirthDate` (dương hoặc âm lịch, tháng nhuận, giờ phút), `tzOffset`, `longitude` (nil = giờ đồng hồ).
 - Lưu JSON ở `UserDefaults` khóa `chronos.profiles.v1` (I1). Hồ sơ đầu tiên tự được chọn; xóa hồ sơ đang chọn thì chọn hồ sơ đầu còn lại.
-- **Hồ sơ mẫu (I1):** lần mở app đầu tiên, khi khóa trên chưa từng có, lưu `Profile.sample`: "Hồ sơ mẫu", Nam, 15/05/1990 09:30 dương lịch, GMT+7. Đã lưu gì rồi, kể cả danh sách rỗng sau khi người dùng xóa hết, thì không thêm lại.
+- **Không còn hồ sơ mẫu (Task 5B.6, thay phần này của I1):** lần mở đầu tiên danh sách rỗng và không ghi gì xuống `UserDefaults`; bốn tab cần hồ sơ hiện `ProfileEmptyStateView`. Người đã có "Hồ sơ mẫu" lưu từ bản trước vẫn giữ nó cho đến khi tự xóa. `Profile.sample` chỉ còn là dữ liệu của bộ test.
 
 ## 3. Điều hướng
 
@@ -127,7 +128,7 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 | Tử Vi (`TuViTab`) | **5B.4 xong**, mục 3.5 | Cách cục, sao lưu niên (khi có dữ liệu `tuvi.han_passage`) |
 | Phong Thủy (`FengShuiTab`) | **5B.3 xong**, mục 3.4 | Trạch Quái theo hướng nhà |
 
-Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ. Lỗi engine hiện ngay trong tab, không làm app dừng.
+Tab nào cần hồ sơ mà chưa có thì hiện `ProfileEmptyStateView` (mục 3.7). Lỗi engine hiện ngay trong tab, không làm app dừng.
 
 ### 3.1. Tab Lịch
 
@@ -175,23 +176,57 @@ Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ.
 
 ### 3.6. Widget (`ChronosWidget`)
 
-Một Widget `ChronosDay`, `StaticConfiguration`, ba cỡ, nền giấy Dó hoặc Đêm Huyền Không qua `containerBackground`. Chỉ dùng `AstroCore.xcframework` và `AstroCore.swift` (I3): không SQLite, không `activities.json`, không Nên/Kỵ. Không cần hồ sơ. Giờ Việt Nam GMT+7 như toàn app.
+Một Widget `ChronosDay`, `StaticConfiguration`, bốn cỡ, nền giấy Dó hoặc Đêm Huyền Không qua `containerBackground`. Chỉ dùng `AstroCore.xcframework` và `AstroCore.swift` (I3): không SQLite, không `activities.json`, không Nên/Kỵ. Không cần hồ sơ. Giờ Việt Nam GMT+7 như toàn app.
 
 | Cỡ | Nội dung |
 | :-- | :-- |
 | `systemSmall` | Thứ, ngày dương cỡ lớn (Chủ Nhật màu Chu Sa), tháng và năm, ngày âm, Can Chi ngày, nhãn Hoàng Đạo hoặc Hắc Đạo có chấm |
-| `systemMedium` | Bên trái như tờ lịch nhỏ; bên phải Can Chi năm và tháng, Can Chi ngày kèm Hoàng/Hắc Đạo, Tiết Khí, Trực, Sao (Nhị Thập Bát Tú), sáu giờ Hoàng Đạo; giờ đang chạy hoặc kế tiếp in đậm màu Kim |
-| `accessoryRectangular` (màn hình khóa) | Ngày dương và ngày âm, Can Chi ngày và Hoàng/Hắc Đạo, giờ Hoàng Đạo đang chạy ("Đang giờ Tỵ 09–11") hoặc kế tiếp ("Giờ tới Thân 15–17", thêm "(mai)" nếu sang ngày sau). Không đặt màu: hệ thống tự phủ màu màn hình khóa |
+| `systemMedium` | Bên trái như tờ lịch nhỏ; bên phải Can Chi năm và tháng, Can Chi ngày kèm Hoàng/Hắc Đạo, Tiết Khí, Trực, Sao (Nhị Thập Bát Tú), sáu giờ Hoàng Đạo; giờ đang chạy hoặc kế tiếp in đậm màu Kim. Có sự kiện thì thêm một dòng: sự kiện hôm nay, nếu không là sự kiện gần nhất trong 30 ngày ("Còn 9 ngày: Giỗ Ông Nội") |
+| `systemLarge` | Nửa trên là tờ lịch ngày đầy đủ như cỡ vừa. Nửa dưới "Ghi chú & Sự kiện": tối đa 5 dòng, mỗi dòng có tên, loại và ngày ("Ngày giỗ · 15/10 Âm lịch"), số ngày còn lại ("Hôm nay", "Ngày mai", "Còn 9 ngày"); thừa thì ghi "và N sự kiện khác"; không có thì ghi rõ |
+| `accessoryRectangular` (màn hình khóa) | Ngày dương và ngày âm, Can Chi ngày và Hoàng/Hắc Đạo. Dòng thứ ba ưu tiên sự kiện của hôm nay hoặc ngày mai ("Ngày mai: Giỗ Ông Nội"); không có thì là giờ Hoàng Đạo đang chạy ("Đang giờ Tỵ 09–11") hoặc kế tiếp ("Giờ tới Thân 15–17", thêm "(mai)" nếu sang ngày sau). Không đặt màu: hệ thống tự phủ màu màn hình khóa |
 
 - **Giờ trong ngày.** Ngày đổi lúc nửa đêm, như mặc định `SplitAtMidnight` của engine, nên một ngày dân sự có 13 khung: Tý 00–01, Sửu 01–03 … Hợi 21–23, Tý 23–24; cả hai khung Tý dùng Hoàng Đạo của chính ngày đó (`HourSlot`). Giờ Hoàng Đạo kế tiếp là khung đang chạy nếu nó Hoàng Đạo, nếu không là khung Hoàng Đạo đầu tiên còn lại trong ngày, hết thì lấy khung đầu tiên của ngày mai (`DayMoment.upcoming`).
 - **Làm mới.** `DayTimeline` cho một mục ngay lúc này, một mục ở mỗi ranh giới canh giờ còn lại (01, 03 … 23 giờ) và một mục lúc 00:00 hôm sau, chính sách `.atEnd`: Widget đổi ngày đúng nửa đêm và giờ Hoàng Đạo luôn cập nhật.
-- **Kiểm tra giao diện.** Không có công cụ chạm để thêm Widget lên màn hình chính simulator, nên `DayWidgetTests` dựng ba view bằng `ImageRenderer` ở chế độ sáng và tối (đã xem ảnh khi làm 5B.5), và `pluginkit` xác nhận simulator đã đăng ký `com.leanhtuan.chronos.widget`.
+- **Ghi chú trên Widget.** Widget đọc `NoteStorage` trong `UserDefaults` của App Group `group.com.leanhtuan.chronos` mỗi lần lập timeline, rồi tính sự kiện 30 ngày tới cho từng mục (nên sang ngày mới thì "Còn N ngày" tự giảm). App gọi `WidgetCenter.shared.reloadAllTimelines()` mỗi khi ghi chú đổi. Đây là dữ liệu của người dùng, không phải SQLite luận giải: I3 vẫn giữ nguyên.
+- **Kiểm tra giao diện.** Không có công cụ chạm để thêm Widget lên màn hình chính simulator, nên `DayWidgetTests` dựng các view (gồm cỡ lớn có và không có sự kiện) bằng `ImageRenderer` ở chế độ sáng và tối (đã xem ảnh khi làm 5B.5 và 5B.6), và `pluginkit` xác nhận simulator đã đăng ký `com.leanhtuan.chronos.widget`.
 
 ### 3.7. Hồ sơ
 
 - Danh sách và form hồ sơ dùng nền giấy, hàng nền `surface` (gắn `listRowBackground` vào từng hàng hoặc section, vì gắn ở `List` không có tác dụng).
 - Đổi giữa Dương lịch và Âm lịch trong form **quy đổi** ngày sinh bằng engine (`EngineService.birth(_:rewrittenAs:tzOffset:)`): 15/05/1990 dương thành 21/4/1990 âm và ngược lại, tháng nhuận giữ đúng. Ngày không tồn tại trên lịch cũ thì giữ nguyên số để form báo lỗi khi lưu.
 - Mọi tab đọc `ProfileStore.selected` (`@Observable`), nên thêm, sửa, xóa hồ sơ hiện ngay ở cả bốn tab cần hồ sơ; có test cho việc báo thay đổi và cho hồ sơ âm lịch tháng nhuận.
+- **Trạng thái trống (`ProfileEmptyStateView`):** biểu tượng, "Chưa có hồ sơ", một câu về việc tab làm được gì, và nút Chu Sa "Thêm hồ sơ đương số" mở thẳng form hồ sơ mới. Tab Xem tuổi, Bát Tự, Tử Vi hiện nó toàn màn hình; tab Phong Thủy hiện nó trong một thẻ, bên dưới vẫn có bàn Cửu Cung (không cần hồ sơ).
+- **Thẻ đối chiếu (`ProfileFormView`, `EngineService.birthPreview`):** ngay dưới ngày giờ sinh, vẽ lại mỗi khi một trường đổi. Đang nhập dương lịch thì hiện "Âm lịch: 21 tháng 4 năm 1990"; đang nhập âm lịch thì hiện "Dương lịch: Thứ Ba, 15/05/1990". Dòng dưới là Can Chi: năm, tháng, ngày theo âm lịch (`dayInfo`), giờ theo đồng hồ với Tý chia ở nửa đêm (`fourPillars`). Có kinh độ thì thêm "Giờ Mặt Trời thực: 09:29 ngày 31/03" (`trueSolarTime`). Ngày không tồn tại thì thẻ báo lỗi của engine.
+- **Tháng nhuận:** form hỏi `lunarYear` của AstroCore. Công tắc chỉ bật được ở đúng tháng mà năm đó nhuận; đổi năm hoặc tháng thì tự tắt (`EngineService.fitted`), và ngày không vượt số ngày của tháng (29 hoặc 30). Dòng ghi chú nói rõ "Năm 2023 nhuận tháng 2, không nhuận tháng 5" hoặc "Năm 2024 âm lịch không có tháng nhuận".
+- **Nơi sinh:** khi bật giờ Mặt Trời thực, menu chọn nhanh Hà Nội 105,85; TP. Hồ Chí Minh 106,66; Đà Nẵng 108,20; Hải Phòng 106,68; Cần Thơ 105,78 (độ Đông), hoặc nhập tay. Chú thích giải thích kinh tuyến 105° của giờ Việt Nam và khi nào giờ Mặt Trời thực làm đổi lá số.
+
+### 3.8. Ghi chú, sự kiện và nhắc ngày giỗ
+
+- **`CalendarNote`** (`Shared/`): `id`, `title`, `notes`, `calendarType` (`.lunar` hoặc `.solar`), `day`, `month`, `year`, `isLeapMonth`, `isYearlyRecurring`, `category` (Ngày giỗ, Sinh nhật, Lễ cúng, Việc quan trọng, Ghi chú), `reminderOffsets` (mặc định `[0, 1, 3]`). Lưu JSON ở khóa `chronos.notes.v1` của `UserDefaults` App Group; `NoteStore` (`@Observable`) là nơi app đọc và ghi. Thiếu entitlement App Group thì hệ thống trả một suite riêng của tiến trình: app vẫn chạy, chỉ Widget không thấy ghi chú. Test dùng suite riêng.
+- **Ngày lặp lại (`CalendarNote.occurrence(inYear:)`, `nextOccurrenceSolarDate`):**
+  - Ghi chú âm lịch hằng năm đổi sang dương lịch bằng `lunarToSolar` cho từng năm âm; lần tới là của năm nay nếu chưa qua, nếu qua rồi là của năm sau.
+  - **Tháng thiếu:** ngày 30 rơi vào tháng chỉ có 29 ngày thì tính vào ngày 29 (số ngày lấy từ `lunarYear`).
+  - **Tháng nhuận:** năm có tháng nhuận trùng tháng sự kiện vẫn tính tháng thường. Chỉ chính năm của sự kiện mới đọc `isLeapMonth`.
+  - Ghi chú dương lịch hằng năm vào 29/2 tính ngày 28/2 ở năm không nhuận. Đây là lựa chọn của bản cài đặt, theo cùng tinh thần với tháng thiếu.
+  - Ghi chú hằng năm bắt đầu từ `year` của nó, không hiện ở các năm trước đó. Ghi chú không lặp chỉ có ở đúng ngày của nó.
+- **Tab Lịch:** ô ngày có ghi chú mang dấu trang nhỏ ở góc trên. Dưới tờ lịch ngày là thẻ "Ghi chú & Sự kiện": ghi chú của ngày đang chọn, nút "Thêm sự kiện / ngày giỗ" (form mở sẵn ngày đang xem, viết theo âm lịch, loại Ngày giỗ, lặp hằng năm), rồi "Sự kiện sắp tới (30 ngày tới)" tính từ hôm nay, mỗi dòng có nhãn "Hôm nay", "Ngày mai" hoặc "Còn N ngày". Chạm một dòng để sửa hoặc xóa.
+- **Form sự kiện (`NoteFormView`):** tên, loại, lịch (đổi lịch thì quy đổi ngày), ngày, tháng nhuận (cùng kiểm tra như form hồ sơ), lặp hằng năm, ba công tắc nhắc, ghi chú. Thẻ đối chiếu ghi ngày trên lịch kia, lần tới và còn bao nhiêu ngày, cùng quy tắc tháng thiếu và tháng nhuận khi áp dụng.
+- **Thông báo (`NotificationManager`, `ReminderPlan`):** xin quyền khi người dùng lưu một sự kiện có nhắc. `ReminderPlan` tính các thông báo cục bộ lúc 08:00 **giờ Việt Nam (GMT+7)** vào ngày diễn ra và trước 1, 3 ngày, cho mọi lần xảy ra trong 400 ngày tới, bỏ giờ đã qua, giữ tối đa 60 cái sớm nhất (iOS cho 64). `NotificationManager.sync` xóa các thông báo cũ của ghi chú rồi đặt lại theo kế hoạch, chạy mỗi khi thêm, sửa, xóa ghi chú và mỗi lần mở app.
+
+### 3.9. Chú thích cho người mới (`Glossary`)
+
+Mọi lời giải thích nằm ở `Features/Shared/Glossary.swift`. Chúng nói màn hình đang hiện gì và engine dùng quy ước nào, không luận đoán lá số. Ba dạng: nút `ⓘ` (`InfoButton`) mở sheet nền giấy, nút `ⓘ` ở tiêu đề thẻ (`CardTitle(info:)`), và dòng ghi chú ngắn (`HelpNote`).
+
+| Tab | Chú thích |
+| :-- | :-- |
+| Lịch | `ⓘ` cạnh chú giải lưới tháng: chấm Hoàng Đạo và Hắc Đạo, số ngày âm, dấu trang của ghi chú, giờ Hoàng Đạo |
+| Xem tuổi | Một dòng dưới mỗi ô: Tam Tai, Kim Lâu, Hoang Ốc, Thái Tuế |
+| Bát Tự | Dòng giải thích ranh giới năm, tháng và quy ước giờ Tý; phụ đề của Nhật Chủ và Bản mệnh; `ⓘ` ở thẻ Tứ Trụ và Đại Vận: Nhật Chủ, Thập Thần, Tàng Can, Trường Sinh, Nạp Âm, Tuần Không Vong, Đại Vận |
+| Tử Vi | Nút "Chú giải ký hiệu" trên bàn cờ: năm mức độ sáng (M, V, Đ, B, H), `<THÂN>`, ĐH, TH, TUẦN, TRIỆT, viền Tam Hợp và Xung Chiếu, các số trong ô; dòng giải thích quy tắc tháng nhuận và giờ Tý |
+| Phong Thủy | `ⓘ` ở thẻ Mệnh Quái: Đông Tứ Mệnh và Tây Tứ Mệnh (danh sách quái lấy từ engine); `ⓘ` ở thẻ Cửu Cung: Đương vận, Sinh khí, Thoái khí, Thất vận |
+
+Lời chú giải độ sáng sao (Rất tốt, Tốt, Khá, Trung bình, Bất lợi), `<THÂN>` và bốn dòng ở tab Xem tuổi do chủ dự án đưa ra ở Task 5B.6. Các câu còn lại mô tả đúng cách engine tính, và có test giữ cho chúng khớp: năm ký hiệu độ sáng trùng `starBrightnessMark`; bốn hướng tốt thuộc các quái cùng nhóm; chỉ Thất vận đọc theo nghĩa xấu.
+
 
 ## 4. Bảng màu
 
@@ -231,24 +266,28 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 79 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 115 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
 - **EngineService.** Ngày dân sự GMT+7 qua nửa đêm UTC; mùng 1 Tết Giáp Thìn ra 10/02/2024; sinh trước Tết thuộc năm âm trước; tháng nhuận không có bị từ chối; hồ sơ âm lịch ra cùng lá số với `tuviChartFromLunar`; kinh độ bật giờ Mặt Trời thực.
-- **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng; hồ sơ mẫu chỉ được thêm ở lần đầu.
+- **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng; lần mở đầu tiên rỗng và không ghi gì.
 - **Lưới tháng, Thái Tuế.** Tháng 11/2026 có 6 ô trống trước Chủ Nhật mùng 1; mỗi ô tháng 2/2024 khớp `almanacDay` (Tết là "1/1"); cộng trừ tháng qua năm; hồ sơ mẫu năm 2026 là Trực và Hình Thái Tuế; Thái Tuế dùng năm âm sinh.
 - **Bát Tự, Phong Thủy.** Hồ sơ mẫu ra Canh Ngọ, Tân Tỵ, Canh Thìn, Tân Tỵ; ranh giới năm giữa Tết và Lập Xuân đổi trụ năm (Kỷ Tỵ hoặc Canh Ngọ); quy ước giờ Tý đổi trụ ngày lúc 23h:30; mọi Can, Thập Thần, Trường Sinh, Nạp Âm, Thần Sát của bảng có văn bản; Thập Thần của Tàng Can được tìm thấy dù `baziKeys` không liệt kê; bước Đại Vận của năm 2026 là Giáp Thân (28–37 tuổi); đủ 8 sao × 4 ứng dụng; bếp tại Sinh Khí là Hung; mỗi quái có 4 hướng tốt, 4 xấu; `LoShuLayout` trùng `loShuRows` với cả 9 sao giữa, hai chiều bay; chiều bay của bốn bàn; ô bàn đọc đúng văn bản của trạng thái vận; tương hợp ra đúng hai khóa; năm màu Ngũ Hành khác nhau ở cả hai chế độ.
 - **Tử Vi.** Bàn cờ đặt đủ 12 chi trên viền đúng thứ tự; mỗi cung có đúng 2 cung Tam Hợp và 1 cung Xung Chiếu, đối xứng; mỗi sao rơi vào đúng một nhóm; Tứ Hóa của tuổi Canh nằm ở Thái Dương, Vũ Khúc, Thái Âm, Thiên Đồng; nhãn sao có ký hiệu độ sáng; mọi sao của lá số mẫu có văn bản, chỉ Chính Tinh có Ngũ Hành; năm 2026 là 37 tuổi, Tiểu hạn ở Thìn (tuổi Ngọ khởi tại Thìn); năm trước khi sinh không có hạn; quy tắc tháng nhuận đổi tháng tính và cung Mệnh của người sinh 20 tháng 2 nhuận 2023; cung Mệnh đọc được nhận định chung, đoạn Primary và đính chính; cả 12 cung đọc được.
 - **Widget.** 13 khung giờ liền nhau, Tý ở hai đầu; giờ đồng hồ rơi đúng khung; nhãn khung giờ giống tab Lịch; `DaySnapshot` khớp engine; ngày đọc theo giờ Việt Nam (23:30 UTC là 06:30 hôm sau); giờ Hoàng Đạo kế tiếp là khung đang chạy, khung sau trong ngày, hoặc khung đầu của ngày mai; timeline đổi ở mỗi canh giờ và lúc nửa đêm, mục nửa đêm là ngày mới; ba view dựng đúng kích thước ở chế độ sáng và tối.
 - **Hồ sơ qua các tab.** Sửa hồ sơ đang chọn báo thay đổi ngay; bốn tab đọc được hồ sơ âm lịch 10 tháng 2 nhuận Quý Mão; xóa hồ sơ đang chọn chuyển sang hồ sơ kế tiếp; đổi loại lịch giữ đúng ngày sinh, kể cả tháng nhuận; ngày âm không tồn tại giữ nguyên số.
+- **Form hồ sơ.** Thẻ đối chiếu của 15/05/1990 09:30 ra "Âm lịch: 21 tháng 4 năm 1990" và "Năm Canh Ngọ, Tháng Tân Tỵ, Ngày Canh Thìn, Giờ Tân Tỵ"; nhập âm lịch ra "Dương lịch: Thứ Ba, 15/05/1990" cùng Can Chi; đổi ngày hoặc giờ thì thẻ đổi theo; tháng nhuận được ghi tên; kinh độ thêm giờ Mặt Trời thực; ngày không tồn tại không có thẻ; tháng nhuận của 2023, 2024, 2025; lịch âm được chỉnh cho vừa năm; năm nơi sinh đúng kinh độ đã cho.
+- **Ghi chú và nhắc.** Ngày giỗ 15/10 mỗi năm; ngày 30 vào tháng thiếu thành ngày 29 (và engine tự nó từ chối ngày 30 đó); năm nhuận tháng 2 giữ tháng thường; sự kiện tạo ngay trong tháng nhuận; ghi chú không lặp; 29/2 dương lịch; lần tới năm nay hoặc năm sau, kể cả đầu tháng 1 dương còn thuộc năm âm cũ; danh sách 30 ngày xếp gần trước; ngày và tháng tìm ra ghi chú; nháp trên một ngày; `NoteStore` lưu, thay, xóa, báo thay đổi; kế hoạch nhắc 08:00 trước 3, 1, 0 ngày, bỏ giờ đã qua, giới hạn 60, lần xảy ra kế tiếp của ghi chú hằng năm.
+- **Sự kiện trên Widget.** Thứ tự và đếm ngược của sự kiện; màn hình khóa ưu tiên sự kiện hôm nay hoặc ngày mai; ghi chú app lưu thì Widget đọc lại được qua cùng suite; cỡ lớn dựng đúng kích thước.
+- **Chú thích.** Hai nhóm quái lấy từ engine; hướng tốt thuộc nhóm của quái; trạng thái Cửu Tinh; năm ký hiệu độ sáng.
 - **Tốc độ** (Debug, simulator): 1.000 lần đọc mục mất 21 ms, khoảng 21 µs mỗi lần; đọc đủ 12 cung một lá số mất 56 ms.
 
 ## 6. Quyết định và việc mở
 
 | Mã | Nội dung | Trạng thái |
 | :-- | :-- | :-- |
-| I1 | Hồ sơ lưu JSON ở `UserDefaults`, không dùng SwiftData. Lần mở đầu tiên có sẵn hồ sơ mẫu 15/05/1990 09:30, Nam (mục 2.3) | **Đã duyệt** 2026-11-11 |
+| I1 | Hồ sơ lưu JSON ở `UserDefaults`, không dùng SwiftData. Hồ sơ mẫu của lần mở đầu tiên **đã bỏ ở Task 5B.6**: danh sách bắt đầu rỗng, các tab hiện `ProfileEmptyStateView` (mục 2.3, 3.7) | **Đã duyệt** 2026-11-11; phần hồ sơ mẫu thay đổi 2026-11-14 theo yêu cầu của chủ dự án |
 | I2 | Bundle ID `com.leanhtuan.chronos` | **Đã duyệt** 2026-11-11 |
 | I3 | Widget lịch ngày chỉ dùng `AstroCore.xcframework` và `AstroCore.swift`. **Không** nhúng `chronos_content.sqlite` (và không cần `activities.json`), để giữ bộ nhớ Widget dưới giới hạn của iOS. Widget hiện những gì engine tính: ngày dương và âm, Can Chi, tiết khí, Hoàng/Hắc Đạo, Trực, Sao, giờ Hoàng Đạo; **không** hiện Nên/Kỵ (chúng chỉ nằm trong SQLite) | **Đã duyệt** 2026-11-11, chốt phạm vi ở 5B.3; **đã làm** ở 5B.5 (mục 3.6) |
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |

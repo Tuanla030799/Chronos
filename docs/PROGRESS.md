@@ -5,7 +5,7 @@
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
 > Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D20 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
-> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không. **Task 5B.4 xong** — tab Tử Vi: bàn cờ 4×4 với Thiên Bàn, chọn cung tô Tam Hợp và Xung Chiếu, Đại hạn và Tiểu hạn theo năm xem, chi tiết cung với sao chia Cát/Hung, luận giải *Tân Biên* kèm đính chính (D20); 62 test trên simulator đều qua. **Bốn tab chính đã xong.** **Task 5B.5 xong** — Widget `ChronosWidget` (nhỏ, vừa, màn hình khóa; chỉ AstroCore, đổi theo từng canh giờ và lúc nửa đêm), rà soát hồ sơ qua các tab; 79 test trên simulator đều qua. **Giai đoạn 5B hoàn thành 100%. Giai đoạn 5 hoàn thành.**
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không. **Task 5B.4 xong** — tab Tử Vi: bàn cờ 4×4 với Thiên Bàn, chọn cung tô Tam Hợp và Xung Chiếu, Đại hạn và Tiểu hạn theo năm xem, chi tiết cung với sao chia Cát/Hung, luận giải *Tân Biên* kèm đính chính (D20); 62 test trên simulator đều qua. **Bốn tab chính đã xong.** **Task 5B.5 xong** — Widget `ChronosWidget` (nhỏ, vừa, màn hình khóa; chỉ AstroCore, đổi theo từng canh giờ và lúc nửa đêm), rà soát hồ sơ qua các tab; 79 test trên simulator đều qua. **Giai đoạn 5B hoàn thành 100%. Giai đoạn 5 hoàn thành.** **Task 5B.6 xong** (nâng cấp sau khi đóng giai đoạn) — bỏ hồ sơ mẫu, đối chiếu Âm–Dương tức thời trong form hồ sơ, chú thích thuật ngữ ở cả 5 tab, ghi chú và nhắc ngày giỗ qua App Group, Widget cỡ lớn; 115 test trên simulator đều qua.
 
 ## 1. Trạng thái
 
@@ -32,9 +32,9 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | ✅ Xong | 5B.1–5B.5: 5 tab, hồ sơ, Widget `ChronosWidget` (I3) |
+| App iOS SwiftUI (Phase 5 – UI) | ✅ Xong | 5B.1–5B.6: 5 tab, hồ sơ, Widget `ChronosWidget` (I3), ghi chú và nhắc ngày giỗ |
 | Web app | ⏳ Chưa làm | |
-| Commit lên git | ✅ Xong | Đến `261e80e` (Task 5B.4) trên `origin/develop` (GitHub, qua SSH); commit của 5B.5 chờ push |
+| Commit lên git | ✅ Xong | Đến `777a006` (Task 5B.5) trên `origin/develop` (GitHub, qua SSH); commit của 5B.6 chờ push |
 
 ## 2. Việc tiếp theo
 
@@ -55,6 +55,9 @@
 - [x] Task 5B.3: giao diện chi tiết Bát Tự và Phong Thủy; chốt I3 (Widget không hiện Nên/Kỵ), I5
 - [x] Task 5B.4: giao diện chi tiết Tử Vi; chốt D20 (đính chính vào file build)
 - [x] Task 5B.5: Widget lịch ngày theo I3 (không có Nên/Kỵ); rà soát hồ sơ qua các tab; đóng Giai đoạn 5
+- [x] Task 5B.6: bỏ hồ sơ mẫu, đối chiếu Âm–Dương trong form, chú thích thuật ngữ, ghi chú và nhắc ngày giỗ, Widget cỡ lớn
+- [ ] Kiểm tra trên máy thật: App Group cần một Team ký có bật năng lực App Groups; thông báo 08:00 và Widget đọc ghi chú chưa thử được ngoài simulator
+- [ ] Tab Lịch, Xem tuổi, Tử Vi chưa tự sang ngày mới khi app để mở qua nửa đêm
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
 - [x] Commit và push phần nền móng lên `origin/develop`
@@ -71,6 +74,18 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-14 — Task 5B.6: UX hồ sơ, chú thích, ghi chú và nhắc ngày giỗ, Widget cỡ lớn
+
+- **Push 5B.5:** `9e2ef1d`, `b5e373b`, `777a006` đã ở `origin/develop` trước khi làm 5B.6.
+- **Bỏ hồ sơ mẫu:** `ProfileStore` bắt đầu rỗng và không ghi gì ở lần mở đầu; `Profile.sample` chuyển sang bộ test. `ProfileEmptyStateView` (nút Chu Sa "Thêm hồ sơ đương số" mở thẳng form) thay cho thông báo cũ ở bốn tab; tab Phong Thủy vẫn giữ bàn Cửu Cung bên dưới.
+- **Form hồ sơ (`ProfileFormView`):** thẻ đối chiếu tức thời hiện ngày trên lịch kia, Can Chi năm/tháng/ngày/giờ và giờ Mặt Trời thực khi có kinh độ. Công tắc tháng nhuận hỏi `lunarYear` của AstroCore: chỉ bật được ở đúng tháng nhuận của năm, tự tắt khi đổi năm hoặc tháng, kèm dòng ghi chú; ngày không vượt số ngày của tháng. Menu chọn nhanh năm tỉnh, thành cho kinh độ.
+- **Chú thích (`Glossary.swift`):** nút `ⓘ`, sheet nền giấy và dòng ghi chú ngắn ở cả 5 tab; mọi câu nằm một chỗ. Lời chú giải độ sáng sao và bốn dòng ở tab Xem tuổi theo đúng chữ của chủ dự án; phần còn lại mô tả cách engine tính và có test giữ khớp.
+- **Ghi chú và sự kiện:** `CalendarNote`, `NoteStorage` (App Group `group.com.leanhtuan.chronos`), `NoteStore`. Quy tắc ngày giỗ âm lịch hằng năm: tháng thiếu thì ngày 30 tính ngày 29; năm nhuận tính tháng thường; lần tới là năm nay hoặc năm sau. Tab Lịch có dấu trang ở ngày có ghi chú và thẻ "Ghi chú & Sự kiện" với danh sách 30 ngày tới có đếm ngược. `NotificationManager` xin quyền khi lưu sự kiện có nhắc và đặt thông báo cục bộ 08:00 giờ Việt Nam trước 3 ngày, 1 ngày và đúng ngày, đồng bộ lại khi ghi chú đổi và khi mở app. Đã tra tài liệu UserNotifications và App Group qua Context7.
+- **Widget:** đọc ghi chú qua App Group, app gọi `reloadAllTimelines()` khi ghi chú đổi. Cỡ vừa thêm một dòng sự kiện; cỡ lớn `systemLarge` mới (tờ lịch đầy đủ và danh sách sự kiện có đếm ngược); màn hình khóa ưu tiên sự kiện hôm nay hoặc ngày mai.
+- **Lựa chọn của bản cài đặt, cần chủ dự án xem:** thông báo bắn lúc 08:00 **giờ Việt Nam** dù máy ở múi giờ khác; ghi chú dương lịch 29/2 tính 28/2 ở năm không nhuận; ghi chú hằng năm không hiện ở các năm trước năm của nó; Can Chi trong thẻ đối chiếu lấy năm, tháng, ngày theo âm lịch và giờ theo đồng hồ (Tý chia nửa đêm), nên với người sinh giữa Tết và Lập Xuân nó khác trụ năm của tab Bát Tự khi tab đó để ranh giới Tiết khí.
+- **Sửa trong lúc làm:** hai hàm tĩnh trên `View` bị gắn MainActor làm sập bộ test khi gọi từ ngoài (đúng hai cảnh báo của trình biên dịch); đánh dấu `nonisolated`. Nhãn "(Còn 6 ngày)" gãy dòng trong danh sách sắp tới; chuyển thành nhãn bên phải.
+- **Kiểm chứng:** 115 test Swift trên iPhone 17 simulator qua, không cảnh báo; `xcodebuild` Debug và Release không lỗi, không cảnh báo. App và Widget đều mang App Group trong entitlements (tệp `.xcent`), simulator cấp vùng chứa nhóm cho app. Đã chụp trạng thái trống, form hồ sơ có thẻ đối chiếu, bảng chú giải Tử Vi, thẻ ghi chú và lưới tháng có dấu, và dựng ảnh Widget cỡ lớn, vừa, màn hình khóa. Không đổi mã Rust ở task này. Chưa thử trên máy thật: thông báo thật và Widget đọc ghi chú ngoài simulator.
 
 ### 2026-11-14 — Task 5B.5: Widget, rà soát hồ sơ, đóng Giai đoạn 5
 
@@ -431,7 +446,9 @@
 | `apps/ios/Chronos/Profiles/` | `Profile`, `ProfileStore`, màn hình hồ sơ |
 | `apps/ios/Chronos/Features/` | 5 tab và view dùng chung |
 | `apps/ios/ChronosWidget/` | Widget `ChronosDay`: `TimelineProvider`, `WidgetBundle`, `Info.plist` |
-| `apps/ios/Shared/` | Mã thuộc cả app và Widget: bảng màu, `DaySnapshot`, khung giờ, timeline, view Widget |
+| `apps/ios/Shared/` | Mã thuộc cả app và Widget: bảng màu, `DaySnapshot`, khung giờ, timeline, `CalendarNote`, `NoteCalendar`, view Widget |
+| `apps/ios/Chronos/Notes/` | `NoteStore`, `NotificationManager`, form sự kiện, thẻ ghi chú của tab Lịch |
+| `apps/ios/Config/` | Entitlements App Group của app và Widget |
 | `apps/ios/ChronosTests/` | Test Swift Testing chạy trên simulator |
 
 ## 7. API công khai
@@ -485,7 +502,7 @@ cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 79 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 115 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:
