@@ -184,6 +184,14 @@ struct NotesTests {
         }
     }
 
+    @Test func withoutTheGroupEntitlementNotesLiveInTheStandardDefaults() {
+        // The project signs without the App Group (free Personal Team), so the container is
+        // absent and the app, like the widget, falls back to the standard defaults.
+        let hasGroup = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: NoteStorage.appGroup) != nil
+        #expect(hasGroup == false)
+        #expect(NoteStorage.shared === UserDefaults.standard)
+    }
+
     @Test func theSharedSuiteIsTheAppGroup() {
         #expect(NoteStorage.appGroup == "group.com.leanhtuan.chronos")
         #expect(CalendarNote(title: "x", calendarType: .lunar, day: 1, month: 1, year: 2026).reminderOffsets == [0, 1, 3])

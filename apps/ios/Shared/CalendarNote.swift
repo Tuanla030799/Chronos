@@ -90,10 +90,14 @@ enum NoteStorage {
     static let appGroup = "group.com.leanhtuan.chronos"
     static let key = "chronos.notes.v1"
 
-    /// The suite of the App Group. Without the group entitlement the system still hands back a
-    /// suite private to the process, so the app keeps working and only the widget sees nothing.
+    /// Where the app and the widget keep notes. With the App Group entitlement the suite of the
+    /// group, shared by both; without it (a free Personal Team cannot sign App Groups) the
+    /// standard defaults of the process, so nothing is logged and the app works on its own while
+    /// the widget sees no notes. The entitlement is asked first: opening a group suite without
+    /// it makes the system log a `CFPrefsPlistSource` error.
     static var shared: UserDefaults {
-        UserDefaults(suiteName: appGroup) ?? .standard
+        let hasGroup = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroup) != nil
+        return hasGroup ? (UserDefaults(suiteName: appGroup) ?? .standard) : .standard
     }
 
     static func load(from defaults: UserDefaults) -> [CalendarNote] {

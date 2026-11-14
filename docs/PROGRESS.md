@@ -56,7 +56,8 @@
 - [x] Task 5B.4: giao diện chi tiết Tử Vi; chốt D20 (đính chính vào file build)
 - [x] Task 5B.5: Widget lịch ngày theo I3 (không có Nên/Kỵ); rà soát hồ sơ qua các tab; đóng Giai đoạn 5
 - [x] Task 5B.6: bỏ hồ sơ mẫu, đối chiếu Âm–Dương trong form, chú thích thuật ngữ, ghi chú và nhắc ngày giỗ, Widget cỡ lớn
-- [ ] Kiểm tra trên máy thật: App Group cần một Team ký có bật năng lực App Groups; thông báo 08:00 và Widget đọc ghi chú chưa thử được ngoài simulator
+- [x] Task 5B.7: chuẩn bị build lên iPhone thật bằng Personal Team (bỏ App Groups, dự phòng `UserDefaults.standard`)
+- [ ] Thử trên máy thật: thông báo 08:00 và Widget; Widget chỉ thấy ghi chú khi có tài khoản trả phí và bật lại App Group (`IOS_APP_SPEC.md` mục 1.1)
 - [ ] Tab Lịch, Xem tuổi, Tử Vi chưa tự sang ngày mới khi app để mở qua nửa đêm
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -74,6 +75,13 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-14 — Task 5B.7: build lên iPhone thật bằng Personal Team
+
+- **XCFramework:** `AstroCore.xcframework` đã có đủ `ios-arm64` (thiết bị) và `ios-arm64-simulator`; `build-ios.sh` đã đóng gói cả hai nên không phải chạy lại.
+- **Bỏ App Groups:** gỡ `CODE_SIGN_ENTITLEMENTS` khỏi bốn cấu hình của hai target; hai file `Config/*.entitlements` giữ nguyên nhưng không gắn vào project. `NoteStorage.shared` hỏi `containerURL(forSecurityApplicationGroupIdentifier:)` trước, có thì dùng suite của nhóm, không thì `UserDefaults.standard` (tránh lỗi `CFPrefsPlistSource` khi mở suite không có quyền). `ProfileStore` đã dùng `.standard` sẵn. Thêm test cho nhánh dự phòng.
+- **Hệ quả:** hồ sơ, ghi chú và nhắc 08:00 chạy đủ; Widget không thấy ghi chú. Cách bật lại khi có tài khoản trả phí nằm ở `IOS_APP_SPEC.md` mục 1.1; thêm quyết định I7.
+- **Kiểm chứng:** `xcodebuild -destination "generic/platform=iOS" CODE_SIGNING_ALLOWED=NO build` thành công không cảnh báo (arm64, iOS 17, Widget nhúng); 116 test Swift trên simulator qua. Không đổi mã Rust. Chưa chạy trên máy thật.
 
 ### 2026-11-14 — Task 5B.6: UX hồ sơ, chú thích, ghi chú và nhắc ngày giỗ, Widget cỡ lớn
 
@@ -502,7 +510,7 @@ cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 115 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 116 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

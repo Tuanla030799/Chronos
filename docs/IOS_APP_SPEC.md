@@ -21,7 +21,7 @@
 | `ChronosWidget/` | Widget; `Info.plist` (khai báo `com.apple.widgetkit-extension`) được loại khỏi Resources bằng một `PBXFileSystemSynchronizedBuildFileExceptionSet` |
 | `Shared/` | App và Widget: `Theme` (bảng màu), tên thứ và khung giờ, `DaySnapshot` và timeline, `CalendarNote`, `NoteStorage` và quy tắc ngày lặp lại (`NoteCalendar`), các view Widget. Vì thuộc cả app nên `ChronosTests` kiểm được logic và giao diện Widget |
 | `ChronosTests/` | Test |
-| `Config/` (không đồng bộ) | `Chronos.entitlements`, `ChronosWidget.entitlements`: App Group `group.com.leanhtuan.chronos`, gắn qua `CODE_SIGN_ENTITLEMENTS` |
+| `Config/` (không đồng bộ) | `Chronos.entitlements`, `ChronosWidget.entitlements`: App Group `group.com.leanhtuan.chronos`. **Hiện không gắn vào project** (mục 1.1); giữ sẵn để bật lại |
 
 App nhúng `ChronosWidget.appex` qua bước "Embed Foundation Extensions". File project còn bốn tham chiếu ra ngoài thư mục app:
 
@@ -54,6 +54,18 @@ xcrun simctl io booted screenshot man-hinh.png
 ```
 
 `-ChronosInitialTab N` (0 Lịch … 4 Phong Thủy) chỉ chọn tab lúc mở app; sau đó đổi tab bình thường.
+
+### 1.1. Chạy trên iPhone thật với Apple ID miễn phí (Personal Team)
+
+Tài khoản miễn phí không ký được capability App Groups ("Personal development teams do not support the App Groups capability"), nên project **không** đặt `CODE_SIGN_ENTITLEMENTS`: cả `Chronos` và `ChronosWidget` ký không có quyền nào. Mở Xcode, chọn Team ở *Signing & Capabilities* của hai target (Bundle ID có thể phải đổi thành tên duy nhất của bạn, vì `com.leanhtuan.chronos` đã thuộc một Team khác nếu có người dùng nó), chọn iPhone rồi ⌘R. `AstroCore.xcframework` có đủ hai lát `ios-arm64` (thiết bị) và `ios-arm64-simulator`; bản build thiết bị `generic/platform=iOS` đã kiểm không lỗi, không cảnh báo, ra `arm64` iOS 17.
+
+Thiếu App Group nghĩa là:
+
+- Hồ sơ, ghi chú và nhắc 08:00 chạy bình thường (đều ở `UserDefaults.standard` của app; thông báo cục bộ không cần tài khoản trả phí).
+- Widget vẫn hiện lịch ngày, Can Chi, giờ Hoàng Đạo, nhưng **không thấy ghi chú** của app.
+- Bản cài bằng Personal Team hết hạn sau 7 ngày, phải cài lại từ Xcode; tối đa 3 app cùng lúc.
+
+**Bật lại App Group khi có tài khoản Apple Developer trả phí:** trong Developer Portal tạo App Group `group.com.leanhtuan.chronos` và bật nó cho cả hai App ID; trong `project.pbxproj` thêm `CODE_SIGN_ENTITLEMENTS = Config/Chronos.entitlements;` vào hai cấu hình (Debug, Release) của target `Chronos` và `CODE_SIGN_ENTITLEMENTS = Config/ChronosWidget.entitlements;` vào hai cấu hình của `ChronosWidget` (hoặc thêm capability *App Groups* trong Xcode, nó tự làm việc này). Không cần sửa mã: `NoteStorage.shared` thấy được container và chuyển sang suite của nhóm. Ghi chú đã lưu ở `UserDefaults.standard` không tự chuyển sang nhóm; chép chúng một lần nếu cần.
 
 ## 2. Kiến trúc
 
@@ -202,7 +214,7 @@ Một Widget `ChronosDay`, `StaticConfiguration`, bốn cỡ, nền giấy Dó h
 
 ### 3.8. Ghi chú, sự kiện và nhắc ngày giỗ
 
-- **`CalendarNote`** (`Shared/`): `id`, `title`, `notes`, `calendarType` (`.lunar` hoặc `.solar`), `day`, `month`, `year`, `isLeapMonth`, `isYearlyRecurring`, `category` (Ngày giỗ, Sinh nhật, Lễ cúng, Việc quan trọng, Ghi chú), `reminderOffsets` (mặc định `[0, 1, 3]`). Lưu JSON ở khóa `chronos.notes.v1` của `UserDefaults` App Group; `NoteStore` (`@Observable`) là nơi app đọc và ghi. Thiếu entitlement App Group thì hệ thống trả một suite riêng của tiến trình: app vẫn chạy, chỉ Widget không thấy ghi chú. Test dùng suite riêng.
+- **`CalendarNote`** (`Shared/`): `id`, `title`, `notes`, `calendarType` (`.lunar` hoặc `.solar`), `day`, `month`, `year`, `isLeapMonth`, `isYearlyRecurring`, `category` (Ngày giỗ, Sinh nhật, Lễ cúng, Việc quan trọng, Ghi chú), `reminderOffsets` (mặc định `[0, 1, 3]`). Lưu JSON ở khóa `chronos.notes.v1` của `UserDefaults` App Group; `NoteStore` (`@Observable`) là nơi app đọc và ghi. Không có entitlement App Group thì `NoteStorage.shared` dùng `UserDefaults.standard`: app vẫn chạy đủ (hồ sơ, ghi chú, nhắc 08:00 đều không cần App Group), chỉ Widget không thấy ghi chú vì hai tiến trình không chung vùng lưu. Bản dự phòng hỏi `containerURL(forSecurityApplicationGroupIdentifier:)` trước khi mở suite, nên máy không có quyền cũng không bị ghi lỗi `CFPrefsPlistSource`. Test dùng suite riêng.
 - **Ngày lặp lại (`CalendarNote.occurrence(inYear:)`, `nextOccurrenceSolarDate`):**
   - Ghi chú âm lịch hằng năm đổi sang dương lịch bằng `lunarToSolar` cho từng năm âm; lần tới là của năm nay nếu chưa qua, nếu qua rồi là của năm sau.
   - **Tháng thiếu:** ngày 30 rơi vào tháng chỉ có 29 ngày thì tính vào ngày 29 (số ngày lấy từ `lunarYear`).
@@ -266,7 +278,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 115 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 116 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
@@ -293,6 +305,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 | I4 | Simulator chỉ arm64; Mac Intel cần thêm target `x86_64-apple-ios` vào `build-ios.sh` | Giữ như Task 1 |
 | I5 | Xung tuổi theo năm = quan hệ của chi năm sinh với Thái Tuế (chi của năm đang xét), tính bằng phép Địa Chi có sẵn trong core, không thêm văn bản vào SQLite. Mục 6.1 | **Đã duyệt** 2026-11-11; làm ở 5B.2 |
 | I6 | Bốn quy ước của Task 5B.6: (1) thông báo nhắc bắn lúc 08:00 giờ Việt Nam (GMT+7) dù máy ở múi giờ khác (mục 3.8); (2) ghi chú dương lịch hằng năm vào 29/2 tính ngày 28/2 ở năm không nhuận; (3) ghi chú hằng năm chỉ có từ năm của nó trở đi; (4) thẻ đối chiếu của form hồ sơ lấy Can Chi năm, tháng, ngày theo âm lịch và giờ theo đồng hồ (Tý chia nửa đêm), nên có thể khác trụ năm của tab Bát Tự với người sinh giữa Tết và Lập Xuân (mục 3.7) | **Đã duyệt** 2026-11-14 |
+| I7 | Bỏ `CODE_SIGN_ENTITLEMENTS` (App Groups) khỏi project để ký được bằng Apple ID miễn phí; `NoteStorage` tự dùng `UserDefaults.standard` khi không có quyền, Widget không thấy ghi chú cho đến khi bật lại (mục 1.1) | Task 5B.7, theo yêu cầu của chủ dự án 2026-11-14 |
 
 ### 6.1. Thái Tuế (I5)
 
