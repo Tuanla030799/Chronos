@@ -12,7 +12,8 @@ struct LuckPillarsCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            CardTitle(text: "Đại Vận", systemImage: "arrow.right.circle")
+            CardTitle(text: "Đại Vận", systemImage: "arrow.right.circle", info: Glossary.baziTerms)
+            HelpNote(text: "Vận trình đổi mỗi mười năm; mỗi ô là một bước, ghi tuổi và năm của nó.")
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(startText)

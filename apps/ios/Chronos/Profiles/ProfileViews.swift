@@ -50,7 +50,7 @@ struct ProfileListView: View {
                 }
             }
             .sheet(item: $editing) { profile in
-                ProfileEditorView(profile: profile, engine: engine)
+                ProfileFormView(profile: profile, engine: engine)
             }
         }
     }
@@ -65,9 +65,10 @@ struct ProfileListView: View {
     }
 }
 
-/// Form for one profile. Saving asks the engine to resolve the birth date first, so an
-/// impossible lunar date (a leap month the year does not have) is refused here.
-struct ProfileEditorView: View {
+/// Form for one profile. The card under the birth fields shows the same birth on the other
+/// calendar as the fields change. Saving asks the engine to resolve the birth date first, so
+/// an impossible date is refused here.
+struct ProfileFormView: View {
     @State var profile: Profile
     let engine: EngineService
     @Environment(ProfileStore.self) private var store
@@ -85,7 +86,8 @@ struct ProfileEditorView: View {
                     .pickerStyle(.segmented)
                 }
                 .listRowBackground(Theme.surface)
-                Section("Ngày giờ sinh") {
+
+                Section {
                     Picker("Lịch", selection: $profile.birth.kind) {
                         ForEach(BirthDate.Kind.allCases) { Text($0.label).tag($0) }
                     }
@@ -94,24 +96,30 @@ struct ProfileEditorView: View {
                     case .solar:
                         DatePicker("Ngày", selection: utcDate(\.solarDay), displayedComponents: .date)
                     case .lunar:
-                        Stepper("Năm \(String(profile.birth.year))", value: $profile.birth.year, in: EngineService.supportedYears)
-                        Picker("Tháng", selection: $profile.birth.month) {
-                            ForEach(1...12, id: \.self) { Text("Tháng \($0)").tag($0) }
-                        }
-                        Picker("Ngày", selection: $profile.birth.day) {
-                            ForEach(1...30, id: \.self) { Text("Ngày \($0)").tag($0) }
-                        }
-                        Toggle("Tháng nhuận", isOn: $profile.birth.isLeapMonth)
+                        lunarFields
                     }
                     DatePicker("Giờ", selection: utcDate(\.clock), displayedComponents: .hourAndMinute)
+                    BirthPreviewCard(preview: Result { try engine.birthPreview(for: profile) })
+                } header: {
+                    Text("Ngày giờ sinh")
                 }
                 .listRowBackground(Theme.surface)
+
                 Section {
                     Stepper(value: $profile.tzOffset, in: -12...14, step: 0.5) {
                         Text("Múi giờ GMT\(profile.tzOffset >= 0 ? "+" : "")\(profile.tzOffset.formatted())")
                     }
                     Toggle("Dùng giờ Mặt Trời thực", isOn: usesLongitude)
                     if let longitude = profile.longitude {
+                        Menu {
+                            ForEach(Birthplace.common) { place in
+                                Button("\(place.name) (\(place.longitude.formatted())°Đ)") { profile.longitude = place.longitude }
+                            }
+                        } label: {
+                            LabeledContent("Nơi sinh") {
+                                Text(Birthplace.common.first { $0.longitude == longitude }?.name ?? "Chọn tỉnh, thành")
+                            }
+                        }
                         TextField("Kinh độ nơi sinh (độ Đông)", value: Binding(
                             get: { longitude },
                             set: { profile.longitude = $0 }
@@ -119,7 +127,7 @@ struct ProfileEditorView: View {
                         .keyboardType(.decimalPad)
                     }
                 } footer: {
-                    Text("Giờ Mặt Trời thực chỉnh giờ sinh theo kinh độ nơi sinh và phương trình thời gian, dùng cho Bát Tự và Tử Vi.")
+                    Text("Đồng hồ Việt Nam chạy theo kinh tuyến 105° Đông. Giờ Mặt Trời thực chỉnh giờ sinh theo kinh độ nơi sinh và phương trình thời gian, nên có thể lệch giờ đồng hồ; nó chỉ làm đổi lá số khi giờ sinh sát ranh giới hai canh giờ. Dùng cho Bát Tự và Tử Vi. Chọn nhanh một tỉnh, thành hoặc nhập kinh độ.")
                 }
                 .listRowBackground(Theme.surface)
             }
@@ -129,6 +137,9 @@ struct ProfileEditorView: View {
                 var before = profile.birth
                 before.kind = old
                 profile.birth = engine.birth(before, rewrittenAs: new, tzOffset: profile.tzOffset)
+            }
+            .onChange(of: [profile.birth.year, profile.birth.month]) {
+                profile.birth = engine.fitted(profile.birth, tzOffset: profile.tzOffset)
             }
             .navigationTitle(profile.name.isEmpty ? "Hồ sơ mới" : profile.name)
             .navigationBarTitleDisplayMode(.inline)
@@ -147,6 +158,36 @@ struct ProfileEditorView: View {
                 Text(error ?? "")
             }
         }
+    }
+
+    /// Year, month, day and the leap switch of a lunar birth. The switch works only in the
+    /// month the year repeats; the days stop at the last day of the month.
+    @ViewBuilder
+    private var lunarFields: some View {
+        let birth = profile.birth
+        let leap = engine.leapMonth(ofLunarYear: birth.year, tzOffset: profile.tzOffset)
+        let length = engine.lunarMonthLength(year: birth.year, month: birth.month, isLeap: birth.isLeapMonth, tzOffset: profile.tzOffset) ?? 30
+        Stepper("Năm \(String(birth.year))", value: $profile.birth.year, in: EngineService.supportedYears)
+        Picker("Tháng", selection: $profile.birth.month) {
+            ForEach(1...12, id: \.self) { Text("Tháng \($0)").tag($0) }
+        }
+        Picker("Ngày", selection: $profile.birth.day) {
+            ForEach(1...length, id: \.self) { Text("Ngày \($0)").tag($0) }
+        }
+        Toggle("Tháng nhuận", isOn: $profile.birth.isLeapMonth)
+            .disabled(leap != birth.month)
+        Text(Self.leapNote(year: birth.year, month: birth.month, leap: leap))
+            .font(.caption)
+            .foregroundStyle(Theme.inkSecondary)
+    }
+
+    /// Why the leap switch is on offer or not.
+    nonisolated static func leapNote(year: Int, month: Int, leap: Int?) -> String {
+        guard let leap else { return "Năm \(year) âm lịch không có tháng nhuận." }
+        if leap == month {
+            return "Năm \(year) nhuận tháng \(leap): bật nếu sinh vào tháng \(leap) nhuận."
+        }
+        return "Năm \(year) nhuận tháng \(leap), không nhuận tháng \(month)."
     }
 
     private var usesLongitude: Binding<Bool> {
@@ -173,6 +214,96 @@ struct ProfileEditorView: View {
             get: { BirthDate.utc.date(from: profile.birth[keyPath: part]) ?? .now },
             set: { profile.birth[keyPath: part] = BirthDate.utc.dateComponents([.year, .month, .day, .hour, .minute], from: $0) }
         )
+    }
+}
+
+/// The same birth on the other calendar, with its Can Chi, redrawn as the fields change.
+private struct BirthPreviewCard: View {
+    let preview: Result<BirthPreview, Error>
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Label("Đối chiếu", systemImage: "arrow.left.arrow.right")
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(Theme.inkSecondary)
+            switch preview {
+            case .success(let preview):
+                Text(preview.counterpart)
+                    .font(.subheadline.weight(.semibold)).fontDesign(.serif)
+                    .foregroundStyle(Theme.cinnabar)
+                Text(preview.canChi).font(.caption).foregroundStyle(Theme.ink)
+                if let solarTime = preview.solarTime {
+                    Text(solarTime).font(.caption).foregroundStyle(Theme.gold)
+                }
+            case .failure(let error):
+                Text("Ngày này không có trên lịch: \(String(describing: error))")
+                    .font(.caption).foregroundStyle(Theme.cinnabar)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(10)
+        .background(Theme.paper, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+        .accessibilityElement(children: .combine)
+    }
+}
+
+/// A birthplace to pick the longitude from.
+struct Birthplace: Identifiable, Hashable {
+    let name: String
+    /// Degrees east.
+    let longitude: Double
+
+    var id: String { name }
+
+    static let common = [
+        Birthplace(name: "Hà Nội", longitude: 105.85),
+        Birthplace(name: "TP. Hồ Chí Minh", longitude: 106.66),
+        Birthplace(name: "Đà Nẵng", longitude: 108.20),
+        Birthplace(name: "Hải Phòng", longitude: 106.68),
+        Birthplace(name: "Cần Thơ", longitude: 105.78),
+    ]
+}
+
+/// Shown by a tab that reads a person while none is saved: what the tab does, and a button
+/// that opens the form for a first profile.
+struct ProfileEmptyStateView: View {
+    let engine: EngineService
+    let systemImage: String
+    let message: String
+    @State private var adding: Profile?
+
+    var body: some View {
+        VStack(spacing: 14) {
+            Image(systemName: systemImage)
+                .font(.system(size: 44, weight: .light))
+                .foregroundStyle(Theme.gold)
+                .frame(width: 92, height: 92)
+                .background(Theme.surface, in: Circle())
+                .overlay(Circle().strokeBorder(Theme.rule, lineWidth: 1))
+            Text("Chưa có hồ sơ")
+                .font(.title3.weight(.bold)).fontDesign(.serif)
+                .foregroundStyle(Theme.ink)
+            Text(message)
+                .font(.subheadline)
+                .foregroundStyle(Theme.inkSecondary)
+                .multilineTextAlignment(.center)
+            Button {
+                adding = ProfileListView.newProfile(engine: engine)
+            } label: {
+                Label("Thêm hồ sơ đương số", systemImage: "plus")
+                    .font(.headline)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(Theme.cinnabar)
+            .padding(.top, 4)
+        }
+        .padding(24)
+        .frame(maxWidth: .infinity)
+        .sheet(item: $adding) { profile in
+            ProfileFormView(profile: profile, engine: engine)
+        }
     }
 }
 

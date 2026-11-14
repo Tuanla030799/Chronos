@@ -21,7 +21,9 @@ struct ProfileFlowTests {
         let suite = "ChronosTests.\(UUID().uuidString)"
         let defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
-        try body(ProfileStore(defaults: defaults, seed: .sample))
+        let store = ProfileStore(defaults: defaults)
+        store.save(.sample)
+        try body(store)
     }
 
     /// 10th day of the leap 2nd month of Quý Mão (2023).

@@ -38,12 +38,12 @@ struct FengShuiTab: View {
                                 .card()
                         }
                     } else {
-                        UnavailableView(
-                            title: "Chưa chọn hồ sơ",
-                            message: "Chọn hồ sơ để xem Mệnh Quái và hướng hợp. Bàn Cửu Cung bên dưới không cần hồ sơ.",
-                            systemImage: "person.crop.circle.badge.questionmark"
+                        ProfileEmptyStateView(
+                            engine: services.engine,
+                            systemImage: "safari",
+                            message: "Tìm Mệnh Quái, bốn hướng tốt, bốn hướng xấu và xem tương hợp Bát Biến. Bàn Cửu Cung bên dưới không cần hồ sơ."
                         )
-                        .card()
+                        .card(padding: 0)
                     }
                     NineStarSection(services: services) { sheet = .nineStar($0) }
                 }
@@ -77,7 +77,7 @@ private struct KuaCard: View {
     var body: some View {
         let entry = try? content.kua(kua)
         VStack(alignment: .leading, spacing: 10) {
-            CardTitle(text: "Mệnh Quái", systemImage: "circle.hexagongrid")
+            CardTitle(text: "Mệnh Quái", systemImage: "circle.hexagongrid", info: Glossary.kuaGroups)
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 Text(trigramName(value: kua.trigram))
                     .font(.system(size: 34, weight: .bold, design: .serif)).foregroundStyle(Theme.ink)

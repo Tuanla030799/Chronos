@@ -49,7 +49,7 @@ struct NineStarSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            CardTitle(text: "Cửu Cung Phi Tinh", systemImage: "square.grid.3x3")
+            CardTitle(text: "Cửu Cung Phi Tinh", systemImage: "square.grid.3x3", info: Glossary.nineStarPhases)
             DatePicker("Lúc", selection: $date, displayedComponents: [.date, .hourAndMinute])
                 .environment(\.timeZone, TimeZone(secondsFromGMT: Int((services.engine.tzOffset * 3600).rounded())) ?? .gmt)
                 .tint(Theme.cinnabar)

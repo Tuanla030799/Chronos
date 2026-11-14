@@ -14,19 +14,26 @@ extension View {
 struct CardTitle: View {
     let text: String
     var systemImage: String?
+    /// Terms of the card to explain behind an ⓘ button.
+    var info: GlossaryTopic?
 
     var body: some View {
-        Label {
-            Text(text.uppercased())
-        } icon: {
-            if let systemImage {
-                Image(systemName: systemImage)
+        HStack(spacing: 4) {
+            Label {
+                Text(text.uppercased())
+            } icon: {
+                if let systemImage {
+                    Image(systemName: systemImage)
+                }
+            }
+            .font(.caption.weight(.semibold))
+            .tracking(0.6)
+            .foregroundStyle(Theme.inkSecondary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            if let info {
+                InfoButton(topic: info)
             }
         }
-        .font(.caption.weight(.semibold))
-        .tracking(0.6)
-        .foregroundStyle(Theme.inkSecondary)
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

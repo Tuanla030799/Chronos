@@ -72,7 +72,13 @@ struct BaziTab: View {
                     }
                     .background(Theme.paper)
                 } else {
-                    NoProfileView()
+                    ProfileEmptyStateView(
+                        engine: services.engine,
+                        systemImage: "square.grid.2x2",
+                        message: "Lập Tứ Trụ từ ngày giờ sinh: Thập Thần, Tàng Can, Thần Sát và Đại Vận."
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Theme.paper)
                 }
             }
             .navigationTitle("Bát Tự")
@@ -114,6 +120,8 @@ private struct BaziHeaderCard: View {
                     text: profile.longitude.map { String(format: "Giờ mặt trời thực · %.1f°Đ", $0) } ?? "Giờ đồng hồ"
                 )
             }
+            HelpNote(text: Glossary.baziBoundaryNote)
+            HelpNote(text: Glossary.ratHourNote)
         }
         .card()
     }
@@ -132,12 +140,14 @@ private struct DayMasterRow: View {
         HStack(alignment: .top, spacing: 12) {
             tile(
                 title: "Nhật Chủ",
+                subtitle: "Can ngày sinh, đại diện cho chính mình",
                 name: stemName(stem: stem),
                 element: stemElement(stem: stem),
                 entry: reading.entry(baziDayMasterKey(stem: stem))
             )
             tile(
                 title: "Bản mệnh Nạp Âm",
+                subtitle: "Ngũ hành của năm sinh",
                 name: naYinName(value: analysis.year.naYin),
                 element: naYinElement(value: analysis.year.naYin),
                 entry: reading.entry(baziNaYinKey(naYin: analysis.year.naYin))
@@ -146,11 +156,14 @@ private struct DayMasterRow: View {
     }
 
     @ViewBuilder
-    private func tile(title: String, name: String, element: FiveElements, entry: ContentEntry?) -> some View {
+    private func tile(title: String, subtitle: String, name: String, element: FiveElements, entry: ContentEntry?) -> some View {
         let content = VStack(alignment: .leading, spacing: 6) {
-            Text(title.uppercased())
-                .font(.caption2.weight(.semibold)).tracking(0.6)
-                .foregroundStyle(Theme.inkSecondary)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(title.uppercased())
+                    .font(.caption2.weight(.semibold)).tracking(0.6)
+                    .foregroundStyle(Theme.inkSecondary)
+                Text(subtitle).font(.system(size: 10)).foregroundStyle(Theme.inkSecondary)
+            }
             HStack(spacing: 6) {
                 Text(name).font(.title2.weight(.bold)).fontDesign(.serif).foregroundStyle(Theme.ink)
                     .lineLimit(1).minimumScaleFactor(0.7)

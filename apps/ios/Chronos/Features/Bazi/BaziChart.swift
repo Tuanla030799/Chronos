@@ -27,7 +27,7 @@ struct PillarTableCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            CardTitle(text: "Tứ Trụ", systemImage: "square.grid.2x2")
+            CardTitle(text: "Tứ Trụ", systemImage: "square.grid.2x2", info: Glossary.baziTerms)
 
             row(nil) { column in
                 Text(column.title)

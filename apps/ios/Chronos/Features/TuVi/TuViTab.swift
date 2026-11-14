@@ -50,7 +50,13 @@ struct TuViTab: View {
                     }
                     .background(Theme.paper)
                 } else {
-                    NoProfileView()
+                    ProfileEmptyStateView(
+                        engine: services.engine,
+                        systemImage: "circle.grid.3x3",
+                        message: "Lập lá số Tử Vi mười hai cung và đọc luận giải từng cung theo Tử Vi Đẩu Số Tân Biên."
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Theme.paper)
                 }
             }
             .navigationTitle("Tử Vi")
@@ -78,6 +84,12 @@ struct TuViTab: View {
             let year = TuViYearReading(chart: chart, lunarYear: targetYear)
             let branch = selected ?? chart.menhBranch
             header(profile, year: year).padding(.horizontal, 8)
+            HStack {
+                Text("LÁ SỐ").font(.caption.weight(.semibold)).tracking(0.6).foregroundStyle(Theme.inkSecondary)
+                Spacer()
+                InfoButton(topic: Glossary.tuviSymbols, label: "Chú giải ký hiệu")
+            }
+            .padding(.horizontal, 12)
             TuViBoard(chart: chart, name: profile.name, year: year, selected: branch) { tapped in
                 withAnimation(.snappy) { selected = tapped }
             }
@@ -135,6 +147,8 @@ struct TuViTab: View {
                         .padding(.vertical, 5)
                 }
             }
+            HelpNote(text: Glossary.leapMonthNote)
+            HelpNote(text: Glossary.ratHourNote)
         }
         .card()
     }

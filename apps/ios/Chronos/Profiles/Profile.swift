@@ -58,13 +58,6 @@ struct Profile: Identifiable, Codable, Sendable, Hashable {
     /// Birthplace longitude in degrees east. When set, Bát Tự and Tử Vi use true solar time
     /// there; when nil they use the clock time.
     var longitude: Double?
-
-    /// Decision I1: the profile of a first launch, so no tab opens empty.
-    static let sample = Profile(
-        name: "Hồ sơ mẫu",
-        gender: .male,
-        birth: BirthDate(kind: .solar, year: 1990, month: 5, day: 15, hour: 9, minute: 30)
-    )
 }
 
 extension Profile {

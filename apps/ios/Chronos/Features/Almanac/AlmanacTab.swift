@@ -40,7 +40,13 @@ struct AlmanacTab: View {
                     }
                     .background(Theme.paper)
                 } else {
-                    NoProfileView()
+                    ProfileEmptyStateView(
+                        engine: services.engine,
+                        systemImage: "checkmark.seal",
+                        message: "Xem Tam Tai, Kim Lâu, Hoang Ốc và quan hệ với Thái Tuế của một người trong từng năm."
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Theme.paper)
                 }
             }
             .navigationTitle("Xem tuổi")
@@ -128,29 +134,33 @@ private struct StatusGrid: View {
             tile(
                 "Tam Tai",
                 restrictions.tamTai.map { "Năm " + tamTaiName(value: $0) } ?? "Không phạm",
-                restrictions.tamTai == nil ? nil : ContentLuck.hung
+                restrictions.tamTai == nil ? nil : ContentLuck.hung,
+                Glossary.tamTaiNote
             )
             tile(
                 "Kim Lâu",
                 restrictions.kimLau.map { kimLauName(value: $0) } ?? "Không phạm",
-                restrictions.kimLau == nil ? nil : ContentLuck.hung
+                restrictions.kimLau == nil ? nil : ContentLuck.hung,
+                Glossary.kimLauNote
             )
             tile(
                 "Hoang Ốc",
                 restrictions.hoangOc.map { hoangOcName(value: $0) } ?? "Chưa xét (dưới 10 tuổi)",
-                restrictions.hoangOc.map { hoangOcLuck(value: $0) == .cat ? ContentLuck.cat : .hung }
+                restrictions.hoangOc.map { hoangOcLuck(value: $0) == .cat ? ContentLuck.cat : .hung },
+                Glossary.hoangOcNote
             )
             tile(
                 "Thái Tuế",
                 reading.taiSui.relations.isEmpty
                     ? "Không xung, không hợp"
                     : reading.taiSui.relations.map { taiSuiName(value: $0) }.joined(separator: ", "),
-                TaiSuiCard.luck(reading.taiSui)
+                TaiSuiCard.luck(reading.taiSui),
+                Glossary.taiSuiNote
             )
         }
     }
 
-    private func tile(_ title: String, _ value: String, _ luck: ContentLuck?) -> some View {
+    private func tile(_ title: String, _ value: String, _ luck: ContentLuck?, _ note: String) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
                 Text(title.uppercased()).font(.caption2.weight(.semibold)).tracking(0.6).foregroundStyle(Theme.inkSecondary)
@@ -162,8 +172,9 @@ private struct StatusGrid: View {
                 .foregroundStyle(luck == .hung ? Theme.cinnabar : Theme.ink)
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
+            HelpNote(text: note)
         }
-        .frame(minHeight: 72, alignment: .topLeading)
+        .frame(minHeight: 72, maxHeight: .infinity, alignment: .topLeading)
         .card(padding: 12)
         .accessibilityElement(children: .combine)
     }
@@ -288,18 +299,5 @@ private struct ExplanationsCard: View {
             }
             .card()
         }
-    }
-}
-
-/// Shown by the tabs that read a person until one is saved.
-struct NoProfileView: View {
-    var body: some View {
-        UnavailableView(
-            title: "Chưa chọn hồ sơ",
-            message: "Mở menu hồ sơ ở góc trên để thêm người cần xem.",
-            systemImage: "person.crop.circle.badge.questionmark"
-        )
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Theme.paper)
     }
 }
