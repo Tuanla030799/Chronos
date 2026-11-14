@@ -82,7 +82,7 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 ### 2.2. `ContentRepository`
 
 - Mở `chronos_content.sqlite` trong bundle bằng URI `file:…?immutable=1`, cờ `SQLITE_OPEN_READONLY | SQLITE_OPEN_URI`, đúng mục 2.5 của `INTERPRETATION_DB_SPEC.md`.
-- Kiểm `PRAGMA application_id = 1128813134` và `user_version = 1`; sai thì báo `incompatibleFile`. Đọc bảng `meta` thành `ContentMetadata`.
+- Kiểm `PRAGMA application_id = 1128813134` và `user_version = 2` (D20: thêm cột `passage.correction`); sai thì báo `incompatibleFile`. Đọc bảng `meta` thành `ContentMetadata`.
 - Statement chuẩn bị một lần, giữ lại (`SQLITE_PREPARE_PERSISTENT`); mọi truy cập qua một khóa nên dùng chung giữa các luồng được.
 - Bỏ mục `draft = 1` trừ khi `includeDrafts`.
 
@@ -115,7 +115,7 @@ Ngày sinh không hợp lệ (tháng nhuận năm không có, 25 giờ) ném `As
 | Lịch Vạn Niên (`CalendarTab`) | **5B.2 xong**, mục 3.1 | Widget lịch ngày (I3) |
 | Xem tuổi (`AlmanacTab`) | **5B.2 xong**, mục 3.2 | Lọc ngày theo việc |
 | Bát Tự (`BaziTab`) | **5B.3 xong**, mục 3.3 | Đại Vận chi tiết (Thập Thần của vận), Lưu Niên |
-| Tử Vi (`TuViTab`) | Địa Bàn 12 cung quanh Thiên Bàn; chạm cung mở sheet: sao, đoạn Primary theo section, "Xem thêm" cho đoạn More, mục tra cứu | 5B.4: vẽ đủ phụ tinh, Đại Hạn, Tiểu Hạn, nền giấy cho sheet cung |
+| Tử Vi (`TuViTab`) | **5B.4 xong**, mục 3.5 | Cách cục, sao lưu niên (khi có dữ liệu `tuvi.han_passage`) |
 | Phong Thủy (`FengShuiTab`) | **5B.3 xong**, mục 3.4 | Trạch Quái theo hướng nhà |
 
 Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ. Lỗi engine hiện ngay trong tab, không làm app dừng.
@@ -153,6 +153,16 @@ Tab nào cần hồ sơ mà chưa có thì hiện hướng dẫn thêm hồ sơ.
 - **Bát Trạch, tám hướng:** bốn hướng tốt (Sinh Khí, Thiên Y, Diên Niên, Phục Vị) và bốn hướng xấu (Tuyệt Mệnh, Ngũ Quỷ, Lục Sát, Họa Hại) lấy từ `eightMansionsChart`, chia theo `eightMansionsStarLuck`. Chạm một hướng mở sheet: ý nghĩa chung của sao rồi bốn ứng dụng (Hướng nhà, Bếp, Bàn làm việc, Kết hôn) của batch FS-02; bếp tại Sinh Khí hiện Hung nhờ `extra.verdict`.
 - **Tương hợp Bát Biến:** chọn hồ sơ khác, hoặc nhập nhanh năm sinh **âm lịch** và giới tính của đối tác (chọn "Nhập nhanh" tự bật khi chưa có hồ sơ thứ hai). Hiện hai quái, sao Bát Biến giữa hai người, Cát hoặc Hung, văn bản của sao và của hôn nhân, và nút mở bốn ứng dụng của sao đó.
 - **Cửu Cung Phi Tinh:** chọn thời điểm (mặc định bây giờ, GMT+7), hiện Vận và Nguyên, bốn ô Năm, Tháng, Ngày, Giờ (sao ở giữa và trạng thái vận) dùng để chọn bàn, rồi bàn 3×3 `LoShuBoard`. Bố cục Nam ở trên như mục 4.7 của `FENGSHUI_SPEC.md`; `LoShuLayout` giữ thứ tự cung và có test đối chiếu với `loShuRows`. Năm, Tháng bay thuận; Ngày, Giờ theo chiều của chuỗi sao (F3). Mỗi ô: hướng, số sao (màu Ngũ Hành), tên sao, nhãn Đương vận, Sinh khí, Thoái khí hoặc Thất vận. Chạm một ô mở sheet có `auspicious_meaning` hoặc `inauspicious_meaning` tùy trạng thái, rồi văn bản chung của sao. Không cần hồ sơ để dùng bàn này.
+
+### 3.5. Tab Tử Vi
+
+- **Đầu trang:** hồ sơ đang xem (đổi nhanh), năm xem âm lịch (mặc định năm nay, có Can Chi và tuổi mụ), hai lựa chọn giữ qua các lần mở app: *tháng nhuận* chia ở ngày 15 (mặc định) hoặc cả tháng như tháng trước (`LeapMonthRule`), và *giờ Tý* chia ở nửa đêm (mặc định) hoặc sang ngày từ 23h (`RatHourConvention`). Hai lựa chọn này riêng với tab Bát Tự.
+- **Bàn cờ 4×4:** Tỵ, Ngọ, Mùi, Thân ở hàng trên; Thìn, Mão bên trái; Dậu, Tuất bên phải; Dần, Sửu, Tý, Hợi ở hàng dưới (`TuViBoardLayout`). Thiên Bàn 2×2 ở giữa: họ tên, Âm Dương Nam Nữ, ngày dương và âm, Can Chi năm, tháng, ngày, giờ, Bản mệnh, Cục, Cục sinh khắc Mệnh, thuận hay nghịch lý, Mệnh chủ, Thân chủ.
+- **Mỗi cung:** tên cung (Mệnh màu Chu Sa), Can Chi của cung kèm `<THÂN>`, tuổi khởi Đại hạn; Chính Tinh với ký hiệu độ sáng và màu Ngũ Hành của sao (`tuviStarElement`), hoặc "Vô Chính Diệu"; các Tứ Hóa trong cung; số phụ tinh Cát và Hung; nhãn TUẦN, TRIỆT, ĐH, TH (Đại hạn, Tiểu hạn của năm xem, `tuviDaiHanPalace`, `tuviTieuHanPalace`); Trường Sinh và năm có Tiểu hạn đến cung ("năm Thìn").
+- **Chọn cung:** mặc định Mệnh. Cung chọn viền Chu Sa, hai cung Tam Hợp viền Kim, cung Xung Chiếu viền đứt Chu Sa, nối bằng tam giác Kim và đường đứt Chu Sa vẽ bằng `Canvas` sau các ô (chỉ lộ ra ở khe và qua Thiên Bàn). Tam Hợp và Xung Chiếu do core trả (`branchTrine`, `branchClash`).
+- **Chi tiết cung** (ngay dưới bàn cờ, không phải sheet): Can Chi, Đại hạn, Trường Sinh, Thân cư, Tuần, Triệt, Đại hạn và Tiểu hạn của năm xem; tên các cung Tam Hợp và Xung Chiếu. Sao chia bốn nhóm: Chính tinh, phụ tinh Cát, phụ tinh Hung và sát, phụ tinh Trung tính (theo `tuviStarNature`, bảng T9). Nhận định chung `tuvi.palace` khi có. Luận giải Primary theo section; câu phú đóng khung nghiêng; ghi chú "Đính chính so với bản in" thu gọn một dòng (D20). Đoạn More thu dưới "Xem thêm các trường hợp phối hợp sao" kèm số đoạn (D12). Đoạn gắn Death hoặc Sexuality vẫn ẩn sau một lần chạm (D9).
+- **Sheet sao:** loại sao, Cát Hung, Ngũ Hành, độ sáng tại cung, Tứ Hóa, nhãn và ngũ hành trong `extra.profile`, rồi văn bản `tuvi.star`, `tuvi.star_brightness`, `tuvi.transformation`. Khóa do core trả (`tuviStarKey`, `tuviStarBrightnessKey`, `tuviTransformationKey`, `tuviPalaceKey`).
+- Mọi sheet của tab dùng nền giấy Dó hoặc Đêm Huyền Không; tab không còn `List` mặc định.
 
 ## 4. Bảng màu
 
@@ -192,7 +202,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 
 ## 5. Kiểm thử
 
-`ChronosTests` (Swift Testing, chạy trong app trên simulator), 50 ca:
+`ChronosTests` (Swift Testing, chạy trong app trên simulator), 62 ca:
 
 - **Đối chiếu với Rust.** Lá số 30/11/1931 âm lịch, giờ Dần, Nam: danh sách `stable_id` của 5 cung (Mệnh, Quan Lộc, Điền Trạch, Nô Bộc, Thiên Di) phải trùng đúng thứ tự với `scan::select` của `astro-data`, hàm mà V13 dùng. Quan Lộc của lá số này vừa mượn Chính Tinh cung xung chiếu, vừa là cung an Thân, nên phủ cả hai nhánh của `tuviPalaceQuery`.
 - **Độ phủ.** Mọi ngày năm 2026 có văn bản cho mọi khóa Trạch Nhật; mọi hạn tuổi của người sinh 1940–2015 năm 2026; 8 quái, 8 sao × 4 ứng dụng, 9 sao × 9 vận; Bát Tự chỉ thiếu khóa `bazi.can_chi` (D18).
@@ -200,6 +210,7 @@ Cát dùng Kim, Hung dùng Chu Sa, Bình dùng `inkSecondary`. Mọi màu chữ 
 - **ProfileStore.** Lưu, mở lại, thay, xóa, chọn, trên một `UserDefaults` suite riêng; hồ sơ mẫu chỉ được thêm ở lần đầu.
 - **Lưới tháng, Thái Tuế.** Tháng 11/2026 có 6 ô trống trước Chủ Nhật mùng 1; mỗi ô tháng 2/2024 khớp `almanacDay` (Tết là "1/1"); cộng trừ tháng qua năm; hồ sơ mẫu năm 2026 là Trực và Hình Thái Tuế; Thái Tuế dùng năm âm sinh.
 - **Bát Tự, Phong Thủy.** Hồ sơ mẫu ra Canh Ngọ, Tân Tỵ, Canh Thìn, Tân Tỵ; ranh giới năm giữa Tết và Lập Xuân đổi trụ năm (Kỷ Tỵ hoặc Canh Ngọ); quy ước giờ Tý đổi trụ ngày lúc 23h:30; mọi Can, Thập Thần, Trường Sinh, Nạp Âm, Thần Sát của bảng có văn bản; Thập Thần của Tàng Can được tìm thấy dù `baziKeys` không liệt kê; bước Đại Vận của năm 2026 là Giáp Thân (28–37 tuổi); đủ 8 sao × 4 ứng dụng; bếp tại Sinh Khí là Hung; mỗi quái có 4 hướng tốt, 4 xấu; `LoShuLayout` trùng `loShuRows` với cả 9 sao giữa, hai chiều bay; chiều bay của bốn bàn; ô bàn đọc đúng văn bản của trạng thái vận; tương hợp ra đúng hai khóa; năm màu Ngũ Hành khác nhau ở cả hai chế độ.
+- **Tử Vi.** Bàn cờ đặt đủ 12 chi trên viền đúng thứ tự; mỗi cung có đúng 2 cung Tam Hợp và 1 cung Xung Chiếu, đối xứng; mỗi sao rơi vào đúng một nhóm; Tứ Hóa của tuổi Canh nằm ở Thái Dương, Vũ Khúc, Thái Âm, Thiên Đồng; nhãn sao có ký hiệu độ sáng; mọi sao của lá số mẫu có văn bản, chỉ Chính Tinh có Ngũ Hành; năm 2026 là 37 tuổi, Tiểu hạn ở Thìn (tuổi Ngọ khởi tại Thìn); năm trước khi sinh không có hạn; quy tắc tháng nhuận đổi tháng tính và cung Mệnh của người sinh 20 tháng 2 nhuận 2023; cung Mệnh đọc được nhận định chung, đoạn Primary và đính chính; cả 12 cung đọc được.
 - **Tốc độ** (Debug, simulator): 1.000 lần đọc mục mất 21 ms, khoảng 21 µs mỗi lần; đọc đủ 12 cung một lá số mất 56 ms.
 
 ## 6. Quyết định và việc mở

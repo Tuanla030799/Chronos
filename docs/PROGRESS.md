@@ -1,11 +1,11 @@
 # Tiến trình dự án — Viet Astro Engine (Chronos)
 
 > File này được theo dõi trong git, cùng với cả thư mục `docs/`.
-> Cập nhật lần cuối: **2026-11-11**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
+> Cập nhật lần cuối: **2026-11-14**. Giai đoạn 3 (Bát Tự & Trạch Nhật): **hoàn thành 100%**.
 > Giai đoạn 4A (Phong Thủy Bát Trạch & Cửu Cung Phi Tinh): **hoàn thành**, F1–F5 đã chốt.
 > Giai đoạn 4B (Tử Vi Đẩu Số): **hoàn thành**, T1–T5, T8, T9 đã chốt. **Giai đoạn 4 hoàn thành.**
-> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D19 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
-> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không; 50 test trên simulator đều qua.
+> Giai đoạn 5A (Cơ sở dữ liệu luận giải): D1–D20 đã chốt. **TV-01 đến TV-19 đã duyệt (2.195/2.195 đoạn `tuvi.passage`, 100%).** **19/19 batch Tử Vi đã nạp và duyệt — phân hệ Tử Vi Đẩu Số khóa sổ 100%.** **11/11 batch Trạch Nhật, Bát Tự, Phong Thủy (AL/BZ/FS) đã nạp và duyệt. Giai đoạn 5A hoàn thành 100%.**
+> Giai đoạn 5B (ứng dụng iOS SwiftUI): **Task 5B.1 xong** — dự án `apps/ios/`, `EngineService`, `ContentRepository`, `ProfileStore`, khung 5 tab. **Task 5B.2 xong** — chốt I1–I5, Thái Tuế trong core, tab Lịch và tab Xem tuổi hoàn thiện, hồ sơ mẫu. **Task 5B.3 xong** — tab Bát Tự (Tứ Trụ, Tàng Can, Thần Sát, Không Vong, Đại Vận) và tab Phong Thủy (Mệnh Quái, tám hướng, Bát Biến, bàn Cửu Cung 3×3) hoàn thiện, nền giấy Dó và Đêm Huyền Không. **Task 5B.4 xong** — tab Tử Vi: bàn cờ 4×4 với Thiên Bàn, chọn cung tô Tam Hợp và Xung Chiếu, Đại hạn và Tiểu hạn theo năm xem, chi tiết cung với sao chia Cát/Hung, luận giải *Tân Biên* kèm đính chính (D20); 62 test trên simulator đều qua. **Bốn tab chính đã xong.**
 
 ## 1. Trạng thái
 
@@ -32,7 +32,7 @@
 | Dữ liệu luận giải | ✅ Xong | 19/19 batch Tử Vi (2.195/2.195 đoạn `tuvi.passage`) và 11/11 batch Trạch Nhật/Bát Tự/Phong Thủy (AL-01–04, BZ-01–04, FS-01–03) đã nạp và duyệt — **Giai đoạn 5A hoàn thành 100%** |
 | Module `content` (khóa và facts) | ✅ Xong | `content.rs`; có trên Swift và WASM |
 | Độ sáng phụ tinh (D8) | ✅ Xong | 17 sao và Hóa Kỵ, theo tr. 39–43 |
-| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.3 xong (tab Lịch, Xem tuổi, Bát Tự, Phong Thủy); còn 5B.4 (Tử Vi) và Widget |
+| App iOS SwiftUI (Phase 5 – UI) | 🟡 Đang làm | 5B.1–5B.4 xong (cả 5 tab); còn Widget |
 | Web app | ⏳ Chưa làm | |
 | Commit lên git | ✅ Xong | `776d94b`, `35a5893` trên `origin/develop` (GitHub, qua SSH; Task 5B.2) |
 
@@ -53,7 +53,7 @@
 - [x] Liên kết `build/ios/AstroCore.xcframework` và `build/ios/AstroCore.swift` vào project Xcode (Task 5B.1)
 - [x] Task 5B.2: chốt I1–I5; giao diện chi tiết tab Lịch và tab Xem tuổi
 - [x] Task 5B.3: giao diện chi tiết Bát Tự và Phong Thủy; chốt I3 (Widget không hiện Nên/Kỵ), I5
-- [ ] Task 5B.4: giao diện chi tiết Tử Vi (phụ tinh, Đại Hạn, Tiểu Hạn, nền giấy cho sheet cung)
+- [x] Task 5B.4: giao diện chi tiết Tử Vi; chốt D20 (đính chính vào file build)
 - [ ] Widget lịch ngày theo I3 (không có Nên/Kỵ)
 - [ ] Đối chiếu Trực, Sao, Thần của các vector kiểm thử với lịch in (Q12)
 - [ ] Đối chiếu Can Chi tháng nhuận (mục 4) với sách nguồn
@@ -71,6 +71,15 @@
 - [x] Push các commit của Giai đoạn 3 lên `origin/develop`
 
 ## 3. Nhật ký
+
+### 2026-11-14 — Task 5B.4: tab Tử Vi
+
+- **Chốt và push 5B.3:** giữ nhãn "Không · Ngày/Năm" ở bảng Tứ Trụ và tên view `LoShuBoard`. Đã push `545f10b` lên `origin/develop` trước khi làm 5B.4.
+- **D20 — đính chính vào file build:** đặc tả CSDL trước đây ghi `correction` chỉ để duyệt. Vì yêu cầu hiện "đính chính sách" trong app, `correction` của `tuvi.passage` nay vào cột `passage.correction` của SQLite và trường cùng tên của JSON Web; `schema_version` lên 2, `ContentRepository` kiểm `user_version = 2`. `correction` của mục `entry` không đổi. Bản build mới: 395/2.195 đoạn có đính chính; `validate` 0 lỗi.
+- **Thêm vào core, Swift và WASM:** `branch_trine`, `branch_clash`, `tuvi_star_element` (Ngũ Hành của 14 Chính Tinh, có sẵn trong core), `tuvi_palace_key`, `tuvi_star_key`, `tuvi_star_brightness_key`, `tuvi_transformation_key` (`palace_keys` viết lại trên các hàm này, thêm test). Build lại XCFramework.
+- **Tab Tử Vi:** bỏ `List`, nền giấy Dó hoặc Đêm Huyền Không cho cả tab và mọi sheet. Đầu trang: hồ sơ, năm xem (mặc định năm nay), quy tắc tháng nhuận và giờ Tý giữ qua các lần mở app. Bàn cờ 4×4 truyền thống, Thiên Bàn 2×2 ở giữa. Mỗi cung: tên cung, `<THÂN>`, Can Chi, tuổi Đại hạn, Chính Tinh với độ sáng và màu Ngũ Hành hoặc Vô Chính Diệu, Tứ Hóa, số sao Cát/Hung, TUẦN, TRIỆT, ĐH, TH, Trường Sinh, năm Tiểu hạn. Chạm chọn cung: viền Chu Sa, Tam Hợp viền Kim, Xung Chiếu viền đứt, nối bằng `Canvas`. Chi tiết cung ngay dưới bàn cờ: sao theo 4 nhóm (chạm mở sheet sao), nhận định chung, luận giải Primary có câu phú đóng khung và đính chính, "Xem thêm" thu gọn đoạn More kèm số đoạn, D9 giữ nguyên.
+- **Sửa trong lúc làm:** nền pha màu của ô chọn và ô Tam Hợp trong suốt nên đường nối hiện qua chữ; nay lót nền đặc. Nhãn `<THÂN>` gãy dòng ở hàng tên cung; chuyển xuống dòng Can Chi. Chi ở góc dưới mỗi ô dễ bị hiểu là chi của cung; ghi rõ "năm Dần" và thêm vào chú thích. Cảnh báo cô lập actor của hằng số dùng trong `Canvas`.
+- **Kiểm chứng:** `cargo test --workspace` qua (295 core, 70 astro-data, 17 repository_data, 26 FFI); `wasm-pack test --node` 32 test qua; clippy `-D warnings`, `fmt --check` sạch. 62 test Swift trên iPhone 17 simulator qua, không cảnh báo, gồm test đối chiếu cung với Rust sau khi build lại nội dung. Đã chụp bàn cờ, chi tiết cung, "Xem thêm" và sheet sao ở chế độ sáng và tối.
 
 ### 2026-11-11 — Task 5B.3: tab Bát Tự và tab Phong Thủy
 
@@ -439,7 +448,7 @@
 | Bàn Cửu Cung | `generate_loshu_grid(center_star, forward)`, `LoShuGrid::star_at`, `rows` | `generateLoshuGrid(centerStar:forward:)`, `loShuStarAt(grid:palace:)`, `loShuRows(grid:)` | `generateLoshuGrid(center_star, forward?)`, `loShuStarAt(grid, palace)`, `loShuRows(grid)` |
 | Lá số Tử Vi | `tuvi_chart(birth, gender, &config)`, `tuvi_chart_from_lunar(lunar, hour, gender, &config)` | `tuviChart(birth:gender:config:)`, `tuviChartFromLunar(lunar:hour:gender:config:)` | `tuviChart(birth, gender, options?)`, `tuviChartFromLunar(lunar, hour, gender, options?)` |
 | Hạn theo tuổi | `TuViChart::dai_han_palace(age)`, `tieu_han_palace(age)` | `tuviDaiHanPalace(chart:age:)`, `tuviTieuHanPalace(chart:age:)` | `tuviDaiHanPalace(chart, age)`, `tuviTieuHanPalace(chart, age)` |
-| Khóa luận giải | `almanac_day_keys`, `age_restriction_keys`, `bazi_keys`, `bazi_day_master_key`, `bazi_na_yin_key`, `bazi_ten_god_key`, `bazi_life_stage_key`, `bazi_shen_sha_key`, `bazi_khong_vong_key`, `bazi_khoi_canh_key`, `kua_key`, `kua_compatibility_keys`, `eight_star_key`, `eight_star_use_key`, `nine_star_key` | Cùng tên camelCase | Cùng tên camelCase |
+| Khóa luận giải | `almanac_day_keys`, `age_restriction_keys`, `bazi_keys`, `bazi_day_master_key`, `bazi_na_yin_key`, `bazi_ten_god_key`, `bazi_life_stage_key`, `bazi_shen_sha_key`, `bazi_khong_vong_key`, `bazi_khoi_canh_key`, `tuvi_palace_key`, `tuvi_star_key`, `tuvi_star_brightness_key`, `tuvi_transformation_key`, `kua_key`, `kua_compatibility_keys`, `eight_star_key`, `eight_star_use_key`, `nine_star_key` | Cùng tên camelCase | Cùng tên camelCase |
 | Chọn đoạn Tử Vi | `tuvi_palace_query(&chart, branch)`, `gate_matches(&gates, &facts)` | `tuviPalaceQuery(chart:branch:)`, `gateMatches(gates:facts:)` | `tuviPalaceQuery(chart, branch)`, `gateMatches(gates, facts)` |
 | Trạng thái Cửu Tinh | `NineStar::phase_in(period)`, `NineStarPhase::name_vi`, `is_auspicious` | `nineStarPhase(star:period:)`, `nineStarPhaseName`, `nineStarPhaseIsAuspicious` | Cùng tên |
 | Thuộc tính sao | `TuViStar::name_vi`, `category`, `nature`, `brightness_at`; `FourTransformations::star_for` | `tuviStarName`, `tuviStarCategory`, `tuviStarNature`, `tuviStarBrightness`, `fourTransformationStar` | Cùng tên với Swift |
@@ -454,18 +463,18 @@
 ## 8. Kiểm chứng
 
 ```bash
-cargo test --workspace                                  # 294 test core + 70 astro-data + 17 repository_data + 26 FFI
+cargo test --workspace                                  # 295 test core + 70 astro-data + 17 repository_data + 26 FFI
 cargo clippy --workspace --all-targets -- -D warnings
 cargo fmt --all -- --check
 wasm-pack build crates/astro-wasm --target web
-wasm-pack test --node crates/astro-wasm                 # 31 test
+wasm-pack test --node crates/astro-wasm                 # 32 test
 ./build-ios.sh                                          # cần Xcode
 cargo run -p astro-data -- validate                     # kiểm dữ liệu luận giải
 cargo run -p astro-data -- build                        # build/content/
 cargo run --release -p astro-data -- scan               # V13 và tải từng cung
 cargo run -p astro-data -- build --release              # SQLite cho app iOS
 xcodebuild -project apps/ios/Chronos.xcodeproj -scheme Chronos \
-  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 50 test Swift
+  -destination 'platform=iOS Simulator,name=iPhone 17' test   # 62 test Swift
 ```
 
 Dữ liệu đối chiếu trong test:

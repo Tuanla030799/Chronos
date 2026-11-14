@@ -100,9 +100,17 @@ struct EngineService: Sendable {
         return try analyzeBazi(birth: birth(of: profile), options: options, gender: profile.gender.engineValue)
     }
 
-    func tuviChart(for profile: Profile) throws -> TuViChart {
+    /// `leapMonthRule` and `ratHour` default to the engine's own: a leap month split at day 15,
+    /// Tý split at midnight.
+    func tuviChart(
+        for profile: Profile,
+        leapMonthRule: LeapMonthRule? = nil,
+        ratHour: RatHourConvention? = nil
+    ) throws -> TuViChart {
         var config = defaultTuviConfig()
         config.tzOffset = profile.tzOffset
+        config.leapMonthRule = leapMonthRule ?? config.leapMonthRule
+        config.ratHour = ratHour ?? config.ratHour
         config.useTrueSolarTime = profile.longitude != nil
         config.longitude = profile.longitude
         return try Chronos.tuviChart(birth: birth(of: profile), gender: profile.gender.engineValue, config: config)

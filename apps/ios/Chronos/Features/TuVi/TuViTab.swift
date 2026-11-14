@@ -1,27 +1,54 @@
 import SwiftUI
 
-/// Tử Vi: the twelve palaces on the Địa Bàn around the Thiên Bàn; a palace opens its reading.
+/// What the tab opens in a sheet.
+enum TuViSheet: Identifiable {
+    case entry(ContentEntry)
+    case star(TuViPlacedStar, Branch)
+
+    var id: String {
+        switch self {
+        case .entry(let entry): "entry/\(entry.key)"
+        case .star(let placed, let branch): "star/\(placed.star)/\(branch)"
+        }
+    }
+}
+
+/// Tử Vi: the chart on the Địa Bàn with the Thiên Bàn in the middle, a year to read its Đại Hạn
+/// and Tiểu Hạn, and the reading of the palace chosen on the board.
 struct TuViTab: View {
     let services: AppServices
     @Environment(ProfileStore.self) private var store
-    @State private var opened: OpenedPalace?
+    @AppStorage("chronos.tuvi.leapMonthAsCurrent") private var leapMonthAsCurrent = false
+    @AppStorage("chronos.tuvi.newDayAtRatHour") private var newDayAtRatHour = false
+    @State private var targetYear: Int32
+    @State private var selected: Branch?
+    @State private var sheet: TuViSheet?
+    private let currentYear: Int32
+
+    init(services: AppServices) {
+        self.services = services
+        let today = services.engine.today()
+        let year = (try? services.engine.lunar(today).year) ?? today.year
+        currentYear = year
+        _targetYear = State(initialValue: year)
+    }
+
+    private var settings: TuViSettings {
+        TuViSettings(leapMonthAsCurrent: leapMonthAsCurrent, newDayAtRatHour: newDayAtRatHour)
+    }
 
     var body: some View {
         NavigationStack {
             Group {
                 if let profile = store.selected {
-                    switch Result(catching: { try services.engine.tuviChart(for: profile) }) {
-                    case .success(let chart):
-                        ScrollView {
-                            TuViBoard(chart: chart, name: profile.name) { palace in
-                                opened = OpenedPalace(chart: chart, palace: palace)
-                            }
-                            .padding(8)
+                    ScrollView {
+                        VStack(spacing: 16) {
+                            content(profile)
                         }
-                        .background(Theme.paper)
-                    case .failure(let error):
-                        UnavailableView(title: "Không lập được lá số", message: String(describing: error))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 16)
                     }
+                    .background(Theme.paper)
                 } else {
                     NoProfileView()
                 }
@@ -29,154 +56,120 @@ struct TuViTab: View {
             .navigationTitle("Tử Vi")
             .navigationBarTitleDisplayMode(.inline)
             .profileToolbar(services)
-            .sheet(item: $opened) { opened in
-                PalaceSheet(opened: opened, content: services.content)
-                    .presentationDetents([.medium, .large])
-            }
-        }
-    }
-}
-
-struct OpenedPalace: Identifiable {
-    let chart: TuViChart
-    let palace: TuViPalace
-
-    var id: String { "\(palace.branch)" }
-}
-
-/// The fixed Địa Bàn: Tỵ to Thân across the top, Dần to Hợi across the bottom.
-private struct TuViBoard: View {
-    let chart: TuViChart
-    let name: String
-    let open: (TuViPalace) -> Void
-
-    var body: some View {
-        VStack(spacing: 2) {
-            HStack(spacing: 2) { cells([.ti, .ngo, .mui, .than]) }
-            HStack(spacing: 2) {
-                VStack(spacing: 2) { cells([.thin, .mao]) }
-                center
-                VStack(spacing: 2) { cells([.dau, .tuat]) }
-            }
-            HStack(spacing: 2) { cells([.dan, .suu, .ty, .hoi]) }
-        }
-        .background(Theme.rule)
-    }
-
-    private func cells(_ branches: [Branch]) -> some View {
-        ForEach(branches, id: \.self) { branch in
-            if let palace = chart.palaces.first(where: { $0.branch == branch }) {
-                PalaceCell(palace: palace)
-                    .onTapGesture { open(palace) }
+            .onChange(of: store.selectedID) { selected = nil }
+            .sheet(item: $sheet) { sheet in
+                switch sheet {
+                case .entry(let entry):
+                    EntrySheet(entry: entry, content: services.content)
+                case .star(let placed, let branch):
+                    TuViStarSheet(placed: placed, branch: branch, content: services.content)
+                }
             }
         }
     }
 
-    private var center: some View {
-        VStack(spacing: 4) {
-            Text(name).font(.headline).foregroundStyle(Theme.ink)
-            Text(tuviPolarityName(value: chart.polarity))
-            Text("Bản mệnh: " + naYinName(value: chart.banMenh))
-            Text(fiveElementsBureauName(value: chart.bureau))
-            Text("Mệnh chủ \(tuviStarName(value: chart.menhChu)), Thân chủ \(tuviStarName(value: chart.thanChu))")
+    @ViewBuilder
+    private func content(_ profile: Profile) -> some View {
+        let chart = Result {
+            try services.engine.tuviChart(for: profile, leapMonthRule: settings.leapMonthRule, ratHour: settings.ratHour)
         }
-        .font(.caption)
-        .foregroundStyle(Theme.inkSecondary)
-        .multilineTextAlignment(.center)
-        .padding(6)
-        .frame(maxWidth: .infinity, minHeight: 236)
-        .background(Theme.paper)
+        switch chart {
+        case .success(let chart):
+            let year = TuViYearReading(chart: chart, lunarYear: targetYear)
+            let branch = selected ?? chart.menhBranch
+            header(profile, year: year).padding(.horizontal, 8)
+            TuViBoard(chart: chart, name: profile.name, year: year, selected: branch) { tapped in
+                withAnimation(.snappy) { selected = tapped }
+            }
+            BoardLegend().padding(.horizontal, 8)
+            if let palace = chart.palace(at: branch) {
+                PalaceDetail(chart: chart, palace: palace, year: year, content: services.content) { sheet = $0 }
+                    .padding(.horizontal, 8)
+            }
+        case .failure(let error):
+            UnavailableView(title: "Không lập được lá số", message: String(describing: error))
+                .card()
+                .padding(.horizontal, 8)
+        }
     }
-}
 
-private struct PalaceCell: View {
-    let palace: TuViPalace
+    // MARK: Header
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
+    private func header(_ profile: Profile, year: TuViYearReading) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ProfileHeaderRow(profile: profile)
+            Divider().overlay(Theme.rule)
             HStack {
-                Text(tuviPalaceRoleName(value: palace.role))
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(Theme.cinnabar)
-                if palace.isThan {
-                    Text("Thân").font(.caption2).foregroundStyle(Theme.gold)
+                Button { targetYear -= 1 } label: { Image(systemName: "chevron.left") }
+                    .accessibilityLabel("Năm trước")
+                    .disabled(Int(targetYear) <= EngineService.supportedYears.lowerBound)
+                Spacer()
+                VStack(spacing: 2) {
+                    Text("Năm xem \(String(targetYear))")
+                        .font(.headline).fontDesign(.serif).foregroundStyle(Theme.ink)
+                    Text(yearSubtitle(year))
+                        .font(.caption).foregroundStyle(Theme.inkSecondary)
+                }
+                Spacer()
+                Button { targetYear += 1 } label: { Image(systemName: "chevron.right") }
+                    .accessibilityLabel("Năm sau")
+                    .disabled(Int(targetYear) >= EngineService.supportedYears.upperBound)
+            }
+            FlowLayout(spacing: 8) {
+                OptionChip(title: "Tháng nhuận", value: leapMonthAsCurrent ? "Như tháng trước" : "Chia ở ngày 15") {
+                    Picker("Tháng nhuận", selection: $leapMonthAsCurrent) {
+                        Text("Mùng 1–15 tính tháng trước, 16 trở đi tính tháng sau").tag(false)
+                        Text("Cả tháng tính như tháng trước").tag(true)
+                    }
+                }
+                OptionChip(title: "Giờ Tý", value: newDayAtRatHour ? "Sang ngày từ 23h" : "Chia nửa đêm") {
+                    Picker("Giờ Tý", selection: $newDayAtRatHour) {
+                        Text("Chia ở nửa đêm (Tý sớm, Tý muộn)").tag(false)
+                        Text("Sang ngày từ 23h").tag(true)
+                    }
+                }
+                if targetYear != currentYear {
+                    Button("Năm nay") { targetYear = currentYear }
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Theme.cinnabar)
+                        .padding(.vertical, 5)
                 }
             }
-            ForEach(palace.mainStars, id: \.star) { placed in
-                Text(starLabel(placed))
-                    .font(.caption2.weight(.semibold))
-                    .foregroundStyle(Theme.ink)
-            }
-            if !palace.minorStars.isEmpty {
-                Text("+\(palace.minorStars.count) sao")
-                    .font(.caption2)
-                    .foregroundStyle(Theme.inkSecondary)
-            }
-            Spacer(minLength: 0)
-            Text("\(stemName(stem: palace.stem)) \(branchName(branch: palace.branch)) · \(palace.daiHanStartAge)")
-                .font(.caption2)
-                .foregroundStyle(Theme.inkSecondary)
         }
-        .padding(4)
-        .frame(maxWidth: .infinity, minHeight: 117, alignment: .topLeading)
-        .background(Theme.surface)
-        .contentShape(Rectangle())
+        .card()
+    }
+
+    private func yearSubtitle(_ year: TuViYearReading) -> String {
+        var parts: [String] = []
+        if let canChi = try? services.engine.yearCanChi(lunarYear: year.lunarYear) {
+            parts.append(canChiName(value: canChi))
+        }
+        parts.append(year.age >= 1 ? "\(year.age) tuổi mụ" : "trước năm sinh")
+        if year.lunarYear == currentYear {
+            parts.append("năm nay")
+        }
+        return parts.joined(separator: " · ")
     }
 }
 
-func starLabel(_ placed: TuViPlacedStar) -> String {
-    var label = tuviStarName(value: placed.star)
-    if let brightness = placed.brightness {
-        label += " " + starBrightnessMark(value: brightness)
-    }
-    if let transformation = placed.transformation {
-        label += " · " + fourTransformationName(value: transformation)
-    }
-    return label
-}
-
-/// The reading of one palace: entries of its keys, the firm passages, then "Xem thêm".
-private struct PalaceSheet: View {
-    let opened: OpenedPalace
-    let content: ContentRepository
-
+/// What the colors of the board mean.
+private struct BoardLegend: View {
     var body: some View {
-        NavigationStack {
-            switch Result(catching: { try content.tuviPalace(chart: opened.chart, branch: opened.palace.branch) }) {
-            case .success(let reading):
-                List {
-                    Section("Sao") {
-                        ForEach(opened.palace.mainStars + opened.palace.minorStars, id: \.star) { placed in
-                            Text(starLabel(placed)).foregroundStyle(Theme.ink)
-                        }
-                    }
-                    ForEach(reading.primary) { group in
-                        Section(group.section?.title ?? "Luận giải") {
-                            ForEach(group.passages) { PassageView(passage: $0) }
-                        }
-                    }
-                    if !reading.more.isEmpty {
-                        Section {
-                            DisclosureGroup("Xem thêm (\(reading.more.reduce(0) { $0 + $1.passages.count }) đoạn có điều kiện)") {
-                                ForEach(reading.more) { group in
-                                    if let section = group.section {
-                                        Text(section.title).font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
-                                    }
-                                    ForEach(group.passages) { PassageView(passage: $0) }
-                                }
-                            }
-                        }
-                    }
-                    Section("Tra cứu") {
-                        ForEach(reading.entries) { EntryView(entry: $0, content: content) }
-                    }
-                }
-                .chronosBackground()
-                .navigationTitle("Cung " + tuviPalaceRoleName(value: opened.palace.role))
-                .navigationBarTitleDisplayMode(.inline)
-            case .failure(let error):
-                UnavailableView(title: "Không đọc được luận giải", message: String(describing: error))
-            }
+        FlowLayout(spacing: 12) {
+            item("Đang chọn", color: Theme.cinnabar, dashed: false)
+            item("Tam hợp", color: Theme.gold, dashed: false)
+            item("Xung chiếu", color: Theme.cinnabar, dashed: true)
+            Text("ĐH, TH: Đại hạn, Tiểu hạn của năm xem. Góc dưới mỗi cung: năm có Tiểu hạn đến cung đó.")
+                .font(.caption2).foregroundStyle(Theme.inkSecondary)
+        }
+    }
+
+    private func item(_ title: String, color: Color, dashed: Bool) -> some View {
+        HStack(spacing: 4) {
+            RoundedRectangle(cornerRadius: 3)
+                .strokeBorder(color, style: StrokeStyle(lineWidth: 1.5, dash: dashed ? [3, 2] : []))
+                .frame(width: 14, height: 10)
+            Text(title).font(.caption2).foregroundStyle(Theme.inkSecondary)
         }
     }
 }

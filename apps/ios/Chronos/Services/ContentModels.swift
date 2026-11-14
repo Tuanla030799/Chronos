@@ -128,6 +128,8 @@ struct Passage: Identifiable, Sendable, Hashable {
     let body: [String]
     let citation: String
     let sensitivity: Sensitivity
+    /// Where the text departs from the printed book, and why (D20 of the content spec).
+    let correction: String?
 }
 
 struct PassageGroup: Identifiable, Sendable, Hashable {

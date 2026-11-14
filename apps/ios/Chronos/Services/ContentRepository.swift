@@ -21,7 +21,7 @@ enum ContentRepositoryError: Error, Equatable, CustomStringConvertible {
 /// (`almanacDayKeys`, `tuviPalaceQuery`, …): the app never builds a key string itself.
 final class ContentRepository: Sendable {
     static let applicationID: Int64 = 1_128_813_134
-    static let schemaVersion: Int64 = 1
+    static let schemaVersion: Int64 = 2
 
     let metadata: ContentMetadata
     private let database: SQLiteDatabase
@@ -72,7 +72,7 @@ final class ContentRepository: Sendable {
             """
         passageSQL = """
             SELECT p.id, p.stable_id, p.tier, p.section, p.verse, p.gates, p.condition_text,
-                   p.body, p.citation, p.sensitivity
+                   p.body, p.citation, p.sensitivity, p.correction
             FROM passage_anchor a JOIN passage p ON p.id = a.passage_id
             WHERE a.anchor = ?\(draft.replacingOccurrences(of: "draft", with: "p.draft"))
             ORDER BY p.id
@@ -197,7 +197,8 @@ final class ContentRepository: Sendable {
             conditionText: row.text(6),
             body: try decode([String].self, row.text(7) ?? "[]", key: stableID, column: "body"),
             citation: row.text(8) ?? "",
-            sensitivity: Sensitivity(rawValue: row.int(9))
+            sensitivity: Sensitivity(rawValue: row.int(9)),
+            correction: row.text(10)
         )
         return (passage, row.text(5) ?? "[]")
     }

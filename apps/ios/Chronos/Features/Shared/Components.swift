@@ -45,6 +45,29 @@ struct Chip: View {
     }
 }
 
+/// A chip that opens a menu of choices.
+struct OptionChip<Choices: View>: View {
+    let title: String
+    let value: String
+    @ViewBuilder let choices: Choices
+
+    var body: some View {
+        Menu {
+            choices
+        } label: {
+            HStack(spacing: 4) {
+                Text("\(title): \(value)")
+                Image(systemName: "chevron.up.chevron.down").font(.system(size: 9, weight: .bold))
+            }
+            .font(.caption.weight(.medium))
+            .foregroundStyle(Theme.cinnabar)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(Theme.cinnabar.opacity(0.1), in: Capsule())
+        }
+    }
+}
+
 /// Name and birth of the person a tab reads, with a menu to switch to another profile.
 struct ProfileHeaderRow: View {
     let profile: Profile

@@ -55,31 +55,76 @@ struct EntryView: View {
     }
 }
 
-/// One Tử Vi passage, with its verse and the condition a reader must judge.
+/// One Tử Vi passage: the verse of the book framed, the condition a reader must judge, the
+/// modern text, and the note where the data departs from the printed book.
 struct PassageView: View {
     let passage: Passage
 
     var body: some View {
-        SensitiveText(sensitivity: passage.sensitivity) {
-            VStack(alignment: .leading, spacing: 6) {
-                if let verse = passage.verse {
-                    Text(verse).italic().foregroundStyle(Theme.cinnabar)
-                }
-                if let condition = passage.conditionText {
-                    Text("Nếu " + condition)
-                        .font(.caption)
-                        .foregroundStyle(Theme.inkSecondary)
-                }
-                ForEach(Array(passage.body.enumerated()), id: \.offset) { _, paragraph in
-                    Text(paragraph)
+        VStack(alignment: .leading, spacing: 8) {
+            SensitiveText(sensitivity: passage.sensitivity) {
+                VStack(alignment: .leading, spacing: 8) {
+                    if let verse = passage.verse {
+                        Text(verse)
+                            .font(.subheadline).italic().fontDesign(.serif)
+                            .foregroundStyle(Theme.cinnabar)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(Theme.cinnabar.opacity(0.06), in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            .overlay(alignment: .leading) {
+                                Rectangle().fill(Theme.cinnabar.opacity(0.6)).frame(width: 2)
+                            }
+                    }
+                    if let condition = passage.conditionText {
+                        Label("Nếu " + condition, systemImage: "questionmark.circle")
+                            .font(.caption)
+                            .foregroundStyle(Theme.inkSecondary)
+                    }
+                    ForEach(Array(passage.body.enumerated()), id: \.offset) { _, paragraph in
+                        Text(paragraph).font(.subheadline).foregroundStyle(Theme.ink)
+                    }
                 }
             }
-            .font(.subheadline)
-            .foregroundStyle(Theme.ink)
+            if let correction = passage.correction {
+                CorrectionNote(text: correction)
+            }
+            Text(passage.citation)
+                .font(.caption2)
+                .foregroundStyle(Theme.inkSecondary)
         }
-        Text(passage.citation)
-            .font(.caption2)
-            .foregroundStyle(Theme.inkSecondary)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+/// A note that the text differs from the printed book, folded to one line until tapped.
+struct CorrectionNote: View {
+    let text: String
+    @State private var expanded = false
+
+    var body: some View {
+        Button {
+            withAnimation(.snappy) { expanded.toggle() }
+        } label: {
+            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                Image(systemName: "pencil.and.list.clipboard")
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Đính chính so với bản in").font(.caption.weight(.semibold))
+                    Text(text)
+                        .font(.caption)
+                        .lineLimit(expanded ? nil : 1)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: expanded ? "chevron.up" : "chevron.down").font(.caption2)
+            }
+            .foregroundStyle(Theme.gold)
+            .padding(8)
+            .background(Theme.gold.opacity(0.08), in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint(expanded ? "Thu gọn" : "Mở đầy đủ")
     }
 }
 
