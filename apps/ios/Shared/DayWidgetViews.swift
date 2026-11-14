@@ -32,10 +32,58 @@ struct SmallDayView: View {
     }
 }
 
-/// `systemMedium`: the day of a Lịch Vạn Niên. The sheet on the left; Can Chi, Tiết Khí, Trực,
-/// Sao and the Hoàng Đạo hours on the right.
+/// `systemMedium`: the day of a Lịch Vạn Niên, and the event of today or the nearest one ahead.
 struct MediumDayView: View {
     let moment: DayMoment
+    var events: [NoteOccurrence] = []
+
+    var body: some View {
+        DayOverview(moment: moment, event: events.first)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+    }
+}
+
+/// `systemLarge`: the full sheet of the day on top, then today's notes and the events ahead
+/// with the days left.
+struct LargeDayView: View {
+    let moment: DayMoment
+    var events: [NoteOccurrence] = []
+
+    static let rows = 5
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            DayOverview(moment: moment, event: nil)
+                .frame(height: 138, alignment: .top)
+            Rectangle().fill(Theme.rule).frame(height: 1)
+            Text("GHI CHÚ & SỰ KIỆN")
+                .font(.system(size: 10, weight: .bold)).tracking(0.6)
+                .foregroundStyle(Theme.inkSecondary)
+            if events.isEmpty {
+                Text("Không có sự kiện nào trong 30 ngày tới.")
+                    .font(.caption).foregroundStyle(Theme.inkSecondary)
+            } else {
+                VStack(alignment: .leading, spacing: 7) {
+                    ForEach(events.prefix(Self.rows)) { event in
+                        EventRow(event: event)
+                    }
+                    if events.count > Self.rows {
+                        Text("và \(events.count - Self.rows) sự kiện khác")
+                            .font(.caption2).foregroundStyle(Theme.inkSecondary)
+                    }
+                }
+            }
+            Spacer(minLength: 0)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+    }
+}
+
+/// The sheet on the left; Can Chi, Tiết Khí, Trực, Sao and the Hoàng Đạo hours on the right,
+/// with one event under them when there is one.
+private struct DayOverview: View {
+    let moment: DayMoment
+    let event: NoteOccurrence?
 
     var body: some View {
         let day = moment.day
@@ -81,12 +129,21 @@ struct MediumDayView: View {
                         }
                     }
                 }
+                if let event {
+                    Label {
+                        Text("\(event.countdown): \(event.note.title)")
+                    } icon: {
+                        Image(systemName: event.note.category.systemImage)
+                    }
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(Theme.cinnabar)
+                    .padding(.top, 2)
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .lineLimit(1)
         .minimumScaleFactor(0.75)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .accessibilityElement(children: .combine)
     }
 
@@ -99,10 +156,43 @@ struct MediumDayView: View {
     }
 }
 
-/// `accessoryRectangular`, on the Lock Screen: solar and lunar date, the day's Can Chi, and the
-/// Hoàng Đạo hour running now or coming next. The system tints it, so it sets no colors.
+/// One event of the large widget: what, on which date, and how far ahead.
+private struct EventRow: View {
+    let event: NoteOccurrence
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: event.note.category.systemImage)
+                .font(.caption)
+                .foregroundStyle(Theme.cinnabar)
+                .frame(width: 16)
+            VStack(alignment: .leading, spacing: 0) {
+                Text(event.note.title)
+                    .font(.caption.weight(.semibold)).foregroundStyle(Theme.ink)
+                Text("\(event.note.category.label) · \(event.note.dateLabel)")
+                    .font(.system(size: 10)).foregroundStyle(Theme.inkSecondary)
+            }
+            Spacer(minLength: 4)
+            Text(event.countdown)
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(event.daysLeft == 0 ? Theme.cinnabar : Theme.gold)
+        }
+        .lineLimit(1)
+        .accessibilityElement(children: .combine)
+    }
+}
+
+/// `accessoryRectangular`, on the Lock Screen: solar and lunar date, the day's Can Chi, and an
+/// event of today or tomorrow when there is one, else the Hoàng Đạo hour running now or coming
+/// next. The system tints it, so it sets no colors.
 struct RectangularDayView: View {
     let moment: DayMoment
+    var events: [NoteOccurrence] = []
+
+    /// The event the Lock Screen shows instead of the hour: the first of today or tomorrow.
+    nonisolated static func reminder(in events: [NoteOccurrence]) -> NoteOccurrence? {
+        events.first { $0.daysLeft <= 1 }
+    }
 
     var body: some View {
         let day = moment.day
@@ -111,7 +201,14 @@ struct RectangularDayView: View {
                 .font(.headline)
             Text("Ngày \(canChiName(value: day.dayCanChi)) · \(day.isHoangDao ? "Hoàng Đạo" : "Hắc Đạo")")
                 .font(.caption)
-            if let upcoming = moment.upcoming {
+            if let event = Self.reminder(in: events) {
+                Label {
+                    Text("\(event.countdown): \(event.note.title)")
+                } icon: {
+                    Image(systemName: event.note.category.systemImage)
+                }
+                .font(.caption.weight(.semibold))
+            } else if let upcoming = moment.upcoming {
                 Label {
                     Text("\(upcoming.isNow ? "Đang giờ" : "Giờ tới") \(upcoming.text)")
                 } icon: {

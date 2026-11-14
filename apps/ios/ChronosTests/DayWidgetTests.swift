@@ -134,16 +134,59 @@ struct DayWidgetTests {
         #expect(SolarDate(year: 2024, month: 2, day: 28).adding(days: 1) == SolarDate(year: 2024, month: 2, day: 29))
     }
 
+    // MARK: Events
+
+    /// Notes as the widget reads them: one today, one tomorrow, a death anniversary on 15/10.
+    static func sampleEvents(from today: SolarDate) -> [NoteOccurrence] {
+        let notes = [
+            CalendarNote(title: "Giỗ Ông Nội", calendarType: .lunar, day: 15, month: 10, year: 2020),
+            CalendarNote(title: "Họp lớp", calendarType: .solar, day: Int(today.day), month: Int(today.month), year: Int(today.year), isYearlyRecurring: false, category: .important),
+            CalendarNote(title: "Sinh nhật Lan", calendarType: .solar, day: Int(today.day) + 1, month: Int(today.month), year: 1995, category: .birthday),
+        ]
+        return NoteCalendar.upcoming(notes, from: today, days: 30, tzOffset: 7)
+    }
+
+    @Test func theWidgetListsTodayThenTheEventsAhead() throws {
+        let events = Self.sampleEvents(from: SolarDate(year: 2026, month: 11, day: 14))
+        #expect(events.map(\.note.title) == ["Họp lớp", "Sinh nhật Lan", "Giỗ Ông Nội"])
+        #expect(events.map(\.countdown) == ["Hôm nay", "Ngày mai", "Còn 9 ngày"])
+        #expect(events[2].date == SolarDate(year: 2026, month: 11, day: 23))
+    }
+
+    @Test func theLockScreenPrefersAnEventOfTodayOrTomorrow() throws {
+        let today = SolarDate(year: 2026, month: 11, day: 14)
+        let events = Self.sampleEvents(from: today)
+        #expect(RectangularDayView.reminder(in: events)?.note.title == "Họp lớp")
+        #expect(RectangularDayView.reminder(in: Array(events.dropFirst()))?.note.title == "Sinh nhật Lan")
+        #expect(RectangularDayView.reminder(in: Array(events.dropFirst(2))) == nil)
+        #expect(RectangularDayView.reminder(in: []) == nil)
+    }
+
+    @Test func theWidgetReadsTheNotesTheAppSaved() throws {
+        let suite = "ChronosTests.widget.\(UUID().uuidString)"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defer { defaults.removePersistentDomain(forName: suite) }
+        #expect(NoteStorage.load(from: defaults).isEmpty)
+        let note = CalendarNote(title: "Giỗ Ông Nội", calendarType: .lunar, day: 15, month: 10, year: 2020)
+        NoteStorage.save([note], to: defaults)
+        let read = NoteStorage.load(from: try #require(UserDefaults(suiteName: suite)))
+        #expect(read == [note])
+        #expect(NoteCalendar.upcoming(read, from: SolarDate(year: 2026, month: 11, day: 14), days: 30, tzOffset: 7).first?.daysLeft == 9)
+    }
+
     // MARK: Views
 
     @MainActor
     @Test(arguments: [ColorScheme.light, .dark])
     func everyWidgetViewRendersAtItsFamilySize(scheme: ColorScheme) throws {
         let moment = try DayMoment(at: try vietnam(9, 15), tzOffset: 7)
+        let events = Self.sampleEvents(from: moment.day.solar)
         let views: [(String, AnyView, CGSize)] = [
             ("small", AnyView(SmallDayView(moment: moment)), CGSize(width: 170, height: 170)),
-            ("medium", AnyView(MediumDayView(moment: moment)), CGSize(width: 364, height: 170)),
-            ("rectangular", AnyView(RectangularDayView(moment: moment)), CGSize(width: 172, height: 76)),
+            ("medium", AnyView(MediumDayView(moment: moment, events: events)), CGSize(width: 364, height: 170)),
+            ("large", AnyView(LargeDayView(moment: moment, events: events)), CGSize(width: 364, height: 382)),
+            ("large-empty", AnyView(LargeDayView(moment: moment)), CGSize(width: 364, height: 382)),
+            ("rectangular", AnyView(RectangularDayView(moment: moment, events: events)), CGSize(width: 172, height: 76)),
         ]
         for (name, view, size) in views {
             let framed = view

@@ -13,6 +13,7 @@ struct AppServices: Sendable {
 @main
 struct ChronosApp: App {
     @State private var profiles = ProfileStore()
+    @State private var notes = NoteStore()
     private let services = Result { try AppServices.bundled() }
 
     var body: some Scene {
@@ -26,6 +27,8 @@ struct ChronosApp: App {
                 }
             }
             .environment(profiles)
+            .environment(notes)
+            .task { await NotificationManager.sync(notes.notes) }
             .tint(Theme.cinnabar)
         }
     }

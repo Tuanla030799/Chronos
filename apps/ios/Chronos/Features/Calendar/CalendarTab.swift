@@ -8,6 +8,7 @@ struct CalendarTab: View {
     @State private var page: Result<MonthPage, Error>
     @State private var opened: ContentEntry?
     @State private var slide: Edge = .trailing
+    @Environment(NoteStore.self) private var notes
 
     init(services: AppServices) {
         self.services = services
@@ -25,6 +26,7 @@ struct CalendarTab: View {
                     switch Result(catching: { try DayReading(selected, services: services) }) {
                     case .success(let reading):
                         DaySheetCard(reading: reading)
+                        NotesCard(selected: selected, today: today, engine: services.engine)
                         HoursCard(hoangDao: reading.almanac.hoangDaoHours)
                         ActivitiesCard(entries: reading.activityEntries, content: services.content)
                         GodsCard(reading: reading) { opened = $0 }
@@ -69,7 +71,7 @@ struct CalendarTab: View {
 
             switch page {
             case .success(let page):
-                MonthGrid(page: page, selected: selected, today: today) { day in
+                MonthGrid(page: page, selected: selected, today: today, marked: marked(page)) { day in
                     withAnimation(.snappy) { selected = day.solar }
                 }
                 .id(page.key)
@@ -81,6 +83,7 @@ struct CalendarTab: View {
             HStack(spacing: 16) {
                 Label("Hoàng Đạo", systemImage: "circle.fill").foregroundStyle(Theme.gold)
                 Label("Hắc Đạo", systemImage: "circle.fill").foregroundStyle(Theme.cinnabar)
+                InfoButton(topic: Glossary.calendarMarks)
                 Spacer()
                 if selected != today {
                     Button("Hôm nay") { go(to: today) }.font(.caption.weight(.semibold))
@@ -97,6 +100,12 @@ struct CalendarTab: View {
                 if value.translation.width > 50 { show(months: -1) }
             }
         )
+    }
+
+    /// Days of the month that have a note or an event.
+    private func marked(_ page: MonthPage) -> Set<SolarDate> {
+        guard let first = page.days.first?.solar, let last = page.days.last?.solar else { return [] }
+        return NoteCalendar.markedDays(notes.notes, from: first, through: last, tzOffset: services.engine.tzOffset)
     }
 
     private var title: String {
@@ -173,6 +182,7 @@ private struct MonthGrid: View {
     let page: MonthPage
     let selected: SolarDate
     let today: SolarDate
+    let marked: Set<SolarDate>
     let select: (CalendarDay) -> Void
 
     /// Weeks of seven cells; nil pads before day 1 and after the last day. Laid out eagerly so
@@ -189,7 +199,7 @@ private struct MonthGrid: View {
                 HStack(spacing: 2) {
                     ForEach(Array(week.enumerated()), id: \.offset) { _, day in
                         if let day {
-                            DayCell(day: day, isSelected: day.solar == selected, isToday: day.solar == today)
+                            DayCell(day: day, isSelected: day.solar == selected, isToday: day.solar == today, hasNote: marked.contains(day.solar))
                                 .onTapGesture { select(day) }
                                 .accessibilityAddTraits(.isButton)
                         } else {
@@ -206,6 +216,7 @@ private struct DayCell: View {
     let day: CalendarDay
     let isSelected: Bool
     let isToday: Bool
+    let hasNote: Bool
 
     var body: some View {
         VStack(spacing: 1) {
@@ -229,9 +240,17 @@ private struct DayCell: View {
                 RoundedRectangle(cornerRadius: 10, style: .continuous).strokeBorder(Theme.cinnabar, lineWidth: 1.5)
             }
         }
+        .overlay(alignment: .topTrailing) {
+            if hasNote {
+                Image(systemName: "bookmark.fill")
+                    .font(.system(size: 8))
+                    .foregroundStyle(isSelected ? Theme.paper : Theme.cinnabar)
+                    .padding(4)
+            }
+        }
         .contentShape(Rectangle())
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("Ngày \(day.solar.day), âm lịch \(day.lunar.day) tháng \(day.lunar.month), \(day.isHoangDao ? "Hoàng Đạo" : "Hắc Đạo")")
+        .accessibilityLabel("Ngày \(day.solar.day), âm lịch \(day.lunar.day) tháng \(day.lunar.month), \(day.isHoangDao ? "Hoàng Đạo" : "Hắc Đạo")\(hasNote ? ", có ghi chú" : "")")
     }
 }
 
