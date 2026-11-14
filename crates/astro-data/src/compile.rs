@@ -53,6 +53,8 @@ pub struct PassageRow {
     pub gates: Vec<Gate>,
     /// Condition shown as "Nếu …".
     pub condition_text: Option<String>,
+    /// Where the text departs from the printed book, and why (D20).
+    pub correction: Option<String>,
     /// Paragraphs.
     pub body: Vec<String>,
     /// Where the text comes from, for display.
@@ -317,6 +319,7 @@ fn passage_row(id: u32, item: &ValidPassage, source: &Source, draft: bool) -> Pa
         verse: passage.verse.clone(),
         gates: item.gates.clone(),
         condition_text: passage.condition_text.clone(),
+        correction: passage.correction.clone(),
         body: passage.body.clone(),
         citation: citation(&passage.source_ref, source),
         sensitivity: sensitivity_mask(&passage.sensitivity),

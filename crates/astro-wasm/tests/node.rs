@@ -861,3 +861,37 @@ fn bazi_item_keys_and_elements_work_from_javascript() {
         r#""Hoa""#
     );
 }
+
+#[wasm_bindgen_test]
+fn tuvi_item_keys_trines_and_elements_work_from_javascript() {
+    use astro_wasm::{
+        branch_clash, branch_trine, tuvi_palace_key, tuvi_star_brightness_key, tuvi_star_element,
+        tuvi_star_key, tuvi_transformation_key,
+    };
+    assert_eq!(
+        tuvi_palace_key(variant("Menh")).unwrap(),
+        "tuvi.palace/Menh"
+    );
+    assert_eq!(tuvi_star_key(variant("TuVi")).unwrap(), "tuvi.star/TuVi");
+    assert_eq!(
+        tuvi_star_brightness_key(variant("CuMon"), variant("Ham")).unwrap(),
+        "tuvi.star_brightness/CuMon/Ham"
+    );
+    assert_eq!(
+        tuvi_transformation_key(variant("HoaLoc")).unwrap(),
+        "tuvi.transformation/HoaLoc"
+    );
+    assert_eq!(
+        stringify(&tuvi_star_element(variant("TuVi")).unwrap()),
+        r#""Tho""#
+    );
+    assert_eq!(
+        stringify(&tuvi_star_element(variant("LocTon")).unwrap()),
+        "null"
+    );
+    assert_eq!(
+        stringify(&branch_trine(variant("Ty")).unwrap()),
+        r#"["Than","Ty","Thin"]"#
+    );
+    assert_eq!(stringify(&branch_clash(variant("Ty")).unwrap()), r#""Ngo""#);
+}

@@ -168,6 +168,7 @@ mod tests {
             verse: None,
             gates: vec![gate],
             condition_text: None,
+            correction: None,
             body: vec!["x".to_string()],
             citation: "x".to_string(),
             sensitivity: 0,

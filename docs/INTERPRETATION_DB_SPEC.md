@@ -179,7 +179,7 @@ Dùng JSON cho cả hai nền tảng cũng chạy được ở quy mô này. SQL
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "engine_version": "0.1.0",
   "content_hash": "sha256:…",
   "modules": { "almanac": { "file": "almanac.3f9a1c.json", "entries": 92 } }
@@ -217,7 +217,7 @@ Không dùng số thứ tự, không đổi chữ hoa thường, không bỏ tê
 | `source_ref` | `SourceRef` | Có | Mục 3.3 |
 | `sensitivity` | mảng thẻ | Không | Mục 3.6 |
 | `status` | `draft`, `approved` | Có | Mục 3.4 |
-| `correction` | chuỗi | Không | Ghi chỗ dữ liệu khác bản in vì sửa lỗi in, nêu căn cứ. Chỉ dùng để duyệt, không vào file build |
+| `correction` | chuỗi | Không | Ghi chỗ dữ liệu khác bản in vì sửa lỗi in, nêu căn cứ. Của đoạn Tử Vi (`tuvi.passage`) thì vào file build từ schema 2 (D20) để app hiện "Đính chính so với bản in"; của mục (`entry`) vẫn chỉ dùng để duyệt |
 
 **Không lặp dữ liệu của core.** JSON không chứa tên chính, Cát Hung, ngũ hành hay bảng Miếu Hãm. `astro-data` lấy `name_vi()`, `luck()`, `is_hoang_dao()`, `nature()` từ core rồi ghi vào file build, nên không thể lệch với engine.
 
@@ -536,7 +536,7 @@ Nhóm hay gặp, đếm trong sách: Tả Hữu, Xương Khúc, Hỏa Linh, Khô
 ```sql
 PRAGMA journal_mode = DELETE;
 PRAGMA application_id = 1128813134;
-PRAGMA user_version = 1;
+PRAGMA user_version = 2;
 
 CREATE TABLE meta (
   key   TEXT PRIMARY KEY,
@@ -565,6 +565,7 @@ CREATE TABLE passage (
   verse          TEXT,
   gates          TEXT NOT NULL,           -- JSON, mục 8.3
   condition_text TEXT,
+  correction     TEXT,                    -- chỗ khác bản in và căn cứ (D20); NULL nếu không có
   body           TEXT NOT NULL,
   citation       TEXT NOT NULL,
   sensitivity    INTEGER NOT NULL DEFAULT 0,
@@ -868,6 +869,12 @@ Dò bằng biểu thức chính quy, khoảng 200 đoạn có từ ngữ nặng:
 | D17 | `rights` của 6 nguồn mới (`vn_custom_rules`, `lunar_ts`, `ngoc_hap_thong_thu`, `hiep_ky_bien_phuong_thu`, `tam_menh_thong_hoi`, `tu_binh_chan_thuyen`, `bat_trach_minh_canh`, `tham_thi_huyen_khong_hoc`) | `vn_custom_rules` (`open`, tài liệu của chính dự án), `lunar_ts` (`licensed`, MIT như đã khai ở `THIRD_PARTY_NOTICES.md`); bốn sách Hán cổ (`ngoc_hap_thong_thu`, `hiep_ky_bien_phuong_thu`, `tam_menh_thong_hoi`, `tu_binh_chan_thuyen`, `bat_trach_minh_canh`, `tham_thi_huyen_khong_hoc`) đặt `open`: đều là cổ thư hàng trăm năm đã thuộc phạm vi công cộng, và mục `canonical_summary` là văn bản tự tổng hợp, không trích nguyên văn một bản dịch hiện đại nào, nên không cần `unverified` chặn `build --release` |
 | D18 | `bazi.can_chi` (60 cặp Hoa Giáp) không có nguồn riêng cho từng cặp ngoài Nạp Âm (đã ở `bazi.nayin`) và ngũ hành Can/Chi (đã ở core) | Ghi `gap` cho cả 60 cặp, không tự đặt lời tán riêng để tránh trùng dữ liệu core và tránh suy diễn ngoài nguồn, đúng tinh thần mục 3.5 và mục 5 |
 | D19 | `bazi.nayin` cần cả `image` (dự kiến `paraphrase` từ *Tân Biên* tr. 241–243) và `traits`, `fortune` (dự kiến `canonical_summary` theo *Tam Mệnh Thông Hội*), nhưng một mục chỉ có một `source_ref` | Gộp cả ba trường vào một mục `canonical_summary` nguồn `tam_menh_thong_hoi`: bảng nguyên thể 30 Nạp Âm của *Tân Biên* vốn cũng chỉ là chép lại từ *Tam Mệnh Thông Hội*, nên quy về một nguồn là hợp lý hơn tách hai `source_ref` mà schema không cho phép |
+
+### 12.6. Chốt Task 5B.4
+
+| Mã | Vấn đề | Quyết định |
+| :-- | :-- | :-- |
+| D20 | Ứng dụng muốn cho người đọc thấy chỗ dữ liệu khác bản in (Task 5B.4), trong khi `correction` trước đây chỉ để duyệt | Từ 2026-11-14, `correction` của `tuvi.passage` vào file build: cột `passage.correction` của SQLite và trường `correction` của JSON Web. `schema_version` lên 2; app kiểm `user_version = 2`. `correction` của `entry` không đổi. Văn bản đính chính viết cho người duyệt nhưng đã là tiếng Việt rõ ràng có dẫn trang, nên hiện nguyên văn, thu gọn một dòng cho đến khi chạm |
 
 ## 13. Phạm vi
 

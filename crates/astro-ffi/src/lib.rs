@@ -1576,6 +1576,24 @@ pub fn tuvi_star_category(value: TuViStar) -> StarCategory {
     value.category()
 }
 
+/// Element of a Chính Tinh; `None` for every other star.
+#[uniffi::export]
+pub fn tuvi_star_element(value: TuViStar) -> Option<FiveElements> {
+    value.element()
+}
+
+/// The three branches of a branch's Tam Hợp group, the branch itself included.
+#[uniffi::export]
+pub fn branch_trine(branch: Branch) -> Vec<Branch> {
+    branch.trine().to_vec()
+}
+
+/// The branch opposite a branch (Lục Xung, xung chiếu).
+#[uniffi::export]
+pub fn branch_clash(branch: Branch) -> Branch {
+    branch.clash()
+}
+
 /// Inherent nature of a star, from section 4.9 of the spec.
 #[uniffi::export]
 pub fn tuvi_star_nature(value: TuViStar) -> StarNature {
@@ -1830,6 +1848,30 @@ pub fn kua_compatibility_keys(compatibility: KuaCompatibility) -> Vec<String> {
 #[uniffi::export]
 pub fn nine_star_key(star: NineStar) -> String {
     content::nine_star_key(star)
+}
+
+/// Interpretation key of the overview of a palace role.
+#[uniffi::export]
+pub fn tuvi_palace_key(role: TuViPalaceRole) -> String {
+    content::tuvi_palace_key(role)
+}
+
+/// Interpretation key of the general text of a Tử Vi star.
+#[uniffi::export]
+pub fn tuvi_star_key(star: TuViStar) -> String {
+    content::tuvi_star_key(star)
+}
+
+/// Interpretation key of a star at one brightness.
+#[uniffi::export]
+pub fn tuvi_star_brightness_key(star: TuViStar, level: StarBrightness) -> String {
+    content::tuvi_star_brightness_key(star, level)
+}
+
+/// Interpretation key of one of the Tứ Hóa.
+#[uniffi::export]
+pub fn tuvi_transformation_key(transformation: FourTransformations) -> String {
+    content::tuvi_transformation_key(transformation)
 }
 
 /// What the interpretation of the palace at `branch` needs.
@@ -2523,6 +2565,23 @@ mod tests {
         assert_eq!(tuvi_star_category(TuViStar::TuVi), StarCategory::ChinhTinh);
         assert_eq!(tuvi_star_category(TuViStar::LocTon), StarCategory::PhuTinh);
         assert_eq!(tuvi_star_nature(TuViStar::KinhDuong), StarNature::Hung);
+        assert_eq!(tuvi_star_element(TuViStar::TuVi), Some(FiveElements::Tho));
+        assert_eq!(tuvi_star_element(TuViStar::LocTon), None);
+        assert_eq!(
+            branch_trine(Branch::Ty),
+            [Branch::Than, Branch::Ty, Branch::Thin]
+        );
+        assert_eq!(branch_clash(Branch::Ty), Branch::Ngo);
+        assert_eq!(tuvi_palace_key(TuViPalaceRole::Menh), "tuvi.palace/Menh");
+        assert_eq!(tuvi_star_key(TuViStar::TuVi), "tuvi.star/TuVi");
+        assert_eq!(
+            tuvi_star_brightness_key(TuViStar::CuMon, StarBrightness::Ham),
+            "tuvi.star_brightness/CuMon/Ham"
+        );
+        assert_eq!(
+            tuvi_transformation_key(FourTransformations::HoaLoc),
+            "tuvi.transformation/HoaLoc"
+        );
         let brightness = tuvi_star_brightness(TuViStar::TuVi, Branch::Ngo).unwrap();
         assert_eq!(star_brightness_name(brightness), "Miếu");
         assert_eq!(star_brightness_mark(brightness), "M");

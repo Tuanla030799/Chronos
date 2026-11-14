@@ -11,7 +11,7 @@ use std::fs;
 use std::path::Path;
 
 /// Version of the build format.
-pub const SCHEMA_VERSION: u32 = 1;
+pub const SCHEMA_VERSION: u32 = 2;
 /// `CHRN` as a big-endian integer, the `application_id` of the SQLite file.
 pub const APPLICATION_ID: u32 = 1_128_813_134;
 /// Name of the SQLite file.
@@ -43,6 +43,7 @@ CREATE TABLE passage (
   verse          TEXT,
   gates          TEXT NOT NULL,
   condition_text TEXT,
+  correction     TEXT,
   body           TEXT NOT NULL,
   citation       TEXT NOT NULL,
   sensitivity    INTEGER NOT NULL DEFAULT 0,
@@ -134,8 +135,9 @@ fn write_sqlite(compiled: &Compiled, manifest: &Manifest, path: &Path) -> rusqli
                 row.draft,
             ])?;
         }
-        let mut passage = transaction
-            .prepare("INSERT INTO passage VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)")?;
+        let mut passage = transaction.prepare(
+            "INSERT INTO passage VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)",
+        )?;
         for row in &compiled.passages {
             passage.execute(params![
                 row.id,
@@ -145,6 +147,7 @@ fn write_sqlite(compiled: &Compiled, manifest: &Manifest, path: &Path) -> rusqli
                 row.verse,
                 serde_json::to_string(&row.gates).expect("gates serialize"),
                 row.condition_text,
+                row.correction,
                 json(&row.body),
                 row.citation,
                 row.sensitivity,
@@ -210,8 +213,8 @@ pub fn read_sqlite(path: &Path) -> Result<Compiled, String> {
         .map_err(text)?;
     let mut statement = connection
         .prepare(
-            "SELECT id, stable_id, tier, section, verse, gates, condition_text, body, citation,
-                    sensitivity, draft
+            "SELECT id, stable_id, tier, section, verse, gates, condition_text, correction, body,
+                    citation, sensitivity, draft
              FROM passage ORDER BY id",
         )
         .map_err(text)?;
@@ -226,10 +229,11 @@ pub fn read_sqlite(path: &Path) -> Result<Compiled, String> {
                 verse: row.get(4)?,
                 gates: serde_json::from_str(&gates).expect("written as JSON"),
                 condition_text: row.get(6)?,
-                body: strings(row.get(7)?)?,
-                citation: row.get(8)?,
-                sensitivity: row.get(9)?,
-                draft: row.get(10)?,
+                correction: row.get(7)?,
+                body: strings(row.get(8)?)?,
+                citation: row.get(9)?,
+                sensitivity: row.get(10)?,
+                draft: row.get(11)?,
             })
         })
         .map_err(text)?
@@ -355,7 +359,8 @@ mod tests {
             &format!(
                 r#"{{ "collection": "tuvi.passage", "batch": "TV-15", "entries": [
                     {{ "id": "quan-loc/tu-vi/01", "anchor": {{ "role": "QuanLoc", "stars": ["TuVi", "ThatSat"] }},
-                       "when": [{{ "with_all": ["TuVi", "ThatSat"] }}], "body": ["Có thực quyền."], {reference}, "status": "{status}" }}] }}"#
+                       "when": [{{ "with_all": ["TuVi", "ThatSat"] }}], "body": ["Có thực quyền."], {reference}, "status": "{status}",
+                       "correction": "Sách in \"thự quyền\", sửa theo tr. 158." }}] }}"#
             ),
         );
         let dataset = load(root.path()).unwrap();
@@ -374,6 +379,10 @@ mod tests {
         assert_eq!(read_web(&dir, &manifest).unwrap(), compiled);
         assert_eq!(compiled.entries.len(), 3);
         assert_eq!(manifest.modules["tuvi"].passages, 1);
+        assert_eq!(
+            compiled.passages[0].correction.as_deref(),
+            Some("Sách in \"thự quyền\", sửa theo tr. 158.")
+        );
     }
 
     #[test]

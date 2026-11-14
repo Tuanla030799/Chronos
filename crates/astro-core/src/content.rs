@@ -9,8 +9,8 @@ use crate::bazi_analysis::{BaziAnalysis, BaziStar, LifeStage, TenGod};
 use crate::canchi::{Branch, CanChi, NaYin, Stem};
 use crate::fengshui::{EightMansionsStar, KuaCompatibility, KuaInfo, NineStar};
 use crate::tuvi::{
-    BirthTimeOfDay, ElementRelation, FourTransformations, TuViChart, TuViPalace, TuViPalaceRole,
-    TuViPlacedStar, TuViStar,
+    BirthTimeOfDay, ElementRelation, FourTransformations, StarBrightness, TuViChart, TuViPalace,
+    TuViPalaceRole, TuViPlacedStar, TuViStar,
 };
 use std::collections::BTreeSet;
 use std::fmt::Debug;
@@ -437,18 +437,34 @@ fn borrowed_lookup(
     }
 }
 
+/// Key of the overview of a palace role.
+pub fn tuvi_palace_key(role: TuViPalaceRole) -> String {
+    key("tuvi.palace", role)
+}
+
+/// Key of the general text of a Tử Vi star.
+pub fn tuvi_star_key(star: TuViStar) -> String {
+    key("tuvi.star", star)
+}
+
+/// Key of the text of a star at one brightness.
+pub fn tuvi_star_brightness_key(star: TuViStar, level: StarBrightness) -> String {
+    format!("tuvi.star_brightness/{star:?}/{level:?}")
+}
+
+/// Key of the text of one of the Tứ Hóa.
+pub fn tuvi_transformation_key(transformation: FourTransformations) -> String {
+    key("tuvi.transformation", transformation)
+}
+
 fn palace_keys(palace: &TuViPalace) -> Vec<String> {
-    let mut keys = vec![key("tuvi.palace", palace.role)];
+    let mut keys = vec![tuvi_palace_key(palace.role)];
     for placed in stars(palace) {
-        keys.push(key("tuvi.star", placed.star));
+        keys.push(tuvi_star_key(placed.star));
         if let Some(level) = placed.brightness {
-            keys.push(format!("tuvi.star_brightness/{:?}/{level:?}", placed.star));
+            keys.push(tuvi_star_brightness_key(placed.star, level));
         }
-        keys.extend(
-            placed
-                .transformation
-                .map(|hoa| key("tuvi.transformation", hoa)),
-        );
+        keys.extend(placed.transformation.map(tuvi_transformation_key));
     }
     keys
 }
@@ -686,6 +702,35 @@ mod tests {
                 .contains(&format!("bright:{:?}:{level:?}", main.star))
         );
         assert!(lookup.facts.is_sorted());
+    }
+
+    #[test]
+    fn star_keys_are_the_ones_a_palace_query_lists() {
+        let (chart, branch) = find_palace(TuViPalaceRole::Menh, |_, p| {
+            p.main_stars
+                .iter()
+                .any(|placed| placed.transformation.is_some())
+        });
+        let palace = chart.palace(branch);
+        let keys = tuvi_palace_query(&chart, branch).keys;
+        assert_eq!(keys[0], tuvi_palace_key(TuViPalaceRole::Menh));
+        for placed in stars(palace) {
+            assert!(keys.contains(&tuvi_star_key(placed.star)));
+            if let Some(level) = placed.brightness {
+                assert!(keys.contains(&tuvi_star_brightness_key(placed.star, level)));
+            }
+            if let Some(hoa) = placed.transformation {
+                assert!(keys.contains(&tuvi_transformation_key(hoa)));
+            }
+        }
+        assert_eq!(
+            tuvi_star_brightness_key(TuViStar::CuMon, StarBrightness::Ham),
+            "tuvi.star_brightness/CuMon/Ham"
+        );
+        assert_eq!(
+            tuvi_transformation_key(FourTransformations::HoaKy),
+            "tuvi.transformation/HoaKy"
+        );
     }
 
     #[test]

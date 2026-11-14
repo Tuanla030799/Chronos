@@ -1158,6 +1158,30 @@ pub fn tuvi_star_category(
     to_js(&from_js::<TuViStar>(value)?.category())
 }
 
+/// Element of a Chính Tinh; `null` for every other star.
+#[wasm_bindgen(js_name = tuviStarElement, unchecked_return_type = "FiveElements | null")]
+pub fn tuvi_star_element(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] value: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<TuViStar>(value)?.element())
+}
+
+/// The three branches of a branch's Tam Hợp group, the branch itself included.
+#[wasm_bindgen(js_name = branchTrine, unchecked_return_type = "Branch[]")]
+pub fn branch_trine(
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Branch>(branch)?.trine())
+}
+
+/// The branch opposite a branch (Lục Xung, xung chiếu).
+#[wasm_bindgen(js_name = branchClash, unchecked_return_type = "Branch")]
+pub fn branch_clash(
+    #[wasm_bindgen(unchecked_param_type = "Branch")] branch: JsValue,
+) -> Result<JsValue, JsValue> {
+    to_js(&from_js::<Branch>(branch)?.clash())
+}
+
 /// Inherent nature of a star, from section 4.9 of the spec.
 #[wasm_bindgen(js_name = tuviStarNature, unchecked_return_type = "StarNature")]
 pub fn tuvi_star_nature(
@@ -1465,6 +1489,40 @@ pub fn nine_star_key(
     #[wasm_bindgen(unchecked_param_type = "NineStar")] star: JsValue,
 ) -> Result<String, JsValue> {
     Ok(content::nine_star_key(from_js(star)?))
+}
+
+/// Interpretation key of the overview of a palace role.
+#[wasm_bindgen(js_name = tuviPalaceKey)]
+pub fn tuvi_palace_key(
+    #[wasm_bindgen(unchecked_param_type = "TuViPalaceRole")] role: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::tuvi_palace_key(from_js(role)?))
+}
+
+/// Interpretation key of the general text of a Tử Vi star.
+#[wasm_bindgen(js_name = tuviStarKey)]
+pub fn tuvi_star_key(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] star: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::tuvi_star_key(from_js(star)?))
+}
+
+/// Interpretation key of a star at one brightness.
+#[wasm_bindgen(js_name = tuviStarBrightnessKey)]
+pub fn tuvi_star_brightness_key(
+    #[wasm_bindgen(unchecked_param_type = "TuViStar")] star: JsValue,
+    #[wasm_bindgen(unchecked_param_type = "StarBrightness")] level: JsValue,
+) -> Result<String, JsValue> {
+    let level: StarBrightness = from_js(level)?;
+    Ok(content::tuvi_star_brightness_key(from_js(star)?, level))
+}
+
+/// Interpretation key of one of the Tứ Hóa.
+#[wasm_bindgen(js_name = tuviTransformationKey)]
+pub fn tuvi_transformation_key(
+    #[wasm_bindgen(unchecked_param_type = "FourTransformations")] transformation: JsValue,
+) -> Result<String, JsValue> {
+    Ok(content::tuvi_transformation_key(from_js(transformation)?))
 }
 
 /// What the interpretation of the palace at `branch` needs.
