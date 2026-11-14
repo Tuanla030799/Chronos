@@ -69,6 +69,32 @@ struct EngineService: Sendable {
         )
     }
 
+    /// The same birth written on the other calendar, so switching the editor between Dương lịch
+    /// and Âm lịch keeps the person's birthday instead of reusing its numbers. A date that does
+    /// not exist on its calendar keeps its numbers, for the editor to refuse on saving.
+    func birth(_ birth: BirthDate, rewrittenAs kind: BirthDate.Kind, tzOffset: Double) -> BirthDate {
+        var rewritten = birth
+        rewritten.kind = kind
+        switch (birth.kind, kind) {
+        case (.solar, .lunar):
+            let solar = SolarDate(year: Int32(clamping: birth.year), month: UInt8(clamping: birth.month), day: UInt8(clamping: birth.day))
+            guard let lunar = try? solarToLunar(date: solar, tzOffset: tzOffset) else { return rewritten }
+            rewritten.year = Int(lunar.year)
+            rewritten.month = Int(lunar.month)
+            rewritten.day = Int(lunar.day)
+            rewritten.isLeapMonth = lunar.isLeapMonth
+        case (.lunar, .solar):
+            guard let solar = try? lunarToSolar(date: lunarBirth(birth), tzOffset: tzOffset) else { return rewritten }
+            rewritten.year = Int(solar.year)
+            rewritten.month = Int(solar.month)
+            rewritten.day = Int(solar.day)
+            rewritten.isLeapMonth = false
+        case (.solar, .solar), (.lunar, .lunar):
+            break
+        }
+        return rewritten
+    }
+
     /// The lunar date of birth: as entered, or converted from the solar date.
     func lunarBirthDate(of profile: Profile) throws -> LunarDate {
         switch profile.birth.kind {

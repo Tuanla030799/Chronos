@@ -28,6 +28,7 @@ struct ProfileListView: View {
                             .labelStyle(.iconOnly)
                             .buttonStyle(.borderless)
                     }
+                    .listRowBackground(Theme.surface)
                 }
                 .onDelete { offsets in
                     store.delete(Set(offsets.map { store.profiles[$0].id }))
@@ -83,6 +84,7 @@ struct ProfileEditorView: View {
                     }
                     .pickerStyle(.segmented)
                 }
+                .listRowBackground(Theme.surface)
                 Section("Ngày giờ sinh") {
                     Picker("Lịch", selection: $profile.birth.kind) {
                         ForEach(BirthDate.Kind.allCases) { Text($0.label).tag($0) }
@@ -103,6 +105,7 @@ struct ProfileEditorView: View {
                     }
                     DatePicker("Giờ", selection: utcDate(\.clock), displayedComponents: .hourAndMinute)
                 }
+                .listRowBackground(Theme.surface)
                 Section {
                     Stepper(value: $profile.tzOffset, in: -12...14, step: 0.5) {
                         Text("Múi giờ GMT\(profile.tzOffset >= 0 ? "+" : "")\(profile.tzOffset.formatted())")
@@ -118,8 +121,15 @@ struct ProfileEditorView: View {
                 } footer: {
                     Text("Giờ Mặt Trời thực chỉnh giờ sinh theo kinh độ nơi sinh và phương trình thời gian, dùng cho Bát Tự và Tử Vi.")
                 }
+                .listRowBackground(Theme.surface)
             }
+            .chronosBackground()
             .environment(\.timeZone, .gmt)
+            .onChange(of: profile.birth.kind) { old, new in
+                var before = profile.birth
+                before.kind = old
+                profile.birth = engine.birth(before, rewrittenAs: new, tzOffset: profile.tzOffset)
+            }
             .navigationTitle(profile.name.isEmpty ? "Hồ sơ mới" : profile.name)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
